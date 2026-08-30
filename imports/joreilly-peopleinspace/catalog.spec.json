@@ -1,8 +1,33 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project. It carries no component inventory on purpose: that comes from @CatalogComponent / @CatalogVariant annotations beside the previews, and a project imported without its maintainers' involvement has none. What is published is therefore the previews as the project declares them, grouped by nothing, which is the honest presentation of somebody else's app.",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations and never will, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository.",
   "system": "joreilly-peopleinspace",
   "title": "PeopleInSpace",
   "module": "app",
-  "modes": ["light", "dark"]
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Screens",
+      "components": [
+        {
+          "componentId": "person-view",
+          "preview": "PersonViewPreview",
+          "caption": "A crew member row from the People In Space list, driven by a @PreviewParameter provider."
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "components": [
+        {
+          "componentId": "people-in-space-card",
+          "preview": "PeopleInSpaceCardPreview",
+          "caption": "The compact card surface, previewed at its declared 200x100dp."
+        }
+      ]
+    }
+  ]
 }

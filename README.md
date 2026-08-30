@@ -83,8 +83,17 @@ module when the field is omitted. Naming two is refused, with a message saying t
 or drop the field.
 
 Beside it, `imports/<slug>/catalog.spec.json` is the catalog's cover sheet — `system`, `title`,
-`module`, `modes`. It carries no per-component inventory: that comes from the previews themselves,
-and an imported project has none to declare.
+`module`, `modes` — **and its `groups` inventory**.
+
+A first-party catalog omits `groups`: it declares each component with `@CatalogComponent` /
+`@CatalogVariant` next to the `@Preview`, and the export builds the inventory from those. An
+imported project has no such annotations and never will, so spec validation fails with *"`groups` is
+omitted but the module declares no @CatalogComponent"* until the inventory is written down here.
+Each entry needs a `componentId` and the `preview` function it names; a `caption` is worth adding
+because nothing else will describe somebody else's component.
+
+That is the one piece of real work an import costs, and this is the honest place for it — the
+inventory is our description of their code, and it stays in our repository.
 
 The upstream project is **never** asked to change. The preview plugin is injected at build time via
 the CLI's init script, which applies it to any module that already applies an Android or Compose
