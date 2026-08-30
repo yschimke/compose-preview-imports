@@ -26,6 +26,7 @@ A GitHub Actions runner is a better place in every dimension that matters:
 | Toolchain | needs a JDK + Android SDK installed and kept current | already has them |
 | Bounds | a concurrency budget and timeouts we write and maintain | GitHub's, enforced for us |
 | Review | an admin token holder pasted a URL | **a pull request a human read** |
+| Credential | the box's own, in-process | the build job's is read-only; only a separate job that runs none of the imported code can write |
 
 That last row is the real gain. The import's pull request *is* the vouching step: someone reads
 which repository, which ref and which modules are about to be built before any of it runs.

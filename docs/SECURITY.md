@@ -8,9 +8,15 @@ the whole job — so the boundary is written down rather than inferred.
 An import's `build` job checks out a third-party repository and runs its Gradle build. Arbitrary
 code executes at that moment, and the design assumes it is hostile:
 
-- **It holds no credential.** The job declares `permissions: {}`, so no `GITHUB_TOKEN` is minted
-  into its environment at all. There is nothing there to push a branch, open a pull request, edit a
-  workflow, or read a secret with.
+- **It holds nothing that can write.** The job declares `permissions: contents: read`, so the
+  `GITHUB_TOKEN` in its environment is read-only: it cannot push a branch, force-push a delivery
+  ref, open a pull request, edit a workflow, or write a release. No other secret is passed to it.
+
+  It is `contents: read` rather than `{}` because the pipeline it calls declares `contents: read`
+  on its own jobs, and a called workflow cannot be granted more than the calling job holds — `{}`
+  fails the run at startup, before any job exists. Read access is also the floor for checking
+  anything out. What the boundary rests on is that the untrusted build holds no *write* scope, and
+  it does not.
 - **It cannot publish.** Its only output is an uploaded artifact. A separate `publish` job — which
   runs no third-party code — downloads that artifact and force-pushes it.
 - **It is thrown away.** The runner is ephemeral and destroyed when the job ends.
@@ -27,7 +33,7 @@ branch. Separating the jobs means the two are never in the same process.
 
 | Need | Credential |
 | --- | --- |
-| Clone a public upstream project | **None.** Public clones need no authentication. |
+| Clone a public upstream project | **None.** Public clones need no authentication, and the upstream fetch clears any credential helper so it cannot pick one up. |
 | Force-push `design-artifacts/<slug>` | `GITHUB_TOKEN`, `contents: write`, in the publish job only. Repository-scoped and short-lived by construction. |
 | Clone a **private** upstream project | A fine-grained PAT with `Contents: Read` on those named repositories only, stored as a repository secret and passed to the upstream checkout step's `token:` input — never exported to the build environment. |
 

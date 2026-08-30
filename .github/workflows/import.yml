@@ -6,14 +6,21 @@ name: Import a project
 # inferred from the job graph:
 #
 #   build    — checks out a THIRD-PARTY repository and runs its Gradle build.
-#              `permissions: {}`: this job holds no writable credential at all. The foreign build
-#              cannot push a branch, open a pull request, or read a secret, because there is nothing
-#              in its environment to do it with. Its only output is an uploaded artifact.
+#              `permissions: contents: read`: a READ-ONLY token, and nothing else. The foreign build
+#              cannot push a branch, force-push a delivery ref, open a pull request, or write a
+#              release, because the token in its environment carries no write scope at all. Its only
+#              output is an uploaded artifact.
+#
+#              This is `contents: read` rather than `{}` because the pipeline it calls declares
+#              `contents: read` on its own jobs, and a called workflow cannot be granted more than
+#              the calling job holds — `{}` fails the run before any job starts. Read is also the
+#              floor for checking anything out. The security argument is unchanged by it: what
+#              matters is that the untrusted build holds nothing that can WRITE, and it does not.
 #
 #   publish  — downloads that artifact and force-pushes it to design-artifacts/<slug>.
 #              `permissions: contents: write`, and it runs NO third-party code.
 #
-# Splitting them is what makes the write token safe. GITHUB_TOKEN is already minted per-run and
+# Splitting them is what makes the WRITE token safe. GITHUB_TOKEN is already minted per-run and
 # scoped to THIS repository — it cannot touch another repo, and it expires when the job ends — but a
 # token scoped to this repo is still a token an untrusted build could use to push a branch here.
 # Keeping the two in separate jobs means the credential and the foreign code are never in the same
@@ -122,10 +129,12 @@ jobs:
             echo "modules=${modules}"
           } >> "$GITHUB_OUTPUT"
 
-  # Runs the imported project's own build. Holds no credential — see the header.
+  # Runs the imported project's own build. Holds a read-only token and nothing else — see the
+  # header for why it is `contents: read` and not `{}`.
   build:
     needs: config
-    permissions: {}
+    permissions:
+      contents: read
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ inputs.slug }}
