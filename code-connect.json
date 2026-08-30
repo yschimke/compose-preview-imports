@@ -1,0 +1,57 @@
+{
+  "system": "joreilly-peopleinspace",
+  "title": "PeopleInSpace",
+  "label": "Compose",
+  "source": {
+    "repo": "joreilly/PeopleInSpace",
+    "ref": "da25d4bc05c0dd8fe63e83e2f0cdc58a45e4be9d",
+    "module": ":app"
+  },
+  "generatedAt": "2026-08-30T17:42:43.119Z",
+  "mappings": [
+    {
+      "componentId": "person-view",
+      "figmaLayerName": "person-view",
+      "componentName": "PersonView",
+      "source": "https://github.com/joreilly/PeopleInSpace/blob/da25d4bc05c0dd8fe63e83e2f0cdc58a45e4be9d/app/dev/johnoreilly/peopleinspace/personlist/PersonListScreen.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PersonViewPreview",
+      "codeSnippet": "PersonView(\n    index = TODO(\"Int\"),\n    person = TODO(\"Assignment\"),\n    personSelected = { },\n)",
+      "imports": [
+        "import dev.johnoreilly.peopleinspace.personlist.PersonView"
+      ],
+      "parameters": [
+        {
+          "name": "index",
+          "type": "Int",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "person",
+          "type": "Assignment",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "personSelected",
+          "type": "(Assignment) -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/person-view.svg"
+    },
+    {
+      "componentId": "people-in-space-card",
+      "figmaLayerName": "people-in-space-card",
+      "componentName": "PeopleInSpaceCardPreview",
+      "source": "https://github.com/joreilly/PeopleInSpace/blob/da25d4bc05c0dd8fe63e83e2f0cdc58a45e4be9d/app/src/main/java/dev/johnoreilly/peopleinspace/peopleinspace/remotecompose/PeopleInSpaceCard.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PeopleInSpaceCardPreview",
+      "figmaSvg": "figma/people-in-space-card.svg"
+    }
+  ]
+}

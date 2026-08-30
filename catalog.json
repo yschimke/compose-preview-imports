@@ -1,0 +1,90 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "joreilly-peopleinspace",
+  "title": "PeopleInSpace",
+  "components": [
+    {
+      "componentId": "person-view",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/person-view/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 310,
+          "livePreview": "https://preview.coo.ee/joreilly-peopleinspace/p/person-view__ideal__default",
+          "previewId": "dev.johnoreilly.peopleinspace.personlist.PersonListScreenKt.PersonViewPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 21,
+            "width": 966,
+            "height": 268
+          },
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 63,
+            "width": 184,
+            "height": 184
+          },
+          "cornerRadius": 35.05
+        }
+      ],
+      "group": "Screens",
+      "caption": "A crew member row from the People In Space list, driven by a @PreviewParameter provider.",
+      "wireframe": "wireframes/person-view.svg",
+      "sourceFile": "dev/johnoreilly/peopleinspace/personlist/PersonListScreen.kt",
+      "sourceModule": ":app",
+      "bodyLine": 274,
+      "sourceDirectory": "app",
+      "sourceFunction": "PersonViewPreview"
+    },
+    {
+      "componentId": "people-in-space-card",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/people-in-space-card/ideal__default__compact.png",
+          "state": "default",
+          "width": 525,
+          "height": 263,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/joreilly-peopleinspace/p/people-in-space-card__ideal__default__compact",
+          "previewId": "dev.johnoreilly.peopleinspace.peopleinspace.remotecompose.PeopleInSpaceCardKt.PeopleInSpaceCardPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Cards",
+      "caption": "The compact card surface, previewed at its declared 200x100dp.",
+      "wireframe": "wireframes/people-in-space-card.svg",
+      "sourceFile": "src/main/java/dev/johnoreilly/peopleinspace/peopleinspace/remotecompose/PeopleInSpaceCard.kt",
+      "sourceModule": ":app",
+      "bodyLine": 158,
+      "sourceDirectory": "app",
+      "sourceFunction": "PeopleInSpaceCardPreview"
+    }
+  ],
+  "renderer": "compose-preview 1.54.0",
+  "generatedAt": "2026-08-30T17:42:43.102Z",
+  "source": {
+    "repo": "joreilly/PeopleInSpace",
+    "ref": "da25d4bc05c0dd8fe63e83e2f0cdc58a45e4be9d",
+    "module": ":app"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "person-view__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 21,
+          "width": 966,
+          "height": 268
+        },
+        "label": "pad 8dp/16dp · r 12dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "8",
+          "padding.end": "16",
+          "padding.bottom": "8",
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 63,
+          "width": 184,
+          "height": 184
+        },
+        "label": "r 35dp",
+        "detail": {
+          "cornerRadius": "35",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 310,
+          "y": 92,
+          "width": 265,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Chris Cassidy",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 310,
+          "y": 166,
+          "width": 55,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "ISS",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ]
+  },
+  "references": {}
+}

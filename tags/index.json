@@ -1,0 +1,17 @@
+{
+  "schema": "compose-preview-tags/v1",
+  "previews": {
+    "person-view__ideal__default": {
+      "person0": {
+        "count": 1,
+        "bounds": {
+          "x": 310,
+          "y": 92,
+          "width": 265,
+          "height": 63
+        },
+        "space": "render-pixels"
+      }
+    }
+  }
+}
