@@ -12,11 +12,21 @@ code executes at that moment, and the design assumes it is hostile:
   `GITHUB_TOKEN` in its environment is read-only: it cannot push a branch, force-push a delivery
   ref, open a pull request, edit a workflow, or write a release. No other secret is passed to it.
 
-  It is `contents: read` rather than `{}` because the pipeline it calls declares `contents: read`
-  on its own jobs, and a called workflow cannot be granted more than the calling job holds — `{}`
-  fails the run at startup, before any job exists. Read access is also the floor for checking
-  anything out. What the boundary rests on is that the untrusted build holds no *write* scope, and
-  it does not.
+  It is `contents: read` rather than `{}` because a called workflow cannot be granted more than the
+  calling job holds, and the pipeline's jobs ask for `contents: read` to check anything out — `{}`
+  fails the run at startup, before any job exists.
+
+  Read being *enough* is not automatic, and for a while it was not true. `design-artifacts-reusable.yml`'s
+  `generate` job both rendered — running the imported project's Gradle — and force-pushed the
+  delivery branch, so calling it required granting `contents: write` to the very job running that
+  build. No arrangement on this side could have fixed that: permissions are static, and `publish:
+  false` stops the push from executing without removing the scope. It was corrected upstream in
+  [compose-ai-tools#4856](https://github.com/yschimke/compose-ai-tools/pull/4856), which moved
+  publishing into a job that runs none of the rendered code. Until that landed, an import could not
+  start at all.
+
+  What the boundary rests on is that the untrusted build holds no *write* scope — now true on both
+  sides of the call.
 - **It cannot publish.** Its only output is an uploaded artifact. A separate `publish` job — which
   runs no third-party code — downloads that artifact and force-pushes it.
 - **It is thrown away.** The runner is ephemeral and destroyed when the job ends.

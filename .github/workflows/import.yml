@@ -11,11 +11,15 @@ name: Import a project
 #              release, because the token in its environment carries no write scope at all. Its only
 #              output is an uploaded artifact.
 #
-#              This is `contents: read` rather than `{}` because the pipeline it calls declares
-#              `contents: read` on its own jobs, and a called workflow cannot be granted more than
-#              the calling job holds — `{}` fails the run before any job starts. Read is also the
-#              floor for checking anything out. The security argument is unchanged by it: what
-#              matters is that the untrusted build holds nothing that can WRITE, and it does not.
+#              This is `contents: read` rather than `{}` because a called workflow cannot be granted
+#              more than the calling job holds, and the pipeline's own jobs ask for `contents: read`
+#              to check anything out. `{}` fails the run before any job starts.
+#
+#              For that to be ENOUGH, the pipeline had to stop asking for write in the job that
+#              renders: its `generate` job both ran the build and force-pushed, so calling it forced
+#              a write token into the same job as the imported code — the exact thing this split is
+#              here to prevent. compose-ai-tools#4856 moved publishing into its own job, and until
+#              that landed an import could not run at all.
 #
 #   publish  — downloads that artifact and force-pushes it to design-artifacts/<slug>.
 #              `permissions: contents: write`, and it runs NO third-party code.
