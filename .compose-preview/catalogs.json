@@ -1,0 +1,18 @@
+{
+  "$comment": "GENERATED from imports.json by scripts/sync-catalog-registry.sh — do not edit by hand. This is the document a preview server fetches when it nominates this repository with --catalog-registry: every catalog listed here is served from this repository's own design-artifacts/<system> branch.",
+  "catalogs": [
+    {
+      "group": "imported-projects",
+      "listed": true,
+      "system": "joreilly-peopleinspace"
+    }
+  ],
+  "groups": [
+    {
+      "heading": "Imported projects",
+      "id": "imported-projects",
+      "noun": "project(s)",
+      "priority": 0
+    }
+  ]
+}
