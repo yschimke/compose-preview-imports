@@ -3,6 +3,11 @@
   "schema": "compose-preview-imports/registry/v1",
   "imports": [
     {
+      "slug": "joreilly-bikeshare",
+      "branch": "import/joreilly-bikeshare",
+      "upstream": "joreilly/BikeShare"
+    },
+    {
       "slug": "joreilly-peopleinspace",
       "branch": "import/joreilly-peopleinspace",
       "upstream": "joreilly/PeopleInSpace"

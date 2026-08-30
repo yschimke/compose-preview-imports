@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations and never will, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository.",
+  "system": "joreilly-bikeshare",
+  "title": "BikeShare",
+  "module": "common",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Stations",
+      "components": [
+        {
+          "componentId": "station-view",
+          "preview": "StationViewPreview",
+          "caption": "A single bike-station row: name, and the free-bikes-to-empty-slots split rendered as an availability bar."
+        }
+      ]
+    }
+  ]
+}
