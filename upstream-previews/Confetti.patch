@@ -1,0 +1,143 @@
+From 0728578b5446338ef7bab79c59f55b5ffdc9a1ab Mon Sep 17 00:00:00 2001
+From: Yuri Schimke <yuri@schimke.ee>
+Date: Sun, 30 Aug 2026 18:23:35 +0000
+Subject: [PATCH] feat: add previews for the shared ui components
+
+The composables in ui/component are used from several screens each but had no
+previews. Adds ConfettiComponentPreviews.kt covering ConfettiHeader (plain, with
+icon, long text and stacked), ConfettiTab (selected, unselected and disabled),
+ConfettiAlertDialog (one- and two-button) and ConfettiSearch (empty and with a
+query).
+
+Follows the existing convention in this module: internal preview functions with
+sized @Preview annotations.
+---
+ .../ui/component/ConfettiComponentPreviews.kt | 116 ++++++++++++++++++
+ 1 file changed, 116 insertions(+)
+ create mode 100644 shared/src/commonMain/kotlin/dev/johnoreilly/confetti/ui/component/ConfettiComponentPreviews.kt
+
+diff --git a/shared/src/commonMain/kotlin/dev/johnoreilly/confetti/ui/component/ConfettiComponentPreviews.kt b/shared/src/commonMain/kotlin/dev/johnoreilly/confetti/ui/component/ConfettiComponentPreviews.kt
+new file mode 100644
+index 0000000..697b623
+--- /dev/null
++++ b/shared/src/commonMain/kotlin/dev/johnoreilly/confetti/ui/component/ConfettiComponentPreviews.kt
+@@ -0,0 +1,116 @@
++package dev.johnoreilly.confetti.ui.component
++
++import androidx.compose.foundation.layout.Column
++import androidx.compose.material.icons.Icons
++import androidx.compose.material.icons.filled.Bookmark
++import androidx.compose.material.icons.filled.Schedule
++import androidx.compose.material3.TabRow
++import androidx.compose.material3.Text
++import androidx.compose.runtime.Composable
++import org.jetbrains.compose.ui.tooling.preview.Preview
++
++// Previews for the shared components in this package. Each of these is used from several screens —
++// the header from the session and bookmark lists, the tab row from the session list, the dialog
++// from settings and sign-out, the search field from the search and speaker screens — so they are
++// worth being able to look at on their own rather than only in situ.
++//
++// All of them are already stateless: text and lambdas in, no ViewModel and no I/O.
++
++@Preview(name = "Header", widthDp = 411, heightDp = 56, showBackground = true)
++@Composable
++internal fun ConfettiHeaderPreview() {
++    ConfettiHeader(text = "Wednesday, 10 September")
++}
++
++@Preview(name = "Header with icon", widthDp = 411, heightDp = 56, showBackground = true)
++@Composable
++internal fun ConfettiHeaderWithIconPreview() {
++    ConfettiHeader(text = "Bookmarked", icon = Icons.Default.Bookmark)
++}
++
++@Preview(name = "Header long text", widthDp = 411, heightDp = 56, showBackground = true)
++@Composable
++internal fun ConfettiHeaderLongTextPreview() {
++    // The header sits above a list and must not push it around when the label is long.
++    ConfettiHeader(
++        text = "Thursday, 11 September — Main Auditorium and Workshop Track",
++        icon = Icons.Default.Schedule,
++    )
++}
++
++@Preview(name = "Tabs", widthDp = 411, heightDp = 64, showBackground = true)
++@Composable
++internal fun ConfettiTabPreview() {
++    TabRow(selectedTabIndex = 0) {
++        ConfettiTab(selected = true, onClick = {}, text = { Text("Sessions") })
++        ConfettiTab(selected = false, onClick = {}, text = { Text("Speakers") })
++    }
++}
++
++@Preview(name = "Tabs with disabled", widthDp = 411, heightDp = 64, showBackground = true)
++@Composable
++internal fun ConfettiTabDisabledPreview() {
++    TabRow(selectedTabIndex = 0) {
++        ConfettiTab(selected = true, onClick = {}, text = { Text("Sessions") })
++        ConfettiTab(selected = false, onClick = {}, enabled = false, text = { Text("Bookmarks") })
++    }
++}
++
++@Preview(name = "Alert dialog", widthDp = 411, heightDp = 260, showBackground = true)
++@Composable
++internal fun ConfettiAlertDialogPreview() {
++    ConfettiAlertDialog(
++        title = "Sign out",
++        text = "You will stop receiving your bookmarks on this device.",
++        confirmText = "Sign out",
++        onConfirm = {},
++        onDismiss = {},
++    )
++}
++
++@Preview(name = "Alert dialog with dismiss", widthDp = 411, heightDp = 260, showBackground = true)
++@Composable
++internal fun ConfettiAlertDialogWithDismissPreview() {
++    // The two-button shape, which is the one used where the action is destructive.
++    ConfettiAlertDialog(
++        title = "Clear bookmarks",
++        text = "This removes every bookmark you have saved for this conference.",
++        confirmText = "Clear",
++        dismissText = "Keep",
++        onConfirm = {},
++        onDismiss = {},
++    )
++}
++
++@Preview(name = "Search", widthDp = 411, heightDp = 80, showBackground = true)
++@Composable
++internal fun ConfettiSearchPreview() {
++    ConfettiSearch(
++        value = "",
++        onValueChange = {},
++        onBackClick = {},
++        placeholder = "Search sessions",
++    )
++}
++
++@Preview(name = "Search with query", widthDp = 411, heightDp = 80, showBackground = true)
++@Composable
++internal fun ConfettiSearchWithQueryPreview() {
++    ConfettiSearch(
++        value = "Kotlin Multiplatform",
++        onValueChange = {},
++        onBackClick = {},
++        placeholder = "Search sessions",
++    )
++}
++
++@Preview(name = "Header stack", widthDp = 411, heightDp = 160, showBackground = true)
++@Composable
++internal fun ConfettiHeaderStackPreview() {
++    // How the header actually appears in a list: repeated, separating groups.
++    Column {
++        ConfettiHeader(text = "09:00", icon = Icons.Default.Schedule)
++        ConfettiHeader(text = "10:30", icon = Icons.Default.Schedule)
++        ConfettiHeader(text = "12:00", icon = Icons.Default.Schedule)
++    }
++}
+-- 
+2.43.0
+
