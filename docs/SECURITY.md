@@ -8,9 +8,26 @@ the whole job — so the boundary is written down rather than inferred.
 An import's `build` job checks out a third-party repository and runs its Gradle build. Arbitrary
 code executes at that moment, and the design assumes it is hostile:
 
-- **It holds no credential.** The job declares `permissions: {}`, so no `GITHUB_TOKEN` is minted
-  into its environment at all. There is nothing there to push a branch, open a pull request, edit a
-  workflow, or read a secret with.
+- **The job that runs the build holds no write scope.** The imported project's Gradle runs in the
+  pipeline's `generate` job, which declares `contents: read`. It cannot push a branch, force-push a
+  delivery ref, open a pull request, edit a workflow, or write a release. No other secret is passed
+  to it.
+
+  The calling job here declares `contents: **write**`, and that looks alarming until you see what
+  it is: a **ceiling**, not a grant. A calling job must declare at least the maximum any job in the
+  called workflow asks for, and that workflow's `publish-catalog` job asks for write — so anything
+  less fails the run before a single job starts, whatever `publish: false` says. Permissions are
+  static; the input only skips the job, it does not lower the requirement.
+
+  Each called job then runs with **its own** declared permissions, capped by that ceiling. So the
+  render gets read, and the write scope exists only in `publish-catalog`, which runs none of the
+  imported code. The calling job itself is a `uses:` shim that executes nothing, so the ceiling it
+  names is never a process the imported build is inside of.
+
+  This was established by running it, not by reading the documentation: `contents: read` on the
+  calling job fails at startup, `contents: write` starts and the render proceeds under read. An
+  earlier version of this file claimed read was sufficient. It was not, and the reason it was not
+  had nothing to do with what the render needs.
 - **It cannot publish.** Its only output is an uploaded artifact. A separate `publish` job — which
   runs no third-party code — downloads that artifact and force-pushes it.
 - **It is thrown away.** The runner is ephemeral and destroyed when the job ends.
@@ -27,7 +44,7 @@ branch. Separating the jobs means the two are never in the same process.
 
 | Need | Credential |
 | --- | --- |
-| Clone a public upstream project | **None.** Public clones need no authentication. |
+| Clone a public upstream project | **None.** Public clones need no authentication, and the upstream fetch clears any credential helper so it cannot pick one up. |
 | Force-push `design-artifacts/<slug>` | `GITHUB_TOKEN`, `contents: write`, in the publish job only. Repository-scoped and short-lived by construction. |
 | Clone a **private** upstream project | A fine-grained PAT with `Contents: Read` on those named repositories only, stored as a repository secret and passed to the upstream checkout step's `token:` input — never exported to the build environment. |
 

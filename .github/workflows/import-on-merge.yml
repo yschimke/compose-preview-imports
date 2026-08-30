@@ -1,0 +1,99 @@
+name: Import on merge
+
+# Runs the imports whose configuration a push to `main` changed — which is what makes merging an
+# import's pull request actually import it.
+#
+# This is a separate workflow rather than another trigger on `import.yml` because the two answer
+# different questions. `import.yml` builds ONE named import and takes a slug; this one works out
+# WHICH imports a commit touched, and calls that workflow once per slug. Keeping the discovery out
+# of the builder is what lets the builder stay dispatchable by hand with nothing but a slug.
+#
+# Path-filtered to `imports/**`: a push that only edits the README or a workflow rebuilds nothing.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'imports/**'
+
+permissions: {}
+
+concurrency:
+  # Per-commit, not per-import: the fan-out below is what serialises the individual imports, via
+  # `import.yml`'s own per-slug concurrency group.
+  group: import-on-merge-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  changed:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      slugs: ${{ steps.find.outputs.slugs }}
+      empty: ${{ steps.find.outputs.empty }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Two commits is enough to diff a merge against what it landed on, and it keeps this
+          # cheap; the fallback below covers the cases where it isn't.
+          fetch-depth: 2
+          persist-credentials: false
+
+      - name: Find the imports this push touched
+        id: find
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+          # `github.event.before` is all-zeroes for a branch's first push and can name a commit that
+          # is no longer reachable after a force-push. Either way, fall back to diffing against the
+          # first parent, and if even that is missing, to every import in the tree — rebuilding more
+          # than necessary is a cost; rebuilding nothing after a merge is a bug.
+          base=""
+          if [ -n "${BEFORE}" ] && [ "${BEFORE}" != "0000000000000000000000000000000000000000" ] \
+            && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            base="${BEFORE}"
+          elif git rev-parse --verify --quiet HEAD~1 >/dev/null; then
+            base="HEAD~1"
+          fi
+
+          if [ -n "$base" ]; then
+            changed=$(git diff --name-only "$base" HEAD -- 'imports/**' || true)
+          else
+            echo "::notice::no usable base commit; considering every import"
+            changed=$(git ls-files 'imports/**' || true)
+          fi
+
+          # imports/<slug>/anything -> <slug>
+          slugs=$(printf '%s\n' "$changed" \
+            | sed -n 's;^imports/\([^/]\+\)/.*;\1;p' \
+            | sort -u \
+            | jq -R . | jq -sc .)
+
+          if [ "$slugs" = "[]" ] || [ -z "$slugs" ]; then
+            echo "slugs=[]" >> "$GITHUB_OUTPUT"
+            echo "empty=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::no import configuration changed"
+          else
+            echo "slugs=${slugs}" >> "$GITHUB_OUTPUT"
+            echo "empty=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::importing: ${slugs}"
+          fi
+
+  import:
+    needs: changed
+    if: ${{ needs.changed.outputs.empty == 'false' }}
+    strategy:
+      # One import failing must not cancel the others in the same merge: they are unrelated
+      # third-party projects that happen to have landed together.
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        slug: ${{ fromJSON(needs.changed.outputs.slugs) }}
+    permissions:
+      contents: write
+    uses: ./.github/workflows/import.yml
+    with:
+      slug: ${{ matrix.slug }}
+      publish: true
