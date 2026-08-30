@@ -1,0 +1,7 @@
+{
+  "slug": "joreilly-peopleinspace",
+  "upstream": "joreilly/PeopleInSpace",
+  "ref": "main",
+  "modules": [":app"],
+  "notes": "John O'Reilly's Kotlin Multiplatform sample. Reading the checkout: :app holds 3 @Preview functions and applies com.android.application, so the preview plugin injects beside it and this renders on the Android/Robolectric lane. :wearApp has more previews (8) but is Wear, whose multipreview annotations are declared in another module and need the pipeline's preview-annotations input — worth a second import once this one is proven, not part of the first. :common and :compose-desktop apply Compose but declare no @Preview of their own."
+}

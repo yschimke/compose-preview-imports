@@ -80,18 +80,32 @@ jobs:
           SLUG: ${{ inputs.slug }}
         run: |
           set -euo pipefail
-          test -f import.json || { echo "::error::import/${SLUG} has no import.json"; exit 1; }
+          config="imports/${SLUG}/import.json"
+          test -f "$config" || { echo "::error::import/${SLUG} has no ${config}"; exit 1; }
 
-          slug=$(jq -r '.slug' import.json)
-          upstream=$(jq -r '.upstream' import.json)
-          ref=$(jq -r '.ref // "main"' import.json)
-          modules=$(jq -r '(.modules // []) | join(",")' import.json)
+          slug=$(jq -r '.slug' "$config")
+          upstream=$(jq -r '.upstream' "$config")
+          ref=$(jq -r '.ref // "main"' "$config")
+          # The pipeline renders ONE module, or every previewable module when told `all`. A list of
+          # two would have been joined into a single bogus Gradle path, so it is refused here with
+          # the two things the author can actually do about it.
+          module_count=$(jq -r '(.modules // []) | length' "$config")
+          case "$module_count" in
+            0) modules="" ;;
+            1) modules=$(jq -r '.modules[0]' "$config") ;;
+            *)
+              echo "::error::import.json names ${module_count} modules; the pipeline renders one." \
+                "Either drop \"modules\" to publish every previewable module, or split this into" \
+                "one import per module."
+              exit 1
+              ;;
+          esac
 
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
           [ "$slug" = "$SLUG" ] || {
-            echo "::error::import.json says slug=${slug} but the branch is import/${SLUG}"
+            echo "::error::${config} says slug=${slug} but the branch is import/${SLUG}"
             exit 1
           }
           # `upstream` reaches a checkout and `ref` reaches a git command line. Both are reviewed in
@@ -117,10 +131,12 @@ jobs:
       system: ${{ inputs.slug }}
       # The spec describing an imported project lives in THIS repository, on the import's branch —
       # it is our description of their code, and it is not their business to carry it.
-      spec: catalog.spec.json
+      spec: imports/${{ inputs.slug }}/catalog.spec.json
       ref: import/${{ inputs.slug }}
       upstream-repository: ${{ needs.config.outputs.upstream }}
       upstream-ref: ${{ needs.config.outputs.ref }}
+      # Exactly one of these carries: `modules: all` sweeps every previewable module, `module`
+      # names one. The config job guarantees they are mutually exclusive.
       modules: ${{ needs.config.outputs.modules == '' && 'all' || '' }}
       module: ${{ needs.config.outputs.modules }}
       # Hand the render off instead of pushing it: publishing is the next job's business, and this
