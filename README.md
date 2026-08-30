@@ -65,8 +65,8 @@ which repository, which ref and which modules are about to be built before any o
   "slug": "joreilly-peopleinspace",
   "upstream": "joreilly/PeopleInSpace",
   "ref": "main",
-  "modules": ["shared"],
-  "notes": "KMP sample; previews live in :shared (commonMain)."
+  "modules": [":app"],
+  "notes": "KMP sample; :app holds the @Preview functions and applies com.android.application."
 }
 ```
 
