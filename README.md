@@ -52,9 +52,11 @@ which repository, which ref and which modules are about to be built before any o
    The branch is long-lived and is what the build reads, so it is not deleted on merge; merging is
    what adds the import to the registry the scheduled refresh walks.
 
-3. **When it lands, it builds.** Merging runs the import and publishes
-   `design-artifacts/<slug>`. Re-run it any time from the Actions tab —
-   **Import a project** → *Run workflow* → the slug — and every import is refreshed on a schedule.
+3. **When it lands, it builds.** Merging pushes `imports/<slug>/…` to `main`, and
+   [`import-on-merge.yml`](.github/workflows/import-on-merge.yml) runs every import that push
+   touched, publishing `design-artifacts/<slug>`. Re-run one any time from the Actions tab —
+   **Import a project** → *Run workflow* → the slug — and every registered import is refreshed
+   nightly by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml).
 
 ## What an import looks like
 
