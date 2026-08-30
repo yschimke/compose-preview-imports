@@ -1,0 +1,194 @@
+name: Import a project
+
+# Builds ONE imported project and publishes it to design-artifacts/<slug>.
+#
+# The security shape is the point of this file, so it is stated here rather than left to be
+# inferred from the job graph:
+#
+#   build    — checks out a THIRD-PARTY repository and runs its Gradle build.
+#              `permissions: {}`: this job holds no writable credential at all. The foreign build
+#              cannot push a branch, open a pull request, or read a secret, because there is nothing
+#              in its environment to do it with. Its only output is an uploaded artifact.
+#
+#   publish  — downloads that artifact and force-pushes it to design-artifacts/<slug>.
+#              `permissions: contents: write`, and it runs NO third-party code.
+#
+# Splitting them is what makes the write token safe. GITHUB_TOKEN is already minted per-run and
+# scoped to THIS repository — it cannot touch another repo, and it expires when the job ends — but a
+# token scoped to this repo is still a token an untrusted build could use to push a branch here.
+# Keeping the two in separate jobs means the credential and the foreign code are never in the same
+# process, so the blast radius of a malicious import is "the run produces a bad artifact", which the
+# publish job's own inputs bound, rather than "the run writes to this repository".
+#
+# No personal access token is involved anywhere. A PRIVATE upstream would need one — a fine-grained
+# PAT with Contents: Read on the named repositories only, passed to the upstream checkout step's
+# `token:` input and nowhere else — but every import here is public, so the checkout needs no
+# credential.
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: 'Import slug to build (the name after import/ on its branch).'
+        required: true
+        type: string
+      publish:
+        description: 'Force-push the result to design-artifacts/<slug>. Off = build only, for trying an import out.'
+        required: false
+        type: boolean
+        default: true
+  workflow_call:
+    inputs:
+      slug:
+        required: true
+        type: string
+      publish:
+        required: false
+        type: boolean
+        default: true
+
+# Default to nothing. Each job opts into exactly what it needs, below.
+permissions: {}
+
+concurrency:
+  # One run per import. A refresh sweep and a manual re-run of the same project queue rather than
+  # racing each other to force-push the same delivery branch.
+  group: import-${{ inputs.slug }}
+  cancel-in-progress: false
+
+jobs:
+  # Read the import's description off its own branch. Split out so the build job's inputs are
+  # ordinary strings a human can read in the run log, rather than a JSON blob parsed mid-build.
+  config:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      upstream: ${{ steps.read.outputs.upstream }}
+      ref: ${{ steps.read.outputs.ref }}
+      modules: ${{ steps.read.outputs.modules }}
+    steps:
+      - name: Check out the import branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: import/${{ inputs.slug }}
+          persist-credentials: false
+
+      - name: Read import.json
+        id: read
+        env:
+          SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          test -f import.json || { echo "::error::import/${SLUG} has no import.json"; exit 1; }
+
+          slug=$(jq -r '.slug' import.json)
+          upstream=$(jq -r '.upstream' import.json)
+          ref=$(jq -r '.ref // "main"' import.json)
+          modules=$(jq -r '(.modules // []) | join(",")' import.json)
+
+          # The slug names the delivery branch and the route the server serves this at, so a branch
+          # whose import.json disagrees with its own name would publish to somewhere nobody is
+          # looking. Caught here rather than three jobs later.
+          [ "$slug" = "$SLUG" ] || {
+            echo "::error::import.json says slug=${slug} but the branch is import/${SLUG}"
+            exit 1
+          }
+          # `upstream` reaches a checkout and `ref` reaches a git command line. Both are reviewed in
+          # the import's pull request, and both are validated anyway — review is a control, not a
+          # parser.
+          echo "$upstream" | grep -Eq '^[A-Za-z0-9._-]+/[A-Za-z0-9._-]+$' || {
+            echo "::error::upstream '${upstream}' is not an owner/repo"; exit 1; }
+          echo "$ref" | grep -Eq '^[A-Za-z0-9._/-]+$' || {
+            echo "::error::ref '${ref}' is not a usable git ref"; exit 1; }
+
+          {
+            echo "upstream=${upstream}"
+            echo "ref=${ref}"
+            echo "modules=${modules}"
+          } >> "$GITHUB_OUTPUT"
+
+  # Runs the imported project's own build. Holds no credential — see the header.
+  build:
+    needs: config
+    permissions: {}
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
+    with:
+      system: ${{ inputs.slug }}
+      # The spec describing an imported project lives in THIS repository, on the import's branch —
+      # it is our description of their code, and it is not their business to carry it.
+      spec: catalog.spec.json
+      ref: import/${{ inputs.slug }}
+      upstream-repository: ${{ needs.config.outputs.upstream }}
+      upstream-ref: ${{ needs.config.outputs.ref }}
+      modules: ${{ needs.config.outputs.modules == '' && 'all' || '' }}
+      module: ${{ needs.config.outputs.modules }}
+      # Hand the render off instead of pushing it: publishing is the next job's business, and this
+      # one must not hold a token that could.
+      publish: false
+      upload-out: true
+
+  publish:
+    needs: [config, build]
+    if: ${{ inputs.publish }}
+    runs-on: ubuntu-latest
+    permissions:
+      # The only write in the whole workflow, in the only job that runs no third-party code.
+      contents: write
+    steps:
+      - name: Check out this repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Fetch the push helper
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: yschimke/compose-ai-tools
+          ref: main
+          path: compose-ai-tools
+          persist-credentials: false
+
+      - name: Download the rendered catalog
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f28c025e4dfd1ca53b3 # v6.0.0
+        with:
+          name: ${{ inputs.slug }}-catalog-out
+          path: out
+
+      - name: Force-push to design-artifacts/${{ inputs.slug }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUG: ${{ inputs.slug }}
+          UPSTREAM: ${{ needs.config.outputs.upstream }}
+          UPSTREAM_REF: ${{ needs.config.outputs.ref }}
+        run: |
+          set -euo pipefail
+          test -d out || { echo "::error::no out/ to publish"; exit 1; }
+
+          # The same helper, and the same delivery-branch contract, the first-party catalogs use —
+          # so an imported catalog is an ordinary one to every reader downstream.
+          TARGET_BRANCH="design-artifacts/${SLUG}" \
+          REPO="$GITHUB_REPOSITORY" \
+          GITHUB_TOKEN_INLINE="$GH_TOKEN" \
+          MSG="chore(import): rebuild ${SLUG} from ${UPSTREAM}@${UPSTREAM_REF} ($(date -u +%F))" \
+          SKIP_IF_UNCHANGED=1 \
+          REVISION_PREVIEW_INDEX=1 \
+          GIT_AUTHOR_NAME="compose-preview-imports" \
+          GIT_AUTHOR_EMAIL="noreply@schimke.ee" \
+          GIT_COMMITTER_NAME="compose-preview-imports" \
+          GIT_COMMITTER_EMAIL="noreply@schimke.ee" \
+            bash "$GITHUB_WORKSPACE/compose-ai-tools/.github/actions/apply/lib/push-branch.sh"
+
+      - name: Summary
+        env:
+          SLUG: ${{ inputs.slug }}
+          UPSTREAM: ${{ needs.config.outputs.upstream }}
+          UPSTREAM_REF: ${{ needs.config.outputs.ref }}
+        run: |
+          {
+            echo "### Imported \`${UPSTREAM}\`"
+            echo
+            echo "- built from \`${UPSTREAM}@${UPSTREAM_REF}\`"
+            echo "- published to \`design-artifacts/${SLUG}\`"
+            echo "- served at https://preview.coo.ee/${SLUG}/ once the box refreshes"
+          } >> "$GITHUB_STEP_SUMMARY"

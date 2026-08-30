@@ -1,0 +1,67 @@
+name: Refresh all imports
+
+# Rebuilds every registered import on a schedule, so a catalog here follows the project it was
+# imported from instead of freezing at the commit it was first built from.
+#
+# The registry lives on `main` and the per-import config lives on `import/<slug>` branches. That
+# split is not cosmetic: a `schedule` trigger only ever fires for a workflow on the DEFAULT branch
+# and checks that branch out, so a sweep driven from the import branches themselves would never run.
+# `main` holds the list; each dispatched run checks out its own import branch for the detail.
+
+on:
+  schedule:
+    # 04:20 UTC daily — off the hour, so this doesn't pile onto the top-of-hour runner contention.
+    - cron: '20 4 * * *'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: refresh-imports
+  cancel-in-progress: false
+
+jobs:
+  registry:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    outputs:
+      slugs: ${{ steps.read.outputs.slugs }}
+      empty: ${{ steps.read.outputs.empty }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Read the registry
+        id: read
+        run: |
+          set -euo pipefail
+          slugs=$(jq -c '[.imports[].slug]' imports.json)
+          echo "slugs=${slugs}" >> "$GITHUB_OUTPUT"
+          # An empty registry is the normal state of a freshly bootstrapped repository, not a
+          # failure — a matrix over an empty list is an error, so the build job is skipped instead.
+          if [ "$slugs" = "[]" ]; then
+            echo "empty=true" >> "$GITHUB_OUTPUT"
+            echo "::notice::no imports registered yet"
+          else
+            echo "empty=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  refresh:
+    needs: registry
+    if: ${{ needs.registry.outputs.empty == 'false' }}
+    strategy:
+      # One import's build failing must not cancel the others: they are unrelated third-party
+      # projects that happen to share a sweep.
+      fail-fast: false
+      # Imports are whole Gradle builds of foreign projects. Two at a time keeps the sweep polite.
+      max-parallel: 2
+      matrix:
+        slug: ${{ fromJSON(needs.registry.outputs.slugs) }}
+    permissions:
+      contents: write
+    uses: ./.github/workflows/import.yml
+    with:
+      slug: ${{ matrix.slug }}
+      publish: true

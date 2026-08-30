@@ -1,0 +1,5 @@
+{
+  "$comment": "The registry of imported projects. One entry per import; the detail lives on the import's own branch (import/<slug>/import.json). A pull request adding a line here IS the import — it is what a reviewer reads before this repository starts building somebody else's code. The scheduled refresh walks this list.",
+  "schema": "compose-preview-imports/registry/v1",
+  "imports": []
+}
