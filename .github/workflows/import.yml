@@ -193,11 +193,11 @@ jobs:
       # The only write in the whole workflow, in the only job that runs no third-party code.
       contents: write
     steps:
-      - name: Check out this repository
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          persist-credentials: false
-
+      # This repository is deliberately NOT checked out. Nothing in this job reads it — the content
+      # to publish arrives as an artifact and the helper comes from compose-ai-tools — and a
+      # checkout here puts a git repo with its own `origin` remote in the workspace, which the push
+      # helper's `git remote add origin` then collides with. Same reasoning as compose-ai-tools'
+      # publish-catalog job, which stopped checking the caller out for the same reason.
       - name: Fetch the push helper
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -221,6 +221,12 @@ jobs:
         run: |
           set -euo pipefail
           test -d out || { echo "::error::no out/ to publish"; exit 1; }
+
+          # The helper runs `git init`, `git remote add origin` and `git add -A` in the CURRENT
+          # directory, so the directory it starts in is exactly what gets force-pushed. It must be
+          # the rendered catalog and nothing else — run from the workspace root it would stage the
+          # whole checkout instead. compose-ai-tools' own publish step cds the same way.
+          cd "$GITHUB_WORKSPACE/out"
 
           # The same helper, and the same delivery-branch contract, the first-party catalogs use —
           # so an imported catalog is an ordinary one to every reader downstream.
