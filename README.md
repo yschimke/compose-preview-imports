@@ -69,6 +69,7 @@ which repository, which ref and which modules are about to be built before any o
   "upstream": "joreilly/PeopleInSpace",
   "ref": "main",
   "modules": [":app"],
+  "renderer": "android",
   "notes": "KMP sample; :app holds the @Preview functions and applies com.android.application."
 }
 ```
@@ -79,11 +80,36 @@ which repository, which ref and which modules are about to be built before any o
 | `upstream` | The `owner/repo` being imported. Never modified by anything here. |
 | `ref` | Branch or tag of the upstream project to build. Pinning a tag makes an import reproducible; `main` follows the project. |
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
+| `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
 
 `modules` names **at most one** Gradle path: the pipeline renders one module, or every previewable
 module when the field is omitted. Naming two is refused, with a message saying to split the import
 or drop the field.
+
+### Which renderer
+
+`renderer` is not a preference; it is a fact about the upstream module, and getting it wrong fails
+the render rather than producing a worse one.
+
+| The module's `@Preview` comes from | `renderer` | Why |
+| --- | --- | --- |
+| `androidx.compose.ui.tooling.preview.Preview` | `android` | Renders under Robolectric, with the Android SDK ubuntu-latest already carries. |
+| `org.jetbrains.compose.ui.tooling.preview.Preview`, in a `commonMain` source set | `desktop` | A Compose Multiplatform preview has no Android context to render in; it goes through the desktop/Skiko lane, which needs Mesa software GL, fonts and xvfb. |
+
+Read the import line of the file the preview lives in — that is the whole test. Of the samples this
+was built against, PeopleInSpace's `:app` and GalwayBus's `:androidApp` are `android`; BikeShare's
+`:common` and ClimateTraceKMP's `:composeApp` are `desktop`.
+
+### Activities are not rendered
+
+An import renders **composables**. The activity and app-tour captures a first-party catalog gets —
+the ones synthesised from the merged manifest, where the launcher activity's screenshot becomes the
+app's hero image — are excluded, because rendering one launches the app: Robolectric instantiates
+the manifest `Application` and runs `onCreate`, so the project's whole DI graph executes. That is
+more of an unvouched-for build than this repository should run to draw a component, and the app's
+own screen is not what an imported catalog is for. PeopleInSpace is the worked example: both its
+`@Preview` functions render clean, while its activity tour dies in `initKoin()`.
 
 Beside it, `imports/<slug>/catalog.spec.json` is the catalog's cover sheet — `system`, `title`,
 `module`, `modes`. It carries no per-component inventory: that comes from the previews themselves,
