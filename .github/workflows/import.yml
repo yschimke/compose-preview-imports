@@ -84,6 +84,7 @@ jobs:
       upstream: ${{ steps.read.outputs.upstream }}
       ref: ${{ steps.read.outputs.ref }}
       modules: ${{ steps.read.outputs.modules }}
+      renderer: ${{ steps.read.outputs.renderer }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -118,6 +119,22 @@ jobs:
               ;;
           esac
 
+          # Which render lane. An ANDROID @Preview (androidx.compose.ui.tooling.preview.Preview)
+          # renders under Robolectric; a Compose Multiplatform @Preview in a commonMain source set
+          # (org.jetbrains.compose.ui.tooling.preview.Preview) has no Android context to render in
+          # and goes through the desktop/Skiko lane instead. Which one a module needs is a property
+          # of the upstream project, not a preference, so it is recorded per import rather than
+          # guessed: BikeShare's :common and ClimateTraceKMP's :composeApp are commonMain CMP,
+          # PeopleInSpace's :app and GalwayBus's :androidApp are Android.
+          renderer=$(jq -r '.renderer // "android"' "$config")
+          case "$renderer" in
+            android|desktop) ;;
+            *)
+              echo "::error::renderer '${renderer}' is not one of: android, desktop"
+              exit 1
+              ;;
+          esac
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -137,6 +154,7 @@ jobs:
             echo "upstream=${upstream}"
             echo "ref=${ref}"
             echo "modules=${modules}"
+            echo "renderer=${renderer}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -160,6 +178,10 @@ jobs:
       module: ${{ needs.config.outputs.modules }}
       # Hand the render off instead of pushing it: publishing is the next job's business, and this
       # one must not hold a token that could.
+      # A commonMain CMP preview cannot render under Robolectric, so the lane is the import's to
+      # declare. The reusable workflow installs Mesa software GL + fonts and runs the render under
+      # xvfb when this is true; ubuntu-latest already carries the Android SDK for the false case.
+      desktop-render: ${{ needs.config.outputs.renderer == 'desktop' }}
       publish: false
       upload-out: true
 
