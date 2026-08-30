@@ -11,6 +11,8 @@ execution boundary before changing a workflow.
 - Branch names use `agent/...` for work on this repository itself. `import/<slug>` is reserved for
   imports and `design-artifacts/<slug>` for machine-written delivery branches.
 - Commit subjects and PR titles use Conventional Commits.
+- `.compose-preview/catalogs.json` is generated from `imports.json`. Never hand-edit it: run
+  `scripts/sync-catalog-registry.sh` and commit the result. CI fails when the two disagree.
 
 ## The rule that is the point of this repository
 

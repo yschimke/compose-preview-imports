@@ -8,8 +8,10 @@ plugin.
 Nothing here is a fork. An *import* is a small description of somebody else's repository, held on a
 branch of this one; a GitHub Actions runner checks that project out, injects the Compose Preview
 plugin at build time, renders its previews, and force-pushes the result to a `design-artifacts/<slug>`
-branch **of this repository**. The preview server then onboards that branch exactly as it onboards a
-catalog a project published for itself.
+branch **of this repository**. A preview server that nominates this repository as a *catalog
+registry* then serves that branch exactly as it serves a catalog a project published for itself —
+with no second, manual step against the box, which is what makes merging the import's pull request
+the whole import.
 
 ## Why the builds happen here and not on the preview box
 
@@ -58,6 +60,44 @@ which repository, which ref and which modules are about to be built before any o
    touched, publishing `design-artifacts/<slug>`. Re-run one any time from the Actions tab —
    **Import a project** → *Run workflow* → the slug — and every registered import is refreshed
    nightly by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml).
+
+4. **And it is served.** Nothing else to do: adding the slug to `imports.json` also adds it to
+   [`.compose-preview/catalogs.json`](.compose-preview/catalogs.json) (below), which is the document
+   preview.coo.ee re-reads on its catalog-refresh cadence. The catalog appears there once its first
+   build finishes.
+
+## How the catalogs reach the preview server
+
+Publishing a delivery branch and *serving* it were two unrelated acts for as long as the served set
+was enumerated on the box: `design-artifacts/joreilly-peopleinspace` could be complete, verifiable
+and reachable while `preview.coo.ee/joreilly-peopleinspace/` served a permanent 404, because nothing
+had told the server it existed. For a repository whose entire model is "the pull request is the
+import", that is the one gap that makes the model untrue.
+
+[`.compose-preview/catalogs.json`](.compose-preview/catalogs.json) closes it. A preview server
+started with
+
+```
+--catalog-registry yschimke/compose-preview-imports
+```
+
+fetches that file from this repository's default branch and serves every catalog it lists, from this
+repository's own `design-artifacts/<slug>` branches. It re-reads it on the same cadence it polls
+those branches, so a merged import is picked up without a restart, and an import removed from
+`imports.json` is retired.
+
+The file is **generated** from `imports.json` by
+[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh) and their agreement is a CI
+gate — run the script and commit the result whenever you touch the registry. Two files, one fact:
+`imports.json` is what a reviewer reads, and this is the shape a preview server already understands
+(it is the server's own `catalogs.json` document), so nothing between here and the box has to
+translate.
+
+Nominating a registry does not hand this repository the box. An entry here may only be served from
+this repository's own branches, its front-page grouping is claimed against the groups declared in
+this same file, and the operator's own configuration wins any collision. A catalog served this way
+still badges `unverified` until this repository's producer key is trusted on the box, exactly like
+any other.
 
 ## What an import looks like
 
