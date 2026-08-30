@@ -8,25 +8,26 @@ the whole job — so the boundary is written down rather than inferred.
 An import's `build` job checks out a third-party repository and runs its Gradle build. Arbitrary
 code executes at that moment, and the design assumes it is hostile:
 
-- **It holds nothing that can write.** The job declares `permissions: contents: read`, so the
-  `GITHUB_TOKEN` in its environment is read-only: it cannot push a branch, force-push a delivery
-  ref, open a pull request, edit a workflow, or write a release. No other secret is passed to it.
+- **The job that runs the build holds no write scope.** The imported project's Gradle runs in the
+  pipeline's `generate` job, which declares `contents: read`. It cannot push a branch, force-push a
+  delivery ref, open a pull request, edit a workflow, or write a release. No other secret is passed
+  to it.
 
-  It is `contents: read` rather than `{}` because a called workflow cannot be granted more than the
-  calling job holds, and the pipeline's jobs ask for `contents: read` to check anything out — `{}`
-  fails the run at startup, before any job exists.
+  The calling job here declares `contents: **write**`, and that looks alarming until you see what
+  it is: a **ceiling**, not a grant. A calling job must declare at least the maximum any job in the
+  called workflow asks for, and that workflow's `publish-catalog` job asks for write — so anything
+  less fails the run before a single job starts, whatever `publish: false` says. Permissions are
+  static; the input only skips the job, it does not lower the requirement.
 
-  Read being *enough* is not automatic, and for a while it was not true. `design-artifacts-reusable.yml`'s
-  `generate` job both rendered — running the imported project's Gradle — and force-pushed the
-  delivery branch, so calling it required granting `contents: write` to the very job running that
-  build. No arrangement on this side could have fixed that: permissions are static, and `publish:
-  false` stops the push from executing without removing the scope. It was corrected upstream in
-  [compose-ai-tools#4856](https://github.com/yschimke/compose-ai-tools/pull/4856), which moved
-  publishing into a job that runs none of the rendered code. Until that landed, an import could not
-  start at all.
+  Each called job then runs with **its own** declared permissions, capped by that ceiling. So the
+  render gets read, and the write scope exists only in `publish-catalog`, which runs none of the
+  imported code. The calling job itself is a `uses:` shim that executes nothing, so the ceiling it
+  names is never a process the imported build is inside of.
 
-  What the boundary rests on is that the untrusted build holds no *write* scope — now true on both
-  sides of the call.
+  This was established by running it, not by reading the documentation: `contents: read` on the
+  calling job fails at startup, `contents: write` starts and the render proceeds under read. An
+  earlier version of this file claimed read was sufficient. It was not, and the reason it was not
+  had nothing to do with what the render needs.
 - **It cannot publish.** Its only output is an uploaded artifact. A separate `publish` job — which
   runs no third-party code — downloads that artifact and force-pushes it.
 - **It is thrown away.** The runner is ephemeral and destroyed when the job ends.

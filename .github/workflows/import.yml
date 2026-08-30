@@ -11,15 +11,21 @@ name: Import a project
 #              release, because the token in its environment carries no write scope at all. Its only
 #              output is an uploaded artifact.
 #
-#              This is `contents: read` rather than `{}` because a called workflow cannot be granted
-#              more than the calling job holds, and the pipeline's own jobs ask for `contents: read`
-#              to check anything out. `{}` fails the run before any job starts.
+#              `contents: write` here is a CEILING, not what the build gets, and the distinction is
+#              the whole reason this is safe. A calling job must declare at least the maximum any
+#              job in the called workflow asks for — the pipeline's `publish-catalog` job asks for
+#              write, so anything less fails the run before a single job starts, whatever
+#              `publish: false` says (permissions are static; the input only skips the job).
 #
-#              For that to be ENOUGH, the pipeline had to stop asking for write in the job that
-#              renders: its `generate` job both ran the build and force-pushed, so calling it forced
-#              a write token into the same job as the imported code — the exact thing this split is
-#              here to prevent. compose-ai-tools#4856 moved publishing into its own job, and until
-#              that landed an import could not run at all.
+#              Each called job then runs with ITS OWN declared permissions, capped by that ceiling.
+#              So the job that actually renders the imported project (`generate`) holds
+#              `contents: read` and nothing more, and the write scope exists only in
+#              `publish-catalog`, which runs none of the imported code. Verified by running it:
+#              `contents: read` here fails at startup, `contents: write` starts and the render
+#              proceeds under read.
+#
+#              This job runs nothing itself — it is a `uses:` shim — so the ceiling it declares is
+#              never a process the imported build is inside of.
 #
 #   publish  — downloads that artifact and force-pushes it to design-artifacts/<slug>.
 #              `permissions: contents: write`, and it runs NO third-party code.
@@ -133,12 +139,12 @@ jobs:
             echo "modules=${modules}"
           } >> "$GITHUB_OUTPUT"
 
-  # Runs the imported project's own build. Holds a read-only token and nothing else — see the
-  # header for why it is `contents: read` and not `{}`.
+  # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
+  # the called workflow needs, NOT the scope its render runs under — that job declares read itself.
   build:
     needs: config
     permissions:
-      contents: read
+      contents: write
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ inputs.slug }}
