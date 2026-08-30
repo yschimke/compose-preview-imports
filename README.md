@@ -44,9 +44,13 @@ which repository, which ref and which modules are about to be built before any o
    The response names each Gradle module, its `@Preview` count, and whether the preview plugin can
    be injected into it. That is what you write the import down from.
 
-2. **Open the import as a pull request.** Create the branch `import/<slug>` holding `import.json`
-   (below), and add the slug to [`imports.json`](imports.json) on `main`. The pull request is the
-   review: the diff says exactly which third-party code this repository is about to start building.
+2. **Open the import as a pull request.** Create the branch `import/<slug>` adding
+   `imports/<slug>/import.json` (below), `imports/<slug>/catalog.spec.json`, and the slug in
+   [`imports.json`](imports.json). Open it against `main`: the pull request is the review, and its
+   diff says exactly which third-party code this repository is about to start building.
+
+   The branch is long-lived and is what the build reads, so it is not deleted on merge; merging is
+   what adds the import to the registry the scheduled refresh walks.
 
 3. **When it lands, it builds.** Merging runs the import and publishes
    `design-artifacts/<slug>`. Re-run it any time from the Actions tab —
@@ -54,7 +58,7 @@ which repository, which ref and which modules are about to be built before any o
 
 ## What an import looks like
 
-`import.json`, on the branch `import/<slug>`:
+`imports/<slug>/import.json`, on the branch `import/<slug>`:
 
 ```json
 {
@@ -73,6 +77,14 @@ which repository, which ref and which modules are about to be built before any o
 | `ref` | Branch or tag of the upstream project to build. Pinning a tag makes an import reproducible; `main` follows the project. |
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
+
+`modules` names **at most one** Gradle path: the pipeline renders one module, or every previewable
+module when the field is omitted. Naming two is refused, with a message saying to split the import
+or drop the field.
+
+Beside it, `imports/<slug>/catalog.spec.json` is the catalog's cover sheet — `system`, `title`,
+`module`, `modes`. It carries no per-component inventory: that comes from the previews themselves,
+and an imported project has none to declare.
 
 The upstream project is **never** asked to change. The preview plugin is injected at build time via
 the CLI's init script, which applies it to any module that already applies an Android or Compose
