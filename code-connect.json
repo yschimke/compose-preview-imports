@@ -1,0 +1,123 @@
+{
+  "system": "joreilly-climatetracekmp",
+  "title": "ClimateTrace",
+  "label": "Compose",
+  "source": {
+    "repo": "joreilly/ClimateTraceKMP",
+    "ref": "1960a7c0ac20cf8037dafa44eba7b98aabbd0a39",
+    "module": ":composeApp"
+  },
+  "generatedAt": "2026-08-31T12:50:39.550Z",
+  "mappings": [
+    {
+      "componentId": "country-row",
+      "figmaLayerName": "country-row",
+      "componentName": "CountryRowPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CountryRowPreview",
+      "figmaSvg": "figma/country-row.svg"
+    },
+    {
+      "componentId": "country-row-selected",
+      "figmaLayerName": "country-row-selected",
+      "componentName": "CountryRowSelectedPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CountryRowSelectedPreview",
+      "figmaSvg": "figma/country-row-selected.svg"
+    },
+    {
+      "componentId": "country-row-unranked",
+      "figmaLayerName": "country-row-unranked",
+      "componentName": "CountryRowUnrankedPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CountryRowUnrankedPreview",
+      "figmaSvg": "figma/country-row-unranked.svg"
+    },
+    {
+      "componentId": "key-figures-row",
+      "figmaLayerName": "key-figures-row",
+      "componentName": "KeyFiguresRowPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KeyFiguresRowPreview",
+      "figmaSvg": "figma/key-figures-row.svg"
+    },
+    {
+      "componentId": "key-figures-row-rising",
+      "figmaLayerName": "key-figures-row-rising",
+      "componentName": "KeyFiguresRowRisingPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KeyFiguresRowRisingPreview",
+      "figmaSvg": "figma/key-figures-row-rising.svg"
+    },
+    {
+      "componentId": "co2-trend-sparkline",
+      "figmaLayerName": "co2-trend-sparkline",
+      "componentName": "CO2TrendSparklinePreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CO2TrendSparklinePreview",
+      "figmaSvg": "figma/co2-trend-sparkline.svg"
+    },
+    {
+      "componentId": "empty-state",
+      "figmaLayerName": "empty-state",
+      "componentName": "EmptyStatePreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "EmptyStatePreview",
+      "figmaSvg": "figma/empty-state.svg"
+    },
+    {
+      "componentId": "empty-state-message",
+      "figmaLayerName": "empty-state-message",
+      "componentName": "EmptyStateWithMessagePreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "EmptyStateWithMessagePreview",
+      "figmaSvg": "figma/empty-state-message.svg"
+    },
+    {
+      "componentId": "color-scheme",
+      "figmaLayerName": "color-scheme",
+      "componentName": "ColorSchemeLightPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ColorSchemeLightPreview",
+      "figmaSvg": "figma/color-scheme.svg"
+    },
+    {
+      "componentId": "color-scheme-dark",
+      "figmaLayerName": "color-scheme-dark",
+      "componentName": "ColorSchemeDarkPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ColorSchemeDarkPreview",
+      "figmaSvg": "figma/color-scheme-dark.svg"
+    },
+    {
+      "componentId": "typography",
+      "figmaLayerName": "typography",
+      "componentName": "TypographySpecimenPreview",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TypographySpecimenPreview",
+      "figmaSvg": "figma/typography.svg"
+    }
+  ]
+}

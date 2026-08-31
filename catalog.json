@@ -1,0 +1,844 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "joreilly-climatetracekmp",
+  "title": "ClimateTrace",
+  "components": [
+    {
+      "componentId": "country-row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/country-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 344,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/country-row__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 169
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 56,
+            "width": 84,
+            "height": 58
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 172,
+            "width": 1050,
+            "height": 169
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 228,
+            "width": 84,
+            "height": 58
+          },
+          "cornerRadius": 3
+        }
+      ],
+      "group": "Country list",
+      "caption": "The country list's row — name, continent and the rank badge — shown twice so two different ranks can be compared side by side.",
+      "wireframe": "wireframes/country-row.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 48,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "CountryRowPreview"
+    },
+    {
+      "componentId": "country-row-selected",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/country-row-selected/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 172,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/country-row-selected__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowSelectedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 169
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 56,
+            "width": 84,
+            "height": 58
+          },
+          "cornerRadius": 3
+        }
+      ],
+      "group": "Country list",
+      "caption": "The same row with `selectedCountry` matching it: primaryContainer background, and the text and badge colours that switch with it.",
+      "wireframe": "wireframes/country-row-selected.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 71,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "CountryRowSelectedPreview"
+    },
+    {
+      "componentId": "country-row-unranked",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/country-row-unranked/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 172,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/country-row-unranked__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowUnrankedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 169
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 56,
+            "width": 84,
+            "height": 58
+          },
+          "cornerRadius": 3
+        }
+      ],
+      "group": "Country list",
+      "caption": "The row with no entry in `rankings`, which is what the list shows before the ranking data has loaded — the badge is absent rather than zero.",
+      "wireframe": "wireframes/country-row-unranked.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 86,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "CountryRowUnrankedPreview"
+    },
+    {
+      "componentId": "key-figures-row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/key-figures-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 204,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/key-figures-row__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.KeyFiguresRowPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 246,
+            "height": 204
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 267,
+            "y": 0,
+            "width": 247,
+            "height": 204
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 535,
+            "y": 0,
+            "width": 247,
+            "height": 204
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 803,
+            "y": 0,
+            "width": 247,
+            "height": 204
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "group": "Detail",
+      "caption": "The detail pane's summary strip: emissions total, year-on-year change, rank, share and the per-capita figure with its own rank.",
+      "wireframe": "wireframes/key-figures-row.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 124,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "KeyFiguresRowPreview"
+    },
+    {
+      "componentId": "key-figures-row-rising",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/key-figures-row-rising/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 204,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/key-figures-row-rising__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.KeyFiguresRowRisingPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 246,
+            "height": 204
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 267,
+            "y": 0,
+            "width": 247,
+            "height": 204
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 535,
+            "y": 0,
+            "width": 247,
+            "height": 204
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 803,
+            "y": 0,
+            "width": 247,
+            "height": 204
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "group": "Detail",
+      "caption": "The other side of the delta — a positive change instead of a negative one, and `perCapitaRank = null`, so both conditional branches of the strip are covered.",
+      "wireframe": "wireframes/key-figures-row-rising.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 141,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "KeyFiguresRowRisingPreview"
+    },
+    {
+      "componentId": "co2-trend-sparkline",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/co2-trend-sparkline/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 315,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/co2-trend-sparkline__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CO2TrendSparklinePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Detail",
+      "caption": "The emissions-over-time sparkline, over six fixed yearly values with 2023 selected, so the shape is identical on every render.",
+      "wireframe": "wireframes/co2-trend-sparkline.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 159,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "CO2TrendSparklinePreview"
+    },
+    {
+      "componentId": "empty-state",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/empty-state/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/empty-state__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.EmptyStatePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Empty states",
+      "caption": "The list's fallback when no countries are available: the default \"No Countries Found!\" title and nothing else.",
+      "wireframe": "wireframes/empty-state.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 101,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "EmptyStatePreview"
+    },
+    {
+      "componentId": "empty-state-message",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/empty-state-message/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/empty-state-message__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.EmptyStateWithMessagePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Empty states",
+      "caption": "The same state given an explicit title and message — the second `Text` only composes when a message is passed.",
+      "wireframe": "wireframes/empty-state-message.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 111,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "EmptyStateWithMessagePreview"
+    },
+    {
+      "componentId": "color-scheme",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/color-scheme/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1067,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/color-scheme__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.ColorSchemeLightPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 110,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 131,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 225,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 246,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 340,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 361,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 455,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 476,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 570,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 591,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 685,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 706,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 800,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 821,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 915,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 936,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        }
+      ],
+      "group": "Theme",
+      "caption": "ClimateTraceTheme's Material 3 colour roles as labelled swatches.",
+      "wireframe": "wireframes/color-scheme.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 216,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "ColorSchemeLightPreview"
+    },
+    {
+      "componentId": "color-scheme-dark",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/color-scheme-dark/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1067,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/color-scheme-dark__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.ColorSchemeDarkPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 110,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 131,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 225,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 246,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 340,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 361,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 455,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 476,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 570,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 591,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 685,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 706,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 800,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 821,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 915,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 936,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        }
+      ],
+      "group": "Theme",
+      "caption": "The same roles under the dark scheme.",
+      "wireframe": "wireframes/color-scheme-dark.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 224,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "ColorSchemeDarkPreview"
+    },
+    {
+      "componentId": "typography",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/typography/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1271,
+          "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/typography__ideal__default",
+          "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.TypographySpecimenPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Theme",
+      "caption": "The theme's type scale, one specimen line per style.",
+      "wireframe": "wireframes/typography.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 240,
+      "sourceDirectory": "composeApp",
+      "sourceFunction": "TypographySpecimenPreview"
+    }
+  ],
+  "renderer": "compose-preview 1.58.0",
+  "generatedAt": "2026-08-31T12:50:39.520Z",
+  "source": {
+    "repo": "joreilly/ClimateTraceKMP",
+    "ref": "1960a7c0ac20cf8037dafa44eba7b98aabbd0a39",
+    "module": ":composeApp"
+  }
+}

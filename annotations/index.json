@@ -1,0 +1,2505 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "country-row__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 169
+        },
+        "label": "pad 12dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "12",
+          "padding.end": "16",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 168,
+          "y": 56,
+          "width": 84,
+          "height": 58
+        },
+        "label": "r 3dp",
+        "detail": {
+          "cornerRadius": "3",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 172,
+          "width": 1050,
+          "height": 169
+        },
+        "label": "pad 12dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "12",
+          "padding.end": "16",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 168,
+          "y": 228,
+          "width": 84,
+          "height": 58
+        },
+        "label": "r 3dp",
+        "detail": {
+          "cornerRadius": "3",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "#42",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 32,
+          "width": 155,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ireland",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 95,
+          "width": 211,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Europe • IRL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 236,
+          "width": 51,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "#7",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 204,
+          "width": 126,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Brazil",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 267,
+          "width": 354,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "South America • BRA",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "country-row-selected__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 169
+        },
+        "label": "pad 12dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "12",
+          "padding.end": "16",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 168,
+          "y": 56,
+          "width": 84,
+          "height": 58
+        },
+        "label": "r 3dp",
+        "detail": {
+          "cornerRadius": "3",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 64,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "#42",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 32,
+          "width": 177,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ireland",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 95,
+          "width": 211,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Europe • IRL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "country-row-unranked__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 169
+        },
+        "label": "pad 12dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "12",
+          "padding.end": "16",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 168,
+          "y": 56,
+          "width": 84,
+          "height": 58
+        },
+        "label": "r 3dp",
+        "detail": {
+          "cornerRadius": "3",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 32,
+          "width": 155,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ireland",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 284,
+          "y": 95,
+          "width": 211,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Europe • IRL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "key-figures-row__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 246,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 267,
+          "y": 0,
+          "width": 247,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 535,
+          "y": 0,
+          "width": 247,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 803,
+          "y": 0,
+          "width": 247,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "width": 78,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "CO₂e",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "width": 184,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "54.9 Mt",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 136,
+          "width": 157,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "-3.9% yoy",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 293,
+          "y": 26,
+          "width": 78,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Rank",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 293,
+          "y": 73,
+          "width": 96,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "#42",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 293,
+          "y": 136,
+          "width": 31,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "—",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 561,
+          "y": 26,
+          "width": 162,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Per Capita",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 561,
+          "y": 73,
+          "width": 142,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "10.4 t",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 561,
+          "y": 136,
+          "width": 65,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "#28",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 829,
+          "y": 26,
+          "width": 90,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Share",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 829,
+          "y": 73,
+          "width": 149,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "0.15%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 829,
+          "y": 136,
+          "width": 31,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "—",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "key-figures-row-rising__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 246,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 267,
+          "y": 0,
+          "width": 247,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 535,
+          "y": 0,
+          "width": 247,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 803,
+          "y": 0,
+          "width": 247,
+          "height": 204
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 26,
+          "width": 78,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "CO₂e",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 73,
+          "width": 184,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "58.3 Mt",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 136,
+          "width": 171,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "+4.5% yoy",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 293,
+          "y": 26,
+          "width": 78,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Rank",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 293,
+          "y": 73,
+          "width": 96,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "#40",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 293,
+          "y": 136,
+          "width": 31,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "—",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 561,
+          "y": 26,
+          "width": 162,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Per Capita",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 561,
+          "y": 73,
+          "width": 142,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "11.1 t",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 561,
+          "y": 136,
+          "width": 31,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "—",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 829,
+          "y": 26,
+          "width": 90,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Share",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 829,
+          "y": 73,
+          "width": 149,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "0.16%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 829,
+          "y": 136,
+          "width": 31,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "—",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "co2-trend-sparkline__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 386,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Trend — 2023: 54.9 Mt",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 211,
+          "width": 79,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "2018",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 971,
+          "y": 211,
+          "width": 79,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "2023",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "empty-state__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 305,
+          "y": 1019,
+          "width": 441,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "No Countries Found!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "empty-state-message__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 397,
+          "y": 987,
+          "width": 257,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "No matches",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 157,
+          "y": 1050,
+          "width": 736,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "No country matched that search.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "color-scheme__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 110,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 131,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 225,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 246,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 340,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 361,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 455,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 476,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 570,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 591,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 685,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 706,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 800,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 821,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 915,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 936,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 321,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Colour scheme",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 131,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 136,
+          "width": 148,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "primary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 246,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 251,
+          "width": 332,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "primaryContainer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 361,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 366,
+          "width": 196,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "secondary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 476,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 481,
+          "width": 380,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "secondaryContainer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 591,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 596,
+          "width": 141,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "tertiary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 706,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 711,
+          "width": 140,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "surface",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 821,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 826,
+          "width": 274,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "surfaceVariant",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 936,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 941,
+          "width": 92,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "error",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "color-scheme-dark__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 110,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 131,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 225,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 246,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 340,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 361,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 455,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 476,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 570,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 591,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 685,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 706,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 800,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 821,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 915,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 936,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 321,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Colour scheme",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 131,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 136,
+          "width": 148,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "primary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 246,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 251,
+          "width": 332,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "primaryContainer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 361,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 366,
+          "width": 196,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "secondary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 476,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 481,
+          "width": 380,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "secondaryContainer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 591,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 596,
+          "width": 141,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "tertiary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 706,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 711,
+          "width": 140,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "surface",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 821,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 826,
+          "width": 274,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "surfaceVariant",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 936,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 941,
+          "width": 92,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "error",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "typography__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 53,
+          "width": 199,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "displaySmall",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 95,
+          "width": 966,
+          "height": 232
+        },
+        "label": "text 36sp/44",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "36",
+          "lineHeight": "44",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 349,
+          "width": 259,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "headlineMedium",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 391,
+          "width": 784,
+          "height": 95
+        },
+        "label": "text 28sp/36",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "28",
+          "lineHeight": "36",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 508,
+          "width": 151,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "titleLarge",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 550,
+          "width": 616,
+          "height": 74
+        },
+        "label": "text 22sp/28",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "22",
+          "lineHeight": "28",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 646,
+          "width": 187,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "titleMedium",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 688,
+          "width": 459,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 773,
+          "width": 165,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "bodyLarge",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 815,
+          "width": 474,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 900,
+          "width": 200,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "bodyMedium",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 942,
+          "width": 403,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1017,
+          "width": 165,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "labelLarge",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1059,
+          "width": 397,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1134,
+          "width": 164,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "labelSmall",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1176,
+          "width": 334,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Emissions by country",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ]
+  },
+  "references": {}
+}
