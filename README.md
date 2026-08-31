@@ -121,8 +121,18 @@ any other.
 | `ref` | Branch or tag of the upstream project to build. Pinning a tag makes an import reproducible; `main` follows the project. |
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
+| `previewAnnotations` | Optional. Space-separated multipreview annotation names (e.g. `WearPreviewDevices WearPreviewFontScales`) that the spec pre-flight cannot see for itself. Wear catalogs always need this. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
+
+`previewAnnotations` exists because the spec pre-flight is a **source** scan: it reads the
+upstream's `.kt` files and matches `@Preview` by name, before anything is built. A preview annotated
+only with a multipreview declared in *another* module is invisible to it, so every spec entry naming
+such a preview fails with *"matches no @Preview function in the scanned module"* even though the
+render would have produced it. `joreilly/Confetti`'s `:wearApp` is the case that proved it here:
+its screen previews carry `@WearPreviewDevices` + `@WearPreviewFontScales` and nothing else, and the
+import failed on all of them while the tile and theme previews — which carry a direct `@Preview` —
+matched fine.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding

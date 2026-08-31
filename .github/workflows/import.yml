@@ -86,6 +86,7 @@ jobs:
       modules: ${{ steps.read.outputs.modules }}
       renderer: ${{ steps.read.outputs.renderer }}
       javaVersion: ${{ steps.read.outputs.javaVersion }}
+      previewAnnotations: ${{ steps.read.outputs.previewAnnotations }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -146,6 +147,22 @@ jobs:
             exit 1
           }
 
+          # Multipreview annotations the spec pre-flight cannot see for itself.
+          #
+          # The pre-flight is a SOURCE scan: it reads the upstream's .kt files and matches @Preview
+          # by name. A preview annotated only with a multipreview declared in another module —
+          # @WearPreviewDevices, @WearPreviewFontScales — is invisible to it, and every spec entry
+          # naming such a preview fails with "matches no @Preview function in the scanned module".
+          # The reusable workflow's own input documentation is blunt about it: "Wear catalogs always
+          # need this." joreilly/Confetti's :wearApp is the case that proved it here.
+          preview_annotations=$(jq -r '.previewAnnotations // ""' "$config")
+          # Whitespace-separated simple annotation names. Validated because the value reaches a
+          # workflow input, and a stray character here fails the pre-flight rather than the parse.
+          echo "$preview_annotations" | grep -Eq '^([A-Za-z_][A-Za-z0-9_]*( +[A-Za-z_][A-Za-z0-9_]*)*)?$' || {
+            echo "::error::previewAnnotations '${preview_annotations}' is not a space-separated list of annotation names"
+            exit 1
+          }
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -167,6 +184,7 @@ jobs:
             echo "modules=${modules}"
             echo "renderer=${renderer}"
             echo "javaVersion=${java_version}"
+            echo "previewAnnotations=${preview_annotations}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -198,6 +216,9 @@ jobs:
       # not carry, the import says so and the pipeline installs it alongside JDK 21. Empty ⇒ 21
       # alone, which is every import that has not needed otherwise.
       upstream-java-version: ${{ needs.config.outputs.javaVersion }}
+      # Teaches the build-free spec pre-flight about multipreviews declared in another module. See
+      # the config job: without it a Wear catalog's spec entries all fail as "matches no @Preview".
+      preview-annotations: ${{ needs.config.outputs.previewAnnotations }}
       publish: false
       upload-out: true
 
