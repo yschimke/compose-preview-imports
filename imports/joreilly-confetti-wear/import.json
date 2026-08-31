@@ -1,9 +1,0 @@
-{
-  "slug": "joreilly-confetti-wear",
-  "upstream": "joreilly/Confetti",
-  "ref": "main",
-  "modules": [":wearApp"],
-  "renderer": "android",
-  "previewAnnotations": "WearPreviewDevices WearPreviewFontScales",
-  "notes": "John O'Reilly's Confetti conference app — the Wear OS catalog, the sibling of joreilly-confetti-mobile. Same reasoning as that import: Confetti already applies ee.schimke.composeai.preview and publishes design-artifacts/confetti-wear from its own workflow, so this is an independent second path rather than the only one. The spec is the upstream catalog.spec.json (Confetti's root spec is the WEAR one; the phone sheet is catalog.mobile.spec.json) with `system` repointed at this slug. Wear is dark-first and round, so the spec carries smallRound/largeRound breakpoints and modes: [dark]. Android/Robolectric lane: these are AndroidX @Preview functions in wearApp/src/main. Its screen previews carry @WearPreviewDevices + @WearPreviewFontScales and no direct @Preview, which the build-free spec pre-flight cannot see, so previewAnnotations names them \u2014 without it all seven Screens entries fail as \"matches no @Preview function\". Two of the upstream spec's Screens, SessionDetailsScreen and SpeakerDetailsScreen, live in wearApp/src/screenshotTest and are dropped here: the plugin discovers the MAIN source set only, so no arrangement of this pipeline renders them. Split from the mobile catalog because the pipeline renders one module per import."
-}

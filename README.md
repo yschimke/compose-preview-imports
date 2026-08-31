@@ -129,10 +129,8 @@ any other.
 upstream's `.kt` files and matches `@Preview` by name, before anything is built. A preview annotated
 only with a multipreview declared in *another* module is invisible to it, so every spec entry naming
 such a preview fails with *"matches no @Preview function in the scanned module"* even though the
-render would have produced it. `joreilly/Confetti`'s `:wearApp` is the case that proved it here:
-its screen previews carry `@WearPreviewDevices` + `@WearPreviewFontScales` and nothing else, and the
-import failed on all of them while the tile and theme previews — which carry a direct `@Preview` —
-matched fine.
+render would have produced it. Naming the multipreview annotations makes those indirectly annotated
+previews visible to the pre-flight.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding
