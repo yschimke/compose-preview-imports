@@ -15,7 +15,72 @@
         {
           "componentId": "station-view",
           "preview": "StationViewPreview",
-          "caption": "A single bike-station row: name, and the free-bikes-to-empty-slots split rendered as an availability bar."
+          "caption": "The upstream project's own preview: one station row built from a literal Station, with the free-bikes-to-empty-slots split drawn as an availability bar."
+        },
+        {
+          "componentId": "station-view-mixed",
+          "preview": "StationViewMixedPreview",
+          "caption": "Grand Canal Dock — 17 free of 20 slots (0.85), which lands in the bar's top colour band."
+        },
+        {
+          "componentId": "station-view-full",
+          "preview": "StationViewFullPreview",
+          "caption": "Smithfield North — every slot holding a bike (1.00), the widest the bar gets."
+        },
+        {
+          "componentId": "station-view-empty",
+          "preview": "StationViewEmptyPreview",
+          "caption": "Docklands Empty — no bikes left (0.00), the low band and the zero-width end of the bar. The state a rider most needs to read at a glance."
+        },
+        {
+          "componentId": "station-list",
+          "preview": "StationListContentPreview",
+          "caption": "Three stations as the list stacks them. This is the only preview that shows the middle band: Portobello Harbour sits at 0.40, between the 0.20 and 0.50 thresholds."
+        }
+      ]
+    },
+    {
+      "name": "Networks",
+      "components": [
+        {
+          "componentId": "network-view",
+          "preview": "NetworkViewPreview",
+          "caption": "One network row — dublinbikes, with the city and country line the network list is built from."
+        },
+        {
+          "componentId": "network-list",
+          "preview": "NetworkListPreview",
+          "caption": "Three networks across Dublin, Paris and Barcelona, so an accented, longer name (Vélib' Métropole) sits beside short ones."
+        }
+      ]
+    },
+    {
+      "name": "Countries",
+      "components": [
+        {
+          "componentId": "country-view",
+          "preview": "CountryViewPreview",
+          "caption": "One country row from the country picker."
+        },
+        {
+          "componentId": "country-list",
+          "preview": "CountryViewListPreview",
+          "caption": "The three sample countries as the picker stacks them."
+        }
+      ]
+    },
+    {
+      "name": "Theme",
+      "components": [
+        {
+          "componentId": "color-scheme",
+          "preview": "ColorSchemeSpecimenPreview",
+          "caption": "The Material 3 colour roles as labelled swatches — primary, secondary, tertiary, surface and error, each with its `on` colour used for the label."
+        },
+        {
+          "componentId": "typography",
+          "preview": "TypographySpecimenPreview",
+          "caption": "The theme's type scale, one specimen line per style, each set in a station name."
         }
       ]
     }
