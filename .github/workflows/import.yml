@@ -219,6 +219,23 @@ jobs:
       # Teaches the build-free spec pre-flight about multipreviews declared in another module. See
       # the config job: without it a Wear catalog's spec entries all fail as "matches no @Preview".
       preview-annotations: ${{ needs.config.outputs.previewAnnotations }}
+      # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
+      # serve box that bakes the matching daemon re-renders these previews live — device, theme and
+      # knob controls work instead of replaying a snapshot.
+      #
+      # This is the escalation preview.coo.ee's producers.json anticipated and asked to be revisited
+      # rather than inherited silently: that box runs SERVE_ALLOW_RENDER_TRUSTED=1 and branch-trusts
+      # this repository, so from here on an import's bundle is eligible for SERVER-SIDE EXECUTION
+      # there. The boundary that made importing safe is unchanged — the build still runs under
+      # `contents: read` in a job that cannot publish — but what the branch CARRIES is now third-party
+      # code, and a box's trust in this repository is now trust in what it renders. A box that does
+      # not want that either drops the branch trust or runs without --allow-render-trusted.
+      #
+      # embed-deps is deliberately left off: it is only needed when a module depends on artifacts the
+      # serve box cannot resolve from Central (JitPack-only), and the failure is soft and visible —
+      # the catalog reports livebundle-unavailable and falls back to baked PNGs. Turn it on per
+      # import if one does, rather than inflating every bundle for a case none of them has hit.
+      publish-live-bundle: true
       publish: false
       upload-out: true
 

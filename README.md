@@ -183,10 +183,26 @@ Multiplatform plugin.
 
 ## What this repository does not claim
 
-Importing a project is not an endorsement of it, and building it here grants it no trust on the
-preview server: an imported catalog badges `unverified` exactly as any unverified published catalog
-does. It is also not a redistribution — the delivery branch carries rendered PNGs and the metadata
-needed to browse them, and every catalog links back to the project it came from.
+Importing a project is not an endorsement of it.
+
+Two things this section used to claim are no longer true, and saying so plainly matters more than
+the sentence they replaced.
+
+**An imported catalog is no longer inherently `unverified`.** preview.coo.ee branch-trusts this
+repository's `design-artifacts/*`, so its imports badge as verified there. That trust is in the
+import review — a pull request naming the upstream repository, ref and modules — and in the pipeline
+that renders it, not in the upstream projects themselves. Another box grants or withholds it
+independently.
+
+**The delivery branch now carries more than pictures.** Since `publish-live-bundle`, it carries the
+executable render bundle — the imported module's compiled classes — so a serve box can re-render the
+previews live rather than replaying snapshots. On a box running `--allow-render-trusted` that also
+branch-trusts this repository, that bundle is eligible for server-side execution. Two consequences
+worth stating rather than discovering: a box's trust in this repository is now trust in the code it
+renders, and publishing compiled output of someone else's project is closer to redistribution than
+publishing screenshots of it was. Every import here is a permissively licensed public project and
+every catalog links back to the project it came from, but that is a licence question each new import
+should be read against, not a settled one.
 
 If you maintain a project imported here and would rather it were not, open an issue and it will be
 removed.
