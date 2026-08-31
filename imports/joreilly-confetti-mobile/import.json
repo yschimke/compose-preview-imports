@@ -1,0 +1,8 @@
+{
+  "slug": "joreilly-confetti-mobile",
+  "upstream": "joreilly/Confetti",
+  "ref": "main",
+  "modules": [":androidApp"],
+  "renderer": "android",
+  "notes": "John O'Reilly's Confetti conference app — the phone catalog. Unlike the other joreilly imports, Confetti ALREADY applies ee.schimke.composeai.preview itself (build.gradle.kts, and :androidApp / :wearApp), pins it in its own version catalog, and publishes design-artifacts/confetti-mobile and design-artifacts/confetti-wear from its own workflow. Importing it here is therefore a second, independent path to the same catalog rather than the only one — worth having because it proves the import lane against a project that carries the plugin, and because it does not depend on the upstream workflow continuing to run. The specs are copied from the upstream catalog.mobile.spec.json with `system` repointed at this slug; the previews they name live in androidApp/src/main, which is the only source set the plugin discovers. Rendering is the Android/Robolectric lane: these are AndroidX @Preview functions in an application module, not commonMain CMP ones. Split from the Wear catalog because the pipeline renders one module per import."
+}
