@@ -1,0 +1,8 @@
+{
+  "slug": "joreilly-bikeshare",
+  "upstream": "joreilly/BikeShare",
+  "ref": "main",
+  "modules": [":common"],
+  "renderer": "desktop",
+  "notes": "KMP sample. The single @Preview lives in :common's commonMain and comes from org.jetbrains.compose.ui.tooling.preview.Preview, not the AndroidX one, so it has no Android context to render in and needs the desktop/Skiko lane — hence renderer: desktop. It is self-contained: StationViewPreview constructs its own Station and touches no DI, no repository and no network, which is why this is the second import rather than one of the whole-app previews the other samples declare."
+}
