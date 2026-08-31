@@ -80,8 +80,20 @@
       "sourceFunction": "PeopleInSpaceCardPreview"
     }
   ],
-  "renderer": "compose-preview 1.56.2",
-  "generatedAt": "2026-08-31T11:02:45.972Z",
+  "renderer": "compose-preview 1.59.0",
+  "generatedAt": "2026-08-31T15:01:00.690Z",
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":app",
+      "previewIdPrefix": ""
+    }
+  ],
   "source": {
     "repo": "joreilly/PeopleInSpace",
     "ref": "d6f4b1a843c82a1d8fbc913ded27b4eb084028c5",
