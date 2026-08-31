@@ -1,0 +1,34 @@
+name: Catalog registry
+
+# `.compose-preview/catalogs.json` is what a preview server fetches when it nominates this
+# repository with `--catalog-registry`. It is derived from `imports.json`, and two files holding one
+# fact drift the moment nobody checks — so this checks, on every change to either.
+
+on:
+  pull_request:
+    paths:
+      - 'imports.json'
+      - '.compose-preview/catalogs.json'
+      - 'scripts/sync-catalog-registry.sh'
+      - '.github/workflows/catalog-registry.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'imports.json'
+      - '.compose-preview/catalogs.json'
+      - 'scripts/sync-catalog-registry.sh'
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: The published registry document matches imports.json
+        run: ./scripts/sync-catalog-registry.sh --check
