@@ -1,0 +1,953 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "joreilly-bikeshare",
+  "title": "BikeShare",
+  "components": [
+    {
+      "componentId": "station-view",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/station-view/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 348,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view__ideal__default",
+          "previewId": "dev.johnoreilly.common.stationlist.StationListUIKt.StationViewPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 137,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Stations",
+      "caption": "The upstream project's own preview: one station row built from a literal Station, with the free-bikes-to-empty-slots split drawn as an availability bar.",
+      "wireframe": "wireframes/station-view.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
+      "sourceModule": ":common",
+      "bodyLine": 112,
+      "sourceDirectory": "common",
+      "sourceFunction": "StationViewPreview"
+    },
+    {
+      "componentId": "station-view-mixed",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/station-view-mixed/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 348,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view-mixed__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewMixedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 137,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Stations",
+      "caption": "Grand Canal Dock — 17 free of 20 slots (0.85), which lands in the bar's top colour band.",
+      "wireframe": "wireframes/station-view-mixed.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 60,
+      "sourceDirectory": "common",
+      "sourceFunction": "StationViewMixedPreview"
+    },
+    {
+      "componentId": "station-view-full",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/station-view-full/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 348,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view-full__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewFullPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 137,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Stations",
+      "caption": "Smithfield North — every slot holding a bike (1.00), the widest the bar gets.",
+      "wireframe": "wireframes/station-view-full.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 68,
+      "sourceDirectory": "common",
+      "sourceFunction": "StationViewFullPreview"
+    },
+    {
+      "componentId": "station-view-empty",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/station-view-empty/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 348,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view-empty__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewEmptyPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 137,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Stations",
+      "caption": "Docklands Empty — no bikes left (0.00), the low band and the zero-width end of the bar. The state a rider most needs to read at a glance.",
+      "wireframe": "wireframes/station-view-empty.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 77,
+      "sourceDirectory": "common",
+      "sourceFunction": "StationViewEmptyPreview"
+    },
+    {
+      "componentId": "station-list",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/station-list/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1086,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-list__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationListContentPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 137,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 206,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 369,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 506,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 575,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 575,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 738,
+            "width": 1050,
+            "height": 348
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 875,
+            "width": 966,
+            "height": 21
+          },
+          "padding": {
+            "start": 0,
+            "top": 10,
+            "end": 0,
+            "bottom": 10
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 944,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 677,
+            "y": 944,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Stations",
+      "caption": "Three stations as the list stacks them. This is the only preview that shows the middle band: Portobello Harbour sits at 0.40, between the 0.20 and 0.50 thresholds.",
+      "wireframe": "wireframes/station-list.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 88,
+      "sourceDirectory": "common",
+      "sourceFunction": "StationListContentPreview"
+    },
+    {
+      "componentId": "network-view",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/network-view/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 200,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/network-view__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.NetworkViewPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 200
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 48,
+            "width": 21,
+            "height": 105
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "group": "Networks",
+      "caption": "One network row — dublinbikes, with the city and country line the network list is built from.",
+      "wireframe": "wireframes/network-view.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 100,
+      "sourceDirectory": "common",
+      "sourceFunction": "NetworkViewPreview"
+    },
+    {
+      "componentId": "network-list",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/network-list/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 642,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/network-list__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.NetworkListPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 200
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 48,
+            "width": 21,
+            "height": 105
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 221,
+            "width": 1050,
+            "height": 200
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 269,
+            "width": 21,
+            "height": 105
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 442,
+            "width": 1050,
+            "height": 200
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 490,
+            "width": 21,
+            "height": 105
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "group": "Networks",
+      "caption": "Three networks across Dublin, Paris and Barcelona, so an accented, longer name (Vélib' Métropole) sits beside short ones.",
+      "wireframe": "wireframes/network-list.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 108,
+      "sourceDirectory": "common",
+      "sourceFunction": "NetworkListPreview"
+    },
+    {
+      "componentId": "country-view",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/country-view/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/country-view__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.CountryViewPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 210
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 53,
+            "width": 104,
+            "height": 104
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "group": "Countries",
+      "caption": "One country row from the country picker.",
+      "wireframe": "wireframes/country-view.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 124,
+      "sourceDirectory": "common",
+      "sourceFunction": "CountryViewPreview"
+    },
+    {
+      "componentId": "country-list",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/country-list/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 714,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/country-list__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.CountryViewListPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 210
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 74,
+            "width": 104,
+            "height": 104
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 252,
+            "width": 1008,
+            "height": 210
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 305,
+            "width": 104,
+            "height": 104
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 483,
+            "width": 1008,
+            "height": 210
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 536,
+            "width": 104,
+            "height": 104
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "group": "Countries",
+      "caption": "The three sample countries as the picker stacks them.",
+      "wireframe": "wireframes/country-list.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 132,
+      "sourceDirectory": "common",
+      "sourceFunction": "CountryViewListPreview"
+    },
+    {
+      "componentId": "color-scheme",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/color-scheme/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1067,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/color-scheme__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.ColorSchemeSpecimenPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 110,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 131,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 225,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 246,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 340,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 361,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 455,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 476,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 570,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 591,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 685,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 706,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 800,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 821,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 915,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 936,
+            "width": 63,
+            "height": 63
+          },
+          "label": "Aa",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        }
+      ],
+      "group": "Theme",
+      "caption": "The Material 3 colour roles as labelled swatches — primary, secondary, tertiary, surface and error, each with its `on` colour used for the label.",
+      "wireframe": "wireframes/color-scheme.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 169,
+      "sourceDirectory": "common",
+      "sourceFunction": "ColorSchemeSpecimenPreview"
+    },
+    {
+      "componentId": "typography",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/typography/ideal__default.png",
+          "state": "default",
+          "width": 750,
+          "height": 869,
+          "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/typography__ideal__default",
+          "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.TypographySpecimenPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Theme",
+      "caption": "The theme's type scale, one specimen line per style, each set in a station name.",
+      "wireframe": "wireframes/typography.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "sourceModule": ":common",
+      "bodyLine": 196,
+      "sourceDirectory": "common",
+      "sourceFunction": "TypographySpecimenPreview"
+    }
+  ],
+  "renderer": "compose-preview 1.58.0",
+  "generatedAt": "2026-08-31T13:16:50.540Z",
+  "source": {
+    "repo": "joreilly/BikeShare",
+    "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
+    "module": ":common"
+  }
+}

@@ -1,0 +1,2388 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "station-view__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 137,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 409,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Test Bike Station",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 190,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 243,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 190,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 243,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "5",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "station-view-mixed__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 137,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 430,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 190,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 243,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "17",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 190,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 243,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "3",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "station-view-full__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 137,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 402,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Smithfield North",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 190,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 243,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 190,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 243,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "0",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "station-view-empty__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 137,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 417,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Docklands Empty",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 190,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 243,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "0",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 190,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 243,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "station-list__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 137,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 206,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 369,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 506,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 575,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 575,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 738,
+          "width": 1050,
+          "height": 348
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 875,
+          "width": 966,
+          "height": 21
+        },
+        "label": "pad 10dp/0dp · r 4dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "10",
+          "padding.end": "0",
+          "padding.bottom": "10",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 944,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 677,
+          "y": 944,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 430,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 190,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 243,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "17",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 190,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 243,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "3",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 411,
+          "width": 464,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Portobello Harbour",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 559,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 612,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "8",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 559,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 612,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "12",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 780,
+          "width": 402,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Smithfield North",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 928,
+          "width": 284,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Available Bikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 981,
+          "width": 62,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 928,
+          "width": 226,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Empty Slots",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 782,
+          "y": 981,
+          "width": 31,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "0",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "network-view__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 200
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 48,
+          "width": 21,
+          "height": 105
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 42,
+          "width": 162,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Dublin",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 105,
+          "width": 215,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "dublinbikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "network-list__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 200
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 48,
+          "width": 21,
+          "height": 105
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 221,
+          "width": 1050,
+          "height": 200
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 269,
+          "width": 21,
+          "height": 105
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 442,
+          "width": 1050,
+          "height": 200
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 490,
+          "width": 21,
+          "height": 105
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 42,
+          "width": 162,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Dublin",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 105,
+          "width": 215,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "dublinbikes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 263,
+          "width": 125,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Paris",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 326,
+          "width": 303,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Vélib' Métropole",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 484,
+          "width": 248,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Barcelona",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "700",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 547,
+          "width": 116,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Bicing",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "country-view__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 210
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 53,
+          "y": 53,
+          "width": 104,
+          "height": 104
+        },
+        "label": "pad 4dp · r 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 210,
+          "y": 74,
+          "width": 155,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ireland",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "country-list__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 21,
+          "y": 21,
+          "width": 1008,
+          "height": 210
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 74,
+          "y": 74,
+          "width": 104,
+          "height": 104
+        },
+        "label": "pad 4dp · r 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 21,
+          "y": 252,
+          "width": 1008,
+          "height": 210
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 74,
+          "y": 305,
+          "width": 104,
+          "height": 104
+        },
+        "label": "pad 4dp · r 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 21,
+          "y": 483,
+          "width": 1008,
+          "height": 210
+        },
+        "label": "r 8dp",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 74,
+          "y": 536,
+          "width": 104,
+          "height": 104
+        },
+        "label": "pad 4dp · r 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 231,
+          "y": 95,
+          "width": 155,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ireland",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 231,
+          "y": 326,
+          "width": 148,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "France",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 231,
+          "y": 557,
+          "width": 124,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Spain",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "color-scheme__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 110,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 131,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 225,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 246,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 340,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 361,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 455,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 476,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 570,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 591,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 685,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 706,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 800,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 821,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 915,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 6dp",
+        "detail": {
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 936,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 8dp",
+        "role": "Aa",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 321,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Colour scheme",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 131,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 136,
+          "width": 148,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "primary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 246,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 251,
+          "width": 332,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "primaryContainer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 361,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 366,
+          "width": 196,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "secondary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 476,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 481,
+          "width": 380,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "secondaryContainer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 591,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 596,
+          "width": 141,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "tertiary",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 706,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 711,
+          "width": 140,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "surface",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 821,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 826,
+          "width": 274,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "surfaceVariant",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 936,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 12sp/16",
+        "role": "Aa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 179,
+          "y": 941,
+          "width": 92,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "error",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "typography__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 53,
+          "width": 259,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "headlineMedium",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 95,
+          "width": 666,
+          "height": 95
+        },
+        "label": "text 28sp/36",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "28",
+          "lineHeight": "36",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 212,
+          "width": 151,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "titleLarge",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 254,
+          "width": 523,
+          "height": 74
+        },
+        "label": "text 22sp/28",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "22",
+          "lineHeight": "28",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 350,
+          "width": 187,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "titleMedium",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 392,
+          "width": 389,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 477,
+          "width": 165,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "bodyLarge",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 519,
+          "width": 402,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 604,
+          "width": 200,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "bodyMedium",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 646,
+          "width": 341,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 721,
+          "width": 165,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "labelLarge",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 763,
+          "width": 337,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Grand Canal Dock",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ]
+  },
+  "references": {}
+}

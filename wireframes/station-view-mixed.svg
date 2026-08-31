@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 348" width="1050" height="348" role="img" aria-label="station-view-mixed layout wireframe">
+  <title>station-view-mixed — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="348" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="348" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="348" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="348" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <path d="M21,0 H1029 A21,21 0 0 1 1050,21 V327 A21,21 0 0 1 1029,348 H21 A21,21 0 0 1 0,327 V21 A21,21 0 0 1 21,0 Z" fill="#FEF7FF" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="348" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="966" height="264" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="430" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M52.5,137 H997.5 A10.5,10.5 0 0 1 1008,147.5 V147.5 A10.5,10.5 0 0 1 997.5,158 H52.5 A10.5,10.5 0 0 1 42,147.5 V147.5 A10.5,10.5 0 0 1 52.5,137 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="149" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">pad ·</text>
+  </g>
+  <g>
+    <rect x="42" y="190" width="966" height="116" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="190" width="389" height="116" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84,206 H84 A42,42 0 0 1 126,248 V248 A42,42 0 0 1 84,290 H84 A42,42 0 0 1 42,248 V248 A42,42 0 0 1 84,206 Z" fill="#2E7D32" fill-opacity="0.149" stroke="#5B6470" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="218" font-family="system-ui, sans-serif" font-size="9" fill="#5B6470">#262E7D32</text>
+  </g>
+  <g>
+    <rect x="58" y="222" width="53" height="53" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="147" y="190" width="284" height="116" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="147" y="190" width="284" height="53" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="147" y="243" width="62" height="63" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="677" y="190" width="331" height="116" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M719,206 H719 A42,42 0 0 1 761,248 V248 A42,42 0 0 1 719,290 H719 A42,42 0 0 1 677,248 V248 A42,42 0 0 1 719,206 Z" fill="#625B71" fill-opacity="0.149" stroke="#5B6470" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="680" y="218" font-family="system-ui, sans-serif" font-size="9" fill="#5B6470">#26625B71</text>
+  </g>
+  <g>
+    <rect x="693" y="222" width="53" height="53" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="782" y="190" width="226" height="116" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="782" y="190" width="226" height="53" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="782" y="243" width="31" height="63" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

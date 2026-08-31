@@ -1,0 +1,135 @@
+{
+  "system": "joreilly-bikeshare",
+  "title": "BikeShare",
+  "label": "Compose",
+  "source": {
+    "repo": "joreilly/BikeShare",
+    "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
+    "module": ":common"
+  },
+  "generatedAt": "2026-08-31T13:16:50.575Z",
+  "mappings": [
+    {
+      "componentId": "station-view",
+      "figmaLayerName": "station-view",
+      "componentName": "StationView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "StationViewPreview",
+      "codeSnippet": "StationView(\n    station = TODO(\"Station\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.stationlist.StationView"
+      ],
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station",
+          "hasDefault": false,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/station-view.svg"
+    },
+    {
+      "componentId": "station-view-mixed",
+      "figmaLayerName": "station-view-mixed",
+      "componentName": "StationViewMixedPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "StationViewMixedPreview",
+      "figmaSvg": "figma/station-view-mixed.svg"
+    },
+    {
+      "componentId": "station-view-full",
+      "figmaLayerName": "station-view-full",
+      "componentName": "StationViewFullPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "StationViewFullPreview",
+      "figmaSvg": "figma/station-view-full.svg"
+    },
+    {
+      "componentId": "station-view-empty",
+      "figmaLayerName": "station-view-empty",
+      "componentName": "StationViewEmptyPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "StationViewEmptyPreview",
+      "figmaSvg": "figma/station-view-empty.svg"
+    },
+    {
+      "componentId": "station-list",
+      "figmaLayerName": "station-list",
+      "componentName": "StationListContentPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "StationListContentPreview",
+      "figmaSvg": "figma/station-list.svg"
+    },
+    {
+      "componentId": "network-view",
+      "figmaLayerName": "network-view",
+      "componentName": "NetworkViewPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NetworkViewPreview",
+      "figmaSvg": "figma/network-view.svg"
+    },
+    {
+      "componentId": "network-list",
+      "figmaLayerName": "network-list",
+      "componentName": "NetworkListPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NetworkListPreview",
+      "figmaSvg": "figma/network-list.svg"
+    },
+    {
+      "componentId": "country-view",
+      "figmaLayerName": "country-view",
+      "componentName": "CountryViewPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CountryViewPreview",
+      "figmaSvg": "figma/country-view.svg"
+    },
+    {
+      "componentId": "country-list",
+      "figmaLayerName": "country-list",
+      "componentName": "CountryViewListPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CountryViewListPreview",
+      "figmaSvg": "figma/country-list.svg"
+    },
+    {
+      "componentId": "color-scheme",
+      "figmaLayerName": "color-scheme",
+      "componentName": "ColorSchemeSpecimenPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ColorSchemeSpecimenPreview",
+      "figmaSvg": "figma/color-scheme.svg"
+    },
+    {
+      "componentId": "typography",
+      "figmaLayerName": "typography",
+      "componentName": "TypographySpecimenPreview",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TypographySpecimenPreview",
+      "figmaSvg": "figma/typography.svg"
+    }
+  ]
+}

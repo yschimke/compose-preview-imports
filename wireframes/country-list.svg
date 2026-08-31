@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 714" width="1050" height="714" role="img" aria-label="country-list layout wireframe">
+  <title>country-list — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="714" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="714" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="714" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="714" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="672" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,21 H1008 A21,21 0 0 1 1029,42 V210 A21,21 0 0 1 1008,231 H42 A21,21 0 0 1 21,210 V42 A21,21 0 0 1 42,21 Z" fill="#FEF7FF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="210" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="63" y="63" width="924" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84.5,74 H167.5 A10.5,10.5 0 0 1 178,84.5 V167.5 A10.5,10.5 0 0 1 167.5,178 H84.5 A10.5,10.5 0 0 1 74,167.5 V84.5 A10.5,10.5 0 0 1 84.5,74 Z" fill="#E7E0EC" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="77" y="86" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE7E0EC  pad 4.0dp</text>
+  </g>
+  <g>
+    <rect x="74" y="74" width="104" height="104" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="231" y="95" width="155" height="63" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,252 H1008 A21,21 0 0 1 1029,273 V441 A21,21 0 0 1 1008,462 H42 A21,21 0 0 1 21,441 V273 A21,21 0 0 1 42,252 Z" fill="#FEF7FF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="264" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="252" width="1008" height="210" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="63" y="294" width="924" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84.5,305 H167.5 A10.5,10.5 0 0 1 178,315.5 V398.5 A10.5,10.5 0 0 1 167.5,409 H84.5 A10.5,10.5 0 0 1 74,398.5 V315.5 A10.5,10.5 0 0 1 84.5,305 Z" fill="#E7E0EC" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="77" y="317" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE7E0EC  pad 4.0dp</text>
+  </g>
+  <g>
+    <rect x="74" y="305" width="104" height="104" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="231" y="326" width="148" height="63" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,483 H1008 A21,21 0 0 1 1029,504 V672 A21,21 0 0 1 1008,693 H42 A21,21 0 0 1 21,672 V504 A21,21 0 0 1 42,483 Z" fill="#FEF7FF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="495" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="21" y="483" width="1008" height="210" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="63" y="525" width="924" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84.5,536 H167.5 A10.5,10.5 0 0 1 178,546.5 V629.5 A10.5,10.5 0 0 1 167.5,640 H84.5 A10.5,10.5 0 0 1 74,629.5 V546.5 A10.5,10.5 0 0 1 84.5,536 Z" fill="#E7E0EC" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="77" y="548" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE7E0EC  pad 4.0dp</text>
+  </g>
+  <g>
+    <rect x="74" y="536" width="104" height="104" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="231" y="557" width="124" height="63" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>
