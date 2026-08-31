@@ -2,7 +2,11 @@
 # Regenerate `.compose-preview/catalogs.json` from `imports.json`.
 #
 # Two files, one fact. `imports.json` is what a reviewer reads — the slug, the branch that carries
-# the import's config, and the upstream project it builds. `.compose-preview/catalogs.json` is what
+# the import's config, and the upstream project it builds. That upstream reaches the document as
+# `importedFrom`: an import is somebody else's project seen through this repository, so a serving
+# box groups its card under the upstream's owner and says so on the card, rather than filing every
+# import together under whoever happens to host the staging repo. No `groups` are declared for the
+# same reason — the owner sections a box already derives are the right ones. `.compose-preview/catalogs.json` is what
 # a preview server reads: the document `--catalog-registry <owner>/<repo>` fetches from this
 # repository's default branch to learn which catalogs it may serve from here. Its shape is the
 # server's own `catalogs.json`, so it is validated by exactly the code a box's own config goes
@@ -33,19 +37,14 @@ generated=$(
         "GENERATED from imports.json by scripts/sync-catalog-registry.sh — do not edit by hand. " +
         "This is the document a preview server fetches when it nominates this repository with " +
         "--catalog-registry: every catalog listed here is served from this repository'"'"'s own " +
-        "design-artifacts/<system> branch."
+        "design-artifacts/<system> branch. Each carries importedFrom, so a serving box sections " +
+        "the catalog under the UPSTREAM owner \u2014 beside that owner'"'"'s other catalogs rather " +
+        "than under this staging repository \u2014 and badges the card with the project it came from."
       ),
-      groups: [
-        {
-          id: "imported-projects",
-          heading: "Imported projects",
-          noun: "project(s)",
-          priority: 0
-        }
-      ],
+      groups: [],
       catalogs: [
         .imports[]
-        | { system: .slug, group: "imported-projects", listed: true }
+        | { system: .slug, listed: true, importedFrom: .upstream }
       ]
     }
   ' "$registry"
