@@ -17,12 +17,12 @@
       "system": "joreilly-confetti-mobile"
     },
     {
-      "importedFrom": "joreilly/ClimateTraceKMP",
+      "importedFrom": "joreilly/Confetti",
       "listed": true,
       "system": "joreilly-confetti-wear"
     },
     {
-      "group": "imported-projects",
+      "importedFrom": "joreilly/ClimateTraceKMP",
       "listed": true,
       "system": "joreilly-climatetracekmp"
     }
