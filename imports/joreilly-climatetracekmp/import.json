@@ -1,0 +1,8 @@
+{
+  "slug": "joreilly-climatetracekmp",
+  "upstream": "joreilly/ClimateTraceKMP",
+  "ref": "main",
+  "modules": [":composeApp"],
+  "renderer": "desktop",
+  "notes": "John O'Reilly's Compose Multiplatform sample for the Climate TRACE emissions data. All eleven @Preview functions live in :composeApp's commonMain and come from org.jetbrains.compose.ui.tooling.preview.Preview, not the AndroidX one, so they have no Android context to render in and need the desktop/Skiko lane — hence renderer: desktop. :composeApp declares compose.components.uiToolingPreview and a desktop target (compose.desktop.currentOs), which is what that lane needs. Every preview is self-contained: each builds its own Country / rankings values and calls a stateless composable, so none of them touch Koin, the repository or the network — which is what makes this importable at all, and is the difference from :androidApp, whose only preview renders the whole App()."
+}

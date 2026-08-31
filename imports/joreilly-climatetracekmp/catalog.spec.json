@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository.",
+  "system": "joreilly-climatetracekmp",
+  "title": "ClimateTrace",
+  "module": "composeApp",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Country list",
+      "components": [
+        {
+          "componentId": "country-row",
+          "preview": "CountryRowPreview",
+          "caption": "The country list's row — name, continent and the rank badge — shown twice so two different ranks can be compared side by side."
+        },
+        {
+          "componentId": "country-row-selected",
+          "preview": "CountryRowSelectedPreview",
+          "caption": "The same row with `selectedCountry` matching it: primaryContainer background, and the text and badge colours that switch with it."
+        },
+        {
+          "componentId": "country-row-unranked",
+          "preview": "CountryRowUnrankedPreview",
+          "caption": "The row with no entry in `rankings`, which is what the list shows before the ranking data has loaded — the badge is absent rather than zero."
+        }
+      ]
+    },
+    {
+      "name": "Detail",
+      "components": [
+        {
+          "componentId": "key-figures-row",
+          "preview": "KeyFiguresRowPreview",
+          "caption": "The detail pane's summary strip: emissions total, year-on-year change, rank, share and the per-capita figure with its own rank."
+        },
+        {
+          "componentId": "key-figures-row-rising",
+          "preview": "KeyFiguresRowRisingPreview",
+          "caption": "The other side of the delta — a positive change instead of a negative one, and `perCapitaRank = null`, so both conditional branches of the strip are covered."
+        },
+        {
+          "componentId": "co2-trend-sparkline",
+          "preview": "CO2TrendSparklinePreview",
+          "caption": "The emissions-over-time sparkline, over six fixed yearly values with 2023 selected, so the shape is identical on every render."
+        }
+      ]
+    },
+    {
+      "name": "Empty states",
+      "components": [
+        {
+          "componentId": "empty-state",
+          "preview": "EmptyStatePreview",
+          "caption": "The list's fallback when no countries are available: the default \"No Countries Found!\" title and nothing else."
+        },
+        {
+          "componentId": "empty-state-message",
+          "preview": "EmptyStateWithMessagePreview",
+          "caption": "The same state given an explicit title and message — the second `Text` only composes when a message is passed."
+        }
+      ]
+    },
+    {
+      "name": "Theme",
+      "components": [
+        {
+          "componentId": "color-scheme",
+          "preview": "ColorSchemeLightPreview",
+          "caption": "ClimateTraceTheme's Material 3 colour roles as labelled swatches."
+        },
+        {
+          "componentId": "color-scheme-dark",
+          "preview": "ColorSchemeDarkPreview",
+          "caption": "The same roles under the dark scheme."
+        },
+        {
+          "componentId": "typography",
+          "preview": "TypographySpecimenPreview",
+          "caption": "The theme's type scale, one specimen line per style."
+        }
+      ]
+    }
+  ]
+}
