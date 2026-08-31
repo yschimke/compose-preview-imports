@@ -166,6 +166,23 @@ jobs:
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ inputs.slug }}
+      # PINNED, and not to `latest`, which is the default and which breaks every import.
+      #
+      # The CLI's init script injects the Gradle plugin at the CLI's OWN version, and an imported
+      # project resolves that plugin from PUBLIC repositories — it has no composite build to fall
+      # back on. So the version has to be one actually published to Maven Central, and the newest
+      # that is, is 1.54.0: the plugin marker for 1.55.0, 1.56.0, 1.56.1 and 1.56.2 is 404 on
+      # Central and on the plugin portal, while GitHub releases exist for all of them. `latest`
+      # resolves to the newest GITHUB RELEASE, so it hands the build a coordinate that does not
+      # exist and every project fails to configure:
+      #
+      #   Could not find ee.schimke.composeai.preview:…gradle.plugin:1.56.0
+      #   → 6 project(s) failed to configure during discovery and were skipped
+      #
+      # which surfaces as an empty discovery rather than as a resolution error, and cost a whole
+      # debugging session on joreilly-bikeshare. Raise this the moment the publishing gap is
+      # closed — a pin left behind after the fix silently holds every import a release back.
+      cli-version: '1.54.0'
       # The spec describing an imported project lives in THIS repository, on the import's branch —
       # it is our description of their code, and it is not their business to carry it.
       spec: imports/${{ inputs.slug }}/catalog.spec.json
