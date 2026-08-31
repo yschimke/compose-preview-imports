@@ -135,16 +135,6 @@
           "caption": "Sessions schedule list grouped by start time."
         },
         {
-          "componentId": "SessionDetails",
-          "preview": "SessionDetailsScreen",
-          "caption": "Session details — title, time, description and speakers."
-        },
-        {
-          "componentId": "SpeakerDetails",
-          "preview": "SpeakerDetailsScreen",
-          "caption": "Speaker details — photo, name, tagline and bio."
-        },
-        {
           "componentId": "Bookmarks",
           "preview": "BookmarksPreview",
           "caption": "Bookmarks screen — upcoming and past bookmarked sessions."
