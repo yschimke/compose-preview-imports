@@ -1,33 +1,26 @@
 {
-  "$comment": "GENERATED from imports.json by scripts/sync-catalog-registry.sh — do not edit by hand. This is the document a preview server fetches when it nominates this repository with --catalog-registry: every catalog listed here is served from this repository's own design-artifacts/<system> branch.",
+  "$comment": "GENERATED from imports.json by scripts/sync-catalog-registry.sh — do not edit by hand. This is the document a preview server fetches when it nominates this repository with --catalog-registry: every catalog listed here is served from this repository's own design-artifacts/<system> branch. Each carries importedFrom, so a serving box sections the catalog under the UPSTREAM owner — beside that owner's other catalogs rather than under this staging repository — and badges the card with the project it came from.",
   "catalogs": [
     {
-      "group": "imported-projects",
+      "importedFrom": "joreilly/BikeShare",
       "listed": true,
       "system": "joreilly-bikeshare"
     },
     {
-      "group": "imported-projects",
+      "importedFrom": "joreilly/PeopleInSpace",
       "listed": true,
       "system": "joreilly-peopleinspace"
     },
     {
-      "group": "imported-projects",
+      "importedFrom": "joreilly/Confetti",
       "listed": true,
       "system": "joreilly-confetti-mobile"
     },
     {
-      "group": "imported-projects",
+      "importedFrom": "joreilly/ClimateTraceKMP",
       "listed": true,
       "system": "joreilly-climatetracekmp"
     }
   ],
-  "groups": [
-    {
-      "heading": "Imported projects",
-      "id": "imported-projects",
-      "noun": "project(s)",
-      "priority": 0
-    }
-  ]
+  "groups": []
 }
