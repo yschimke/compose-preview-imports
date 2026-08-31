@@ -85,6 +85,7 @@ jobs:
       ref: ${{ steps.read.outputs.ref }}
       modules: ${{ steps.read.outputs.modules }}
       renderer: ${{ steps.read.outputs.renderer }}
+      javaVersion: ${{ steps.read.outputs.javaVersion }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -135,6 +136,16 @@ jobs:
               ;;
           esac
 
+          # An imported project picks its own Gradle toolchain and we do not get to choose it:
+          # ClimateTraceKMP's :composeApp asks for Java 24, which the runner does not carry, and the
+          # build died before resolving a dependency. Naming the major version here has the pipeline
+          # install that JDK alongside the 21 the CLI runs on. Empty is the normal case.
+          java_version=$(jq -r '.javaVersion // ""' "$config")
+          echo "$java_version" | grep -Eq '^([0-9]{1,2})?$' || {
+            echo "::error::javaVersion '${java_version}' is not a major version like 21 or 24"
+            exit 1
+          }
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -155,6 +166,7 @@ jobs:
             echo "ref=${ref}"
             echo "modules=${modules}"
             echo "renderer=${renderer}"
+            echo "javaVersion=${java_version}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -182,6 +194,10 @@ jobs:
       # declare. The reusable workflow installs Mesa software GL + fonts and runs the render under
       # xvfb when this is true; ubuntu-latest already carries the Android SDK for the false case.
       desktop-render: ${{ needs.config.outputs.renderer == 'desktop' }}
+      # A third-party build's toolchain is its own business, so when it needs a JDK the runner does
+      # not carry, the import says so and the pipeline installs it alongside JDK 21. Empty ⇒ 21
+      # alone, which is every import that has not needed otherwise.
+      upstream-java-version: ${{ needs.config.outputs.javaVersion }}
       publish: false
       upload-out: true
 

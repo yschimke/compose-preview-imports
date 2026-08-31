@@ -121,7 +121,19 @@ any other.
 | `ref` | Branch or tag of the upstream project to build. Pinning a tag makes an import reproducible; `main` follows the project. |
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
+| `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
+
+`javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
+does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding
+21 alone the render failed before resolving a single dependency — *"Cannot find a Java installation
+on your machine matching: {languageVersion=24, …}. Toolchain download repositories have not been
+configured."* Naming `"javaVersion": "24"` installs that JDK **alongside** 21 and points Gradle's
+toolchain detection at it; `JAVA_HOME` stays 21, which is what the CLI itself runs on.
+
+It is an explicit version rather than Gradle toolchain auto-provisioning on purpose: an import is
+somebody else's build, and letting it download an arbitrary JDK mid-render is a larger grant than
+letting it name one the pipeline then installs.
 
 `modules` names **at most one** Gradle path: the pipeline renders one module, or every previewable
 module when the field is omitted. Naming two is refused, with a message saying to split the import
