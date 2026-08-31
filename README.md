@@ -121,8 +121,25 @@ any other.
 | `ref` | Branch or tag of the upstream project to build. Pinning a tag makes an import reproducible; `main` follows the project. |
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
+| `cliVersion` | Optional. `latest` (default), `catalog`, or a literal version. `catalog` pins the compose-preview CLI to the plugin version the upstream project declares — needed when the upstream applies the plugin itself. |
+| `catalogKey` | Optional. The `[versions]` key holding that plugin version. Only read when `cliVersion` is `catalog`. Defaults to `composePreviewPlugin`. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
+
+`cliVersion` exists because an imported project may already apply the preview plugin itself, and
+then the version it declares wins. Most imports do not: the CLI injects the plugin, so the CLI and
+the plugin are the same release by construction and `latest` is right. `joreilly/Confetti` does — it
+applies `ee.schimke.composeai.preview` on `:androidApp` and `:wearApp` and pins
+`composeai-preview = "1.14.1"` in its own catalog. The init script skips injection for a module that
+already has the plugin, so `latest` there would pair a current CLI with a 1.14.1 plugin across the
+interface between them. `"cliVersion": "catalog"` with `"catalogKey": "composeai-preview"` pins the
+CLI to that same declared version instead — which is what Confetti's own workflow does, and what
+built the `confetti-mobile` and `confetti-wear` catalogs preview.coo.ee serves today.
+
+The cost is that such an import renders at the upstream's chosen version rather than the current
+one, so it inherits whatever that release could do. The alternative — overriding an upstream's
+declared plugin version from here — would mean editing their build, which this repository
+deliberately never does.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding

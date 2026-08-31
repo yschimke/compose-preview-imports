@@ -86,6 +86,8 @@ jobs:
       modules: ${{ steps.read.outputs.modules }}
       renderer: ${{ steps.read.outputs.renderer }}
       javaVersion: ${{ steps.read.outputs.javaVersion }}
+      cliVersion: ${{ steps.read.outputs.cliVersion }}
+      catalogKey: ${{ steps.read.outputs.catalogKey }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -146,6 +148,34 @@ jobs:
             exit 1
           }
 
+          # Which compose-preview CLI renders this import, and — when it is pinned to the upstream's
+          # own plugin version — which version-catalog key holds it.
+          #
+          # `latest` (the default) is right for a project that does NOT apply the plugin: the CLI
+          # injects it, so CLI and plugin are the same release by construction. It is WRONG for one
+          # that applies the plugin itself, because the upstream's declared version wins over the
+          # injection (the init script skips a pre-applied module) and a current CLI ends up driving
+          # whatever the upstream pinned. joreilly/Confetti pins 1.14.1, so `latest` would pair a
+          # ~1.57 CLI with a 1.14.1 plugin across the interface between them. `catalog` pins the CLI
+          # to that same declared version instead, which is exactly what Confetti's own workflow
+          # does and what built the confetti-mobile / confetti-wear catalogs being served today.
+          cli_version=$(jq -r '.cliVersion // "latest"' "$config")
+          case "$cli_version" in
+            latest|catalog) ;;
+            [0-9]*.[0-9]*.[0-9]*) ;;
+            *)
+              echo "::error::cliVersion '${cli_version}' is not 'latest', 'catalog', or a version"
+              exit 1
+              ;;
+          esac
+          # Only consulted when cliVersion is `catalog`. Defaulted to the pipeline's own key rather
+          # than left empty so the reusable workflow's default and this one cannot drift apart.
+          catalog_key=$(jq -r '.catalogKey // "composePreviewPlugin"' "$config")
+          echo "$catalog_key" | grep -Eq '^[A-Za-z0-9._-]+$' || {
+            echo "::error::catalogKey '${catalog_key}' is not a version-catalog key"
+            exit 1
+          }
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -167,6 +197,8 @@ jobs:
             echo "modules=${modules}"
             echo "renderer=${renderer}"
             echo "javaVersion=${java_version}"
+            echo "cliVersion=${cli_version}"
+            echo "catalogKey=${catalog_key}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -198,6 +230,10 @@ jobs:
       # not carry, the import says so and the pipeline installs it alongside JDK 21. Empty ⇒ 21
       # alone, which is every import that has not needed otherwise.
       upstream-java-version: ${{ needs.config.outputs.javaVersion }}
+      # `catalog` pins the CLI to the plugin version the upstream itself declares — the only way an
+      # import of a project that already applies the plugin gets a matched pair. See the config job.
+      cli-version: ${{ needs.config.outputs.cliVersion }}
+      catalog-key: ${{ needs.config.outputs.catalogKey }}
       publish: false
       upload-out: true
 
