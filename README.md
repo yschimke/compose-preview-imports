@@ -48,12 +48,17 @@ which repository, which ref and which modules are about to be built before any o
    be injected into it. That is what you write the import down from.
 
 2. **Open the import as a pull request.** Create the branch `import/<slug>` adding
-   `imports/<slug>/import.json` (below), `imports/<slug>/catalog.spec.json`, and the slug in
-   [`imports.json`](imports.json). Open it against `main`: the pull request is the review, and its
-   diff says exactly which third-party code this repository is about to start building.
+   `imports/<slug>/import.json` (below) and `imports/<slug>/catalog.spec.json` — its own two files
+   and nothing else. Open it against `main`: the pull request is the review, and its diff says
+   exactly which third-party code this repository is about to start building.
+
+   Nothing shared is edited on the way in, which is deliberate. The registry used to be a
+   hand-kept array that every import appended to, so the first of several open imports to merge left
+   all the others conflicting on a file where nothing had disagreed. The registry is now the
+   `imports/` directory itself.
 
    The branch is long-lived and is what the build reads, so it is not deleted on merge; merging is
-   what adds the import to the registry the scheduled refresh walks.
+   what adds `imports/<slug>/` to `main`, which is the registry the scheduled refresh walks.
 
 3. **When it lands, it builds.** Merging pushes `imports/<slug>/…` to `main`, and
    [`import-on-merge.yml`](.github/workflows/import-on-merge.yml) runs every import that push
@@ -61,10 +66,11 @@ which repository, which ref and which modules are about to be built before any o
    **Import a project** → *Run workflow* → the slug — and every registered import is refreshed
    nightly by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml).
 
-4. **And it is served.** Nothing else to do: adding the slug to `imports.json` also adds it to
-   [`.compose-preview/catalogs.json`](.compose-preview/catalogs.json) (below), which is the document
-   preview.coo.ee re-reads on its catalog-refresh cadence. The catalog appears there once its first
-   build finishes.
+4. **And it is served.** Nothing else to do: the merge also has
+   [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) regenerate
+   [`.compose-preview/catalogs.json`](.compose-preview/catalogs.json) (below) on `main`, which is the
+   document preview.coo.ee re-reads on its catalog-refresh cadence. The catalog appears there once
+   its first build finishes.
 
 ## How the catalogs reach the preview server
 
@@ -83,15 +89,25 @@ started with
 
 fetches that file from this repository's default branch and serves every catalog it lists, from this
 repository's own `design-artifacts/<slug>` branches. It re-reads it on the same cadence it polls
-those branches, so a merged import is picked up without a restart, and an import removed from
-`imports.json` is retired.
+those branches, so a merged import is picked up without a restart, and an import whose directory is
+removed is retired.
 
-The file is **generated** from `imports.json` by
-[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh) and their agreement is a CI
-gate — run the script and commit the result whenever you touch the registry. Two files, one fact:
-`imports.json` is what a reviewer reads, and this is the shape a preview server already understands
-(it is the server's own `catalogs.json` document), so nothing between here and the box has to
-translate.
+The file is **generated** from the `imports/` directory by
+[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is generated **on
+`main`, after a merge**, by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather
+than in the pull request. That is what keeps concurrent imports from colliding: each one adds its own
+`imports/<slug>/` and touches nothing shared, and the one shared, generated file is written once, by
+the job that watches `main`. On a pull request that same workflow only lints the import descriptions
+— that each `slug` matches its directory, and that each `upstream` is an owner/repo.
+
+`imports/<slug>/import.json` is what a reviewer reads; `.compose-preview/catalogs.json` is the shape
+a preview server already understands (it is the server's own `catalogs.json` document), so nothing
+between here and the box has to translate. It is committed rather than derived at read time because
+the server fetches one raw URL and nothing else.
+
+The job that writes it runs no third-party code — `jq` over files already merged here — so the
+boundary [`docs/SECURITY.md`](docs/SECURITY.md) draws is unchanged: nothing an imported project
+controls ever executes in a job holding a writable token.
 
 Nominating a registry does not hand this repository the box. An entry here may only be served from
 this repository's own branches, its front-page grouping is claimed against the groups declared in
