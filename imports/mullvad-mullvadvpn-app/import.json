@@ -1,0 +1,9 @@
+{
+  "slug": "mullvad-mullvadvpn-app",
+  "upstream": "mullvad/mullvadvpn-app",
+  "ref": "main",
+  "modules": [":lib:ui:designsystem"],
+  "renderer": "android",
+  "workingDirectory": "android",
+  "notes": "Mullvad VPN's Android client, on Google Play as net.mullvad.mullvadvpn, with a strong and deliberate visual identity and 119 preview-bearing files under android/. The repository is Rust first: there is no settings.gradle.kts at its root, and the Android client is a whole Gradle build under android/ — which is what workingDirectory is for, and this import is the reason that field exists. :lib:ui:designsystem is the pure-Compose design system (MullvadButton, ListItem, Checkbox, FilterChip); it is chosen over :lib:ui:component and the feature modules because it is the layer least likely to drag in the daemon, the gRPC bindings or anything built by cargo. If the first render still trips over a native or protobuf step, that is the thing to read the log for. Licence: GPL-3.0 — see the note on the pull request."
+}
