@@ -23,6 +23,11 @@
       "upstream": "bitwarden/android"
     },
     {
+      "slug": "mullvad-mullvadvpn-app",
+      "branch": "import/mullvad-mullvadvpn-app",
+      "upstream": "mullvad/mullvadvpn-app"
+    },
+    {
       "slug": "element-hq-element-x-android",
       "branch": "import/element-hq-element-x-android",
       "upstream": "element-hq/element-x-android"
