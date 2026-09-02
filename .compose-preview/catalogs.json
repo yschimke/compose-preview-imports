@@ -12,6 +12,16 @@
       "system": "droidkaigi-conference-app-2026"
     },
     {
+      "importedFrom": "element-hq/element-x-android",
+      "listed": true,
+      "system": "element-hq-element-x-android"
+    },
+    {
+      "importedFrom": "JetBrains/kotlinconf-app",
+      "listed": true,
+      "system": "jetbrains-kotlinconf-app"
+    },
+    {
       "importedFrom": "joreilly/BikeShare",
       "listed": true,
       "system": "joreilly-bikeshare"
@@ -35,6 +45,11 @@
       "importedFrom": "mullvad/mullvadvpn-app",
       "listed": true,
       "system": "mullvad-mullvadvpn-app"
+    },
+    {
+      "importedFrom": "thunderbird/thunderbird-android",
+      "listed": true,
+      "system": "thunderbird-android"
     }
   ],
   "groups": []
