@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Box">
+        <rect x="0" y="0" width="1050" height="2100" fill="#E8F4E7"/>
+      <g id="LayoutNodeSubcompositionsState">
+        <g id="LayoutNodeSubcompositionsState">
+          <g id="Spacer">
+          </g>
+          <g id="Box">
+              <rect x="64" y="253" width="922" height="145" rx="72.5" ry="72.5" fill="none" stroke="#141E16" stroke-opacity="0.16" stroke-width="2.62"/>
+            <g id="TextField">
+              <image href="add-feed.figma-raster/1167.png" x="63" y="252" width="924" height="147"/>
+            </g>
+          </g>
+          <g id="Box">
+              <rect x="64" y="442" width="922" height="145" rx="72.5" ry="72.5" fill="none" stroke="#141E16" stroke-opacity="0.16" stroke-width="2.62"/>
+            <g id="TextField">
+              <image href="add-feed.figma-raster/1178.png" x="63" y="441" width="924" height="147"/>
+            </g>
+          </g>
+          <g id="Box">
+            <rect x="63" y="630" width="382" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+            <g id="Row">
+              <g id="BoxKt">
+                <g transform="translate(105 656) scale(2.65 2.65)">
+                  <path d="M15.75 12 C 16.164 12 16.5 12.336 16.5 12.75 V15 H18.75 C 19.164 15 19.5 15.336 19.5 15.75 C 19.5 16.164 19.164 16.5 18.75 16.5 H16.5 V18.75 C 16.5 19.164 16.164 19.5 15.75 19.5 C 15.336 19.5 15 19.164 15 18.75 V16.5 H12.75 C 12.336 16.5 12 16.164 12 15.75 C 12 15.336 12.336 15 12.75 15 H15 V12.75 C 15 12.336 15.336 12 15.75 12 Z M13.5 2.5 C 15.157 2.5 16.5 3.843 16.5 5.5 V9.25 C 16.5 9.664 16.164 10 15.75 10 C 15.336 10 15 9.664 15 9.25 V5.5 C 15 4.672 14.328 4 13.5 4 H5.5 C 4.672 4 4 4.672 4 5.5 V13.5 L4.008 13.653 C 4.079 14.359 4.641 14.92 5.347 14.992 L5.5 15 H9.25 C 9.664 15 10 15.336 10 15.75 C 10 16.164 9.664 16.5 9.25 16.5 H5.5 C 3.843 16.5 2.5 15.157 2.5 13.5 V5.5 C 2.5 3.843 3.843 2.5 5.5 2.5 H13.5 Z" fill="#141E16"/>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="Empty">
+                <text x="179" y="694.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Add to group</text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Box">
+          <image href="add-feed.figma-raster/1136.png" x="0" y="0" width="1050" height="168"/>
+          <g id="TopAppBar">
+            <g id="Box">
+              <rect x="43" y="31" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="BoxKt">
+                <g transform="translate(69 57) scale(0.05 0.05)">
+                  <path d="m313 -440 l196 196 q 12 12 11.5 28 T 0 0 q -12 11 -28 11.5 T 0 0 L188 -452 q -6 -6 -8.5 -13 t 0 0 q 0 -8 2.5 -15 t 0 0 l264 -264 q 11 -11 27.5 -11 t 0 0 q 12 12 12 28.5 T 0 0 L313 -520 h447 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H313 Z" transform="translate(0 960)" fill="#141E16"/>
+                </g>
+              </g>
+            </g>
+            <g id="Box">
+            </g>
+            <g id="Box">
+              <rect x="695" y="31" width="312" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="Row">
+                <g id="BoxKt">
+                  <g transform="translate(737 57) scale(0.05 0.05)">
+                    <path d="M120 800 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h720 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 L120 800 Z M200 640 q -17 0 -28.5 -11.5 T 0 0 v-240 q 0 -17 11.5 -28.5 T 0 0 q 17 0 28.5 11.5 T 0 0 v240 q 0 17 -11.5 28.5 T 0 0 Z M360 640 q -17 0 -28.5 -11.5 T 0 0 v-400 q 0 -17 11.5 -28.5 T 0 0 q 17 0 28.5 11.5 T 0 0 v400 q 0 17 -11.5 28.5 T 0 0 Z M520 640 q -17 0 -28.5 -11.5 T 0 0 v-400 q 0 -17 11.5 -28.5 T 0 0 q 17 0 28.5 11.5 T 0 0 v400 q 0 17 -11.5 28.5 T 0 0 Z M795 620 q -14 8 -30.5 3.5 T 0 0 L620 395 q -8 -14 -3.5 -30.5 T 0 0 q 14 -8 30.5 -3.5 T 0 0 l120 210 q 8 14 3.5 30.5 T 0 0 Z" fill="#141E16"/>
+                  </g>
+                </g>
+                <g id="Spacer">
+                </g>
+                <g id="Empty">
+                  <text x="811" y="95.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Discover</text>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Box">
+        </g>
+        <g id="Box">
+          <rect x="0" y="1911" width="1050" height="189" rx="73.5" ry="73.5" fill="#E8F4E7"/>
+          <g id="Empty">
+            <text x="436" y="2017.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#49454F" fill-opacity="0.38">ADD FEED</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

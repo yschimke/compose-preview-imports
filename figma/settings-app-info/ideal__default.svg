@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Box">
+        <rect x="0" y="0" width="1050" height="2100" fill="#E8F4E7"/>
+      <g id="LayoutNodeSubcompositionsState">
+        <g id="LayoutNodeSubcompositionsState">
+          <g id="Row">
+            <g id="Spacer">
+            </g>
+            <g id="Column">
+              <g id="Empty">
+                <text x="63" y="318.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">What's new</text>
+              </g>
+              <g id="Empty">
+                <text x="63" y="374.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">1.0.0 (1)</text>
+              </g>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Spacer">
+            </g>
+            <g id="Column">
+              <g id="Empty">
+                <text x="63" y="518.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Report an issue</text>
+              </g>
+              <g id="Empty">
+                <text x="63" y="574.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">1.0.0 (1)</text>
+              </g>
+            </g>
+          </g>
+          <g id="Spacer">
+            <g transform="translate(0 652) scale(1 1)">
+              <path d="M0,1.31 L1050,1.31" fill="none" stroke="#BCCABC" stroke-width="2.62"/>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Column">
+              <g id="Empty">
+                <text x="63" y="785.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">About</text>
+              </g>
+              <g id="Empty">
+                <text x="63" y="838.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">Get to know the authors</text>
+              </g>
+            </g>
+            <g id="Box">
+              <g id="UtilsKt">
+                <image href="ideal__default.figma-raster/1422.png" x="840" y="734" width="131" height="131"/>
+              </g>
+              <g id="UtilsKt">
+                <image href="ideal__default.figma-raster/1423.png" x="746" y="734" width="131" height="131"/>
+              </g>
+            </g>
+          </g>
+          <g id="Empty">
+            <text x="63" y="1035.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#3D4A3F">Danger zone</text>
+          </g>
+          <g id="Column">
+            <g id="Empty">
+              <text x="63" y="1169.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#BA1A1A">Reset app data</text>
+            </g>
+            <g id="Empty">
+              <text font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F"><tspan x="63" y="1227" textLength="876" lengthAdjust="spacing">Clear all your feeds, settings and image cache. You will</tspan><tspan x="63" y="1280" textLength="348" lengthAdjust="spacing">be logged out as well.</tspan></text>
+            </g>
+          </g>
+        </g>
+        <g id="Box">
+          <g id="Box">
+            <image href="ideal__default.figma-raster/1384.png" x="0" y="0" width="1050" height="210"/>
+            <g id="TopAppBar">
+              <g id="Box">
+                <rect x="43" y="52" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+                <g id="BoxKt">
+                  <g transform="translate(69 78) scale(0.05 0.05)">
+                    <path d="m313 -440 l196 196 q 12 12 11.5 28 T 0 0 q -12 11 -28 11.5 T 0 0 L188 -452 q -6 -6 -8.5 -13 t 0 0 q 0 -8 2.5 -15 t 0 0 l264 -264 q 11 -11 27.5 -11 t 0 0 q 12 12 12 28.5 T 0 0 L313 -520 h447 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H313 Z" transform="translate(0 960)" fill="#141E16"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Empty">
+                <text x="191" y="124.67" font-size="57.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">App info &amp; feedback</text>
+              </g>
+              <g id="Row">
+              </g>
+            </g>
+          </g>
+          <g id="Spacer">
+            <g transform="translate(0 207) scale(1 1)">
+              <path d="M0,1.31 L1050,1.31" fill="none" stroke="#BCCABC" stroke-width="2.62"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

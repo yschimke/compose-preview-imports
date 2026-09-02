@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Column">
+      <image href="ideal__default.figma-raster/1260.png" x="0" y="0" width="1050" height="2100"/>
+      <g id="Box">
+        <g id="LayoutNodeSubcompositionsState">
+          <g id="Box">
+            <rect x="42" y="42" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+            <g id="BoxKt">
+              <g transform="translate(68 68) scale(0.05 0.05)">
+                <path d="M480 -424 L284 -228 q -11 11 -28 11 t 0 0 q -11 -11 -11 -28 t 0 0 l196 -196 l-196 -196 q -11 -11 -11 -28 t 0 0 q 11 -11 28 -11 t 0 0 l196 196 l196 -196 q 11 -11 28 -11 t 0 0 q 11 11 11 28 t 0 0 L536 -480 l196 196 q 11 11 11 28 t 0 0 q -11 11 -28 11 t 0 0 L480 -424 Z" transform="translate(0 960)" fill="#141E16"/>
+              </g>
+            </g>
+          </g>
+          <g id="Spacer">
+          </g>
+          <g id="Box">
+            <path d="M0,231 H950 A58,58 0 0 1 1008,289 V289 A58,58 0 0 1 950,347 H0 V231 Z" fill="#141E16" fill-opacity="0.07"/>
+            <g id="Row">
+              <g id="BoxKt">
+                <g transform="translate(53 263) scale(0.05 0.05)">
+                  <path d="M160 -200 v-360 q 0 -19 8.5 -36 t 0 0 l240 -180 q 21 -16 48 -16 t 0 0 l240 180 q 15 11 23.5 28 t 0 0 v360 q 0 33 -23.5 56.5 T 0 0 H600 q -17 0 -28.5 -11.5 T 0 0 v-200 q 0 -17 -11.5 -28.5 T 0 0 h-80 q -17 0 -28.5 11.5 T 0 0 v200 q 0 17 -11.5 28.5 T 0 0 H240 q -33 0 -56.5 -23.5 T 0 0 Z" transform="translate(0 960)" fill="#141E16"/>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="Empty">
+                <text x="138" y="301.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Home</text>
+              </g>
+            </g>
+          </g>
+          <g id="Box">
+            <g id="Row">
+              <g id="BoxKt">
+                <g transform="translate(53 379) scale(2.65 2.65)">
+                  <path d="M8.001 13 C 6.611 13 5.431 12.514 4.458 11.542 C 3.486 10.569 3 9.389 3 8 C 3 6.611 3.486 5.431 4.458 4.458 C 5.431 3.486 6.611 3 8 3 C 9.389 3 10.569 3.486 11.542 4.458 C 12.514 5.431 13 6.611 13 8.001 C 13 8.562 12.913 9.091 12.74 9.588 C 12.566 10.085 12.326 10.542 12.021 10.958 L16.479 15.417 C 16.632 15.569 16.708 15.743 16.708 15.938 C 16.708 16.132 16.632 16.306 16.479 16.458 C 16.326 16.611 16.149 16.688 15.948 16.688 C 15.747 16.688 15.569 16.611 15.417 16.458 L10.958 12.021 C 10.542 12.326 10.085 12.566 9.588 12.74 C 9.091 12.913 8.562 13 8.001 13 Z M8 11.5 C 8.972 11.5 9.799 11.16 10.479 10.479 C 11.16 9.799 11.5 8.972 11.5 8 C 11.5 7.028 11.16 6.201 10.479 5.521 C 9.799 4.84 8.972 4.5 8 4.5 C 7.028 4.5 6.201 4.84 5.521 5.521 C 4.84 6.201 4.5 7.028 4.5 8 C 4.5 8.972 4.84 9.799 5.521 10.479 C 6.201 11.16 7.028 11.5 8 11.5 Z" fill="#141E16"/>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="Empty">
+                <text x="138" y="417.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#141E16">Search</text>
+              </g>
+            </g>
+          </g>
+          <g id="Box">
+            <g id="Row">
+              <g id="BoxKt">
+                <g transform="translate(53 495) scale(0.05 0.05)">
+                  <path d="M120 800 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h720 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 L120 800 Z M200 640 q -17 0 -28.5 -11.5 T 0 0 v-240 q 0 -17 11.5 -28.5 T 0 0 q 17 0 28.5 11.5 T 0 0 v240 q 0 17 -11.5 28.5 T 0 0 Z M360 640 q -17 0 -28.5 -11.5 T 0 0 v-400 q 0 -17 11.5 -28.5 T 0 0 q 17 0 28.5 11.5 T 0 0 v400 q 0 17 -11.5 28.5 T 0 0 Z M520 640 q -17 0 -28.5 -11.5 T 0 0 v-400 q 0 -17 11.5 -28.5 T 0 0 q 17 0 28.5 11.5 T 0 0 v400 q 0 17 -11.5 28.5 T 0 0 Z M795 620 q -14 8 -30.5 3.5 T 0 0 L620 395 q -8 -14 -3.5 -30.5 T 0 0 q 14 -8 30.5 -3.5 T 0 0 l120 210 q 8 14 3.5 30.5 T 0 0 Z" fill="#141E16"/>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="Empty">
+                <text x="138" y="533.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#141E16">Discover</text>
+              </g>
+            </g>
+          </g>
+          <g id="Box">
+            <g id="Row">
+              <g id="BoxKt">
+                <g transform="translate(53 611) scale(2.65 2.65)">
+                  <path d="M4 5.5 C 4 4.119 5.119 3 6.5 3 V4.5 L6.397 4.505 C 5.893 4.556 5.5 4.982 5.5 5.5 V16.5 L10 14.25 L14.5 16.5 V5.5 C 14.5 4.948 14.052 4.5 13.5 4.5 V3 C 14.881 3 16 4.119 16 5.5 V16.5 C 16 17.02 15.731 17.503 15.289 17.776 C 14.847 18.05 14.294 18.074 13.829 17.842 L10 15.927 L6.171 17.842 C 5.706 18.074 5.153 18.05 4.711 17.776 C 4.269 17.503 4 17.02 4 16.5 V5.5 Z M13.5 3 V4.5 H6.5 V3 H13.5 Z" fill="#141E16"/>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="Empty">
+                <text x="138" y="649.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#141E16">Bookmarks</text>
+              </g>
+            </g>
+          </g>
+          <g id="Box">
+            <g id="Row">
+              <g id="BoxKt">
+                <g transform="translate(53 727) scale(2.65 2.65)">
+                  <path d="M10 12.5 C 11.381 12.5 12.5 11.381 12.5 10 C 12.5 8.619 11.381 7.5 10 7.5 C 8.619 7.5 7.5 8.619 7.5 10 C 7.5 11.381 8.619 12.5 10 12.5 Z" fill="#141E16"/>
+                  <path d="M7.706 16.683 C 7.799 17.435 8.437 18 9.195 18 H10.8 C 11.552 18 12.189 17.442 12.287 16.696 L12.451 15.452 C 12.642 15.366 12.828 15.27 13.01 15.164 C 13.18 15.064 13.346 14.957 13.505 14.842 L14.675 15.326 C 15.371 15.615 16.174 15.341 16.55 14.687 L17.342 13.306 C 17.718 12.651 17.548 11.818 16.945 11.363 L15.949 10.61 C 15.969 10.399 15.976 10.193 15.976 10 C 15.976 9.806 15.969 9.602 15.949 9.39 L16.945 8.637 C 17.548 8.182 17.718 7.35 17.342 6.694 L16.55 5.313 C 16.172 4.654 15.361 4.382 14.663 4.679 L13.513 5.166 C 13.351 5.048 13.184 4.937 13.01 4.836 C 12.831 4.731 12.648 4.637 12.461 4.552 L12.309 3.317 C 12.217 2.565 11.578 2 10.82 2 H9.216 C 8.463 2 7.827 2.558 7.729 3.304 L7.564 4.548 C 7.373 4.634 7.187 4.73 7.006 4.836 C 6.835 4.936 6.67 5.043 6.51 5.158 L5.341 4.674 C 4.644 4.385 3.841 4.659 3.466 5.313 L2.674 6.694 C 2.296 7.353 2.47 8.191 3.079 8.644 L4.067 9.379 C 4.047 9.586 4.039 9.792 4.039 10 C 4.039 10.2 4.047 10.403 4.067 10.609 L3.071 11.363 C 2.468 11.818 2.298 12.651 2.674 13.306 L3.466 14.687 C 3.844 15.345 4.654 15.618 5.353 15.321 L6.502 14.834 C 6.664 14.952 6.832 15.063 7.006 15.164 C 7.184 15.269 7.367 15.363 7.555 15.448 L7.706 16.683 Z M12.252 13.87 C 11.894 14.079 11.504 14.238 11.084 14.347 L10.8 16.5 H9.195 L8.931 14.347 C 8.511 14.238 8.122 14.079 7.763 13.87 C 7.404 13.66 7.076 13.399 6.778 13.087 L4.767 13.941 L3.975 12.559 L5.722 11.239 C 5.586 10.833 5.539 10.433 5.539 10 C 5.539 9.54 5.586 9.147 5.722 8.741 L3.975 7.441 L4.767 6.059 L6.778 6.892 C 7.076 6.594 7.404 6.34 7.763 6.13 C 8.122 5.921 8.511 5.761 8.931 5.653 L9.216 3.5 H10.82 L11.084 5.653 C 11.504 5.761 11.894 5.921 12.252 6.13 C 12.611 6.34 12.94 6.601 13.238 6.912 L15.248 6.059 L16.041 7.441 L14.294 8.761 C 14.429 9.14 14.476 9.567 14.476 10 C 14.476 10.433 14.429 10.86 14.294 11.239 L16.041 12.559 L15.248 13.941 L13.238 13.108 C 12.94 13.406 12.611 13.66 12.252 13.87 Z" fill="#141E16" fill-rule="evenodd"/>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="Empty">
+                <text x="138" y="765.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#141E16">Settings</text>
+              </g>
+            </g>
+          </g>
+          <g id="Spacer">
+            <g transform="translate(63 853) scale(1 1)">
+              <path d="M0,1.31 L924,1.31" fill="none" stroke="#BCCABC" stroke-width="2.62"/>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Column">
+              <g id="Empty">
+                <text x="63" y="964.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Feeds</text>
+              </g>
+              <g id="Empty">
+                <text x="63" y="1013.86" font-size="31.5" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" letter-spacing="0.63" fill="#3D4A3F">0 sources</text>
+              </g>
+            </g>
+            <g id="Spacer">
+            </g>
+            <g id="Box">
+              <rect x="882" y="919" width="105" height="105" rx="52.5" ry="52.5" fill="#29332A"/>
+              <g id="BoxKt">
+                <g transform="translate(908 945) scale(2.2 2.2)">
+                  <path d="M11 11 L5 11 C 4.448 11 4 11.448 4 12 C 4 12.552 4.448 13 5 13 L11 13 V19 C 11 19.552 11.448 20 12 20 C 12.552 20 13 19.552 13 19 V13 H19 C 19.552 13 20 12.552 20 12 C 20 11.448 19.552 11 19 11 L13 11 V5 C 13 4.448 12.552 4 12 4 C 11.448 4 11 4.448 11 5 V11 Z" fill="#E8F4E7"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g id="Empty">
+            <text font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#3D4A3F"><tspan x="98" y="1148" textLength="853" lengthAdjust="spacing">You will see all your feeds here, let's start by adding a</tspan><tspan x="482" y="1201" textLength="85" lengthAdjust="spacing">feed.</tspan></text>
+          </g>
+        </g>
+        <g id="Box">
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

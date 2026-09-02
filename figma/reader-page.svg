@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Column">
+      <g id="Empty">
+        <text x="63" y="100.35" font-size="73.5" font-family="outfit-bold.ttf:FontWeight(weight=700):Normal:SettingFloat(ital,0.0),SettingInt(wght,700, sans-serif" font-weight="700" letter-spacing="-1.47" fill="#3D6657">Post Title</text>
+      </g>
+      <g id="Spacer">
+      </g>
+      <g id="Row">
+        <g id="Row">
+          <g id="Row">
+            <g id="Box">
+              <g id="Box">
+                <image href="reader-page.figma-raster/147.png" x="66" y="170" width="42" height="42"/>
+              </g>
+              <g id="BoxKt">
+                <g transform="translate(94 167) scale(1 1)">
+                  <path d="M0,8 A8,8 0 1 0 16,8 A8,8 0 1 0 0,8 Z" fill="#BA1A1A"/>
+                </g>
+              </g>
+            </g>
+            <g id="Spacer">
+            </g>
+            <g id="Empty">
+              <text x="121" y="200.86" font-size="31.5" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" letter-spacing="0.63" fill="#3D4A3F">Feed Name</text>
+            </g>
+          </g>
+          <g id="Empty">
+            <text x="309" y="200.86" font-size="31.5" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" letter-spacing="0.63" fill="#6D7B6E">•</text>
+          </g>
+          <g id="Empty">
+            <text x="342" y="200.86" font-size="31.5" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" letter-spacing="0.63" fill="#6D7B6E">01 Jan 70</text>
+          </g>
+        </g>
+        <g id="Row">
+          <g id="Box">
+            <g id="BoxKt">
+              <g transform="translate(829 169) scale(2.1 2.1)">
+                <path d="M4 5.5 C 4 4.119 5.119 3 6.5 3 V4.5 L6.397 4.505 C 5.893 4.556 5.5 4.982 5.5 5.5 V16.5 L10 14.25 L14.5 16.5 V5.5 C 14.5 4.948 14.052 4.5 13.5 4.5 V3 C 14.881 3 16 4.119 16 5.5 V16.5 C 16 17.02 15.731 17.503 15.289 17.776 C 14.847 18.05 14.294 18.074 13.829 17.842 L10 15.927 L6.171 17.842 C 5.706 18.074 5.153 18.05 4.711 17.776 C 4.269 17.503 4 17.02 4 16.5 V5.5 Z M13.5 3 V4.5 H6.5 V3 H13.5 Z" fill="#3D4A3F"/>
+              </g>
+            </g>
+          </g>
+          <g id="Box">
+            <g id="BoxKt">
+              <g transform="translate(924 169) scale(0.04 0.04)">
+                <path d="M240 -400 q -33 0 -56.5 -23.5 T 0 0 q 0 -33 23.5 -56.5 T 0 0 q 33 0 56.5 23.5 T 0 0 q 0 33 -23.5 56.5 T 0 0 Z m240 0 q -33 0 -56.5 -23.5 T 0 0 q 0 -33 23.5 -56.5 T 0 0 q 33 0 56.5 23.5 T 0 0 q 0 33 -23.5 56.5 T 0 0 Z m240 0 q -33 0 -56.5 -23.5 T 0 0 q 0 -33 23.5 -56.5 T 0 0 q 33 0 56.5 23.5 T 0 0 q 0 33 -23.5 56.5 T 0 0 Z" transform="translate(0 960)" fill="#3D4A3F"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

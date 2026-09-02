@@ -1,0 +1,247 @@
+{
+  "system": "msasikanth-twine",
+  "title": "Twine",
+  "label": "Compose",
+  "source": {
+    "repo": "msasikanth/twine",
+    "ref": "bce23e5de2f56b0e34752f89c564beff26dad98b",
+    "module": ":shared"
+  },
+  "generatedAt": "2026-09-02T22:07:44.021Z",
+  "mappings": [
+    {
+      "componentId": "home",
+      "figmaLayerName": "home",
+      "componentName": "HomePreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/home/ui/HomeScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HomePreview",
+      "figmaSvg": "figma/home.svg"
+    },
+    {
+      "componentId": "reader-page",
+      "figmaLayerName": "reader-page",
+      "componentName": "ReaderPagePreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/reader/page/ui/ReaderPage.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ReaderPagePreview",
+      "figmaSvg": "figma/reader-page.svg"
+    },
+    {
+      "componentId": "bookmarks",
+      "figmaLayerName": "bookmarks",
+      "componentName": "BookmarksPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/bookmarks/ui/BookmarksScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "BookmarksPreview",
+      "figmaSvg": "figma/bookmarks.svg"
+    },
+    {
+      "componentId": "search",
+      "figmaLayerName": "search",
+      "componentName": "SearchPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/search/ui/SearchScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SearchPreview",
+      "figmaSvg": "figma/search.svg"
+    },
+    {
+      "componentId": "navigation-drawer",
+      "figmaLayerName": "navigation-drawer",
+      "componentName": "NavigationDrawerPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/main/ui/NavigationDrawerContent.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NavigationDrawerPreview",
+      "figmaSvg": "figma/navigation-drawer.svg"
+    },
+    {
+      "componentId": "add-feed",
+      "figmaLayerName": "add-feed",
+      "componentName": "AddFeedPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/addfeed/ui/AddFeedScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AddFeedPreview",
+      "figmaSvg": "figma/add-feed.svg"
+    },
+    {
+      "componentId": "group",
+      "figmaLayerName": "group",
+      "componentName": "GroupPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/group/ui/GroupScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "GroupPreview",
+      "figmaSvg": "figma/group.svg"
+    },
+    {
+      "componentId": "discovery",
+      "figmaLayerName": "discovery",
+      "componentName": "DiscoveryPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/discovery/ui/DiscoveryScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DiscoveryPreview",
+      "figmaSvg": "figma/discovery.svg"
+    },
+    {
+      "componentId": "onboarding",
+      "figmaLayerName": "onboarding",
+      "componentName": "OnboardingPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/onboarding/ui/OnboardingScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "OnboardingPreview",
+      "figmaSvg": "figma/onboarding.svg"
+    },
+    {
+      "componentId": "account-selection",
+      "figmaLayerName": "account-selection",
+      "componentName": "AccountSelectionPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/accountselection/ui/AccountSelectionScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AccountSelectionPreview",
+      "figmaSvg": "https://preview.coo.ee/msasikanth-twine/render/account-selection__ideal__default.svg"
+    },
+    {
+      "componentId": "freshrss-login",
+      "figmaLayerName": "freshrss-login",
+      "componentName": "FreshRssLoginPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/freshrss/ui/FreshRssLoginScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FreshRssLoginPreview",
+      "figmaSvg": "figma/freshrss-login.svg"
+    },
+    {
+      "componentId": "bazqux-login",
+      "figmaLayerName": "bazqux-login",
+      "componentName": "BazQuxLoginPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/bazqux/ui/BazQuxLoginScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "BazQuxLoginPreview",
+      "figmaSvg": "figma/bazqux-login.svg"
+    },
+    {
+      "componentId": "miniflux-login",
+      "figmaLayerName": "miniflux-login",
+      "componentName": "MinifluxLoginPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/miniflux/ui/MinifluxLoginScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "MinifluxLoginPreview",
+      "figmaSvg": "figma/miniflux-login.svg"
+    },
+    {
+      "componentId": "premium-paywall",
+      "figmaLayerName": "premium-paywall",
+      "componentName": "PremiumPaywallScreenPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/premium/PremiumPaywallScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PremiumPaywallScreenPreview",
+      "figmaSvg": "https://preview.coo.ee/msasikanth-twine/render/premium-paywall__ideal__default.svg"
+    },
+    {
+      "componentId": "settings",
+      "figmaLayerName": "settings",
+      "componentName": "SettingsPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingsPreview",
+      "figmaSvg": "figma/settings.svg"
+    },
+    {
+      "componentId": "settings-appearance",
+      "figmaLayerName": "settings-appearance",
+      "componentName": "SettingsAppearancePreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsAppearanceScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingsAppearancePreview",
+      "figmaSvg": "figma/settings-appearance.svg"
+    },
+    {
+      "componentId": "settings-behavior",
+      "figmaLayerName": "settings-behavior",
+      "componentName": "SettingsBehaviorPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsBehaviorScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingsBehaviorPreview",
+      "figmaSvg": "figma/settings-behavior.svg"
+    },
+    {
+      "componentId": "settings-data",
+      "figmaLayerName": "settings-data",
+      "componentName": "SettingsDataContent",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsDataScreen.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SettingsDataPreview",
+      "codeSnippet": "SettingsDataContent(\n    state = TODO(\"StatisticsState\"),\n    goBack = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import dev.sasikanth.rss.reader.settings.ui.SettingsDataContent"
+      ],
+      "parameters": [
+        {
+          "name": "state",
+          "type": "StatisticsState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "goBack",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/settings-data.svg"
+    },
+    {
+      "componentId": "settings-services",
+      "figmaLayerName": "settings-services",
+      "componentName": "SettingsServicesPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsServicesScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingsServicesPreview",
+      "figmaSvg": "figma/settings-services.svg"
+    },
+    {
+      "componentId": "settings-app-info",
+      "figmaLayerName": "settings-app-info",
+      "componentName": "SettingsAppInfoPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsAppInfoScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingsAppInfoPreview",
+      "figmaSvg": "figma/settings-app-info.svg"
+    },
+    {
+      "componentId": "about",
+      "figmaLayerName": "about",
+      "componentName": "AboutPreview",
+      "source": "https://github.com/msasikanth/twine/blob/bce23e5de2f56b0e34752f89c564beff26dad98b/shared/src/commonMain/kotlin/dev/sasikanth/rss/reader/about/ui/AboutScreen.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AboutPreview",
+      "figmaSvg": "figma/about.svg"
+    }
+  ]
+}

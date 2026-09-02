@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Box">
+      <rect x="0" y="0" width="1050" height="2100" fill="#E8F4E7"/>
+      <g id="LayoutNodeSubcompositionsState">
+        <g id="LayoutNodeSubcompositionsState">
+          <g id="Row">
+            <g id="Box">
+              <rect x="42" y="279" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="BoxKt">
+                <g transform="translate(68 305) scale(2.65 2.65)">
+                  <path d="M12.75 2 C 14.269 2 15.5 3.231 15.5 4.75 C 15.5 6.174 14.418 7.344 13.031 7.485 L12.75 7.5 H8.25 L7.969 7.485 C 6.835 7.37 5.906 6.567 5.604 5.5 H5 C 4.724 5.5 4.5 5.724 4.5 6 V8.5 C 4.5 8.776 4.724 9 5 9 H9.5 C 10.605 9 11.5 9.895 11.5 11 V11.631 C 12.373 11.94 13 12.771 13 13.75 V16.75 C 13 17.993 11.993 19 10.75 19 C 9.507 19 8.5 17.993 8.5 16.75 V13.75 C 8.5 12.771 9.127 11.94 10 11.631 V11 C 10 10.724 9.776 10.5 9.5 10.5 H5 C 3.895 10.5 3 9.605 3 8.5 V6 C 3 4.895 3.895 4 5 4 H5.606 C 5.933 2.846 6.991 2 8.25 2 H12.75 Z M10.75 13 C 10.336 13 10 13.336 10 13.75 V16.75 L10.004 16.827 C 10.042 17.205 10.362 17.5 10.75 17.5 C 11.138 17.5 11.458 17.205 11.496 16.827 L11.5 16.75 V13.75 C 11.5 13.336 11.164 13 10.75 13 Z M8.25 3.5 C 7.56 3.5 7 4.06 7 4.75 C 7 5.44 7.56 6 8.25 6 H12.75 C 13.44 6 14 5.44 14 4.75 C 14 4.06 13.44 3.5 12.75 3.5 H8.25 Z" fill="#141E16" fill-rule="evenodd"/>
+                </g>
+              </g>
+            </g>
+            <g id="Column">
+              <g id="Empty">
+                <text x="189" y="318.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Appearance &amp; layout</text>
+              </g>
+              <g id="Empty">
+                <text x="189" y="374.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">Customize how Twine looks</text>
+              </g>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Box">
+              <rect x="42" y="479" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="BoxKt">
+                <g transform="translate(68 505) scale(2.65 2.65)">
+                  <path d="M14.257 5.007 C 16.899 5.141 19 7.325 19 10 C 19 12.675 16.899 14.859 14.257 14.993 L14 15 H6 C 3.239 15 1 12.761 1 10 C 1 7.239 3.239 5 6 5 H14 L14.257 5.007 Z M6 6.5 C 4.067 6.5 2.5 8.067 2.5 10 C 2.5 11.933 4.067 13.5 6 13.5 H14 C 15.933 13.5 17.5 11.933 17.5 10 C 17.5 8.067 15.933 6.5 14 6.5 H6 Z M14 8 C 15.105 8 16 8.895 16 10 C 16 11.105 15.105 12 14 12 C 12.895 12 12 11.105 12 10 C 12 8.895 12.895 8 14 8 Z" fill="#141E16"/>
+                </g>
+              </g>
+            </g>
+            <g id="Column">
+              <g id="Empty">
+                <text x="189" y="518.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Features &amp; behaviors</text>
+              </g>
+              <g id="Empty">
+                <text x="189" y="574.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">Customize how Twine works</text>
+              </g>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Box">
+              <rect x="42" y="679" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="BoxKt">
+                <g transform="translate(68 705) scale(2.65 2.65)">
+                  <path d="M3.276 7.168 C 3.571 6.928 4.006 6.945 4.28 7.22 L6.78 9.72 C 7.073 10.013 7.073 10.487 6.78 10.78 C 6.487 11.073 6.013 11.073 5.72 10.78 L4.516 9.576 C 4.505 9.716 4.5 9.857 4.5 10 C 4.5 13.038 6.962 15.5 10 15.5 C 10.771 15.5 11.502 15.342 12.166 15.058 C 12.547 14.894 12.987 15.071 13.15 15.451 C 13.314 15.832 13.137 16.272 12.757 16.435 C 11.91 16.799 10.977 17 10 17 C 6.134 17 3 13.866 3 10 C 3 9.847 3.006 9.695 3.016 9.544 L1.78 10.78 C 1.487 11.073 1.013 11.073 0.72 10.78 C 0.427 10.487 0.427 10.013 0.72 9.72 L3.22 7.22 L3.276 7.168 Z M10 3 C 13.866 3 17 6.134 17 10 C 17 10.153 16.993 10.304 16.983 10.455 L18.22 9.22 C 18.513 8.927 18.987 8.927 19.28 9.22 C 19.573 9.513 19.573 9.987 19.28 10.28 L16.78 12.78 L16.724 12.832 C 16.429 13.072 15.994 13.055 15.72 12.78 L13.22 10.28 C 12.927 9.987 12.927 9.513 13.22 9.22 C 13.513 8.927 13.987 8.927 14.28 9.22 L15.483 10.423 C 15.494 10.283 15.5 10.142 15.5 10 C 15.5 6.962 13.038 4.5 10 4.5 C 9.229 4.5 8.498 4.658 7.834 4.942 C 7.453 5.106 7.013 4.929 6.85 4.549 C 6.686 4.168 6.862 3.728 7.243 3.564 C 8.09 3.201 9.023 3 10 3 Z" fill="#141E16"/>
+                </g>
+              </g>
+            </g>
+            <g id="Column">
+              <g id="Empty">
+                <text x="189" y="718.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Services &amp; sync</text>
+              </g>
+              <g id="Empty">
+                <text x="189" y="774.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">Manage RSS services</text>
+              </g>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Box">
+              <rect x="42" y="879" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="BoxKt">
+                <g transform="translate(68 905) scale(2.65 2.65)">
+                  <path d="M10 11 C 13.5 11 17 12 17 15 C 17 16.381 15.881 17.5 14.5 17.5 H5.5 C 4.119 17.5 3 16.381 3 15 C 3 12 6.5 11 10 11 Z M10 12.5 C 8.353 12.5 6.857 12.741 5.832 13.229 C 4.872 13.687 4.5 14.246 4.5 15 C 4.5 15.552 4.948 16 5.5 16 H14.5 C 15.052 16 15.5 15.552 15.5 15 C 15.5 14.246 15.128 13.687 14.168 13.229 C 13.143 12.741 11.647 12.5 10 12.5 Z M10 2.5 C 11.933 2.5 13.5 4.067 13.5 6 C 13.5 7.933 11.933 9.5 10 9.5 C 8.067 9.5 6.5 7.933 6.5 6 C 6.5 4.067 8.067 2.5 10 2.5 Z M10 4 C 8.895 4 8 4.895 8 6 C 8 7.105 8.895 8 10 8 C 11.105 8 12 7.105 12 6 C 12 4.895 11.105 4 10 4 Z" fill="#141E16"/>
+                </g>
+              </g>
+            </g>
+            <g id="Column">
+              <g id="Empty">
+                <text x="189" y="918.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Your insights</text>
+              </g>
+              <g id="Empty">
+                <text x="189" y="974.92" font-size="36.75" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">Manage your reading data</text>
+              </g>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Box">
+              <rect x="42" y="1073" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="BoxKt">
+                <g transform="translate(68 1099) scale(2.65 2.65)">
+                  <path d="M12.373 2 C 13.138 2 13.87 2.153 14.537 2.432 C 14.768 2.528 14.936 2.733 14.984 2.979 C 15.033 3.224 14.956 3.478 14.779 3.654 L12.748 5.685 V7.25 H14.314 L16.344 5.219 C 16.521 5.042 16.774 4.965 17.02 5.014 C 17.265 5.062 17.47 5.23 17.566 5.461 C 17.845 6.128 17.998 6.86 17.998 7.625 C 17.998 10.731 15.479 13.25 12.373 13.25 C 11.893 13.25 11.428 13.188 10.984 13.074 L6.4 17.657 C 5.279 18.778 3.462 18.778 2.341 17.657 C 1.22 16.536 1.219 14.718 2.341 13.597 L6.924 9.014 C 6.81 8.57 6.748 8.105 6.748 7.625 C 6.748 4.519 9.267 2 12.373 2 Z M12.373 3.5 C 10.095 3.5 8.248 5.347 8.248 7.625 C 8.248 8.1 8.329 8.556 8.478 8.981 C 8.572 9.253 8.504 9.555 8.301 9.759 L3.401 14.658 C 2.866 15.194 2.866 16.061 3.401 16.597 C 3.937 17.132 4.804 17.132 5.34 16.597 L10.239 11.697 C 10.443 11.494 10.745 11.426 11.017 11.521 C 11.442 11.669 11.898 11.75 12.373 11.75 C 14.651 11.75 16.498 9.903 16.498 7.625 C 16.498 7.484 16.491 7.344 16.478 7.207 L15.153 8.53 C 15.013 8.671 14.822 8.75 14.623 8.75 H11.998 C 11.584 8.75 11.248 8.414 11.248 8 V5.375 C 11.248 5.176 11.327 4.985 11.468 4.845 L12.791 3.521 C 12.654 3.507 12.514 3.5 12.373 3.5 Z" fill="#141E16"/>
+                </g>
+              </g>
+            </g>
+            <g id="Empty">
+              <text x="189" y="1139.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">App info &amp; feedback</text>
+            </g>
+          </g>
+        </g>
+        <g id="Box">
+          <g id="Box">
+            <image href="ideal__default.figma-raster/1200.png" x="0" y="0" width="1050" height="210"/>
+            <g id="TopAppBar">
+              <g id="Box">
+                <rect x="43" y="52" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+                <g id="BoxKt">
+                  <g transform="translate(69 78) scale(0.05 0.05)">
+                    <path d="m313 -440 l196 196 q 12 12 11.5 28 T 0 0 q -12 11 -28 11.5 T 0 0 L188 -452 q -6 -6 -8.5 -13 t 0 0 q 0 -8 2.5 -15 t 0 0 l264 -264 q 11 -11 27.5 -11 t 0 0 q 12 12 12 28.5 T 0 0 L313 -520 h447 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H313 Z" transform="translate(0 960)" fill="#141E16"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Empty">
+                <text x="191" y="124.67" font-size="57.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Settings</text>
+              </g>
+              <g id="Row">
+              </g>
+            </g>
+          </g>
+          <g id="Spacer">
+            <g transform="translate(0 207) scale(1 1)">
+              <path d="M0,1.31 L1050,1.31" fill="none" stroke="#BCCABC" stroke-width="2.62"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

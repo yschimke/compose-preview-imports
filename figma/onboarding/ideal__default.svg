@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<defs>
+  <filter id="shadow-16" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="8" stdDeviation="9.6" flood-color="#000000" flood-opacity="0.26"/>
+  </filter>
+</defs>
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Box">
+        <rect x="0" y="0" width="1050" height="2100" fill="#F1FDF0"/>
+      <g id="LayoutNodeSubcompositionsState">
+        <g id="Column">
+          <g id="Box">
+            <image href="ideal__default.figma-raster/502.png" x="382" y="571" width="286" height="286"/>
+          </g>
+          <g id="Spacer">
+          </g>
+          <g id="Empty" opacity="0">
+            <text x="324" y="1126.15" font-size="149.63" font-family="outfit-bold.ttf:FontWeight(weight=700):Normal:SettingFloat(ital,0.0),SettingInt(wght,700, sans-serif" font-weight="700" letter-spacing="-0.66" fill="#141E16">Twine</text>
+          </g>
+          <g id="Empty" opacity="0">
+            <text x="386" y="1200.99" font-size="42" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" fill="#3D4A3F">Build your feed</text>
+          </g>
+        </g>
+        <g id="Column">
+          <g id="Empty">
+            <text font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#3D4A3F"><tspan x="347" y="1803" textLength="357" lengthAdjust="spacing">No algorithm. No ads.</tspan><tspan x="320" y="1856" textLength="410" lengthAdjust="spacing">Just the content you love.</tspan></text>
+          </g>
+          <g id="Spacer">
+          </g>
+          <g id="Box" filter="url(#shadow-16)">
+            <rect x="63" y="1911" width="924" height="147" rx="73.5" ry="73.5" fill="#FFFFFF"/>
+            <g id="Empty">
+              <text x="403" y="1996.92" font-size="36.75" font-family="outfit-bold.ttf:FontWeight(weight=700):Normal:SettingFloat(ital,0.0),SettingInt(wght,700, sans-serif" font-weight="600" fill="#006D3A">GET STARTED</text>
+            </g>
+          </g>
+          <g id="Spacer">
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

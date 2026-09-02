@@ -1,0 +1,5842 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "msasikanth-twine",
+  "title": "Twine",
+  "components": [
+    {
+      "componentId": "home",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/home/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/home__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.home.ui.HomeScreenKt.HomePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"More menu options\"",
+          "detail": {
+            "role": "button",
+            "label": "More menu options",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "More menu options",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 52,
+            "width": 158,
+            "height": 105
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 795,
+            "y": 52,
+            "width": 212,
+            "height": 105
+          },
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Reading",
+      "caption": "The home feed — Twine's whole argument in one screen: posts, no algorithm, the ambient colour taken from what is on screen.",
+      "wireframe": "wireframes/home.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/home/ui/HomeScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 844,
+      "sourceDirectory": "shared",
+      "sourceFunction": "HomePreview"
+    },
+    {
+      "componentId": "reader-page",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/reader-page/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/reader-page__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.reader.page.ui.ReaderPageKt.ReaderPagePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 808,
+              "y": 148,
+              "width": 84,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 808,
+            "y": 148,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 903,
+              "y": 148,
+              "width": 84,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 903,
+            "y": 148,
+            "width": 84,
+            "height": 84
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 32,
+            "width": 304,
+            "height": 84
+          },
+          "label": "Post Title",
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 148,
+            "width": 225,
+            "height": 84
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 66,
+            "y": 170,
+            "width": 42,
+            "height": 42
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 66,
+            "y": 170,
+            "width": 42,
+            "height": 42
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 309,
+            "y": 169,
+            "width": 12,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 808,
+            "y": 148,
+            "width": 179,
+            "height": 84
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 808,
+            "y": 148,
+            "width": 84,
+            "height": 84
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 903,
+            "y": 148,
+            "width": 84,
+            "height": 84
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Reading",
+      "caption": "The reader itself, an article rendered in Twine's own typography rather than a web view's.",
+      "wireframe": "wireframes/reader-page.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/reader/page/ui/ReaderPage.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 349,
+      "sourceDirectory": "shared",
+      "sourceFunction": "ReaderPagePreview"
+    },
+    {
+      "componentId": "bookmarks",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/bookmarks/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/bookmarks__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.bookmarks.ui.BookmarksScreenKt.BookmarksPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 321,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 289,
+            "height": 74
+          },
+          "label": "Bookmarks",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Reading",
+      "caption": "Saved posts.",
+      "wireframe": "wireframes/bookmarks.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/bookmarks/ui/BookmarksScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 200,
+      "sourceDirectory": "shared",
+      "sourceFunction": "BookmarksPreview"
+    },
+    {
+      "componentId": "search",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/search/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/search__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.search.ui.SearchScreenKt.SearchPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 42,
+              "y": 53,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 715,
+              "y": 43,
+              "width": 293,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 715,
+            "y": 43,
+            "width": 293,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 719,
+              "y": 47,
+              "width": 96,
+              "height": 96
+            }
+          },
+          "bounds": {
+            "x": 719,
+            "y": 47,
+            "width": 96,
+            "height": 96
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 715,
+            "y": 43,
+            "width": 293,
+            "height": 126
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 47,
+            "width": 96,
+            "height": 96
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 200,
+            "width": 193,
+            "height": 85
+          },
+          "padding": {
+            "start": 12,
+            "top": 6,
+            "end": 12,
+            "bottom": 6
+          },
+          "gap": 8,
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 256,
+            "y": 200,
+            "width": 214,
+            "height": 85
+          },
+          "padding": {
+            "start": 12,
+            "top": 6,
+            "end": 12,
+            "bottom": 6
+          },
+          "gap": 8,
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 491,
+            "y": 200,
+            "width": 311,
+            "height": 85
+          },
+          "padding": {
+            "start": 12,
+            "top": 6,
+            "end": 12,
+            "bottom": 6
+          },
+          "gap": 8,
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 823,
+            "y": 200,
+            "width": 227,
+            "height": 85
+          },
+          "padding": {
+            "start": 12,
+            "top": 6,
+            "end": 12,
+            "bottom": 6
+          },
+          "gap": 8,
+          "cornerRadius": 12
+        }
+      ],
+      "group": "Reading",
+      "caption": "Search across everything subscribed.",
+      "wireframe": "wireframes/search.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/search/ui/SearchScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 703,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SearchPreview"
+    },
+    {
+      "componentId": "navigation-drawer",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/navigation-drawer/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/navigation-drawer__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.main.ui.NavigationDrawerContentKt.NavigationDrawerPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 0,
+              "y": 231,
+              "width": 1008,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 231,
+            "width": 1008,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 0,
+              "y": 347,
+              "width": 1008,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 347,
+            "width": 1008,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 0,
+              "y": 463,
+              "width": 1008,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 463,
+            "width": 1008,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 0,
+              "y": 579,
+              "width": 1008,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 579,
+            "width": 1008,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 0,
+              "y": 695,
+              "width": 1008,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 695,
+            "width": 1008,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Add feed\"",
+          "detail": {
+            "role": "button",
+            "label": "Add feed",
+            "bounds": {
+              "x": 882,
+              "y": 919,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 882,
+            "y": 919,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 2100
+          },
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 231,
+            "width": 1008,
+            "height": 116
+          },
+          "role": "Tab",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 0
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 263,
+            "width": 53,
+            "height": 53
+          },
+          "role": "Image",
+          "label": "Home",
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 347,
+            "width": 1008,
+            "height": 116
+          },
+          "role": "Tab",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 0
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 379,
+            "width": 53,
+            "height": 53
+          },
+          "role": "Image",
+          "label": "Search",
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 463,
+            "width": 1008,
+            "height": 116
+          },
+          "role": "Tab",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 0
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 495,
+            "width": 53,
+            "height": 53
+          },
+          "role": "Image",
+          "label": "Discover",
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 579,
+            "width": 1008,
+            "height": 116
+          },
+          "role": "Tab",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 0
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 611,
+            "width": 53,
+            "height": 53
+          },
+          "role": "Image",
+          "label": "Bookmarks",
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 695,
+            "width": 1008,
+            "height": 116
+          },
+          "role": "Tab",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 0
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 727,
+            "width": 53,
+            "height": 53
+          },
+          "role": "Image",
+          "label": "Settings",
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 882,
+            "y": 919,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Add feed",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1108,
+            "width": 882,
+            "height": 106
+          },
+          "label": "You will see all your feeds here, let's start by adding a feed.",
+          "padding": {
+            "start": 32,
+            "top": 16,
+            "end": 32,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Feeds",
+      "caption": "The drawer that holds the feed list, groups and the app's own destinations.",
+      "wireframe": "wireframes/navigation-drawer.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/main/ui/NavigationDrawerContent.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 956,
+      "sourceDirectory": "shared",
+      "sourceFunction": "NavigationDrawerPreview"
+    },
+    {
+      "componentId": "add-feed",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/add-feed/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/add-feed__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.addfeed.ui.AddFeedScreenKt.AddFeedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 31,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 31,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 63,
+              "y": 1932,
+              "width": 924,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 0,
+            "width": 924,
+            "height": 2100
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 252,
+            "width": 924,
+            "height": 147
+          },
+          "cornerRadius": 28
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 441,
+            "width": 924,
+            "height": 147
+          },
+          "cornerRadius": 28
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 630,
+            "width": 382,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 31,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 695,
+            "y": 31,
+            "width": 312,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 8,
+            "end": 24,
+            "bottom": 8
+          },
+          "cornerRadius": 28
+        }
+      ],
+      "group": "Feeds",
+      "caption": "Adding a feed by URL, with the resolution states that follow.",
+      "wireframe": "wireframes/add-feed.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/addfeed/ui/AddFeedScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 397,
+      "sourceDirectory": "shared",
+      "sourceFunction": "AddFeedPreview"
+    },
+    {
+      "componentId": "group",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/group/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/group__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.group.ui.GroupScreenKt.GroupPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 54,
+              "y": 31,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 54,
+            "y": 31,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 0,
+            "width": 1028,
+            "height": 168
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 54,
+            "y": 31,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 170,
+            "y": 8,
+            "width": 721,
+            "height": 152
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 212,
+            "y": 8,
+            "width": 637,
+            "height": 152
+          },
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Feeds",
+      "caption": "A feed group and its membership.",
+      "wireframe": "wireframes/group.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/group/ui/GroupScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 313,
+      "sourceDirectory": "shared",
+      "sourceFunction": "GroupPreview"
+    },
+    {
+      "componentId": "discovery",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/discovery/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/discovery__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.discovery.ui.DiscoveryScreenKt.DiscoveryPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Refresh\"",
+          "detail": {
+            "role": "button",
+            "label": "Refresh",
+            "bounds": {
+              "x": 902,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 902,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 399,
+            "width": 1050,
+            "height": 1701
+          },
+          "padding": {
+            "start": 0,
+            "top": 152,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 257,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 225,
+            "height": 74
+          },
+          "label": "Discover",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 902,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Refresh",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 231,
+            "width": 966,
+            "height": 147
+          },
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          },
+          "cornerRadius": 28
+        }
+      ],
+      "group": "Feeds",
+      "caption": "Feed discovery — finding something to subscribe to from inside the app.",
+      "wireframe": "wireframes/discovery.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/discovery/ui/DiscoveryScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 516,
+      "sourceDirectory": "shared",
+      "sourceFunction": "DiscoveryPreview"
+    },
+    {
+      "componentId": "onboarding",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/onboarding/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/onboarding__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.onboarding.ui.OnboardingScreenKt.OnboardingPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 63,
+              "y": 1911,
+              "width": 924,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 63,
+            "y": 1911,
+            "width": 924,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 382,
+            "y": 571,
+            "width": 285,
+            "height": 285
+          },
+          "cornerRadius": 32
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1911,
+            "width": 924,
+            "height": 147
+          },
+          "role": "Button",
+          "cornerRadius": 28
+        }
+      ],
+      "group": "Feeds",
+      "caption": "First run: the screen that seeds a new install with feeds.",
+      "wireframe": "wireframes/onboarding.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/onboarding/ui/OnboardingScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 233,
+      "sourceDirectory": "shared",
+      "sourceFunction": "OnboardingPreview"
+    },
+    {
+      "componentId": "account-selection",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/account-selection/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/account-selection__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.accountselection.ui.AccountSelectionScreenKt.AccountSelectionPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/msasikanth-twine/render/account-selection__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 32,
+              "y": 42,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 42,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 505,
+            "width": 88,
+            "height": 53
+          },
+          "label": "Local",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 590,
+            "width": 1050,
+            "height": 147
+          },
+          "padding": {
+            "start": 24,
+            "top": 16,
+            "end": 24,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 845,
+            "width": 179,
+            "height": 53
+          },
+          "label": "Cloud Sync",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 42,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 16
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 189,
+            "width": 576,
+            "height": 84
+          },
+          "label": "Choose your account",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 294,
+            "width": 924,
+            "height": 106
+          },
+          "label": "Select where you want to store your feeds and bookmarks.",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Accounts and services",
+      "caption": "Choosing which sync service backs this install.",
+      "wireframe": "wireframes/account-selection.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/accountselection/ui/AccountSelectionScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 270,
+      "sourceDirectory": "shared",
+      "sourceFunction": "AccountSelectionPreview"
+    },
+    {
+      "componentId": "freshrss-login",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/freshrss-login/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/freshrss-login__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.freshrss.ui.FreshRssLoginScreenKt.FreshRssLoginPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 63,
+              "y": 1932,
+              "width": 924,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 210,
+            "width": 924,
+            "height": 1701
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 273,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 241,
+            "height": 74
+          },
+          "label": "FreshRSS",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 8,
+            "end": 24,
+            "bottom": 8
+          },
+          "cornerRadius": 28
+        }
+      ],
+      "group": "Accounts and services",
+      "caption": "The FreshRSS sign-in.",
+      "wireframe": "wireframes/freshrss-login.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/freshrss/ui/FreshRssLoginScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 300,
+      "sourceDirectory": "shared",
+      "sourceFunction": "FreshRssLoginPreview"
+    },
+    {
+      "componentId": "bazqux-login",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/bazqux-login/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/bazqux-login__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.bazqux.ui.BazQuxLoginScreenKt.BazQuxLoginPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 63,
+              "y": 1932,
+              "width": 924,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 210,
+            "width": 924,
+            "height": 1701
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 434,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 402,
+            "height": 74
+          },
+          "label": "BazQux Reader",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 8,
+            "end": 24,
+            "bottom": 8
+          },
+          "cornerRadius": 28
+        }
+      ],
+      "group": "Accounts and services",
+      "caption": "BazQux.",
+      "wireframe": "wireframes/bazqux-login.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/bazqux/ui/BazQuxLoginScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 272,
+      "sourceDirectory": "shared",
+      "sourceFunction": "BazQuxLoginPreview"
+    },
+    {
+      "componentId": "miniflux-login",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/miniflux-login/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/miniflux-login__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.miniflux.ui.MinifluxLoginScreenKt.MinifluxLoginPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 63,
+              "y": 1932,
+              "width": 924,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 210,
+            "width": 924,
+            "height": 1701
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 233,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 201,
+            "height": 74
+          },
+          "label": "Miniflux",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1932,
+            "width": 924,
+            "height": 147
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 8,
+            "end": 24,
+            "bottom": 8
+          },
+          "cornerRadius": 28
+        }
+      ],
+      "group": "Accounts and services",
+      "caption": "Miniflux — the three self-hosted services Twine speaks to, each with its own sign-in shape.",
+      "wireframe": "wireframes/miniflux-login.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/miniflux/ui/MinifluxLoginScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 279,
+      "sourceDirectory": "shared",
+      "sourceFunction": "MinifluxLoginPreview"
+    },
+    {
+      "componentId": "premium-paywall",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/premium-paywall/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/premium-paywall__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.premium.PremiumPaywallScreenKt.PremiumPaywallScreenPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/msasikanth-twine/render/premium-paywall__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 63,
+              "y": 1680,
+              "width": 924,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 63,
+            "y": 1680,
+            "width": 924,
+            "height": 147
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 242,
+              "y": 1922,
+              "width": 266,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 242,
+            "y": 1922,
+            "width": 266,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 508,
+              "y": 1922,
+              "width": 301,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 508,
+            "y": 1922,
+            "width": 301,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 53,
+              "y": 32,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 53,
+            "y": 32,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 682,
+              "y": 32,
+              "width": 347,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 682,
+            "y": 32,
+            "width": 347,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 168,
+            "width": 1050,
+            "height": 1932
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 431,
+            "y": 210,
+            "width": 189,
+            "height": 189
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 819,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1062,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1305,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1548,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1342,
+            "width": 924,
+            "height": 695
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1374,
+            "width": 286,
+            "height": 243
+          },
+          "padding": {
+            "start": 4,
+            "top": 16,
+            "end": 4,
+            "bottom": 16
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 381,
+            "y": 1374,
+            "width": 287,
+            "height": 243
+          },
+          "padding": {
+            "start": 4,
+            "top": 16,
+            "end": 4,
+            "bottom": 16
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 700,
+            "y": 1374,
+            "width": 287,
+            "height": 243
+          },
+          "padding": {
+            "start": 4,
+            "top": 16,
+            "end": 4,
+            "bottom": 16
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 770,
+            "y": 1359,
+            "width": 148,
+            "height": 31
+          },
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          },
+          "cornerRadius": 5.9
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1680,
+            "width": 924,
+            "height": 147
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 242,
+            "y": 1922,
+            "width": 266,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 508,
+            "y": 1922,
+            "width": 301,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 126
+          },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 32,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 682,
+            "y": 32,
+            "width": 347,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Accounts and services",
+      "caption": "The Twine Premium paywall.",
+      "wireframe": "wireframes/premium-paywall.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/premium/PremiumPaywallScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 470,
+      "sourceDirectory": "shared",
+      "sourceFunction": "PremiumPaywallScreenPreview"
+    },
+    {
+      "componentId": "settings",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/settings__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.settings.ui.SettingsScreenKt.SettingsPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 279,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 479,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 679,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 879,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 1073,
+            "width": 105,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 237,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 205,
+            "height": 74
+          },
+          "label": "Settings",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "The settings index.",
+      "wireframe": "wireframes/settings.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 209,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SettingsPreview"
+    },
+    {
+      "componentId": "settings-appearance",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-appearance/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/settings-appearance__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.settings.ui.SettingsAppearanceScreenKt.SettingsAppearancePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 745,
+              "y": 1622,
+              "width": 84,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 745,
+            "y": 1622,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 840,
+              "y": 1622,
+              "width": 84,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 840,
+            "y": 1622,
+            "width": 84,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 2023,
+              "width": 137,
+              "height": 77
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 2023,
+            "width": 137,
+            "height": 77
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 294,
+            "width": 114,
+            "height": 53
+          },
+          "label": "Theme",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 739,
+            "y": 379,
+            "width": 248,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 537,
+            "width": 146,
+            "height": 230
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 274,
+            "y": 537,
+            "width": 146,
+            "height": 230
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 474,
+            "y": 537,
+            "width": 146,
+            "height": 230
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 674,
+            "y": 537,
+            "width": 146,
+            "height": 230
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 875,
+            "y": 537,
+            "width": 146,
+            "height": 230
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1010,
+            "width": 113,
+            "height": 53
+          },
+          "label": "Layout",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1137,
+            "width": 924,
+            "height": 126
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 1148,
+            "width": 298,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 1148,
+            "width": 299,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 680,
+            "y": 1148,
+            "width": 296,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1326,
+            "width": 924,
+            "height": 401
+          },
+          "padding": {
+            "start": 0,
+            "top": 8,
+            "end": 0,
+            "bottom": 8
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1326,
+            "width": 924,
+            "height": 401
+          },
+          "label": "Phones are going to get weird next week",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 1368,
+            "width": 588,
+            "height": 126
+          },
+          "label": "Phones are going to get weird next week",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 1505,
+            "width": 588,
+            "height": 106
+          },
+          "label": "Expect rotating camera rings, robot arms, and magnetic modules at MWC 2026...",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 756,
+            "y": 1368,
+            "width": 168,
+            "height": 168
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 1622,
+            "width": 207,
+            "height": 84
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 129,
+            "y": 1644,
+            "width": 42,
+            "height": 42
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 129,
+            "y": 1644,
+            "width": 42,
+            "height": 42
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 354,
+            "y": 1643,
+            "width": 12,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 1643,
+            "width": 12,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 745,
+            "y": 1622,
+            "width": 179,
+            "height": 84
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 745,
+            "y": 1622,
+            "width": 84,
+            "height": 84
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 840,
+            "y": 1622,
+            "width": 84,
+            "height": 84
+          },
+          "role": "Button",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1853,
+            "width": 99,
+            "height": 53
+          },
+          "label": "Other",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 2023,
+            "width": 137,
+            "height": 77
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 2034,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 570,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 538,
+            "height": 74
+          },
+          "label": "Appearance & layout",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "Appearance — where the dynamic theming this app is known for is configured.",
+      "wireframe": "wireframes/settings-appearance.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsAppearanceScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 517,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SettingsAppearancePreview"
+    },
+    {
+      "componentId": "settings-behavior",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-behavior/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/settings-behavior__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.settings.ui.SettingsBehaviorScreenKt.SettingsBehaviorPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 464,
+              "width": 137,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 464,
+            "width": 137,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 865,
+              "width": 137,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 865,
+            "width": 137,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 294,
+            "width": 322,
+            "height": 53
+          },
+          "label": "Reading & browsing",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 464,
+            "width": 137,
+            "height": 84
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 860,
+            "y": 475,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 695,
+            "width": 148,
+            "height": 53
+          },
+          "label": "Behavior",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 865,
+            "width": 137,
+            "height": 84
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 876,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 670,
+            "y": 1075,
+            "width": 317,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 749,
+            "y": 1264,
+            "width": 238,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1474,
+            "width": 734,
+            "height": 63
+          },
+          "label": "Delete posts older than",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 818,
+            "y": 1453,
+            "width": 169,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1600,
+            "width": 1050,
+            "height": 180
+          },
+          "padding": {
+            "start": 24,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 752,
+            "y": 1638,
+            "width": 235,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 571,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 539,
+            "height": 74
+          },
+          "label": "Features & behaviors",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "Behaviour.",
+      "wireframe": "wireframes/settings-behavior.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsBehaviorScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 270,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SettingsBehaviorPreview"
+    },
+    {
+      "componentId": "settings-data",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-data/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/settings-data__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.settings.ui.SettingsDataScreenKt.SettingsDataPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 620,
+            "width": 1050,
+            "height": 417
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 0,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 620,
+            "width": 1050,
+            "height": 343
+          },
+          "padding": {
+            "start": 32,
+            "top": 0,
+            "end": 32,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 673,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 716,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 759,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 802,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 845,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 888,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 931,
+            "width": 20,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 31,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 117,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 203,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 246,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 332,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 418,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 504,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 547,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 590,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 633,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 676,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 719,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 762,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 805,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 848,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 888,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 891,
+            "y": 931,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 934,
+            "y": 673,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 934,
+            "y": 716,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 934,
+            "y": 759,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 934,
+            "y": 802,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 709,
+            "y": 1005,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 746,
+            "y": 1005,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 783,
+            "y": 1005,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 820,
+            "y": 1005,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 857,
+            "y": 1005,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1132,
+            "width": 236,
+            "height": 53
+          },
+          "label": "Your top feeds",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1239,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1239,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 846,
+            "y": 1260,
+            "width": 141,
+            "height": 84
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 878,
+            "y": 1271,
+            "width": 77,
+            "height": 62
+          },
+          "label": "450",
+          "padding": {
+            "start": 12,
+            "top": 4,
+            "end": 12,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1407,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1407,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 886,
+            "y": 1407,
+            "width": 101,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 907,
+            "y": 1418,
+            "width": 59,
+            "height": 41
+          },
+          "label": "320",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1512,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1512,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 886,
+            "y": 1512,
+            "width": 101,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 907,
+            "y": 1523,
+            "width": 59,
+            "height": 41
+          },
+          "label": "280",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1617,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1617,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 892,
+            "y": 1617,
+            "width": 95,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 1628,
+            "width": 53,
+            "height": 41
+          },
+          "label": "150",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1722,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1722,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 892,
+            "y": 1722,
+            "width": 95,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 1733,
+            "width": 53,
+            "height": 41
+          },
+          "label": "120",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 356,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 324,
+            "height": 74
+          },
+          "label": "Your insights",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "Data: import, export, and what is kept.",
+      "wireframe": "wireframes/settings-data.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsDataScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 450,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SettingsDataPreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "StatisticsState"
+        },
+        {
+          "name": "goBack",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "settings-services",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-services/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/settings-services__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.settings.ui.SettingsServicesScreenKt.SettingsServicesPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 676,
+              "width": 137,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 676,
+            "width": 137,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 886,
+              "width": 137,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 886,
+            "width": 137,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 1141,
+              "width": 137,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 1141,
+            "width": 137,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "switch",
+          "detail": {
+            "role": "switch",
+            "bounds": {
+              "x": 850,
+              "y": 1373,
+              "width": 137,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 850,
+            "y": 1373,
+            "width": 137,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 339,
+            "width": 903,
+            "height": 63
+          },
+          "label": "OPML",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 528,
+            "width": 188,
+            "height": 53
+          },
+          "label": "Data usage",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 676,
+            "width": 137,
+            "height": 84
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 687,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 886,
+            "width": 137,
+            "height": 84
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 860,
+            "y": 897,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 1141,
+            "width": 137,
+            "height": 84
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 860,
+            "y": 1152,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 850,
+            "y": 1373,
+            "width": 137,
+            "height": 84
+          },
+          "role": "Switch",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 860,
+            "y": 1384,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 418,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 386,
+            "height": 74
+          },
+          "label": "Services & sync",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "The connected services.",
+      "wireframe": "wireframes/settings-services.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsServicesScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 394,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SettingsServicesPreview"
+    },
+    {
+      "componentId": "settings-app-info",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-app-info/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/settings-app-info__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.settings.ui.SettingsAppInfoScreenKt.SettingsAppInfoPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 840,
+            "y": 734,
+            "width": 131,
+            "height": 131
+          },
+          "padding": {
+            "start": 72,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 24.95
+        },
+        {
+          "bounds": {
+            "x": 746,
+            "y": 734,
+            "width": 131,
+            "height": 131
+          },
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          },
+          "cornerRadius": 24.95
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 997,
+            "width": 210,
+            "height": 53
+          },
+          "label": "Danger zone",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1082,
+            "width": 1050,
+            "height": 264
+          },
+          "padding": {
+            "start": 24,
+            "top": 16,
+            "end": 24,
+            "bottom": 20
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 552,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 520,
+            "height": 74
+          },
+          "label": "App info & feedback",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "App info.",
+      "wireframe": "wireframes/settings-app-info.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/settings/ui/SettingsAppInfoScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 163,
+      "sourceDirectory": "shared",
+      "sourceFunction": "SettingsAppInfoPreview"
+    },
+    {
+      "componentId": "about",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/about/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/msasikanth-twine/p/about__ideal__default",
+          "previewId": "dev.sasikanth.rss.reader.about.ui.AboutScreenKt.AboutPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go back\"",
+          "detail": {
+            "role": "button",
+            "label": "Go back",
+            "bounds": {
+              "x": 43,
+              "y": 52,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 840,
+            "y": 315,
+            "width": 147,
+            "height": 147
+          },
+          "cornerRadius": 28
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 52,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "label": "Go back",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 159,
+            "y": 68,
+            "width": 191,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 191,
+            "y": 68,
+            "width": 159,
+            "height": 74
+          },
+          "label": "About",
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Settings",
+      "caption": "About — the author, the licence, and where to file things.",
+      "wireframe": "wireframes/about.svg",
+      "sourceFile": "src/commonMain/kotlin/dev/sasikanth/rss/reader/about/ui/AboutScreen.kt",
+      "sourceModule": ":shared",
+      "bodyLine": 241,
+      "sourceDirectory": "shared",
+      "sourceFunction": "AboutPreview"
+    }
+  ],
+  "renderer": "compose-preview 1.65.0",
+  "generatedAt": "2026-09-02T22:07:42.846Z",
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":shared",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "msasikanth/twine",
+    "ref": "bce23e5de2f56b0e34752f89c564beff26dad98b",
+    "module": ":shared"
+  }
+}

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <g id="Box">
+      <rect x="0" y="0" width="1050" height="2100" fill="#FEF7FF"/>
+      <g id="Box">
+        <image href="ideal__default.figma-raster/620.png" x="0" y="0" width="1050" height="2100"/>
+        <g id="TopAppBar">
+          <g id="Box">
+            <rect x="43" y="52" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+            <g id="BoxKt">
+              <g transform="translate(69 78) scale(0.05 0.05)">
+                <path d="M160 -240 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h640 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H160 Z m0 -200 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h640 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H160 Z m0 -200 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h640 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H160 Z" transform="translate(0 960)" fill="#141E16"/>
+              </g>
+            </g>
+          </g>
+          <g id="Column">
+            <g id="Empty">
+              <text x="191" y="97.99" font-size="42" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Home</text>
+            </g>
+            <g id="Empty">
+              <text x="191" y="146.86" font-size="31.5" font-family="outfit-regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" font-weight="400" letter-spacing="0.63" fill="#3D4A3F">All feeds</text>
+            </g>
+          </g>
+          <g id="Row">
+            <g id="Spacer">
+            </g>
+            <g id="Box">
+              <rect x="795" y="52" width="212" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+              <g id="Row">
+                <g id="Empty">
+                  <text x="848" y="116.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">All</text>
+                </g>
+                <g id="Spacer">
+                </g>
+                <g id="BoxKt">
+                  <g transform="translate(912 78) scale(2.65 2.65)">
+                    <path d="M10 14.462 C 9.868 14.462 9.745 14.441 9.63 14.4 C 9.515 14.359 9.408 14.289 9.309 14.191 L4.771 9.652 C 4.59 9.472 4.5 9.241 4.5 8.962 C 4.5 8.682 4.59 8.452 4.771 8.271 C 4.952 8.09 5.182 8 5.462 8 C 5.741 8 5.972 8.09 6.152 8.271 L10 12.119 L13.847 8.271 C 14.028 8.09 14.259 8 14.538 8 C 14.818 8 15.048 8.09 15.229 8.271 C 15.41 8.452 15.5 8.682 15.5 8.962 C 15.5 9.241 15.41 9.472 15.229 9.652 L10.691 14.191 C 10.592 14.289 10.485 14.359 10.37 14.4 C 10.255 14.441 10.132 14.462 10 14.462 Z" fill="#141E16"/>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

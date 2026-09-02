@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="2100" viewBox="0 0 1050 2100" text-rendering="geometricPrecision" font-family="sans-serif">
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <clipPath id="clip-0"><rect x="0" y="0" width="1050" height="2100"/></clipPath>
+    <g id="Box">
+        <rect x="0" y="0" width="1050" height="2100" fill="#E8F4E7"/>
+      <g clip-path="url(#clip-0)">
+        <g id="LayoutNodeSubcompositionsState">
+          <g id="LayoutNodeSubcompositionsState">
+          </g>
+          <g id="Column">
+            <image href="search.figma-raster/1324.png" x="0" y="0" width="1050" height="341"/>
+            <g id="Spacer">
+            </g>
+            <g id="Row">
+              <g id="Box">
+                <rect x="42" y="53" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>
+                <g id="BoxKt">
+                  <g transform="translate(68 79) scale(0.05 0.05)">
+                    <path d="m313 -440 l196 196 q 12 12 11.5 28 T 0 0 q -12 11 -28 11.5 T 0 0 L188 -452 q -6 -6 -8.5 -13 t 0 0 q 0 -8 2.5 -15 t 0 0 l264 -264 q 11 -11 27.5 -11 t 0 0 q 12 12 12 28.5 T 0 0 L313 -520 h447 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H313 Z" transform="translate(0 960)" fill="#141E16"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Spacer">
+              </g>
+              <g id="TextField">
+                <image href="search.figma-raster/1332.png" x="168" y="32" width="840" height="147"/>
+              </g>
+            </g>
+            <clipPath id="clip-1"><rect x="0" y="179" width="1050" height="127"/></clipPath>
+            <g id="LayoutNodeSubcompositionsState">
+              <image href="search.figma-raster/1350.png" x="0" y="179" width="1050" height="127"/>
+              <g clip-path="url(#clip-1)">
+                <clipPath id="clip-2"><rect x="42" y="200" width="193" height="85" rx="31.5" ry="31.5"/></clipPath>
+                <g id="Row">
+                  <image href="search.figma-raster/1354.png" x="42" y="200" width="193" height="85" clip-path="url(#clip-2)"/>
+                  <g clip-path="url(#clip-2)">
+                    <g id="BoxKt">
+                      <g transform="translate(74 222) scale(1.75 1.75)">
+                        <path d="M12 5 m-3 0 a 3 3 0 1 1 6 0 a 3 3 0 1 1 -6 0" fill="#FFFFFF"/>
+                        <path d="M5 12 m-3 0 a 3 3 0 1 1 6 0 a 3 3 0 1 1 -6 0" fill="#FFFFFF"/>
+                        <path d="M19 12 m-3 0 a 3 3 0 1 1 6 0 a 3 3 0 1 1 -6 0" fill="#FFFFFF"/>
+                        <path d="M12 19 m-3 0 a 3 3 0 1 1 6 0 a 3 3 0 1 1 -6 0" fill="#FFFFFF"/>
+                      </g>
+                    </g>
+                    <g id="Empty">
+                      <text x="137" y="254.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#FFFFFF">ALL</text>
+                    </g>
+                  </g>
+                </g>
+                <clipPath id="clip-3"><rect x="256" y="200" width="214" height="85" rx="31.5" ry="31.5"/></clipPath>
+                <g id="Row">
+                  <image href="search.figma-raster/1358.png" x="256" y="200" width="214" height="85" clip-path="url(#clip-3)"/>
+                  <g clip-path="url(#clip-3)">
+                    <g id="BoxKt">
+                      <g transform="translate(288 222) scale(0.04 0.04)">
+                        <path d="M440 -240 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h80 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 h-80 Z M280 -440 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h400 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H280 Z M160 -640 q -17 0 -28.5 -11.5 T 0 0 q 0 -17 11.5 -28.5 T 0 0 h640 q 17 0 28.5 11.5 T 0 0 q 0 17 -11.5 28.5 T 0 0 H160 Z" transform="translate(0 960)" fill="#141E16"/>
+                      </g>
+                    </g>
+                    <g id="Empty">
+                      <text x="351" y="254.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Filter</text>
+                    </g>
+                  </g>
+                </g>
+                <clipPath id="clip-4"><rect x="491" y="200" width="311" height="85" rx="31.5" ry="31.5"/></clipPath>
+                <g id="Row">
+                  <image href="search.figma-raster/1362.png" x="491" y="200" width="311" height="85" clip-path="url(#clip-4)"/>
+                  <g clip-path="url(#clip-4)">
+                    <g id="BoxKt">
+                      <g transform="translate(523 222) scale(1.75 1.75)">
+                        <path d="M17 3 H7 c -1.1 0 -1.99 0.9 -1.99 2 L5 21 l7 -3 l7 3 V5 c 0 -1.1 -0.9 -2 -2 -2 Z" fill="#141E16"/>
+                      </g>
+                    </g>
+                    <g id="Empty">
+                      <text x="586" y="254.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Bookmarks</text>
+                    </g>
+                  </g>
+                </g>
+                <clipPath id="clip-5"><rect x="823" y="200" width="250" height="85" rx="31.5" ry="31.5"/></clipPath>
+                <g id="Row">
+                  <image href="search.figma-raster/1366.png" x="823" y="200" width="250" height="85" clip-path="url(#clip-5)"/>
+                  <g clip-path="url(#clip-5)">
+                    <g id="BoxKt">
+                      <g transform="translate(855 222) scale(1.75 1.75)">
+                        <path d="M12 20.9998 C 16.9706 20.9998 21 16.9703 21 11.9998 C 21 7.0292 16.9706 2.9998 12 2.9998 C 7.0294 2.9998 3 7.0292 3 11.9998 C 3 16.9703 7.0294 20.9998 12 20.9998 Z M12 19.4998 C 16.1421 19.4998 19.5 16.1419 19.5 11.9998 C 19.5 7.8576 16.1421 4.4998 12 4.4998 C 7.8579 4.4998 4.5 7.8576 4.5 11.9998 C 4.5 16.1419 7.8579 19.4998 12 19.4998 Z" fill="#141E16" fill-rule="evenodd"/>
+                      </g>
+                    </g>
+                    <g id="Empty">
+                      <text x="918" y="254.92" font-size="36.75" font-family="outfit-medium.ttf:FontWeight(weight=500):Normal:SettingFloat(ital,0.0),SettingInt(wght,500, sans-serif" font-weight="500" fill="#141E16">Unread</text>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g id="Spacer">
+            </g>
+            <g id="Spacer">
+              <g transform="translate(0 338) scale(1 1)">
+                <path d="M0,1.31 L1050,1.31" fill="none" stroke="#BCCABC" stroke-width="2.62"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
