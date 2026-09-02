@@ -1,0 +1,1293 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. This one is large enough that its captions are derived from the upstream preview and file names rather than written one by one — a claim about which component and which file, and nothing more.",
+  "system": "thunderbird-android",
+  "title": "Thunderbird Bolt",
+  "module": "ui:bolt",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Atoms",
+      "components": [
+        {
+          "componentId": "checkbox-disabled",
+          "preview": "CheckboxDisabledPreview",
+          "caption": "Checkbox — disabled. Checkbox.kt"
+        },
+        {
+          "componentId": "checkbox",
+          "preview": "CheckboxPreview",
+          "caption": "Checkbox. Checkbox.kt"
+        },
+        {
+          "componentId": "circular-progress-indicator-colored",
+          "preview": "CircularProgressIndicatorColoredPreview",
+          "caption": "Circular progress indicator — colored. CircularProgressIndicator.kt"
+        },
+        {
+          "componentId": "circular-progress-indicator",
+          "preview": "CircularProgressIndicatorPreview",
+          "caption": "Circular progress indicator. CircularProgressIndicator.kt"
+        },
+        {
+          "componentId": "divider-horizontal",
+          "preview": "DividerHorizontalPreview",
+          "caption": "Divider horizontal. DividerHorizontal.kt"
+        },
+        {
+          "componentId": "divider-vertical",
+          "preview": "DividerVerticalPreview",
+          "caption": "Divider vertical. DividerVertical.kt"
+        },
+        {
+          "componentId": "radio-group-selected",
+          "preview": "RadioGroupSelectedPreview",
+          "caption": "Radio group — selected. RadioGroup.kt"
+        },
+        {
+          "componentId": "radio-group-un-selected",
+          "preview": "RadioGroupUnSelectedPreview",
+          "caption": "Radio group — un selected. RadioGroup.kt"
+        },
+        {
+          "componentId": "surface",
+          "preview": "SurfacePreview",
+          "caption": "Surface. Surface.kt"
+        },
+        {
+          "componentId": "surface-with-shape",
+          "preview": "SurfaceWithShapePreview",
+          "caption": "Surface — with shape. Surface.kt"
+        },
+        {
+          "componentId": "switch-disabled",
+          "preview": "SwitchDisabledPreview",
+          "caption": "Switch — disabled. Switch.kt"
+        },
+        {
+          "componentId": "switch",
+          "preview": "SwitchPreview",
+          "caption": "Switch. Switch.kt"
+        },
+        {
+          "componentId": "button-elevated-disabled",
+          "preview": "ButtonElevatedDisabledPreview",
+          "caption": "Button elevated — disabled. ButtonElevated.kt"
+        },
+        {
+          "componentId": "button-elevated-multi-line",
+          "preview": "ButtonElevatedMultiLinePreview",
+          "caption": "Button elevated — multi line. ButtonElevated.kt"
+        },
+        {
+          "componentId": "button-elevated",
+          "preview": "ButtonElevatedPreview",
+          "caption": "Button elevated. ButtonElevated.kt"
+        },
+        {
+          "componentId": "button-filled-disabled",
+          "preview": "ButtonFilledDisabledPreview",
+          "caption": "Button filled — disabled. ButtonFilled.kt"
+        },
+        {
+          "componentId": "button-filled-multi-line",
+          "preview": "ButtonFilledMultiLinePreview",
+          "caption": "Button filled — multi line. ButtonFilled.kt"
+        },
+        {
+          "componentId": "button-filled",
+          "preview": "ButtonFilledPreview",
+          "caption": "Button filled. ButtonFilled.kt"
+        },
+        {
+          "componentId": "button-filled-tonal-disabled",
+          "preview": "ButtonFilledTonalDisabledPreview",
+          "caption": "Button filled tonal disabled. ButtonFilledTonalButton.kt"
+        },
+        {
+          "componentId": "button-filled-tonal-multi-line",
+          "preview": "ButtonFilledTonalMultiLinePreview",
+          "caption": "Button filled tonal multi line. ButtonFilledTonalButton.kt"
+        },
+        {
+          "componentId": "button-filled-tonal",
+          "preview": "ButtonFilledTonalPreview",
+          "caption": "Button filled tonal. ButtonFilledTonalButton.kt"
+        },
+        {
+          "componentId": "button-icon-filled",
+          "preview": "ButtonIconFilledPreview",
+          "caption": "Button icon — filled. ButtonIcon.kt"
+        },
+        {
+          "componentId": "button-icon",
+          "preview": "ButtonIconPreview",
+          "caption": "Button icon. ButtonIcon.kt"
+        },
+        {
+          "componentId": "button-outlined-disabled",
+          "preview": "ButtonOutlinedDisabledPreview",
+          "caption": "Button outlined — disabled. ButtonOutlined.kt"
+        },
+        {
+          "componentId": "button-outlined-icon",
+          "preview": "ButtonOutlinedIconPreview",
+          "caption": "Button outlined — icon. ButtonOutlined.kt"
+        },
+        {
+          "componentId": "button-outlined-multi-line",
+          "preview": "ButtonOutlinedMultiLinePreview",
+          "caption": "Button outlined — multi line. ButtonOutlined.kt"
+        },
+        {
+          "componentId": "button-outlined",
+          "preview": "ButtonOutlinedPreview",
+          "caption": "Button outlined. ButtonOutlined.kt"
+        },
+        {
+          "componentId": "button-segmented-single-choice-empty",
+          "preview": "ButtonSegmentedSingleChoiceEmptyPreview",
+          "caption": "Button segmented single choice — empty. ButtonSegmentedSingleChoice.kt"
+        },
+        {
+          "componentId": "button-segmented-single-choice",
+          "preview": "ButtonSegmentedSingleChoicePreview",
+          "caption": "Button segmented single choice. ButtonSegmentedSingleChoice.kt"
+        },
+        {
+          "componentId": "button-segmented-single-choice-with-selection",
+          "preview": "ButtonSegmentedSingleChoiceWithSelectionPreview",
+          "caption": "Button segmented single choice — with selection. ButtonSegmentedSingleChoice.kt"
+        },
+        {
+          "componentId": "button-text-colored",
+          "preview": "ButtonTextColoredPreview",
+          "caption": "Button text — colored. ButtonText.kt"
+        },
+        {
+          "componentId": "button-text-disabled",
+          "preview": "ButtonTextDisabledPreview",
+          "caption": "Button text — disabled. ButtonText.kt"
+        },
+        {
+          "componentId": "button-text-multi-line",
+          "preview": "ButtonTextMultiLinePreview",
+          "caption": "Button text — multi line. ButtonText.kt"
+        },
+        {
+          "componentId": "button-text",
+          "preview": "ButtonTextPreview",
+          "caption": "Button text. ButtonText.kt"
+        },
+        {
+          "componentId": "card-elevated",
+          "preview": "CardElevatedPreview",
+          "caption": "Card elevated. CardElevated.kt"
+        },
+        {
+          "componentId": "card-filled",
+          "preview": "CardFilledPreview",
+          "caption": "Card filled. CardFilled.kt"
+        },
+        {
+          "componentId": "card-outlined",
+          "preview": "CardOutlinedPreview",
+          "caption": "Card outlined. CardOutlined.kt"
+        },
+        {
+          "componentId": "preview-big-red",
+          "preview": "PreviewBigRed",
+          "caption": "Preview big red. ColorChipDefaults.kt"
+        },
+        {
+          "componentId": "preview-default",
+          "preview": "PreviewDefault",
+          "caption": "Preview default. ColorChipDefaults.kt"
+        },
+        {
+          "componentId": "preview-magenta",
+          "preview": "PreviewMagenta",
+          "caption": "Preview magenta. ColorChipDefaults.kt"
+        },
+        {
+          "componentId": "badge-icon",
+          "preview": "BadgeIconPreview",
+          "caption": "Badge icon. BadgeIcon.kt"
+        },
+        {
+          "componentId": "badge-icon-with-tint",
+          "preview": "BadgeIconWithTintPreview",
+          "caption": "Badge icon — with tint. BadgeIcon.kt"
+        },
+        {
+          "componentId": "icon-tinted",
+          "preview": "IconTintedPreview",
+          "caption": "Icon — tinted. Icon.kt"
+        },
+        {
+          "componentId": "filled-thundermail",
+          "preview": "FilledThundermailPreview",
+          "caption": "Filled thundermail. FilledThundermail.kt"
+        },
+        {
+          "componentId": "qr-code",
+          "preview": "QrCodePreview",
+          "caption": "Qr code. OutlinedQrCode.kt"
+        },
+        {
+          "componentId": "outlined-reply-all",
+          "preview": "OutlinedReplyAllPreview",
+          "caption": "Outlined reply all. OutlinedReplayAll.kt"
+        },
+        {
+          "componentId": "outlined-reply",
+          "preview": "OutlinedReplyPreview",
+          "caption": "Outlined reply. OutlinedReply.kt"
+        },
+        {
+          "componentId": "fixed-scale-image-bottom-center",
+          "preview": "FixedScaleImageBottomCenterPreview",
+          "caption": "Fixed scale image — bottom center. FixedScaleImage.kt"
+        },
+        {
+          "componentId": "fixed-scale-image-cropped",
+          "preview": "FixedScaleImageCroppedPreview",
+          "caption": "Fixed scale image — cropped. FixedScaleImage.kt"
+        },
+        {
+          "componentId": "fixed-scale-image-horizontally-cropped",
+          "preview": "FixedScaleImageHorizontallyCroppedPreview",
+          "caption": "Fixed scale image — horizontally cropped. FixedScaleImage.kt"
+        },
+        {
+          "componentId": "fixed-scale-image-vertically-cropped",
+          "preview": "FixedScaleImageVerticallyCroppedPreview",
+          "caption": "Fixed scale image — vertically cropped. FixedScaleImage.kt"
+        },
+        {
+          "componentId": "remote-image",
+          "preview": "RemoteImagePreview",
+          "caption": "Remote image. RemoteImage.kt"
+        },
+        {
+          "componentId": "tab-primary",
+          "preview": "TabPrimaryPreview",
+          "caption": "Tab primary. TabPrimary.kt"
+        },
+        {
+          "componentId": "tab-secondary",
+          "preview": "TabSecondaryPreview",
+          "caption": "Tab secondary. TabSecondary.kt"
+        },
+        {
+          "componentId": "text-body-large",
+          "preview": "TextBodyLargePreview",
+          "caption": "Text body large. TextBodyLarge.kt"
+        },
+        {
+          "componentId": "text-body-large-with-annotated-string",
+          "preview": "TextBodyLargeWithAnnotatedStringPreview",
+          "caption": "Text body large — with annotated string. TextBodyLarge.kt"
+        },
+        {
+          "componentId": "text-body-large-with-color",
+          "preview": "TextBodyLargeWithColorPreview",
+          "caption": "Text body large — with color. TextBodyLarge.kt"
+        },
+        {
+          "componentId": "text-body-large-with-text-align",
+          "preview": "TextBodyLargeWithTextAlignPreview",
+          "caption": "Text body large — with text align. TextBodyLarge.kt"
+        },
+        {
+          "componentId": "text-body-medium",
+          "preview": "TextBodyMediumPreview",
+          "caption": "Text body medium. TextBodyMedium.kt"
+        },
+        {
+          "componentId": "text-body-medium-with-annotated-string",
+          "preview": "TextBodyMediumWithAnnotatedStringPreview",
+          "caption": "Text body medium — with annotated string. TextBodyMedium.kt"
+        },
+        {
+          "componentId": "text-body-medium-with-color",
+          "preview": "TextBodyMediumWithColorPreview",
+          "caption": "Text body medium — with color. TextBodyMedium.kt"
+        },
+        {
+          "componentId": "text-body-medium-with-text-align",
+          "preview": "TextBodyMediumWithTextAlignPreview",
+          "caption": "Text body medium — with text align. TextBodyMedium.kt"
+        },
+        {
+          "componentId": "text-body-small",
+          "preview": "TextBodySmallPreview",
+          "caption": "Text body small. TextBodySmall.kt"
+        },
+        {
+          "componentId": "text-body-small-with-annotated-string",
+          "preview": "TextBodySmallWithAnnotatedStringPreview",
+          "caption": "Text body small — with annotated string. TextBodySmall.kt"
+        },
+        {
+          "componentId": "text-body-small-with-color",
+          "preview": "TextBodySmallWithColorPreview",
+          "caption": "Text body small — with color. TextBodySmall.kt"
+        },
+        {
+          "componentId": "text-body-small-with-text-align",
+          "preview": "TextBodySmallWithTextAlignPreview",
+          "caption": "Text body small — with text align. TextBodySmall.kt"
+        },
+        {
+          "componentId": "text-display-large",
+          "preview": "TextDisplayLargePreview",
+          "caption": "Text display large. TextDisplayLarge.kt"
+        },
+        {
+          "componentId": "text-display-large-with-annotated-string",
+          "preview": "TextDisplayLargeWithAnnotatedStringPreview",
+          "caption": "Text display large — with annotated string. TextDisplayLarge.kt"
+        },
+        {
+          "componentId": "text-display-large-with-color",
+          "preview": "TextDisplayLargeWithColorPreview",
+          "caption": "Text display large — with color. TextDisplayLarge.kt"
+        },
+        {
+          "componentId": "text-display-large-with-text-align",
+          "preview": "TextDisplayLargeWithTextAlignPreview",
+          "caption": "Text display large — with text align. TextDisplayLarge.kt"
+        },
+        {
+          "componentId": "text-display-medium",
+          "preview": "TextDisplayMediumPreview",
+          "caption": "Text display medium. TextDisplayMedium.kt"
+        },
+        {
+          "componentId": "text-display-medium-with-annotated-string",
+          "preview": "TextDisplayMediumWithAnnotatedStringPreview",
+          "caption": "Text display medium — with annotated string. TextDisplayMedium.kt"
+        },
+        {
+          "componentId": "text-display-medium-with-color",
+          "preview": "TextDisplayMediumWithColorPreview",
+          "caption": "Text display medium — with color. TextDisplayMedium.kt"
+        },
+        {
+          "componentId": "text-display-medium-with-text-align",
+          "preview": "TextDisplayMediumWithTextAlignPreview",
+          "caption": "Text display medium — with text align. TextDisplayMedium.kt"
+        },
+        {
+          "componentId": "text-display-small",
+          "preview": "TextDisplaySmallPreview",
+          "caption": "Text display small. TextDisplaySmall.kt"
+        },
+        {
+          "componentId": "text-display-small-with-annotated-string",
+          "preview": "TextDisplaySmallWithAnnotatedStringPreview",
+          "caption": "Text display small — with annotated string. TextDisplaySmall.kt"
+        },
+        {
+          "componentId": "text-display-small-with-color",
+          "preview": "TextDisplaySmallWithColorPreview",
+          "caption": "Text display small — with color. TextDisplaySmall.kt"
+        },
+        {
+          "componentId": "text-display-small-with-text-align",
+          "preview": "TextDisplaySmallWithTextAlignPreview",
+          "caption": "Text display small — with text align. TextDisplaySmall.kt"
+        },
+        {
+          "componentId": "text-headline-large",
+          "preview": "TextHeadlineLargePreview",
+          "caption": "Text headline large. TextHeadlineLarge.kt"
+        },
+        {
+          "componentId": "text-headline-large-with-annotated-string",
+          "preview": "TextHeadlineLargeWithAnnotatedStringPreview",
+          "caption": "Text headline large — with annotated string. TextHeadlineLarge.kt"
+        },
+        {
+          "componentId": "text-headline-large-with-color",
+          "preview": "TextHeadlineLargeWithColorPreview",
+          "caption": "Text headline large — with color. TextHeadlineLarge.kt"
+        },
+        {
+          "componentId": "text-headline-large-with-text-align",
+          "preview": "TextHeadlineLargeWithTextAlignPreview",
+          "caption": "Text headline large — with text align. TextHeadlineLarge.kt"
+        },
+        {
+          "componentId": "text-headline-medium",
+          "preview": "TextHeadlineMediumPreview",
+          "caption": "Text headline medium. TextHeadlineMedium.kt"
+        },
+        {
+          "componentId": "text-headline-medium-with-annotated-string",
+          "preview": "TextHeadlineMediumWithAnnotatedStringPreview",
+          "caption": "Text headline medium — with annotated string. TextHeadlineMedium.kt"
+        },
+        {
+          "componentId": "text-headline-medium-with-color",
+          "preview": "TextHeadlineMediumWithColorPreview",
+          "caption": "Text headline medium — with color. TextHeadlineMedium.kt"
+        },
+        {
+          "componentId": "text-headline-medium-with-text-align",
+          "preview": "TextHeadlineMediumWithTextAlignPreview",
+          "caption": "Text headline medium — with text align. TextHeadlineMedium.kt"
+        },
+        {
+          "componentId": "text-headline-small",
+          "preview": "TextHeadlineSmallPreview",
+          "caption": "Text headline small. TextHeadlineSmall.kt"
+        },
+        {
+          "componentId": "text-headline-small-with-annotated-string",
+          "preview": "TextHeadlineSmallWithAnnotatedStringPreview",
+          "caption": "Text headline small — with annotated string. TextHeadlineSmall.kt"
+        },
+        {
+          "componentId": "text-headline-small-with-color",
+          "preview": "TextHeadlineSmallWithColorPreview",
+          "caption": "Text headline small — with color. TextHeadlineSmall.kt"
+        },
+        {
+          "componentId": "text-headline-small-with-text-align",
+          "preview": "TextHeadlineSmallWithTextAlignPreview",
+          "caption": "Text headline small — with text align. TextHeadlineSmall.kt"
+        },
+        {
+          "componentId": "text-label-large",
+          "preview": "TextLabelLargePreview",
+          "caption": "Text label large. TextLabelLarge.kt"
+        },
+        {
+          "componentId": "text-label-large-with-annotated-string",
+          "preview": "TextLabelLargeWithAnnotatedStringPreview",
+          "caption": "Text label large — with annotated string. TextLabelLarge.kt"
+        },
+        {
+          "componentId": "text-label-large-with-color",
+          "preview": "TextLabelLargeWithColorPreview",
+          "caption": "Text label large — with color. TextLabelLarge.kt"
+        },
+        {
+          "componentId": "text-label-large-with-text-align",
+          "preview": "TextLabelLargeWithTextAlignPreview",
+          "caption": "Text label large — with text align. TextLabelLarge.kt"
+        },
+        {
+          "componentId": "text-label-medium",
+          "preview": "TextLabelMediumPreview",
+          "caption": "Text label medium. TextLabelMedium.kt"
+        },
+        {
+          "componentId": "text-label-medium-with-annotated-string",
+          "preview": "TextLabelMediumWithAnnotatedStringPreview",
+          "caption": "Text label medium — with annotated string. TextLabelMedium.kt"
+        },
+        {
+          "componentId": "text-label-medium-with-color",
+          "preview": "TextLabelMediumWithColorPreview",
+          "caption": "Text label medium — with color. TextLabelMedium.kt"
+        },
+        {
+          "componentId": "text-label-medium-with-text-align",
+          "preview": "TextLabelMediumWithTextAlignPreview",
+          "caption": "Text label medium — with text align. TextLabelMedium.kt"
+        },
+        {
+          "componentId": "text-label-small",
+          "preview": "TextLabelSmallPreview",
+          "caption": "Text label small. TextLabelSmall.kt"
+        },
+        {
+          "componentId": "text-label-small-with-annotated-string",
+          "preview": "TextLabelSmallWithAnnotatedStringPreview",
+          "caption": "Text label small — with annotated string. TextLabelSmall.kt"
+        },
+        {
+          "componentId": "text-label-small-with-color",
+          "preview": "TextLabelSmallWithColorPreview",
+          "caption": "Text label small — with color. TextLabelSmall.kt"
+        },
+        {
+          "componentId": "text-label-small-with-text-align",
+          "preview": "TextLabelSmallWithTextAlignPreview",
+          "caption": "Text label small — with text align. TextLabelSmall.kt"
+        },
+        {
+          "componentId": "text-title-large",
+          "preview": "TextTitleLargePreview",
+          "caption": "Text title large. TextTitleLarge.kt"
+        },
+        {
+          "componentId": "text-title-large-with-annotated-string",
+          "preview": "TextTitleLargeWithAnnotatedStringPreview",
+          "caption": "Text title large — with annotated string. TextTitleLarge.kt"
+        },
+        {
+          "componentId": "text-title-large-with-color",
+          "preview": "TextTitleLargeWithColorPreview",
+          "caption": "Text title large — with color. TextTitleLarge.kt"
+        },
+        {
+          "componentId": "text-title-large-with-text-align",
+          "preview": "TextTitleLargeWithTextAlignPreview",
+          "caption": "Text title large — with text align. TextTitleLarge.kt"
+        },
+        {
+          "componentId": "text-title-medium",
+          "preview": "TextTitleMediumPreview",
+          "caption": "Text title medium. TextTitleMedium.kt"
+        },
+        {
+          "componentId": "text-title-medium-with-annotated-string",
+          "preview": "TextTitleMediumWithAnnotatedStringPreview",
+          "caption": "Text title medium — with annotated string. TextTitleMedium.kt"
+        },
+        {
+          "componentId": "text-title-medium-with-color",
+          "preview": "TextTitleMediumWithColorPreview",
+          "caption": "Text title medium — with color. TextTitleMedium.kt"
+        },
+        {
+          "componentId": "text-title-medium-with-text-align",
+          "preview": "TextTitleMediumWithTextAlignPreview",
+          "caption": "Text title medium — with text align. TextTitleMedium.kt"
+        },
+        {
+          "componentId": "text-title-small",
+          "preview": "TextTitleSmallPreview",
+          "caption": "Text title small. TextTitleSmall.kt"
+        },
+        {
+          "componentId": "text-title-small-with-annotated-string",
+          "preview": "TextTitleSmallWithAnnotatedStringPreview",
+          "caption": "Text title small — with annotated string. TextTitleSmall.kt"
+        },
+        {
+          "componentId": "text-title-small-with-color",
+          "preview": "TextTitleSmallWithColorPreview",
+          "caption": "Text title small — with color. TextTitleSmall.kt"
+        },
+        {
+          "componentId": "text-title-small-with-text-align",
+          "preview": "TextTitleSmallWithTextAlignPreview",
+          "caption": "Text title small — with text align. TextTitleSmall.kt"
+        },
+        {
+          "componentId": "text-field-label",
+          "preview": "TextFieldLabelPreview",
+          "caption": "Text field label. TextFieldLabel.kt"
+        },
+        {
+          "componentId": "text-field-label-required-empty-label",
+          "preview": "TextFieldLabelRequiredEmptyLabelPreview",
+          "caption": "Text field label — required empty label. TextFieldLabel.kt"
+        },
+        {
+          "componentId": "text-field-label-required",
+          "preview": "TextFieldLabelRequiredPreview",
+          "caption": "Text field label — required. TextFieldLabel.kt"
+        },
+        {
+          "componentId": "text-field-outlined-disabled",
+          "preview": "TextFieldOutlinedDisabledPreview",
+          "caption": "Text field outlined — disabled. TextFieldOutlined.kt"
+        },
+        {
+          "componentId": "text-field-outlined-error",
+          "preview": "TextFieldOutlinedErrorPreview",
+          "caption": "Text field outlined — error. TextFieldOutlined.kt"
+        },
+        {
+          "componentId": "text-field-outlined",
+          "preview": "TextFieldOutlinedPreview",
+          "caption": "Text field outlined. TextFieldOutlined.kt"
+        },
+        {
+          "componentId": "text-field-outlined-required",
+          "preview": "TextFieldOutlinedRequiredPreview",
+          "caption": "Text field outlined — required. TextFieldOutlined.kt"
+        },
+        {
+          "componentId": "text-field-outlined-with-label",
+          "preview": "TextFieldOutlinedWithLabelPreview",
+          "caption": "Text field outlined — with label. TextFieldOutlined.kt"
+        },
+        {
+          "componentId": "text-field-outlined-with-trailing-icon",
+          "preview": "TextFieldOutlinedWithTrailingIconPreview",
+          "caption": "Text field outlined — with trailing icon. TextFieldOutlined.kt"
+        },
+        {
+          "componentId": "text-field-outlined-email-address",
+          "preview": "TextFieldOutlinedEmailAddressPreview",
+          "caption": "Text field outlined email address. TextFieldOutlinedEmailAddress.kt"
+        },
+        {
+          "componentId": "text-field-outlined-email-address-with-label",
+          "preview": "TextFieldOutlinedEmailAddressWithLabelPreview",
+          "caption": "Text field outlined email address — with label. TextFieldOutlinedEmailAddress.kt"
+        },
+        {
+          "componentId": "text-field-outlined-email-disabled",
+          "preview": "TextFieldOutlinedEmailDisabledPreview",
+          "caption": "Text field outlined email disabled. TextFieldOutlinedEmailAddress.kt"
+        },
+        {
+          "componentId": "text-field-outlined-email-error",
+          "preview": "TextFieldOutlinedEmailErrorPreview",
+          "caption": "Text field outlined email error. TextFieldOutlinedEmailAddress.kt"
+        },
+        {
+          "componentId": "text-field-outlined-fake-select",
+          "preview": "TextFieldOutlinedFakeSelectPreview",
+          "caption": "Text field outlined fake select. TextFieldOutlinedFakeSelect.kt"
+        },
+        {
+          "componentId": "text-field-outlined-fake-select-preview-with-label",
+          "preview": "TextFieldOutlinedFakeSelectPreviewWithLabel",
+          "caption": "Text field outlined fake select — preview with label. TextFieldOutlinedFakeSelect.kt"
+        },
+        {
+          "componentId": "text-field-outlined-number-disabled",
+          "preview": "TextFieldOutlinedNumberDisabledPreview",
+          "caption": "Text field outlined number — disabled. TextFieldOutlinedNumber.kt"
+        },
+        {
+          "componentId": "text-field-outlined-number-error",
+          "preview": "TextFieldOutlinedNumberErrorPreview",
+          "caption": "Text field outlined number — error. TextFieldOutlinedNumber.kt"
+        },
+        {
+          "componentId": "text-field-outlined-number",
+          "preview": "TextFieldOutlinedNumberPreview",
+          "caption": "Text field outlined number. TextFieldOutlinedNumber.kt"
+        },
+        {
+          "componentId": "text-field-outlined-number-with-label",
+          "preview": "TextFieldOutlinedNumberWithLabelPreview",
+          "caption": "Text field outlined number — with label. TextFieldOutlinedNumber.kt"
+        },
+        {
+          "componentId": "text-field-outlined-password-disabled",
+          "preview": "TextFieldOutlinedPasswordDisabledPreview",
+          "caption": "Text field outlined password — disabled. TextFieldOutlinedPassword.kt"
+        },
+        {
+          "componentId": "text-field-outlined-password-error",
+          "preview": "TextFieldOutlinedPasswordErrorPreview",
+          "caption": "Text field outlined password — error. TextFieldOutlinedPassword.kt"
+        },
+        {
+          "componentId": "text-field-outlined-password",
+          "preview": "TextFieldOutlinedPasswordPreview",
+          "caption": "Text field outlined password. TextFieldOutlinedPassword.kt"
+        },
+        {
+          "componentId": "text-field-outlined-password-with-label",
+          "preview": "TextFieldOutlinedPasswordWithLabelPreview",
+          "caption": "Text field outlined password — with label. TextFieldOutlinedPassword.kt"
+        },
+        {
+          "componentId": "text-field-outlined-select",
+          "preview": "TextFieldOutlinedSelectPreview",
+          "caption": "Text field outlined select. TextFieldOutlinedSelect.kt"
+        },
+        {
+          "componentId": "text-field-outlined-select-preview-with-label",
+          "preview": "TextFieldOutlinedSelectPreviewWithLabel",
+          "caption": "Text field outlined select — preview with label. TextFieldOutlinedSelect.kt"
+        }
+      ]
+    },
+    {
+      "name": "Molecules",
+      "components": [
+        {
+          "componentId": "content-loading-error-view-content",
+          "preview": "ContentLoadingErrorViewContentPreview",
+          "caption": "Content loading error view — content. ContentLoadingErrorView.kt"
+        },
+        {
+          "componentId": "content-loading-error-view-error",
+          "preview": "ContentLoadingErrorViewErrorPreview",
+          "caption": "Content loading error view — error. ContentLoadingErrorView.kt"
+        },
+        {
+          "componentId": "content-loading-error-view-interactive",
+          "preview": "ContentLoadingErrorViewInteractivePreview",
+          "caption": "Content loading error view — interactive. ContentLoadingErrorView.kt"
+        },
+        {
+          "componentId": "content-loading-error-view-loading",
+          "preview": "ContentLoadingErrorViewLoadingPreview",
+          "caption": "Content loading error view — loading. ContentLoadingErrorView.kt"
+        },
+        {
+          "componentId": "content-loading-view-interactive",
+          "preview": "ContentLoadingViewInteractivePreview",
+          "caption": "Content loading view — interactive. ContentLoadingView.kt"
+        },
+        {
+          "componentId": "content-loading-view-loading",
+          "preview": "ContentLoadingViewLoadingPreview",
+          "caption": "Content loading view — loading. ContentLoadingView.kt"
+        },
+        {
+          "componentId": "content-loading-view",
+          "preview": "ContentLoadingViewPreview",
+          "caption": "Content loading view. ContentLoadingView.kt"
+        },
+        {
+          "componentId": "error-view",
+          "preview": "ErrorViewPreview",
+          "caption": "Error view. ErrorView.kt"
+        },
+        {
+          "componentId": "error-view-with-message",
+          "preview": "ErrorViewWithMessagePreview",
+          "caption": "Error view — with message. ErrorView.kt"
+        },
+        {
+          "componentId": "error-view-with-retry-and-message",
+          "preview": "ErrorViewWithRetryAndMessagePreview",
+          "caption": "Error view — with retry and message. ErrorView.kt"
+        },
+        {
+          "componentId": "error-view-with-retry",
+          "preview": "ErrorViewWithRetryPreview",
+          "caption": "Error view — with retry. ErrorView.kt"
+        },
+        {
+          "componentId": "loading-view",
+          "preview": "LoadingViewPreview",
+          "caption": "Loading view. LoadingView.kt"
+        },
+        {
+          "componentId": "loading-view-with-message",
+          "preview": "LoadingViewWithMessagePreview",
+          "caption": "Loading view — with message. LoadingView.kt"
+        },
+        {
+          "componentId": "pull-to-refresh-box",
+          "preview": "PullToRefreshBoxPreview",
+          "caption": "Pull to refresh box. PullToRefreshBox.kt"
+        },
+        {
+          "componentId": "pull-to-refresh-box-refreshing",
+          "preview": "PullToRefreshBoxRefreshingPreview",
+          "caption": "Pull to refresh box — refreshing. PullToRefreshBox.kt"
+        },
+        {
+          "componentId": "advanced-text-input-is-required",
+          "preview": "AdvancedTextInputIsRequiredPreview",
+          "caption": "Advanced text input — is required. AdvancedTextInput.kt"
+        },
+        {
+          "componentId": "advanced-text-input",
+          "preview": "AdvancedTextInputPreview",
+          "caption": "Advanced text input. AdvancedTextInput.kt"
+        },
+        {
+          "componentId": "advanced-text-input-with-annotated-string",
+          "preview": "AdvancedTextInputWithAnnotatedStringPreview",
+          "caption": "Advanced text input — with annotated string. AdvancedTextInput.kt"
+        },
+        {
+          "componentId": "advanced-text-input-with-composition",
+          "preview": "AdvancedTextInputWithCompositionPreview",
+          "caption": "Advanced text input — with composition. AdvancedTextInput.kt"
+        },
+        {
+          "componentId": "advanced-text-input-with-error",
+          "preview": "AdvancedTextInputWithErrorPreview",
+          "caption": "Advanced text input — with error. AdvancedTextInput.kt"
+        },
+        {
+          "componentId": "advanced-text-input-with-selection",
+          "preview": "AdvancedTextInputWithSelectionPreview",
+          "caption": "Advanced text input — with selection. AdvancedTextInput.kt"
+        },
+        {
+          "componentId": "checkbox-input-checked",
+          "preview": "CheckboxInputCheckedPreview",
+          "caption": "Checkbox input — checked. CheckboxInput.kt"
+        },
+        {
+          "componentId": "checkbox-input",
+          "preview": "CheckboxInputPreview",
+          "caption": "Checkbox input. CheckboxInput.kt"
+        },
+        {
+          "componentId": "checkbox-input-with-error",
+          "preview": "CheckboxInputWithErrorPreview",
+          "caption": "Checkbox input — with error. CheckboxInput.kt"
+        },
+        {
+          "componentId": "email-address-input",
+          "preview": "EmailAddressInputPreview",
+          "caption": "Email address input. EmailAddressInput.kt"
+        },
+        {
+          "componentId": "email-address-input-with-error",
+          "preview": "EmailAddressInputWithErrorPreview",
+          "caption": "Email address input — with error. EmailAddressInput.kt"
+        },
+        {
+          "componentId": "input-layout",
+          "preview": "InputLayoutPreview",
+          "caption": "Input layout. InputLayout.kt"
+        },
+        {
+          "componentId": "input-layout-with-error",
+          "preview": "InputLayoutWithErrorPreview",
+          "caption": "Input layout — with error. InputLayout.kt"
+        },
+        {
+          "componentId": "input-layout-with-warning",
+          "preview": "InputLayoutWithWarningPreview",
+          "caption": "Input layout — with warning. InputLayout.kt"
+        },
+        {
+          "componentId": "number-input-is-required",
+          "preview": "NumberInputIsRequiredPreview",
+          "caption": "Number input — is required. NumberInput.kt"
+        },
+        {
+          "componentId": "number-input",
+          "preview": "NumberInputPreview",
+          "caption": "Number input. NumberInput.kt"
+        },
+        {
+          "componentId": "number-input-with-error",
+          "preview": "NumberInputWithErrorPreview",
+          "caption": "Number input — with error. NumberInput.kt"
+        },
+        {
+          "componentId": "password-input",
+          "preview": "PasswordInputPreview",
+          "caption": "Password input. PasswordInput.kt"
+        },
+        {
+          "componentId": "password-input-with-error",
+          "preview": "PasswordInputWithErrorPreview",
+          "caption": "Password input — with error. PasswordInput.kt"
+        },
+        {
+          "componentId": "select-input",
+          "preview": "SelectInputPreview",
+          "caption": "Select input. SelectInput.kt"
+        },
+        {
+          "componentId": "switch-input-checked",
+          "preview": "SwitchInputCheckedPreview",
+          "caption": "Switch input — checked. SwitchInput.kt"
+        },
+        {
+          "componentId": "switch-input",
+          "preview": "SwitchInputPreview",
+          "caption": "Switch input. SwitchInput.kt"
+        },
+        {
+          "componentId": "switch-input-with-error",
+          "preview": "SwitchInputWithErrorPreview",
+          "caption": "Switch input — with error. SwitchInput.kt"
+        },
+        {
+          "componentId": "text-input-is-required",
+          "preview": "TextInputIsRequiredPreview",
+          "caption": "Text input — is required. TextInput.kt"
+        },
+        {
+          "componentId": "text-input",
+          "preview": "TextInputPreview",
+          "caption": "Text input. TextInput.kt"
+        },
+        {
+          "componentId": "text-input-with-error",
+          "preview": "TextInputWithErrorPreview",
+          "caption": "Text input — with error. TextInput.kt"
+        },
+        {
+          "componentId": "notification-action-button",
+          "preview": "NotificationActionButtonPreview",
+          "caption": "Notification action button. NotificationActionButton.kt"
+        },
+        {
+          "componentId": "tab-row-primary-edge-padding",
+          "preview": "TabRowPrimaryEdgePaddingPreview",
+          "caption": "Tab row primary — edge padding. TabRowPrimary.kt"
+        },
+        {
+          "componentId": "tab-row-primary-indicator-changes",
+          "preview": "TabRowPrimaryIndicatorChangesPreview",
+          "caption": "Tab row primary — indicator changes. TabRowPrimary.kt"
+        },
+        {
+          "componentId": "tab-row-primary",
+          "preview": "TabRowPrimaryPreview",
+          "caption": "Tab row primary. TabRowPrimary.kt"
+        },
+        {
+          "componentId": "tab-row-secondary-edge-padding",
+          "preview": "TabRowSecondaryEdgePaddingPreview",
+          "caption": "Tab row secondary — edge padding. TabRowSecondary.kt"
+        },
+        {
+          "componentId": "tab-row-secondary-indicator-changes",
+          "preview": "TabRowSecondaryIndicatorChangesPreview",
+          "caption": "Tab row secondary — indicator changes. TabRowSecondary.kt"
+        },
+        {
+          "componentId": "tab-row-secondary",
+          "preview": "TabRowSecondaryPreview",
+          "caption": "Tab row secondary. TabRowSecondary.kt"
+        }
+      ]
+    },
+    {
+      "name": "Organisms",
+      "components": [
+        {
+          "componentId": "alert-dialog",
+          "preview": "AlertDialogPreview",
+          "caption": "Alert dialog. AlertDialog.kt"
+        },
+        {
+          "componentId": "alert-dialog-with-cancel",
+          "preview": "AlertDialogWithCancelPreview",
+          "caption": "Alert dialog — with cancel. AlertDialog.kt"
+        },
+        {
+          "componentId": "alert-dialog-with-custom-content",
+          "preview": "AlertDialogWithCustomContentPreview",
+          "caption": "Alert dialog — with custom content. AlertDialog.kt"
+        },
+        {
+          "componentId": "alert-dialog-with-icon",
+          "preview": "AlertDialogWithIconPreview",
+          "caption": "Alert dialog — with icon. AlertDialog.kt"
+        },
+        {
+          "componentId": "basic-dialog",
+          "preview": "BasicDialogPreview",
+          "caption": "Basic dialog. BasicDialog.kt"
+        },
+        {
+          "componentId": "preview-only-supporting-text",
+          "preview": "PreviewOnlySupportingText",
+          "caption": "Preview only supporting text. BasicDialog.kt"
+        },
+        {
+          "componentId": "subtitle-top-app-bar",
+          "preview": "SubtitleTopAppBarPreview",
+          "caption": "Subtitle top app bar. SubtitleTopAppBar.kt"
+        },
+        {
+          "componentId": "subtitle-top-app-bar-with-actions",
+          "preview": "SubtitleTopAppBarWithActionsPreview",
+          "caption": "Subtitle top app bar — with actions. SubtitleTopAppBar.kt"
+        },
+        {
+          "componentId": "subtitle-top-app-bar-with-back-button",
+          "preview": "SubtitleTopAppBarWithBackButtonPreview",
+          "caption": "Subtitle top app bar — with back button. SubtitleTopAppBar.kt"
+        },
+        {
+          "componentId": "subtitle-top-app-bar-with-long-subtitle",
+          "preview": "SubtitleTopAppBarWithLongSubtitlePreview",
+          "caption": "Subtitle top app bar — with long subtitle. SubtitleTopAppBar.kt"
+        },
+        {
+          "componentId": "subtitle-top-app-bar-with-menu-button",
+          "preview": "SubtitleTopAppBarWithMenuButtonPreview",
+          "caption": "Subtitle top app bar — with menu button. SubtitleTopAppBar.kt"
+        },
+        {
+          "componentId": "top-app-bar",
+          "preview": "TopAppBarPreview",
+          "caption": "Top app bar. TopAppBar.kt"
+        },
+        {
+          "componentId": "top-app-bar-with-actions",
+          "preview": "TopAppBarWithActionsPreview",
+          "caption": "Top app bar — with actions. TopAppBar.kt"
+        },
+        {
+          "componentId": "top-app-bar-with-back-button",
+          "preview": "TopAppBarWithBackButtonPreview",
+          "caption": "Top app bar — with back button. TopAppBar.kt"
+        },
+        {
+          "componentId": "top-app-bar-with-menu-button",
+          "preview": "TopAppBarWithMenuButtonPreview",
+          "caption": "Top app bar — with menu button. TopAppBar.kt"
+        },
+        {
+          "componentId": "banner-global-notification-card-annotated-string-title",
+          "preview": "BannerGlobalNotificationCardAnnotatedStringTitlePreview",
+          "caption": "Banner global notification card — annotated string title. BannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "banner-global-notification-card-string-title",
+          "preview": "BannerGlobalNotificationCardStringTitlePreview",
+          "caption": "Banner global notification card — string title. BannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "error-banner-global-notification-card-annotated-string-title",
+          "preview": "ErrorBannerGlobalNotificationCardAnnotatedStringTitlePreview",
+          "caption": "Error banner global notification card — annotated string title. ErrorBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "error-banner-global-notification-card-string-title",
+          "preview": "ErrorBannerGlobalNotificationCardStringTitlePreview",
+          "caption": "Error banner global notification card — string title. ErrorBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-global-notification-card-annotated-string-title",
+          "preview": "InfoBannerGlobalNotificationCardAnnotatedStringTitlePreview",
+          "caption": "Info banner global notification card — annotated string title. InfoBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-global-notification-card-long-no-action-text",
+          "preview": "InfoBannerGlobalNotificationCardLongNoActionTextPreview",
+          "caption": "Info banner global notification card — long no action text. InfoBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-global-notification-card-long-text",
+          "preview": "InfoBannerGlobalNotificationCardLongTextPreview",
+          "caption": "Info banner global notification card — long text. InfoBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-global-notification-card-no-action",
+          "preview": "InfoBannerGlobalNotificationCardNoActionPreview",
+          "caption": "Info banner global notification card — no action. InfoBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-global-notification-card-string-title",
+          "preview": "InfoBannerGlobalNotificationCardStringTitlePreview",
+          "caption": "Info banner global notification card — string title. InfoBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-global-notification-card-annotated-string-title",
+          "preview": "SuccessBannerGlobalNotificationCardAnnotatedStringTitlePreview",
+          "caption": "Success banner global notification card — annotated string title. SuccessBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-global-notification-card-long-no-action-text",
+          "preview": "SuccessBannerGlobalNotificationCardLongNoActionTextPreview",
+          "caption": "Success banner global notification card — long no action text. SuccessBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-global-notification-card-long-text",
+          "preview": "SuccessBannerGlobalNotificationCardLongTextPreview",
+          "caption": "Success banner global notification card — long text. SuccessBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-global-notification-card-no-action",
+          "preview": "SuccessBannerGlobalNotificationCardNoActionPreview",
+          "caption": "Success banner global notification card — no action. SuccessBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-global-notification-card-string-title",
+          "preview": "SuccessBannerGlobalNotificationCardStringTitlePreview",
+          "caption": "Success banner global notification card — string title. SuccessBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-global-notification-card-annotated-string-title",
+          "preview": "WarningBannerGlobalNotificationCardAnnotatedStringTitlePreview",
+          "caption": "Warning banner global notification card — annotated string title. WarningBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-global-notification-card-long-no-action-text",
+          "preview": "WarningBannerGlobalNotificationCardLongNoActionTextPreview",
+          "caption": "Warning banner global notification card — long no action text. WarningBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-global-notification-card-long-text",
+          "preview": "WarningBannerGlobalNotificationCardLongTextPreview",
+          "caption": "Warning banner global notification card — long text. WarningBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-global-notification-card-no-action",
+          "preview": "WarningBannerGlobalNotificationCardNoActionPreview",
+          "caption": "Warning banner global notification card — no action. WarningBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-global-notification-card-string-title",
+          "preview": "WarningBannerGlobalNotificationCardStringTitlePreview",
+          "caption": "Warning banner global notification card — string title. WarningBannerGlobalNotificationCard.kt"
+        },
+        {
+          "componentId": "banner-inline-notification-card-annotated-string",
+          "preview": "BannerInlineNotificationCardAnnotatedStringPreview",
+          "caption": "Banner inline notification card — annotated string. BannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "banner-inline-notification-card-custom-title-and-description",
+          "preview": "BannerInlineNotificationCardCustomTitleAndDescriptionPreview",
+          "caption": "Banner inline notification card — custom title and description. BannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "banner-inline-notification-card-text",
+          "preview": "BannerInlineNotificationCardTextPreview",
+          "caption": "Banner inline notification card — text. BannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "banner-inline-notification-clipped-card-text",
+          "preview": "BannerInlineNotificationClippedCardTextPreview",
+          "caption": "Banner inline notification clipped card text. BannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "banner-inline-notification-expanded-card-text",
+          "preview": "BannerInlineNotificationExpandedCardTextPreview",
+          "caption": "Banner inline notification expanded card text. BannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "error-banner-inline-notification-card-long-text-clipped-preview",
+          "preview": "ErrorBannerInlineNotificationCardLongTextClippedPreviewPreview",
+          "caption": "Error banner inline notification card — long text clipped preview. ErrorBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "error-banner-inline-notification-card-long-text-expanded-preview",
+          "preview": "ErrorBannerInlineNotificationCardLongTextExpandedPreviewPreview",
+          "caption": "Error banner inline notification card — long text expanded preview. ErrorBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "error-banner-inline-notification-card-preview",
+          "preview": "ErrorBannerInlineNotificationCardPreviewPreview",
+          "caption": "Error banner inline notification card — preview. ErrorBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-inline-notification-card-long-text-clipped-preview",
+          "preview": "InfoBannerInlineNotificationCardLongTextClippedPreviewPreview",
+          "caption": "Info banner inline notification card — long text clipped preview. InfoBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-inline-notification-card-long-text-expanded-preview",
+          "preview": "InfoBannerInlineNotificationCardLongTextExpandedPreviewPreview",
+          "caption": "Info banner inline notification card — long text expanded preview. InfoBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "info-banner-inline-notification-card-preview",
+          "preview": "InfoBannerInlineNotificationCardPreviewPreview",
+          "caption": "Info banner inline notification card — preview. InfoBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-inline-notification-card-long-text-clipped-preview",
+          "preview": "SuccessBannerInlineNotificationCardLongTextClippedPreviewPreview",
+          "caption": "Success banner inline notification card — long text clipped preview. SuccessBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-inline-notification-card-long-text-expanded-preview",
+          "preview": "SuccessBannerInlineNotificationCardLongTextExpandedPreviewPreview",
+          "caption": "Success banner inline notification card — long text expanded preview. SuccessBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "success-banner-inline-notification-card-preview",
+          "preview": "SuccessBannerInlineNotificationCardPreviewPreview",
+          "caption": "Success banner inline notification card — preview. SuccessBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-inline-notification-card-long-text-clipped-preview",
+          "preview": "WarningBannerInlineNotificationCardLongTextClippedPreviewPreview",
+          "caption": "Warning banner inline notification card — long text clipped preview. WarningBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-inline-notification-card-long-text-expanded-preview",
+          "preview": "WarningBannerInlineNotificationCardLongTextExpandedPreviewPreview",
+          "caption": "Warning banner inline notification card — long text expanded preview. WarningBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "warning-banner-inline-notification-card-preview",
+          "preview": "WarningBannerInlineNotificationCardPreviewPreview",
+          "caption": "Warning banner inline notification card — preview. WarningBannerInlineNotificationCard.kt"
+        },
+        {
+          "componentId": "navigation-drawer-item-selected",
+          "preview": "NavigationDrawerItemSelectedPreview",
+          "caption": "Navigation drawer item — selected. NavigationDrawerItem.kt"
+        },
+        {
+          "componentId": "navigation-drawer-item-unselected",
+          "preview": "NavigationDrawerItemUnselectedPreview",
+          "caption": "Navigation drawer item — unselected. NavigationDrawerItem.kt"
+        },
+        {
+          "componentId": "navigation-drawer-item-with-icon",
+          "preview": "NavigationDrawerItemWithIconPreview",
+          "caption": "Navigation drawer item — with icon. NavigationDrawerItem.kt"
+        },
+        {
+          "componentId": "navigation-drawer-item-with-label-badge",
+          "preview": "NavigationDrawerItemWithLabelBadgePreview",
+          "caption": "Navigation drawer item — with label badge. NavigationDrawerItem.kt"
+        },
+        {
+          "componentId": "navigation-drawer-item-badge",
+          "preview": "NavigationDrawerItemBadgePreview",
+          "caption": "Navigation drawer item badge. NavigationDrawerItemBadge.kt"
+        },
+        {
+          "componentId": "navigation-drawer-item-badge-with-icon",
+          "preview": "NavigationDrawerItemBadgeWithIconPreview",
+          "caption": "Navigation drawer item badge — with icon. NavigationDrawerItemBadge.kt"
+        }
+      ]
+    },
+    {
+      "name": "Templates",
+      "components": [
+        {
+          "componentId": "lazy-column-with-header-footer",
+          "preview": "LazyColumnWithHeaderFooterPreview",
+          "caption": "Lazy column with header footer. LazyColumnWithHeaderFooter.kt"
+        },
+        {
+          "componentId": "list-detail-pane",
+          "preview": "ListDetailPanePreview",
+          "caption": "List detail pane. ListDetailPane.kt"
+        },
+        {
+          "componentId": "responsive-content",
+          "preview": "ResponsiveContentPreview",
+          "caption": "Responsive content. ResponsiveContent.kt"
+        },
+        {
+          "componentId": "responsive-content-with-background",
+          "preview": "ResponsiveContentWithBackgroundPreview",
+          "caption": "Responsive content with background. ResponsiveContentWithSurface.kt"
+        },
+        {
+          "componentId": "responsive-width-container",
+          "preview": "ResponsiveWidthContainerPreview",
+          "caption": "Responsive width container. ResponsiveWidthContainer.kt"
+        },
+        {
+          "componentId": "scaffold",
+          "preview": "ScaffoldPreview",
+          "caption": "Scaffold. Scaffold.kt"
+        },
+        {
+          "componentId": "scaffold-wit-fab",
+          "preview": "ScaffoldWitFabPreview",
+          "caption": "Scaffold — wit fab. Scaffold.kt"
+        },
+        {
+          "componentId": "horizontal-tab-pager-secondary",
+          "preview": "HorizontalTabPagerSecondaryPreview",
+          "caption": "Horizontal tab pager secondary. HorizontalTabPagerSecondary.kt"
+        }
+      ]
+    }
+  ]
+}

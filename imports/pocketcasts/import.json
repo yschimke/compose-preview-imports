@@ -1,0 +1,10 @@
+{
+  "slug": "pocketcasts",
+  "upstream": "Automattic/pocket-casts-android",
+  "ref": "main",
+  "modules": [
+    ":modules:services:compose"
+  ],
+  "renderer": "android",
+  "notes": "Pocket Casts for Android, on Google Play as au.com.shiftyjelly.pocketcasts and unambiguously designed rather than assembled. :modules:services:compose is the design-system module \u2014 buttons, inputs, dialogs, subscription badges, the theme roles \u2014 and declares 143 @Preview functions on its own, with no network, playback or DI code behind it. Ordinary Android Compose, single Gradle build at the repository root, no dependency locking or verification. The catalog omits five components whose previews exist only on the old yschimke fork; see the spec's $comment. Licence: MPL-2.0."
+}
