@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 515" width="1050" height="515" role="img" aria-label="partner-card layout wireframe">
+  <title>partner-card — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="515" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="515" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="515" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="473" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M158,116 H892 A42,42 0 0 1 934,158 V357 A42,42 0 0 1 892,399 H158 A42,42 0 0 1 116,357 V158 A42,42 0 0 1 158,116 Z" fill="#19191C" fill-opacity="0.051" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="119" y="128" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#0D19191C  pad 36.0dp</text>
+  </g>
+</svg>

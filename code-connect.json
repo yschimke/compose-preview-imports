@@ -1,0 +1,2825 @@
+{
+  "system": "jetbrains-kotlinconf-app",
+  "title": "KotlinConf",
+  "label": "Compose",
+  "source": {
+    "repo": "JetBrains/kotlinconf-app",
+    "ref": "7011707b0a2d6c7ceacc44e467ae21524c7db26e",
+    "module": ":app:ui-components"
+  },
+  "generatedAt": "2026-09-02T14:32:41.472Z",
+  "mappings": [
+    {
+      "componentId": "button-primary",
+      "figmaLayerName": "button-primary",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ButtonPrimaryPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/button-primary__ideal__default__light.svg"
+    },
+    {
+      "componentId": "button-secondary",
+      "figmaLayerName": "button-secondary",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ButtonSecondaryPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/button-secondary__ideal__default__light.svg"
+    },
+    {
+      "componentId": "action",
+      "figmaLayerName": "action",
+      "componentName": "Action",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Action.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "ActionPreview",
+      "codeSnippet": "Action(\n    label = TODO(\"String\"),\n    icon = TODO(\"DrawableResource\"),\n    size = TODO(\"ActionSize\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.Action"
+      ],
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "icon",
+          "type": "DrawableResource",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "size",
+          "type": "ActionSize",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit?",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "iconRotation",
+          "type": "Float",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/action__ideal__default__light.svg"
+    },
+    {
+      "componentId": "overlay-text-button",
+      "figmaLayerName": "overlay-text-button",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ActionButtonPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-text-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "overlay-icon-button-enabled",
+      "figmaLayerName": "overlay-icon-button-enabled",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "IconButtonPreviewEnabled",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-icon-button-enabled__ideal__default__light.svg"
+    },
+    {
+      "componentId": "overlay-icon-button-disabled",
+      "figmaLayerName": "overlay-icon-button-disabled",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "IconButtonPreviewDisabled",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-icon-button-disabled__ideal__default__light.svg"
+    },
+    {
+      "componentId": "now-button",
+      "figmaLayerName": "now-button",
+      "componentName": "NowButton",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/NowButton.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "NowButtonPreview",
+      "codeSnippet": "NowButton(\n    time = TODO(\"NowButtonState\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.NowButton"
+      ],
+      "parameters": [
+        {
+          "name": "time",
+          "type": "NowButtonState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "now-button-floating",
+      "figmaLayerName": "now-button-floating",
+      "componentName": "FloatingNowButton",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/NowButton.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "FloatingNowButtonPreview",
+      "codeSnippet": "FloatingNowButton(\n    time = TODO(\"NowButtonState\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.FloatingNowButton"
+      ],
+      "parameters": [
+        {
+          "name": "time",
+          "type": "NowButtonState",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-button-floating__ideal__default__light.svg"
+    },
+    {
+      "componentId": "header-toggle",
+      "figmaLayerName": "header-toggle",
+      "componentName": "HeaderToggleButton",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/HeaderToggleButton.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "HeaderToggleButtonPreview",
+      "codeSnippet": "HeaderToggleButton(\n    options = TODO(\"List<HeaderToggleOption>\"),\n    selectedIndex = TODO(\"Int\"),\n    onSelect = TODO(\"(Int) -> Unit\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.HeaderToggleButton"
+      ],
+      "parameters": [
+        {
+          "name": "options",
+          "type": "List<HeaderToggleOption>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Int",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onSelect",
+          "type": "(Int) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/header-toggle__ideal__default__light.svg"
+    },
+    {
+      "componentId": "top-menu-button",
+      "figmaLayerName": "top-menu-button",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TopMenuButtonUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "top-menu-button-selected",
+      "figmaLayerName": "top-menu-button-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TopMenuButtonSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "top-menu-button-large",
+      "figmaLayerName": "top-menu-button-large",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TopMenuButtonLargeUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-large__ideal__default__light.svg"
+    },
+    {
+      "componentId": "top-menu-button-large-selected",
+      "figmaLayerName": "top-menu-button-large-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TopMenuButtonLargeSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-large-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "main-navigation-bar",
+      "figmaLayerName": "main-navigation-bar",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MainNavigationBarPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-bar__ideal__default__light.svg"
+    },
+    {
+      "componentId": "main-navigation-rail",
+      "figmaLayerName": "main-navigation-rail",
+      "componentName": "MainNavigationRail",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainNavigationRail.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "MainNavigationRailPreview",
+      "codeSnippet": "MainNavigationRail(\n    currentDestination = TODO(\"MainNavDestination<T>?\"),\n    destinations = TODO(\"List<MainNavDestination<T>>\"),\n    onSelect = TODO(\"(MainNavDestination<T>) -> Unit\"),\n    expanded = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.MainNavigationRail"
+      ],
+      "parameters": [
+        {
+          "name": "currentDestination",
+          "type": "MainNavDestination<T>?",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "destinations",
+          "type": "List<MainNavDestination<T>>",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onSelect",
+          "type": "(MainNavDestination<T>) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "expanded",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-rail__ideal__default__light.svg"
+    },
+    {
+      "componentId": "main-header-title",
+      "figmaLayerName": "main-header-title",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MainHeaderTitleOnlyPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-title__ideal__default__light.svg"
+    },
+    {
+      "componentId": "main-header-back",
+      "figmaLayerName": "main-header-back",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MainHeaderBackPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-back__ideal__default__light.svg"
+    },
+    {
+      "componentId": "main-header-schedule",
+      "figmaLayerName": "main-header-schedule",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MainHeaderSchedulePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-schedule__ideal__default__light.svg"
+    },
+    {
+      "componentId": "main-header-search",
+      "figmaLayerName": "main-header-search",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MainHeaderSearchStatePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/main-header-search.svg"
+    },
+    {
+      "componentId": "main-header-speaker",
+      "figmaLayerName": "main-header-speaker",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MainHeaderSpeakerPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-speaker__ideal__default__light.svg"
+    },
+    {
+      "componentId": "large-main-header",
+      "figmaLayerName": "large-main-header",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LargeMainHeaderPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/large-main-header.svg"
+    },
+    {
+      "componentId": "page-title",
+      "figmaLayerName": "page-title",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PageTitleRegularPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title__ideal__default__light.svg"
+    },
+    {
+      "componentId": "page-title-lightning",
+      "figmaLayerName": "page-title-lightning",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PageTitleLightningPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-lightning__ideal__default__light.svg"
+    },
+    {
+      "componentId": "page-title-notes",
+      "figmaLayerName": "page-title-notes",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PageTitleWithNotesPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-notes__ideal__default__light.svg"
+    },
+    {
+      "componentId": "page-title-large",
+      "figmaLayerName": "page-title-large",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LargePageTitleWithPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-large__ideal__default__light.svg"
+    },
+    {
+      "componentId": "section-title-text",
+      "figmaLayerName": "section-title-text",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SectionTitleTextPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/section-title-text__ideal__default__light.svg"
+    },
+    {
+      "componentId": "section-title-time",
+      "figmaLayerName": "section-title-time",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SectionTitleTimePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/section-title-time__ideal__default__light.svg"
+    },
+    {
+      "componentId": "paragraph-title",
+      "figmaLayerName": "paragraph-title",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ParagraphTitlePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/paragraph-title__ideal__default__light.svg"
+    },
+    {
+      "componentId": "day-header",
+      "figmaLayerName": "day-header",
+      "componentName": "DayHeader",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/DayHeader.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "DayHeaderPreview",
+      "codeSnippet": "DayHeader(\n    month = TODO(\"String\"),\n    day = TODO(\"String\"),\n    line1 = TODO(\"String\"),\n    line2 = TODO(\"String\"),\n    fullWidth = TODO(\"Boolean\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.DayHeader"
+      ],
+      "parameters": [
+        {
+          "name": "month",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "day",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "line1",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "line2",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "fullWidth",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "day2",
+          "type": "String",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/day-header__ideal__default__light.svg"
+    },
+    {
+      "componentId": "page-menu-item",
+      "figmaLayerName": "page-menu-item",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PageMenuItemPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-menu-item__ideal__default__light.svg"
+    },
+    {
+      "componentId": "talk-card-upcoming",
+      "figmaLayerName": "talk-card-upcoming",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TalkCardUpcomingPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/talk-card-upcoming__ideal__default__light.svg"
+    },
+    {
+      "componentId": "talk-card-live",
+      "figmaLayerName": "talk-card-live",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TalkCardLivePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/talk-card-live.svg"
+    },
+    {
+      "componentId": "speaker-card",
+      "figmaLayerName": "speaker-card",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SpeakerCardPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card__ideal__default__light.svg"
+    },
+    {
+      "componentId": "speaker-card-highlights",
+      "figmaLayerName": "speaker-card-highlights",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SpeakerCardWithHighlightsPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card-highlights__ideal__default__light.svg"
+    },
+    {
+      "componentId": "partner-card",
+      "figmaLayerName": "partner-card",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PartnerCardPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/partner-card__ideal__default__light.svg"
+    },
+    {
+      "componentId": "service-event",
+      "figmaLayerName": "service-event",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ServiceEventPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event__ideal__default__light.svg"
+    },
+    {
+      "componentId": "service-event-block",
+      "figmaLayerName": "service-event-block",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ServiceEventBlockPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event-block__ideal__default__light.svg"
+    },
+    {
+      "componentId": "service-event-party-live",
+      "figmaLayerName": "service-event-party-live",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PartyServiceEventLivePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/service-event-party-live.svg"
+    },
+    {
+      "componentId": "now-label",
+      "figmaLayerName": "now-label",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "NowLabelPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-label__ideal__default__light.svg"
+    },
+    {
+      "componentId": "card-tag",
+      "figmaLayerName": "card-tag",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "CardTagUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/card-tag__ideal__default__light.svg"
+    },
+    {
+      "componentId": "card-tag-selected",
+      "figmaLayerName": "card-tag-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "CardTagSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/card-tag-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "search-input-empty",
+      "figmaLayerName": "search-input-empty",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SearchInputEmptyPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/search-input-empty.svg"
+    },
+    {
+      "componentId": "search-input-text",
+      "figmaLayerName": "search-input-text",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SearchInputWithTextPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/search-input-text.svg"
+    },
+    {
+      "componentId": "large-search-bar",
+      "figmaLayerName": "large-search-bar",
+      "componentName": "LargeSearchBar",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/LargeSearchBar.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "LargeSearchBarPreview",
+      "codeSnippet": "LargeSearchBar(\n    searchValue = TODO(\"String\"),\n    onSearchValueChange = TODO(\"(String) -> Unit\"),\n    onClear = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.LargeSearchBar"
+      ],
+      "parameters": [
+        {
+          "name": "searchValue",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onSearchValueChange",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onClear",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "hasAdditionalInputs",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "hint",
+          "type": "String",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/large-search-bar.svg"
+    },
+    {
+      "componentId": "filters",
+      "figmaLayerName": "filters",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "FiltersPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filters__ideal__default__light.svg"
+    },
+    {
+      "componentId": "filter-tag",
+      "figmaLayerName": "filter-tag",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "FilterTagUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filter-tag__ideal__default__light.svg"
+    },
+    {
+      "componentId": "filter-tag-selected",
+      "figmaLayerName": "filter-tag-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "FilterTagSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filter-tag-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "switcher",
+      "figmaLayerName": "switcher",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SwitcherPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher__ideal__default__light.svg"
+    },
+    {
+      "componentId": "switcher-short",
+      "figmaLayerName": "switcher-short",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SwitcherShortPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-short__ideal__default__light.svg"
+    },
+    {
+      "componentId": "switcher-item",
+      "figmaLayerName": "switcher-item",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SwitcherItemNormalPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-item__ideal__default__light.svg"
+    },
+    {
+      "componentId": "switcher-item-selected",
+      "figmaLayerName": "switcher-item-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SwitcherItemSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-item-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "large-switcher",
+      "figmaLayerName": "large-switcher",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LargeSwitcherPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher__ideal__default__light__expanded.svg"
+    },
+    {
+      "componentId": "large-switcher-item",
+      "figmaLayerName": "large-switcher-item",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LargeSwitcherItemUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher-item__ideal__default__light.svg"
+    },
+    {
+      "componentId": "large-switcher-item-selected",
+      "figmaLayerName": "large-switcher-item-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LargeSwitcherItemSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher-item-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "error-minor",
+      "figmaLayerName": "error-minor",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MinorErrorPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/error-minor__ideal__default__light.svg"
+    },
+    {
+      "componentId": "error-normal",
+      "figmaLayerName": "error-normal",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "NormalErrorIdlePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/error-normal.svg"
+    },
+    {
+      "componentId": "error-normal-interactive",
+      "figmaLayerName": "error-normal-interactive",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "NormalErrorInteractivePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/error-normal-interactive.svg"
+    },
+    {
+      "componentId": "error-normal-loading",
+      "figmaLayerName": "error-normal-loading",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "NormalErrorLoadingPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/error-normal-loading.svg"
+    },
+    {
+      "componentId": "error-major",
+      "figmaLayerName": "error-major",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MajorErrorPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/error-major.svg"
+    },
+    {
+      "componentId": "loading-enabled",
+      "figmaLayerName": "loading-enabled",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LoadingEnabledPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/loading-enabled.svg"
+    },
+    {
+      "componentId": "loading-disabled",
+      "figmaLayerName": "loading-disabled",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "LoadingDisabledPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/loading-disabled.svg"
+    },
+    {
+      "componentId": "feedback-form",
+      "figmaLayerName": "feedback-form",
+      "componentName": "FeedbackForm",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/FeedbackForm.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "FeedbackFormPreview",
+      "codeSnippet": "FeedbackForm(\n    feedbackText = TODO(\"String\"),\n    onFeedbackTextChange = TODO(\"(String) -> Unit\"),\n    emotion = TODO(\"Emotion\"),\n    onSubmit = TODO(\"(Emotion, String) -> Unit\"),\n    onSkip = TODO(\"() -> Unit\"),\n    past = TODO(\"Boolean\"),\n    bringIntoViewRequester = TODO(\"BringIntoViewRequester\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.FeedbackForm"
+      ],
+      "parameters": [
+        {
+          "name": "feedbackText",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onFeedbackTextChange",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "emotion",
+          "type": "Emotion",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onSubmit",
+          "type": "(Emotion, String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "onSkip",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "past",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "bringIntoViewRequester",
+          "type": "BringIntoViewRequester",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/feedback-form.svg"
+    },
+    {
+      "componentId": "tooltip",
+      "figmaLayerName": "tooltip",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TooltipPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/tooltip__ideal__default__light.svg"
+    },
+    {
+      "componentId": "settings-item",
+      "figmaLayerName": "settings-item",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SettingsItemSimplePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/settings-item__ideal__default__light.svg"
+    },
+    {
+      "componentId": "settings-item-note",
+      "figmaLayerName": "settings-item-note",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SettingsItemWithNotePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/settings-item-note__ideal__default__light.svg"
+    },
+    {
+      "componentId": "toggle-on",
+      "figmaLayerName": "toggle-on",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ToggleOnPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/toggle-on__ideal__default__light.svg"
+    },
+    {
+      "componentId": "toggle-off",
+      "figmaLayerName": "toggle-off",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ToggleOffPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/toggle-off__ideal__default__light.svg"
+    },
+    {
+      "componentId": "text-styles",
+      "figmaLayerName": "text-styles",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TextStylePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/text-styles__ideal__default__light.svg"
+    },
+    {
+      "componentId": "icon",
+      "figmaLayerName": "icon",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "IconPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon__ideal__default__light.svg"
+    },
+    {
+      "componentId": "icon-tinted",
+      "figmaLayerName": "icon-tinted",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TintedIconPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon-tinted__ideal__default__light.svg"
+    },
+    {
+      "componentId": "divider-horizontal",
+      "figmaLayerName": "divider-horizontal",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "HorizontalDividerPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-horizontal__ideal__default__light.svg"
+    },
+    {
+      "componentId": "divider-vertical",
+      "figmaLayerName": "divider-vertical",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "VerticalDividerPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-vertical__ideal__default__light.svg"
+    },
+    {
+      "componentId": "kodee-emotion",
+      "figmaLayerName": "kodee-emotion",
+      "componentName": "KodeeEmotion",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Kodee.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "KodeeEmotionPreview",
+      "codeSnippet": "KodeeEmotion(\n    emotion = TODO(\"Emotion\"),\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.components.KodeeEmotion"
+      ],
+      "parameters": [
+        {
+          "name": "emotion",
+          "type": "Emotion",
+          "hasDefault": false,
+          "composableSlot": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        }
+      ],
+      "figmaSvg": "figma/kodee-emotion.svg"
+    },
+    {
+      "componentId": "kodee-icon-small",
+      "figmaLayerName": "kodee-icon-small",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "KodeeIconSmallUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/kodee-icon-small.svg"
+    },
+    {
+      "componentId": "kodee-icon-small-selected",
+      "figmaLayerName": "kodee-icon-small-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "KodeeIconSmallSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/kodee-icon-small-selected.svg"
+    },
+    {
+      "componentId": "kodee-icon-large",
+      "figmaLayerName": "kodee-icon-large",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "KodeeIconLargeUnselectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/kodee-icon-large__ideal__default__light.svg"
+    },
+    {
+      "componentId": "kodee-icon-large-selected",
+      "figmaLayerName": "kodee-icon-large-selected",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "KodeeIconLargeSelectedPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/kodee-icon-large-selected__ideal__default__light.svg"
+    },
+    {
+      "componentId": "party-animation",
+      "figmaLayerName": "party-animation",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PartyAnimationPreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/party-animation.svg"
+    },
+    {
+      "componentId": "party-animation-baseline",
+      "figmaLayerName": "party-animation-baseline",
+      "componentName": "PreviewHelper",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PartyAnimationBaselinePreview",
+      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "imports": [
+        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "paddingEnabled",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ],
+      "figmaSvg": "figma/party-animation-baseline.svg"
+    }
+  ]
+}

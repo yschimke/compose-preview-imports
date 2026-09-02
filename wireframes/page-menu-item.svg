@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 189" width="1050" height="189" role="img" aria-label="page-menu-item layout wireframe">
+  <title>page-menu-item — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="189" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="189" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="189" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="147" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M94.5,63 H955.5 A31.5,31.5 0 0 1 987,94.5 V94.5 A31.5,31.5 0 0 1 955.5,126 H94.5 A31.5,31.5 0 0 1 63,94.5 V94.5 A31.5,31.5 0 0 1 94.5,63 Z" fill="#19191C" fill-opacity="0.051" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="75" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#0D19191C  pad 16.0dp</text>
+  </g>
+  <g>
+    <rect x="63" y="70" width="118" height="49" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="924" y="63" width="63" height="63" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

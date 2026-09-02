@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169 169" width="169" height="169" role="img" aria-label="top-menu-button layout wireframe">
+  <title>top-menu-button — layout wireframe (slots + tokens)</title>
+  <rect width="169" height="169" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="169" height="169" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="169" height="169" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="127" height="127" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="127" height="127" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84.5,53 H84.5 A31.5,31.5 0 0 1 116,84.5 V84.5 A31.5,31.5 0 0 1 84.5,116 H84.5 A31.5,31.5 0 0 1 53,84.5 V84.5 A31.5,31.5 0 0 1 84.5,53 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="65" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 6.0dp</text>
+  </g>
+</svg>

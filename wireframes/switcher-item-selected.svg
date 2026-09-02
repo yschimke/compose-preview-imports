@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 402 147" width="402" height="147" role="img" aria-label="switcher-item-selected layout wireframe">
+  <title>switcher-item-selected — layout wireframe (slots + tokens)</title>
+  <rect width="402" height="147" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="402" height="147" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="402" height="147" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="360" height="105" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M94.5,42 H307.5 A31.5,31.5 0 0 1 339,73.5 V73.5 A31.5,31.5 0 0 1 307.5,105 H94.5 A31.5,31.5 0 0 1 63,73.5 V73.5 A31.5,31.5 0 0 1 94.5,42 Z" fill="none" fill-opacity="0" stroke="#8F00E7" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#8F00E7">◻ #FF8F00E7  pad ·</text>
+  </g>
+  <g>
+    <rect x="63" y="49" width="276" height="49" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

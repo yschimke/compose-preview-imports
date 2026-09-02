@@ -1,0 +1,1633 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KotlinConf — design catalog</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0f0f10; --panel:#1b1b1d; --fg:#e8e8ea; --muted:#9b9ba1; --line:#2a2a2d; --accent:#7dd87d; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  header.top { padding:24px clamp(16px,4vw,40px); border-bottom:1px solid var(--line); }
+  header.top h1 { margin:0 0 6px; font-size:22px; }
+  header.top .subtitle { color:var(--muted); font-size:13px; }
+  header.top code { background:var(--panel); padding:1px 6px; border-radius:5px; }
+  header.top .pagelink { color:var(--accent); text-decoration:none; font-size:13px; }
+  header.top .pagelink:hover { text-decoration:underline; }
+  .layout { display:grid; grid-template-columns:240px 1fr; align-items:start; }
+  nav.index { position:sticky; top:0; align-self:start; max-height:100vh; overflow:auto; padding:20px 12px; border-right:1px solid var(--line); }
+  nav.index .nav-head { display:flex; justify-content:space-between; font-weight:600; text-decoration:none; color:var(--fg); padding:6px 8px; border-radius:6px; }
+  nav.index .nav-head span { color:var(--muted); font-weight:400; }
+  nav.index .nav-head:hover { background:var(--panel); }
+  nav.index ul { list-style:none; margin:2px 0 14px; padding:0 0 0 8px; }
+  nav.index li a { display:block; color:var(--muted); text-decoration:none; padding:3px 8px; border-radius:5px; font-size:13px; }
+  nav.index li a:hover { color:var(--fg); background:var(--panel); }
+  main { padding:8px clamp(16px,4vw,40px) 64px; min-width:0; }
+  .group { padding-top:24px; }
+  .group h2 { font-size:16px; border-bottom:1px solid var(--line); padding-bottom:8px; position:sticky; top:0; background:var(--bg); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  /* Theme-aware checkerboard so a transparent component sticker reads on the backing that matches
+     its baked theme — a light-theme component (dark strokes/text) on a LIGHT check, a dark-theme (or
+     theme-less) one on the default dark check — instead of light-mode content washing out on a fixed
+     dark backing. --ck-a / --ck-b are the two check colours; [data-bg=light] swaps them. Full-screen
+     stickers carry their own round and just sit on top. Shared by the grid hero and zoom variants. */
+  .shot, .state-shot { --ck-a:#161617; --ck-b:#202022;
+    background-color:var(--ck-a);
+    background-image:
+      linear-gradient(45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(-45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,var(--ck-b) 75%),
+      linear-gradient(-45deg,transparent 75%,var(--ck-b) 75%);
+    background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+  .shot[data-bg="light"], .state-shot[data-bg="light"] { --ck-a:#e9e9ef; --ck-b:#ffffff; }
+  .shot { margin:0; display:grid; place-items:center; min-height:120px; padding:12px; }
+  .shot img { max-width:100%; max-height:240px; height:auto; display:block; }
+  a.shot { cursor:zoom-in; text-decoration:none; }
+  /* Framed mode (set by the crop script below): the hero is sized to the component's content bbox
+     — read from the figma-svg's translate + viewBox — and the PNG is absolutely-positioned so only
+     the component shows. A wear sticker rendered on a 454² device canvas is displayed cropped to
+     the component instead of floating in an empty frame; a no-op for close-cropped (phone) renders
+     where the bbox already fills the frame. */
+  .shot--framed { overflow:hidden; padding:0; min-height:0; position:relative; place-items:stretch;
+    margin:16px auto; border-radius:8px; max-width:100%; }
+  .shot--framed img { position:absolute; max-width:none; max-height:none; }
+  /* A gutter window shows the component at its siblings' size and lets the shadow it holds spill
+     past the box — so it must not clip, and the card must not either, or the spill dies at the card
+     edge. AFTER the .shot--framed rule on purpose: same specificity, so the later one is what
+     wins, and a bleeding shot always carries both classes. */
+  .shot--bleed { overflow:visible; }
+  .card:has(.shot--bleed) { overflow:visible; }
+  .shot--missing { color:var(--muted); font-style:italic; }
+  .card--failed { border-color:#7d4148; }
+  .shot--failed { color:#f1b5b9; background:#26191b; text-align:center; display:flex; flex-direction:column; gap:6px; }
+  .shot--failed .failure-mark { display:grid; place-items:center; width:30px; height:30px; border:1px solid #d66c75; border-radius:50%; font-size:18px; }
+  .shot--failed span:last-child { color:#c9a3a6; font-size:11px; max-width:32ch; }
+  .failure-chip { color:#ef9299; border:1px solid #7d4148; border-radius:999px; padding:1px 7px; white-space:nowrap; }
+  .failure-detail { min-width:min(680px,80vw); color:var(--fg); }
+  .failure-detail + .failure-detail { border-top:1px solid var(--line); margin-top:14px; padding-top:14px; }
+  .failure-meta,.failure-frame { color:var(--muted); font-size:12px; margin-top:4px; }
+  .failure-detail details { margin-top:10px; }
+  .failure-detail pre { white-space:pre-wrap; overflow-wrap:anywhere; background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:10px; font-size:11px; }
+  .failure-summary { margin:18px clamp(16px,4vw,40px) 0; padding:12px 14px; border:1px solid #7d4148; border-radius:10px; background:#26191b; color:#c9a3a6; }
+  .failure-summary > strong { color:#ef9299; }
+  .failure-summary ul { display:grid; gap:4px; margin:8px 0 0; padding:0; list-style:none; }
+  .failure-summary li { display:flex; justify-content:space-between; gap:16px; font-size:12px; }
+  .meta { padding:10px 12px 12px; border-top:1px solid var(--line); }
+  .meta h3 { margin:0; font-size:13px; font-weight:600; word-break:break-word; }
+  .meta h3 a.ctitle { color:inherit; text-decoration:none; }
+  .meta h3 a.ctitle:hover { text-decoration:underline; }
+  .meta .sub { color:var(--muted); font-size:12px; margin-top:2px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+  .meta .sub .wf { color:#7dd87d; text-decoration:none; white-space:nowrap; }
+  .meta .sub .wf:hover { text-decoration:underline; }
+  .statechip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--muted); text-decoration:none; white-space:nowrap; }
+  .statechip:hover { color:var(--fg); border-color:var(--muted); }
+  .greenlines { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px; }
+  .chip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--accent); color:var(--accent); }
+  .chip--warn { border-color:#e0c060; color:#e0c060; }
+  .chip--error { border-color:#e08080; color:#e08080; }
+  /* Single-component zoom view — a pure-CSS :target overlay, one per component. */
+  .detail { display:none; }
+  .detail:target { display:flex; position:fixed; inset:0; z-index:50; align-items:center; justify-content:center; padding:clamp(12px,4vw,40px); }
+  .detail-scrim { position:absolute; inset:0; background:rgba(0,0,0,0.72); }
+  .detail-panel { position:relative; z-index:1; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    max-width:min(960px,94vw); max-height:88vh; overflow:auto; padding:20px 24px; }
+  .detail-panel h3 { margin:0 0 4px; font-size:15px; word-break:break-word; }
+  .detail-caption { color:var(--muted); font-size:13px; margin-bottom:14px; }
+  .detail-x { position:absolute; top:8px; right:14px; color:var(--muted); text-decoration:none; font-size:24px; line-height:1; }
+  .detail-x:hover { color:var(--fg); }
+  .detail-states { display:flex; flex-wrap:wrap; gap:18px; }
+  figure.state { margin:0; }
+  figure.state figcaption { font-size:12px; color:var(--muted); margin-bottom:6px; text-transform:capitalize; }
+  .state-shots { display:flex; flex-wrap:wrap; gap:10px; }
+  .state-shot { display:flex; flex-direction:column; align-items:center; gap:5px;
+    border:1px solid var(--line); border-radius:10px; padding:12px; }
+  .state-shot img { max-width:220px; max-height:220px; height:auto; display:block; }
+  .state-shot span { font-size:11px; color:var(--muted); text-transform:capitalize; }
+  @media (max-width:720px){ .layout{ grid-template-columns:1fr; } nav.index{ position:static; max-height:none; border-right:0; border-bottom:1px solid var(--line);} }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>KotlinConf</h1>
+  <div class="subtitle">system <code>jetbrains-kotlinconf-app</code> · rendered by compose-preview 1.63.0 · 2026-09-02T14:32:39.887Z · 79 components</div>
+  <div class="subtitle"><a class="pagelink" href="compare.html">SVG vs PNG compare ↗</a></div>
+</header>
+
+<div class="layout">
+  <nav class="index"><section class="nav-group">
+      <a class="nav-head" href="#g-buttons-and-actions">Buttons and actions <span>13</span></a>
+      <ul><li><a href="#c-button-primary">button-primary</a></li><li><a href="#c-button-secondary">button-secondary</a></li><li><a href="#c-action">action</a></li><li><a href="#c-overlay-text-button">overlay-text-button</a></li><li><a href="#c-overlay-icon-button-enabled">overlay-icon-button-enabled</a></li><li><a href="#c-overlay-icon-button-disabled">overlay-icon-button-disabled</a></li><li><a href="#c-now-button">now-button</a></li><li><a href="#c-now-button-floating">now-button-floating</a></li><li><a href="#c-header-toggle">header-toggle</a></li><li><a href="#c-top-menu-button">top-menu-button</a></li><li><a href="#c-top-menu-button-selected">top-menu-button-selected</a></li><li><a href="#c-top-menu-button-large">top-menu-button-large</a></li><li><a href="#c-top-menu-button-large-selected">top-menu-button-large-selected</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-navigation-and-headers">Navigation and headers <span>17</span></a>
+      <ul><li><a href="#c-main-navigation-bar">main-navigation-bar</a></li><li><a href="#c-main-navigation-rail">main-navigation-rail</a></li><li><a href="#c-main-header-title">main-header-title</a></li><li><a href="#c-main-header-back">main-header-back</a></li><li><a href="#c-main-header-schedule">main-header-schedule</a></li><li><a href="#c-main-header-search">main-header-search</a></li><li><a href="#c-main-header-speaker">main-header-speaker</a></li><li><a href="#c-large-main-header">large-main-header</a></li><li><a href="#c-page-title">page-title</a></li><li><a href="#c-page-title-lightning">page-title-lightning</a></li><li><a href="#c-page-title-notes">page-title-notes</a></li><li><a href="#c-page-title-large">page-title-large</a></li><li><a href="#c-section-title-text">section-title-text</a></li><li><a href="#c-section-title-time">section-title-time</a></li><li><a href="#c-paragraph-title">paragraph-title</a></li><li><a href="#c-day-header">day-header</a></li><li><a href="#c-page-menu-item">page-menu-item</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-schedule-and-content-cards">Schedule and content cards <span>11</span></a>
+      <ul><li><a href="#c-talk-card-upcoming">talk-card-upcoming</a></li><li><a href="#c-talk-card-live">talk-card-live</a></li><li><a href="#c-speaker-card">speaker-card</a></li><li><a href="#c-speaker-card-highlights">speaker-card-highlights</a></li><li><a href="#c-partner-card">partner-card</a></li><li><a href="#c-service-event">service-event</a></li><li><a href="#c-service-event-block">service-event-block</a></li><li><a href="#c-service-event-party-live">service-event-party-live</a></li><li><a href="#c-now-label">now-label</a></li><li><a href="#c-card-tag">card-tag</a></li><li><a href="#c-card-tag-selected">card-tag-selected</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-search-and-filters">Search and filters <span>13</span></a>
+      <ul><li><a href="#c-search-input-empty">search-input-empty</a></li><li><a href="#c-search-input-text">search-input-text</a></li><li><a href="#c-large-search-bar">large-search-bar</a></li><li><a href="#c-filters">filters</a></li><li><a href="#c-filter-tag">filter-tag</a></li><li><a href="#c-filter-tag-selected">filter-tag-selected</a></li><li><a href="#c-switcher">switcher</a></li><li><a href="#c-switcher-short">switcher-short</a></li><li><a href="#c-switcher-item">switcher-item</a></li><li><a href="#c-switcher-item-selected">switcher-item-selected</a></li><li><a href="#c-large-switcher">large-switcher</a></li><li><a href="#c-large-switcher-item">large-switcher-item</a></li><li><a href="#c-large-switcher-item-selected">large-switcher-item-selected</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-feedback-and-state">Feedback and state <span>13</span></a>
+      <ul><li><a href="#c-error-minor">error-minor</a></li><li><a href="#c-error-normal">error-normal</a></li><li><a href="#c-error-normal-interactive">error-normal-interactive</a></li><li><a href="#c-error-normal-loading">error-normal-loading</a></li><li><a href="#c-error-major">error-major</a></li><li><a href="#c-loading-enabled">loading-enabled</a></li><li><a href="#c-loading-disabled">loading-disabled</a></li><li><a href="#c-feedback-form">feedback-form</a></li><li><a href="#c-tooltip">tooltip</a></li><li><a href="#c-settings-item">settings-item</a></li><li><a href="#c-settings-item-note">settings-item-note</a></li><li><a href="#c-toggle-on">toggle-on</a></li><li><a href="#c-toggle-off">toggle-off</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-foundations-and-kodee">Foundations and Kodee <span>12</span></a>
+      <ul><li><a href="#c-text-styles">text-styles</a></li><li><a href="#c-icon">icon</a></li><li><a href="#c-icon-tinted">icon-tinted</a></li><li><a href="#c-divider-horizontal">divider-horizontal</a></li><li><a href="#c-divider-vertical">divider-vertical</a></li><li><a href="#c-kodee-emotion">kodee-emotion</a></li><li><a href="#c-kodee-icon-small">kodee-icon-small</a></li><li><a href="#c-kodee-icon-small-selected">kodee-icon-small-selected</a></li><li><a href="#c-kodee-icon-large">kodee-icon-large</a></li><li><a href="#c-kodee-icon-large-selected">kodee-icon-large-selected</a></li><li><a href="#c-party-animation">party-animation</a></li><li><a href="#c-party-animation-baseline">party-animation-baseline</a></li></ul>
+    </section></nav>
+  <main><section class="group" id="g-buttons-and-actions">
+      <h2>Buttons and actions</h2>
+      <div class="grid"><article class="card" id="c-button-primary">
+  <a class="shot" href="#d-button-primary" aria-label="Zoom button-primary"><img loading="lazy" src="images/button-primary/ideal__default__dark.png" alt="button-primary" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-button-primary">button-primary</a></h3>
+    <div class="sub">360×189<a class="wf" href="wireframes/button-primary.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/button-primary__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-button-secondary">
+  <a class="shot" href="#d-button-secondary" aria-label="Zoom button-secondary"><img loading="lazy" src="images/button-secondary/ideal__default__dark.png" alt="button-secondary" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-button-secondary">button-secondary</a></h3>
+    <div class="sub">420×189<a class="wf" href="wireframes/button-secondary.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/button-secondary__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-action">
+  <a class="shot" href="#d-action" aria-label="Zoom action"><img loading="lazy" src="images/action/ideal__default__dark.png" alt="action" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action">action</a></h3>
+    <div class="sub">222×95<a class="wf" href="wireframes/action.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/action__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-overlay-text-button">
+  <a class="shot" href="#d-overlay-text-button" aria-label="Zoom overlay-text-button"><img loading="lazy" src="images/overlay-text-button/ideal__default__dark.png" alt="overlay-text-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-overlay-text-button">overlay-text-button</a></h3>
+    <div class="sub">665×168<a class="wf" href="wireframes/overlay-text-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-text-button__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-overlay-icon-button-enabled">
+  <a class="shot" href="#d-overlay-icon-button-enabled" aria-label="Zoom overlay-icon-button-enabled"><img loading="lazy" src="images/overlay-icon-button-enabled/ideal__default__dark.png" alt="overlay-icon-button-enabled" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-overlay-icon-button-enabled">overlay-icon-button-enabled</a></h3>
+    <div class="sub">168×168<a class="wf" href="wireframes/overlay-icon-button-enabled.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-icon-button-enabled__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-overlay-icon-button-disabled">
+  <a class="shot" href="#d-overlay-icon-button-disabled" aria-label="Zoom overlay-icon-button-disabled"><img loading="lazy" src="images/overlay-icon-button-disabled/ideal__default__dark.png" alt="overlay-icon-button-disabled" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-overlay-icon-button-disabled">overlay-icon-button-disabled</a></h3>
+    <div class="sub">168×168<a class="wf" href="wireframes/overlay-icon-button-disabled.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-icon-button-disabled__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-now-button">
+  <a class="shot" href="#d-now-button" aria-label="Zoom now-button"><img loading="lazy" src="images/now-button/ideal__default__dark.png" alt="now-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-now-button">now-button</a></h3>
+    <div class="sub">231×137<a class="wf" href="wireframes/now-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-button__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-now-button-floating">
+  <a class="shot" href="#d-now-button-floating" aria-label="Zoom now-button-floating"><img loading="lazy" src="images/now-button-floating/ideal__default__dark.png" alt="now-button-floating" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-now-button-floating">now-button-floating</a></h3>
+    <div class="sub">278×168<a class="wf" href="wireframes/now-button-floating.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-button-floating__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-header-toggle">
+  <a class="shot" href="#d-header-toggle" aria-label="Zoom header-toggle"><img loading="lazy" src="images/header-toggle/ideal__default__dark.png" alt="header-toggle" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-header-toggle">header-toggle</a></h3>
+    <div class="sub">294×147<a class="wf" href="wireframes/header-toggle.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/header-toggle__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-top-menu-button">
+  <a class="shot" href="#d-top-menu-button" aria-label="Zoom top-menu-button"><img loading="lazy" src="images/top-menu-button/ideal__default__dark.png" alt="top-menu-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-menu-button">top-menu-button</a></h3>
+    <div class="sub">169×169<a class="wf" href="wireframes/top-menu-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-top-menu-button-selected">
+  <a class="shot" href="#d-top-menu-button-selected" aria-label="Zoom top-menu-button-selected"><img loading="lazy" src="images/top-menu-button-selected/ideal__default__dark.png" alt="top-menu-button-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-menu-button-selected">top-menu-button-selected</a></h3>
+    <div class="sub">169×169<a class="wf" href="wireframes/top-menu-button-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-top-menu-button-large">
+  <a class="shot" href="#d-top-menu-button-large" aria-label="Zoom top-menu-button-large"><img loading="lazy" src="images/top-menu-button-large/ideal__default__dark.png" alt="top-menu-button-large" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-menu-button-large">top-menu-button-large</a></h3>
+    <div class="sub">147×147<a class="wf" href="wireframes/top-menu-button-large.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-large__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-top-menu-button-large-selected">
+  <a class="shot" href="#d-top-menu-button-large-selected" aria-label="Zoom top-menu-button-large-selected"><img loading="lazy" src="images/top-menu-button-large-selected/ideal__default__dark.png" alt="top-menu-button-large-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-menu-button-large-selected">top-menu-button-large-selected</a></h3>
+    <div class="sub">147×147<a class="wf" href="wireframes/top-menu-button-large-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-large-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-navigation-and-headers">
+      <h2>Navigation and headers</h2>
+      <div class="grid"><article class="card" id="c-main-navigation-bar">
+  <a class="shot" href="#d-main-navigation-bar" aria-label="Zoom main-navigation-bar"><img loading="lazy" src="images/main-navigation-bar/ideal__default__dark.png" alt="main-navigation-bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-navigation-bar">main-navigation-bar</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/main-navigation-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-bar__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-main-navigation-rail">
+  <a class="shot" href="#d-main-navigation-rail" aria-label="Zoom main-navigation-rail"><img loading="lazy" src="images/main-navigation-rail/ideal__default__dark.png" alt="main-navigation-rail" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-navigation-rail">main-navigation-rail</a></h3>
+    <div class="sub">368×1227<a class="wf" href="wireframes/main-navigation-rail.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-rail__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-main-header-title">
+  <a class="shot" href="#d-main-header-title" aria-label="Zoom main-header-title"><img loading="lazy" src="images/main-header-title/ideal__default__dark.png" alt="main-header-title" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-header-title">main-header-title</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/main-header-title.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-title__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-main-header-back">
+  <a class="shot" href="#d-main-header-back" aria-label="Zoom main-header-back"><img loading="lazy" src="images/main-header-back/ideal__default__dark.png" alt="main-header-back" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-header-back">main-header-back</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/main-header-back.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-back__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-main-header-schedule">
+  <a class="shot" href="#d-main-header-schedule" aria-label="Zoom main-header-schedule"><img loading="lazy" src="images/main-header-schedule/ideal__default__dark.png" alt="main-header-schedule" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-header-schedule">main-header-schedule</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/main-header-schedule.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-schedule__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-main-header-search">
+  <a class="shot" href="#d-main-header-search" aria-label="Zoom main-header-search"><img loading="lazy" src="images/main-header-search/ideal__default__dark.png" alt="main-header-search" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-header-search">main-header-search</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/main-header-search.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/main-header-search.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-main-header-speaker">
+  <a class="shot" href="#d-main-header-speaker" aria-label="Zoom main-header-speaker"><img loading="lazy" src="images/main-header-speaker/ideal__default__dark.png" alt="main-header-speaker" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-main-header-speaker">main-header-speaker</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/main-header-speaker.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-speaker__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-large-main-header">
+  <a class="shot" href="#d-large-main-header" aria-label="Zoom large-main-header"><img loading="lazy" src="images/large-main-header/ideal__default__dark__expanded.png" alt="large-main-header" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-large-main-header">large-main-header</a></h3>
+    <div class="sub">2625×189<a class="wf" href="wireframes/large-main-header.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/large-main-header.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-page-title">
+  <a class="shot" href="#d-page-title" aria-label="Zoom page-title"><img loading="lazy" src="images/page-title/ideal__default__dark.png" alt="page-title" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-page-title">page-title</a></h3>
+    <div class="sub">1050×463<a class="wf" href="wireframes/page-title.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-page-title-lightning">
+  <a class="shot" href="#d-page-title-lightning" aria-label="Zoom page-title-lightning"><img loading="lazy" src="images/page-title-lightning/ideal__default__dark.png" alt="page-title-lightning" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-page-title-lightning">page-title-lightning</a></h3>
+    <div class="sub">1050×399<a class="wf" href="wireframes/page-title-lightning.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-lightning__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-page-title-notes">
+  <a class="shot" href="#d-page-title-notes" aria-label="Zoom page-title-notes"><img loading="lazy" src="images/page-title-notes/ideal__default__dark.png" alt="page-title-notes" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-page-title-notes">page-title-notes</a></h3>
+    <div class="sub">1050×670<a class="wf" href="wireframes/page-title-notes.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-notes__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-page-title-large">
+  <a class="shot" href="#d-page-title-large" aria-label="Zoom page-title-large"><img loading="lazy" src="images/page-title-large/ideal__default__dark.png" alt="page-title-large" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-page-title-large">page-title-large</a></h3>
+    <div class="sub">1050×356<a class="wf" href="wireframes/page-title-large.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-large__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-section-title-text">
+  <a class="shot" href="#d-section-title-text" aria-label="Zoom section-title-text"><img loading="lazy" src="images/section-title-text/ideal__default__dark.png" alt="section-title-text" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-section-title-text">section-title-text</a></h3>
+    <div class="sub">375×110<a class="wf" href="wireframes/section-title-text.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/section-title-text__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-section-title-time">
+  <a class="shot" href="#d-section-title-time" aria-label="Zoom section-title-time"><img loading="lazy" src="images/section-title-time/ideal__default__dark.png" alt="section-title-time" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-section-title-time">section-title-time</a></h3>
+    <div class="sub">161×110<a class="wf" href="wireframes/section-title-time.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/section-title-time__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-paragraph-title">
+  <a class="shot" href="#d-paragraph-title" aria-label="Zoom paragraph-title"><img loading="lazy" src="images/paragraph-title/ideal__default__dark.png" alt="paragraph-title" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-paragraph-title">paragraph-title</a></h3>
+    <div class="sub">229×215<a class="wf" href="wireframes/paragraph-title.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/paragraph-title__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-day-header">
+  <a class="shot" href="#d-day-header" aria-label="Zoom day-header"><img loading="lazy" src="images/day-header/ideal__default__dark.png" alt="day-header" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-day-header">day-header</a></h3>
+    <div class="sub">1050×270<a class="wf" href="wireframes/day-header.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/day-header__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-page-menu-item">
+  <a class="shot" href="#d-page-menu-item" aria-label="Zoom page-menu-item"><img loading="lazy" src="images/page-menu-item/ideal__default__dark.png" alt="page-menu-item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-page-menu-item">page-menu-item</a></h3>
+    <div class="sub">1050×189<a class="wf" href="wireframes/page-menu-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-menu-item__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-schedule-and-content-cards">
+      <h2>Schedule and content cards</h2>
+      <div class="grid"><article class="card" id="c-talk-card-upcoming">
+  <a class="shot" href="#d-talk-card-upcoming" aria-label="Zoom talk-card-upcoming"><img loading="lazy" src="images/talk-card-upcoming/ideal__default__dark.png" alt="talk-card-upcoming" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-talk-card-upcoming">talk-card-upcoming</a></h3>
+    <div class="sub">1050×524<a class="wf" href="wireframes/talk-card-upcoming.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/talk-card-upcoming__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-talk-card-live">
+  <a class="shot" href="#d-talk-card-live" aria-label="Zoom talk-card-live"><img loading="lazy" src="images/talk-card-live/ideal__default__dark.png" alt="talk-card-live" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-talk-card-live">talk-card-live</a></h3>
+    <div class="sub">1050×654<a class="wf" href="wireframes/talk-card-live.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/talk-card-live.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-speaker-card">
+  <a class="shot" href="#d-speaker-card" aria-label="Zoom speaker-card"><img loading="lazy" src="images/speaker-card/ideal__default__dark.png" alt="speaker-card" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-speaker-card">speaker-card</a></h3>
+    <div class="sub">947×294<a class="wf" href="wireframes/speaker-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-speaker-card-highlights">
+  <a class="shot" href="#d-speaker-card-highlights" aria-label="Zoom speaker-card-highlights"><img loading="lazy" src="images/speaker-card-highlights/ideal__default__dark.png" alt="speaker-card-highlights" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-speaker-card-highlights">speaker-card-highlights</a></h3>
+    <div class="sub">947×294<a class="wf" href="wireframes/speaker-card-highlights.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card-highlights__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-partner-card">
+  <a class="shot" href="#d-partner-card" aria-label="Zoom partner-card"><img loading="lazy" src="images/partner-card/ideal__default__dark.png" alt="partner-card" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-partner-card">partner-card</a></h3>
+    <div class="sub">1050×515<a class="wf" href="wireframes/partner-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/partner-card__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-service-event">
+  <a class="shot" href="#d-service-event" aria-label="Zoom service-event"><img loading="lazy" src="images/service-event/ideal__default__dark.png" alt="service-event" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-service-event">service-event</a></h3>
+    <div class="sub">1050×175<a class="wf" href="wireframes/service-event.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-service-event-block">
+  <a class="shot" href="#d-service-event-block" aria-label="Zoom service-event-block"><img loading="lazy" src="images/service-event-block/ideal__default__dark.png" alt="service-event-block" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-service-event-block">service-event-block</a></h3>
+    <div class="sub">1050×447<a class="wf" href="wireframes/service-event-block.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event-block__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-service-event-party-live">
+  <a class="shot" href="#d-service-event-party-live" aria-label="Zoom service-event-party-live"><img loading="lazy" src="images/service-event-party-live/ideal__default__dark.png" alt="service-event-party-live" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-service-event-party-live">service-event-party-live</a></h3>
+    <div class="sub">1050×543<a class="wf" href="wireframes/service-event-party-live.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/service-event-party-live.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-now-label">
+  <a class="shot" href="#d-now-label" aria-label="Zoom now-label"><img loading="lazy" src="images/now-label/ideal__default__dark.png" alt="now-label" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-now-label">now-label</a></h3>
+    <div class="sub">154×82<a class="wf" href="wireframes/now-label.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-label__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-card-tag">
+  <a class="shot" href="#d-card-tag" aria-label="Zoom card-tag"><img loading="lazy" src="images/card-tag/ideal__default__dark.png" alt="card-tag" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-card-tag">card-tag</a></h3>
+    <div class="sub">173×105<a class="wf" href="wireframes/card-tag.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/card-tag__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-card-tag-selected">
+  <a class="shot" href="#d-card-tag-selected" aria-label="Zoom card-tag-selected"><img loading="lazy" src="images/card-tag-selected/ideal__default__dark.png" alt="card-tag-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-card-tag-selected">card-tag-selected</a></h3>
+    <div class="sub">173×105<a class="wf" href="wireframes/card-tag-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/card-tag-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-search-and-filters">
+      <h2>Search and filters</h2>
+      <div class="grid"><article class="card" id="c-search-input-empty">
+  <a class="shot" href="#d-search-input-empty" aria-label="Zoom search-input-empty"><img loading="lazy" src="images/search-input-empty/ideal__default__dark.png" alt="search-input-empty" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-search-input-empty">search-input-empty</a></h3>
+    <div class="sub">1050×91<a class="wf" href="wireframes/search-input-empty.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/search-input-empty.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-search-input-text">
+  <a class="shot" href="#d-search-input-text" aria-label="Zoom search-input-text"><img loading="lazy" src="images/search-input-text/ideal__default__dark.png" alt="search-input-text" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-search-input-text">search-input-text</a></h3>
+    <div class="sub">1050×91<a class="wf" href="wireframes/search-input-text.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/search-input-text.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-large-search-bar">
+  <a class="shot" href="#d-large-search-bar" aria-label="Zoom large-search-bar"><img loading="lazy" src="images/large-search-bar/ideal__default__dark.png" alt="large-search-bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-large-search-bar">large-search-bar</a></h3>
+    <div class="sub">1050×399<a class="wf" href="wireframes/large-search-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/large-search-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-filters">
+  <a class="shot" href="#d-filters" aria-label="Zoom filters"><img loading="lazy" src="images/filters/ideal__default__dark.png" alt="filters" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-filters">filters</a></h3>
+    <div class="sub">1050×830<a class="wf" href="wireframes/filters.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/filters__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-filter-tag">
+  <a class="shot" href="#d-filter-tag" aria-label="Zoom filter-tag"><img loading="lazy" src="images/filter-tag/ideal__default__dark.png" alt="filter-tag" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-filter-tag">filter-tag</a></h3>
+    <div class="sub">215×143<a class="wf" href="wireframes/filter-tag.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/filter-tag__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-filter-tag-selected">
+  <a class="shot" href="#d-filter-tag-selected" aria-label="Zoom filter-tag-selected"><img loading="lazy" src="images/filter-tag-selected/ideal__default__dark.png" alt="filter-tag-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-filter-tag-selected">filter-tag-selected</a></h3>
+    <div class="sub">215×143<a class="wf" href="wireframes/filter-tag-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/filter-tag-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">checkbox</span></div>
+  </div>
+</article>
+<article class="card" id="c-switcher">
+  <a class="shot" href="#d-switcher" aria-label="Zoom switcher"><img loading="lazy" src="images/switcher/ideal__default__dark.png" alt="switcher" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-switcher">switcher</a></h3>
+    <div class="sub">830×147<a class="wf" href="wireframes/switcher.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-switcher-short">
+  <a class="shot" href="#d-switcher-short" aria-label="Zoom switcher-short"><img loading="lazy" src="images/switcher-short/ideal__default__dark.png" alt="switcher-short" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-switcher-short">switcher-short</a></h3>
+    <div class="sub">646×147<a class="wf" href="wireframes/switcher-short.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-short__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-switcher-item">
+  <a class="shot" href="#d-switcher-item" aria-label="Zoom switcher-item"><img loading="lazy" src="images/switcher-item/ideal__default__dark.png" alt="switcher-item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-switcher-item">switcher-item</a></h3>
+    <div class="sub">371×147<a class="wf" href="wireframes/switcher-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-item__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-switcher-item-selected">
+  <a class="shot" href="#d-switcher-item-selected" aria-label="Zoom switcher-item-selected"><img loading="lazy" src="images/switcher-item-selected/ideal__default__dark.png" alt="switcher-item-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-switcher-item-selected">switcher-item-selected</a></h3>
+    <div class="sub">402×147<a class="wf" href="wireframes/switcher-item-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-item-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-large-switcher">
+  <a class="shot" href="#d-large-switcher" aria-label="Zoom large-switcher"><img loading="lazy" src="images/large-switcher/ideal__default__dark__expanded.png" alt="large-switcher" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-large-switcher">large-switcher</a></h3>
+    <div class="sub">2625×168<a class="wf" href="wireframes/large-switcher.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher__ideal__default__dark__expanded.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-large-switcher-item">
+  <a class="shot" href="#d-large-switcher-item" aria-label="Zoom large-switcher-item"><img loading="lazy" src="images/large-switcher-item/ideal__default__dark.png" alt="large-switcher-item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-large-switcher-item">large-switcher-item</a></h3>
+    <div class="sub">1050×168<a class="wf" href="wireframes/large-switcher-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher-item__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span></div>
+  </div>
+</article>
+<article class="card" id="c-large-switcher-item-selected">
+  <a class="shot" href="#d-large-switcher-item-selected" aria-label="Zoom large-switcher-item-selected"><img loading="lazy" src="images/large-switcher-item-selected/ideal__default__dark.png" alt="large-switcher-item-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-large-switcher-item-selected">large-switcher-item-selected</a></h3>
+    <div class="sub">1050×168<a class="wf" href="wireframes/large-switcher-item-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher-item-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">tab</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-feedback-and-state">
+      <h2>Feedback and state</h2>
+      <div class="grid"><article class="card" id="c-error-minor">
+  <a class="shot" href="#d-error-minor" aria-label="Zoom error-minor"><img loading="lazy" src="images/error-minor/ideal__default__dark.png" alt="error-minor" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-error-minor">error-minor</a></h3>
+    <div class="sub">1050×259<a class="wf" href="wireframes/error-minor.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/error-minor__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-error-normal">
+  <a class="shot" href="#d-error-normal" aria-label="Zoom error-normal"><img loading="lazy" src="images/error-normal/ideal__default__dark.png" alt="error-normal" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-error-normal">error-normal</a></h3>
+    <div class="sub">1050×343<a class="wf" href="wireframes/error-normal.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/error-normal.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-error-normal-interactive">
+  <a class="shot" href="#d-error-normal-interactive" aria-label="Zoom error-normal-interactive"><img loading="lazy" src="images/error-normal-interactive/ideal__default__dark.png" alt="error-normal-interactive" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-error-normal-interactive">error-normal-interactive</a></h3>
+    <div class="sub">1050×522<a class="wf" href="wireframes/error-normal-interactive.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/error-normal-interactive.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-error-normal-loading">
+  <a class="shot" href="#d-error-normal-loading" aria-label="Zoom error-normal-loading"><img loading="lazy" src="images/error-normal-loading/ideal__default__dark.png" alt="error-normal-loading" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-error-normal-loading">error-normal-loading</a></h3>
+    <div class="sub">1050×343<a class="wf" href="wireframes/error-normal-loading.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/error-normal-loading.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-error-major">
+  <a class="shot" href="#d-error-major" aria-label="Zoom error-major"><img loading="lazy" src="images/error-major/ideal__default__dark.png" alt="error-major" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-error-major">error-major</a></h3>
+    <div class="sub">596×543<a class="wf" href="wireframes/error-major.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/error-major.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-loading-enabled">
+  <a class="shot" href="#d-loading-enabled" aria-label="Zoom loading-enabled"><img loading="lazy" src="images/loading-enabled/ideal__default__dark.png" alt="loading-enabled" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-loading-enabled">loading-enabled</a></h3>
+    <div class="sub">291×252<a class="wf" href="wireframes/loading-enabled.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/loading-enabled.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-loading-disabled">
+  <a class="shot" href="#d-loading-disabled" aria-label="Zoom loading-disabled"><img loading="lazy" src="images/loading-disabled/ideal__default__dark.png" alt="loading-disabled" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-loading-disabled">loading-disabled</a></h3>
+    <div class="sub">291×252<a class="wf" href="wireframes/loading-disabled.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/loading-disabled.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-feedback-form">
+  <a class="shot" href="#d-feedback-form" aria-label="Zoom feedback-form"><img loading="lazy" src="images/feedback-form/ideal__default__dark.png" alt="feedback-form" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-feedback-form">feedback-form</a></h3>
+    <div class="sub">1050×737<a class="wf" href="wireframes/feedback-form.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/feedback-form.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-tooltip">
+  <a class="shot" href="#d-tooltip" aria-label="Zoom tooltip"><img loading="lazy" src="images/tooltip/ideal__default__dark.png" alt="tooltip" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-tooltip">tooltip</a></h3>
+    <div class="sub">196×104<a class="wf" href="wireframes/tooltip.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/tooltip__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-settings-item">
+  <a class="shot" href="#d-settings-item" aria-label="Zoom settings-item"><img loading="lazy" src="images/settings-item/ideal__default__dark.png" alt="settings-item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-settings-item">settings-item</a></h3>
+    <div class="sub">1050×175<a class="wf" href="wireframes/settings-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/settings-item__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-settings-item-note">
+  <a class="shot" href="#d-settings-item-note" aria-label="Zoom settings-item-note"><img loading="lazy" src="images/settings-item-note/ideal__default__dark.png" alt="settings-item-note" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-settings-item-note">settings-item-note</a></h3>
+    <div class="sub">1050×330<a class="wf" href="wireframes/settings-item-note.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/settings-item-note__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-toggle-on">
+  <a class="shot" href="#d-toggle-on" aria-label="Zoom toggle-on"><img loading="lazy" src="images/toggle-on/ideal__default__dark.png" alt="toggle-on" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-toggle-on">toggle-on</a></h3>
+    <div class="sub">116×84<a class="wf" href="wireframes/toggle-on.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/toggle-on__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article>
+<article class="card" id="c-toggle-off">
+  <a class="shot" href="#d-toggle-off" aria-label="Zoom toggle-off"><img loading="lazy" src="images/toggle-off/ideal__default__dark.png" alt="toggle-off" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-toggle-off">toggle-off</a></h3>
+    <div class="sub">116×84<a class="wf" href="wireframes/toggle-off.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/toggle-off__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">switch</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-foundations-and-kodee">
+      <h2>Foundations and Kodee</h2>
+      <div class="grid"><article class="card" id="c-text-styles">
+  <a class="shot" href="#d-text-styles" aria-label="Zoom text-styles"><img loading="lazy" src="images/text-styles/ideal__default__dark.png" alt="text-styles" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-text-styles">text-styles</a></h3>
+    <div class="sub">1050×219<a class="wf" href="wireframes/text-styles.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/text-styles__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-icon">
+  <a class="shot" href="#d-icon" aria-label="Zoom icon"><img loading="lazy" src="images/icon/ideal__default__dark.png" alt="icon" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-icon">icon</a></h3>
+    <div class="sub">105×105<a class="wf" href="wireframes/icon.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-icon-tinted">
+  <a class="shot" href="#d-icon-tinted" aria-label="Zoom icon-tinted"><img loading="lazy" src="images/icon-tinted/ideal__default__dark.png" alt="icon-tinted" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-icon-tinted">icon-tinted</a></h3>
+    <div class="sub">105×105<a class="wf" href="wireframes/icon-tinted.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon-tinted__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-divider-horizontal">
+  <a class="shot" href="#d-divider-horizontal" aria-label="Zoom divider-horizontal"><img loading="lazy" src="images/divider-horizontal/ideal__default__dark.png" alt="divider-horizontal" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-divider-horizontal">divider-horizontal</a></h3>
+    <div class="sub">263×45<a class="wf" href="wireframes/divider-horizontal.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-horizontal__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-divider-vertical">
+  <a class="shot" href="#d-divider-vertical" aria-label="Zoom divider-vertical"><img loading="lazy" src="images/divider-vertical/ideal__default__dark.png" alt="divider-vertical" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-divider-vertical">divider-vertical</a></h3>
+    <div class="sub">45×263<a class="wf" href="wireframes/divider-vertical.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-vertical__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-kodee-emotion">
+  <a class="shot" href="#d-kodee-emotion" aria-label="Zoom kodee-emotion"><img loading="lazy" src="images/kodee-emotion/ideal__default__dark.png" alt="kodee-emotion" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-kodee-emotion">kodee-emotion</a></h3>
+    <div class="sub">252×252<a class="wf" href="wireframes/kodee-emotion.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/kodee-emotion.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-kodee-icon-small">
+  <a class="shot" href="#d-kodee-icon-small" aria-label="Zoom kodee-icon-small"><img loading="lazy" src="images/kodee-icon-small/ideal__default__dark.png" alt="kodee-icon-small" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-kodee-icon-small">kodee-icon-small</a></h3>
+    <div class="sub">105×105<a class="wf" href="wireframes/kodee-icon-small.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/kodee-icon-small.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-kodee-icon-small-selected">
+  <a class="shot" href="#d-kodee-icon-small-selected" aria-label="Zoom kodee-icon-small-selected"><img loading="lazy" src="images/kodee-icon-small-selected/ideal__default__dark.png" alt="kodee-icon-small-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-kodee-icon-small-selected">kodee-icon-small-selected</a></h3>
+    <div class="sub">105×105<a class="wf" href="wireframes/kodee-icon-small-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/kodee-icon-small-selected.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-kodee-icon-large">
+  <a class="shot" href="#d-kodee-icon-large" aria-label="Zoom kodee-icon-large"><img loading="lazy" src="images/kodee-icon-large/ideal__default__dark.png" alt="kodee-icon-large" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-kodee-icon-large">kodee-icon-large</a></h3>
+    <div class="sub">210×186<a class="wf" href="wireframes/kodee-icon-large.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/kodee-icon-large__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-kodee-icon-large-selected">
+  <a class="shot" href="#d-kodee-icon-large-selected" aria-label="Zoom kodee-icon-large-selected"><img loading="lazy" src="images/kodee-icon-large-selected/ideal__default__dark.png" alt="kodee-icon-large-selected" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-kodee-icon-large-selected">kodee-icon-large-selected</a></h3>
+    <div class="sub">210×186<a class="wf" href="wireframes/kodee-icon-large-selected.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/jetbrains-kotlinconf-app/render/kodee-icon-large-selected__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-party-animation">
+  <a class="shot" href="#d-party-animation" aria-label="Zoom party-animation"><img loading="lazy" src="images/party-animation/ideal__default__dark.png" alt="party-animation" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-party-animation">party-animation</a></h3>
+    <div class="sub">1050×567<a class="wf" href="wireframes/party-animation.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/party-animation.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-party-animation-baseline">
+  <a class="shot" href="#d-party-animation-baseline" aria-label="Zoom party-animation-baseline"><img loading="lazy" src="images/party-animation-baseline/ideal__default__dark.png" alt="party-animation-baseline" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-party-animation-baseline">party-animation-baseline</a></h3>
+    <div class="sub">1050×567<a class="wf" href="wireframes/party-animation-baseline.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/party-animation-baseline.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section></main>
+</div>
+<div class="detail" id="d-button-primary" role="dialog" aria-label="button-primary">
+  <a class="detail-scrim" href="#c-button-primary" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-button-primary" aria-label="Close">×</a>
+    <h3>button-primary</h3>
+    <div class="detail-caption">The primary button, light and dark from one @PreviewLightDark.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/button-primary/ideal__default__dark.png" alt="button-primary default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/button-primary/ideal__default__light.png" alt="button-primary default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-button-secondary" role="dialog" aria-label="button-secondary">
+  <a class="detail-scrim" href="#c-button-secondary" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-button-secondary" aria-label="Close">×</a>
+    <h3>button-secondary</h3>
+    <div class="detail-caption">The secondary button beside it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/button-secondary/ideal__default__dark.png" alt="button-secondary default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/button-secondary/ideal__default__light.png" alt="button-secondary default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action" role="dialog" aria-label="action">
+  <a class="detail-scrim" href="#c-action" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action" aria-label="Close">×</a>
+    <h3>action</h3>
+    <div class="detail-caption">An action row — icon and label — as the detail screens list them.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action/ideal__default__dark.png" alt="action default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/action/ideal__default__light.png" alt="action default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-overlay-text-button" role="dialog" aria-label="overlay-text-button">
+  <a class="detail-scrim" href="#c-overlay-text-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-overlay-text-button" aria-label="Close">×</a>
+    <h3>overlay-text-button</h3>
+    <div class="detail-caption">The text button drawn over content, for overlays on a talk card.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/overlay-text-button/ideal__default__dark.png" alt="overlay-text-button default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/overlay-text-button/ideal__default__light.png" alt="overlay-text-button default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-overlay-icon-button-enabled" role="dialog" aria-label="overlay-icon-button-enabled">
+  <a class="detail-scrim" href="#c-overlay-icon-button-enabled" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-overlay-icon-button-enabled" aria-label="Close">×</a>
+    <h3>overlay-icon-button-enabled</h3>
+    <div class="detail-caption">The overlay icon button, enabled.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/overlay-icon-button-enabled/ideal__default__dark.png" alt="overlay-icon-button-enabled default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/overlay-icon-button-enabled/ideal__default__light.png" alt="overlay-icon-button-enabled default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-overlay-icon-button-disabled" role="dialog" aria-label="overlay-icon-button-disabled">
+  <a class="detail-scrim" href="#c-overlay-icon-button-disabled" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-overlay-icon-button-disabled" aria-label="Close">×</a>
+    <h3>overlay-icon-button-disabled</h3>
+    <div class="detail-caption">And disabled, which dims the glyph rather than the container.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/overlay-icon-button-disabled/ideal__default__dark.png" alt="overlay-icon-button-disabled default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/overlay-icon-button-disabled/ideal__default__light.png" alt="overlay-icon-button-disabled default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-now-button" role="dialog" aria-label="now-button">
+  <a class="detail-scrim" href="#c-now-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-now-button" aria-label="Close">×</a>
+    <h3>now-button</h3>
+    <div class="detail-caption">The “now” button that jumps the schedule to the current time.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/now-button/ideal__default__dark.png" alt="now-button default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/now-button/ideal__default__light.png" alt="now-button default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-now-button-floating" role="dialog" aria-label="now-button-floating">
+  <a class="detail-scrim" href="#c-now-button-floating" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-now-button-floating" aria-label="Close">×</a>
+    <h3>now-button-floating</h3>
+    <div class="detail-caption">Its floating form, over the scrolling schedule.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/now-button-floating/ideal__default__dark.png" alt="now-button-floating default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/now-button-floating/ideal__default__light.png" alt="now-button-floating default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-header-toggle" role="dialog" aria-label="header-toggle">
+  <a class="detail-scrim" href="#c-header-toggle" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-header-toggle" aria-label="Close">×</a>
+    <h3>header-toggle</h3>
+    <div class="detail-caption">The toggle that lives in a header.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/header-toggle/ideal__default__dark.png" alt="header-toggle default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/header-toggle/ideal__default__light.png" alt="header-toggle default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-menu-button" role="dialog" aria-label="top-menu-button">
+  <a class="detail-scrim" href="#c-top-menu-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-menu-button" aria-label="Close">×</a>
+    <h3>top-menu-button</h3>
+    <div class="detail-caption">The top menu button, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-menu-button/ideal__default__dark.png" alt="top-menu-button default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/top-menu-button/ideal__default__light.png" alt="top-menu-button default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-menu-button-selected" role="dialog" aria-label="top-menu-button-selected">
+  <a class="detail-scrim" href="#c-top-menu-button-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-menu-button-selected" aria-label="Close">×</a>
+    <h3>top-menu-button-selected</h3>
+    <div class="detail-caption">Selected, with its indicator.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-menu-button-selected/ideal__default__dark.png" alt="top-menu-button-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/top-menu-button-selected/ideal__default__light.png" alt="top-menu-button-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-menu-button-large" role="dialog" aria-label="top-menu-button-large">
+  <a class="detail-scrim" href="#c-top-menu-button-large" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-menu-button-large" aria-label="Close">×</a>
+    <h3>top-menu-button-large</h3>
+    <div class="detail-caption">The large-window variant, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-menu-button-large/ideal__default__dark.png" alt="top-menu-button-large default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/top-menu-button-large/ideal__default__light.png" alt="top-menu-button-large default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-menu-button-large-selected" role="dialog" aria-label="top-menu-button-large-selected">
+  <a class="detail-scrim" href="#c-top-menu-button-large-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-menu-button-large-selected" aria-label="Close">×</a>
+    <h3>top-menu-button-large-selected</h3>
+    <div class="detail-caption">And selected — the tablet and desktop layout&#39;s own weight.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-menu-button-large-selected/ideal__default__dark.png" alt="top-menu-button-large-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/top-menu-button-large-selected/ideal__default__light.png" alt="top-menu-button-large-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-navigation-bar" role="dialog" aria-label="main-navigation-bar">
+  <a class="detail-scrim" href="#c-main-navigation-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-navigation-bar" aria-label="Close">×</a>
+    <h3>main-navigation-bar</h3>
+    <div class="detail-caption">The bottom navigation bar for compact windows.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-navigation-bar/ideal__default__dark.png" alt="main-navigation-bar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-navigation-bar/ideal__default__light.png" alt="main-navigation-bar default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-navigation-rail" role="dialog" aria-label="main-navigation-rail">
+  <a class="detail-scrim" href="#c-main-navigation-rail" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-navigation-rail" aria-label="Close">×</a>
+    <h3>main-navigation-rail</h3>
+    <div class="detail-caption">The rail it becomes when the window grows.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-navigation-rail/ideal__default__dark.png" alt="main-navigation-rail default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-navigation-rail/ideal__default__light.png" alt="main-navigation-rail default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-header-title" role="dialog" aria-label="main-header-title">
+  <a class="detail-scrim" href="#c-main-header-title" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-header-title" aria-label="Close">×</a>
+    <h3>main-header-title</h3>
+    <div class="detail-caption">The main header at its simplest: a title.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-header-title/ideal__default__dark.png" alt="main-header-title default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-header-title/ideal__default__light.png" alt="main-header-title default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-header-back" role="dialog" aria-label="main-header-back">
+  <a class="detail-scrim" href="#c-main-header-back" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-header-back" aria-label="Close">×</a>
+    <h3>main-header-back</h3>
+    <div class="detail-caption">With a back affordance.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-header-back/ideal__default__dark.png" alt="main-header-back default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-header-back/ideal__default__light.png" alt="main-header-back default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-header-schedule" role="dialog" aria-label="main-header-schedule">
+  <a class="detail-scrim" href="#c-main-header-schedule" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-header-schedule" aria-label="Close">×</a>
+    <h3>main-header-schedule</h3>
+    <div class="detail-caption">The schedule screen&#39;s header, with its day controls.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-header-schedule/ideal__default__dark.png" alt="main-header-schedule default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-header-schedule/ideal__default__light.png" alt="main-header-schedule default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-header-search" role="dialog" aria-label="main-header-search">
+  <a class="detail-scrim" href="#c-main-header-search" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-header-search" aria-label="Close">×</a>
+    <h3>main-header-search</h3>
+    <div class="detail-caption">The header in its search state.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-header-search/ideal__default__dark.png" alt="main-header-search default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-header-search/ideal__default__light.png" alt="main-header-search default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-main-header-speaker" role="dialog" aria-label="main-header-speaker">
+  <a class="detail-scrim" href="#c-main-header-speaker" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-main-header-speaker" aria-label="Close">×</a>
+    <h3>main-header-speaker</h3>
+    <div class="detail-caption">The speaker screen&#39;s header.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/main-header-speaker/ideal__default__dark.png" alt="main-header-speaker default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/main-header-speaker/ideal__default__light.png" alt="main-header-speaker default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-large-main-header" role="dialog" aria-label="large-main-header">
+  <a class="detail-scrim" href="#c-large-main-header" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-large-main-header" aria-label="Close">×</a>
+    <h3>large-main-header</h3>
+    <div class="detail-caption">The large header, previewed wide — this one carries @WidePreviewLightDark rather than the ordinary light/dark pair.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/large-main-header/ideal__default__dark__expanded.png" alt="large-main-header default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/large-main-header/ideal__default__light__expanded.png" alt="large-main-header default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-page-title" role="dialog" aria-label="page-title">
+  <a class="detail-scrim" href="#c-page-title" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-page-title" aria-label="Close">×</a>
+    <h3>page-title</h3>
+    <div class="detail-caption">A page title as most screens draw it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/page-title/ideal__default__dark.png" alt="page-title default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/page-title/ideal__default__light.png" alt="page-title default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-page-title-lightning" role="dialog" aria-label="page-title-lightning">
+  <a class="detail-scrim" href="#c-page-title-lightning" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-page-title-lightning" aria-label="Close">×</a>
+    <h3>page-title-lightning</h3>
+    <div class="detail-caption">The lightning-talk variant, badged.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/page-title-lightning/ideal__default__dark.png" alt="page-title-lightning default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/page-title-lightning/ideal__default__light.png" alt="page-title-lightning default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-page-title-notes" role="dialog" aria-label="page-title-notes">
+  <a class="detail-scrim" href="#c-page-title-notes" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-page-title-notes" aria-label="Close">×</a>
+    <h3>page-title-notes</h3>
+    <div class="detail-caption">With supporting notes under the title.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/page-title-notes/ideal__default__dark.png" alt="page-title-notes default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/page-title-notes/ideal__default__light.png" alt="page-title-notes default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-page-title-large" role="dialog" aria-label="page-title-large">
+  <a class="detail-scrim" href="#c-page-title-large" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-page-title-large" aria-label="Close">×</a>
+    <h3>page-title-large</h3>
+    <div class="detail-caption">The large-window page title.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/page-title-large/ideal__default__dark.png" alt="page-title-large default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/page-title-large/ideal__default__light.png" alt="page-title-large default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-section-title-text" role="dialog" aria-label="section-title-text">
+  <a class="detail-scrim" href="#c-section-title-text" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-section-title-text" aria-label="Close">×</a>
+    <h3>section-title-text</h3>
+    <div class="detail-caption">A section title in its text form.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/section-title-text/ideal__default__dark.png" alt="section-title-text default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/section-title-text/ideal__default__light.png" alt="section-title-text default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-section-title-time" role="dialog" aria-label="section-title-time">
+  <a class="detail-scrim" href="#c-section-title-time" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-section-title-time" aria-label="Close">×</a>
+    <h3>section-title-time</h3>
+    <div class="detail-caption">And in its time form, which is how the schedule separates slots.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/section-title-time/ideal__default__dark.png" alt="section-title-time default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/section-title-time/ideal__default__light.png" alt="section-title-time default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-paragraph-title" role="dialog" aria-label="paragraph-title">
+  <a class="detail-scrim" href="#c-paragraph-title" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-paragraph-title" aria-label="Close">×</a>
+    <h3>paragraph-title</h3>
+    <div class="detail-caption">The smaller heading used inside long-form content.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/paragraph-title/ideal__default__dark.png" alt="paragraph-title default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/paragraph-title/ideal__default__light.png" alt="paragraph-title default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-day-header" role="dialog" aria-label="day-header">
+  <a class="detail-scrim" href="#c-day-header" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-day-header" aria-label="Close">×</a>
+    <h3>day-header</h3>
+    <div class="detail-caption">The schedule&#39;s day header.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/day-header/ideal__default__dark.png" alt="day-header default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/day-header/ideal__default__light.png" alt="day-header default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-page-menu-item" role="dialog" aria-label="page-menu-item">
+  <a class="detail-scrim" href="#c-page-menu-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-page-menu-item" aria-label="Close">×</a>
+    <h3>page-menu-item</h3>
+    <div class="detail-caption">A row in the page menu.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/page-menu-item/ideal__default__dark.png" alt="page-menu-item default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/page-menu-item/ideal__default__light.png" alt="page-menu-item default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-talk-card-upcoming" role="dialog" aria-label="talk-card-upcoming">
+  <a class="detail-scrim" href="#c-talk-card-upcoming" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-talk-card-upcoming" aria-label="Close">×</a>
+    <h3>talk-card-upcoming</h3>
+    <div class="detail-caption">The talk card before its session starts.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/talk-card-upcoming/ideal__default__dark.png" alt="talk-card-upcoming default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/talk-card-upcoming/ideal__default__light.png" alt="talk-card-upcoming default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-talk-card-live" role="dialog" aria-label="talk-card-live">
+  <a class="detail-scrim" href="#c-talk-card-live" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-talk-card-live" aria-label="Close">×</a>
+    <h3>talk-card-live</h3>
+    <div class="detail-caption">The same card live, which is the state the whole schedule is designed around.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/talk-card-live/ideal__default__dark.png" alt="talk-card-live default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/talk-card-live/ideal__default__light.png" alt="talk-card-live default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-speaker-card" role="dialog" aria-label="speaker-card">
+  <a class="detail-scrim" href="#c-speaker-card" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-speaker-card" aria-label="Close">×</a>
+    <h3>speaker-card</h3>
+    <div class="detail-caption">The speaker card: photo, name, affiliation.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/speaker-card/ideal__default__dark.png" alt="speaker-card default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/speaker-card/ideal__default__light.png" alt="speaker-card default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-speaker-card-highlights" role="dialog" aria-label="speaker-card-highlights">
+  <a class="detail-scrim" href="#c-speaker-card-highlights" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-speaker-card-highlights" aria-label="Close">×</a>
+    <h3>speaker-card-highlights</h3>
+    <div class="detail-caption">With search highlights applied to the text.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/speaker-card-highlights/ideal__default__dark.png" alt="speaker-card-highlights default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/speaker-card-highlights/ideal__default__light.png" alt="speaker-card-highlights default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-partner-card" role="dialog" aria-label="partner-card">
+  <a class="detail-scrim" href="#c-partner-card" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-partner-card" aria-label="Close">×</a>
+    <h3>partner-card</h3>
+    <div class="detail-caption">The partner (sponsor) card.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/partner-card/ideal__default__dark.png" alt="partner-card default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/partner-card/ideal__default__light.png" alt="partner-card default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-service-event" role="dialog" aria-label="service-event">
+  <a class="detail-scrim" href="#c-service-event" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-service-event" aria-label="Close">×</a>
+    <h3>service-event</h3>
+    <div class="detail-caption">A service event — the non-talk entries the schedule carries.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/service-event/ideal__default__dark.png" alt="service-event default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/service-event/ideal__default__light.png" alt="service-event default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-service-event-block" role="dialog" aria-label="service-event-block">
+  <a class="detail-scrim" href="#c-service-event-block" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-service-event-block" aria-label="Close">×</a>
+    <h3>service-event-block</h3>
+    <div class="detail-caption">Several of them as one block.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/service-event-block/ideal__default__dark.png" alt="service-event-block default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/service-event-block/ideal__default__light.png" alt="service-event-block default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-service-event-party-live" role="dialog" aria-label="service-event-party-live">
+  <a class="detail-scrim" href="#c-service-event-party-live" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-service-event-party-live" aria-label="Close">×</a>
+    <h3>service-event-party-live</h3>
+    <div class="detail-caption">The party event while it is live.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/service-event-party-live/ideal__default__dark.png" alt="service-event-party-live default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/service-event-party-live/ideal__default__light.png" alt="service-event-party-live default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-now-label" role="dialog" aria-label="now-label">
+  <a class="detail-scrim" href="#c-now-label" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-now-label" aria-label="Close">×</a>
+    <h3>now-label</h3>
+    <div class="detail-caption">The “now” label a live item wears.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/now-label/ideal__default__dark.png" alt="now-label default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/now-label/ideal__default__light.png" alt="now-label default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-card-tag" role="dialog" aria-label="card-tag">
+  <a class="detail-scrim" href="#c-card-tag" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-card-tag" aria-label="Close">×</a>
+    <h3>card-tag</h3>
+    <div class="detail-caption">A tag on a card, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/card-tag/ideal__default__dark.png" alt="card-tag default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/card-tag/ideal__default__light.png" alt="card-tag default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-card-tag-selected" role="dialog" aria-label="card-tag-selected">
+  <a class="detail-scrim" href="#c-card-tag-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-card-tag-selected" aria-label="Close">×</a>
+    <h3>card-tag-selected</h3>
+    <div class="detail-caption">And selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/card-tag-selected/ideal__default__dark.png" alt="card-tag-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/card-tag-selected/ideal__default__light.png" alt="card-tag-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-search-input-empty" role="dialog" aria-label="search-input-empty">
+  <a class="detail-scrim" href="#c-search-input-empty" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-search-input-empty" aria-label="Close">×</a>
+    <h3>search-input-empty</h3>
+    <div class="detail-caption">The search field with nothing typed.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/search-input-empty/ideal__default__dark.png" alt="search-input-empty default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/search-input-empty/ideal__default__light.png" alt="search-input-empty default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-search-input-text" role="dialog" aria-label="search-input-text">
+  <a class="detail-scrim" href="#c-search-input-text" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-search-input-text" aria-label="Close">×</a>
+    <h3>search-input-text</h3>
+    <div class="detail-caption">With a query and its clear affordance.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/search-input-text/ideal__default__dark.png" alt="search-input-text default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/search-input-text/ideal__default__light.png" alt="search-input-text default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-large-search-bar" role="dialog" aria-label="large-search-bar">
+  <a class="detail-scrim" href="#c-large-search-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-large-search-bar" aria-label="Close">×</a>
+    <h3>large-search-bar</h3>
+    <div class="detail-caption">The large-window search bar.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/large-search-bar/ideal__default__dark.png" alt="large-search-bar default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/large-search-bar/ideal__default__light.png" alt="large-search-bar default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-filters" role="dialog" aria-label="filters">
+  <a class="detail-scrim" href="#c-filters" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-filters" aria-label="Close">×</a>
+    <h3>filters</h3>
+    <div class="detail-caption">The filter row as a whole.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/filters/ideal__default__dark.png" alt="filters default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/filters/ideal__default__light.png" alt="filters default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-filter-tag" role="dialog" aria-label="filter-tag">
+  <a class="detail-scrim" href="#c-filter-tag" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-filter-tag" aria-label="Close">×</a>
+    <h3>filter-tag</h3>
+    <div class="detail-caption">One filter tag, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/filter-tag/ideal__default__dark.png" alt="filter-tag default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/filter-tag/ideal__default__light.png" alt="filter-tag default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-filter-tag-selected" role="dialog" aria-label="filter-tag-selected">
+  <a class="detail-scrim" href="#c-filter-tag-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-filter-tag-selected" aria-label="Close">×</a>
+    <h3>filter-tag-selected</h3>
+    <div class="detail-caption">And selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/filter-tag-selected/ideal__default__dark.png" alt="filter-tag-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/filter-tag-selected/ideal__default__light.png" alt="filter-tag-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-switcher" role="dialog" aria-label="switcher">
+  <a class="detail-scrim" href="#c-switcher" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-switcher" aria-label="Close">×</a>
+    <h3>switcher</h3>
+    <div class="detail-caption">The segmented switcher.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/switcher/ideal__default__dark.png" alt="switcher default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/switcher/ideal__default__light.png" alt="switcher default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-switcher-short" role="dialog" aria-label="switcher-short">
+  <a class="detail-scrim" href="#c-switcher-short" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-switcher-short" aria-label="Close">×</a>
+    <h3>switcher-short</h3>
+    <div class="detail-caption">Its short form.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/switcher-short/ideal__default__dark.png" alt="switcher-short default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/switcher-short/ideal__default__light.png" alt="switcher-short default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-switcher-item" role="dialog" aria-label="switcher-item">
+  <a class="detail-scrim" href="#c-switcher-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-switcher-item" aria-label="Close">×</a>
+    <h3>switcher-item</h3>
+    <div class="detail-caption">A single switcher item.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/switcher-item/ideal__default__dark.png" alt="switcher-item default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/switcher-item/ideal__default__light.png" alt="switcher-item default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-switcher-item-selected" role="dialog" aria-label="switcher-item-selected">
+  <a class="detail-scrim" href="#c-switcher-item-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-switcher-item-selected" aria-label="Close">×</a>
+    <h3>switcher-item-selected</h3>
+    <div class="detail-caption">The selected item.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/switcher-item-selected/ideal__default__dark.png" alt="switcher-item-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/switcher-item-selected/ideal__default__light.png" alt="switcher-item-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-large-switcher" role="dialog" aria-label="large-switcher">
+  <a class="detail-scrim" href="#c-large-switcher" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-large-switcher" aria-label="Close">×</a>
+    <h3>large-switcher</h3>
+    <div class="detail-caption">The large switcher, previewed wide.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/large-switcher/ideal__default__dark__expanded.png" alt="large-switcher default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/large-switcher/ideal__default__light__expanded.png" alt="large-switcher default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-large-switcher-item" role="dialog" aria-label="large-switcher-item">
+  <a class="detail-scrim" href="#c-large-switcher-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-large-switcher-item" aria-label="Close">×</a>
+    <h3>large-switcher-item</h3>
+    <div class="detail-caption">One of its items, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/large-switcher-item/ideal__default__dark.png" alt="large-switcher-item default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/large-switcher-item/ideal__default__light.png" alt="large-switcher-item default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-large-switcher-item-selected" role="dialog" aria-label="large-switcher-item-selected">
+  <a class="detail-scrim" href="#c-large-switcher-item-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-large-switcher-item-selected" aria-label="Close">×</a>
+    <h3>large-switcher-item-selected</h3>
+    <div class="detail-caption">And selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/large-switcher-item-selected/ideal__default__dark.png" alt="large-switcher-item-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/large-switcher-item-selected/ideal__default__light.png" alt="large-switcher-item-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-error-minor" role="dialog" aria-label="error-minor">
+  <a class="detail-scrim" href="#c-error-minor" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-error-minor" aria-label="Close">×</a>
+    <h3>error-minor</h3>
+    <div class="detail-caption">A minor error — inline, recoverable.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/error-minor/ideal__default__dark.png" alt="error-minor default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/error-minor/ideal__default__light.png" alt="error-minor default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-error-normal" role="dialog" aria-label="error-normal">
+  <a class="detail-scrim" href="#c-error-normal" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-error-normal" aria-label="Close">×</a>
+    <h3>error-normal</h3>
+    <div class="detail-caption">The ordinary error state at rest.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/error-normal/ideal__default__dark.png" alt="error-normal default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/error-normal/ideal__default__light.png" alt="error-normal default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-error-normal-interactive" role="dialog" aria-label="error-normal-interactive">
+  <a class="detail-scrim" href="#c-error-normal-interactive" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-error-normal-interactive" aria-label="Close">×</a>
+    <h3>error-normal-interactive</h3>
+    <div class="detail-caption">The same error with its retry affordance active.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/error-normal-interactive/ideal__default__dark.png" alt="error-normal-interactive default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/error-normal-interactive/ideal__default__light.png" alt="error-normal-interactive default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-error-normal-loading" role="dialog" aria-label="error-normal-loading">
+  <a class="detail-scrim" href="#c-error-normal-loading" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-error-normal-loading" aria-label="Close">×</a>
+    <h3>error-normal-loading</h3>
+    <div class="detail-caption">Retrying.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/error-normal-loading/ideal__default__dark.png" alt="error-normal-loading default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/error-normal-loading/ideal__default__light.png" alt="error-normal-loading default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-error-major" role="dialog" aria-label="error-major">
+  <a class="detail-scrim" href="#c-error-major" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-error-major" aria-label="Close">×</a>
+    <h3>error-major</h3>
+    <div class="detail-caption">The major error that takes the whole screen.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/error-major/ideal__default__dark.png" alt="error-major default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/error-major/ideal__default__light.png" alt="error-major default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-loading-enabled" role="dialog" aria-label="loading-enabled">
+  <a class="detail-scrim" href="#c-loading-enabled" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-loading-enabled" aria-label="Close">×</a>
+    <h3>loading-enabled</h3>
+    <div class="detail-caption">The loading indicator.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/loading-enabled/ideal__default__dark.png" alt="loading-enabled default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/loading-enabled/ideal__default__light.png" alt="loading-enabled default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-loading-disabled" role="dialog" aria-label="loading-disabled">
+  <a class="detail-scrim" href="#c-loading-disabled" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-loading-disabled" aria-label="Close">×</a>
+    <h3>loading-disabled</h3>
+    <div class="detail-caption">And its disabled state.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/loading-disabled/ideal__default__dark.png" alt="loading-disabled default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/loading-disabled/ideal__default__light.png" alt="loading-disabled default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-feedback-form" role="dialog" aria-label="feedback-form">
+  <a class="detail-scrim" href="#c-feedback-form" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-feedback-form" aria-label="Close">×</a>
+    <h3>feedback-form</h3>
+    <div class="detail-caption">The post-talk feedback form.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/feedback-form/ideal__default__dark.png" alt="feedback-form default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/feedback-form/ideal__default__light.png" alt="feedback-form default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-tooltip" role="dialog" aria-label="tooltip">
+  <a class="detail-scrim" href="#c-tooltip" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-tooltip" aria-label="Close">×</a>
+    <h3>tooltip</h3>
+    <div class="detail-caption">The tooltip.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/tooltip/ideal__default__dark.png" alt="tooltip default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/tooltip/ideal__default__light.png" alt="tooltip default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-settings-item" role="dialog" aria-label="settings-item">
+  <a class="detail-scrim" href="#c-settings-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-settings-item" aria-label="Close">×</a>
+    <h3>settings-item</h3>
+    <div class="detail-caption">A settings row.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/settings-item/ideal__default__dark.png" alt="settings-item default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/settings-item/ideal__default__light.png" alt="settings-item default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-settings-item-note" role="dialog" aria-label="settings-item-note">
+  <a class="detail-scrim" href="#c-settings-item-note" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-settings-item-note" aria-label="Close">×</a>
+    <h3>settings-item-note</h3>
+    <div class="detail-caption">With its explanatory note.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/settings-item-note/ideal__default__dark.png" alt="settings-item-note default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/settings-item-note/ideal__default__light.png" alt="settings-item-note default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-toggle-on" role="dialog" aria-label="toggle-on">
+  <a class="detail-scrim" href="#c-toggle-on" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-toggle-on" aria-label="Close">×</a>
+    <h3>toggle-on</h3>
+    <div class="detail-caption">The toggle, on.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/toggle-on/ideal__default__dark.png" alt="toggle-on default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/toggle-on/ideal__default__light.png" alt="toggle-on default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-toggle-off" role="dialog" aria-label="toggle-off">
+  <a class="detail-scrim" href="#c-toggle-off" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-toggle-off" aria-label="Close">×</a>
+    <h3>toggle-off</h3>
+    <div class="detail-caption">And off.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/toggle-off/ideal__default__dark.png" alt="toggle-off default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/toggle-off/ideal__default__light.png" alt="toggle-off default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-text-styles" role="dialog" aria-label="text-styles">
+  <a class="detail-scrim" href="#c-text-styles" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-text-styles" aria-label="Close">×</a>
+    <h3>text-styles</h3>
+    <div class="detail-caption">The type ramp: every text style the app defines.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/text-styles/ideal__default__dark.png" alt="text-styles default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/text-styles/ideal__default__light.png" alt="text-styles default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-icon" role="dialog" aria-label="icon">
+  <a class="detail-scrim" href="#c-icon" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-icon" aria-label="Close">×</a>
+    <h3>icon</h3>
+    <div class="detail-caption">An icon at its default tint.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/icon/ideal__default__dark.png" alt="icon default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/icon/ideal__default__light.png" alt="icon default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-icon-tinted" role="dialog" aria-label="icon-tinted">
+  <a class="detail-scrim" href="#c-icon-tinted" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-icon-tinted" aria-label="Close">×</a>
+    <h3>icon-tinted</h3>
+    <div class="detail-caption">And tinted.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/icon-tinted/ideal__default__dark.png" alt="icon-tinted default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/icon-tinted/ideal__default__light.png" alt="icon-tinted default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-divider-horizontal" role="dialog" aria-label="divider-horizontal">
+  <a class="detail-scrim" href="#c-divider-horizontal" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-divider-horizontal" aria-label="Close">×</a>
+    <h3>divider-horizontal</h3>
+    <div class="detail-caption">The horizontal divider.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/divider-horizontal/ideal__default__dark.png" alt="divider-horizontal default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/divider-horizontal/ideal__default__light.png" alt="divider-horizontal default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-divider-vertical" role="dialog" aria-label="divider-vertical">
+  <a class="detail-scrim" href="#c-divider-vertical" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-divider-vertical" aria-label="Close">×</a>
+    <h3>divider-vertical</h3>
+    <div class="detail-caption">The vertical one, for the wide layouts.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/divider-vertical/ideal__default__dark.png" alt="divider-vertical default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/divider-vertical/ideal__default__light.png" alt="divider-vertical default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-kodee-emotion" role="dialog" aria-label="kodee-emotion">
+  <a class="detail-scrim" href="#c-kodee-emotion" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-kodee-emotion" aria-label="Close">×</a>
+    <h3>kodee-emotion</h3>
+    <div class="detail-caption">Kodee, the Kotlin mascot, across the emotions the app draws it in.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/kodee-emotion/ideal__default__dark.png" alt="kodee-emotion default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/kodee-emotion/ideal__default__light.png" alt="kodee-emotion default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-kodee-icon-small" role="dialog" aria-label="kodee-icon-small">
+  <a class="detail-scrim" href="#c-kodee-icon-small" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-kodee-icon-small" aria-label="Close">×</a>
+    <h3>kodee-icon-small</h3>
+    <div class="detail-caption">The small Kodee icon, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/kodee-icon-small/ideal__default__dark.png" alt="kodee-icon-small default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/kodee-icon-small/ideal__default__light.png" alt="kodee-icon-small default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-kodee-icon-small-selected" role="dialog" aria-label="kodee-icon-small-selected">
+  <a class="detail-scrim" href="#c-kodee-icon-small-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-kodee-icon-small-selected" aria-label="Close">×</a>
+    <h3>kodee-icon-small-selected</h3>
+    <div class="detail-caption">Selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/kodee-icon-small-selected/ideal__default__dark.png" alt="kodee-icon-small-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/kodee-icon-small-selected/ideal__default__light.png" alt="kodee-icon-small-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-kodee-icon-large" role="dialog" aria-label="kodee-icon-large">
+  <a class="detail-scrim" href="#c-kodee-icon-large" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-kodee-icon-large" aria-label="Close">×</a>
+    <h3>kodee-icon-large</h3>
+    <div class="detail-caption">The large one, unselected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/kodee-icon-large/ideal__default__dark.png" alt="kodee-icon-large default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/kodee-icon-large/ideal__default__light.png" alt="kodee-icon-large default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-kodee-icon-large-selected" role="dialog" aria-label="kodee-icon-large-selected">
+  <a class="detail-scrim" href="#c-kodee-icon-large-selected" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-kodee-icon-large-selected" aria-label="Close">×</a>
+    <h3>kodee-icon-large-selected</h3>
+    <div class="detail-caption">And selected.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/kodee-icon-large-selected/ideal__default__dark.png" alt="kodee-icon-large-selected default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/kodee-icon-large-selected/ideal__default__light.png" alt="kodee-icon-large-selected default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-party-animation" role="dialog" aria-label="party-animation">
+  <a class="detail-scrim" href="#c-party-animation" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-party-animation" aria-label="Close">×</a>
+    <h3>party-animation</h3>
+    <div class="detail-caption">The party animation.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/party-animation/ideal__default__dark.png" alt="party-animation default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/party-animation/ideal__default__light.png" alt="party-animation default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-party-animation-baseline" role="dialog" aria-label="party-animation-baseline">
+  <a class="detail-scrim" href="#c-party-animation-baseline" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-party-animation-baseline" aria-label="Close">×</a>
+    <h3>party-animation-baseline</h3>
+    <div class="detail-caption">Its baseline frame, which is what a still render can show of it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/party-animation-baseline/ideal__default__dark.png" alt="party-animation-baseline default" /><span>dark</span></div><div class="state-shot" data-bg="light"><img loading="lazy" src="images/party-animation-baseline/ideal__default__light.png" alt="party-animation-baseline default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<script>
+// Crop each component's hero (and its zoom-view default capture) to the component's content bbox,
+// read from its figma-svg's root translate + viewBox. A wear sticker rendered on a 454² device
+// canvas then displays cropped to the component instead of floating in an empty frame. A no-op for
+// close-cropped renders (the bbox already fills the frame) and for components with no figma-svg.
+(function () {
+  function parseBox(svgText) {
+    var t = /translate\(\s*(-?\d+)\s*,\s*(-?\d+)\s*\)/.exec(svgText);
+    var v = /viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"/.exec(svgText);
+    if (!v) return null;
+    return { tx: t ? +t[1] : 0, ty: t ? +t[2] : 0, vw: +v[1], vh: +v[2] };
+  }
+  function frame(shot, box, gutterEdges) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) {
+        // Already close-cropped as far as the vector can tell — but a declared gutter is margin the
+        // capture added, which no bbox of the drawn pixels can distinguish from the component.
+        if (gutterEdges) frameGutter(shot, gutterEdges);
+        return;
+      }
+      var cap = 240, scale = Math.min(1, cap / Math.max(box.vw, box.vh));
+      var dw = Math.max(1, Math.round(box.vw * scale));
+      shot.classList.add("shot--framed");
+      // A vector-framed shot on a GUTTERED render must not hide its overflow either: the box the
+      // vector describes is the component, and the pixels beyond it are that component's shadow.
+      if (gutterEdges) shot.classList.add("shot--bleed");
+      // Size the window by aspect-ratio at its natural (capped) width, with max-width:100% so it
+      // shrinks to a narrow grid card instead of overflowing it; frame the render in PERCENTAGES of
+      // the box so the whole thing scales as one. (A fixed-px window overflowed the card and clipped
+      // wide components.) Height stays auto — the img keeps the render's aspect.
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      shot.style.width = dw + "px";
+      shot.style.aspectRatio = box.vw + " / " + box.vh;
+      img.style.width = pct(rw, box.vw) + "%";
+      // (tx,ty) is negative for a centred component, so it shifts the render to bring the component's
+      // top-left to the clip origin; as a % of the box axis it scales with the shrunk window.
+      img.style.left = pct(box.tx, box.vw) + "%";
+      img.style.top = pct(box.ty, box.vh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
+  // A declared capture gutter needs no vector and no guard: the renderer recorded exactly how much
+  // transparent margin it added, so the box is a fact rather than an inference. Native pixels — the
+  // stylesheet caps how large a card draws, and scaling here would hand a guttered card a different
+  // display size from the plain one beside it, which is the difference being removed.
+  function frameGutter(shot, edges) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      var boxW = rw - edges[0] - edges[2], boxH = rh - edges[1] - edges[3];
+      if (!(boxW > 0 && boxH > 0)) return;
+      // Capped on HEIGHT, which is the rule the stylesheet applies to a plain card image
+      // (max-height:240px, width follows) — a framed window carries an aspect-ratio, so the cap
+      // cannot come from CSS without squashing it. Capping the largest edge instead would shrink a
+      // wide-but-short component no plain sibling shrinks.
+      var scale = Math.min(1, 240 / boxH);
+      var bw = Math.max(1, Math.round(boxW * scale));
+      var bh = Math.max(1, Math.round(boxH * scale));
+      var iw = Math.round(rw * scale);
+      var offX = Math.round(edges[0] * scale), offY = Math.round(edges[1] * scale);
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      // "shot--bleed" keeps the overflow visible: what falls outside this box is the component's
+      // own shadow, which the gutter was captured to preserve. Hiding it would crop the shadow a
+      // second time, which is the bug the gutter fixed.
+      shot.classList.add("shot--framed");
+      shot.classList.add("shot--bleed");
+      shot.style.width = bw + "px";
+      shot.style.aspectRatio = bw + " / " + bh;
+      img.style.width = pct(iw, bw) + "%";
+      img.style.left = pct(-offX, bw) + "%";
+      img.style.top = pct(-offY, bh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
+  document.querySelectorAll(".card").forEach(function (card) {
+    var hero = card.querySelector("a.shot");
+    if (!hero) return;
+    var declared = hero.getAttribute("data-gutter");
+    var edges = declared
+      ? declared.split(",").map(function (v) { return Math.max(0, parseInt(v, 10) || 0); })
+      : null;
+    var link = card.querySelector('a.figma-svg-link');
+    if (!link) {
+      if (edges) frameGutter(hero, edges);
+      return;
+    }
+    // Fetch the vector only once the card is actually near the viewport.
+    //
+    // A deferred catalog publishes no static vector: the href is an absolute live-render URL and
+    // the daemon generates the SVG per request, from a small pool of live seats. Fetching every
+    // card's on load would start a render for the whole catalog the instant the gallery opens —
+    // thousands, on the large catalogs deferral exists for — spending the seats on bounding boxes
+    // and answering the visitors who actually asked for a vector with 503s.
+    //
+    // Deferring the same fetch to visibility fixes that without giving up the crop: the vector is
+    // the only source of the content box for a card with no declared gutter (an ordinary 454x454
+    // Wear canvas, say), so skipping it outright would leave those heroes uncropped in the full
+    // device canvas. Only what someone looks at is rendered, at the pace they scroll.
+    var pending = function () {
+      fetch(link.getAttribute("href"))
+        .then(function (r) { return r.ok ? r.text() : null; })
+        .then(function (txt) {
+          // The vector wins where it applies — it answers the tighter question of where the
+          // component sits on a canvas it was drawn on — and the gutter answers when it does not.
+          var box = txt ? parseBox(txt) : null;
+          if (box) frame(hero, box, edges);
+          else if (edges) frameGutter(hero, edges);
+        })
+        .catch(function () { if (edges) frameGutter(hero, edges); });
+    };
+    if (typeof IntersectionObserver !== "function") {
+      pending();
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        pending();
+      });
+    }, { rootMargin: "400px" });
+    observer.observe(card);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 126" width="1050" height="126" role="img" aria-label="main-navigation-bar layout wireframe">
+  <title>main-navigation-bar — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="126" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="126" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="126" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="126" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 0.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="11" y="0" width="1028" height="126" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M74,26 H136 A37,37 0 0 1 173,63 V63 A37,37 0 0 1 136,100 H74 A37,37 0 0 1 37,63 V63 A37,37 0 0 1 74,26 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="40" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 10.0dp</text>
+  </g>
+  <g>
+    <path d="M283,26 H346 A37,37 0 0 1 383,63 V63 A37,37 0 0 1 346,100 H283 A37,37 0 0 1 246,63 V63 A37,37 0 0 1 283,26 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="249" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 10.0dp</text>
+  </g>
+  <g>
+    <path d="M493,26 H556 A37,37 0 0 1 593,63 V63 A37,37 0 0 1 556,100 H493 A37,37 0 0 1 456,63 V63 A37,37 0 0 1 493,26 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="459" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 10.0dp</text>
+  </g>
+  <g>
+    <path d="M703,26 H766 A37,37 0 0 1 803,63 V63 A37,37 0 0 1 766,100 H703 A37,37 0 0 1 666,63 V63 A37,37 0 0 1 703,26 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="669" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 10.0dp</text>
+  </g>
+  <g>
+    <path d="M913,26 H976 A37,37 0 0 1 1013,63 V63 A37,37 0 0 1 976,100 H913 A37,37 0 0 1 876,63 V63 A37,37 0 0 1 913,26 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="879" y="38" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad 10.0dp</text>
+  </g>
+</svg>

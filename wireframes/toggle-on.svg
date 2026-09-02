@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 116 84" width="116" height="84" role="img" aria-label="toggle-on layout wireframe">
+  <title>toggle-on — layout wireframe (slots + tokens)</title>
+  <rect width="116" height="84" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="116" height="84" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="116" height="84" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="74" height="42" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="74" height="42" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,21 H74 A21,21 0 0 1 95,42 V42 A21,21 0 0 1 74,63 H42 A21,21 0 0 1 21,42 V42 A21,21 0 0 1 42,21 Z" fill="#8F00E7" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF8F00E7</text>
+  </g>
+  <g>
+    <path d="M74,19 H79 A21,21 0 0 1 100,40 V45 A21,21 0 0 1 79,66 H74 A21,21 0 0 1 53,45 V40 A21,21 0 0 1 74,19 Z" fill="#8F00E7" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="31" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF8F00E7</text>
+  </g>
+</svg>

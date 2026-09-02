@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 270" width="1050" height="270" role="img" aria-label="day-header layout wireframe">
+  <title>day-header — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="270" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="270" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="270" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="270" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 0.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M42,32 H1008 A0,0 0 0 1 1008,32 V238 A0,0 0 0 1 1008,238 H42 A0,0 0 0 1 42,238 V32 A0,0 0 0 1 42,32 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="44" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">pad ·  gap 16.0dp</text>
+  </g>
+  <g>
+    <rect x="42" y="32" width="189" height="206" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="32" width="189" height="206" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="99" y="32" width="75" height="40" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="46" width="189" height="178" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="273" y="67" width="283" height="136" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="273" y="67" width="283" height="68" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="273" y="135" width="104" height="68" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

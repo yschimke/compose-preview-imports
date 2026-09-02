@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2625 168" width="2625" height="168" role="img" aria-label="large-switcher layout wireframe">
+  <title>large-switcher — layout wireframe (slots + tokens)</title>
+  <rect width="2625" height="168" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="2625" height="168" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="2625" height="168" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="2583" height="126" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="2583" height="126" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M105,42 H776 A42,42 0 0 1 818,84 V84 A42,42 0 0 1 776,126 H105 A42,42 0 0 1 63,84 V84 A42,42 0 0 1 105,42 Z" fill="#19191C" fill-opacity="0.051" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#0D19191C  pad ·  gap 12.0dp</text>
+  </g>
+  <g>
+    <rect x="214" y="60" width="136" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="382" y="60" width="285" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M976,42 H1648 A42,42 0 0 1 1690,84 V84 A42,42 0 0 1 1648,126 H976 A42,42 0 0 1 934,84 V84 A42,42 0 0 1 976,42 Z" fill="#19191C" fill-opacity="0.051" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="937" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#0D19191C  pad ·  gap 12.0dp</text>
+  </g>
+  <g>
+    <rect x="1054" y="60" width="143" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="1229" y="60" width="342" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M1848,42 H2520 A42,42 0 0 1 2562,84 V84 A42,42 0 0 1 2520,126 H1848 A42,42 0 0 1 1806,84 V84 A42,42 0 0 1 1848,42 Z" fill="#19191C" fill-opacity="0.051" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="1809" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#0D19191C  pad ·  gap 12.0dp</text>
+  </g>
+  <g>
+    <rect x="1921" y="60" width="143" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="2096" y="60" width="351" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

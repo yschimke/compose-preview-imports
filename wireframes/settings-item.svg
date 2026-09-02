@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 175" width="1050" height="175" role="img" aria-label="settings-item layout wireframe">
+  <title>settings-item — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="175" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="175" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="175" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="1008" height="133" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M87.5,63 H962.5 A24.5,24.5 0 0 1 987,87.5 V87.5 A24.5,24.5 0 0 1 962.5,112 H87.5 A24.5,24.5 0 0 1 63,87.5 V87.5 A24.5,24.5 0 0 1 87.5,63 Z" fill="#19191C" fill-opacity="0.051" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="75" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#0D19191C  pad 16.0dp  gap 12.0dp</text>
+  </g>
+  <g>
+    <rect x="63" y="63" width="818" height="49" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="63" y="63" width="391" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="913" y="67" width="74" height="42" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M934,67 H966 A21,21 0 0 1 987,88 V88 A21,21 0 0 1 966,109 H934 A21,21 0 0 1 913,88 V88 A21,21 0 0 1 934,67 Z" fill="#8F00E7" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="916" y="79" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FF8F00E7</text>
+  </g>
+  <g>
+    <path d="M966,65 H971 A21,21 0 0 1 992,86 V91 A21,21 0 0 1 971,112 H966 A21,21 0 0 1 945,91 V86 A21,21 0 0 1 966,65 Z" fill="#8F00E7" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="948" y="77" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FF8F00E7</text>
+  </g>
+</svg>

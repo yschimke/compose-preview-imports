@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 189" width="360" height="189" role="img" aria-label="button-primary layout wireframe">
+  <title>button-primary — layout wireframe (slots + tokens)</title>
+  <rect width="360" height="189" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="360" height="189" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="360" height="189" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="318" height="147" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M178.5,21 H181.5 A73.5,73.5 0 0 1 255,94.5 V94.5 A73.5,73.5 0 0 1 181.5,168 H178.5 A73.5,73.5 0 0 1 105,94.5 V94.5 A73.5,73.5 0 0 1 178.5,21 Z" fill="#C202D7" fill-opacity="1" stroke="#000000" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="108" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#000000">#FFC202D7  pad ·</text>
+  </g>
+  <g>
+    <rect x="105" y="70" width="150" height="49" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

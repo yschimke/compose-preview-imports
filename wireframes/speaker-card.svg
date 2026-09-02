@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 947 294" width="947" height="294" role="img" aria-label="speaker-card layout wireframe">
+  <title>speaker-card — layout wireframe (slots + tokens)</title>
+  <rect width="947" height="294" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="947" height="294" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="947" height="294" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="905" height="252" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M63,21 H884 A42,42 0 0 1 926,63 V231 A42,42 0 0 1 884,273 H63 A42,42 0 0 1 21,231 V63 A42,42 0 0 1 63,21 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">gap 12.0dp</text>
+  </g>
+  <g>
+    <path d="M63,21 H231 A42,42 0 0 1 273,63 V231 A42,42 0 0 1 231,273 H63 A42,42 0 0 1 21,231 V63 A42,42 0 0 1 63,21 Z" fill="#19191C" fill-opacity="0.051" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#0D19191C</text>
+  </g>
+  <g>
+    <rect x="305" y="95" width="621" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="305" y="95" width="184" height="49" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="305" y="144" width="16" height="16" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="305" y="160" width="621" height="40" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

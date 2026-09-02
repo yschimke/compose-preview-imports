@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294 147" width="294" height="147" role="img" aria-label="header-toggle layout wireframe">
+  <title>header-toggle — layout wireframe (slots + tokens)</title>
+  <rect width="294" height="147" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="294" height="147" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="294" height="147" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="252" height="105" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 8.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <path d="M73.5,21 H220.5 A52.5,52.5 0 0 1 273,73.5 V73.5 A52.5,52.5 0 0 1 220.5,126 H73.5 A52.5,52.5 0 0 1 21,73.5 V73.5 A52.5,52.5 0 0 1 73.5,21 Z" fill="none" fill-opacity="0" stroke="#19191C" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#19191C">◻ #2619191C</text>
+  </g>
+  <g>
+    <path d="M73.5,21 H94.5 A52.5,52.5 0 0 1 147,73.5 V73.5 A52.5,52.5 0 0 1 94.5,126 H73.5 A52.5,52.5 0 0 1 21,73.5 V73.5 A52.5,52.5 0 0 1 73.5,21 Z" fill="#C202D7" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="33" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFC202D7</text>
+  </g>
+  <g>
+    <rect x="21" y="21" width="252" height="105" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="21" width="127" height="105" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M84.5,42 H84.5 A31.5,31.5 0 0 1 116,73.5 V73.5 A31.5,31.5 0 0 1 84.5,105 H84.5 A31.5,31.5 0 0 1 53,73.5 V73.5 A31.5,31.5 0 0 1 84.5,42 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">pad ·</text>
+  </g>
+  <g>
+    <rect x="148" y="21" width="125" height="105" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M210.5,42 H210.5 A30.5,30.5 0 0 1 241,72.5 V74.5 A30.5,30.5 0 0 1 210.5,105 H210.5 A30.5,30.5 0 0 1 180,74.5 V72.5 A30.5,30.5 0 0 1 210.5,42 Z" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="183" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">pad ·</text>
+  </g>
+</svg>
