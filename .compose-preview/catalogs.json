@@ -17,6 +17,11 @@
       "system": "joreilly-climatetracekmp"
     },
     {
+      "importedFrom": "bitwarden/android",
+      "listed": true,
+      "system": "bitwarden-android"
+    },
+    {
       "importedFrom": "mullvad/mullvadvpn-app",
       "listed": true,
       "system": "mullvad-mullvadvpn-app"

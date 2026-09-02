@@ -18,6 +18,11 @@
       "upstream": "joreilly/ClimateTraceKMP"
     },
     {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
+    },
+    {
       "slug": "mullvad-mullvadvpn-app",
       "branch": "import/mullvad-mullvadvpn-app",
       "upstream": "mullvad/mullvadvpn-app"
