@@ -23,11 +23,6 @@
           "caption": "The reader itself, an article rendered in Twine's own typography rather than a web view's."
         },
         {
-          "componentId": "image-viewer",
-          "preview": "ImageViewerPreview",
-          "caption": "The full-screen image viewer a post's artwork opens into."
-        },
-        {
           "componentId": "bookmarks",
           "preview": "BookmarksPreview",
           "caption": "Saved posts."

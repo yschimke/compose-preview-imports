@@ -1,8 +1,298 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project. It carries no component inventory on purpose: that comes from @CatalogComponent / @CatalogVariant annotations beside the previews, and a project imported without its maintainers' involvement has none. What is published is therefore the previews as the project declares them, grouped by nothing, which is the honest presentation of somebody else's app.",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository.",
   "system": "bitwarden-android",
   "title": "Bitwarden",
   "module": "ui",
-  "modes": ["light", "dark"]
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Buttons",
+      "components": [
+        {
+          "componentId": "filled-button",
+          "preview": "BitwardenFilledButton_preview",
+          "caption": "The primary call to action — filled, full width, the button every Bitwarden screen leads with."
+        },
+        {
+          "componentId": "outlined-button",
+          "preview": "BitwardenOutlinedButton_preview",
+          "caption": "The secondary action beside it: same shape and metrics, outline instead of fill."
+        },
+        {
+          "componentId": "filled-error-button",
+          "preview": "BitwardenErrorButton_preview",
+          "caption": "The destructive variant: the filled button in the error role, for delete and purge."
+        },
+        {
+          "componentId": "outlined-error-button",
+          "preview": "BBitwardenOutlinedErrorButton_preview",
+          "caption": "Destructive, but not the screen's primary action — the outlined button in the error role."
+        },
+        {
+          "componentId": "text-selection-button",
+          "preview": "BitwardenTextSelectionButton_preview",
+          "caption": "A button that reads as a field: a label with the current selection, used where a value opens a picker."
+        },
+        {
+          "componentId": "icon-button-filled",
+          "preview": "BitwardenFilledIconButton_preview",
+          "caption": "Icon-only, filled — the emphasised icon action."
+        },
+        {
+          "componentId": "icon-button-tonal",
+          "preview": "BitwardenTonalIconButton_preview",
+          "caption": "Icon-only, tonal container: the middle weight between filled and standard."
+        },
+        {
+          "componentId": "icon-button-standard",
+          "preview": "BitwardenStandardIconButton_preview",
+          "caption": "Icon-only with no container, for dense rows and app bars."
+        }
+      ]
+    },
+    {
+      "name": "Fields",
+      "components": [
+        {
+          "componentId": "text-field",
+          "preview": "BitwardenTextField_preview",
+          "caption": "The text field with its label, supporting text and trailing action — the base every Bitwarden input is built from."
+        },
+        {
+          "componentId": "password-field",
+          "preview": "BitwardenPasswordField_preview",
+          "caption": "The same field in its password shape: obscured value with the reveal toggle."
+        },
+        {
+          "componentId": "hidden-password-field",
+          "preview": "BitwardenHiddenPasswordField_preview",
+          "caption": "A password shown as fixed dots with no reveal — how a vault item renders a secret it will not display inline."
+        },
+        {
+          "componentId": "multi-select-button",
+          "preview": "BitwardenMultiSelectButton_preview",
+          "caption": "The dropdown field: current choice, label and chevron, opening a selection dialog."
+        },
+        {
+          "componentId": "date-picker-button",
+          "preview": "BitwardenDatePickerButton_preview",
+          "caption": "The date field's closed state, styled as a field rather than a button."
+        },
+        {
+          "componentId": "slider",
+          "preview": "BitwardenSlider_preview",
+          "caption": "The labelled slider with its value readout — the password-generator length control."
+        },
+        {
+          "componentId": "switch",
+          "preview": "BitwardenSwitch_preview",
+          "caption": "A labelled switch row, the toggle used throughout settings."
+        }
+      ]
+    },
+    {
+      "name": "Cards and content",
+      "components": [
+        {
+          "componentId": "action-card",
+          "preview": "BitwardenActionCard_preview",
+          "caption": "The action card at its simplest: title, primary action, dismiss."
+        },
+        {
+          "componentId": "action-card-subtitle",
+          "preview": "BitwardenActionCardWithSubtitle_preview",
+          "caption": "The same card carrying a subtitle — the shape used for onboarding and security prompts."
+        },
+        {
+          "componentId": "action-card-subtitle-no-dismiss",
+          "preview": "BitwardenActionCardWithSubtitleNoDismiss_preview",
+          "caption": "Subtitled, but with no dismiss affordance: an action the user is not meant to wave away."
+        },
+        {
+          "componentId": "action-card-leading",
+          "preview": "BitwardenActionCardWithLeadingContent_preview",
+          "caption": "With leading content — the variant that carries an icon or badge beside the text."
+        },
+        {
+          "componentId": "action-card-small",
+          "preview": "ActionCardSmall_preview",
+          "caption": "The compact action card, for stacking several in a list."
+        },
+        {
+          "componentId": "action-card-small-trailing",
+          "preview": "ActionCardSmallWithTrailingIcon_preview",
+          "caption": "The compact card with a trailing icon, which is how it signals navigation."
+        },
+        {
+          "componentId": "info-callout",
+          "preview": "BitwardenInfoCallout_preview",
+          "caption": "The informational callout card — the non-blocking explanation shown above a form."
+        },
+        {
+          "componentId": "content-block",
+          "preview": "BitwardenContentBlock_preview",
+          "caption": "A headed block of body content, the unit the help and settings screens are composed from."
+        },
+        {
+          "componentId": "empty-content",
+          "preview": "BitwardenEmptyContent_preview",
+          "caption": "The empty state: illustration, message and the action that resolves it."
+        },
+        {
+          "componentId": "loading-content",
+          "preview": "BitwardenLoadingContent_preview",
+          "caption": "The full-screen loading state, drawn in place of content rather than over it."
+        }
+      ]
+    },
+    {
+      "name": "Rows and lists",
+      "components": [
+        {
+          "componentId": "text-row-tooltip",
+          "preview": "BitwardenTextRowWithTooltipAndContent_Preview",
+          "caption": "A settings row carrying a tooltip and trailing content."
+        },
+        {
+          "componentId": "text-row-disabled",
+          "preview": "BitwardenTextRowWithDividerDisabled_Preview",
+          "caption": "The same row disabled, with its divider — what an unavailable setting looks like."
+        },
+        {
+          "componentId": "push-row",
+          "preview": "BitwardenPushRow_preview",
+          "caption": "The navigation row: label and chevron, pushing a new screen."
+        },
+        {
+          "componentId": "external-link-row",
+          "preview": "BitwardenExternalLinkRow_preview",
+          "caption": "The row that leaves the app, marked with the external-link icon rather than a chevron."
+        },
+        {
+          "componentId": "row-of-icon-buttons",
+          "preview": "BitwardenRowOfIconButtons_preview",
+          "caption": "The trailing cluster of icon actions a vault item row carries."
+        },
+        {
+          "componentId": "list-header",
+          "preview": "BitwardenListHeaderText_preview",
+          "caption": "The section header that separates groups within a list."
+        }
+      ]
+    },
+    {
+      "name": "App bars",
+      "components": [
+        {
+          "componentId": "top-app-bar",
+          "preview": "BitwardenTopAppBar_preview",
+          "caption": "The standard top app bar: navigation icon, title, actions."
+        },
+        {
+          "componentId": "top-app-bar-overflow",
+          "preview": "BitwardenTopAppBarOverflow_preview",
+          "caption": "The same bar with an overflow menu open."
+        },
+        {
+          "componentId": "top-app-bar-overflow-cutoff",
+          "preview": "BitwardenTopAppBarOverflowCutoff_preview",
+          "caption": "A long title against the overflow menu — the truncation case, previewed on purpose."
+        },
+        {
+          "componentId": "medium-top-app-bar",
+          "preview": "BitwardenMediumTopAppBar_preview",
+          "caption": "The medium (two-line) app bar used by the screens with a large title."
+        },
+        {
+          "componentId": "search-action",
+          "preview": "BitwardenSearchActionItem_preview",
+          "caption": "The search action as it sits in an app bar."
+        },
+        {
+          "componentId": "overflow-action",
+          "preview": "BitwardenOverflowActionItem_preview",
+          "caption": "The overflow action item and its menu."
+        }
+      ]
+    },
+    {
+      "name": "Accounts",
+      "components": [
+        {
+          "componentId": "account-action-item",
+          "preview": "BitwardenAccountActionItem_preview",
+          "caption": "The account avatar that opens the switcher, initials on its colour."
+        },
+        {
+          "componentId": "account-switcher",
+          "preview": "BitwardenAccountSwitcher_preview",
+          "caption": "The expanded account switcher: current account, the others, and the add-account row."
+        },
+        {
+          "componentId": "placeholder-account-light",
+          "preview": "BitwardenPlaceholderAccountActionItem_preview_light",
+          "caption": "The placeholder avatar shown before an account loads — light."
+        },
+        {
+          "componentId": "placeholder-account-dark",
+          "preview": "BitwardenPlaceholderAccountActionItem_preview_dark",
+          "caption": "The same placeholder in dark, previewed separately upstream rather than through a multipreview."
+        }
+      ]
+    },
+    {
+      "name": "Dialogs and feedback",
+      "components": [
+        {
+          "componentId": "loading-dialog",
+          "preview": "BitwardenLoadingDialog_preview",
+          "caption": "The blocking loading dialog, for work the user must wait on."
+        },
+        {
+          "componentId": "date-picker-dialog",
+          "preview": "BitwardenDatePickerDialog_preview",
+          "caption": "The date picker in its dialog."
+        },
+        {
+          "componentId": "snackbar",
+          "preview": "BitwardenCustomSnackbar_preview",
+          "caption": "Bitwarden's own snackbar — message, action and dismiss, drawn rather than borrowed from Material."
+        },
+        {
+          "componentId": "status-badge",
+          "preview": "BitwardenStatusBadge_Preview",
+          "caption": "The status badge in light."
+        },
+        {
+          "componentId": "status-badge-dark",
+          "preview": "BitwardenStatusBadge_PreviewDark",
+          "caption": "And in dark, which upstream previews as its own function."
+        },
+        {
+          "componentId": "notification-badge",
+          "preview": "NotificationBadge_preview",
+          "caption": "The small count badge that rides on a navigation icon."
+        },
+        {
+          "componentId": "coach-mark",
+          "preview": "BitwardenCoachMarkContainer_preview",
+          "caption": "The coach-mark container that spotlights a target and explains it."
+        }
+      ]
+    },
+    {
+      "name": "Foundations",
+      "components": [
+        {
+          "componentId": "typography",
+          "preview": "BitwardenTypography_preview",
+          "caption": "The type ramp: every text style the design system defines, in one sheet."
+        }
+      ]
+    }
+  ]
 }
