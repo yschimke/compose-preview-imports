@@ -1,8 +1,438 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project. It carries no component inventory on purpose: that comes from @CatalogComponent / @CatalogVariant annotations beside the previews, and a project imported without its maintainers' involvement has none. What is published is therefore the previews as the project declares them, grouped by nothing, which is the honest presentation of somebody else's app.",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository.",
   "system": "jetbrains-kotlinconf-app",
   "title": "KotlinConf",
   "module": "app:ui-components",
-  "modes": ["light", "dark"]
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Buttons and actions",
+      "components": [
+        {
+          "componentId": "button-primary",
+          "preview": "ButtonPrimaryPreview",
+          "caption": "The primary button, light and dark from one @PreviewLightDark."
+        },
+        {
+          "componentId": "button-secondary",
+          "preview": "ButtonSecondaryPreview",
+          "caption": "The secondary button beside it."
+        },
+        {
+          "componentId": "action",
+          "preview": "ActionPreview",
+          "caption": "An action row — icon and label — as the detail screens list them."
+        },
+        {
+          "componentId": "overlay-text-button",
+          "preview": "ActionButtonPreview",
+          "caption": "The text button drawn over content, for overlays on a talk card."
+        },
+        {
+          "componentId": "overlay-icon-button-enabled",
+          "preview": "IconButtonPreviewEnabled",
+          "caption": "The overlay icon button, enabled."
+        },
+        {
+          "componentId": "overlay-icon-button-disabled",
+          "preview": "IconButtonPreviewDisabled",
+          "caption": "And disabled, which dims the glyph rather than the container."
+        },
+        {
+          "componentId": "now-button",
+          "preview": "NowButtonPreview",
+          "caption": "The “now” button that jumps the schedule to the current time."
+        },
+        {
+          "componentId": "now-button-floating",
+          "preview": "FloatingNowButtonPreview",
+          "caption": "Its floating form, over the scrolling schedule."
+        },
+        {
+          "componentId": "header-toggle",
+          "preview": "HeaderToggleButtonPreview",
+          "caption": "The toggle that lives in a header."
+        },
+        {
+          "componentId": "top-menu-button",
+          "preview": "TopMenuButtonUnselectedPreview",
+          "caption": "The top menu button, unselected."
+        },
+        {
+          "componentId": "top-menu-button-selected",
+          "preview": "TopMenuButtonSelectedPreview",
+          "caption": "Selected, with its indicator."
+        },
+        {
+          "componentId": "top-menu-button-large",
+          "preview": "TopMenuButtonLargeUnselectedPreview",
+          "caption": "The large-window variant, unselected."
+        },
+        {
+          "componentId": "top-menu-button-large-selected",
+          "preview": "TopMenuButtonLargeSelectedPreview",
+          "caption": "And selected — the tablet and desktop layout's own weight."
+        }
+      ]
+    },
+    {
+      "name": "Navigation and headers",
+      "components": [
+        {
+          "componentId": "main-navigation-bar",
+          "preview": "MainNavigationBarPreview",
+          "caption": "The bottom navigation bar for compact windows."
+        },
+        {
+          "componentId": "main-navigation-rail",
+          "preview": "MainNavigationRailPreview",
+          "caption": "The rail it becomes when the window grows."
+        },
+        {
+          "componentId": "main-header-title",
+          "preview": "MainHeaderTitleOnlyPreview",
+          "caption": "The main header at its simplest: a title."
+        },
+        {
+          "componentId": "main-header-back",
+          "preview": "MainHeaderBackPreview",
+          "caption": "With a back affordance."
+        },
+        {
+          "componentId": "main-header-schedule",
+          "preview": "MainHeaderSchedulePreview",
+          "caption": "The schedule screen's header, with its day controls."
+        },
+        {
+          "componentId": "main-header-search",
+          "preview": "MainHeaderSearchStatePreview",
+          "caption": "The header in its search state."
+        },
+        {
+          "componentId": "main-header-speaker",
+          "preview": "MainHeaderSpeakerPreview",
+          "caption": "The speaker screen's header."
+        },
+        {
+          "componentId": "large-main-header",
+          "preview": "LargeMainHeaderPreview",
+          "caption": "The large header, previewed wide — this one carries @WidePreviewLightDark rather than the ordinary light/dark pair."
+        },
+        {
+          "componentId": "page-title",
+          "preview": "PageTitleRegularPreview",
+          "caption": "A page title as most screens draw it."
+        },
+        {
+          "componentId": "page-title-lightning",
+          "preview": "PageTitleLightningPreview",
+          "caption": "The lightning-talk variant, badged."
+        },
+        {
+          "componentId": "page-title-notes",
+          "preview": "PageTitleWithNotesPreview",
+          "caption": "With supporting notes under the title."
+        },
+        {
+          "componentId": "page-title-large",
+          "preview": "LargePageTitleWithPreview",
+          "caption": "The large-window page title."
+        },
+        {
+          "componentId": "section-title-text",
+          "preview": "SectionTitleTextPreview",
+          "caption": "A section title in its text form."
+        },
+        {
+          "componentId": "section-title-time",
+          "preview": "SectionTitleTimePreview",
+          "caption": "And in its time form, which is how the schedule separates slots."
+        },
+        {
+          "componentId": "paragraph-title",
+          "preview": "ParagraphTitlePreview",
+          "caption": "The smaller heading used inside long-form content."
+        },
+        {
+          "componentId": "day-header",
+          "preview": "DayHeaderPreview",
+          "caption": "The schedule's day header."
+        },
+        {
+          "componentId": "page-menu-item",
+          "preview": "PageMenuItemPreview",
+          "caption": "A row in the page menu."
+        }
+      ]
+    },
+    {
+      "name": "Schedule and content cards",
+      "components": [
+        {
+          "componentId": "talk-card-upcoming",
+          "preview": "TalkCardUpcomingPreview",
+          "caption": "The talk card before its session starts."
+        },
+        {
+          "componentId": "talk-card-live",
+          "preview": "TalkCardLivePreview",
+          "caption": "The same card live, which is the state the whole schedule is designed around."
+        },
+        {
+          "componentId": "speaker-card",
+          "preview": "SpeakerCardPreview",
+          "caption": "The speaker card: photo, name, affiliation."
+        },
+        {
+          "componentId": "speaker-card-highlights",
+          "preview": "SpeakerCardWithHighlightsPreview",
+          "caption": "With search highlights applied to the text."
+        },
+        {
+          "componentId": "partner-card",
+          "preview": "PartnerCardPreview",
+          "caption": "The partner (sponsor) card."
+        },
+        {
+          "componentId": "service-event",
+          "preview": "ServiceEventPreview",
+          "caption": "A service event — the non-talk entries the schedule carries."
+        },
+        {
+          "componentId": "service-event-block",
+          "preview": "ServiceEventBlockPreview",
+          "caption": "Several of them as one block."
+        },
+        {
+          "componentId": "service-event-party-live",
+          "preview": "PartyServiceEventLivePreview",
+          "caption": "The party event while it is live."
+        },
+        {
+          "componentId": "now-label",
+          "preview": "NowLabelPreview",
+          "caption": "The “now” label a live item wears."
+        },
+        {
+          "componentId": "card-tag",
+          "preview": "CardTagUnselectedPreview",
+          "caption": "A tag on a card, unselected."
+        },
+        {
+          "componentId": "card-tag-selected",
+          "preview": "CardTagSelectedPreview",
+          "caption": "And selected."
+        }
+      ]
+    },
+    {
+      "name": "Search and filters",
+      "components": [
+        {
+          "componentId": "search-input-empty",
+          "preview": "SearchInputEmptyPreview",
+          "caption": "The search field with nothing typed."
+        },
+        {
+          "componentId": "search-input-text",
+          "preview": "SearchInputWithTextPreview",
+          "caption": "With a query and its clear affordance."
+        },
+        {
+          "componentId": "large-search-bar",
+          "preview": "LargeSearchBarPreview",
+          "caption": "The large-window search bar."
+        },
+        {
+          "componentId": "filters",
+          "preview": "FiltersPreview",
+          "caption": "The filter row as a whole."
+        },
+        {
+          "componentId": "filter-tag",
+          "preview": "FilterTagUnselectedPreview",
+          "caption": "One filter tag, unselected."
+        },
+        {
+          "componentId": "filter-tag-selected",
+          "preview": "FilterTagSelectedPreview",
+          "caption": "And selected."
+        },
+        {
+          "componentId": "switcher",
+          "preview": "SwitcherPreview",
+          "caption": "The segmented switcher."
+        },
+        {
+          "componentId": "switcher-short",
+          "preview": "SwitcherShortPreview",
+          "caption": "Its short form."
+        },
+        {
+          "componentId": "switcher-item",
+          "preview": "SwitcherItemNormalPreview",
+          "caption": "A single switcher item."
+        },
+        {
+          "componentId": "switcher-item-selected",
+          "preview": "SwitcherItemSelectedPreview",
+          "caption": "The selected item."
+        },
+        {
+          "componentId": "large-switcher",
+          "preview": "LargeSwitcherPreview",
+          "caption": "The large switcher, previewed wide."
+        },
+        {
+          "componentId": "large-switcher-item",
+          "preview": "LargeSwitcherItemUnselectedPreview",
+          "caption": "One of its items, unselected."
+        },
+        {
+          "componentId": "large-switcher-item-selected",
+          "preview": "LargeSwitcherItemSelectedPreview",
+          "caption": "And selected."
+        }
+      ]
+    },
+    {
+      "name": "Feedback and state",
+      "components": [
+        {
+          "componentId": "error-minor",
+          "preview": "MinorErrorPreview",
+          "caption": "A minor error — inline, recoverable."
+        },
+        {
+          "componentId": "error-normal",
+          "preview": "NormalErrorIdlePreview",
+          "caption": "The ordinary error state at rest."
+        },
+        {
+          "componentId": "error-normal-interactive",
+          "preview": "NormalErrorInteractivePreview",
+          "caption": "The same error with its retry affordance active."
+        },
+        {
+          "componentId": "error-normal-loading",
+          "preview": "NormalErrorLoadingPreview",
+          "caption": "Retrying."
+        },
+        {
+          "componentId": "error-major",
+          "preview": "MajorErrorPreview",
+          "caption": "The major error that takes the whole screen."
+        },
+        {
+          "componentId": "loading-enabled",
+          "preview": "LoadingEnabledPreview",
+          "caption": "The loading indicator."
+        },
+        {
+          "componentId": "loading-disabled",
+          "preview": "LoadingDisabledPreview",
+          "caption": "And its disabled state."
+        },
+        {
+          "componentId": "feedback-form",
+          "preview": "FeedbackFormPreview",
+          "caption": "The post-talk feedback form."
+        },
+        {
+          "componentId": "tooltip",
+          "preview": "TooltipPreview",
+          "caption": "The tooltip."
+        },
+        {
+          "componentId": "settings-item",
+          "preview": "SettingsItemSimplePreview",
+          "caption": "A settings row."
+        },
+        {
+          "componentId": "settings-item-note",
+          "preview": "SettingsItemWithNotePreview",
+          "caption": "With its explanatory note."
+        },
+        {
+          "componentId": "toggle-on",
+          "preview": "ToggleOnPreview",
+          "caption": "The toggle, on."
+        },
+        {
+          "componentId": "toggle-off",
+          "preview": "ToggleOffPreview",
+          "caption": "And off."
+        }
+      ]
+    },
+    {
+      "name": "Foundations and Kodee",
+      "components": [
+        {
+          "componentId": "text-styles",
+          "preview": "TextStylePreview",
+          "caption": "The type ramp: every text style the app defines."
+        },
+        {
+          "componentId": "icon",
+          "preview": "IconPreview",
+          "caption": "An icon at its default tint."
+        },
+        {
+          "componentId": "icon-tinted",
+          "preview": "TintedIconPreview",
+          "caption": "And tinted."
+        },
+        {
+          "componentId": "divider-horizontal",
+          "preview": "HorizontalDividerPreview",
+          "caption": "The horizontal divider."
+        },
+        {
+          "componentId": "divider-vertical",
+          "preview": "VerticalDividerPreview",
+          "caption": "The vertical one, for the wide layouts."
+        },
+        {
+          "componentId": "kodee-emotion",
+          "preview": "KodeeEmotionPreview",
+          "caption": "Kodee, the Kotlin mascot, across the emotions the app draws it in."
+        },
+        {
+          "componentId": "kodee-icon-small",
+          "preview": "KodeeIconSmallUnselectedPreview",
+          "caption": "The small Kodee icon, unselected."
+        },
+        {
+          "componentId": "kodee-icon-small-selected",
+          "preview": "KodeeIconSmallSelectedPreview",
+          "caption": "Selected."
+        },
+        {
+          "componentId": "kodee-icon-large",
+          "preview": "KodeeIconLargeUnselectedPreview",
+          "caption": "The large one, unselected."
+        },
+        {
+          "componentId": "kodee-icon-large-selected",
+          "preview": "KodeeIconLargeSelectedPreview",
+          "caption": "And selected."
+        },
+        {
+          "componentId": "party-animation",
+          "preview": "PartyAnimationPreview",
+          "caption": "The party animation."
+        },
+        {
+          "componentId": "party-animation-baseline",
+          "preview": "PartyAnimationBaselinePreview",
+          "caption": "Its baseline frame, which is what a still render can show of it."
+        }
+      ]
+    }
+  ]
 }
