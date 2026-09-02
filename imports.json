@@ -28,6 +28,11 @@
       "upstream": "mullvad/mullvadvpn-app"
     },
     {
+      "slug": "msasikanth-twine",
+      "branch": "import/msasikanth-twine",
+      "upstream": "msasikanth/twine"
+    },
+    {
       "slug": "droidkaigi-conference-app-2026",
       "branch": "import/droidkaigi-conference-app-2026",
       "upstream": "DroidKaigi/conference-app-2026"
