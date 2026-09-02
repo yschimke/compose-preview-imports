@@ -17,6 +17,11 @@
       "system": "joreilly-climatetracekmp"
     },
     {
+      "importedFrom": "bitwarden/android",
+      "listed": true,
+      "system": "bitwarden-android"
+    },
+    {
       "importedFrom": "thunderbird/thunderbird-android",
       "listed": true,
       "system": "thunderbird-android"

@@ -18,6 +18,11 @@
       "upstream": "joreilly/ClimateTraceKMP"
     },
     {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
+    },
+    {
       "slug": "thunderbird-android",
       "branch": "import/thunderbird-android",
       "upstream": "thunderbird/thunderbird-android"
