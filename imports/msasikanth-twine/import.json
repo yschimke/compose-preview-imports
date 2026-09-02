@@ -1,0 +1,8 @@
+{
+  "slug": "msasikanth-twine",
+  "upstream": "msasikanth/twine",
+  "ref": "main",
+  "modules": [":shared"],
+  "renderer": "android",
+  "notes": "Twine is Sasikanth Miriyampalli's Compose Multiplatform RSS reader, shipped on Google Play (dev.sasikanth.rss.reader) and the App Store, and one of the few third-party Compose apps whose visual design is the point of it — dynamic ambient theming taken from the feed's own artwork. Reading the checkout: :shared applies kotlin-multiplatform, com.android.library and the Compose plugins, and its 22 preview-bearing files live in shared/src/commonMain importing androidx.compose.ui.tooling.preview.Preview — the multiplatform alias, not the Android-only annotation. They therefore compile into the module's ANDROID variant and render on the Robolectric lane; :shared declares android and iOS targets and no jvm() one, so the desktop lane is not available to it and renderer stays android. jvmToolchain(21) matches the runner, so no javaVersion. Licence: GPL-3.0 — see the note on the pull request about what the delivery branch now carries."
+}
