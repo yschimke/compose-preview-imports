@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 294 231" width="294" height="231" role="img" aria-label="status-badge layout wireframe">
+  <title>status-badge — layout wireframe (slots + tokens)</title>
+  <rect width="294" height="231" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="294" height="231" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="294" height="231" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="294" height="231" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M31.5,0 H105.5 A31.5,31.5 0 0 1 137,31.5 V31.5 A31.5,31.5 0 0 1 105.5,63 H31.5 A31.5,31.5 0 0 1 0,31.5 V31.5 A31.5,31.5 0 0 1 31.5,0 Z" fill="#F0FDF4" fill-opacity="1" stroke="#B9F8CF" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B9F8CF">#FFF0FDF4</text>
+  </g>
+  <g>
+    <rect x="21" y="11" width="95" height="41" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M31.5,84 H152.5 A31.5,31.5 0 0 1 184,115.5 V115.5 A31.5,31.5 0 0 1 152.5,147 H31.5 A31.5,31.5 0 0 1 0,115.5 V115.5 A31.5,31.5 0 0 1 31.5,84 Z" fill="#FEF2F2" fill-opacity="1" stroke="#FFC9C9" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="96" font-family="system-ui, sans-serif" font-size="9" fill="#FFC9C9">#FFFEF2F2</text>
+  </g>
+  <g>
+    <rect x="21" y="95" width="142" height="41" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M31.5,168 H262.5 A31.5,31.5 0 0 1 294,199.5 V199.5 A31.5,31.5 0 0 1 262.5,231 H31.5 A31.5,31.5 0 0 1 0,199.5 V199.5 A31.5,31.5 0 0 1 31.5,168 Z" fill="#FFF8F1" fill-opacity="1" stroke="#FCD9BD" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="180" font-family="system-ui, sans-serif" font-size="9" fill="#FCD9BD">#FFFFF8F1</text>
+  </g>
+  <g>
+    <rect x="21" y="179" width="252" height="41" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

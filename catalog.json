@@ -1,0 +1,5719 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "bitwarden-android",
+  "title": "Bitwarden",
+  "components": [
+    {
+      "componentId": "filled-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/filled-button/ideal__default.png",
+          "state": "default",
+          "width": 283,
+          "height": 504,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/filled-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenFilledButtonKt.BitwardenFilledButton_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 126,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 252,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 378,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The primary call to action — filled, full width, the button every Bitwarden screen leads with.",
+      "wireframe": "wireframes/filled-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 129,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenFilledButton_preview",
+      "parameters": [
+        {
+          "name": "buttonData",
+          "type": "BitwardenButtonData"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?",
+          "hasDefault": true
+        },
+        {
+          "name": "cardInsets",
+          "type": "PaddingValues",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "outlined-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/outlined-button/ideal__default.png",
+          "state": "default",
+          "width": 283,
+          "height": 504,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/outlined-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenOutlinedButtonKt.BitwardenOutlinedButton_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 126,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 252,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 378,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The secondary action beside it: same shape and metrics, outline instead of fill.",
+      "wireframe": "wireframes/outlined-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenOutlinedButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 138,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenOutlinedButton_preview",
+      "parameters": [
+        {
+          "name": "buttonData",
+          "type": "BitwardenButtonData"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "BitwardenOutlinedButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?",
+          "hasDefault": true
+        },
+        {
+          "name": "cardInsets",
+          "type": "PaddingValues",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "filled-error-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/filled-error-button/ideal__default.png",
+          "state": "default",
+          "width": 283,
+          "height": 504,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/filled-error-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenFilledErrorButtonKt.BitwardenErrorButton_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-error-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 126,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 252,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 378,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The destructive variant: the filled button in the error role, for delete and purge.",
+      "wireframe": "wireframes/filled-error-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledErrorButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 42,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenErrorButton_preview",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Int"
+        }
+      ]
+    },
+    {
+      "componentId": "outlined-error-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/outlined-error-button/ideal__default.png",
+          "state": "default",
+          "width": 283,
+          "height": 504,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/outlined-error-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenOutlinedErrorButtonKt.BBitwardenOutlinedErrorButton_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-error-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 126,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 252,
+              "width": 220,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Label\"",
+          "detail": {
+            "role": "button",
+            "label": "Label",
+            "bounds": {
+              "x": 0,
+              "y": 378,
+              "width": 283,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 126,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 252,
+            "width": 220,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 378,
+            "width": 283,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Label",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "Destructive, but not the screen's primary action — the outlined button in the error role.",
+      "wireframe": "wireframes/outlined-error-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenOutlinedErrorButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 47,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BBitwardenOutlinedErrorButton_preview",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Int"
+        }
+      ]
+    },
+    {
+      "componentId": "text-selection-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/text-selection-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 179,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/text-selection-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenTextSelectionButtonKt.BitwardenTextSelectionButton_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"No Folder. Folder\"",
+          "detail": {
+            "role": "button",
+            "label": "No Folder. Folder",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 1050,
+              "height": 179
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 179
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 179
+          },
+          "role": "Button",
+          "label": "No Folder. Folder",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Buttons",
+      "caption": "A button that reads as a field: a label with the current selection, used where a value opens a picker.",
+      "wireframe": "wireframes/text-selection-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTextSelectionButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 210,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTextSelectionButton_preview"
+    },
+    {
+      "componentId": "icon-button-filled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/icon-button-filled/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/icon-button-filled__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenFilledIconButtonKt.BitwardenFilledIconButton_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/icon-button-filled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sample Icon\"",
+          "detail": {
+            "role": "button",
+            "label": "Sample Icon",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sample Icon",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "Icon-only, filled — the emphasised icon action.",
+      "wireframe": "wireframes/icon-button-filled.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledIconButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 50,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenFilledIconButton_preview"
+    },
+    {
+      "componentId": "icon-button-tonal",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/icon-button-tonal/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/icon-button-tonal__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenTonalIconButtonKt.BitwardenTonalIconButton_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/icon-button-tonal__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sample Icon\"",
+          "detail": {
+            "role": "button",
+            "label": "Sample Icon",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sample Icon",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "Icon-only, tonal container: the middle weight between filled and standard.",
+      "wireframe": "wireframes/icon-button-tonal.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTonalIconButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 50,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTonalIconButton_preview"
+    },
+    {
+      "componentId": "icon-button-standard",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/icon-button-standard/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/icon-button-standard__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.button.BitwardenStandardIconButtonKt.BitwardenStandardIconButton_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/icon-button-standard__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sample Icon\"",
+          "detail": {
+            "role": "button",
+            "label": "Sample Icon",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sample Icon",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Buttons",
+      "caption": "Icon-only with no container, for dense rows and app bars.",
+      "wireframe": "wireframes/icon-button-standard.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenStandardIconButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 98,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenStandardIconButton_preview"
+    },
+    {
+      "componentId": "text-field",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/text-field/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 612,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/text-field__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.field.BitwardenTextFieldKt.BitwardenTextField_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 1050,
+            "height": 290
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 322,
+            "width": 1050,
+            "height": 290
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Fields",
+      "caption": "The text field with its label, supporting text and trailing action — the base every Bitwarden input is built from.",
+      "wireframe": "wireframes/text-field.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenTextField.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 446,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTextField_preview"
+    },
+    {
+      "componentId": "password-field",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/password-field/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 843,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/password-field__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.field.BitwardenPasswordFieldKt.BitwardenPasswordField_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Show\"",
+          "detail": {
+            "role": "button",
+            "label": "Show",
+            "bounds": {
+              "x": 913,
+              "y": 27,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 27,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Hide\"",
+          "detail": {
+            "role": "button",
+            "label": "Hide",
+            "bounds": {
+              "x": 913,
+              "y": 206,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 206,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Show\"",
+          "detail": {
+            "role": "button",
+            "label": "Show",
+            "bounds": {
+              "x": 913,
+              "y": 385,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 385,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Hide\"",
+          "detail": {
+            "role": "button",
+            "label": "Hide",
+            "bounds": {
+              "x": 913,
+              "y": 564,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 564,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 1050,
+            "height": 163
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 27,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Show",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 195,
+            "width": 1050,
+            "height": 163
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 206,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Hide",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 374,
+            "width": 1050,
+            "height": 163
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 385,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Show",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 553,
+            "width": 1050,
+            "height": 290
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 564,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Hide",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Fields",
+      "caption": "The same field in its password shape: obscured value with the reveal toggle.",
+      "wireframe": "wireframes/password-field.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenPasswordField.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 499,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenPasswordField_preview"
+    },
+    {
+      "componentId": "hidden-password-field",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/hidden-password-field/ideal__default.png",
+          "state": "default",
+          "width": 735,
+          "height": 179,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/hidden-password-field__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.field.BitwardenHiddenPasswordFieldKt.BitwardenHiddenPasswordField_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 16,
+            "width": 735,
+            "height": 147
+          },
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 6
+          }
+        }
+      ],
+      "group": "Fields",
+      "caption": "A password shown as fixed dots with no reveal — how a vault item renders a secret it will not display inline.",
+      "wireframe": "wireframes/hidden-password-field.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenHiddenPasswordField.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 59,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenHiddenPasswordField_preview"
+    },
+    {
+      "componentId": "multi-select-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/multi-select-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 179,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/multi-select-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.dropdown.BitwardenMultiSelectButtonKt.BitwardenMultiSelectButton_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 179
+          },
+          "role": "DropdownList",
+          "label": ". Label",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Fields",
+      "caption": "The dropdown field: current choice, label and chevron, opening a selection dialog.",
+      "wireframe": "wireframes/multi-select-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenMultiSelectButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 237,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenMultiSelectButton_preview"
+    },
+    {
+      "componentId": "date-picker-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/date-picker-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 179,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/date-picker-button__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.dropdown.BitwardenDatePickerButtonKt.BitwardenDatePickerButton_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"June 15, 2026. Date of birth\"",
+          "detail": {
+            "role": "button",
+            "label": "June 15, 2026. Date of birth",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 1050,
+              "height": 179
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 179
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Clear\"",
+          "detail": {
+            "role": "button",
+            "label": "Clear",
+            "bounds": {
+              "x": 787,
+              "y": 27,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 787,
+            "y": 27,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 179
+          },
+          "role": "Button",
+          "label": "June 15, 2026. Date of birth",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 787,
+            "y": 27,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Clear",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Fields",
+      "caption": "The date field's closed state, styled as a field rather than a button.",
+      "wireframe": "wireframes/date-picker-button.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenDatePickerButton.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 123,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenDatePickerButton_preview"
+    },
+    {
+      "componentId": "slider",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/slider/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 211,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/slider__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.slider.BitwardenSliderKt.BitwardenSlider_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 1008,
+            "height": 147
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 157,
+            "y": 80,
+            "width": 877,
+            "height": 53
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 645,
+            "y": 80,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        }
+      ],
+      "group": "Fields",
+      "caption": "The labelled slider with its value readout — the password-generator length control.",
+      "wireframe": "wireframes/slider.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/slider/BitwardenSlider.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 156,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenSlider_preview"
+    },
+    {
+      "componentId": "switch",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/switch/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1219,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/switch__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.toggle.BitwardenSwitchKt.BitwardenSwitch_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/switch__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"content description\"",
+          "detail": {
+            "role": "button",
+            "label": "content description",
+            "bounds": {
+              "x": 160,
+              "y": 475,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 160,
+            "y": 475,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"content description\"",
+          "detail": {
+            "role": "button",
+            "label": "content description",
+            "bounds": {
+              "x": 913,
+              "y": 475,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 475,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"content description, External link\"",
+          "detail": {
+            "role": "button",
+            "label": "content description, External link",
+            "bounds": {
+              "x": 160,
+              "y": 776,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 160,
+            "y": 776,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"content description\"",
+          "detail": {
+            "role": "button",
+            "label": "content description",
+            "bounds": {
+              "x": 913,
+              "y": 1077,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 1077,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 301
+          },
+          "label": "Label",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 871,
+            "y": 37,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "SwitchToggle",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 934,
+            "y": 48,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 301,
+            "width": 1050,
+            "height": 158
+          },
+          "label": "Label",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 871,
+            "y": 338,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "SwitchToggle",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 892,
+            "y": 359,
+            "width": 42,
+            "height": 42
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 459,
+            "width": 1050,
+            "height": 301
+          },
+          "label": "Label",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 475,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "content description",
+          "testTag": "SwitchTooltip",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 776,
+            "y": 496,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "SwitchToggle",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 839,
+            "y": 507,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 475,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "content description",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 760,
+            "width": 1050,
+            "height": 301
+          },
+          "label": "Label",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 160,
+            "y": 776,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "content description, External link",
+          "testTag": "SwitchTooltip",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 871,
+            "y": 797,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "SwitchToggle",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 934,
+            "y": 808,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1061,
+            "width": 1050,
+            "height": 158
+          },
+          "label": "Label",
+          "padding": {
+            "start": 0,
+            "top": 6,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 776,
+            "y": 1098,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "SwitchToggle",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 797,
+            "y": 1119,
+            "width": 42,
+            "height": 42
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 1077,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "content description",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Fields",
+      "caption": "A labelled switch row, the toggle used throughout settings.",
+      "wireframe": "wireframes/switch.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/toggle/BitwardenSwitch.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 382,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenSwitch_preview"
+    },
+    {
+      "componentId": "action-card",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/action-card/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 294,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCard_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/action-card/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 294,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card__ideal__default__dark",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCard_preview_ui32",
+          "previewParams": {
+            "uiMode": 32
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 924,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 924,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Action\"",
+          "detail": {
+            "role": "button",
+            "label": "Action",
+            "bounds": {
+              "x": 42,
+              "y": 126,
+              "width": 966,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 126,
+            "width": 966,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 294
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 924,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 126,
+            "width": 966,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Action",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The action card at its simplest: title, primary action, dismiss.",
+      "wireframe": "wireframes/action-card.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 191,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenActionCard_preview"
+    },
+    {
+      "componentId": "action-card-subtitle",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/action-card-subtitle/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 492,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-subtitle__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCardWithSubtitle_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-subtitle__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/action-card-subtitle/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 492,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-subtitle__ideal__default__dark",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCardWithSubtitle_preview_ui32",
+          "previewParams": {
+            "uiMode": 32
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-subtitle__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 924,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 924,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Action\"",
+          "detail": {
+            "role": "button",
+            "label": "Action",
+            "bounds": {
+              "x": 42,
+              "y": 198,
+              "width": 966,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 198,
+            "width": 966,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Learn More\"",
+          "detail": {
+            "role": "button",
+            "label": "Learn More",
+            "bounds": {
+              "x": 42,
+              "y": 324,
+              "width": 966,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 324,
+            "width": 966,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 492
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 42,
+            "width": 36,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 6.86
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 42,
+            "width": 36,
+            "height": 52
+          },
+          "label": "1 notification",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 924,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 198,
+            "width": 966,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Action",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 324,
+            "width": 966,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Learn More",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The same card carrying a subtitle — the shape used for onboarding and security prompts.",
+      "wireframe": "wireframes/action-card-subtitle.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 228,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenActionCardWithSubtitle_preview"
+    },
+    {
+      "componentId": "action-card-subtitle-no-dismiss",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/action-card-subtitle-no-dismiss/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 265,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-subtitle-no-dismiss__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCardWithSubtitleNoDismiss_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-subtitle-no-dismiss__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/action-card-subtitle-no-dismiss/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 265,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-subtitle-no-dismiss__ideal__default__dark",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCardWithSubtitleNoDismiss_preview_ui32",
+          "previewParams": {
+            "uiMode": 32
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-subtitle-no-dismiss__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Action\"",
+          "detail": {
+            "role": "button",
+            "label": "Action",
+            "bounds": {
+              "x": 42,
+              "y": 97,
+              "width": 966,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 97,
+            "width": 966,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 265
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 97,
+            "width": 966,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Action",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "Subtitled, but with no dismiss affordance: an action the user is not meant to wave away.",
+      "wireframe": "wireframes/action-card-subtitle-no-dismiss.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 176,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenActionCardWithSubtitleNoDismiss_preview"
+    },
+    {
+      "componentId": "action-card-leading",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/action-card-leading/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 294,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-leading__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCardWithLeadingContent_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-leading__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/action-card-leading/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 294,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-leading__ideal__default__dark",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardKt.BitwardenActionCardWithLeadingContent_preview_ui32",
+          "previewParams": {
+            "uiMode": 32
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-leading__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 924,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 924,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Action\"",
+          "detail": {
+            "role": "button",
+            "label": "Action",
+            "bounds": {
+              "x": 42,
+              "y": 126,
+              "width": 966,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 126,
+            "width": 966,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 294
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 42,
+            "width": 36,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 6.86
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 42,
+            "width": 36,
+            "height": 52
+          },
+          "label": "1 notification",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 924,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 126,
+            "width": 966,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Action",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "With leading content — the variant that carries an icon or badge beside the text.",
+      "wireframe": "wireframes/action-card-leading.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 207,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenActionCardWithLeadingContent_preview"
+    },
+    {
+      "componentId": "action-card-small",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/action-card-small/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 208,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-small__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardSmallKt.ActionCardSmall_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-small__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 208
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The compact action card, for stacking several in a list.",
+      "wireframe": "wireframes/action-card-small.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 93,
+      "sourceDirectory": "ui",
+      "sourceFunction": "ActionCardSmall_preview"
+    },
+    {
+      "componentId": "action-card-small-trailing",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/action-card-small-trailing/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 208,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/action-card-small-trailing__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenActionCardSmallKt.ActionCardSmallWithTrailingIcon_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-small-trailing__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 208
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The compact card with a trailing icon, which is how it signals navigation.",
+      "wireframe": "wireframes/action-card-small-trailing.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 106,
+      "sourceDirectory": "ui",
+      "sourceFunction": "ActionCardSmallWithTrailingIcon_preview"
+    },
+    {
+      "componentId": "info-callout",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/info-callout/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 132,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/info-callout__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.card.BitwardenInfoCalloutCardKt.BitwardenInfoCallout_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/info-callout__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 48
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "cornerRadius": 8
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The informational callout card — the non-blocking explanation shown above a form.",
+      "wireframe": "wireframes/info-callout.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenInfoCalloutCard.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 63,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenInfoCallout_preview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "startIcon",
+          "type": "IconData?",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "content-block",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-block/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 684,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/content-block__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.content.BitwardenContentBlockKt.BitwardenContentBlock_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/content-block__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Cards and content",
+      "caption": "A headed block of body content, the unit the help and settings screens are composed from.",
+      "wireframe": "wireframes/content-block.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenContentBlock.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 119,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenContentBlock_preview"
+    },
+    {
+      "componentId": "empty-content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/empty-content/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/empty-content__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.content.BitwardenEmptyContentKt.BitwardenEmptyContent_preview_Bitwarden_empty_content",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/empty-content__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Primary button\"",
+          "detail": {
+            "role": "button",
+            "label": "Primary button",
+            "bounds": {
+              "x": 84,
+              "y": 1186,
+              "width": 882,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 84,
+            "y": 1186,
+            "width": 882,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Secondary button\"",
+          "detail": {
+            "role": "button",
+            "label": "Secondary button",
+            "bounds": {
+              "x": 84,
+              "y": 1333,
+              "width": 882,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 84,
+            "y": 1333,
+            "width": 882,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1186,
+            "width": 882,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Primary button",
+          "testTag": "EmptyContentPositiveButton",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1333,
+            "width": 882,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Secondary button",
+          "testTag": "EmptyContentNegativeButton",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The empty state: illustration, message and the action that resolves it.",
+      "wireframe": "wireframes/empty-content.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenEmptyContent.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 128,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenEmptyContent_preview"
+    },
+    {
+      "componentId": "loading-content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/loading-content/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/loading-content__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.content.BitwardenLoadingContentKt.BitwardenLoadingContent_preview_Bitwarden_loading_content",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Cards and content",
+      "caption": "The full-screen loading state, drawn in place of content rather than over it.",
+      "wireframe": "wireframes/loading-content.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenLoadingContent.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 56,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenLoadingContent_preview"
+    },
+    {
+      "componentId": "text-row-tooltip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/text-row-tooltip/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 238,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/text-row-tooltip__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.row.BitwardenTextRowKt.BitwardenTextRowWithTooltipAndContent_Preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-tooltip__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Tooltip Description\"",
+          "detail": {
+            "role": "button",
+            "label": "Tooltip Description",
+            "bounds": {
+              "x": 281,
+              "y": 32,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 281,
+            "y": 32,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 238
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 281,
+            "y": 32,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Tooltip Description",
+          "testTag": "TextRowTooltip",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Rows and lists",
+      "caption": "A settings row carrying a tooltip and trailing content.",
+      "wireframe": "wireframes/text-row-tooltip.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 145,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTextRowWithTooltipAndContent_Preview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "description",
+          "type": "AnnotatedString?",
+          "hasDefault": true
+        },
+        {
+          "name": "textTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "clickable",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isExternalLink",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "withDivider",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "text-row-disabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/text-row-disabled/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 165,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/text-row-disabled__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.row.BitwardenTextRowKt.BitwardenTextRowWithDividerDisabled_Preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-disabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 165
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        }
+      ],
+      "group": "Rows and lists",
+      "caption": "The same row disabled, with its divider — what an unavailable setting looks like.",
+      "wireframe": "wireframes/text-row-disabled.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 164,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTextRowWithDividerDisabled_Preview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "description",
+          "type": "AnnotatedString?",
+          "hasDefault": true
+        },
+        {
+          "name": "textTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "clickable",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isExternalLink",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "withDivider",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "push-row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/push-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 474,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/push-row__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.row.BitwardenPushRowKt.BitwardenPushRow_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/push-row__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 158
+          },
+          "padding": {
+            "start": 16,
+            "top": 6,
+            "end": 20,
+            "bottom": 6
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 158,
+            "width": 1050,
+            "height": 158
+          },
+          "padding": {
+            "start": 12,
+            "top": 6,
+            "end": 20,
+            "bottom": 6
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 316,
+            "width": 1050,
+            "height": 158
+          },
+          "padding": {
+            "start": 16,
+            "top": 6,
+            "end": 20,
+            "bottom": 6
+          }
+        },
+        {
+          "bounds": {
+            "x": 868,
+            "y": 369,
+            "width": 44,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 8.38
+        },
+        {
+          "bounds": {
+            "x": 868,
+            "y": 369,
+            "width": 44,
+            "height": 52
+          },
+          "label": "3 notifications",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        }
+      ],
+      "group": "Rows and lists",
+      "caption": "The navigation row: label and chevron, pushing a new screen.",
+      "wireframe": "wireframes/push-row.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenPushRow.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 129,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenPushRow_preview"
+    },
+    {
+      "componentId": "external-link-row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/external-link-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 158,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/external-link-row__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.row.BitwardenExternalLinkRowKt.BitwardenExternalLinkRow_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/external-link-row__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 158
+          },
+          "padding": {
+            "start": 16,
+            "top": 12,
+            "end": 16,
+            "bottom": 12
+          }
+        }
+      ],
+      "group": "Rows and lists",
+      "caption": "The row that leaves the app, marked with the external-link icon rather than a chevron.",
+      "wireframe": "wireframes/external-link-row.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenExternalLinkRow.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 87,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenExternalLinkRow_preview"
+    },
+    {
+      "componentId": "row-of-icon-buttons",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/row-of-icon-buttons/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 63,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/row-of-icon-buttons__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.row.BitwardenRowOfActionsKt.BitwardenRowOfIconButtons_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/row-of-icon-buttons__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Rows and lists",
+      "caption": "The trailing cluster of icon actions a vault item row carries.",
+      "wireframe": "wireframes/row-of-icon-buttons.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenRowOfActions.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 40,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenRowOfIconButtons_preview"
+    },
+    {
+      "componentId": "list-header",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-header/ideal__default.png",
+          "state": "default",
+          "width": 300,
+          "height": 96,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/list-header__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.header.BitwardenListHeaderTextKt.BitwardenListHeaderText_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/list-header__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Rows and lists",
+      "caption": "The section header that separates groups within a list.",
+      "wireframe": "wireframes/list-header.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/header/BitwardenListHeaderText.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 36,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenListHeaderText_preview"
+    },
+    {
+      "componentId": "top-app-bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/top-app-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/top-app-bar__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.appbar.BitwardenTopAppBarKt.BitwardenTopAppBar_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 11,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 11,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "testTag": "CloseButton",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 148,
+            "y": 26,
+            "width": 104,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "App bars",
+      "caption": "The standard top app bar: navigation icon, title, actions.",
+      "wireframe": "wireframes/top-app-bar.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 284,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTopAppBar_preview"
+    },
+    {
+      "componentId": "top-app-bar-overflow",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/top-app-bar-overflow/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/top-app-bar-overflow__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.appbar.BitwardenTopAppBarKt.BitwardenTopAppBarOverflow_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 11,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 11,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "testTag": "CloseButton",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 148,
+            "y": 26,
+            "width": 833,
+            "height": 74
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "App bars",
+      "caption": "The same bar with an overflow menu open.",
+      "wireframe": "wireframes/top-app-bar-overflow.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 304,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTopAppBarOverflow_preview"
+    },
+    {
+      "componentId": "top-app-bar-overflow-cutoff",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/top-app-bar-overflow-cutoff/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 316,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/top-app-bar-overflow-cutoff__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.appbar.BitwardenTopAppBarKt.BitwardenTopAppBarOverflowCutoff_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 11,
+              "y": 11,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "testTag": "CloseButton",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 148,
+            "y": 0,
+            "width": 880,
+            "height": 148
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 148,
+            "width": 1006,
+            "height": 148
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "App bars",
+      "caption": "A long title against the overflow menu — the truncation case, previewed on purpose.",
+      "wireframe": "wireframes/top-app-bar-overflow-cutoff.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 324,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTopAppBarOverflowCutoff_preview"
+    },
+    {
+      "componentId": "medium-top-app-bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/medium-top-app-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/medium-top-app-bar__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.appbar.BitwardenMediumTopAppBarKt.BitwardenMediumTopAppBar_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 913,
+              "y": 10,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 913,
+            "y": 10,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 43,
+            "y": 25,
+            "width": 447,
+            "height": 96
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 10,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "App bars",
+      "caption": "The medium (two-line) app bar used by the screens with a large title.",
+      "wireframe": "wireframes/medium-top-app-bar.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenMediumTopAppBar.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 108,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenMediumTopAppBar_preview"
+    },
+    {
+      "componentId": "search-action",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/search-action/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/search-action__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.appbar.action.BitwardenSearchActionItemKt.BitwardenSearchActionItem_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/search-action__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Search\"",
+          "detail": {
+            "role": "button",
+            "label": "Search",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Search",
+          "testTag": "SearchButton",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "App bars",
+      "caption": "The search action as it sits in an app bar.",
+      "wireframe": "wireframes/search-action.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenSearchActionItem.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 39,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenSearchActionItem_preview",
+      "parameters": [
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "isDisplayed",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        }
+      ]
+    },
+    {
+      "componentId": "overflow-action",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/overflow-action/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/overflow-action__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.appbar.action.BitwardenOverflowActionItemKt.BitwardenOverflowActionItem_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/overflow-action__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"More options\"",
+          "detail": {
+            "role": "button",
+            "label": "More options",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "More options",
+          "testTag": "HeaderBarOptionsButton",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "App bars",
+      "caption": "The overflow action item and its menu.",
+      "wireframe": "wireframes/overflow-action.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenOverflowActionItem.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 140,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenOverflowActionItem_preview"
+    },
+    {
+      "componentId": "account-action-item",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/account-action-item/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/account-action-item__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.account.BitwardenAccountActionItemKt.BitwardenAccountActionItem_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/account-action-item__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 11,
+              "y": 11,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "testTag": "CurrentActiveAccount",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Accounts",
+      "caption": "The account avatar that opens the switcher, initials on its colour.",
+      "wireframe": "wireframes/account-action-item.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountActionItem.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 68,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenAccountActionItem_preview"
+    },
+    {
+      "componentId": "account-switcher",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/account-switcher/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/account-switcher__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.account.BitwardenAccountSwitcherKt.BitwardenAccountSwitcher_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 432
+          },
+          "testTag": "AccountListView",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 24
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 158
+          },
+          "testTag": "AccountCell",
+          "padding": {
+            "start": 0,
+            "top": 8,
+            "end": 0,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 159,
+            "width": 1050,
+            "height": 147
+          },
+          "testTag": "AddAccountButton",
+          "padding": {
+            "start": 0,
+            "top": 8,
+            "end": 0,
+            "bottom": 8
+          }
+        }
+      ],
+      "group": "Accounts",
+      "caption": "The expanded account switcher: current account, the others, and the add-account row.",
+      "wireframe": "wireframes/account-switcher.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountSwitcher.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 451,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenAccountSwitcher_preview",
+      "parameters": [
+        {
+          "name": "isVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "accountSummaries",
+          "type": "ImmutableList<AccountSummary>"
+        },
+        {
+          "name": "onSwitchAccountClick",
+          "type": "(AccountSummary) -> Unit"
+        },
+        {
+          "name": "onLockAccountClick",
+          "type": "(AccountSummary) -> Unit"
+        },
+        {
+          "name": "onLogoutAccountClick",
+          "type": "(AccountSummary) -> Unit"
+        },
+        {
+          "name": "onAddAccountClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onDismissRequest",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "topAppBarScrollBehavior",
+          "type": "TopAppBarScrollBehavior"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "isAddAccountAvailable",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "placeholder-account-light",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/placeholder-account-light/ideal__default__light.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/placeholder-account-light__ideal__default__light",
+          "previewId": "com.bitwarden.ui.platform.components.account.BitwardenPlaceholderAccountItemKt.BitwardenPlaceholderAccountActionItem_preview_light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/placeholder-account-light__ideal__default__light.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "testTag": "CurrentActiveAccount",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Accounts",
+      "caption": "The placeholder avatar shown before an account loads — light.",
+      "wireframe": "wireframes/placeholder-account-light.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 48,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenPlaceholderAccountActionItem_preview_light"
+    },
+    {
+      "componentId": "placeholder-account-dark",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/placeholder-account-dark/ideal__default__dark.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/placeholder-account-dark__ideal__default__dark",
+          "previewId": "com.bitwarden.ui.platform.components.account.BitwardenPlaceholderAccountItemKt.BitwardenPlaceholderAccountActionItem_preview_dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/placeholder-account-dark__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "testTag": "CurrentActiveAccount",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Accounts",
+      "caption": "The same placeholder in dark, previewed separately upstream rather than through a multipreview.",
+      "wireframe": "wireframes/placeholder-account-dark.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 58,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenPlaceholderAccountActionItem_preview_dark"
+    },
+    {
+      "componentId": "loading-dialog",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/loading-dialog/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/loading-dialog__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.dialog.BitwardenLoadingDialogKt.BitwardenLoadingDialog_preview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Dialogs and feedback",
+      "caption": "The blocking loading dialog, for work the user must wait on.",
+      "wireframe": "wireframes/loading-dialog.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenLoadingDialog.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 62,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenLoadingDialog_preview"
+    },
+    {
+      "componentId": "date-picker-dialog",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/date-picker-dialog/ideal__default.png",
+          "state": "default",
+          "width": 945,
+          "height": 1491,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/date-picker-dialog__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.dialog.BitwardenDatePickerDialogKt.BitwardenDatePickerDialog_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/date-picker-dialog__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 798,
+              "y": 165,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 798,
+            "y": 165,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 32,
+              "y": 337,
+              "width": 319,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 337,
+            "width": 319,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 672,
+              "y": 337,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 672,
+            "y": 337,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 798,
+              "y": 337,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 798,
+            "y": 337,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Friday, May 1, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Friday, May 1, 2026",
+            "bounds": {
+              "x": 662,
+              "y": 588,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 662,
+            "y": 588,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Saturday, May 2, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Saturday, May 2, 2026",
+            "bounds": {
+              "x": 788,
+              "y": 588,
+              "width": 125,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 588,
+            "width": 125,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sunday, May 3, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Sunday, May 3, 2026",
+            "bounds": {
+              "x": 32,
+              "y": 714,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Monday, May 4, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Monday, May 4, 2026",
+            "bounds": {
+              "x": 158,
+              "y": 714,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 158,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Tuesday, May 5, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Tuesday, May 5, 2026",
+            "bounds": {
+              "x": 284,
+              "y": 714,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 284,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Wednesday, May 6, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Wednesday, May 6, 2026",
+            "bounds": {
+              "x": 410,
+              "y": 714,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 410,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Thursday, May 7, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Thursday, May 7, 2026",
+            "bounds": {
+              "x": 536,
+              "y": 714,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 536,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Friday, May 8, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Friday, May 8, 2026",
+            "bounds": {
+              "x": 662,
+              "y": 714,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 662,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Saturday, May 9, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Saturday, May 9, 2026",
+            "bounds": {
+              "x": 788,
+              "y": 714,
+              "width": 125,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 714,
+            "width": 125,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sunday, May 10, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Sunday, May 10, 2026",
+            "bounds": {
+              "x": 32,
+              "y": 840,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Monday, May 11, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Monday, May 11, 2026",
+            "bounds": {
+              "x": 158,
+              "y": 840,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 158,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Tuesday, May 12, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Tuesday, May 12, 2026",
+            "bounds": {
+              "x": 284,
+              "y": 840,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 284,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Wednesday, May 13, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Wednesday, May 13, 2026",
+            "bounds": {
+              "x": 410,
+              "y": 840,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 410,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Thursday, May 14, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Thursday, May 14, 2026",
+            "bounds": {
+              "x": 536,
+              "y": 840,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 536,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Friday, May 15, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Friday, May 15, 2026",
+            "bounds": {
+              "x": 662,
+              "y": 840,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 662,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Saturday, May 16, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Saturday, May 16, 2026",
+            "bounds": {
+              "x": 788,
+              "y": 840,
+              "width": 125,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 840,
+            "width": 125,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sunday, May 17, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Sunday, May 17, 2026",
+            "bounds": {
+              "x": 32,
+              "y": 966,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Monday, May 18, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Monday, May 18, 2026",
+            "bounds": {
+              "x": 158,
+              "y": 966,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 158,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Tuesday, May 19, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Tuesday, May 19, 2026",
+            "bounds": {
+              "x": 284,
+              "y": 966,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 284,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Wednesday, May 20, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Wednesday, May 20, 2026",
+            "bounds": {
+              "x": 410,
+              "y": 966,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 410,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Thursday, May 21, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Thursday, May 21, 2026",
+            "bounds": {
+              "x": 536,
+              "y": 966,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 536,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Friday, May 22, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Friday, May 22, 2026",
+            "bounds": {
+              "x": 662,
+              "y": 966,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 662,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Saturday, May 23, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Saturday, May 23, 2026",
+            "bounds": {
+              "x": 788,
+              "y": 966,
+              "width": 125,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 966,
+            "width": 125,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sunday, May 24, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Sunday, May 24, 2026",
+            "bounds": {
+              "x": 32,
+              "y": 1092,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Monday, May 25, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Monday, May 25, 2026",
+            "bounds": {
+              "x": 158,
+              "y": 1092,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 158,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Tuesday, May 26, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Tuesday, May 26, 2026",
+            "bounds": {
+              "x": 284,
+              "y": 1092,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 284,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Wednesday, May 27, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Wednesday, May 27, 2026",
+            "bounds": {
+              "x": 410,
+              "y": 1092,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 410,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Thursday, May 28, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Thursday, May 28, 2026",
+            "bounds": {
+              "x": 536,
+              "y": 1092,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 536,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Friday, May 29, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Friday, May 29, 2026",
+            "bounds": {
+              "x": 662,
+              "y": 1092,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 662,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Saturday, May 30, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Saturday, May 30, 2026",
+            "bounds": {
+              "x": 788,
+              "y": 1092,
+              "width": 125,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 1092,
+            "width": 125,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Sunday, May 31, 2026\"",
+          "detail": {
+            "role": "button",
+            "label": "Sunday, May 31, 2026",
+            "bounds": {
+              "x": 32,
+              "y": 1218,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 1218,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Cancel\"",
+          "detail": {
+            "role": "button",
+            "label": "Cancel",
+            "bounds": {
+              "x": 566,
+              "y": 1344,
+              "width": 184,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 566,
+            "y": 1344,
+            "width": 184,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Okay\"",
+          "detail": {
+            "role": "button",
+            "label": "Okay",
+            "bounds": {
+              "x": 750,
+              "y": 1344,
+              "width": 153,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 750,
+            "y": 1344,
+            "width": 153,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 945,
+            "height": 1491
+          },
+          "cornerRadius": 28
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 42,
+            "width": 196,
+            "height": 53
+          },
+          "label": "Select date",
+          "padding": {
+            "start": 24,
+            "top": 16,
+            "end": 12,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 163,
+            "width": 486,
+            "height": 109
+          },
+          "label": "Current selection: Saturday, May 2, 2026",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 12,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 798,
+            "y": 165,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 12,
+            "bottom": 12
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 337,
+            "width": 319,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 672,
+            "y": 337,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 798,
+            "y": 337,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 662,
+            "y": 588,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Friday, May 1, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 788,
+            "y": 588,
+            "width": 125,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Saturday, May 2, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sunday, May 3, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 158,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Monday, May 4, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 284,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Tuesday, May 5, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 410,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Wednesday, May 6, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 536,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Thursday, May 7, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 662,
+            "y": 714,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Friday, May 8, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 788,
+            "y": 714,
+            "width": 125,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Saturday, May 9, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sunday, May 10, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 158,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Monday, May 11, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 284,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Tuesday, May 12, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 410,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Wednesday, May 13, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 536,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Thursday, May 14, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 662,
+            "y": 840,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Friday, May 15, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 788,
+            "y": 840,
+            "width": 125,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Saturday, May 16, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sunday, May 17, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 158,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Monday, May 18, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 284,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Tuesday, May 19, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 410,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Wednesday, May 20, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 536,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Thursday, May 21, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 662,
+            "y": 966,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Friday, May 22, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 788,
+            "y": 966,
+            "width": 125,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Saturday, May 23, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sunday, May 24, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 158,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Monday, May 25, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 284,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Tuesday, May 26, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 410,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Wednesday, May 27, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 536,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Thursday, May 28, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 662,
+            "y": 1092,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Friday, May 29, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 788,
+            "y": 1092,
+            "width": 125,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Saturday, May 30, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 1218,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Sunday, May 31, 2026",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 566,
+            "y": 1344,
+            "width": 184,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Cancel",
+          "testTag": "DismissAlertButton",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 750,
+            "y": 1344,
+            "width": 153,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Okay",
+          "testTag": "AcceptAlertButton",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Dialogs and feedback",
+      "caption": "The date picker in its dialog.",
+      "wireframe": "wireframes/date-picker-dialog.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenDatePickerDialog.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 191,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenDatePickerDialog_preview"
+    },
+    {
+      "componentId": "snackbar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/snackbar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 413,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/snackbar__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.snackbar.BitwardenSnackbarKt.BitwardenCustomSnackbar_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/snackbar__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Action\"",
+          "detail": {
+            "role": "button",
+            "label": "Action",
+            "bounds": {
+              "x": 74,
+              "y": 213,
+              "width": 240,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 74,
+            "y": 213,
+            "width": 240,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 892,
+              "y": 32,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 892,
+            "y": 32,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 32,
+            "y": 32,
+            "width": 986,
+            "height": 349
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 213,
+            "width": 240,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Action",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 892,
+            "y": 32,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Dialogs and feedback",
+      "caption": "Bitwarden's own snackbar — message, action and dismiss, drawn rather than borrowed from Material.",
+      "wireframe": "wireframes/snackbar.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/snackbar/BitwardenSnackbar.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 129,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenCustomSnackbar_preview"
+    },
+    {
+      "componentId": "status-badge",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/status-badge/ideal__default.png",
+          "state": "default",
+          "width": 294,
+          "height": 231,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/status-badge__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.badge.BitwardenStatusBadgeKt.BitwardenStatusBadge_Preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/status-badge__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 137,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 11,
+            "width": 95,
+            "height": 41
+          },
+          "label": "Active",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 84,
+            "width": 184,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 95,
+            "width": 142,
+            "height": 41
+          },
+          "label": "Canceled",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 168,
+            "width": 294,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 179,
+            "width": 252,
+            "height": 41
+          },
+          "label": "Update payment",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        }
+      ],
+      "group": "Dialogs and feedback",
+      "caption": "The status badge in light.",
+      "wireframe": "wireframes/status-badge.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 58,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenStatusBadge_Preview"
+    },
+    {
+      "componentId": "status-badge-dark",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/status-badge-dark/ideal__default.png",
+          "state": "default",
+          "width": 294,
+          "height": 231,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/status-badge-dark__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.badge.BitwardenStatusBadgeKt.BitwardenStatusBadge_PreviewDark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/status-badge-dark__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 137,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 11,
+            "width": 95,
+            "height": 41
+          },
+          "label": "Active",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 84,
+            "width": 184,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 95,
+            "width": 142,
+            "height": 41
+          },
+          "label": "Canceled",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 168,
+            "width": 294,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 179,
+            "width": 252,
+            "height": 41
+          },
+          "label": "Update payment",
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          }
+        }
+      ],
+      "group": "Dialogs and feedback",
+      "caption": "And in dark, which upstream previews as its own function.",
+      "wireframe": "wireframes/status-badge-dark.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 80,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenStatusBadge_PreviewDark"
+    },
+    {
+      "componentId": "notification-badge",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/notification-badge/ideal__default.png",
+          "state": "default",
+          "width": 202,
+          "height": 355,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/notification-badge__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.badge.NotificationBadgeKt.NotificationBadge_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/notification-badge__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 118,
+            "height": 271
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 42,
+            "width": 47,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 8.95
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 42,
+            "width": 47,
+            "height": 52
+          },
+          "label": "0 notifications",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 115,
+            "width": 45,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 8.57
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 115,
+            "width": 45,
+            "height": 52
+          },
+          "label": "4 notifications",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 188,
+            "width": 76,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 9.9
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 188,
+            "width": 76,
+            "height": 52
+          },
+          "label": "199 notifications",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 261,
+            "width": 96,
+            "height": 52
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          },
+          "cornerRadius": 9.9
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 261,
+            "width": 96,
+            "height": 52
+          },
+          "label": "1999 notifications",
+          "padding": {
+            "start": 5,
+            "top": 2,
+            "end": 5,
+            "bottom": 2
+          }
+        }
+      ],
+      "group": "Dialogs and feedback",
+      "caption": "The small count badge that rides on a navigation icon.",
+      "wireframe": "wireframes/notification-badge.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/badge/NotificationBadge.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 67,
+      "sourceDirectory": "ui",
+      "sourceFunction": "NotificationBadge_preview"
+    },
+    {
+      "componentId": "coach-mark",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/coach-mark/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/coach-mark__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.components.coachmark.CoachMarkContainerKt.BitwardenCoachMarkContainer_preview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/coach-mark__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Close\"",
+          "detail": {
+            "role": "button",
+            "label": "Close",
+            "bounds": {
+              "x": 882,
+              "y": 494,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 882,
+            "y": 494,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 263,
+            "width": 966,
+            "height": 1837
+          },
+          "padding": {
+            "start": 0,
+            "top": 100,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 288,
+            "y": 263,
+            "width": 475,
+            "height": 126
+          },
+          "label": "Start Coach Mark Flow",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 16
+          },
+          "cornerRadius": 28
+        },
+        {
+          "bounds": {
+            "x": 882,
+            "y": 494,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "label": "Close",
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Dialogs and feedback",
+      "caption": "The coach-mark container that spotlights a target and explains it.",
+      "wireframe": "wireframes/coach-mark.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/components/coachmark/CoachMarkContainer.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 155,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenCoachMarkContainer_preview"
+    },
+    {
+      "componentId": "typography",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/typography/ideal__default.png",
+          "state": "default",
+          "width": 945,
+          "height": 1928,
+          "livePreview": "https://preview.coo.ee/bitwarden-android/p/typography__ideal__default",
+          "previewId": "com.bitwarden.ui.platform.theme.type.TypographyKt.BitwardenTypography_preview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/typography__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 903,
+            "height": 1886
+          },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
+          "gap": 4
+        }
+      ],
+      "group": "Foundations",
+      "caption": "The type ramp: every text style the design system defines, in one sheet.",
+      "wireframe": "wireframes/typography.svg",
+      "sourceFile": "src/main/kotlin/com/bitwarden/ui/platform/theme/type/Typography.kt",
+      "sourceModule": ":ui",
+      "bodyLine": 329,
+      "sourceDirectory": "ui",
+      "sourceFunction": "BitwardenTypography_preview"
+    }
+  ],
+  "renderer": "compose-preview 1.65.0",
+  "generatedAt": "2026-09-02T22:16:00.175Z",
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":ui",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "bitwarden/android",
+    "ref": "9b9f41ffe4e2dfcfdcaae23fd033bd495857acad",
+    "module": ":ui"
+  }
+}

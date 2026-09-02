@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 202 355" width="202" height="355" role="img" aria-label="notification-badge layout wireframe">
+  <title>notification-badge — layout wireframe (slots + tokens)</title>
+  <rect width="202" height="355" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="202" height="355" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="202" height="355" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="118" height="271" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 16.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="42" y="42" width="69" height="52" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M76.5,42 H76.5 A23.5,23.5 0 0 1 100,65.5 V70.5 A23.5,23.5 0 0 1 76.5,94 H76.5 A23.5,23.5 0 0 1 53,70.5 V65.5 A23.5,23.5 0 0 1 76.5,42 Z" fill="#FF0000" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFF0000  pad ·</text>
+  </g>
+  <g>
+    <rect x="66" y="47" width="21" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="115" width="67" height="52" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M75.5,115 H75.5 A22.5,22.5 0 0 1 98,137.5 V144.5 A22.5,22.5 0 0 1 75.5,167 H75.5 A22.5,22.5 0 0 1 53,144.5 V137.5 A22.5,22.5 0 0 1 75.5,115 Z" fill="#FF0000" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="127" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFF0000  pad ·</text>
+  </g>
+  <g>
+    <rect x="66" y="120" width="19" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="188" width="98" height="52" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M78.9875,188 H103.0125 A25.9875,25.9875 0 0 1 129,213.9875 V214.0125 A25.9875,25.9875 0 0 1 103.0125,240 H78.9875 A25.9875,25.9875 0 0 1 53,214.0125 V213.9875 A25.9875,25.9875 0 0 1 78.9875,188 Z" fill="#00FF00" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="200" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF00FF00  pad ·</text>
+  </g>
+  <g>
+    <rect x="66" y="193" width="50" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="261" width="118" height="52" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M78.9875,261 H123.0125 A25.9875,25.9875 0 0 1 149,286.9875 V287.0125 A25.9875,25.9875 0 0 1 123.0125,313 H78.9875 A25.9875,25.9875 0 0 1 53,287.0125 V286.9875 A25.9875,25.9875 0 0 1 78.9875,261 Z" fill="#0000FF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="56" y="273" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF0000FF  pad ·</text>
+  </g>
+  <g>
+    <rect x="66" y="266" width="70" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

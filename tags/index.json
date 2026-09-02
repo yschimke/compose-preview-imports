@@ -1,0 +1,439 @@
+{
+  "schema": "compose-preview-tags/v1",
+  "previews": {
+    "switch__ideal__default": {
+      "SwitchText": {
+        "count": 5,
+        "bounds": {
+          "x": 42,
+          "y": 53,
+          "width": 97,
+          "height": 53
+        },
+        "space": "render-pixels"
+      },
+      "SwitchToggle": {
+        "count": 5,
+        "bounds": {
+          "x": 871,
+          "y": 37,
+          "width": 137,
+          "height": 84
+        },
+        "space": "render-pixels"
+      },
+      "SwitchTooltip": {
+        "count": 2,
+        "bounds": {
+          "x": 160,
+          "y": 475,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "empty-content__ideal__default": {
+      "TitleTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 84,
+          "y": 1030,
+          "width": 882,
+          "height": 55
+        },
+        "space": "render-pixels"
+      },
+      "EmptyContentLabel": {
+        "count": 1,
+        "bounds": {
+          "x": 84,
+          "y": 1106,
+          "width": 882,
+          "height": 48
+        },
+        "space": "render-pixels"
+      },
+      "EmptyContentPositiveButton": {
+        "count": 1,
+        "bounds": {
+          "x": 84,
+          "y": 1186,
+          "width": 882,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "EmptyContentNegativeButton": {
+        "count": 1,
+        "bounds": {
+          "x": 84,
+          "y": 1333,
+          "width": 882,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "loading-content__ideal__default": {
+      "AlertTitleText": {
+        "count": 1,
+        "bounds": {
+          "x": 430,
+          "y": 939,
+          "width": 190,
+          "height": 55
+        },
+        "space": "render-pixels"
+      },
+      "AlertProgressIndicator": {
+        "count": 1,
+        "bounds": {
+          "x": 462,
+          "y": 1036,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "text-row-tooltip__ideal__default": {
+      "sampleTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 42,
+          "y": 69,
+          "width": 218,
+          "height": 53
+        },
+        "space": "render-pixels"
+      },
+      "TextRowTooltip": {
+        "count": 1,
+        "bounds": {
+          "x": 281,
+          "y": 32,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "text-row-disabled__ideal__default": {
+      "sampleDisabledTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 42,
+          "y": 32,
+          "width": 384,
+          "height": 53
+        },
+        "space": "render-pixels"
+      }
+    },
+    "top-app-bar__ideal__default": {
+      "HeaderBarComponent": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "CloseButton": {
+        "count": 1,
+        "bounds": {
+          "x": 11,
+          "y": 0,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "PageTitleLabel": {
+        "count": 1,
+        "bounds": {
+          "x": 148,
+          "y": 26,
+          "width": 104,
+          "height": 74
+        },
+        "space": "render-pixels"
+      }
+    },
+    "top-app-bar-overflow__ideal__default": {
+      "HeaderBarComponent": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "CloseButton": {
+        "count": 1,
+        "bounds": {
+          "x": 11,
+          "y": 0,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "PageTitleLabel": {
+        "count": 1,
+        "bounds": {
+          "x": 148,
+          "y": 26,
+          "width": 833,
+          "height": 74
+        },
+        "space": "render-pixels"
+      }
+    },
+    "top-app-bar-overflow-cutoff__ideal__default": {
+      "HeaderBarComponent": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 316
+        },
+        "space": "render-pixels"
+      },
+      "CloseButton": {
+        "count": 1,
+        "bounds": {
+          "x": 11,
+          "y": 11,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "PageTitleLabel": {
+        "count": 2,
+        "bounds": {
+          "x": 148,
+          "y": 0,
+          "width": 880,
+          "height": 148
+        },
+        "space": "render-pixels"
+      }
+    },
+    "medium-top-app-bar__ideal__default": {
+      "HeaderBarComponent": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "space": "render-pixels"
+      },
+      "PageTitleLabel": {
+        "count": 1,
+        "bounds": {
+          "x": 43,
+          "y": 25,
+          "width": 447,
+          "height": 96
+        },
+        "space": "render-pixels"
+      }
+    },
+    "search-action__ideal__default": {
+      "SearchButton": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "overflow-action__ideal__default": {
+      "HeaderBarOptionsButton": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "account-action-item__ideal__default": {
+      "CurrentActiveAccount": {
+        "count": 1,
+        "bounds": {
+          "x": 11,
+          "y": 11,
+          "width": 105,
+          "height": 105
+        },
+        "space": "render-pixels"
+      }
+    },
+    "account-switcher__ideal__default": {
+      "AccountListView": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 432
+        },
+        "space": "render-pixels"
+      },
+      "AccountCell": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 158
+        },
+        "space": "render-pixels"
+      },
+      "AccountEmailLabel": {
+        "count": 1,
+        "bounds": {
+          "x": 147,
+          "y": 29,
+          "width": 735,
+          "height": 53
+        },
+        "space": "render-pixels"
+      },
+      "AccountEnvironmentLabel": {
+        "count": 1,
+        "bounds": {
+          "x": 147,
+          "y": 82,
+          "width": 75,
+          "height": 48
+        },
+        "space": "render-pixels"
+      },
+      "ActiveVaultIcon": {
+        "count": 1,
+        "bounds": {
+          "x": 924,
+          "y": 48,
+          "width": 63,
+          "height": 63
+        },
+        "space": "render-pixels"
+      },
+      "AddAccountButton": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 159,
+          "width": 1050,
+          "height": 147
+        },
+        "space": "render-pixels"
+      }
+    },
+    "placeholder-account-light__ideal__default__light": {
+      "CurrentActiveAccount": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "placeholder-account-dark__ideal__default__dark": {
+      "CurrentActiveAccount": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "loading-dialog__ideal__default": {
+      "AlertPopup": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 2101
+        },
+        "space": "render-pixels"
+      },
+      "AlertTitleText": {
+        "count": 1,
+        "bounds": {
+          "x": 430,
+          "y": 939,
+          "width": 190,
+          "height": 55
+        },
+        "space": "render-pixels"
+      },
+      "AlertProgressIndicator": {
+        "count": 1,
+        "bounds": {
+          "x": 462,
+          "y": 1036,
+          "width": 126,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    },
+    "date-picker-dialog__ideal__default": {
+      "DatePickerDialog": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 945,
+          "height": 1491
+        },
+        "space": "render-pixels"
+      },
+      "DismissAlertButton": {
+        "count": 1,
+        "bounds": {
+          "x": 566,
+          "y": 1344,
+          "width": 184,
+          "height": 126
+        },
+        "space": "render-pixels"
+      },
+      "AcceptAlertButton": {
+        "count": 1,
+        "bounds": {
+          "x": 750,
+          "y": 1344,
+          "width": 153,
+          "height": 126
+        },
+        "space": "render-pixels"
+      }
+    }
+  }
+}

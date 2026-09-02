@@ -1,0 +1,1135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bitwarden — design catalog</title>
+<style>
+  :root { color-scheme: light dark; --bg:#0f0f10; --panel:#1b1b1d; --fg:#e8e8ea; --muted:#9b9ba1; --line:#2a2a2d; --accent:#7dd87d; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--bg); color:var(--fg); }
+  header.top { padding:24px clamp(16px,4vw,40px); border-bottom:1px solid var(--line); }
+  header.top h1 { margin:0 0 6px; font-size:22px; }
+  header.top .subtitle { color:var(--muted); font-size:13px; }
+  header.top code { background:var(--panel); padding:1px 6px; border-radius:5px; }
+  header.top .pagelink { color:var(--accent); text-decoration:none; font-size:13px; }
+  header.top .pagelink:hover { text-decoration:underline; }
+  .layout { display:grid; grid-template-columns:240px 1fr; align-items:start; }
+  nav.index { position:sticky; top:0; align-self:start; max-height:100vh; overflow:auto; padding:20px 12px; border-right:1px solid var(--line); }
+  nav.index .nav-head { display:flex; justify-content:space-between; font-weight:600; text-decoration:none; color:var(--fg); padding:6px 8px; border-radius:6px; }
+  nav.index .nav-head span { color:var(--muted); font-weight:400; }
+  nav.index .nav-head:hover { background:var(--panel); }
+  nav.index ul { list-style:none; margin:2px 0 14px; padding:0 0 0 8px; }
+  nav.index li a { display:block; color:var(--muted); text-decoration:none; padding:3px 8px; border-radius:5px; font-size:13px; }
+  nav.index li a:hover { color:var(--fg); background:var(--panel); }
+  main { padding:8px clamp(16px,4vw,40px) 64px; min-width:0; }
+  .group { padding-top:24px; }
+  .group h2 { font-size:16px; border-bottom:1px solid var(--line); padding-bottom:8px; position:sticky; top:0; background:var(--bg); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(180px,1fr)); gap:16px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  /* Theme-aware checkerboard so a transparent component sticker reads on the backing that matches
+     its baked theme — a light-theme component (dark strokes/text) on a LIGHT check, a dark-theme (or
+     theme-less) one on the default dark check — instead of light-mode content washing out on a fixed
+     dark backing. --ck-a / --ck-b are the two check colours; [data-bg=light] swaps them. Full-screen
+     stickers carry their own round and just sit on top. Shared by the grid hero and zoom variants. */
+  .shot, .state-shot { --ck-a:#161617; --ck-b:#202022;
+    background-color:var(--ck-a);
+    background-image:
+      linear-gradient(45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(-45deg,var(--ck-b) 25%,transparent 25%),
+      linear-gradient(45deg,transparent 75%,var(--ck-b) 75%),
+      linear-gradient(-45deg,transparent 75%,var(--ck-b) 75%);
+    background-size:16px 16px; background-position:0 0,0 8px,8px -8px,-8px 0; }
+  .shot[data-bg="light"], .state-shot[data-bg="light"] { --ck-a:#e9e9ef; --ck-b:#ffffff; }
+  .shot { margin:0; display:grid; place-items:center; min-height:120px; padding:12px; }
+  .shot img { max-width:100%; max-height:240px; height:auto; display:block; }
+  a.shot { cursor:zoom-in; text-decoration:none; }
+  /* Framed mode (set by the crop script below): the hero is sized to the component's content bbox
+     — read from the figma-svg's translate + viewBox — and the PNG is absolutely-positioned so only
+     the component shows. A wear sticker rendered on a 454² device canvas is displayed cropped to
+     the component instead of floating in an empty frame; a no-op for close-cropped (phone) renders
+     where the bbox already fills the frame. */
+  .shot--framed { overflow:hidden; padding:0; min-height:0; position:relative; place-items:stretch;
+    margin:16px auto; border-radius:8px; max-width:100%; }
+  .shot--framed img { position:absolute; max-width:none; max-height:none; }
+  /* A gutter window shows the component at its siblings' size and lets the shadow it holds spill
+     past the box — so it must not clip, and the card must not either, or the spill dies at the card
+     edge. AFTER the .shot--framed rule on purpose: same specificity, so the later one is what
+     wins, and a bleeding shot always carries both classes. */
+  .shot--bleed { overflow:visible; }
+  .card:has(.shot--bleed) { overflow:visible; }
+  .shot--missing { color:var(--muted); font-style:italic; }
+  .card--failed { border-color:#7d4148; }
+  .shot--failed { color:#f1b5b9; background:#26191b; text-align:center; display:flex; flex-direction:column; gap:6px; }
+  .shot--failed .failure-mark { display:grid; place-items:center; width:30px; height:30px; border:1px solid #d66c75; border-radius:50%; font-size:18px; }
+  .shot--failed span:last-child { color:#c9a3a6; font-size:11px; max-width:32ch; }
+  .failure-chip { color:#ef9299; border:1px solid #7d4148; border-radius:999px; padding:1px 7px; white-space:nowrap; }
+  .failure-detail { min-width:min(680px,80vw); color:var(--fg); }
+  .failure-detail + .failure-detail { border-top:1px solid var(--line); margin-top:14px; padding-top:14px; }
+  .failure-meta,.failure-frame { color:var(--muted); font-size:12px; margin-top:4px; }
+  .failure-detail details { margin-top:10px; }
+  .failure-detail pre { white-space:pre-wrap; overflow-wrap:anywhere; background:var(--bg); border:1px solid var(--line); border-radius:8px; padding:10px; font-size:11px; }
+  .failure-summary { margin:18px clamp(16px,4vw,40px) 0; padding:12px 14px; border:1px solid #7d4148; border-radius:10px; background:#26191b; color:#c9a3a6; }
+  .failure-summary > strong { color:#ef9299; }
+  .failure-summary ul { display:grid; gap:4px; margin:8px 0 0; padding:0; list-style:none; }
+  .failure-summary li { display:flex; justify-content:space-between; gap:16px; font-size:12px; }
+  .meta { padding:10px 12px 12px; border-top:1px solid var(--line); }
+  .meta h3 { margin:0; font-size:13px; font-weight:600; word-break:break-word; }
+  .meta h3 a.ctitle { color:inherit; text-decoration:none; }
+  .meta h3 a.ctitle:hover { text-decoration:underline; }
+  .meta .sub { color:var(--muted); font-size:12px; margin-top:2px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:8px; }
+  .meta .sub .wf { color:#7dd87d; text-decoration:none; white-space:nowrap; }
+  .meta .sub .wf:hover { text-decoration:underline; }
+  .statechip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--line); color:var(--muted); text-decoration:none; white-space:nowrap; }
+  .statechip:hover { color:var(--fg); border-color:var(--muted); }
+  .greenlines { margin-top:8px; display:flex; flex-wrap:wrap; gap:4px; }
+  .chip { font-size:11px; padding:1px 7px; border-radius:999px; border:1px solid var(--accent); color:var(--accent); }
+  .chip--warn { border-color:#e0c060; color:#e0c060; }
+  .chip--error { border-color:#e08080; color:#e08080; }
+  /* Single-component zoom view — a pure-CSS :target overlay, one per component. */
+  .detail { display:none; }
+  .detail:target { display:flex; position:fixed; inset:0; z-index:50; align-items:center; justify-content:center; padding:clamp(12px,4vw,40px); }
+  .detail-scrim { position:absolute; inset:0; background:rgba(0,0,0,0.72); }
+  .detail-panel { position:relative; z-index:1; background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    max-width:min(960px,94vw); max-height:88vh; overflow:auto; padding:20px 24px; }
+  .detail-panel h3 { margin:0 0 4px; font-size:15px; word-break:break-word; }
+  .detail-caption { color:var(--muted); font-size:13px; margin-bottom:14px; }
+  .detail-x { position:absolute; top:8px; right:14px; color:var(--muted); text-decoration:none; font-size:24px; line-height:1; }
+  .detail-x:hover { color:var(--fg); }
+  .detail-states { display:flex; flex-wrap:wrap; gap:18px; }
+  figure.state { margin:0; }
+  figure.state figcaption { font-size:12px; color:var(--muted); margin-bottom:6px; text-transform:capitalize; }
+  .state-shots { display:flex; flex-wrap:wrap; gap:10px; }
+  .state-shot { display:flex; flex-direction:column; align-items:center; gap:5px;
+    border:1px solid var(--line); border-radius:10px; padding:12px; }
+  .state-shot img { max-width:220px; max-height:220px; height:auto; display:block; }
+  .state-shot span { font-size:11px; color:var(--muted); text-transform:capitalize; }
+  @media (max-width:720px){ .layout{ grid-template-columns:1fr; } nav.index{ position:static; max-height:none; border-right:0; border-bottom:1px solid var(--line);} }
+</style>
+</head>
+<body>
+<header class="top">
+  <h1>Bitwarden</h1>
+  <div class="subtitle">system <code>bitwarden-android</code> · rendered by compose-preview 1.65.0 · 2026-09-02T22:16:00.175Z · 49 components</div>
+  <div class="subtitle"><a class="pagelink" href="compare.html">SVG vs PNG compare ↗</a></div>
+</header>
+
+<div class="layout">
+  <nav class="index"><section class="nav-group">
+      <a class="nav-head" href="#g-buttons">Buttons <span>8</span></a>
+      <ul><li><a href="#c-filled-button">filled-button</a></li><li><a href="#c-outlined-button">outlined-button</a></li><li><a href="#c-filled-error-button">filled-error-button</a></li><li><a href="#c-outlined-error-button">outlined-error-button</a></li><li><a href="#c-text-selection-button">text-selection-button</a></li><li><a href="#c-icon-button-filled">icon-button-filled</a></li><li><a href="#c-icon-button-tonal">icon-button-tonal</a></li><li><a href="#c-icon-button-standard">icon-button-standard</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-fields">Fields <span>7</span></a>
+      <ul><li><a href="#c-text-field">text-field</a></li><li><a href="#c-password-field">password-field</a></li><li><a href="#c-hidden-password-field">hidden-password-field</a></li><li><a href="#c-multi-select-button">multi-select-button</a></li><li><a href="#c-date-picker-button">date-picker-button</a></li><li><a href="#c-slider">slider</a></li><li><a href="#c-switch">switch</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-cards-and-content">Cards and content <span>10</span></a>
+      <ul><li><a href="#c-action-card">action-card</a></li><li><a href="#c-action-card-subtitle">action-card-subtitle</a></li><li><a href="#c-action-card-subtitle-no-dismiss">action-card-subtitle-no-dismiss</a></li><li><a href="#c-action-card-leading">action-card-leading</a></li><li><a href="#c-action-card-small">action-card-small</a></li><li><a href="#c-action-card-small-trailing">action-card-small-trailing</a></li><li><a href="#c-info-callout">info-callout</a></li><li><a href="#c-content-block">content-block</a></li><li><a href="#c-empty-content">empty-content</a></li><li><a href="#c-loading-content">loading-content</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-rows-and-lists">Rows and lists <span>6</span></a>
+      <ul><li><a href="#c-text-row-tooltip">text-row-tooltip</a></li><li><a href="#c-text-row-disabled">text-row-disabled</a></li><li><a href="#c-push-row">push-row</a></li><li><a href="#c-external-link-row">external-link-row</a></li><li><a href="#c-row-of-icon-buttons">row-of-icon-buttons</a></li><li><a href="#c-list-header">list-header</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-app-bars">App bars <span>6</span></a>
+      <ul><li><a href="#c-top-app-bar">top-app-bar</a></li><li><a href="#c-top-app-bar-overflow">top-app-bar-overflow</a></li><li><a href="#c-top-app-bar-overflow-cutoff">top-app-bar-overflow-cutoff</a></li><li><a href="#c-medium-top-app-bar">medium-top-app-bar</a></li><li><a href="#c-search-action">search-action</a></li><li><a href="#c-overflow-action">overflow-action</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-accounts">Accounts <span>4</span></a>
+      <ul><li><a href="#c-account-action-item">account-action-item</a></li><li><a href="#c-account-switcher">account-switcher</a></li><li><a href="#c-placeholder-account-light">placeholder-account-light</a></li><li><a href="#c-placeholder-account-dark">placeholder-account-dark</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-dialogs-and-feedback">Dialogs and feedback <span>7</span></a>
+      <ul><li><a href="#c-loading-dialog">loading-dialog</a></li><li><a href="#c-date-picker-dialog">date-picker-dialog</a></li><li><a href="#c-snackbar">snackbar</a></li><li><a href="#c-status-badge">status-badge</a></li><li><a href="#c-status-badge-dark">status-badge-dark</a></li><li><a href="#c-notification-badge">notification-badge</a></li><li><a href="#c-coach-mark">coach-mark</a></li></ul>
+    </section><section class="nav-group">
+      <a class="nav-head" href="#g-foundations">Foundations <span>1</span></a>
+      <ul><li><a href="#c-typography">typography</a></li></ul>
+    </section></nav>
+  <main><section class="group" id="g-buttons">
+      <h2>Buttons</h2>
+      <div class="grid"><article class="card" id="c-filled-button">
+  <a class="shot" href="#d-filled-button" aria-label="Zoom filled-button"><img loading="lazy" src="images/filled-button/ideal__default.png" alt="filled-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-filled-button">filled-button</a></h3>
+    <div class="sub">283×504<a class="wf" href="wireframes/filled-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/filled-button__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-outlined-button">
+  <a class="shot" href="#d-outlined-button" aria-label="Zoom outlined-button"><img loading="lazy" src="images/outlined-button/ideal__default.png" alt="outlined-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-outlined-button">outlined-button</a></h3>
+    <div class="sub">283×504<a class="wf" href="wireframes/outlined-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/outlined-button__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-filled-error-button">
+  <a class="shot" href="#d-filled-error-button" aria-label="Zoom filled-error-button"><img loading="lazy" src="images/filled-error-button/ideal__default.png" alt="filled-error-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-filled-error-button">filled-error-button</a></h3>
+    <div class="sub">283×504<a class="wf" href="wireframes/filled-error-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/filled-error-button__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-outlined-error-button">
+  <a class="shot" href="#d-outlined-error-button" aria-label="Zoom outlined-error-button"><img loading="lazy" src="images/outlined-error-button/ideal__default.png" alt="outlined-error-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-outlined-error-button">outlined-error-button</a></h3>
+    <div class="sub">283×504<a class="wf" href="wireframes/outlined-error-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/outlined-error-button__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-text-selection-button">
+  <a class="shot" href="#d-text-selection-button" aria-label="Zoom text-selection-button"><img loading="lazy" src="images/text-selection-button/ideal__default.png" alt="text-selection-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-text-selection-button">text-selection-button</a></h3>
+    <div class="sub">1050×179<a class="wf" href="wireframes/text-selection-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/text-selection-button.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-icon-button-filled">
+  <a class="shot" href="#d-icon-button-filled" aria-label="Zoom icon-button-filled"><img loading="lazy" src="images/icon-button-filled/ideal__default.png" alt="icon-button-filled" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-icon-button-filled">icon-button-filled</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/icon-button-filled.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/icon-button-filled__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-icon-button-tonal">
+  <a class="shot" href="#d-icon-button-tonal" aria-label="Zoom icon-button-tonal"><img loading="lazy" src="images/icon-button-tonal/ideal__default.png" alt="icon-button-tonal" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-icon-button-tonal">icon-button-tonal</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/icon-button-tonal.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/icon-button-tonal__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-icon-button-standard">
+  <a class="shot" href="#d-icon-button-standard" aria-label="Zoom icon-button-standard"><img loading="lazy" src="images/icon-button-standard/ideal__default.png" alt="icon-button-standard" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-icon-button-standard">icon-button-standard</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/icon-button-standard.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/icon-button-standard__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-fields">
+      <h2>Fields</h2>
+      <div class="grid"><article class="card" id="c-text-field">
+  <a class="shot" href="#d-text-field" aria-label="Zoom text-field"><img loading="lazy" src="images/text-field/ideal__default.png" alt="text-field" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-text-field">text-field</a></h3>
+    <div class="sub">1050×612<a class="wf" href="wireframes/text-field.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/text-field.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-password-field">
+  <a class="shot" href="#d-password-field" aria-label="Zoom password-field"><img loading="lazy" src="images/password-field/ideal__default.png" alt="password-field" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-password-field">password-field</a></h3>
+    <div class="sub">1050×843<a class="wf" href="wireframes/password-field.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/password-field.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-hidden-password-field">
+  <a class="shot" href="#d-hidden-password-field" aria-label="Zoom hidden-password-field"><img loading="lazy" src="images/hidden-password-field/ideal__default.png" alt="hidden-password-field" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-hidden-password-field">hidden-password-field</a></h3>
+    <div class="sub">735×179<a class="wf" href="wireframes/hidden-password-field.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/hidden-password-field.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-multi-select-button">
+  <a class="shot" href="#d-multi-select-button" aria-label="Zoom multi-select-button"><img loading="lazy" src="images/multi-select-button/ideal__default.png" alt="multi-select-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-multi-select-button">multi-select-button</a></h3>
+    <div class="sub">1050×179<a class="wf" href="wireframes/multi-select-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/multi-select-button.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-date-picker-button">
+  <a class="shot" href="#d-date-picker-button" aria-label="Zoom date-picker-button"><img loading="lazy" src="images/date-picker-button/ideal__default.png" alt="date-picker-button" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-date-picker-button">date-picker-button</a></h3>
+    <div class="sub">1050×179<a class="wf" href="wireframes/date-picker-button.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/date-picker-button.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-slider">
+  <a class="shot" href="#d-slider" aria-label="Zoom slider"><img loading="lazy" src="images/slider/ideal__default.png" alt="slider" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-slider">slider</a></h3>
+    <div class="sub">1050×211<a class="wf" href="wireframes/slider.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/slider.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-switch">
+  <a class="shot" href="#d-switch" aria-label="Zoom switch"><img loading="lazy" src="images/switch/ideal__default.png" alt="switch" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-switch">switch</a></h3>
+    <div class="sub">1050×1219<a class="wf" href="wireframes/switch.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/switch__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-cards-and-content">
+      <h2>Cards and content</h2>
+      <div class="grid"><article class="card" id="c-action-card">
+  <a class="shot" href="#d-action-card" aria-label="Zoom action-card"><img loading="lazy" src="images/action-card/ideal__default.png" alt="action-card" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action-card">action-card</a></h3>
+    <div class="sub">1050×294<a class="wf" href="wireframes/action-card.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/action-card__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-action-card-subtitle">
+  <a class="shot" href="#d-action-card-subtitle" aria-label="Zoom action-card-subtitle"><img loading="lazy" src="images/action-card-subtitle/ideal__default.png" alt="action-card-subtitle" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action-card-subtitle">action-card-subtitle</a></h3>
+    <div class="sub">1050×492<a class="wf" href="wireframes/action-card-subtitle.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/action-card-subtitle__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-action-card-subtitle-no-dismiss">
+  <a class="shot" href="#d-action-card-subtitle-no-dismiss" aria-label="Zoom action-card-subtitle-no-dismiss"><img loading="lazy" src="images/action-card-subtitle-no-dismiss/ideal__default.png" alt="action-card-subtitle-no-dismiss" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action-card-subtitle-no-dismiss">action-card-subtitle-no-dismiss</a></h3>
+    <div class="sub">1050×265<a class="wf" href="wireframes/action-card-subtitle-no-dismiss.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/action-card-subtitle-no-dismiss__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-action-card-leading">
+  <a class="shot" href="#d-action-card-leading" aria-label="Zoom action-card-leading"><img loading="lazy" src="images/action-card-leading/ideal__default.png" alt="action-card-leading" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action-card-leading">action-card-leading</a></h3>
+    <div class="sub">1050×294<a class="wf" href="wireframes/action-card-leading.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/action-card-leading__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-action-card-small">
+  <a class="shot" href="#d-action-card-small" aria-label="Zoom action-card-small"><img loading="lazy" src="images/action-card-small/ideal__default.png" alt="action-card-small" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action-card-small">action-card-small</a></h3>
+    <div class="sub">1050×208<a class="wf" href="wireframes/action-card-small.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/action-card-small__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-action-card-small-trailing">
+  <a class="shot" href="#d-action-card-small-trailing" aria-label="Zoom action-card-small-trailing"><img loading="lazy" src="images/action-card-small-trailing/ideal__default.png" alt="action-card-small-trailing" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-action-card-small-trailing">action-card-small-trailing</a></h3>
+    <div class="sub">1050×208<a class="wf" href="wireframes/action-card-small-trailing.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/action-card-small-trailing__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-info-callout">
+  <a class="shot" href="#d-info-callout" aria-label="Zoom info-callout"><img loading="lazy" src="images/info-callout/ideal__default.png" alt="info-callout" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-info-callout">info-callout</a></h3>
+    <div class="sub">1050×132<a class="wf" href="wireframes/info-callout.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/info-callout__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-content-block">
+  <a class="shot" href="#d-content-block" aria-label="Zoom content-block"><img loading="lazy" src="images/content-block/ideal__default.png" alt="content-block" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-content-block">content-block</a></h3>
+    <div class="sub">1050×684<a class="wf" href="wireframes/content-block.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/content-block__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-empty-content">
+  <a class="shot" href="#d-empty-content" aria-label="Zoom empty-content"><img loading="lazy" src="images/empty-content/ideal__default.png" alt="empty-content" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-empty-content">empty-content</a></h3>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/empty-content.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/empty-content__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-loading-content">
+  <a class="shot" href="#d-loading-content" aria-label="Zoom loading-content"><img loading="lazy" src="images/loading-content/ideal__default.png" alt="loading-content" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-loading-content">loading-content</a></h3>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/loading-content.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/loading-content.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-rows-and-lists">
+      <h2>Rows and lists</h2>
+      <div class="grid"><article class="card" id="c-text-row-tooltip">
+  <a class="shot" href="#d-text-row-tooltip" aria-label="Zoom text-row-tooltip"><img loading="lazy" src="images/text-row-tooltip/ideal__default.png" alt="text-row-tooltip" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-text-row-tooltip">text-row-tooltip</a></h3>
+    <div class="sub">1050×238<a class="wf" href="wireframes/text-row-tooltip.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/text-row-tooltip__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-text-row-disabled">
+  <a class="shot" href="#d-text-row-disabled" aria-label="Zoom text-row-disabled"><img loading="lazy" src="images/text-row-disabled/ideal__default.png" alt="text-row-disabled" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-text-row-disabled">text-row-disabled</a></h3>
+    <div class="sub">1050×165<a class="wf" href="wireframes/text-row-disabled.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/text-row-disabled__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-push-row">
+  <a class="shot" href="#d-push-row" aria-label="Zoom push-row"><img loading="lazy" src="images/push-row/ideal__default.png" alt="push-row" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-push-row">push-row</a></h3>
+    <div class="sub">1050×474<a class="wf" href="wireframes/push-row.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/push-row__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-external-link-row">
+  <a class="shot" href="#d-external-link-row" aria-label="Zoom external-link-row"><img loading="lazy" src="images/external-link-row/ideal__default.png" alt="external-link-row" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-external-link-row">external-link-row</a></h3>
+    <div class="sub">1050×158<a class="wf" href="wireframes/external-link-row.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/external-link-row__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-row-of-icon-buttons">
+  <a class="shot" href="#d-row-of-icon-buttons" aria-label="Zoom row-of-icon-buttons"><img loading="lazy" src="images/row-of-icon-buttons/ideal__default.png" alt="row-of-icon-buttons" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-row-of-icon-buttons">row-of-icon-buttons</a></h3>
+    <div class="sub">126×63<a class="wf" href="wireframes/row-of-icon-buttons.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/row-of-icon-buttons__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-list-header">
+  <a class="shot" href="#d-list-header" aria-label="Zoom list-header"><img loading="lazy" src="images/list-header/ideal__default.png" alt="list-header" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-list-header">list-header</a></h3>
+    <div class="sub">300×96<a class="wf" href="wireframes/list-header.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/list-header__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-app-bars">
+      <h2>App bars</h2>
+      <div class="grid"><article class="card" id="c-top-app-bar">
+  <a class="shot" href="#d-top-app-bar" aria-label="Zoom top-app-bar"><img loading="lazy" src="images/top-app-bar/ideal__default.png" alt="top-app-bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-app-bar">top-app-bar</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/top-app-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/top-app-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-top-app-bar-overflow">
+  <a class="shot" href="#d-top-app-bar-overflow" aria-label="Zoom top-app-bar-overflow"><img loading="lazy" src="images/top-app-bar-overflow/ideal__default.png" alt="top-app-bar-overflow" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-app-bar-overflow">top-app-bar-overflow</a></h3>
+    <div class="sub">1050×126<a class="wf" href="wireframes/top-app-bar-overflow.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/top-app-bar-overflow.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-top-app-bar-overflow-cutoff">
+  <a class="shot" href="#d-top-app-bar-overflow-cutoff" aria-label="Zoom top-app-bar-overflow-cutoff"><img loading="lazy" src="images/top-app-bar-overflow-cutoff/ideal__default.png" alt="top-app-bar-overflow-cutoff" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-top-app-bar-overflow-cutoff">top-app-bar-overflow-cutoff</a></h3>
+    <div class="sub">1050×316<a class="wf" href="wireframes/top-app-bar-overflow-cutoff.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/top-app-bar-overflow-cutoff.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-medium-top-app-bar">
+  <a class="shot" href="#d-medium-top-app-bar" aria-label="Zoom medium-top-app-bar"><img loading="lazy" src="images/medium-top-app-bar/ideal__default.png" alt="medium-top-app-bar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-medium-top-app-bar">medium-top-app-bar</a></h3>
+    <div class="sub">1050×147<a class="wf" href="wireframes/medium-top-app-bar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/medium-top-app-bar.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-search-action">
+  <a class="shot" href="#d-search-action" aria-label="Zoom search-action"><img loading="lazy" src="images/search-action/ideal__default.png" alt="search-action" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-search-action">search-action</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/search-action.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/search-action__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-overflow-action">
+  <a class="shot" href="#d-overflow-action" aria-label="Zoom overflow-action"><img loading="lazy" src="images/overflow-action/ideal__default.png" alt="overflow-action" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-overflow-action">overflow-action</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/overflow-action.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/overflow-action__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-accounts">
+      <h2>Accounts</h2>
+      <div class="grid"><article class="card" id="c-account-action-item">
+  <a class="shot" href="#d-account-action-item" aria-label="Zoom account-action-item"><img loading="lazy" src="images/account-action-item/ideal__default.png" alt="account-action-item" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-account-action-item">account-action-item</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/account-action-item.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/account-action-item__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-account-switcher">
+  <a class="shot" href="#d-account-switcher" aria-label="Zoom account-switcher"><img loading="lazy" src="images/account-switcher/ideal__default.png" alt="account-switcher" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-account-switcher">account-switcher</a></h3>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/account-switcher.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/account-switcher.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-placeholder-account-light">
+  <a class="shot" data-bg="light" href="#d-placeholder-account-light" aria-label="Zoom placeholder-account-light"><img loading="lazy" src="images/placeholder-account-light/ideal__default__light.png" alt="placeholder-account-light" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-placeholder-account-light">placeholder-account-light</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/placeholder-account-light.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/placeholder-account-light__ideal__default__light.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-placeholder-account-dark">
+  <a class="shot" href="#d-placeholder-account-dark" aria-label="Zoom placeholder-account-dark"><img loading="lazy" src="images/placeholder-account-dark/ideal__default__dark.png" alt="placeholder-account-dark" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-placeholder-account-dark">placeholder-account-dark</a></h3>
+    <div class="sub">126×126<a class="wf" href="wireframes/placeholder-account-dark.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/placeholder-account-dark__ideal__default__dark.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-dialogs-and-feedback">
+      <h2>Dialogs and feedback</h2>
+      <div class="grid"><article class="card" id="c-loading-dialog">
+  <a class="shot" href="#d-loading-dialog" aria-label="Zoom loading-dialog"><img loading="lazy" src="images/loading-dialog/ideal__default.png" alt="loading-dialog" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-loading-dialog">loading-dialog</a></h3>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/loading-dialog.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="figma/loading-dialog.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-date-picker-dialog">
+  <a class="shot" href="#d-date-picker-dialog" aria-label="Zoom date-picker-dialog"><img loading="lazy" src="images/date-picker-dialog/ideal__default.png" alt="date-picker-dialog" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-date-picker-dialog">date-picker-dialog</a></h3>
+    <div class="sub">945×1491<a class="wf" href="wireframes/date-picker-dialog.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/date-picker-dialog__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-snackbar">
+  <a class="shot" href="#d-snackbar" aria-label="Zoom snackbar"><img loading="lazy" src="images/snackbar/ideal__default.png" alt="snackbar" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-snackbar">snackbar</a></h3>
+    <div class="sub">1050×413<a class="wf" href="wireframes/snackbar.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/snackbar__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span><span class="chip chip--info">button</span></div>
+  </div>
+</article>
+<article class="card" id="c-status-badge">
+  <a class="shot" href="#d-status-badge" aria-label="Zoom status-badge"><img loading="lazy" src="images/status-badge/ideal__default.png" alt="status-badge" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-status-badge">status-badge</a></h3>
+    <div class="sub">294×231<a class="wf" href="wireframes/status-badge.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/status-badge__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-status-badge-dark">
+  <a class="shot" href="#d-status-badge-dark" aria-label="Zoom status-badge-dark"><img loading="lazy" src="images/status-badge-dark/ideal__default.png" alt="status-badge-dark" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-status-badge-dark">status-badge-dark</a></h3>
+    <div class="sub">294×231<a class="wf" href="wireframes/status-badge-dark.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/status-badge-dark__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-notification-badge">
+  <a class="shot" href="#d-notification-badge" aria-label="Zoom notification-badge"><img loading="lazy" src="images/notification-badge/ideal__default.png" alt="notification-badge" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-notification-badge">notification-badge</a></h3>
+    <div class="sub">202×355<a class="wf" href="wireframes/notification-badge.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/notification-badge__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article>
+<article class="card" id="c-coach-mark">
+  <a class="shot" href="#d-coach-mark" aria-label="Zoom coach-mark"><img loading="lazy" src="images/coach-mark/ideal__default.png" alt="coach-mark" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-coach-mark">coach-mark</a></h3>
+    <div class="sub">1050×2100<a class="wf" href="wireframes/coach-mark.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/coach-mark__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    <div class="greenlines" title="accessibility greenlines"><span class="chip chip--info">button</span></div>
+  </div>
+</article></div>
+    </section>
+<section class="group" id="g-foundations">
+      <h2>Foundations</h2>
+      <div class="grid"><article class="card" id="c-typography">
+  <a class="shot" href="#d-typography" aria-label="Zoom typography"><img loading="lazy" src="images/typography/ideal__default.png" alt="typography" /></a>
+  <div class="meta">
+    <h3><a class="ctitle" href="#d-typography">typography</a></h3>
+    <div class="sub">945×1928<a class="wf" href="wireframes/typography.svg" target="_blank" rel="noopener">wireframe ↗</a><a class="wf figma-svg-link" href="https://preview.coo.ee/bitwarden-android/render/typography__ideal__default.svg" target="_blank" rel="noopener">figma svg ↗</a></div>
+    
+  </div>
+</article></div>
+    </section></main>
+</div>
+<div class="detail" id="d-filled-button" role="dialog" aria-label="filled-button">
+  <a class="detail-scrim" href="#c-filled-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-filled-button" aria-label="Close">×</a>
+    <h3>filled-button</h3>
+    <div class="detail-caption">The primary call to action — filled, full width, the button every Bitwarden screen leads with.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/filled-button/ideal__default.png" alt="filled-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-outlined-button" role="dialog" aria-label="outlined-button">
+  <a class="detail-scrim" href="#c-outlined-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-outlined-button" aria-label="Close">×</a>
+    <h3>outlined-button</h3>
+    <div class="detail-caption">The secondary action beside it: same shape and metrics, outline instead of fill.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/outlined-button/ideal__default.png" alt="outlined-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-filled-error-button" role="dialog" aria-label="filled-error-button">
+  <a class="detail-scrim" href="#c-filled-error-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-filled-error-button" aria-label="Close">×</a>
+    <h3>filled-error-button</h3>
+    <div class="detail-caption">The destructive variant: the filled button in the error role, for delete and purge.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/filled-error-button/ideal__default.png" alt="filled-error-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-outlined-error-button" role="dialog" aria-label="outlined-error-button">
+  <a class="detail-scrim" href="#c-outlined-error-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-outlined-error-button" aria-label="Close">×</a>
+    <h3>outlined-error-button</h3>
+    <div class="detail-caption">Destructive, but not the screen&#39;s primary action — the outlined button in the error role.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/outlined-error-button/ideal__default.png" alt="outlined-error-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-text-selection-button" role="dialog" aria-label="text-selection-button">
+  <a class="detail-scrim" href="#c-text-selection-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-text-selection-button" aria-label="Close">×</a>
+    <h3>text-selection-button</h3>
+    <div class="detail-caption">A button that reads as a field: a label with the current selection, used where a value opens a picker.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/text-selection-button/ideal__default.png" alt="text-selection-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-icon-button-filled" role="dialog" aria-label="icon-button-filled">
+  <a class="detail-scrim" href="#c-icon-button-filled" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-icon-button-filled" aria-label="Close">×</a>
+    <h3>icon-button-filled</h3>
+    <div class="detail-caption">Icon-only, filled — the emphasised icon action.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/icon-button-filled/ideal__default.png" alt="icon-button-filled default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-icon-button-tonal" role="dialog" aria-label="icon-button-tonal">
+  <a class="detail-scrim" href="#c-icon-button-tonal" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-icon-button-tonal" aria-label="Close">×</a>
+    <h3>icon-button-tonal</h3>
+    <div class="detail-caption">Icon-only, tonal container: the middle weight between filled and standard.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/icon-button-tonal/ideal__default.png" alt="icon-button-tonal default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-icon-button-standard" role="dialog" aria-label="icon-button-standard">
+  <a class="detail-scrim" href="#c-icon-button-standard" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-icon-button-standard" aria-label="Close">×</a>
+    <h3>icon-button-standard</h3>
+    <div class="detail-caption">Icon-only with no container, for dense rows and app bars.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/icon-button-standard/ideal__default.png" alt="icon-button-standard default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-text-field" role="dialog" aria-label="text-field">
+  <a class="detail-scrim" href="#c-text-field" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-text-field" aria-label="Close">×</a>
+    <h3>text-field</h3>
+    <div class="detail-caption">The text field with its label, supporting text and trailing action — the base every Bitwarden input is built from.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/text-field/ideal__default.png" alt="text-field default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-password-field" role="dialog" aria-label="password-field">
+  <a class="detail-scrim" href="#c-password-field" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-password-field" aria-label="Close">×</a>
+    <h3>password-field</h3>
+    <div class="detail-caption">The same field in its password shape: obscured value with the reveal toggle.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/password-field/ideal__default.png" alt="password-field default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-hidden-password-field" role="dialog" aria-label="hidden-password-field">
+  <a class="detail-scrim" href="#c-hidden-password-field" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-hidden-password-field" aria-label="Close">×</a>
+    <h3>hidden-password-field</h3>
+    <div class="detail-caption">A password shown as fixed dots with no reveal — how a vault item renders a secret it will not display inline.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/hidden-password-field/ideal__default.png" alt="hidden-password-field default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-multi-select-button" role="dialog" aria-label="multi-select-button">
+  <a class="detail-scrim" href="#c-multi-select-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-multi-select-button" aria-label="Close">×</a>
+    <h3>multi-select-button</h3>
+    <div class="detail-caption">The dropdown field: current choice, label and chevron, opening a selection dialog.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/multi-select-button/ideal__default.png" alt="multi-select-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-date-picker-button" role="dialog" aria-label="date-picker-button">
+  <a class="detail-scrim" href="#c-date-picker-button" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-date-picker-button" aria-label="Close">×</a>
+    <h3>date-picker-button</h3>
+    <div class="detail-caption">The date field&#39;s closed state, styled as a field rather than a button.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/date-picker-button/ideal__default.png" alt="date-picker-button default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-slider" role="dialog" aria-label="slider">
+  <a class="detail-scrim" href="#c-slider" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-slider" aria-label="Close">×</a>
+    <h3>slider</h3>
+    <div class="detail-caption">The labelled slider with its value readout — the password-generator length control.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/slider/ideal__default.png" alt="slider default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-switch" role="dialog" aria-label="switch">
+  <a class="detail-scrim" href="#c-switch" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-switch" aria-label="Close">×</a>
+    <h3>switch</h3>
+    <div class="detail-caption">A labelled switch row, the toggle used throughout settings.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/switch/ideal__default.png" alt="switch default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action-card" role="dialog" aria-label="action-card">
+  <a class="detail-scrim" href="#c-action-card" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action-card" aria-label="Close">×</a>
+    <h3>action-card</h3>
+    <div class="detail-caption">The action card at its simplest: title, primary action, dismiss.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action-card/ideal__default.png" alt="action-card default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/action-card/ideal__default__dark.png" alt="action-card default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action-card-subtitle" role="dialog" aria-label="action-card-subtitle">
+  <a class="detail-scrim" href="#c-action-card-subtitle" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action-card-subtitle" aria-label="Close">×</a>
+    <h3>action-card-subtitle</h3>
+    <div class="detail-caption">The same card carrying a subtitle — the shape used for onboarding and security prompts.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action-card-subtitle/ideal__default.png" alt="action-card-subtitle default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/action-card-subtitle/ideal__default__dark.png" alt="action-card-subtitle default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action-card-subtitle-no-dismiss" role="dialog" aria-label="action-card-subtitle-no-dismiss">
+  <a class="detail-scrim" href="#c-action-card-subtitle-no-dismiss" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action-card-subtitle-no-dismiss" aria-label="Close">×</a>
+    <h3>action-card-subtitle-no-dismiss</h3>
+    <div class="detail-caption">Subtitled, but with no dismiss affordance: an action the user is not meant to wave away.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action-card-subtitle-no-dismiss/ideal__default.png" alt="action-card-subtitle-no-dismiss default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/action-card-subtitle-no-dismiss/ideal__default__dark.png" alt="action-card-subtitle-no-dismiss default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action-card-leading" role="dialog" aria-label="action-card-leading">
+  <a class="detail-scrim" href="#c-action-card-leading" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action-card-leading" aria-label="Close">×</a>
+    <h3>action-card-leading</h3>
+    <div class="detail-caption">With leading content — the variant that carries an icon or badge beside the text.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action-card-leading/ideal__default.png" alt="action-card-leading default" /><span>default</span></div><div class="state-shot"><img loading="lazy" src="images/action-card-leading/ideal__default__dark.png" alt="action-card-leading default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action-card-small" role="dialog" aria-label="action-card-small">
+  <a class="detail-scrim" href="#c-action-card-small" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action-card-small" aria-label="Close">×</a>
+    <h3>action-card-small</h3>
+    <div class="detail-caption">The compact action card, for stacking several in a list.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action-card-small/ideal__default.png" alt="action-card-small default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-action-card-small-trailing" role="dialog" aria-label="action-card-small-trailing">
+  <a class="detail-scrim" href="#c-action-card-small-trailing" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-action-card-small-trailing" aria-label="Close">×</a>
+    <h3>action-card-small-trailing</h3>
+    <div class="detail-caption">The compact card with a trailing icon, which is how it signals navigation.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/action-card-small-trailing/ideal__default.png" alt="action-card-small-trailing default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-info-callout" role="dialog" aria-label="info-callout">
+  <a class="detail-scrim" href="#c-info-callout" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-info-callout" aria-label="Close">×</a>
+    <h3>info-callout</h3>
+    <div class="detail-caption">The informational callout card — the non-blocking explanation shown above a form.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/info-callout/ideal__default.png" alt="info-callout default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-content-block" role="dialog" aria-label="content-block">
+  <a class="detail-scrim" href="#c-content-block" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-content-block" aria-label="Close">×</a>
+    <h3>content-block</h3>
+    <div class="detail-caption">A headed block of body content, the unit the help and settings screens are composed from.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/content-block/ideal__default.png" alt="content-block default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-empty-content" role="dialog" aria-label="empty-content">
+  <a class="detail-scrim" href="#c-empty-content" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-empty-content" aria-label="Close">×</a>
+    <h3>empty-content</h3>
+    <div class="detail-caption">The empty state: illustration, message and the action that resolves it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/empty-content/ideal__default.png" alt="empty-content default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-loading-content" role="dialog" aria-label="loading-content">
+  <a class="detail-scrim" href="#c-loading-content" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-loading-content" aria-label="Close">×</a>
+    <h3>loading-content</h3>
+    <div class="detail-caption">The full-screen loading state, drawn in place of content rather than over it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/loading-content/ideal__default.png" alt="loading-content default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-text-row-tooltip" role="dialog" aria-label="text-row-tooltip">
+  <a class="detail-scrim" href="#c-text-row-tooltip" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-text-row-tooltip" aria-label="Close">×</a>
+    <h3>text-row-tooltip</h3>
+    <div class="detail-caption">A settings row carrying a tooltip and trailing content.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/text-row-tooltip/ideal__default.png" alt="text-row-tooltip default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-text-row-disabled" role="dialog" aria-label="text-row-disabled">
+  <a class="detail-scrim" href="#c-text-row-disabled" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-text-row-disabled" aria-label="Close">×</a>
+    <h3>text-row-disabled</h3>
+    <div class="detail-caption">The same row disabled, with its divider — what an unavailable setting looks like.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/text-row-disabled/ideal__default.png" alt="text-row-disabled default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-push-row" role="dialog" aria-label="push-row">
+  <a class="detail-scrim" href="#c-push-row" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-push-row" aria-label="Close">×</a>
+    <h3>push-row</h3>
+    <div class="detail-caption">The navigation row: label and chevron, pushing a new screen.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/push-row/ideal__default.png" alt="push-row default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-external-link-row" role="dialog" aria-label="external-link-row">
+  <a class="detail-scrim" href="#c-external-link-row" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-external-link-row" aria-label="Close">×</a>
+    <h3>external-link-row</h3>
+    <div class="detail-caption">The row that leaves the app, marked with the external-link icon rather than a chevron.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/external-link-row/ideal__default.png" alt="external-link-row default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-row-of-icon-buttons" role="dialog" aria-label="row-of-icon-buttons">
+  <a class="detail-scrim" href="#c-row-of-icon-buttons" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-row-of-icon-buttons" aria-label="Close">×</a>
+    <h3>row-of-icon-buttons</h3>
+    <div class="detail-caption">The trailing cluster of icon actions a vault item row carries.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/row-of-icon-buttons/ideal__default.png" alt="row-of-icon-buttons default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-list-header" role="dialog" aria-label="list-header">
+  <a class="detail-scrim" href="#c-list-header" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-list-header" aria-label="Close">×</a>
+    <h3>list-header</h3>
+    <div class="detail-caption">The section header that separates groups within a list.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/list-header/ideal__default.png" alt="list-header default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-app-bar" role="dialog" aria-label="top-app-bar">
+  <a class="detail-scrim" href="#c-top-app-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-app-bar" aria-label="Close">×</a>
+    <h3>top-app-bar</h3>
+    <div class="detail-caption">The standard top app bar: navigation icon, title, actions.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-app-bar/ideal__default.png" alt="top-app-bar default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-app-bar-overflow" role="dialog" aria-label="top-app-bar-overflow">
+  <a class="detail-scrim" href="#c-top-app-bar-overflow" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-app-bar-overflow" aria-label="Close">×</a>
+    <h3>top-app-bar-overflow</h3>
+    <div class="detail-caption">The same bar with an overflow menu open.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-app-bar-overflow/ideal__default.png" alt="top-app-bar-overflow default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-top-app-bar-overflow-cutoff" role="dialog" aria-label="top-app-bar-overflow-cutoff">
+  <a class="detail-scrim" href="#c-top-app-bar-overflow-cutoff" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-top-app-bar-overflow-cutoff" aria-label="Close">×</a>
+    <h3>top-app-bar-overflow-cutoff</h3>
+    <div class="detail-caption">A long title against the overflow menu — the truncation case, previewed on purpose.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/top-app-bar-overflow-cutoff/ideal__default.png" alt="top-app-bar-overflow-cutoff default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-medium-top-app-bar" role="dialog" aria-label="medium-top-app-bar">
+  <a class="detail-scrim" href="#c-medium-top-app-bar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-medium-top-app-bar" aria-label="Close">×</a>
+    <h3>medium-top-app-bar</h3>
+    <div class="detail-caption">The medium (two-line) app bar used by the screens with a large title.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/medium-top-app-bar/ideal__default.png" alt="medium-top-app-bar default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-search-action" role="dialog" aria-label="search-action">
+  <a class="detail-scrim" href="#c-search-action" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-search-action" aria-label="Close">×</a>
+    <h3>search-action</h3>
+    <div class="detail-caption">The search action as it sits in an app bar.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/search-action/ideal__default.png" alt="search-action default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-overflow-action" role="dialog" aria-label="overflow-action">
+  <a class="detail-scrim" href="#c-overflow-action" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-overflow-action" aria-label="Close">×</a>
+    <h3>overflow-action</h3>
+    <div class="detail-caption">The overflow action item and its menu.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/overflow-action/ideal__default.png" alt="overflow-action default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-account-action-item" role="dialog" aria-label="account-action-item">
+  <a class="detail-scrim" href="#c-account-action-item" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-account-action-item" aria-label="Close">×</a>
+    <h3>account-action-item</h3>
+    <div class="detail-caption">The account avatar that opens the switcher, initials on its colour.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/account-action-item/ideal__default.png" alt="account-action-item default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-account-switcher" role="dialog" aria-label="account-switcher">
+  <a class="detail-scrim" href="#c-account-switcher" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-account-switcher" aria-label="Close">×</a>
+    <h3>account-switcher</h3>
+    <div class="detail-caption">The expanded account switcher: current account, the others, and the add-account row.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/account-switcher/ideal__default.png" alt="account-switcher default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-placeholder-account-light" role="dialog" aria-label="placeholder-account-light">
+  <a class="detail-scrim" href="#c-placeholder-account-light" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-placeholder-account-light" aria-label="Close">×</a>
+    <h3>placeholder-account-light</h3>
+    <div class="detail-caption">The placeholder avatar shown before an account loads — light.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot" data-bg="light"><img loading="lazy" src="images/placeholder-account-light/ideal__default__light.png" alt="placeholder-account-light default" /><span>light</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-placeholder-account-dark" role="dialog" aria-label="placeholder-account-dark">
+  <a class="detail-scrim" href="#c-placeholder-account-dark" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-placeholder-account-dark" aria-label="Close">×</a>
+    <h3>placeholder-account-dark</h3>
+    <div class="detail-caption">The same placeholder in dark, previewed separately upstream rather than through a multipreview.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/placeholder-account-dark/ideal__default__dark.png" alt="placeholder-account-dark default" /><span>dark</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-loading-dialog" role="dialog" aria-label="loading-dialog">
+  <a class="detail-scrim" href="#c-loading-dialog" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-loading-dialog" aria-label="Close">×</a>
+    <h3>loading-dialog</h3>
+    <div class="detail-caption">The blocking loading dialog, for work the user must wait on.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/loading-dialog/ideal__default.png" alt="loading-dialog default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-date-picker-dialog" role="dialog" aria-label="date-picker-dialog">
+  <a class="detail-scrim" href="#c-date-picker-dialog" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-date-picker-dialog" aria-label="Close">×</a>
+    <h3>date-picker-dialog</h3>
+    <div class="detail-caption">The date picker in its dialog.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/date-picker-dialog/ideal__default.png" alt="date-picker-dialog default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-snackbar" role="dialog" aria-label="snackbar">
+  <a class="detail-scrim" href="#c-snackbar" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-snackbar" aria-label="Close">×</a>
+    <h3>snackbar</h3>
+    <div class="detail-caption">Bitwarden&#39;s own snackbar — message, action and dismiss, drawn rather than borrowed from Material.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/snackbar/ideal__default.png" alt="snackbar default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-status-badge" role="dialog" aria-label="status-badge">
+  <a class="detail-scrim" href="#c-status-badge" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-status-badge" aria-label="Close">×</a>
+    <h3>status-badge</h3>
+    <div class="detail-caption">The status badge in light.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/status-badge/ideal__default.png" alt="status-badge default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-status-badge-dark" role="dialog" aria-label="status-badge-dark">
+  <a class="detail-scrim" href="#c-status-badge-dark" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-status-badge-dark" aria-label="Close">×</a>
+    <h3>status-badge-dark</h3>
+    <div class="detail-caption">And in dark, which upstream previews as its own function.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/status-badge-dark/ideal__default.png" alt="status-badge-dark default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-notification-badge" role="dialog" aria-label="notification-badge">
+  <a class="detail-scrim" href="#c-notification-badge" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-notification-badge" aria-label="Close">×</a>
+    <h3>notification-badge</h3>
+    <div class="detail-caption">The small count badge that rides on a navigation icon.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/notification-badge/ideal__default.png" alt="notification-badge default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-coach-mark" role="dialog" aria-label="coach-mark">
+  <a class="detail-scrim" href="#c-coach-mark" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-coach-mark" aria-label="Close">×</a>
+    <h3>coach-mark</h3>
+    <div class="detail-caption">The coach-mark container that spotlights a target and explains it.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/coach-mark/ideal__default.png" alt="coach-mark default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<div class="detail" id="d-typography" role="dialog" aria-label="typography">
+  <a class="detail-scrim" href="#c-typography" aria-label="Close"></a>
+  <div class="detail-panel">
+    <a class="detail-x" href="#c-typography" aria-label="Close">×</a>
+    <h3>typography</h3>
+    <div class="detail-caption">The type ramp: every text style the design system defines, in one sheet.</div>
+    <div class="detail-states"><figure class="state"><figcaption>default</figcaption><div class="state-shots"><div class="state-shot"><img loading="lazy" src="images/typography/ideal__default.png" alt="typography default" /><span>default</span></div></div></figure></div>
+  </div>
+</div>
+<script>
+// Crop each component's hero (and its zoom-view default capture) to the component's content bbox,
+// read from its figma-svg's root translate + viewBox. A wear sticker rendered on a 454² device
+// canvas then displays cropped to the component instead of floating in an empty frame. A no-op for
+// close-cropped renders (the bbox already fills the frame) and for components with no figma-svg.
+(function () {
+  function parseBox(svgText) {
+    var t = /translate\(\s*(-?\d+)\s*,\s*(-?\d+)\s*\)/.exec(svgText);
+    var v = /viewBox="0 0 (\d+(?:\.\d+)?) (\d+(?:\.\d+)?)"/.exec(svgText);
+    if (!v) return null;
+    return { tx: t ? +t[1] : 0, ty: t ? +t[2] : 0, vw: +v[1], vh: +v[2] };
+  }
+  function frame(shot, box, gutterEdges) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      if (box.vw >= rw * 0.9 && box.vh >= rh * 0.9) {
+        // Already close-cropped as far as the vector can tell — but a declared gutter is margin the
+        // capture added, which no bbox of the drawn pixels can distinguish from the component.
+        if (gutterEdges) frameGutter(shot, gutterEdges);
+        return;
+      }
+      var cap = 240, scale = Math.min(1, cap / Math.max(box.vw, box.vh));
+      var dw = Math.max(1, Math.round(box.vw * scale));
+      shot.classList.add("shot--framed");
+      // A vector-framed shot on a GUTTERED render must not hide its overflow either: the box the
+      // vector describes is the component, and the pixels beyond it are that component's shadow.
+      if (gutterEdges) shot.classList.add("shot--bleed");
+      // Size the window by aspect-ratio at its natural (capped) width, with max-width:100% so it
+      // shrinks to a narrow grid card instead of overflowing it; frame the render in PERCENTAGES of
+      // the box so the whole thing scales as one. (A fixed-px window overflowed the card and clipped
+      // wide components.) Height stays auto — the img keeps the render's aspect.
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      shot.style.width = dw + "px";
+      shot.style.aspectRatio = box.vw + " / " + box.vh;
+      img.style.width = pct(rw, box.vw) + "%";
+      // (tx,ty) is negative for a centred component, so it shifts the render to bring the component's
+      // top-left to the clip origin; as a % of the box axis it scales with the shrunk window.
+      img.style.left = pct(box.tx, box.vw) + "%";
+      img.style.top = pct(box.ty, box.vh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
+  // A declared capture gutter needs no vector and no guard: the renderer recorded exactly how much
+  // transparent margin it added, so the box is a fact rather than an inference. Native pixels — the
+  // stylesheet caps how large a card draws, and scaling here would hand a guttered card a different
+  // display size from the plain one beside it, which is the difference being removed.
+  function frameGutter(shot, edges) {
+    var img = shot.querySelector("img");
+    if (!img) return;
+    function apply() {
+      var rw = img.naturalWidth || img.width, rh = img.naturalHeight || img.height;
+      if (!(rw > 0 && rh > 0)) return;
+      var boxW = rw - edges[0] - edges[2], boxH = rh - edges[1] - edges[3];
+      if (!(boxW > 0 && boxH > 0)) return;
+      // Capped on HEIGHT, which is the rule the stylesheet applies to a plain card image
+      // (max-height:240px, width follows) — a framed window carries an aspect-ratio, so the cap
+      // cannot come from CSS without squashing it. Capping the largest edge instead would shrink a
+      // wide-but-short component no plain sibling shrinks.
+      var scale = Math.min(1, 240 / boxH);
+      var bw = Math.max(1, Math.round(boxW * scale));
+      var bh = Math.max(1, Math.round(boxH * scale));
+      var iw = Math.round(rw * scale);
+      var offX = Math.round(edges[0] * scale), offY = Math.round(edges[1] * scale);
+      var pct = function (n, d) { return +(n / d * 100).toFixed(4); };
+      // "shot--bleed" keeps the overflow visible: what falls outside this box is the component's
+      // own shadow, which the gutter was captured to preserve. Hiding it would crop the shadow a
+      // second time, which is the bug the gutter fixed.
+      shot.classList.add("shot--framed");
+      shot.classList.add("shot--bleed");
+      shot.style.width = bw + "px";
+      shot.style.aspectRatio = bw + " / " + bh;
+      img.style.width = pct(iw, bw) + "%";
+      img.style.left = pct(-offX, bw) + "%";
+      img.style.top = pct(-offY, bh) + "%";
+    }
+    if (img.complete) apply();
+    else img.addEventListener("load", apply);
+  }
+  document.querySelectorAll(".card").forEach(function (card) {
+    var hero = card.querySelector("a.shot");
+    if (!hero) return;
+    var declared = hero.getAttribute("data-gutter");
+    var edges = declared
+      ? declared.split(",").map(function (v) { return Math.max(0, parseInt(v, 10) || 0); })
+      : null;
+    var link = card.querySelector('a.figma-svg-link');
+    if (!link) {
+      if (edges) frameGutter(hero, edges);
+      return;
+    }
+    // Fetch the vector only once the card is actually near the viewport.
+    //
+    // A deferred catalog publishes no static vector: the href is an absolute live-render URL and
+    // the daemon generates the SVG per request, from a small pool of live seats. Fetching every
+    // card's on load would start a render for the whole catalog the instant the gallery opens —
+    // thousands, on the large catalogs deferral exists for — spending the seats on bounding boxes
+    // and answering the visitors who actually asked for a vector with 503s.
+    //
+    // Deferring the same fetch to visibility fixes that without giving up the crop: the vector is
+    // the only source of the content box for a card with no declared gutter (an ordinary 454x454
+    // Wear canvas, say), so skipping it outright would leave those heroes uncropped in the full
+    // device canvas. Only what someone looks at is rendered, at the pace they scroll.
+    var pending = function () {
+      fetch(link.getAttribute("href"))
+        .then(function (r) { return r.ok ? r.text() : null; })
+        .then(function (txt) {
+          // The vector wins where it applies — it answers the tighter question of where the
+          // component sits on a canvas it was drawn on — and the gutter answers when it does not.
+          var box = txt ? parseBox(txt) : null;
+          if (box) frame(hero, box, edges);
+          else if (edges) frameGutter(hero, edges);
+        })
+        .catch(function () { if (edges) frameGutter(hero, edges); });
+    };
+    if (typeof IntersectionObserver !== "function") {
+      pending();
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        observer.unobserve(entry.target);
+        pending();
+      });
+    }, { rootMargin: "400px" });
+    observer.observe(card);
+  });
+})();
+</script>
+</body>
+</html>
