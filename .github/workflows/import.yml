@@ -262,6 +262,17 @@ jobs:
       # the catalog reports livebundle-unavailable and falls back to baked PNGs. Turn it on per
       # import if one does, rather than inflating every bundle for a case none of them has hit.
       publish-live-bundle: true
+      # Pure editable SVGs are a daemon data product: keep them transient through catalog
+      # generation, then produce and cache them on request. Raster-backed hybrid SVGs stay static so
+      # their crop references remain self-contained. Requires publish-live-bundle, which is on above.
+      defer-figma-svg: true
+      # No per-preview split, the same treatment wear-m3 and the consumer callers take. The split
+      # writes one manifest and one set of stickers PER PREVIEW, and every catalog change rewrites
+      # all of them onto an append-only delivery branch — carriage an import, refreshed nightly for
+      # a project we do not control, would pay every night. The module bundle above is what a
+      # trusted serve host hydrates, so the live re-render lane survives without it, and `split-mode`
+      # is dropped with the split since that is the only thing it modifies.
+      split-per-preview: false
       publish: false
       upload-out: true
 

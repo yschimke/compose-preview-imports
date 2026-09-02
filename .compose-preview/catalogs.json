@@ -1,15 +1,20 @@
 {
-  "$comment": "GENERATED from imports.json by scripts/sync-catalog-registry.sh — do not edit by hand. This is the document a preview server fetches when it nominates this repository with --catalog-registry: every catalog listed here is served from this repository's own design-artifacts/<system> branch. Each carries importedFrom, so a serving box sections the catalog under the UPSTREAM owner — beside that owner's other catalogs rather than under this staging repository — and badges the card with the project it came from.",
+  "$comment": "GENERATED from the imports/ directory by scripts/sync-catalog-registry.sh — do not edit by hand. This is the document a preview server fetches when it nominates this repository with --catalog-registry: every catalog listed here is served from this repository's own design-artifacts/<system> branch. Each carries importedFrom, so a serving box sections the catalog under the UPSTREAM owner — beside that owner's other catalogs rather than under this staging repository — and badges the card with the project it came from.",
   "catalogs": [
+    {
+      "importedFrom": "bitwarden/android",
+      "listed": true,
+      "system": "bitwarden-android"
+    },
+    {
+      "importedFrom": "DroidKaigi/conference-app-2026",
+      "listed": true,
+      "system": "droidkaigi-conference-app-2026"
+    },
     {
       "importedFrom": "joreilly/BikeShare",
       "listed": true,
       "system": "joreilly-bikeshare"
-    },
-    {
-      "importedFrom": "joreilly/PeopleInSpace",
-      "listed": true,
-      "system": "joreilly-peopleinspace"
     },
     {
       "importedFrom": "joreilly/ClimateTraceKMP",
@@ -17,9 +22,14 @@
       "system": "joreilly-climatetracekmp"
     },
     {
-      "importedFrom": "bitwarden/android",
+      "importedFrom": "joreilly/PeopleInSpace",
       "listed": true,
-      "system": "bitwarden-android"
+      "system": "joreilly-peopleinspace"
+    },
+    {
+      "importedFrom": "msasikanth/twine",
+      "listed": true,
+      "system": "msasikanth-twine"
     },
     {
       "importedFrom": "mullvad/mullvadvpn-app",
