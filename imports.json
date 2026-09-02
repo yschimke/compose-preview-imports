@@ -16,6 +16,11 @@
       "slug": "joreilly-climatetracekmp",
       "branch": "import/joreilly-climatetracekmp",
       "upstream": "joreilly/ClimateTraceKMP"
+    },
+    {
+      "slug": "mullvad-mullvadvpn-app",
+      "branch": "import/mullvad-mullvadvpn-app",
+      "upstream": "mullvad/mullvadvpn-app"
     }
   ]
 }
