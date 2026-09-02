@@ -36,7 +36,7 @@
         {
           "componentId": "Screens/Episode list",
           "preview": "EpisodeListScreenPreview",
-          "caption": "A ScalingLazyColumn of episode chips \u2014 the scaling curve at the top and bottom of the list is the thing worth seeing rendered.",
+          "caption": "A ScalingLazyColumn of episode chips — the scaling curve at the top and bottom of the list is the thing worth seeing rendered.",
           "capture": "none"
         },
         {
@@ -46,7 +46,7 @@
           "variants": [
             {
               "preview": "SettingsScreenPreview_checked",
-              "caption": "With the toggles on \u2014 the checked chip treatment against the black background.",
+              "caption": "With the toggles on — the checked chip treatment against the black background.",
               "state": "checked"
             }
           ]
@@ -54,7 +54,7 @@
         {
           "componentId": "Screens/Playback effects",
           "preview": "EffectsScreenDarkPreview",
-          "caption": "Speed, trim silence and volume boost \u2014 the densest control screen in the watch app."
+          "caption": "Speed, trim silence and volume boost — the densest control screen in the watch app."
         },
         {
           "componentId": "Screens/App entry",
@@ -93,7 +93,7 @@
         {
           "componentId": "Sign-in/Phone instructions",
           "preview": "LoginWithPhoneInstructionsPreview",
-          "caption": "The 'continue on your phone' instructions \u2014 the entry point to pairing.",
+          "caption": "The 'continue on your phone' instructions — the entry point to pairing.",
           "variants": [
             {
               "preview": "SyncingContentPreview",
@@ -116,12 +116,6 @@
               "state": "login-failed"
             }
           ]
-        },
-        {
-          "componentId": "Sign-in/Logging in",
-          "preview": "LoggingInScreenPreview",
-          "caption": "The blocking progress screen shown while credentials are exchanged.",
-          "capture": "none"
         }
       ]
     },
@@ -136,7 +130,7 @@
           "variants": [
             {
               "preview": "TimeTextWithConnectivityDisconnectedPreview",
-              "caption": "Disconnected \u2014 the curved layout gains an offline glyph beside the clock, which is where the arc maths is most likely to crowd.",
+              "caption": "Disconnected — the curved layout gains an offline glyph beside the clock, which is where the arc maths is most likely to crowd.",
               "state": "disconnected"
             }
           ]

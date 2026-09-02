@@ -6,5 +6,11 @@
     ":wear"
   ],
   "renderer": "android",
-  "notes": "The Wear OS client from the same Pocket Casts repository: :wear declares 21 @Preview functions over the now-playing, episode, sign-in and error surfaces, all Wear Compose Material and all plain @Preview, so previewAnnotations is not needed. Smaller and more screen-shaped than the design-system import, which is the point of having both. The catalog omits nine components: upstream names six of its previews simply Preview(), which a catalog spec cannot address individually because it resolves by function name \u2014 the old fork renamed them in place, and that rename is the kind of thing worth sending upstream rather than carrying here. Licence: MPL-2.0."
+  "excludePreviewIds": [
+    "*.DefaultPreview_wearos_small_round",
+    "*.LoggingInScreenPreview",
+    "*.WatchListPreview_wearos_small_round",
+    "*.EpisodeListScreenPreview_wearos_small_round"
+  ],
+  "notes": "The Wear OS client from the same Pocket Casts repository: :wear declares 21 @Preview functions over the now-playing, episode, sign-in and error surfaces, all Wear Compose Material and all plain @Preview, so previewAnnotations is not needed. Smaller and more screen-shaped than the design-system import, which is the point of having both. The catalog omits nine components: upstream names six of its previews simply Preview(), which a catalog spec cannot address individually because it resolves by function name \u2014 the old fork renamed them in place, and that rename is the kind of thing worth sending upstream rather than carrying here. Licence: MPL-2.0. Four renders are excluded, all IllegalStateException: Given component holder class androidx.activity.ComponentActivity does not implement — Hilt entry points these previews resolve through the application. Three fail only at wearos_small_round and keep their catalog entries, since the large-round permutation renders; LoggingInScreenPreview fails outright, so its entry goes. 24 of 28 render."
 }
