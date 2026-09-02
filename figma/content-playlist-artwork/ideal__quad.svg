@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="210" height="210" viewBox="0 0 210 210" text-rendering="geometricPrecision" font-family="sans-serif">
+<defs>
+  <filter id="shadow-3" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="1.5" stdDeviation="1.79" flood-color="#000000" flood-opacity="0.26"/>
+  </filter>
+</defs>
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <clipPath id="clip-0"><rect x="0" y="0" width="210" height="210" rx="15.0" ry="15.0"/></clipPath>
+    <g id="ReusableComposeNode" filter="url(#shadow-3)">
+      <g clip-path="url(#clip-0)">
+        <g id="ReusableComposeNode">
+          <g id="ReusableComposeNode">
+            <image href="ideal__quad.figma-raster/998.png" x="0" y="0" width="105" height="105"/>
+          </g>
+          <g id="ReusableComposeNode">
+            <image href="ideal__quad.figma-raster/999.png" x="0" y="105" width="105" height="105"/>
+          </g>
+        </g>
+        <g id="ReusableComposeNode">
+          <g id="ReusableComposeNode">
+            <image href="ideal__quad.figma-raster/1001.png" x="105" y="0" width="105" height="105"/>
+          </g>
+          <g id="ReusableComposeNode">
+            <image href="ideal__quad.figma-raster/1002.png" x="105" y="105" width="105" height="105"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

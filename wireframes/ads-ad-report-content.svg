@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1600" width="800" height="1600" role="img" aria-label="Ads/Ad report content layout wireframe">
+  <title>Ads/Ad report content — layout wireframe (slots + tokens)</title>
+  <rect width="800" height="1600" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="800" height="1600" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="800" height="1600" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="800" height="1600" fill="#444444" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FF444444</text>
+  </g>
+  <g>
+    <rect x="0" y="1262" width="800" height="338" fill="#FFFFFF" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="1274" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFFFFFF</text>
+  </g>
+  <g>
+    <path d="M348,1278 H452 A4,4 0 0 1 456,1282 V1282 A4,4 0 0 1 452,1286 H348 A4,4 0 0 1 344,1282 V1282 A4,4 0 0 1 348,1278 Z" fill="#E0E6EA" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="347" y="1290" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFE0E6EA</text>
+  </g>
+  <g>
+    <rect x="0" y="1302" width="800" height="298" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="1302" width="800" height="298" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="1302" width="800" height="298" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="48" y="1302" width="704" height="148" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="48" y="1352" width="48" height="48" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="128" y="1355" width="198" height="42" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="48" y="1450" width="704" height="2" fill="#E0E6EA" fill-opacity="1" stroke="#7A7A33" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="51" y="1462" font-family="system-ui, sans-serif" font-size="9" fill="#7A7A33">#FFE0E6EA  pad ·</text>
+  </g>
+  <g>
+    <rect x="48" y="1452" width="704" height="148" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="48" y="1502" width="48" height="48" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="128" y="1505" width="157" height="42" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

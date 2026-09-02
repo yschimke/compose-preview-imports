@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" width="210" height="210" role="img" aria-label="Motion/Animated play button layout wireframe">
+  <title>Motion/Animated play button — layout wireframe (slots + tokens)</title>
+  <rect width="210" height="210" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="210" height="210" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="210" height="210" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M105,0 H105 A105,105 0 0 1 210,105 V105 A105,105 0 0 1 105,210 H105 A105,105 0 0 1 0,105 V105 A105,105 0 0 1 105,0 Z" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="53" y="53" width="105" height="105" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

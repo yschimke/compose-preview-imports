@@ -1,0 +1,6205 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "pocketcasts",
+  "title": "Pocket Casts",
+  "components": [
+    {
+      "componentId": "Buttons/Row button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-button/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 216,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 216,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__default__dark.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-button/ideal__disabled.png",
+          "state": "disabled",
+          "width": 1050,
+          "height": 216,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-button__ideal__disabled",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonDisabledPreview_Disabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__disabled.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-button/ideal__default__includepadding-false.png",
+          "state": "default",
+          "width": 1050,
+          "height": 132,
+          "props": {
+            "includePadding": "false"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-button__ideal__default__includepadding-false",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonNoPaddingPreview_No_padding",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__default__includepadding-false.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-button/ideal__default__texticon-ic_retry.png",
+          "state": "default",
+          "width": 1050,
+          "height": 216,
+          "props": {
+            "textIcon": "ic_retry"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-button__ideal__default__texticon-ic_retry",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonTextIconPreview_Text_icon",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__default__texticon-ic_retry.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 966,
+              "height": 132
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 132
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 132
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 450,
+            "y": 79,
+            "width": 151,
+            "height": 58
+          },
+          "label": "Accept",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The filled full-width action button — the primary call to action on almost every Pocket Casts sheet.",
+      "wireframe": "wireframes/buttons-row-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 82,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "RowButtonLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Row outlined button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-outlined-button/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 214,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-outlined-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButtonKt.RowOutlinedButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-outlined-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-outlined-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 214,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-outlined-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButtonKt.RowOutlinedButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-outlined-button__ideal__default__dark.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-outlined-button/ideal__default__leadingicon-set.png",
+          "state": "default",
+          "width": 1050,
+          "height": 214,
+          "props": {
+            "leadingIcon": "set"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-outlined-button__ideal__default__leadingicon-set",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButtonKt.RowOutlinedButtonLeadingIconPreview_Leading_icon",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-outlined-button__ideal__default__leadingicon-set.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 966,
+              "height": 130
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 130
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 130
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 496,
+            "y": 79,
+            "width": 121,
+            "height": 56
+          },
+          "label": "Share",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The secondary full-width action — a border and a tinted label rather than a fill.",
+      "wireframe": "wireframes/buttons-row-outlined-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowOutlinedButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 119,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "RowOutlinedButtonLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Row text button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-text-button/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 214,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-text-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowTextButtonKt.RowTextButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-text-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-text-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 214,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-text-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowTextButtonKt.RowTextButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-text-button__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 966,
+              "height": 130
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 130
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 130
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 461,
+            "y": 79,
+            "width": 129,
+            "height": 56
+          },
+          "label": "Log in",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The lowest-emphasis full-width action: label only, no fill or border.",
+      "wireframe": "wireframes/buttons-row-text-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowTextButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 41,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "RowTextButtonLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Row loading button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-loading-button/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 216,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-loading-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-loading-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 216,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-loading-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__default__dark.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-loading-button/ideal__disabled.png",
+          "state": "disabled",
+          "width": 1050,
+          "height": 216,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-loading-button__ideal__disabled",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonDisabledPreview_Disabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__disabled.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-loading-button/ideal__default__includepadding-false.png",
+          "state": "default",
+          "width": 1050,
+          "height": 132,
+          "props": {
+            "includePadding": "false"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-loading-button__ideal__default__includepadding-false",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonNoPaddingPreview_No_padding",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__default__includepadding-false.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-loading-button/ideal__default__texticon-set.png",
+          "state": "default",
+          "width": 1050,
+          "height": 216,
+          "props": {
+            "textIcon": "set"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-loading-button__ideal__default__texticon-set",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonTextIconPreview_Text_icon",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__default__texticon-set.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 966,
+              "height": 132
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 132
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 132
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 450,
+            "y": 79,
+            "width": 151,
+            "height": 58
+          },
+          "label": "Accept",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The filled action button with an in-place progress state, used where a tap kicks off a network call.",
+      "wireframe": "wireframes/buttons-row-loading-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowLoadingButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 62,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "RowLoadingButtonLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Gradient row button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-gradient-row-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 140,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-gradient-row-button__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.GradientRowButtonKt.GradientRowButtonPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-gradient-row-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 140
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The gradient-filled action reserved for Plus and Patron upgrade paths.",
+      "wireframe": "wireframes/buttons-gradient-row-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/GradientRowButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 76,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "GradientRowButtonPreview"
+    },
+    {
+      "componentId": "Buttons/Row close button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-close-button/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-close-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowCloseButtonKt.RowCloseButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-close-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-row-close-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-row-close-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowCloseButtonKt.RowCloseButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-close-button__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 956,
+              "y": 32,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 956,
+            "y": 32,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The full-width dismiss action at the foot of a sheet.",
+      "wireframe": "wireframes/buttons-row-close-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/RowCloseButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 34,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "RowCloseButtonLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Circle button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-circle-button/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-circle-button__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CircleButtonKt.CircleButtonPreview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "cornerRadius": 24
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The round filled button used for compact single-action affordances.",
+      "wireframe": "wireframes/buttons-circle-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 34,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "CircleButtonPreview"
+    },
+    {
+      "componentId": "Buttons/Circle icon button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-circle-icon-button/ideal__default__light.png",
+          "state": "default",
+          "width": 131,
+          "height": 131,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-circle-icon-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CircleIconButtonKt.CircleIconButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-icon-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-circle-icon-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 131,
+          "height": 131,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-circle-icon-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CircleIconButtonKt.CircleIconButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-icon-button__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 131,
+              "height": 131
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 131,
+            "height": 131
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 131,
+            "height": 131
+          },
+          "role": "Button",
+          "cornerRadius": 24.95
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "A round icon button on a tinted circle.",
+      "wireframe": "wireframes/buttons-circle-icon-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleIconButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 72,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "CircleIconButtonLightPreview"
+    },
+    {
+      "componentId": "Buttons/Close button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-close-button/ideal__default__light.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-close-button__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CloseButtonKt.CloseButtonLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-close-button__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-close-button/ideal__default__dark.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-close-button__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CloseButtonKt.CloseButtonDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-close-button__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 32,
+              "y": 32,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 32,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The bare close affordance used in sheet and dialog corners.",
+      "wireframe": "wireframes/buttons-close-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CloseButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 33,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "CloseButtonLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Button tabs",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-button-tabs/ideal__default__light.png",
+          "state": "default",
+          "width": 608,
+          "height": 126,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-button-tabs__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.ButtonTabsKt.ButtonTabsLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-button-tabs__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-button-tabs/ideal__default__dark.png",
+          "state": "default",
+          "width": 608,
+          "height": 126,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-button-tabs__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.ButtonTabsKt.ButtonTabsDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-button-tabs__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 16,
+              "width": 234,
+              "height": 95
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 16,
+            "width": 234,
+            "height": 95
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 292,
+              "y": 16,
+              "width": 274,
+              "height": 95
+            }
+          },
+          "bounds": {
+            "x": 292,
+            "y": 16,
+            "width": 274,
+            "height": 95
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 608,
+            "height": 126
+          },
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 16,
+            "width": 234,
+            "height": 95
+          },
+          "role": "Button",
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 292,
+            "y": 16,
+            "width": 274,
+            "height": 95
+          },
+          "role": "Button",
+          "cornerRadius": 8
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The pill tab row used to switch between list scopes.",
+      "wireframe": "wireframes/buttons-button-tabs.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ButtonTabs.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 121,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "ButtonTabsLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        }
+      ]
+    },
+    {
+      "componentId": "Buttons/Time play button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-time-play-button/ideal__default.png",
+          "state": "default",
+          "width": 243,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/buttons-time-play-button__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.TimePlayButtonKt.TimePlayButtonPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-time-play-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Play at bookmark position 02:01\"",
+          "detail": {
+            "role": "button",
+            "label": "Play at bookmark position 02:01",
+            "bounds": {
+              "x": 0,
+              "y": 14,
+              "width": 243,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 243,
+            "height": 98
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 14,
+            "width": 243,
+            "height": 98
+          },
+          "role": "Button",
+          "label": "Play at bookmark position 02:01",
+          "cornerRadius": 18.67
+        }
+      ],
+      "section": "Components",
+      "group": "Buttons",
+      "caption": "The play affordance that doubles as a duration/remaining-time label, across all nine palettes.",
+      "wireframe": "wireframes/buttons-time-play-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/TimePlayButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 89,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "TimePlayButtonPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Inputs/Form field",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-form-field/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 189,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-form-field__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.FormFieldKt.FormFieldLightPreview_Light",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/inputs-form-field/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 189,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-form-field__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.FormFieldKt.FormFieldDarkPreview_Dark",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/inputs-form-field/ideal__dialog.png",
+          "state": "dialog",
+          "width": 1050,
+          "height": 498,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-form-field__ideal__dialog",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.FormFieldDialogPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 147
+          },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 147
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 147
+          },
+          "cornerRadius": 6
+        }
+      ],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "The standard single-line text field used across sign-in and naming flows.",
+      "wireframe": "wireframes/inputs-form-field.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FormField.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 119,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "FormFieldLightPreview"
+    },
+    {
+      "componentId": "Inputs/Email and password fields",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-email-and-password-fields/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 420,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-email-and-password-fields__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.EmailAndPasswordFieldsKt.UserPasswordFieldsLightPreview_Light",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/inputs-email-and-password-fields/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 420,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-email-and-password-fields__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.EmailAndPasswordFieldsKt.UserPasswordFieldsDarkPreview_Dark",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 914,
+              "y": 274,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 914,
+            "y": 274,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 147
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 147
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 231,
+            "width": 966,
+            "height": 147
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 231,
+            "width": 966,
+            "height": 147
+          },
+          "cornerRadius": 6
+        }
+      ],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "The paired email and password fields with their reveal toggle — the sign-in form.",
+      "wireframe": "wireframes/inputs-email-and-password-fields.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/EmailAndPasswordFields.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 217,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "UserPasswordFieldsLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Inputs/Search bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-search-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 493,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-search-bar__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SearchBarKt.SearchBarPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 110
+          },
+          "cornerRadius": 10
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 110
+          },
+          "cornerRadius": 10
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 1008,
+            "height": 110
+          },
+          "cornerRadius": 10
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 152,
+            "width": 1008,
+            "height": 110
+          },
+          "cornerRadius": 10
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 152,
+            "width": 1008,
+            "height": 110
+          },
+          "cornerRadius": 10
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 152,
+            "width": 1008,
+            "height": 110
+          },
+          "cornerRadius": 10
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 283,
+            "width": 1008,
+            "height": 84
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 283,
+            "width": 1008,
+            "height": 84
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 283,
+            "width": 1008,
+            "height": 84
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 388,
+            "width": 1008,
+            "height": 84
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 388,
+            "width": 1008,
+            "height": 84
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 388,
+            "width": 1008,
+            "height": 84
+          },
+          "cornerRadius": 8
+        }
+      ],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "The search field in its default and small styles, filled and empty, across all nine palettes.",
+      "wireframe": "wireframes/inputs-search-bar.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SearchBar.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 383,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SearchBarPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Inputs/Number stepper",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-number-stepper/ideal__default.png",
+          "state": "default",
+          "width": 274,
+          "height": 148,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-number-stepper__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NumberStepperKt.NumberStepperPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-number-stepper__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 43,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 43,
+            "width": 63,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 169,
+              "y": 43,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 169,
+            "y": 43,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "Minus/value/plus stepper, used for skip intervals and episode limits.",
+      "wireframe": "wireframes/inputs-number-stepper.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NumberStepper.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 63,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "NumberStepperPreview"
+    },
+    {
+      "componentId": "Inputs/Segmented tab bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-segmented-tab-bar/ideal__default.png",
+          "state": "default",
+          "width": 788,
+          "height": 113,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-segmented-tab-bar__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SegmentedTabBarKt.SegmentedTabBarPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-segmented-tab-bar__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 394,
+              "height": 113
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 394,
+            "height": 113
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 394,
+              "y": 0,
+              "width": 394,
+              "height": 113
+            }
+          },
+          "bounds": {
+            "x": 394,
+            "y": 0,
+            "width": 394,
+            "height": 113
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 788,
+            "height": 113
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "The segmented control used to switch between two or three peer views.",
+      "wireframe": "wireframes/inputs-segmented-tab-bar.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SegmentedTabBar.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 135,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SegmentedTabBarPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Inputs/Selected option column",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-selected-option-column/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 881,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-selected-option-column__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SelectedOptionColumnKt.SelectOptionColumnPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-selected-option-column__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/inputs-selected-option-column/ideal__no-title.png",
+          "state": "no-title",
+          "width": 1050,
+          "height": 818,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-selected-option-column__ideal__no-title",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SelectedOptionColumnKt.SelectOptionColumnWithoutTitlePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-selected-option-column__ideal__no-title.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 116,
+              "width": 1050,
+              "height": 192
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 116,
+            "width": 1050,
+            "height": 192
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 308,
+              "width": 1050,
+              "height": 192
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 308,
+            "width": 1050,
+            "height": 192
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 500,
+              "width": 1050,
+              "height": 192
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 500,
+            "width": 1050,
+            "height": 192
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 692,
+              "width": 1050,
+              "height": 189
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 692,
+            "width": 1050,
+            "height": 189
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 881
+          },
+          "padding": {
+            "start": 0,
+            "top": 20,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 53,
+            "width": 108,
+            "height": 63
+          },
+          "label": "TITLE",
+          "padding": {
+            "start": 20,
+            "top": 0,
+            "end": 20,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 305,
+            "width": 944,
+            "height": 3
+          },
+          "padding": {
+            "start": 20,
+            "top": 0,
+            "end": 20,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 497,
+            "width": 944,
+            "height": 3
+          },
+          "padding": {
+            "start": 20,
+            "top": 0,
+            "end": 20,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 689,
+            "width": 944,
+            "height": 3
+          },
+          "padding": {
+            "start": 20,
+            "top": 0,
+            "end": 20,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "A single-select option list with a checked row, across all nine palettes.",
+      "wireframe": "wireframes/inputs-selected-option-column.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SelectedOptionColumn.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 136,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SelectOptionColumnPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Inputs/Folder colour picker",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inputs-folder-colour-picker/ideal__default.png",
+          "state": "default",
+          "width": 954,
+          "height": 346,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/inputs-folder-colour-picker__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.FolderColorPickerKt.ColorPickerDarkPreview",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-folder-colour-picker__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 37,
+              "y": 42,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 37,
+            "y": 42,
+            "width": 126,
+            "height": 126
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 201,
+              "y": 54,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 201,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 353,
+              "y": 54,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 353,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 505,
+              "y": 54,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 505,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 54,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 809,
+              "y": 54,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 809,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 49,
+              "y": 206,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 49,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 201,
+              "y": 206,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 201,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 353,
+              "y": 206,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 353,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 505,
+              "y": 206,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 505,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 206,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 809,
+              "y": 206,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 809,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 37,
+            "y": 42,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Button",
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 201,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 353,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 505,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 657,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 809,
+            "y": 54,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 49,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 201,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 353,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 505,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 657,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 809,
+            "y": 206,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "section": "Components",
+      "group": "Inputs",
+      "caption": "The folder colour swatch picker with its selection ring.",
+      "wireframe": "wireframes/inputs-folder-colour-picker.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FolderColorPicker.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 70,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "ColorPickerDarkPreview"
+    },
+    {
+      "componentId": "Content/Text styles",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-text-styles/ideal__default__light.png",
+          "state": "default",
+          "width": 702,
+          "height": 800,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-text-styles__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TextStylesKt.TextStylesLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-text-styles__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-text-styles/ideal__default__dark.png",
+          "state": "default",
+          "width": 702,
+          "height": 800,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-text-styles__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TextStylesKt.TextStylesDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-text-styles__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 702,
+            "height": 98
+          },
+          "label": "TextH10 - 31 / 700",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 113,
+            "width": 482,
+            "height": 79
+          },
+          "label": "TextH20 - 22 / 700",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 202,
+            "width": 396,
+            "height": 56
+          },
+          "label": "TextH30 - 18 / 600",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 268,
+            "width": 417,
+            "height": 63
+          },
+          "label": "TextP30 - 18 / 500",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 341,
+            "width": 350,
+            "height": 56
+          },
+          "label": "TextH40 - 15 / 500",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 407,
+            "width": 368,
+            "height": 58
+          },
+          "label": "TextP40 - 16 / 400",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 475,
+            "width": 321,
+            "height": 53
+          },
+          "label": "TextH50 - 14 / 500",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 538,
+            "width": 293,
+            "height": 53
+          },
+          "label": "TextP50 - 14 / 400",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 601,
+            "width": 274,
+            "height": 40
+          },
+          "label": "TextP60 - 13 / 400",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 651,
+            "width": 275,
+            "height": 37
+          },
+          "label": "TextH70 - 12 / 500",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 698,
+            "width": 331,
+            "height": 50
+          },
+          "label": "TEXTC50 - 13 / 700",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 758,
+            "width": 303,
+            "height": 37
+          },
+          "label": "TEXTC70 - 12 / 500",
+          "padding": {
+            "start": 0,
+            "top": 2,
+            "end": 0,
+            "bottom": 2
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "The whole H10–P60 type ramp in one sheet — the sizes, weights and colours every other component draws from.",
+      "wireframe": "wireframes/content-text-styles.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/TextStyles.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 568,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "TextStylesLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Content/Expandable text",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-expandable-text/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 525,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-expandable-text__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextKt.ExpandedTextPreviewRegular",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-expandable-text__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-expandable-text/ideal__short.png",
+          "state": "short",
+          "width": 1050,
+          "height": 525,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-expandable-text__ideal__short",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextKt.ExpandedTextPreviewShort",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-expandable-text__ideal__short.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-expandable-text/ideal__empty-space.png",
+          "state": "empty-space",
+          "width": 1050,
+          "height": 525,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-expandable-text__ideal__empty-space",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextKt.ExpandedTextPreviewEmptySpace",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-expandable-text__ideal__empty-space.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 441
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "Clamped description text with its show-more affordance.",
+      "wireframe": "wireframes/content-expandable-text.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExpandableText.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 189,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "ExpandedTextPreviewRegular",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "AnnotatedString"
+        }
+      ]
+    },
+    {
+      "componentId": "Content/Auto-resize text",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-auto-resize-text/ideal__default.png",
+          "state": "default",
+          "width": 263,
+          "height": 79,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-auto-resize-text__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.AutoResizeTextKt.AutoResizePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-auto-resize-text__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Content",
+      "caption": "Text that shrinks to fit a fixed box rather than wrapping or ellipsising.",
+      "wireframe": "wireframes/content-auto-resize-text.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AutoResizeText.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 180,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "AutoResizePreview"
+    },
+    {
+      "componentId": "Content/Podcast selected text",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-podcast-selected-text/ideal__default.png",
+          "state": "default",
+          "width": 469,
+          "height": 258,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-podcast-selected-text__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PodcastSelectedTextKt.PodcastSelectedTextEnglishPreview_PodcastSelectText_in_English",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-podcast-selected-text__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-podcast-selected-text/ideal__default__locale-fr.png",
+          "state": "default",
+          "width": 569,
+          "height": 258,
+          "props": {
+            "locale": "fr"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-podcast-selected-text__ideal__default__locale-fr",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PodcastSelectedTextKt.PodcastSelectedTextFrenchPreview_PodcastSelectText_in_French",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-podcast-selected-text__ideal__default__locale-fr.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 347,
+            "height": 58
+          },
+          "label": "Choose podcasts",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 100,
+            "width": 379,
+            "height": 58
+          },
+          "label": "1 podcast selected",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 8
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "The 'n podcasts selected' summary line.",
+      "wireframe": "wireframes/content-podcast-selected-text.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PodcastSelectedText.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 37,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "PodcastSelectedTextEnglishPreview"
+    },
+    {
+      "componentId": "Content/Playlist artwork",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-playlist-artwork/ideal__default.png",
+          "state": "default",
+          "width": 210,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-playlist-artwork__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PlaylistArtworkKt.PlaylistArtworkSingleEpisodePreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-playlist-artwork/ideal__quad.png",
+          "state": "quad",
+          "width": 210,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-playlist-artwork__ideal__quad",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PlaylistArtworkKt.PlaylistArtworkQuadEpisodePreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-playlist-artwork/ideal__empty.png",
+          "state": "empty",
+          "width": 210,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-playlist-artwork__ideal__empty",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PlaylistArtworkKt.PlaylistArtworkNoEpisodePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-playlist-artwork__ideal__empty.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 210,
+            "height": 210
+          },
+          "role": "Image",
+          "label": "Playlist’s artwork",
+          "cornerRadius": 5.714286
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "Playlist artwork built from a single episode's cover.",
+      "wireframe": "wireframes/content-playlist-artwork.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PlaylistArtwork.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 240,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "PlaylistArtworkSingleEpisodePreview"
+    },
+    {
+      "componentId": "Content/Folder image",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-folder-image/ideal__default__light.png",
+          "state": "default",
+          "width": 263,
+          "height": 263,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-folder-image__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.folder.FolderImageKt.FolderImageLightPreview_Light",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-folder-image/ideal__default__dark.png",
+          "state": "default",
+          "width": 263,
+          "height": 263,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-folder-image__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.folder.FolderImageKt.FolderImageDarkPreview_Dark",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-folder-image/ideal__default__size-small.png",
+          "state": "default",
+          "width": 399,
+          "height": 1344,
+          "props": {
+            "size": "small"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-folder-image__ideal__default__size-small",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.folder.FolderImageSmallKt.FolderImageSmallPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 263,
+            "height": 263
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 44,
+            "y": 23,
+            "width": 83,
+            "height": 83
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 44,
+            "y": 115,
+            "width": 83,
+            "height": 83
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 136,
+            "y": 23,
+            "width": 83,
+            "height": 83
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 136,
+            "y": 115,
+            "width": 83,
+            "height": 83
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 216,
+            "width": 137,
+            "height": 34
+          },
+          "label": "Favourites",
+          "padding": {
+            "start": 2,
+            "top": 0,
+            "end": 2,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 236,
+            "y": 0,
+            "width": 21,
+            "height": 38
+          },
+          "label": "1",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "A folder's tinted cover grid.",
+      "wireframe": "wireframes/content-folder-image.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/folder/FolderImage.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 218,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "FolderImageLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Content/Podcast subscribe row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-podcast-subscribe-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 378,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-podcast-subscribe-row__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.podcast.ListPodcastSubscribeRowKt.ListPodcastSubscribeRowPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 21,
+            "width": 147,
+            "height": 147
+          },
+          "role": "Image",
+          "label": "Podcast artwork",
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 21,
+            "width": 147,
+            "height": 147
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 924,
+            "y": 63,
+            "width": 63,
+            "height": 63
+          },
+          "role": "Image",
+          "label": "Following",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 210,
+            "width": 147,
+            "height": 147
+          },
+          "role": "Image",
+          "label": "Podcast artwork",
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 210,
+            "width": 147,
+            "height": 147
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 903,
+            "y": 231,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Image",
+          "label": "Follow",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
+          "cornerRadius": 20
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "A podcast list row with its inline subscribe toggle, across all nine palettes.",
+      "wireframe": "wireframes/content-podcast-subscribe-row.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/ListPodcastSubscribeRow.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 94,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "ListPodcastSubscribeRowPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Content/Podcast select list",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-podcast-select-list/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-podcast-select-list__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.podcast.PodcastSelectGridKt.PodcastSelectListPreview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 226,
+            "height": 226
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 194,
+            "y": 194,
+            "width": 53,
+            "height": 53
+          },
+          "label": "Not selected",
+          "cornerRadius": 10.1
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 42,
+            "width": 226,
+            "height": 226
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 289,
+            "y": 42,
+            "width": 226,
+            "height": 226
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 441,
+            "y": 194,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        },
+        {
+          "bounds": {
+            "x": 835,
+            "y": 2012,
+            "width": 173,
+            "height": 56
+          },
+          "label": "Select all",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "The multi-select podcast list used when scoping a filter.",
+      "wireframe": "wireframes/content-podcast-select-list.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/PodcastSelectGrid.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 105,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "PodcastSelectListPreview"
+    },
+    {
+      "componentId": "Content/Bookmark row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/content-bookmark-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 549,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-bookmark-row__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bookmark.BookmarkRowKt.BookmarkRowNormalPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-bookmark-row__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-bookmark-row/ideal__loading__light.png",
+          "state": "loading",
+          "width": 1050,
+          "height": 2100,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-bookmark-row__ideal__loading__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.loading.LoadingViewKt.BookmarkRowLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-bookmark-row__ideal__loading__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/content-bookmark-row/ideal__loading__dark.png",
+          "state": "loading",
+          "width": 1050,
+          "height": 2100,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/content-bookmark-row__ideal__loading__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.loading.LoadingViewKt.BookmarkRowDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-bookmark-row__ideal__loading__dark.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Play at bookmark position 00:10\"",
+          "detail": {
+            "role": "button",
+            "label": "Play at bookmark position 00:10",
+            "bounds": {
+              "x": 765,
+              "y": 44,
+              "width": 243,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 765,
+            "y": 44,
+            "width": 243,
+            "height": 98
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Play at bookmark position 00:10\"",
+          "detail": {
+            "role": "button",
+            "label": "Play at bookmark position 00:10",
+            "bounds": {
+              "x": 765,
+              "y": 227,
+              "width": 243,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 765,
+            "y": 227,
+            "width": 243,
+            "height": 98
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Play at bookmark position 00:10\"",
+          "detail": {
+            "role": "button",
+            "label": "Play at bookmark position 00:10",
+            "bounds": {
+              "x": 765,
+              "y": 410,
+              "width": 243,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 765,
+            "y": 410,
+            "width": 243,
+            "height": 98
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 104,
+            "width": 240,
+            "height": 37
+          },
+          "label": "Sep 2, 11:39 PM",
+          "padding": {
+            "start": 0,
+            "top": 4,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 765,
+            "y": 44,
+            "width": 243,
+            "height": 98
+          },
+          "role": "Button",
+          "label": "Play at bookmark position 00:10",
+          "cornerRadius": 18.67
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 287,
+            "width": 240,
+            "height": 37
+          },
+          "label": "Sep 2, 11:39 PM",
+          "padding": {
+            "start": 0,
+            "top": 4,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 765,
+            "y": 227,
+            "width": 243,
+            "height": 98
+          },
+          "role": "Button",
+          "label": "Play at bookmark position 00:10",
+          "cornerRadius": 18.67
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 470,
+            "width": 240,
+            "height": 37
+          },
+          "label": "Sep 2, 11:39 PM",
+          "padding": {
+            "start": 0,
+            "top": 4,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 765,
+            "y": 410,
+            "width": 243,
+            "height": 98
+          },
+          "role": "Button",
+          "label": "Play at bookmark position 00:10",
+          "cornerRadius": 18.67
+        }
+      ],
+      "section": "Components",
+      "group": "Content",
+      "caption": "A bookmark list row: title, timestamp and play affordance, across all nine palettes.",
+      "wireframe": "wireframes/content-bookmark-row.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/BookmarkRow.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 188,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "BookmarkRowNormalPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Feedback/Banner",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feedback-banner/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 327,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-banner__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.BannerKt.BannerPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-banner__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-banner/ideal__no-dismiss.png",
+          "state": "no-dismiss",
+          "width": 1050,
+          "height": 327,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-banner__ideal__no-dismiss",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.BannerKt.BannerPreviewWithoutDismiss",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-banner__ideal__no-dismiss.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Create a free account\"",
+          "detail": {
+            "role": "button",
+            "label": "Create a free account",
+            "bounds": {
+              "x": 121,
+              "y": 205,
+              "width": 408,
+              "height": 85
+            }
+          },
+          "bounds": {
+            "x": 121,
+            "y": 205,
+            "width": 408,
+            "height": 85
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Dismiss\"",
+          "detail": {
+            "role": "button",
+            "label": "Dismiss",
+            "bounds": {
+              "x": 914,
+              "y": 22,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 914,
+            "y": 22,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 53,
+            "width": 966,
+            "height": 237
+          },
+          "padding": {
+            "start": 16,
+            "top": 20,
+            "end": 16,
+            "bottom": 14
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 121,
+            "y": 205,
+            "width": 408,
+            "height": 85
+          },
+          "role": "Button",
+          "label": "Create a free account",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "section": "Components",
+      "group": "Feedback",
+      "caption": "The inline dismissible banner used for tips and upsell nudges, across all nine palettes.",
+      "wireframe": "wireframes/feedback-banner.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Banner.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 154,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "BannerPreview"
+    },
+    {
+      "componentId": "Feedback/No content banner",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feedback-no-content-banner/ideal__default.png",
+          "state": "default",
+          "width": 1029,
+          "height": 593,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-no-content-banner__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-no-content-banner__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-no-content-banner/ideal__no-subtitle.png",
+          "state": "no-subtitle",
+          "width": 1029,
+          "height": 493,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-no-content-banner__ideal__no-subtitle",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerWithoutSubtitlePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-no-content-banner__ideal__no-subtitle.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-no-content-banner/ideal__no-primary.png",
+          "state": "no-primary",
+          "width": 1029,
+          "height": 450,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-no-content-banner__ideal__no-primary",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerWithoutPrimaryButtonPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-no-content-banner__ideal__no-primary.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-no-content-banner/ideal__no-secondary.png",
+          "state": "no-secondary",
+          "width": 1029,
+          "height": 456,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-no-content-banner__ideal__no-secondary",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerWithoutSecondaryButtonPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-no-content-banner__ideal__no-secondary.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 324,
+              "width": 945,
+              "height": 132
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 324,
+            "width": 945,
+            "height": 132
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 291,
+              "y": 467,
+              "width": 448,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 291,
+            "y": 467,
+            "width": 448,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 324,
+            "width": 945,
+            "height": 132
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 420,
+            "y": 361,
+            "width": 189,
+            "height": 58
+          },
+          "label": "Discover",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        },
+        {
+          "bounds": {
+            "x": 291,
+            "y": 467,
+            "width": 448,
+            "height": 126
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "section": "Components",
+      "group": "Feedback",
+      "caption": "The empty-state banner — icon, title, subtitle and up to two actions, across all nine palettes.",
+      "wireframe": "wireframes/feedback-no-content-banner.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NoContentBanner.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 230,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "UpNextNoContentBannerPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Feedback/Dialog",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feedback-dialog/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 504,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-dialog__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.SimpleDialogPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-dialog__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-dialog/ideal__radio.png",
+          "state": "radio",
+          "width": 1050,
+          "height": 748,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-dialog__ideal__radio",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.RadioDialogPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-dialog__ideal__radio.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-dialog/ideal__progress.png",
+          "state": "progress",
+          "width": 500,
+          "height": 231,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-dialog__ideal__progress",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.ProgressDialogPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-dialog__ideal__progress.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 692,
+              "y": 371,
+              "width": 179,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 692,
+            "y": 371,
+            "width": 179,
+            "height": 98
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 871,
+              "y": 371,
+              "width": 168,
+              "height": 98
+            }
+          },
+          "bounds": {
+            "x": 871,
+            "y": 371,
+            "width": 168,
+            "height": 98
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 504
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 63,
+            "width": 94,
+            "height": 56
+          },
+          "label": "Title",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 151,
+            "width": 924,
+            "height": 174
+          },
+          "label": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 692,
+            "y": 371,
+            "width": 179,
+            "height": 98
+          },
+          "role": "Button",
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 871,
+            "y": 371,
+            "width": 168,
+            "height": 98
+          },
+          "role": "Button",
+          "cornerRadius": 4
+        }
+      ],
+      "section": "Components",
+      "group": "Feedback",
+      "caption": "The standard confirm/dismiss dialog, across all nine palettes.",
+      "wireframe": "wireframes/feedback-dialog.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Dialog.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 375,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SimpleDialogPreview"
+    },
+    {
+      "componentId": "Feedback/Tooltip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feedback-tooltip/ideal__default.png",
+          "state": "default",
+          "width": 872,
+          "height": 365,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-tooltip__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TooltipKt.TooltipThemePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-tooltip__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feedback-tooltip/ideal__default__tipposition-all.png",
+          "state": "default",
+          "width": 872,
+          "height": 365,
+          "props": {
+            "tipPosition": "all"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-tooltip__ideal__default__tipposition-all",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TooltipKt.TooltipTipPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-tooltip__ideal__default__tipposition-all.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Feedback",
+      "caption": "The coach-mark tooltip with its pointer, across all nine palettes.",
+      "wireframe": "wireframes/feedback-tooltip.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Tooltip.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 457,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "TooltipThemePreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Feedback/Sparkle image",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feedback-sparkle-image/ideal__default.png",
+          "state": "default",
+          "width": 210,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/feedback-sparkle-image__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SparkleImageKt.SparkleImagePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 88,
+            "y": 21,
+            "width": 89,
+            "height": 96
+          },
+          "padding": {
+            "start": 33.6,
+            "top": 8,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 32,
+            "y": 74,
+            "width": 51,
+            "height": 54
+          },
+          "padding": {
+            "start": 12,
+            "top": 28,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 67,
+            "y": 120,
+            "width": 61,
+            "height": 67
+          },
+          "padding": {
+            "start": 25.599998,
+            "top": 45.6,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Feedback",
+      "caption": "The sparkle treatment used to celebrate an upgrade or a completed action, across all nine palettes.",
+      "wireframe": "wireframes/feedback-sparkle-image.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SparkleImage.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 117,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SparkleImagePreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Chrome/Top app bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-top-app-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 735,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-top-app-bar__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.ThemedTopAppBarKt.ThemedTopAppBarPreview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-top-app-bar__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 190,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 190,
+            "width": 63,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 337,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 337,
+            "width": 63,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 484,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 484,
+            "width": 63,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 631,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 631,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "The themed top app bar in its solid and immersive styles, across all nine palettes. Its secondaryUi01 background against the content's primaryUi01 is the pairing most worth checking per theme.",
+      "wireframe": "wireframes/chrome-top-app-bar.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/ThemedTopAppBar.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 207,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "ThemedTopAppBarPreview"
+    },
+    {
+      "componentId": "Chrome/Bottom sheet app bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-bottom-sheet-app-bar/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-bottom-sheet-app-bar__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.BottomSheetAppBarKt.BottomSheetAppBarLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-app-bar__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/chrome-bottom-sheet-app-bar/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-bottom-sheet-app-bar__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.BottomSheetAppBarKt.BottomSheetAppBarDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-app-bar__ideal__default__dark.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/chrome-bottom-sheet-app-bar/ideal__back.png",
+          "state": "back",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-bottom-sheet-app-bar__ideal__back",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.BottomSheetAppBarKt.BottomSheetAppBarBackPreview_Back",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-app-bar__ideal__back.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 43,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 43,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "The app bar used at the head of a modal sheet, with a close affordance.",
+      "wireframe": "wireframes/chrome-bottom-sheet-app-bar.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/BottomSheetAppBar.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 41,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "BottomSheetAppBarLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Chrome/Bottom sheet content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-bottom-sheet-content/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 547,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-bottom-sheet-content__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bottomsheet.BottomSheetContentKt.BottomSheetContentPreview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-content__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 243,
+              "width": 966,
+              "height": 132
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 243,
+            "width": 966,
+            "height": 132
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 417,
+              "width": 966,
+              "height": 130
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 417,
+            "width": 966,
+            "height": 130
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 505
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 452,
+            "y": 42,
+            "width": 147,
+            "height": 11
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 243,
+            "width": 966,
+            "height": 132
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 439,
+            "y": 280,
+            "width": 173,
+            "height": 58
+          },
+          "label": "Confirm",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 417,
+            "width": 966,
+            "height": 130
+          },
+          "role": "Button",
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 437,
+            "y": 454,
+            "width": 176,
+            "height": 56
+          },
+          "label": "Not now",
+          "padding": {
+            "start": 6,
+            "top": 6,
+            "end": 6,
+            "bottom": 6
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "The full modal sheet body — title, copy and stacked actions, across all nine palettes.",
+      "wireframe": "wireframes/chrome-bottom-sheet-content.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bottomsheet/BottomSheetContent.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 189,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "BottomSheetContentPreview"
+    },
+    {
+      "componentId": "Chrome/Pager dot indicator",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-pager-dot-indicator/ideal__default.png",
+          "state": "default",
+          "width": 189,
+          "height": 420,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-pager-dot-indicator__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PagerDotIndicatorKt.PagerDotIndicatorPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-pager-dot-indicator__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/chrome-pager-dot-indicator/ideal__progressing.png",
+          "state": "progressing",
+          "width": 1050,
+          "height": 371,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-pager-dot-indicator__ideal__progressing",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PagerProgressingIndicatorKt.PagerProgressingIndicatorPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 105,
+            "height": 336
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 16
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 42,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 42,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 105,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 105,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 105,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 105,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 168,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 168,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 168,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 168,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 231,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 231,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 231,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 231,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 294,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 294,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 294,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 95,
+            "y": 294,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 357,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 357,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 126,
+            "y": 357,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 357,
+            "width": 21,
+            "height": 21
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "The paging dots used under onboarding and end-of-year carousels.",
+      "wireframe": "wireframes/chrome-pager-dot-indicator.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PagerDotIndicator.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 79,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "PagerDotIndicatorPreview"
+    },
+    {
+      "componentId": "Chrome/Divider",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-divider/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 55,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-divider__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.HorizontalDividerKt.HorizontalDividerLightPreview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-divider__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "The list divider — the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette.",
+      "wireframe": "wireframes/chrome-divider.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/HorizontalDivider.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 34,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "HorizontalDividerLightPreview"
+    },
+    {
+      "componentId": "Chrome/Rearrangeable menu action",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-rearrangeable-menu-action/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1323,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/chrome-rearrangeable-menu-action__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.rearrange.MenuActionRearrangeKt.MenuActionRearrangePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 63,
+            "width": 272,
+            "height": 98
+          },
+          "label": "Header",
+          "padding": {
+            "start": 24,
+            "top": 24,
+            "end": 24,
+            "bottom": 24
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 287,
+            "width": 345,
+            "height": 56
+          },
+          "label": "Shortcut on player",
+          "padding": {
+            "start": 24,
+            "top": 24,
+            "end": 24,
+            "bottom": 24
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 448,
+            "width": 147,
+            "height": 63
+          },
+          "label": "Archive",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 595,
+            "width": 301,
+            "height": 63
+          },
+          "label": "Mark as played",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 742,
+            "width": 182,
+            "height": 63
+          },
+          "label": "Play next",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 910,
+            "width": 257,
+            "height": 56
+          },
+          "label": "Other Actions",
+          "padding": {
+            "start": 24,
+            "top": 24,
+            "end": 24,
+            "bottom": 24
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 1071,
+            "width": 312,
+            "height": 63
+          },
+          "label": "Playback speed",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 168,
+            "y": 1218,
+            "width": 81,
+            "height": 63
+          },
+          "label": "Star",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "A drag-to-reorder action row, as used when customising the player's action bar.",
+      "wireframe": "wireframes/chrome-rearrangeable-menu-action.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/rearrange/MenuActionRearrange.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 214,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "MenuActionRearrangePreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Settings/Setting row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 186,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 186,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__default__dark.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__switch.png",
+          "state": "switch",
+          "width": 1050,
+          "height": 127,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__switch",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowSwitchPreview_Switch",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__switch.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__checkbox.png",
+          "state": "checkbox",
+          "width": 1050,
+          "height": 127,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__checkbox",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowCheckboxPreview_Checkbox",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__checkbox.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__default__icon-material.png",
+          "state": "default",
+          "width": 1050,
+          "height": 127,
+          "props": {
+            "icon": "material"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__default__icon-material",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowIconMaterialPreview_Icon__Material_",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__default__icon-material.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__default__icon-project.png",
+          "state": "default",
+          "width": 1050,
+          "height": 127,
+          "props": {
+            "icon": "project"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__default__icon-project",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowIconProjectPreview_Icon__Project_",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__default__icon-project.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-row/ideal__default__icon-gradient.png",
+          "state": "default",
+          "width": 1050,
+          "height": 127,
+          "props": {
+            "icon": "gradient"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-row__ideal__default__icon-gradient",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowIconGradientPreview_Icon__Gradient_",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 987,
+            "height": 122
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Settings",
+      "caption": "The workhorse settings row: primary text, optional secondary text, optional icon and optional toggle.",
+      "wireframe": "wireframes/settings-setting-row.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 362,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SettingRowLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Settings/Setting section",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-section/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1157,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-section__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingSectionPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-section/ideal__default__light.png",
+          "state": "default",
+          "width": 1050,
+          "height": 309,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-section__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingSectionLightPreview_Light",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-section__ideal__default__light.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-section/ideal__default__dark.png",
+          "state": "default",
+          "width": 1050,
+          "height": 309,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-section__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingSectionDarkPreview_Dark",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-section__ideal__default__dark.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 189,
+            "y": 64,
+            "width": 308,
+            "height": 56
+          },
+          "label": "Section Heading",
+          "padding": {
+            "start": 72,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 184,
+            "width": 987,
+            "height": 58
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 306,
+            "width": 987,
+            "height": 233
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 603,
+            "width": 987,
+            "height": 63
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 930,
+            "y": 608,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 730,
+            "width": 987,
+            "height": 63
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 857,
+            "width": 987,
+            "height": 233
+          },
+          "padding": {
+            "start": 0,
+            "top": 12,
+            "end": 24,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 893,
+            "y": 947,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        }
+      ],
+      "section": "Components",
+      "group": "Settings",
+      "caption": "A titled group of setting rows with its divider, across all nine palettes.",
+      "wireframe": "wireframes/settings-setting-section.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 330,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SettingSectionPreview"
+    },
+    {
+      "componentId": "Settings/Setting info row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-setting-info-row/ideal__default.png",
+          "state": "default",
+          "width": 966,
+          "height": 117,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/settings-setting-info-row__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingInfoRowPreview_Info",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-info-row__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Settings",
+      "caption": "The explanatory row that sits under a setting to describe what it does.",
+      "wireframe": "wireframes/settings-setting-info-row.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 460,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SettingInfoRowPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Identity/User avatar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-user-avatar/ideal__default.png",
+          "state": "default",
+          "width": 315,
+          "height": 315,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-user-avatar__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.UserAvatarKt.UserAvatarThemePreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-user-avatar/ideal__default__tier-all.png",
+          "state": "default",
+          "width": 309,
+          "height": 317,
+          "props": {
+            "tier": "all"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-user-avatar__ideal__default__tier-all",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.UserAvatarKt.UserAvatarTierPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-user-avatar/ideal__default__completion-all.png",
+          "state": "default",
+          "width": 309,
+          "height": 309,
+          "props": {
+            "completion": "all"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-user-avatar__ideal__default__completion-all",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.UserAvatarKt.UserAvatarCompletionPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 273,
+            "height": 273
+          },
+          "cornerRadius": 52
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 21,
+            "width": 273,
+            "height": 273
+          },
+          "cornerRadius": 52
+        }
+      ],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "The profile avatar with its subscription ring, across all nine palettes.",
+      "wireframe": "wireframes/identity-user-avatar.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/UserAvatar.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 254,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "UserAvatarThemePreview"
+    },
+    {
+      "componentId": "Identity/Subscription badge",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-subscription-badge/ideal__default.png",
+          "state": "default",
+          "width": 166,
+          "height": 65,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-subscription-badge__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredLightThemePreview_Colored",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-subscription-badge/ideal__black.png",
+          "state": "black",
+          "width": 161,
+          "height": 65,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-subscription-badge__ideal__black",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusBlackPreview_Black",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-subscription-badge/ideal__gradient.png",
+          "state": "gradient",
+          "width": 173,
+          "height": 72,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-subscription-badge__ideal__gradient",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusWithGradientBackgroundPreview_ColoredWithBlackForegroundAndGradientBackground",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-subscription-badge/ideal__patron.png",
+          "state": "patron",
+          "width": 206,
+          "height": 65,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-subscription-badge__ideal__patron",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredLightThemePreview_Colored",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-subscription-badge/ideal__patron__dark.png",
+          "state": "patron",
+          "width": 206,
+          "height": 65,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-subscription-badge__ideal__patron__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredDarkThemePreview_Colored",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-subscription-badge/ideal__patron-black.png",
+          "state": "patron-black",
+          "width": 199,
+          "height": 65,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-subscription-badge__ideal__patron-black",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronBlackPreview_Black",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 11,
+            "width": 124,
+            "height": 43
+          },
+          "padding": {
+            "start": 8,
+            "top": 4,
+            "end": 8,
+            "bottom": 4
+          },
+          "cornerRadius": 8.19
+        },
+        {
+          "bounds": {
+            "x": 69,
+            "y": 11,
+            "width": 76,
+            "height": 43
+          },
+          "label": "Plus",
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "The Plus badge in its coloured treatment across light and dark surfaces.",
+      "wireframe": "wireframes/identity-subscription-badge.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/SubscriptionBadge.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 312,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "SubscriptionBadgePlusColoredLightThemePreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Identity/Pocket Casts logo",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-pocket-casts-logo/ideal__default.png",
+          "state": "default",
+          "width": 84,
+          "height": 84,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-pocket-casts-logo__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PocketCastsPillKt.PocketCastsLogoPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "The roundel on its own.",
+      "wireframe": "wireframes/identity-pocket-casts-logo.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 77,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "PocketCastsLogoPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Identity/Horizontal logo",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-horizontal-logo/ideal__default.png",
+          "state": "default",
+          "width": 714,
+          "height": 142,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-horizontal-logo__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.HorizontalLogoKt.HorizontalLogoDarkPreview",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/identity-horizontal-logo__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "Roundel and wordmark side by side, the lockup used in app bars.",
+      "wireframe": "wireframes/identity-horizontal-logo.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/HorizontalLogo.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 33,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "HorizontalLogoDarkPreview"
+    },
+    {
+      "componentId": "Identity/Vertical logo",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-vertical-logo/ideal__default.png",
+          "state": "default",
+          "width": 415,
+          "height": 247,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-vertical-logo__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoKt.VerticalLogoDarkPreview",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/identity-vertical-logo__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-vertical-logo/ideal__plus.png",
+          "state": "plus",
+          "width": 412,
+          "height": 383,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-vertical-logo__ideal__plus",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoPlusKt.VerticalLogoPlusLightPreview",
+          "previewParams": {
+            "showBackground": true
+          },
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-vertical-logo/ideal__plus__dark.png",
+          "state": "plus",
+          "width": 415,
+          "height": 383,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-vertical-logo__ideal__plus__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoPlusKt.VerticalLogoPlusDarkPreview",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080
+          },
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "The stacked lockup used on splash and sign-in surfaces.",
+      "wireframe": "wireframes/identity-vertical-logo.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/VerticalLogo.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 35,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "VerticalLogoDarkPreview"
+    },
+    {
+      "componentId": "Identity/Pocket Casts pill",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-pocket-casts-pill/ideal__default.png",
+          "state": "default",
+          "width": 473,
+          "height": 236,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-pocket-casts-pill__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PocketCastsPillKt.PocketCastsPillPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 102,
+            "y": 87,
+            "width": 260,
+            "height": 63
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "The branded attribution pill stamped onto shared images.",
+      "wireframe": "wireframes/identity-pocket-casts-pill.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 66,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "PocketCastsPillPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "disableScale",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Identity/Count badge",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-count-badge/ideal__default.png",
+          "state": "default",
+          "width": 85,
+          "height": 66,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-count-badge__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeMediumPreview_Medium",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-count-badge/ideal__default__size-small.png",
+          "state": "default",
+          "width": 47,
+          "height": 47,
+          "props": {
+            "size": "small"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-count-badge__ideal__default__size-small",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeSmallPreview_Small",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-count-badge/ideal__default__size-big.png",
+          "state": "default",
+          "width": 74,
+          "height": 74,
+          "props": {
+            "size": "big"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-count-badge__ideal__default__size-big",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeBigPreview_Big",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-count-badge/ideal__default__size-custom.png",
+          "state": "default",
+          "width": 42,
+          "height": 42,
+          "props": {
+            "size": "custom"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-count-badge__ideal__default__size-custom",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeCustomPreview_Custom",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 13,
+            "width": 43,
+            "height": 41
+          },
+          "label": "10",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "The numeric badge at its medium size.",
+      "wireframe": "wireframes/identity-count-badge.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/CountBadge.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 157,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "CountBadgeMediumPreview",
+      "parameters": [
+        {
+          "name": "style",
+          "type": "CountBadgeStyle"
+        }
+      ]
+    },
+    {
+      "componentId": "Identity/Gradient icon",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/identity-gradient-icon/ideal__default__light.png",
+          "state": "default",
+          "width": 63,
+          "height": 63,
+          "theme": "light",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-gradient-icon__ideal__default__light",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.GradientIconKt.GradientIconLightPreview_Light",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-gradient-icon/ideal__default__dark.png",
+          "state": "default",
+          "width": 63,
+          "height": 63,
+          "theme": "dark",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-gradient-icon__ideal__default__dark",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.GradientIconKt.GradientIconDarkPreview_Dark",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/identity-gradient-icon/ideal__default__brush-custom.png",
+          "state": "default",
+          "width": 42,
+          "height": 42,
+          "props": {
+            "brush": "custom"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/identity-gradient-icon__ideal__default__brush-custom",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.GradientIconKt.GradientIconWithBrushPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Identity",
+      "caption": "An icon filled with the Plus gradient rather than a flat tint.",
+      "wireframe": "wireframes/identity-gradient-icon.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/GradientIcon.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 98,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "GradientIconLightPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Ads/Ad banner",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-banner/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 352,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-banner__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerThemePreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-banner/ideal__player.png",
+          "state": "player",
+          "width": 1050,
+          "height": 352,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-banner__ideal__player",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerPlayerPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-banner/ideal__default__podcastcolors-all.png",
+          "state": "default",
+          "width": 1050,
+          "height": 352,
+          "props": {
+            "podcastColors": "all"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-banner__ideal__default__podcastcolors-all",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerPodcastPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-banner/ideal__default__fontscale-large.png",
+          "state": "default",
+          "width": 1050,
+          "height": 469,
+          "props": {
+            "fontScale": "large"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-banner__ideal__default__fontscale-large",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerFontSizePreview_fs2.0",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Go to advertisement: Empower People to Discover, Share and Grow their Passion for Podcasts.\"",
+          "detail": {
+            "role": "button",
+            "label": "Go to advertisement: Empower People to Discover, Share and Grow their Passion for Podcasts.",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 966,
+              "height": 268
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 268
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 893,
+              "y": 32,
+              "width": 126,
+              "height": 126
+            }
+          },
+          "bounds": {
+            "x": 893,
+            "y": 32,
+            "width": 126,
+            "height": 126
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 268
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 268
+          },
+          "role": "Button",
+          "label": "Go to advertisement: Empower People to Discover, Share and Grow their Passion for Podcasts.",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 63,
+            "width": 226,
+            "height": 226
+          },
+          "role": "Image",
+          "label": "Advertisement image",
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 342,
+            "y": 247,
+            "width": 28,
+            "height": 25
+          },
+          "label": "AD",
+          "padding": {
+            "start": 4,
+            "top": 2,
+            "end": 4,
+            "bottom": 2
+          },
+          "cornerRadius": 2
+        }
+      ],
+      "section": "Components",
+      "group": "Ads",
+      "caption": "The in-app ad banner across all nine palettes.",
+      "wireframe": "wireframes/ads-ad-banner.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdBanner.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 229,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "AdBannerThemePreview"
+    },
+    {
+      "componentId": "Ads/Ad decisions column",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-decisions-column/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 391,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-decisions-column__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdDecisionsColumnKt.AdDecisionsColumnThemePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-decisions-column__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-decisions-column/ideal__default__podcastcolors-all.png",
+          "state": "default",
+          "width": 1050,
+          "height": 391,
+          "props": {
+            "podcastColors": "all"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-decisions-column__ideal__default__podcastcolors-all",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdDecisionsColumnKt.AdDecisionsColumnPodcastPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-decisions-column__ideal__default__podcastcolors-all.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 1050,
+              "height": 194
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 194
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 197,
+              "width": 1050,
+              "height": 194
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 197,
+            "width": 1050,
+            "height": 194
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 194
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 194,
+            "width": 924,
+            "height": 3
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 197,
+            "width": 1050,
+            "height": 194
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Ads",
+      "caption": "The 'why this ad' options sheet, across all nine palettes.",
+      "wireframe": "wireframes/ads-ad-decisions-column.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdDecisionsColumn.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 111,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "AdDecisionsColumnThemePreview"
+    },
+    {
+      "componentId": "Ads/Ad report reasons",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-report-reasons/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 846,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-report-reasons__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdReportReasonsColumnKt.AdReportReasonsColumnPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-reasons__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-report-reasons/ideal__default__podcastcolors-all.png",
+          "state": "default",
+          "width": 1050,
+          "height": 846,
+          "props": {
+            "podcastColors": "all"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-report-reasons__ideal__default__podcastcolors-all",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdReportReasonsColumnKt.AdReportReasonsColumnPodcastPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-reasons__ideal__default__podcastcolors-all.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 61,
+              "width": 1050,
+              "height": 194
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 61,
+            "width": 1050,
+            "height": 194
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 258,
+              "width": 1050,
+              "height": 194
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 258,
+            "width": 1050,
+            "height": 194
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 455,
+              "width": 1050,
+              "height": 194
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 455,
+            "width": 1050,
+            "height": 194
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 652,
+              "width": 1050,
+              "height": 194
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 652,
+            "width": 1050,
+            "height": 194
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 0,
+            "width": 614,
+            "height": 50
+          },
+          "label": "WHY ARE YOU REPORTING THIS AD?",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 61,
+            "width": 1050,
+            "height": 194
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 255,
+            "width": 924,
+            "height": 3
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 258,
+            "width": 1050,
+            "height": 194
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 452,
+            "width": 924,
+            "height": 3
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 455,
+            "width": 1050,
+            "height": 194
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 649,
+            "width": 924,
+            "height": 3
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 652,
+            "width": 1050,
+            "height": 194
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Ads",
+      "caption": "The report-an-ad reason list, across all nine palettes.",
+      "wireframe": "wireframes/ads-ad-report-reasons.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportReasonsColumn.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 104,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "AdReportReasonsColumnPreview"
+    },
+    {
+      "componentId": "Ads/Ad report content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/ads-ad-report-content/ideal__default__compact.png",
+          "state": "default",
+          "width": 800,
+          "height": 1600,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/ads-ad-report-content__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdReportContentKt.AdReportContentPreview_width_800px_height_1600px_dpi_320",
+          "previewParams": {
+            "device": "spec:width=800px,height=1600px,dpi=320",
+            "widthDp": 400,
+            "heightDp": 800
+          },
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-content__ideal__default__compact.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 1302,
+              "width": 800,
+              "height": 148
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 1302,
+            "width": 800,
+            "height": 148
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 1452,
+              "width": 800,
+              "height": 148
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 1452,
+            "width": 800,
+            "height": 148
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 344,
+            "y": 1278,
+            "width": 112,
+            "height": 8
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1302,
+            "width": 800,
+            "height": 148
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 48,
+            "y": 1450,
+            "width": 704,
+            "height": 2
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1452,
+            "width": 800,
+            "height": 148
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Ads",
+      "caption": "The confirmation shown once an ad has been reported.",
+      "wireframe": "wireframes/ads-ad-report-content.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportContent.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 73,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "AdReportContentPreview"
+    },
+    {
+      "componentId": "Insights/Calendar heat map",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/insights-calendar-heat-map/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 379,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/insights-calendar-heat-map__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-calendar-heat-map__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/insights-calendar-heat-map/ideal__default__fontscale-1.5.png",
+          "state": "default",
+          "width": 1050,
+          "height": 527,
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/insights-calendar-heat-map__ideal__default__fontscale-1.5",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreviewFont150Percent_fs1.5",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-calendar-heat-map__ideal__default__fontscale-1.5.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/insights-calendar-heat-map/ideal__default__fontscale-2.0.png",
+          "state": "default",
+          "width": 1050,
+          "height": 671,
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/insights-calendar-heat-map__ideal__default__fontscale-2.0",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreviewFont200Percent_fs2.0",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-calendar-heat-map__ideal__default__fontscale-2.0.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/insights-calendar-heat-map/ideal__default__locale-non-en.png",
+          "state": "default",
+          "width": 861,
+          "height": 1642,
+          "props": {
+            "locale": "non-en"
+          },
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/insights-calendar-heat-map__ideal__default__locale-non-en",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreviewLocale",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-calendar-heat-map__ideal__default__locale-non-en.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 73,
+            "y": 0,
+            "width": 977,
+            "height": 37
+          },
+          "padding": {
+            "start": 27.619047,
+            "top": 0,
+            "end": 0,
+            "bottom": 2
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Insights",
+      "caption": "The listening-history heat map — a bespoke grid whose correctness is only visible as pixels. Across all nine palettes.",
+      "wireframe": "wireframes/insights-calendar-heat-map.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/stats/CalendarHeatMap.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 404,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "CalendarHeatMapPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Insights/Player header row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/insights-player-header-row/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 148,
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/insights-player-header-row__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.bookmark.HeaderRowKt.HeaderRowPlayerPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-player-header-row__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 945,
+              "y": 43,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 945,
+            "y": 43,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [],
+      "section": "Components",
+      "group": "Insights",
+      "caption": "The player's header row under podcast-derived colours, across all nine palettes.",
+      "wireframe": "wireframes/insights-player-header-row.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/HeaderRow.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 78,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "HeaderRowPlayerPreview",
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType"
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Motion/Animated play button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/motion-animated-play-button/ideal__default__compact.png",
+          "state": "default",
+          "width": 210,
+          "height": 210,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts/p/motion-animated-play-button__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.AnimatedPlayPauseButtonKt.AnimatedPlayButtonPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button \"Play\"",
+          "detail": {
+            "role": "button",
+            "label": "Play",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 210,
+              "height": 210
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 210,
+            "height": 210
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 210,
+            "height": 210
+          },
+          "role": "Button",
+          "label": "Play",
+          "cornerRadius": 40
+        }
+      ],
+      "section": "Animations",
+      "group": "Motion",
+      "caption": "The play/pause morph, captured as a still frame.",
+      "wireframe": "wireframes/motion-animated-play-button.svg",
+      "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AnimatedPlayPauseButton.kt",
+      "sourceModule": ":modules:services:compose",
+      "bodyLine": 101,
+      "sourceDirectory": "modules/services/compose",
+      "sourceFunction": "AnimatedPlayButtonPreview"
+    }
+  ],
+  "library": [
+    "Compose Material 2 + Pocket Casts theme roles"
+  ],
+  "renderer": "compose-preview 1.67.0",
+  "generatedAt": "2026-09-02T23:40:10.778Z",
+  "display": {
+    "surface": "light",
+    "hero": "Buttons/Row button"
+  },
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":modules:services:compose",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "Automattic/pocket-casts-android",
+    "ref": "4538b34c3b4ab665a8194afc1258be686b0570bd",
+    "module": ":modules:services:compose"
+  }
+}

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473 236" width="473" height="236" role="img" aria-label="Identity/Pocket Casts pill layout wireframe">
+  <title>Identity/Pocket Casts pill — layout wireframe (slots + tokens)</title>
+  <rect width="473" height="236" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="473" height="236" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="473" height="236" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="473" height="236" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <path d="M133.5,87 H330.5 A31.5,31.5 0 0 1 362,118.5 V118.5 A31.5,31.5 0 0 1 330.5,150 H133.5 A31.5,31.5 0 0 1 102,118.5 V118.5 A31.5,31.5 0 0 1 133.5,87 Z" fill="#F43E37" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="105" y="99" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFF43E37  pad ·</text>
+  </g>
+  <g>
+    <rect x="102" y="95" width="47" height="47" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="170" y="100" width="192" height="37" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

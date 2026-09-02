@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 608 126" width="608" height="126" role="img" aria-label="Buttons/Button tabs layout wireframe">
+  <title>Buttons/Button tabs — layout wireframe (slots + tokens)</title>
+  <rect width="608" height="126" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="608" height="126" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="608" height="126" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="608" height="126" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="42" y="0" width="540" height="126" fill="#FFFFFF" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFFFFFF  pad ·</text>
+  </g>
+  <g>
+    <path d="M63,16 H255 A21,21 0 0 1 276,37 V90 A21,21 0 0 1 255,111 H63 A21,21 0 0 1 42,90 V37 A21,21 0 0 1 63,16 Z" fill="#292B2E" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="28" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FF292B2E</text>
+  </g>
+  <g>
+    <rect x="74" y="37" width="170" height="53" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="74" y="40" width="170" height="48" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M313,16 H545 A21,21 0 0 1 566,37 V90 A21,21 0 0 1 545,111 H313 A21,21 0 0 1 292,90 V37 A21,21 0 0 1 313,16 Z" fill="#FFFFFF" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="295" y="28" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFFFFFF</text>
+  </g>
+  <g>
+    <rect x="324" y="37" width="210" height="53" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="324" y="40" width="210" height="48" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 352" width="1050" height="352" role="img" aria-label="Ads/Ad banner layout wireframe">
+  <title>Ads/Ad banner — layout wireframe (slots + tokens)</title>
+  <rect width="1050" height="352" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1050" height="352" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1050" height="352" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="966" height="268" fill="#FFFFFF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFFFFFF  pad 16.0dp</text>
+  </g>
+  <g>
+    <path d="M84,63 H966 A21,21 0 0 1 987,84 V268 A21,21 0 0 1 966,289 H84 A21,21 0 0 1 63,268 V84 A21,21 0 0 1 84,63 Z" fill="#FFFFFF" fill-opacity="1" stroke="#E0E6EA" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="75" font-family="system-ui, sans-serif" font-size="9" fill="#E0E6EA">#FFFFFFFF  pad 8.0dp</text>
+  </g>
+  <g>
+    <rect x="63" y="63" width="226" height="226" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M73.5,63 H278.5 A10.5,10.5 0 0 1 289,73.5 V278.5 A10.5,10.5 0 0 1 278.5,289 H73.5 A10.5,10.5 0 0 1 63,278.5 V73.5 A10.5,10.5 0 0 1 73.5,63 Z" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="331" y="74" width="593" height="204" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="331" y="74" width="593" height="144" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="331" y="240" width="300" height="38" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M347.25,247 H364.75 A5.25,5.25 0 0 1 370,252.25 V266.75 A5.25,5.25 0 0 1 364.75,272 H347.25 A5.25,5.25 0 0 1 342,266.75 V252.25 A5.25,5.25 0 0 1 347.25,247 Z" fill="#03A9F4" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="345" y="259" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FF03A9F4  pad ·</text>
+  </g>
+  <g>
+    <rect x="392" y="240" width="239" height="38" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="924" y="63" width="63" height="63" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="893" y="32" width="126" height="126" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

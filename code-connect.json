@@ -1,0 +1,1165 @@
+{
+  "system": "pocketcasts",
+  "title": "Pocket Casts",
+  "label": "Compose",
+  "source": {
+    "repo": "Automattic/pocket-casts-android",
+    "ref": "4538b34c3b4ab665a8194afc1258be686b0570bd",
+    "module": ":modules:services:compose"
+  },
+  "generatedAt": "2026-09-02T23:40:13.150Z",
+  "mappings": [
+    {
+      "componentId": "Buttons/Row button",
+      "figmaLayerName": "Buttons/Row button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "RowButtonLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Row outlined button",
+      "figmaLayerName": "Buttons/Row outlined button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "RowOutlinedButtonLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-outlined-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Row text button",
+      "figmaLayerName": "Buttons/Row text button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "RowTextButtonLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-text-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Row loading button",
+      "figmaLayerName": "Buttons/Row loading button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "RowLoadingButtonLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Gradient row button",
+      "figmaLayerName": "Buttons/Gradient row button",
+      "componentName": "GradientRowButtonPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/GradientRowButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "GradientRowButtonPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-gradient-row-button__ideal__default.svg"
+    },
+    {
+      "componentId": "Buttons/Row close button",
+      "figmaLayerName": "Buttons/Row close button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "RowCloseButtonLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-close-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Circle button",
+      "figmaLayerName": "Buttons/Circle button",
+      "componentName": "CircleButtonPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CircleButtonPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-button__ideal__default.svg"
+    },
+    {
+      "componentId": "Buttons/Circle icon button",
+      "figmaLayerName": "Buttons/Circle icon button",
+      "componentName": "CircleIconButtonLightPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleIconButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CircleIconButtonLightPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-icon-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Close button",
+      "figmaLayerName": "Buttons/Close button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "CloseButtonLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-close-button__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Button tabs",
+      "figmaLayerName": "Buttons/Button tabs",
+      "componentName": "ButtonTabsPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ButtonTabs.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ButtonTabsLightPreview",
+      "codeSnippet": "ButtonTabsPreview(\n    themeType = TODO(\"ThemeType\"),\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.buttons.ButtonTabsPreview"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-button-tabs__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Buttons/Time play button",
+      "figmaLayerName": "Buttons/Time play button",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TimePlayButtonPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-time-play-button__ideal__default.svg"
+    },
+    {
+      "componentId": "Inputs/Form field",
+      "figmaLayerName": "Inputs/Form field",
+      "componentName": "FormFieldLightPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FormField.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FormFieldLightPreview",
+      "figmaSvg": "figma/inputs-form-field.svg"
+    },
+    {
+      "componentId": "Inputs/Email and password fields",
+      "figmaLayerName": "Inputs/Email and password fields",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "UserPasswordFieldsLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/inputs-email-and-password-fields.svg"
+    },
+    {
+      "componentId": "Inputs/Search bar",
+      "figmaLayerName": "Inputs/Search bar",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SearchBarPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/inputs-search-bar.svg"
+    },
+    {
+      "componentId": "Inputs/Number stepper",
+      "figmaLayerName": "Inputs/Number stepper",
+      "componentName": "NumberStepperPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NumberStepper.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "NumberStepperPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-number-stepper__ideal__default.svg"
+    },
+    {
+      "componentId": "Inputs/Segmented tab bar",
+      "figmaLayerName": "Inputs/Segmented tab bar",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SegmentedTabBarPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-segmented-tab-bar__ideal__default.svg"
+    },
+    {
+      "componentId": "Inputs/Selected option column",
+      "figmaLayerName": "Inputs/Selected option column",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SelectOptionColumnPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-selected-option-column__ideal__default.svg"
+    },
+    {
+      "componentId": "Inputs/Folder colour picker",
+      "figmaLayerName": "Inputs/Folder colour picker",
+      "componentName": "ColorPickerDarkPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FolderColorPicker.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ColorPickerDarkPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-folder-colour-picker__ideal__default.svg"
+    },
+    {
+      "componentId": "Content/Text styles",
+      "figmaLayerName": "Content/Text styles",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TextStylesLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-text-styles__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Content/Expandable text",
+      "figmaLayerName": "Content/Expandable text",
+      "componentName": "ExpandableTextPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExpandableText.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ExpandedTextPreviewRegular",
+      "codeSnippet": "ExpandableTextPreview(\n    text = TODO(\"AnnotatedString\"),\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextPreview"
+      ],
+      "parameters": [
+        {
+          "name": "text",
+          "type": "AnnotatedString",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-expandable-text__ideal__default.svg"
+    },
+    {
+      "componentId": "Content/Auto-resize text",
+      "figmaLayerName": "Content/Auto-resize text",
+      "componentName": "AutoResizePreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AutoResizeText.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AutoResizePreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-auto-resize-text__ideal__default.svg"
+    },
+    {
+      "componentId": "Content/Podcast selected text",
+      "figmaLayerName": "Content/Podcast selected text",
+      "componentName": "PodcastSelectedTextEnglishPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PodcastSelectedText.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PodcastSelectedTextEnglishPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-podcast-selected-text__ideal__default.svg"
+    },
+    {
+      "componentId": "Content/Playlist artwork",
+      "figmaLayerName": "Content/Playlist artwork",
+      "componentName": "PlaylistArtworkSingleEpisodePreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PlaylistArtwork.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PlaylistArtworkSingleEpisodePreview",
+      "figmaSvg": "figma/content-playlist-artwork.svg"
+    },
+    {
+      "componentId": "Content/Folder image",
+      "figmaLayerName": "Content/Folder image",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "FolderImageLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/content-folder-image.svg"
+    },
+    {
+      "componentId": "Content/Podcast subscribe row",
+      "figmaLayerName": "Content/Podcast subscribe row",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ListPodcastSubscribeRowPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/content-podcast-subscribe-row.svg"
+    },
+    {
+      "componentId": "Content/Podcast select list",
+      "figmaLayerName": "Content/Podcast select list",
+      "componentName": "PodcastSelectListPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/PodcastSelectGrid.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PodcastSelectListPreview",
+      "figmaSvg": "figma/content-podcast-select-list.svg"
+    },
+    {
+      "componentId": "Content/Bookmark row",
+      "figmaLayerName": "Content/Bookmark row",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "BookmarkRowNormalPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-bookmark-row__ideal__default.svg"
+    },
+    {
+      "componentId": "Feedback/Banner",
+      "figmaLayerName": "Feedback/Banner",
+      "componentName": "BannerPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Banner.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "BannerPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-banner__ideal__default.svg"
+    },
+    {
+      "componentId": "Feedback/No content banner",
+      "figmaLayerName": "Feedback/No content banner",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "UpNextNoContentBannerPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-no-content-banner__ideal__default.svg"
+    },
+    {
+      "componentId": "Feedback/Dialog",
+      "figmaLayerName": "Feedback/Dialog",
+      "componentName": "SimpleDialogPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Dialog.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SimpleDialogPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-dialog__ideal__default.svg"
+    },
+    {
+      "componentId": "Feedback/Tooltip",
+      "figmaLayerName": "Feedback/Tooltip",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TooltipThemePreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-tooltip__ideal__default.svg"
+    },
+    {
+      "componentId": "Feedback/Sparkle image",
+      "figmaLayerName": "Feedback/Sparkle image",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SparkleImagePreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/feedback-sparkle-image.svg"
+    },
+    {
+      "componentId": "Chrome/Top app bar",
+      "figmaLayerName": "Chrome/Top app bar",
+      "componentName": "ThemedTopAppBarPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/ThemedTopAppBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThemedTopAppBarPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-top-app-bar__ideal__default.svg"
+    },
+    {
+      "componentId": "Chrome/Bottom sheet app bar",
+      "figmaLayerName": "Chrome/Bottom sheet app bar",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "BottomSheetAppBarLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-app-bar__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Chrome/Bottom sheet content",
+      "figmaLayerName": "Chrome/Bottom sheet content",
+      "componentName": "BottomSheetContentPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/bottomsheet/BottomSheetContent.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "BottomSheetContentPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-content__ideal__default.svg"
+    },
+    {
+      "componentId": "Chrome/Pager dot indicator",
+      "figmaLayerName": "Chrome/Pager dot indicator",
+      "componentName": "PagerDotIndicatorPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PagerDotIndicator.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "PagerDotIndicatorPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-pager-dot-indicator__ideal__default.svg"
+    },
+    {
+      "componentId": "Chrome/Divider",
+      "figmaLayerName": "Chrome/Divider",
+      "componentName": "HorizontalDividerLightPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/HorizontalDivider.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HorizontalDividerLightPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-divider__ideal__default.svg"
+    },
+    {
+      "componentId": "Chrome/Rearrangeable menu action",
+      "figmaLayerName": "Chrome/Rearrangeable menu action",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MenuActionRearrangePreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/chrome-rearrangeable-menu-action.svg"
+    },
+    {
+      "componentId": "Settings/Setting row",
+      "figmaLayerName": "Settings/Setting row",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SettingRowLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__default__light.svg"
+    },
+    {
+      "componentId": "Settings/Setting section",
+      "figmaLayerName": "Settings/Setting section",
+      "componentName": "SettingSectionPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SettingSectionPreview",
+      "figmaSvg": "figma/settings-setting-section.svg"
+    },
+    {
+      "componentId": "Settings/Setting info row",
+      "figmaLayerName": "Settings/Setting info row",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SettingInfoRowPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-info-row__ideal__default.svg"
+    },
+    {
+      "componentId": "Identity/User avatar",
+      "figmaLayerName": "Identity/User avatar",
+      "componentName": "UserAvatarThemePreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/UserAvatar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "UserAvatarThemePreview",
+      "figmaSvg": "figma/identity-user-avatar.svg"
+    },
+    {
+      "componentId": "Identity/Subscription badge",
+      "figmaLayerName": "Identity/Subscription badge",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SubscriptionBadgePlusColoredLightThemePreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/identity-subscription-badge.svg"
+    },
+    {
+      "componentId": "Identity/Pocket Casts logo",
+      "figmaLayerName": "Identity/Pocket Casts logo",
+      "componentName": "PocketCastsLogo",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PocketCastsLogoPreview",
+      "codeSnippet": "PocketCastsLogo()",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.components.PocketCastsLogo"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/identity-pocket-casts-logo.svg"
+    },
+    {
+      "componentId": "Identity/Horizontal logo",
+      "figmaLayerName": "Identity/Horizontal logo",
+      "componentName": "HorizontalLogoDarkPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/HorizontalLogo.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "HorizontalLogoDarkPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/identity-horizontal-logo__ideal__default.svg"
+    },
+    {
+      "componentId": "Identity/Vertical logo",
+      "figmaLayerName": "Identity/Vertical logo",
+      "componentName": "VerticalLogoDarkPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/VerticalLogo.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "VerticalLogoDarkPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/identity-vertical-logo__ideal__default.svg"
+    },
+    {
+      "componentId": "Identity/Pocket Casts pill",
+      "figmaLayerName": "Identity/Pocket Casts pill",
+      "componentName": "PocketCastsPill",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PocketCastsPillPreview",
+      "codeSnippet": "PocketCastsPill()",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.components.PocketCastsPill"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "disableScale",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/identity-pocket-casts-pill.svg"
+    },
+    {
+      "componentId": "Identity/Count badge",
+      "figmaLayerName": "Identity/Count badge",
+      "componentName": "CountBadgePreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/CountBadge.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "CountBadgeMediumPreview",
+      "codeSnippet": "CountBadgePreview(\n    style = TODO(\"CountBadgeStyle\"),\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.images.CountBadgePreview"
+      ],
+      "parameters": [
+        {
+          "name": "style",
+          "type": "CountBadgeStyle",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/identity-count-badge.svg"
+    },
+    {
+      "componentId": "Identity/Gradient icon",
+      "figmaLayerName": "Identity/Gradient icon",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "GradientIconLightPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "figma/identity-gradient-icon.svg"
+    },
+    {
+      "componentId": "Ads/Ad banner",
+      "figmaLayerName": "Ads/Ad banner",
+      "componentName": "AdBannerThemePreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdBanner.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AdBannerThemePreview",
+      "figmaSvg": "figma/ads-ad-banner.svg"
+    },
+    {
+      "componentId": "Ads/Ad decisions column",
+      "figmaLayerName": "Ads/Ad decisions column",
+      "componentName": "AdDecisionsColumnThemePreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdDecisionsColumn.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AdDecisionsColumnThemePreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-decisions-column__ideal__default.svg"
+    },
+    {
+      "componentId": "Ads/Ad report reasons",
+      "figmaLayerName": "Ads/Ad report reasons",
+      "componentName": "AdReportReasonsColumnPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportReasonsColumn.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AdReportReasonsColumnPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-reasons__ideal__default.svg"
+    },
+    {
+      "componentId": "Ads/Ad report content",
+      "figmaLayerName": "Ads/Ad report content",
+      "componentName": "AdReportContentPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportContent.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AdReportContentPreview",
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-content__ideal__default__compact.svg"
+    },
+    {
+      "componentId": "Insights/Calendar heat map",
+      "figmaLayerName": "Insights/Calendar heat map",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "CalendarHeatMapPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-calendar-heat-map__ideal__default.svg"
+    },
+    {
+      "componentId": "Insights/Player header row",
+      "figmaLayerName": "Insights/Player header row",
+      "componentName": "AppThemeWithBackground",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "HeaderRowPlayerPreview",
+      "codeSnippet": "AppThemeWithBackground(\n    themeType = TODO(\"ThemeType\"),\n    content = { },\n)",
+      "imports": [
+        "import au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground"
+      ],
+      "parameters": [
+        {
+          "name": "themeType",
+          "type": "ThemeType",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-player-header-row__ideal__default.svg"
+    },
+    {
+      "componentId": "Motion/Animated play button",
+      "figmaLayerName": "Motion/Animated play button",
+      "componentName": "AnimatedPlayButtonPreview",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/4538b34c3b4ab665a8194afc1258be686b0570bd/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AnimatedPlayPauseButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AnimatedPlayButtonPreview",
+      "figmaSvg": "figma/motion-animated-play-button.svg"
+    }
+  ]
+}
