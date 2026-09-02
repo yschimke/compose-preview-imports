@@ -69,7 +69,13 @@
       "sourceModule": ":common",
       "bodyLine": 112,
       "sourceDirectory": "common",
-      "sourceFunction": "StationViewPreview"
+      "sourceFunction": "StationViewPreview",
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station"
+        }
+      ]
     },
     {
       "componentId": "station-view-mixed",
@@ -943,8 +949,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 1.61.2",
-  "generatedAt": "2026-09-01T09:34:02.351Z",
+  "renderer": "compose-preview 1.63.0",
+  "generatedAt": "2026-09-02T08:54:37.946Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
