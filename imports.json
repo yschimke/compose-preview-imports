@@ -16,6 +16,11 @@
       "slug": "joreilly-climatetracekmp",
       "branch": "import/joreilly-climatetracekmp",
       "upstream": "joreilly/ClimateTraceKMP"
+    },
+    {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
     }
   ]
 }
