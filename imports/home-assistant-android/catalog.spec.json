@@ -1,0 +1,121 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Home Assistant Companion phone/tablet catalog rendered from the fullDebug variant of :app. Full destinations use device-sized previews; state-hoisted settings bodies and dialogs remain wrap-content component previews. Synthetic Hilt Activity entries are intentionally excluded. The onboarding, quick-settings-tile, app-shortcut, Android Auto favorite and widget entries were dropped when upstream rewrote or removed those screens; re-add them once previews exist again.",
+  "system": "home-assistant-android",
+  "title": "Home Assistant Companion",
+  "library": [
+    "Jetpack Compose Material + Home Assistant theme"
+  ],
+  "module": "app",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "breakpoints": [
+    {
+      "size": "compact",
+      "widthDp": 400
+    },
+    {
+      "size": "medium",
+      "widthDp": 700
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Settings/Wear companion"
+  },
+  "groupOrder": [
+    "Wear settings",
+    "Commissioning",
+    "Settings content",
+    "Dialogs"
+  ],
+  "groups": [
+    {
+      "name": "Wear settings",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Settings/Wear companion",
+          "preview": "PreviewSettingWearLandingView",
+          "caption": "Full compact-device destination for configuring a paired Wear OS companion."
+        }
+      ]
+    },
+    {
+      "name": "Commissioning",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Onboarding/Matter commissioning",
+          "preview": "PreviewMatterCommissioningScreen",
+          "caption": "Wrap-content Matter commissioning panel across the states supplied by MatterCommissioningViewPreviewStates."
+        }
+      ]
+    },
+    {
+      "name": "Settings content",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Settings/Wi-Fi SSIDs",
+          "preview": "PreviewSsidViewItems",
+          "caption": "Wrap-content Wi-Fi settings body with saved networks and connection state.",
+          "variants": [
+            {
+              "preview": "PreviewSsidViewEmpty",
+              "caption": "Empty state before any SSIDs are saved.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Settings/External URL",
+          "preview": "PreviewExternalUrlViewCloudOn",
+          "caption": "Wrap-content external connection settings body with Home Assistant Cloud connected.",
+          "variants": [
+            {
+              "preview": "PreviewExternalUrlViewCloudOff",
+              "caption": "Cloud is configured but disconnected.",
+              "state": "cloud-off"
+            },
+            {
+              "preview": "PreviewExternalUrlViewCloudNone",
+              "caption": "No cloud connection is configured.",
+              "state": "cloud-unavailable"
+            }
+          ]
+        },
+        {
+          "componentId": "Settings/Notification detail",
+          "preview": "PreviewNotificationDetails",
+          "caption": "Wrap-content notification detail controls and explanatory content."
+        }
+      ]
+    },
+    {
+      "name": "Dialogs",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Components/Icon dialog",
+          "preview": "IconDialogPreview",
+          "caption": "Icon picker dialog shell with search and result content.",
+          "variants": [
+            {
+              "preview": "IconDialogSearchPreview",
+              "caption": "Search-field component used by the icon picker.",
+              "state": "search"
+            },
+            {
+              "preview": "IconDialogGridPreview",
+              "caption": "Scrollable icon result grid.",
+              "state": "results"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

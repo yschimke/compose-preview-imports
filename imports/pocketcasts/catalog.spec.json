@@ -1,0 +1,860 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from upstream. Dropped fork-authored previews not present upstream: ExplicitIconThemePreview, IconButtonSmallThemePreview, PocketCastsAccountScreenPreview, PocketCastsSettingsScreenPreview, ToggleButtonGroupThemePreview",
+  "system": "pocketcasts",
+  "title": "Pocket Casts",
+  "library": [
+    "Compose Material 2 + Pocket Casts theme roles"
+  ],
+  "module": "modules:services:compose",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "breakpoints": [
+    {
+      "size": "compact",
+      "widthDp": 412
+    },
+    {
+      "size": "medium",
+      "widthDp": 700
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Buttons/Row button"
+  },
+  "groupOrder": [
+    "Buttons",
+    "Inputs",
+    "Content",
+    "Feedback",
+    "Chrome",
+    "Settings",
+    "Identity",
+    "Ads",
+    "Insights",
+    "Motion"
+  ],
+  "groups": [
+    {
+      "name": "Buttons",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Buttons/Row button",
+          "preview": "RowButtonLightPreview",
+          "caption": "The filled full-width action button — the primary call to action on almost every Pocket Casts sheet.",
+          "variants": [
+            {
+              "preview": "RowButtonDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "RowButtonDisabledPreview",
+              "caption": "Disabled — the fill drops to the disabled alpha rather than changing hue.",
+              "state": "disabled"
+            },
+            {
+              "preview": "RowButtonNoPaddingPreview",
+              "caption": "Without its built-in padding, for callers that own their own spacing.",
+              "props": {
+                "includePadding": "false"
+              }
+            },
+            {
+              "preview": "RowButtonTextIconPreview",
+              "caption": "With a leading text icon.",
+              "props": {
+                "textIcon": "ic_retry"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Row outlined button",
+          "preview": "RowOutlinedButtonLightPreview",
+          "caption": "The secondary full-width action — a border and a tinted label rather than a fill.",
+          "variants": [
+            {
+              "preview": "RowOutlinedButtonDarkPreview",
+              "caption": "On the dark palette, where border contrast is tightest.",
+              "theme": "dark"
+            },
+            {
+              "preview": "RowOutlinedButtonLeadingIconPreview",
+              "caption": "With a leading icon.",
+              "props": {
+                "leadingIcon": "set"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Row text button",
+          "preview": "RowTextButtonLightPreview",
+          "caption": "The lowest-emphasis full-width action: label only, no fill or border.",
+          "variants": [
+            {
+              "preview": "RowTextButtonDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Row loading button",
+          "preview": "RowLoadingButtonLightPreview",
+          "caption": "The filled action button with an in-place progress state, used where a tap kicks off a network call.",
+          "variants": [
+            {
+              "preview": "RowLoadingButtonDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "RowLoadingButtonDisabledPreview",
+              "caption": "Disabled.",
+              "state": "disabled"
+            },
+            {
+              "preview": "RowLoadingButtonNoPaddingPreview",
+              "caption": "Without its built-in padding.",
+              "props": {
+                "includePadding": "false"
+              }
+            },
+            {
+              "preview": "RowLoadingButtonTextIconPreview",
+              "caption": "With a leading text icon.",
+              "props": {
+                "textIcon": "set"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Gradient row button",
+          "preview": "GradientRowButtonPreview",
+          "caption": "The gradient-filled action reserved for Plus and Patron upgrade paths."
+        },
+        {
+          "componentId": "Buttons/Row close button",
+          "preview": "RowCloseButtonLightPreview",
+          "caption": "The full-width dismiss action at the foot of a sheet.",
+          "variants": [
+            {
+              "preview": "RowCloseButtonDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Circle button",
+          "preview": "CircleButtonPreview",
+          "caption": "The round filled button used for compact single-action affordances."
+        },
+        {
+          "componentId": "Buttons/Circle icon button",
+          "preview": "CircleIconButtonLightPreview",
+          "caption": "A round icon button on a tinted circle.",
+          "variants": [
+            {
+              "preview": "CircleIconButtonDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Close button",
+          "preview": "CloseButtonLightPreview",
+          "caption": "The bare close affordance used in sheet and dialog corners.",
+          "variants": [
+            {
+              "preview": "CloseButtonDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Button tabs",
+          "preview": "ButtonTabsLightPreview",
+          "caption": "The pill tab row used to switch between list scopes.",
+          "variants": [
+            {
+              "preview": "ButtonTabsDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Time play button",
+          "preview": "TimePlayButtonPreview",
+          "caption": "The play affordance that doubles as a duration/remaining-time label, across all nine palettes."
+        }
+      ]
+    },
+    {
+      "name": "Inputs",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Inputs/Form field",
+          "preview": "FormFieldLightPreview",
+          "caption": "The standard single-line text field used across sign-in and naming flows.",
+          "variants": [
+            {
+              "preview": "FormFieldDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "FormFieldDialogPreview",
+              "caption": "The in-dialog treatment, across all nine palettes.",
+              "state": "dialog"
+            }
+          ]
+        },
+        {
+          "componentId": "Inputs/Email and password fields",
+          "preview": "UserPasswordFieldsLightPreview",
+          "caption": "The paired email and password fields with their reveal toggle — the sign-in form.",
+          "variants": [
+            {
+              "preview": "UserPasswordFieldsDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Inputs/Search bar",
+          "preview": "SearchBarPreview",
+          "caption": "The search field in its default and small styles, filled and empty, across all nine palettes."
+        },
+        {
+          "componentId": "Inputs/Number stepper",
+          "preview": "NumberStepperPreview",
+          "caption": "Minus/value/plus stepper, used for skip intervals and episode limits."
+        },
+        {
+          "componentId": "Inputs/Segmented tab bar",
+          "preview": "SegmentedTabBarPreview",
+          "caption": "The segmented control used to switch between two or three peer views."
+        },
+        {
+          "componentId": "Inputs/Selected option column",
+          "preview": "SelectOptionColumnPreview",
+          "caption": "A single-select option list with a checked row, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "SelectOptionColumnWithoutTitlePreview",
+              "caption": "Without the leading title, for use inside a sheet that supplies its own header.",
+              "state": "no-title"
+            }
+          ]
+        },
+        {
+          "componentId": "Inputs/Folder colour picker",
+          "preview": "ColorPickerDarkPreview",
+          "caption": "The folder colour swatch picker with its selection ring."
+        }
+      ]
+    },
+    {
+      "name": "Content",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Content/Text styles",
+          "preview": "TextStylesLightPreview",
+          "caption": "The whole H10–P60 type ramp in one sheet — the sizes, weights and colours every other component draws from.",
+          "variants": [
+            {
+              "preview": "TextStylesDarkPreview",
+              "caption": "The ramp on the dark palette.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Content/HTML text",
+          "preview": "HtmlTextLightPreview",
+          "caption": "Show-notes HTML rendered into Compose text, with links styled from the theme.",
+          "capture": "none",
+          "variants": [
+            {
+              "preview": "HtmlTextDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark",
+              "capture": "none"
+            }
+          ]
+        },
+        {
+          "componentId": "Content/Expandable text",
+          "preview": "ExpandedTextPreviewRegular",
+          "caption": "Clamped description text with its show-more affordance.",
+          "variants": [
+            {
+              "preview": "ExpandedTextPreviewShort",
+              "caption": "Content short enough that no affordance is needed — the case where the toggle must not appear.",
+              "state": "short"
+            },
+            {
+              "preview": "ExpandedTextPreviewEmptySpace",
+              "caption": "Content whose trailing whitespace would otherwise fake an extra line.",
+              "state": "empty-space"
+            }
+          ]
+        },
+        {
+          "componentId": "Content/Auto-resize text",
+          "preview": "AutoResizePreview",
+          "caption": "Text that shrinks to fit a fixed box rather than wrapping or ellipsising."
+        },
+        {
+          "componentId": "Content/Podcast selected text",
+          "preview": "PodcastSelectedTextEnglishPreview",
+          "caption": "The 'n podcasts selected' summary line.",
+          "variants": [
+            {
+              "preview": "PodcastSelectedTextFrenchPreview",
+              "caption": "French — the pluralisation and length case that catches hard-coded English grammar.",
+              "props": {
+                "locale": "fr"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Content/Playlist artwork",
+          "preview": "PlaylistArtworkSingleEpisodePreview",
+          "caption": "Playlist artwork built from a single episode's cover.",
+          "variants": [
+            {
+              "preview": "PlaylistArtworkQuadEpisodePreview",
+              "caption": "The four-up mosaic used once a playlist has enough distinct podcasts.",
+              "state": "quad"
+            },
+            {
+              "preview": "PlaylistArtworkNoEpisodePreview",
+              "caption": "The empty playlist placeholder, across all nine palettes.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Content/Folder image",
+          "preview": "FolderImageLightPreview",
+          "caption": "A folder's tinted cover grid.",
+          "variants": [
+            {
+              "preview": "FolderImageDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "FolderImageSmallPreview",
+              "caption": "The small size used in list rows, where the inner grid has least room.",
+              "props": {
+                "size": "small"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Content/Podcast subscribe row",
+          "preview": "ListPodcastSubscribeRowPreview",
+          "caption": "A podcast list row with its inline subscribe toggle, across all nine palettes."
+        },
+        {
+          "componentId": "Content/Podcast select list",
+          "preview": "PodcastSelectListPreview",
+          "caption": "The multi-select podcast list used when scoping a filter."
+        },
+        {
+          "componentId": "Content/Bookmark row",
+          "preview": "BookmarkRowNormalPreview",
+          "caption": "A bookmark list row: title, timestamp and play affordance, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "BookmarkRowLightPreview",
+              "caption": "The loading skeleton on light.",
+              "state": "loading"
+            },
+            {
+              "preview": "BookmarkRowDarkPreview",
+              "caption": "The loading skeleton on dark.",
+              "state": "loading",
+              "theme": "dark"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Feedback/Banner",
+          "preview": "BannerPreview",
+          "caption": "The inline dismissible banner used for tips and upsell nudges, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "BannerPreviewWithoutDismiss",
+              "caption": "Without the dismiss affordance, for banners the user cannot clear.",
+              "state": "no-dismiss"
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/No content banner",
+          "preview": "UpNextNoContentBannerPreview",
+          "caption": "The empty-state banner — icon, title, subtitle and up to two actions, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "UpNextNoContentBannerWithoutSubtitlePreview",
+              "caption": "Title only.",
+              "state": "no-subtitle"
+            },
+            {
+              "preview": "UpNextNoContentBannerWithoutPrimaryButtonPreview",
+              "caption": "Secondary action only.",
+              "state": "no-primary"
+            },
+            {
+              "preview": "UpNextNoContentBannerWithoutSecondaryButtonPreview",
+              "caption": "Primary action only.",
+              "state": "no-secondary"
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/Dialog",
+          "preview": "SimpleDialogPreview",
+          "caption": "The standard confirm/dismiss dialog, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "RadioDialogPreview",
+              "caption": "The single-select radio dialog.",
+              "state": "radio"
+            },
+            {
+              "preview": "ProgressDialogPreview",
+              "caption": "The blocking progress dialog.",
+              "state": "progress"
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/Tooltip",
+          "preview": "TooltipThemePreview",
+          "caption": "The coach-mark tooltip with its pointer, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "TooltipTipPreview",
+              "caption": "Every pointer position, so the tip geometry is reviewable at once.",
+              "props": {
+                "tipPosition": "all"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/Sparkle image",
+          "preview": "SparkleImagePreview",
+          "caption": "The sparkle treatment used to celebrate an upgrade or a completed action, across all nine palettes."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Top app bar",
+          "preview": "ThemedTopAppBarPreview",
+          "caption": "The themed top app bar in its solid and immersive styles, across all nine palettes. Its secondaryUi01 background against the content's primaryUi01 is the pairing most worth checking per theme."
+        },
+        {
+          "componentId": "Chrome/Bottom sheet app bar",
+          "preview": "BottomSheetAppBarLightPreview",
+          "caption": "The app bar used at the head of a modal sheet, with a close affordance.",
+          "variants": [
+            {
+              "preview": "BottomSheetAppBarDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "BottomSheetAppBarBackPreview",
+              "caption": "With a back arrow instead of a close cross, for a pushed second level.",
+              "state": "back"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Bottom sheet content",
+          "preview": "BottomSheetContentPreview",
+          "caption": "The full modal sheet body — title, copy and stacked actions, across all nine palettes."
+        },
+        {
+          "componentId": "Chrome/Pager dot indicator",
+          "preview": "PagerDotIndicatorPreview",
+          "caption": "The paging dots used under onboarding and end-of-year carousels.",
+          "variants": [
+            {
+              "preview": "PagerProgressingIndicatorPreview",
+              "caption": "The progress-bar variant used where pages advance on a timer.",
+              "state": "progressing"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Divider",
+          "preview": "HorizontalDividerLightPreview",
+          "caption": "The list divider — the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette."
+        },
+        {
+          "componentId": "Chrome/Rearrangeable menu action",
+          "preview": "MenuActionRearrangePreview",
+          "caption": "A drag-to-reorder action row, as used when customising the player's action bar."
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Settings/Setting row",
+          "preview": "SettingRowLightPreview",
+          "caption": "The workhorse settings row: primary text, optional secondary text, optional icon and optional toggle.",
+          "variants": [
+            {
+              "preview": "SettingRowDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "SettingRowSwitchPreview",
+              "caption": "With a switch.",
+              "state": "switch"
+            },
+            {
+              "preview": "SettingRowCheckboxPreview",
+              "caption": "With a checkbox.",
+              "state": "checkbox"
+            },
+            {
+              "preview": "SettingRowIconMaterialPreview",
+              "caption": "With a Material icon.",
+              "props": {
+                "icon": "material"
+              }
+            },
+            {
+              "preview": "SettingRowIconProjectPreview",
+              "caption": "With a Pocket Casts project icon.",
+              "props": {
+                "icon": "project"
+              }
+            },
+            {
+              "preview": "SettingRowIconGradientPreview",
+              "caption": "With a gradient-filled icon, the treatment reserved for Plus rows.",
+              "props": {
+                "icon": "gradient"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Settings/Setting section",
+          "preview": "SettingSectionPreview",
+          "caption": "A titled group of setting rows with its divider, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "SettingSectionLightPreview",
+              "caption": "On light.",
+              "theme": "light"
+            },
+            {
+              "preview": "SettingSectionDarkPreview",
+              "caption": "On dark.",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Settings/Setting info row",
+          "preview": "SettingInfoRowPreview",
+          "caption": "The explanatory row that sits under a setting to describe what it does."
+        }
+      ]
+    },
+    {
+      "name": "Identity",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Identity/User avatar",
+          "preview": "UserAvatarThemePreview",
+          "caption": "The profile avatar with its subscription ring, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "UserAvatarTierPreview",
+              "caption": "Each subscription tier's ring treatment — free, Plus and Patron.",
+              "props": {
+                "tier": "all"
+              }
+            },
+            {
+              "preview": "UserAvatarCompletionPreview",
+              "caption": "The ring at each completion fraction, which is what the profile screen animates.",
+              "props": {
+                "completion": "all"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Identity/Subscription badge",
+          "preview": "SubscriptionBadgePlusColoredLightThemePreview",
+          "caption": "The Plus badge in its coloured treatment across light and dark surfaces.",
+          "variants": [
+            {
+              "preview": "SubscriptionBadgePlusBlackPreview",
+              "caption": "Plus in its monochrome black treatment.",
+              "state": "black"
+            },
+            {
+              "preview": "SubscriptionBadgePlusWithGradientBackgroundPreview",
+              "caption": "Plus on its gradient background — the upgrade-path treatment.",
+              "state": "gradient"
+            },
+            {
+              "preview": "SubscriptionBadgePatronColoredLightThemePreview",
+              "caption": "Patron, coloured, on light.",
+              "state": "patron"
+            },
+            {
+              "preview": "SubscriptionBadgePatronColoredDarkThemePreview",
+              "caption": "Patron, coloured, on dark.",
+              "state": "patron",
+              "theme": "dark"
+            },
+            {
+              "preview": "SubscriptionBadgePatronBlackPreview",
+              "caption": "Patron in its monochrome black treatment.",
+              "state": "patron-black"
+            }
+          ]
+        },
+        {
+          "componentId": "Identity/Pocket Casts logo",
+          "preview": "PocketCastsLogoPreview",
+          "caption": "The roundel on its own."
+        },
+        {
+          "componentId": "Identity/Horizontal logo",
+          "preview": "HorizontalLogoDarkPreview",
+          "caption": "Roundel and wordmark side by side, the lockup used in app bars."
+        },
+        {
+          "componentId": "Identity/Vertical logo",
+          "preview": "VerticalLogoDarkPreview",
+          "caption": "The stacked lockup used on splash and sign-in surfaces.",
+          "variants": [
+            {
+              "preview": "VerticalLogoPlusLightPreview",
+              "caption": "The Plus lockup on light.",
+              "state": "plus"
+            },
+            {
+              "preview": "VerticalLogoPlusDarkPreview",
+              "caption": "The Plus lockup on dark.",
+              "state": "plus",
+              "theme": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Identity/Pocket Casts pill",
+          "preview": "PocketCastsPillPreview",
+          "caption": "The branded attribution pill stamped onto shared images."
+        },
+        {
+          "componentId": "Identity/Count badge",
+          "preview": "CountBadgeMediumPreview",
+          "caption": "The numeric badge at its medium size.",
+          "variants": [
+            {
+              "preview": "CountBadgeSmallPreview",
+              "caption": "Small — the size where a three-digit count is tightest.",
+              "props": {
+                "size": "small"
+              }
+            },
+            {
+              "preview": "CountBadgeBigPreview",
+              "caption": "Big.",
+              "props": {
+                "size": "big"
+              }
+            },
+            {
+              "preview": "CountBadgeCustomPreview",
+              "caption": "A caller-supplied size and colour.",
+              "props": {
+                "size": "custom"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Identity/Gradient icon",
+          "preview": "GradientIconLightPreview",
+          "caption": "An icon filled with the Plus gradient rather than a flat tint.",
+          "variants": [
+            {
+              "preview": "GradientIconDarkPreview",
+              "caption": "On the dark palette.",
+              "theme": "dark"
+            },
+            {
+              "preview": "GradientIconWithBrushPreview",
+              "caption": "With a caller-supplied brush.",
+              "props": {
+                "brush": "custom"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ads",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Ads/Ad banner",
+          "preview": "AdBannerThemePreview",
+          "caption": "The in-app ad banner across all nine palettes.",
+          "variants": [
+            {
+              "preview": "AdBannerPlayerPreview",
+              "caption": "The player treatment, which takes its colours from the playing podcast rather than the theme.",
+              "state": "player"
+            },
+            {
+              "preview": "AdBannerPodcastPreview",
+              "caption": "Across a range of podcast colour schemes — the axis that decides whether the banner stays legible.",
+              "props": {
+                "podcastColors": "all"
+              }
+            },
+            {
+              "preview": "AdBannerFontSizePreview",
+              "caption": "At larger font scales, where the banner's fixed height is most likely to clip.",
+              "props": {
+                "fontScale": "large"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Ads/Ad decisions column",
+          "preview": "AdDecisionsColumnThemePreview",
+          "caption": "The 'why this ad' options sheet, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "AdDecisionsColumnPodcastPreview",
+              "caption": "Under podcast colours.",
+              "props": {
+                "podcastColors": "all"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Ads/Ad report reasons",
+          "preview": "AdReportReasonsColumnPreview",
+          "caption": "The report-an-ad reason list, across all nine palettes.",
+          "variants": [
+            {
+              "preview": "AdReportReasonsColumnPodcastPreview",
+              "caption": "Under podcast colours.",
+              "props": {
+                "podcastColors": "all"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Ads/Ad report content",
+          "preview": "AdReportContentPreview",
+          "caption": "The confirmation shown once an ad has been reported."
+        }
+      ]
+    },
+    {
+      "name": "Insights",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Insights/Calendar heat map",
+          "preview": "CalendarHeatMapPreview",
+          "caption": "The listening-history heat map — a bespoke grid whose correctness is only visible as pixels. Across all nine palettes.",
+          "variants": [
+            {
+              "preview": "CalendarHeatMapPreviewFont150Percent",
+              "caption": "At 150% font scale, where the day labels start to crowd the cells.",
+              "props": {
+                "fontScale": "1.5"
+              }
+            },
+            {
+              "preview": "CalendarHeatMapPreviewFont200Percent",
+              "caption": "At 200% font scale — the accessibility ceiling the grid has to survive.",
+              "props": {
+                "fontScale": "2.0"
+              }
+            },
+            {
+              "preview": "CalendarHeatMapPreviewLocale",
+              "caption": "Under a locale with a different week start and longer day names.",
+              "props": {
+                "locale": "non-en"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Insights/Player header row",
+          "preview": "HeaderRowPlayerPreview",
+          "caption": "The player's header row under podcast-derived colours, across all nine palettes."
+        }
+      ]
+    },
+    {
+      "name": "Motion",
+      "section": "Animations",
+      "components": [
+        {
+          "componentId": "Motion/Animated play button",
+          "preview": "AnimatedPlayButtonPreview",
+          "caption": "The play/pause morph, captured as a still frame."
+        }
+      ]
+    }
+  ]
+}
