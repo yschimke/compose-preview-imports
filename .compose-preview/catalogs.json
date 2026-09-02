@@ -22,6 +22,11 @@
       "system": "bitwarden-android"
     },
     {
+      "importedFrom": "mullvad/mullvadvpn-app",
+      "listed": true,
+      "system": "mullvad-mullvadvpn-app"
+    },
+    {
       "importedFrom": "DroidKaigi/conference-app-2026",
       "listed": true,
       "system": "droidkaigi-conference-app-2026"

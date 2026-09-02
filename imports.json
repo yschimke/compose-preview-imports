@@ -23,6 +23,11 @@
       "upstream": "bitwarden/android"
     },
     {
+      "slug": "mullvad-mullvadvpn-app",
+      "branch": "import/mullvad-mullvadvpn-app",
+      "upstream": "mullvad/mullvadvpn-app"
+    },
+    {
       "slug": "droidkaigi-conference-app-2026",
       "branch": "import/droidkaigi-conference-app-2026",
       "upstream": "DroidKaigi/conference-app-2026"
