@@ -40,6 +40,10 @@
     "List structure",
     "Device chrome"
   ],
+  "completeness": {
+    "$comment": "PreviewEntityListView is the only component here declared in wear/src/screenshotTest/ rather than wear/src/main/; every other entry, including several built on the same ThemeLazyColumn (ScalingLazyColumn), captures semantics normally. Its pixels render — the entry keeps them — but the semantics tree comes back empty, which is a difference the renderer makes between the two source sets rather than anything about this component. Tracked in compose-ai-tools; revisit rather than inherit.",
+    "exemptSemantics": ["Home/Entity list"]
+  },
   "groups": [
     {
       "name": "Home",
