@@ -1,0 +1,1612 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "screens-settings__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 103,
+          "width": 420,
+          "height": 42
+        },
+        "label": "pad t 0dp e 10dp b 14dp s 10dp",
+        "role": "Settings",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "14",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 26,
+          "y": 194,
+          "width": 473,
+          "height": 137
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 27,
+          "y": 342,
+          "width": 470,
+          "height": 136
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 104,
+          "y": 504,
+          "width": 316,
+          "height": 21
+        },
+        "label": "pad 8dp",
+        "role": "Pocket Casts will only sync your account when you open the app.",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 52,
+          "y": 103,
+          "width": 420,
+          "height": 42
+        },
+        "label": "text 14sp/18",
+        "role": "Settings",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 217,
+          "width": 325,
+          "height": 91
+        },
+        "label": "text 14sp/18",
+        "role": "Metered data warning",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 64,
+          "y": 389,
+          "width": 323,
+          "height": 42
+        },
+        "label": "text 14sp/18",
+        "role": "Background refresh",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 504,
+          "width": 316,
+          "height": 21
+        },
+        "label": "text 10sp/14",
+        "role": "Pocket Casts will only sync your account when you open the app.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "10",
+          "lineHeight": "14",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "screens-settings__ideal__checked__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 103,
+          "width": 420,
+          "height": 42
+        },
+        "label": "pad t 0dp e 10dp b 14dp s 10dp",
+        "role": "Settings",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "14",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 26,
+          "y": 194,
+          "width": 473,
+          "height": 137
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 27,
+          "y": 342,
+          "width": 470,
+          "height": 136
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 104,
+          "y": 504,
+          "width": 316,
+          "height": 21
+        },
+        "label": "pad 8dp",
+        "role": "Pocket Casts will only sync your account when you open the app.",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 52,
+          "y": 103,
+          "width": 420,
+          "height": 42
+        },
+        "label": "text 14sp/18",
+        "role": "Settings",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 217,
+          "width": 325,
+          "height": 91
+        },
+        "label": "text 14sp/18",
+        "role": "Metered data warning",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 64,
+          "y": 389,
+          "width": 323,
+          "height": 42
+        },
+        "label": "text 14sp/18",
+        "role": "Background refresh",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 504,
+          "width": 316,
+          "height": 21
+        },
+        "label": "text 10sp/14",
+        "role": "Pocket Casts will only sync your account when you open the app.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "10",
+          "lineHeight": "14",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "screens-playback-effects__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 44,
+          "y": 88,
+          "width": 365,
+          "height": 34
+        },
+        "label": "pad t 0dp e 10dp b 14dp s 10dp",
+        "role": "Effects",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "14",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 159,
+          "width": 406,
+          "height": 192
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 108,
+          "y": 187,
+          "width": 89,
+          "height": 35
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 8dp",
+        "role": "Speed",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 51,
+          "y": 359,
+          "width": 351,
+          "height": 90
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 24dp",
+        "role": "Trim Silence",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 8dp",
+        "role": "Trim Silence",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad 0dp/7dp · r 3dp",
+        "detail": {
+          "padding.start": "7",
+          "padding.top": "0",
+          "padding.end": "7",
+          "padding.bottom": "0",
+          "cornerRadius": "3",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 8dp b 0dp s 0dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 88,
+          "width": 365,
+          "height": 34
+        },
+        "label": "text 15sp/19",
+        "role": "Effects",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "19",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 108,
+          "y": 187,
+          "width": 89,
+          "height": 35
+        },
+        "label": "text 15sp/19",
+        "role": "Speed",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "19",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 193,
+          "y": 270,
+          "width": 68,
+          "height": 42
+        },
+        "label": "text 18sp/21",
+        "role": "1.5x",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "18",
+          "lineHeight": "21",
+          "fontWeight": "600"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 75,
+          "y": 389,
+          "width": 254,
+          "height": 30
+        },
+        "label": "text 15sp/19",
+        "role": "Trim Silence",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "19",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 14sp/20",
+        "role": "Trim Silence",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "700"
+        }
+      }
+    ],
+    "episodes-episode-chip__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 16,
+          "width": 422,
+          "height": 422
+        },
+        "label": "pad 8dp · gap 8dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 16,
+          "width": 422,
+          "height": 132
+        },
+        "label": "pad 0dp/10dp · r 24dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 36,
+          "y": 36,
+          "width": 60,
+          "height": 60
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 164,
+          "width": 422,
+          "height": 133
+        },
+        "label": "pad 0dp/10dp · r 24dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 36,
+          "y": 185,
+          "width": 60,
+          "height": 60
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 313,
+          "width": 422,
+          "height": 101
+        },
+        "label": "pad 0dp/10dp · r 24dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 430,
+          "width": 422,
+          "height": 8
+        },
+        "label": "pad 0dp/10dp · r 24dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad 0dp/10dp · r 24dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 108,
+          "y": 52,
+          "width": 201,
+          "height": 33
+        },
+        "label": "text 14sp/16",
+        "role": "Sample Episode",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 108,
+          "y": 85,
+          "width": 149,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "01 Sep • 30m",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 108,
+          "y": 184,
+          "width": 310,
+          "height": 65
+        },
+        "label": "text 14sp/16",
+        "role": "Sample Episode: With a title that is quite long and wrap across multiple lines",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 108,
+          "y": 249,
+          "width": 149,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "01 Sep • 30m",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 48,
+          "y": 333,
+          "width": 201,
+          "height": 33
+        },
+        "label": "text 14sp/16",
+        "role": "Sample Episode",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 80,
+          "y": 366,
+          "width": 149,
+          "height": 28
+        },
+        "label": "text 12sp/16",
+        "role": "01 Sep • 30m",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 14sp/16",
+        "role": "Played Episode",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 12sp/16",
+        "role": "01 Sep • 30m",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 14sp/16",
+        "role": "Archived Episode",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 12sp/16",
+        "role": "01 Sep • 30m",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "playback-marquee-media-display__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 23,
+          "y": 0,
+          "width": 318,
+          "height": 35
+        },
+        "label": "text 15sp/19",
+        "role": "Title",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "19",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 170,
+          "y": 35,
+          "width": 52,
+          "height": 24
+        },
+        "label": "text 10sp/14",
+        "role": "Artist",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "10",
+          "lineHeight": "14",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "sign-in-phone-instructions__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
+        },
+        "label": "text 16sp/20",
+        "role": "Log in on phone",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "20",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 158,
+          "width": 406,
+          "height": 60
+        },
+        "label": "text 12sp/16",
+        "role": "1. Log into Pocket Casts on a paired Android phone.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "text 12sp/16",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "text 12sp/16",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      }
+    ],
+    "sign-in-phone-instructions__ideal__syncing": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
+        },
+        "label": "text 16sp/20",
+        "role": "Log in on phone",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "20",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 158,
+          "width": 406,
+          "height": 60
+        },
+        "label": "text 12sp/16",
+        "role": "1. Log into Pocket Casts on a paired Android phone.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "text 12sp/16",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "text 12sp/16",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      }
+    ],
+    "sign-in-phone-instructions__ideal__success": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
+        },
+        "label": "text 16sp/20",
+        "role": "Log in on phone",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "20",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 158,
+          "width": 406,
+          "height": 60
+        },
+        "label": "text 12sp/16",
+        "role": "1. Log into Pocket Casts on a paired Android phone.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "text 12sp/16",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "text 12sp/16",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      }
+    ],
+    "sign-in-phone-instructions__ideal__no-connection": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
+        },
+        "label": "text 16sp/20",
+        "role": "Log in on phone",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "20",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 158,
+          "width": 406,
+          "height": 60
+        },
+        "label": "text 12sp/16",
+        "role": "1. Log into Pocket Casts on a paired Android phone.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "text 12sp/16",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "text 12sp/16",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      }
+    ],
+    "sign-in-phone-instructions__ideal__login-failed": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "pad t 0dp e 0dp b 24dp s 0dp",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 114,
+          "y": 89,
+          "width": 226,
+          "height": 36
+        },
+        "label": "text 16sp/20",
+        "role": "Log in on phone",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "20",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 158,
+          "width": 406,
+          "height": 60
+        },
+        "label": "text 12sp/16",
+        "role": "1. Log into Pocket Casts on a paired Android phone.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 24,
+          "y": 242,
+          "width": 405,
+          "height": 123
+        },
+        "label": "text 12sp/16",
+        "role": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 80,
+          "y": 422,
+          "width": 293,
+          "height": 32
+        },
+        "label": "text 12sp/16",
+        "role": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700"
+        }
+      }
+    ],
+    "states-no-content__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 20,
+          "y": 0,
+          "width": 344,
+          "height": 33
+        },
+        "label": "pad t 0dp e 10dp b 14dp s 10dp",
+        "role": "Downloads",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "14",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 20,
+          "y": 0,
+          "width": 344,
+          "height": 33
+        },
+        "label": "text 14sp/18",
+        "role": "Downloads",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 114,
+          "y": 176,
+          "width": 156,
+          "height": 33
+        },
+        "label": "text 14sp/18",
+        "role": "No episodes",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "states-notification__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 32,
+          "y": 32,
+          "width": 390,
+          "height": 390
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 96,
+          "y": 235,
+          "width": 263,
+          "height": 33
+        },
+        "label": "pad t 0dp e 0dp b 32dp s 0dp",
+        "role": "There was a problem",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "32",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 96,
+          "y": 235,
+          "width": 263,
+          "height": 33
+        },
+        "label": "text 14sp/18",
+        "role": "There was a problem",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "18",
+          "fontWeight": "700"
+        }
+      }
+    ]
+  },
+  "references": {}
+}

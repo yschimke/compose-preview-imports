@@ -1,0 +1,945 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "pocketcasts-wear",
+  "title": "Pocket Casts for Wear OS",
+  "components": [
+    {
+      "componentId": "Screens/Settings",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/screens-settings/ideal__default__compact.png",
+          "state": "default",
+          "width": 525,
+          "height": 525,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-settings__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_unchecked_ui6",
+          "previewParams": {
+            "uiMode": 6
+          },
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/screens-settings/ideal__checked__compact.png",
+          "state": "checked",
+          "width": 525,
+          "height": 525,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-settings__ideal__checked__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.settings.SettingsScreenKt.SettingsScreenPreview_checked_ui6",
+          "previewParams": {
+            "uiMode": 6
+          },
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 52,
+            "y": 103,
+            "width": 420,
+            "height": 42
+          },
+          "label": "Settings",
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 14
+          }
+        },
+        {
+          "bounds": {
+            "x": 26,
+            "y": 194,
+            "width": 473,
+            "height": 137
+          },
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 27,
+            "y": 342,
+            "width": 470,
+            "height": 136
+          },
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 104,
+            "y": 504,
+            "width": 316,
+            "height": 21
+          },
+          "label": "Pocket Casts will only sync your account when you open the app.",
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          }
+        }
+      ],
+      "section": "Screens",
+      "group": "Screens",
+      "caption": "The watch settings list with its toggles off.",
+      "wireframe": "wireframes/screens-settings.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 288,
+      "sourceDirectory": "wear",
+      "sourceFunction": "SettingsScreenPreview_unchecked"
+    },
+    {
+      "componentId": "Screens/Playback effects",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/screens-playback-effects/ideal__default__compact.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/screens-playback-effects__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.player.EffectsScreenKt.EffectsScreenDarkPreview_wearos_large_round",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4278190080,
+            "device": "id:wearos_large_round",
+            "widthDp": 227,
+            "heightDp": 227
+          },
+          "density": 2
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 24,
+              "y": 159,
+              "width": 406,
+              "height": 192
+            }
+          },
+          "bounds": {
+            "x": 24,
+            "y": 159,
+            "width": 406,
+            "height": 192
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 76,
+              "y": 267,
+              "width": 48,
+              "height": 48
+            }
+          },
+          "bounds": {
+            "x": 76,
+            "y": 267,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 330,
+              "y": 267,
+              "width": 48,
+              "height": 48
+            }
+          },
+          "bounds": {
+            "x": 330,
+            "y": 267,
+            "width": 48,
+            "height": 48
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 44,
+            "y": 88,
+            "width": 365,
+            "height": 34
+          },
+          "label": "Effects",
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 14
+          }
+        },
+        {
+          "bounds": {
+            "x": 24,
+            "y": 159,
+            "width": 406,
+            "height": 192
+          },
+          "role": "Button",
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 108,
+            "y": 187,
+            "width": 89,
+            "height": 35
+          },
+          "label": "Speed",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 51,
+            "y": 359,
+            "width": 351,
+            "height": 90
+          },
+          "padding": {
+            "start": 14,
+            "top": 6,
+            "end": 14,
+            "bottom": 6
+          },
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "role": "Image",
+          "label": "Trim Silence",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "label": "Trim Silence",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 26
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "role": "Button",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "padding": {
+            "start": 7,
+            "top": 0,
+            "end": 7,
+            "bottom": 0
+          },
+          "cornerRadius": 3
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "role": "Button",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Screens",
+      "group": "Screens",
+      "caption": "Speed, trim silence and volume boost — the densest control screen in the watch app.",
+      "wireframe": "wireframes/screens-playback-effects.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 252,
+      "sourceDirectory": "wear",
+      "sourceFunction": "EffectsScreenDarkPreview"
+    },
+    {
+      "componentId": "Episodes/Episode chip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/episodes-episode-chip/ideal__default.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/episodes-episode-chip__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeChipKt.EpisodeChipPreview",
+          "density": 2
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 422,
+            "height": 422
+          },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 16,
+            "y": 16,
+            "width": 422,
+            "height": 132
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 36,
+            "y": 36,
+            "width": 60,
+            "height": 60
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 16,
+            "y": 164,
+            "width": 422,
+            "height": 133
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 36,
+            "y": 185,
+            "width": 60,
+            "height": 60
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 16,
+            "y": 313,
+            "width": 422,
+            "height": 101
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 16,
+            "y": 430,
+            "width": 422,
+            "height": 8
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "section": "Components",
+      "group": "Episodes",
+      "caption": "The list row for an episode: artwork, title and metadata inside a Wear Chip.",
+      "wireframe": "wireframes/episodes-episode-chip.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 237,
+      "sourceDirectory": "wear",
+      "sourceFunction": "EpisodeChipPreview",
+      "parameters": [
+        {
+          "name": "episode",
+          "type": "BaseEpisode"
+        },
+        {
+          "name": "queueState",
+          "type": "State"
+        },
+        {
+          "name": "useEpisodeArtwork",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "useUpNextIcon",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "showImage",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Playback/Marquee media display",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/playback-marquee-media-display/ideal__default.png",
+          "state": "default",
+          "width": 363,
+          "height": 59,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/playback-marquee-media-display__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplayKt.MarqueeTextMediaDisplayPreview",
+          "density": 2
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Playback",
+      "caption": "The scrolling title/subtitle pair used where a track name overflows the watch's width.",
+      "wireframe": "wireframes/playback-marquee-media-display.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 72,
+      "sourceDirectory": "wear",
+      "sourceFunction": "MarqueeTextMediaDisplayPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "title",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "artist",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "isPlaybackError",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Sign-in/Phone instructions",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sign-in-phone-instructions/ideal__default.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.LoginWithPhoneInstructionsPreview",
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/sign-in-phone-instructions/ideal__syncing.png",
+          "state": "syncing",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__syncing",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SyncingContentPreview",
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__syncing.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/sign-in-phone-instructions/ideal__success.png",
+          "state": "success",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__success",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.SuccessContentPreview",
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__success.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/sign-in-phone-instructions/ideal__no-connection.png",
+          "state": "no-connection",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__no-connection",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.ErrorContentNoConnectionPreview",
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__no-connection.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/sign-in-phone-instructions/ideal__login-failed.png",
+          "state": "login-failed",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/sign-in-phone-instructions__ideal__login-failed",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.LoginWithPhoneScreenKt.ErrorContentLoginFailedPreview",
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__login-failed.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 24,
+            "y": 242,
+            "width": 405,
+            "height": 123
+          },
+          "label": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 24
+          }
+        },
+        {
+          "bounds": {
+            "x": 80,
+            "y": 422,
+            "width": 293,
+            "height": 32
+          },
+          "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 24
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Sign-in",
+      "caption": "The 'continue on your phone' instructions — the entry point to pairing.",
+      "wireframe": "wireframes/sign-in-phone-instructions.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 259,
+      "sourceDirectory": "wear",
+      "sourceFunction": "LoginWithPhoneInstructionsPreview"
+    },
+    {
+      "componentId": "Chrome/Time text",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/chrome-time-text/ideal__default__compact.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/chrome-time-text__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityConnectedPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/chrome-time-text__ideal__default__compact.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/chrome-time-text/ideal__disconnected__compact.png",
+          "state": "disconnected",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/chrome-time-text__ideal__disconnected__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityDisconnectedPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/chrome-time-text__ideal__disconnected__compact.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Chrome",
+      "caption": "The curved time text at the top of the bezel while the watch is connected.",
+      "wireframe": "wireframes/chrome-time-text.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 66,
+      "sourceDirectory": "wear",
+      "sourceFunction": "TimeTextWithConnectivityConnectedPreview"
+    },
+    {
+      "componentId": "States/Loading",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/states-loading/ideal__default__compact.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-loading__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt.LoadingScreenPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-loading__ideal__default__compact.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "States",
+      "caption": "The full-screen loading indicator.",
+      "wireframe": "wireframes/states-loading.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 28,
+      "sourceDirectory": "wear",
+      "sourceFunction": "LoadingScreenPreview"
+    },
+    {
+      "componentId": "States/No content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/states-no-content/ideal__default__compact.png",
+          "state": "default",
+          "width": 384,
+          "height": 384,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-no-content__ideal__default__compact",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt.NoContentScreenPreview_wearos_small_round",
+          "previewParams": {
+            "device": "id:wearos_small_round",
+            "widthDp": 192,
+            "heightDp": 192
+          },
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-no-content__ideal__default__compact.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 20,
+            "y": 0,
+            "width": 344,
+            "height": 33
+          },
+          "label": "Downloads",
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 14
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "States",
+      "caption": "The empty state: icon, title and explanatory copy sized for the watch.",
+      "wireframe": "wireframes/states-no-content.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 35,
+      "sourceDirectory": "wear",
+      "sourceFunction": "NoContentScreenPreview"
+    },
+    {
+      "componentId": "States/Notification",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/states-notification/ideal__default.png",
+          "state": "default",
+          "width": 454,
+          "height": 454,
+          "livePreview": "https://preview.coo.ee/pocketcasts-wear/p/states-notification__ideal__default",
+          "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt.NotificationScreenPreview",
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-notification__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 32,
+            "y": 32,
+            "width": 390,
+            "height": 390
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 96,
+            "y": 235,
+            "width": 263,
+            "height": 33
+          },
+          "label": "There was a problem",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 32
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "States",
+      "caption": "The transient notification screen the watch app uses to acknowledge an action.",
+      "wireframe": "wireframes/states-notification.svg",
+      "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
+      "sourceModule": ":wear",
+      "bodyLine": 63,
+      "sourceDirectory": "wear",
+      "sourceFunction": "NotificationScreenPreview"
+    }
+  ],
+  "library": [
+    "Wear Compose Material"
+  ],
+  "renderer": "compose-preview 1.65.0",
+  "generatedAt": "2026-09-02T22:17:08.008Z",
+  "display": {
+    "surface": "dark",
+    "hero": "Screens/App entry"
+  },
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":wear",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "Automattic/pocket-casts-android",
+    "ref": "4538b34c3b4ab665a8194afc1258be686b0570bd",
+    "module": ":wear"
+  }
+}
