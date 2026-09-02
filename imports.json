@@ -28,6 +28,11 @@
       "upstream": "mullvad/mullvadvpn-app"
     },
     {
+      "slug": "msasikanth-twine",
+      "branch": "import/msasikanth-twine",
+      "upstream": "msasikanth/twine"
+    },
+    {
       "slug": "jetbrains-kotlinconf-app",
       "branch": "import/jetbrains-kotlinconf-app",
       "upstream": "JetBrains/kotlinconf-app"
