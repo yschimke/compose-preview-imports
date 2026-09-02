@@ -89,6 +89,7 @@ jobs:
       previewAnnotations: ${{ steps.read.outputs.previewAnnotations }}
       workingDirectory: ${{ steps.read.outputs.workingDirectory }}
       excludePreviewIds: ${{ steps.read.outputs.excludePreviewIds }}
+      stubGoogleServices: ${{ steps.read.outputs.stubGoogleServices }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -220,6 +221,31 @@ jobs:
             exit 1
           }
 
+          # Android applicationIds to write a stub google-services.json for.
+          #
+          # An upstream that applies the Google Services plugin but does not commit the file cannot
+          # CONFIGURE without one. home-assistant/android is the case: its convention plugin applies
+          # the plugin to every application module and contributors bring their own file, so :app
+          # dies on `processMinimalDebugGoogleServices` before a preview is discovered.
+          #
+          # These must be the EXACT applicationId of the variant being rendered, suffixes included.
+          # Verified against a real AGP build rather than assumed: a stub naming only the base
+          # package fails with "No matching client found for package name", so there is no prefix
+          # fallback, and nothing in the pipeline can guess a flavour suffix a convention plugin in
+          # another repository decided on. Naming them here makes the stub the import's declared
+          # statement rather than a guess, and a reviewer can check them against the upstream build.
+          stub_google_services=$(jq -r '.stubGoogleServices // [] | join(",")' "$config")
+          # Package names and commas, nothing else. `grep -z` for the same reason as above: the
+          # value reaches $GITHUB_OUTPUT, and a plain anchored grep matches per LINE, so an embedded
+          # newline would pass and start a second key=value nobody wrote.
+          [ -z "$stub_google_services" ] || \
+            printf '%s' "$stub_google_services" |
+              grep -zEq '^[A-Za-z0-9_.]+(,[A-Za-z0-9_.]+)*$' || {
+            echo "::error::stubGoogleServices '${stub_google_services}' must be Android" \
+              "applicationIds (letters, digits, . and _), one per array entry, no spaces"
+            exit 1
+          }
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -244,6 +270,7 @@ jobs:
             echo "previewAnnotations=${preview_annotations}"
             echo "workingDirectory=${working_directory}"
             echo "excludePreviewIds=${exclude_preview_ids}"
+            echo "stubGoogleServices=${stub_google_services}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -286,6 +313,10 @@ jobs:
       # pipeline's own always-on exclusions rather than replacing them, so naming one here does not
       # quietly re-enable the synthetic app-launching previews.
       exclude-preview-ids: ${{ needs.config.outputs.excludePreviewIds }}
+      # The applicationIds this import needs a placeholder google-services.json for — see the config
+      # job. Empty for every import whose upstream does not apply the Google Services plugin, which
+      # is all of them but home-assistant.
+      stub-google-services-packages: ${{ needs.config.outputs.stubGoogleServices }}
       # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
       # serve box that bakes the matching daemon re-renders these previews live — device, theme and
       # knob controls work instead of replaying a snapshot.
