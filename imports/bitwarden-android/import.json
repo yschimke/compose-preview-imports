@@ -4,5 +4,8 @@
   "ref": "main",
   "modules": [":ui"],
   "renderer": "android",
-  "notes": "Bitwarden's password manager for Android, on Google Play as com.x8bit.bitwarden and clearly designed rather than assembled: :ui is a first-class design-system module (BitwardenActionCard, BitwardenStatusBadge, BitwardenRowOfActions, the button and text-field family) with 43 preview-bearing files in ui/src/main/kotlin. Ordinary Android Compose, Robolectric lane, a single Gradle build at the repository root, and a module that depends on no network or vault code — the least eventful of this batch to import, which is why it is worth having beside the multiplatform ones. Licence: GPL-3.0 — see the note on the pull request."
+  "excludePreviewIds": [
+    "*.BitwardenBasicDialog_preview"
+  ],
+  "notes": "Bitwarden's password manager for Android, on Google Play as com.x8bit.bitwarden and clearly designed rather than assembled: :ui is a first-class design-system module (BitwardenActionCard, BitwardenStatusBadge, BitwardenRowOfActions, the button and text-field family) with 43 preview-bearing files in ui/src/main/kotlin. Ordinary Android Compose, Robolectric lane, a single Gradle build at the repository root, and a module that depends on no network or vault code — the least eventful of this batch to import, which is why it is worth having beside the multiplatform ones. Licence: GPL-3.0 — see the note on the pull request. One preview is excluded: BitwardenBasicDialog_preview reads LocalIntentManager, a CompositionLocal the Bitwarden application installs at startup, so it renders in the app and throws IllegalStateException standalone. The other 55 render."
 }
