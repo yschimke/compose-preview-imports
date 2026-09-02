@@ -22,6 +22,11 @@
       "system": "bitwarden-android"
     },
     {
+      "importedFrom": "mullvad/mullvadvpn-app",
+      "listed": true,
+      "system": "mullvad-mullvadvpn-app"
+    },
+    {
       "importedFrom": "thunderbird/thunderbird-android",
       "listed": true,
       "system": "thunderbird-android"
