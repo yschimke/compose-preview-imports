@@ -25,6 +25,11 @@
       "importedFrom": "mullvad/mullvadvpn-app",
       "listed": true,
       "system": "mullvad-mullvadvpn-app"
+    },
+    {
+      "importedFrom": "msasikanth/twine",
+      "listed": true,
+      "system": "msasikanth-twine"
     }
   ],
   "groups": []
