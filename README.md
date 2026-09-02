@@ -122,6 +122,7 @@ any other.
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
 | `previewAnnotations` | Optional. Space-separated multipreview annotation names (e.g. `WearPreviewDevices WearPreviewFontScales`) that the spec pre-flight cannot see for itself. Wear catalogs always need this. |
+| `workingDirectory` | Optional. Repo-relative subdirectory of the upstream checkout holding the Gradle build, for a project whose build is not at its repository root. Omit for the usual case. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
 
@@ -131,6 +132,13 @@ only with a multipreview declared in *another* module is invisible to it, so eve
 such a preview fails with *"matches no @Preview function in the scanned module"* even though the
 render would have produced it. Naming the multipreview annotations makes those indirectly annotated
 previews visible to the pre-flight.
+
+`workingDirectory` exists because an upstream's repository root and its Gradle root are not always
+the same directory. `mullvad/mullvadvpn-app` is a Rust repository whose Android client is a complete
+Gradle build under `android/`, with no `settings.gradle.kts` at the root, so a render started at the
+root has nothing to build. The reusable pipeline already renders in a named subdirectory of the
+upstream checkout; naming it here is what reaches it. `catalog.spec.json` is unaffected — it is read
+from this repository, and its path stays repo-root-relative.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding
