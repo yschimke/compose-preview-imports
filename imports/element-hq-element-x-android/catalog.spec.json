@@ -1,8 +1,1303 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project. It carries no component inventory on purpose: that comes from @CatalogComponent / @CatalogVariant annotations beside the previews, and a project imported without its maintainers' involvement has none. What is published is therefore the previews as the project declares them, grouped by nothing, which is the honest presentation of somebody else's app.",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. This one is large enough that its captions are derived from the upstream preview and file names rather than written one by one — a claim about where each entry comes from, and nothing more.",
   "system": "element-hq-element-x-android",
   "title": "Element X",
   "module": "libraries:designsystem",
-  "modes": ["light", "dark"]
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Compound components",
+      "components": [
+        {
+          "componentId": "color-aliases",
+          "preview": "ColorAliasesPreview",
+          "caption": "Color aliases. ColorAliases.kt"
+        },
+        {
+          "componentId": "dialog-with-destructive-button",
+          "preview": "DialogWithDestructiveButtonPreview",
+          "caption": "Dialog with destructive button. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "dialog-with-only-message-and-ok-button",
+          "preview": "DialogWithOnlyMessageAndOkButtonPreview",
+          "caption": "Dialog with only message and ok button. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "dialog-with-third-button",
+          "preview": "DialogWithThirdButtonPreview",
+          "caption": "Dialog with third button. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "dialog-with-title-and-ok-button",
+          "preview": "DialogWithTitleAndOkButtonPreview",
+          "caption": "Dialog with title and ok button. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "dialog-with-title-icon-and-ok-button",
+          "preview": "DialogWithTitleIconAndOkButtonPreview",
+          "caption": "Dialog with title icon and ok button. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "dialog-with-very-long-title-and-icon",
+          "preview": "DialogWithVeryLongTitleAndIconPreview",
+          "caption": "Dialog with very long title and icon. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "dialog-with-very-long-title",
+          "preview": "DialogWithVeryLongTitlePreview",
+          "caption": "Dialog with very long title. AlertDialogContent.kt"
+        },
+        {
+          "componentId": "bottom-sheet-drag-handle",
+          "preview": "BottomSheetDragHandlePreview",
+          "caption": "Bottom sheet drag handle. BottomSheetDragHandle.kt"
+        },
+        {
+          "componentId": "filled-button-large-low-padding",
+          "preview": "FilledButtonLargeLowPaddingPreview",
+          "caption": "Filled button large low padding. Button.kt"
+        },
+        {
+          "componentId": "filled-button-large",
+          "preview": "FilledButtonLargePreview",
+          "caption": "Filled button large. Button.kt"
+        },
+        {
+          "componentId": "filled-button-medium-low-padding",
+          "preview": "FilledButtonMediumLowPaddingPreview",
+          "caption": "Filled button medium low padding. Button.kt"
+        },
+        {
+          "componentId": "filled-button-medium",
+          "preview": "FilledButtonMediumPreview",
+          "caption": "Filled button medium. Button.kt"
+        },
+        {
+          "componentId": "filled-button-small",
+          "preview": "FilledButtonSmallPreview",
+          "caption": "Filled button small. Button.kt"
+        },
+        {
+          "componentId": "outlined-button-large-low-padding",
+          "preview": "OutlinedButtonLargeLowPaddingPreview",
+          "caption": "Outlined button large low padding. Button.kt"
+        },
+        {
+          "componentId": "outlined-button-large",
+          "preview": "OutlinedButtonLargePreview",
+          "caption": "Outlined button large. Button.kt"
+        },
+        {
+          "componentId": "outlined-button-medium-low-padding",
+          "preview": "OutlinedButtonMediumLowPaddingPreview",
+          "caption": "Outlined button medium low padding. Button.kt"
+        },
+        {
+          "componentId": "outlined-button-medium",
+          "preview": "OutlinedButtonMediumPreview",
+          "caption": "Outlined button medium. Button.kt"
+        },
+        {
+          "componentId": "outlined-button-small",
+          "preview": "OutlinedButtonSmallPreview",
+          "caption": "Outlined button small. Button.kt"
+        },
+        {
+          "componentId": "text-button-large-low-padding",
+          "preview": "TextButtonLargeLowPaddingPreview",
+          "caption": "Text button large low padding. Button.kt"
+        },
+        {
+          "componentId": "text-button-large",
+          "preview": "TextButtonLargePreview",
+          "caption": "Text button large. Button.kt"
+        },
+        {
+          "componentId": "text-button-medium-low-padding",
+          "preview": "TextButtonMediumLowPaddingPreview",
+          "caption": "Text button medium low padding. Button.kt"
+        },
+        {
+          "componentId": "text-button-medium",
+          "preview": "TextButtonMediumPreview",
+          "caption": "Text button medium. Button.kt"
+        },
+        {
+          "componentId": "text-button-small",
+          "preview": "TextButtonSmallPreview",
+          "caption": "Text button small. Button.kt"
+        },
+        {
+          "componentId": "checkboxes",
+          "preview": "CheckboxesPreview",
+          "caption": "Checkbox — es. Checkbox.kt"
+        },
+        {
+          "componentId": "circular-progress-indicator",
+          "preview": "CircularProgressIndicatorPreview",
+          "caption": "Circular progress indicator. CircularProgressIndicator.kt"
+        },
+        {
+          "componentId": "dropdown-menu-item",
+          "preview": "DropdownMenuItemPreview",
+          "caption": "Dropdown menu item. DropdownMenuItem.kt"
+        },
+        {
+          "componentId": "filled-text-field-dark",
+          "preview": "FilledTextFieldDarkPreview",
+          "caption": "Filled text field — dark. FilledTextField.kt"
+        },
+        {
+          "componentId": "filled-text-field-light",
+          "preview": "FilledTextFieldLightPreview",
+          "caption": "Filled text field — light. FilledTextField.kt"
+        },
+        {
+          "componentId": "filled-text-field-value-light",
+          "preview": "FilledTextFieldValueLightPreview",
+          "caption": "Filled text field — value light. FilledTextField.kt"
+        },
+        {
+          "componentId": "filled-text-field-value-text-field-dark",
+          "preview": "FilledTextFieldValueTextFieldDarkPreview",
+          "caption": "Filled text field — value text field dark. FilledTextField.kt"
+        },
+        {
+          "componentId": "floating-action-button",
+          "preview": "FloatingActionButtonPreview",
+          "caption": "Floating action button. FloatingActionButton.kt"
+        },
+        {
+          "componentId": "horizontal-divider",
+          "preview": "HorizontalDividerPreview",
+          "caption": "Horizontal divider. HorizontalDivider.kt"
+        },
+        {
+          "componentId": "horizontal-floating-toolbar-no-fab",
+          "preview": "HorizontalFloatingToolbarNoFabPreview",
+          "caption": "Horizontal floating toolbar — no fab. HorizontalFloatingToolbar.kt"
+        },
+        {
+          "componentId": "horizontal-floating-toolbar",
+          "preview": "HorizontalFloatingToolbarPreview",
+          "caption": "Horizontal floating toolbar. HorizontalFloatingToolbar.kt"
+        },
+        {
+          "componentId": "all-icons",
+          "preview": "AllIconsPreview",
+          "caption": "All icons. Icon.kt"
+        },
+        {
+          "componentId": "icon-image-vector",
+          "preview": "IconImageVectorPreview",
+          "caption": "Icon — image vector. Icon.kt"
+        },
+        {
+          "componentId": "icon-button",
+          "preview": "IconButtonPreview",
+          "caption": "Icon button. IconButton.kt"
+        },
+        {
+          "componentId": "icon-color-button",
+          "preview": "IconColorButtonPreview",
+          "caption": "Icon color button. IconColorButton.kt"
+        },
+        {
+          "componentId": "icon-toggle-button",
+          "preview": "IconToggleButtonPreview",
+          "caption": "Icon toggle button. IconToggleButton.kt"
+        },
+        {
+          "componentId": "linear-progress-indicator",
+          "preview": "LinearProgressIndicatorPreview",
+          "caption": "Linear progress indicator. LinearProgressIndicator.kt"
+        },
+        {
+          "componentId": "list-item-primary-action-with-icon",
+          "preview": "ListItemPrimaryActionWithIconPreview",
+          "caption": "List item — primary action with icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-both-icons",
+          "preview": "ListItemSingleLineBothIconsPreview",
+          "caption": "List item — single line both icons. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-leading-checkbox",
+          "preview": "ListItemSingleLineLeadingCheckboxPreview",
+          "caption": "List item — single line leading checkbox. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-leading-icon",
+          "preview": "ListItemSingleLineLeadingIconPreview",
+          "caption": "List item — single line leading icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-leading-radio-button",
+          "preview": "ListItemSingleLineLeadingRadioButtonPreview",
+          "caption": "List item — single line leading radio button. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-leading-switch",
+          "preview": "ListItemSingleLineLeadingSwitchPreview",
+          "caption": "List item — single line leading switch. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-simple",
+          "preview": "ListItemSingleLineSimplePreview",
+          "caption": "List item — single line simple. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-trailing-check-box",
+          "preview": "ListItemSingleLineTrailingCheckBoxPreview",
+          "caption": "List item — single line trailing check box. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-trailing-icon",
+          "preview": "ListItemSingleLineTrailingIconPreview",
+          "caption": "List item — single line trailing icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-trailing-radio-button",
+          "preview": "ListItemSingleLineTrailingRadioButtonPreview",
+          "caption": "List item — single line trailing radio button. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-single-line-trailing-switch",
+          "preview": "ListItemSingleLineTrailingSwitchPreview",
+          "caption": "List item — single line trailing switch. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-both-icons",
+          "preview": "ListItemThreeLinesBothIconsPreview",
+          "caption": "List item — three lines both icons. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-leading-checkbox",
+          "preview": "ListItemThreeLinesLeadingCheckboxPreview",
+          "caption": "List item — three lines leading checkbox. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-leading-icon",
+          "preview": "ListItemThreeLinesLeadingIconPreview",
+          "caption": "List item — three lines leading icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-leading-radio-button",
+          "preview": "ListItemThreeLinesLeadingRadioButtonPreview",
+          "caption": "List item — three lines leading radio button. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-leading-switch",
+          "preview": "ListItemThreeLinesLeadingSwitchPreview",
+          "caption": "List item — three lines leading switch. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-simple",
+          "preview": "ListItemThreeLinesSimplePreview",
+          "caption": "List item — three lines simple. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-trailing-check-box",
+          "preview": "ListItemThreeLinesTrailingCheckBoxPreview",
+          "caption": "List item — three lines trailing check box. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-trailing-icon",
+          "preview": "ListItemThreeLinesTrailingIconPreview",
+          "caption": "List item — three lines trailing icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-trailing-radio-button",
+          "preview": "ListItemThreeLinesTrailingRadioButtonPreview",
+          "caption": "List item — three lines trailing radio button. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-three-lines-trailing-switch",
+          "preview": "ListItemThreeLinesTrailingSwitchPreview",
+          "caption": "List item — three lines trailing switch. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-both-icons-error",
+          "preview": "ListItemTwoLinesBothIconsErrorPreview",
+          "caption": "List item — two lines both icons error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-both-icons",
+          "preview": "ListItemTwoLinesBothIconsPreview",
+          "caption": "List item — two lines both icons. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-checkbox-error",
+          "preview": "ListItemTwoLinesLeadingCheckboxErrorPreview",
+          "caption": "List item — two lines leading checkbox error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-checkbox",
+          "preview": "ListItemTwoLinesLeadingCheckboxPreview",
+          "caption": "List item — two lines leading checkbox. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-icon-error",
+          "preview": "ListItemTwoLinesLeadingIconErrorPreview",
+          "caption": "List item — two lines leading icon error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-icon",
+          "preview": "ListItemTwoLinesLeadingIconPreview",
+          "caption": "List item — two lines leading icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-radio-button-error",
+          "preview": "ListItemTwoLinesLeadingRadioButtonErrorPreview",
+          "caption": "List item — two lines leading radio button error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-radio-button",
+          "preview": "ListItemTwoLinesLeadingRadioButtonPreview",
+          "caption": "List item — two lines leading radio button. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-switch-error",
+          "preview": "ListItemTwoLinesLeadingSwitchErrorPreview",
+          "caption": "List item — two lines leading switch error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-leading-switch",
+          "preview": "ListItemTwoLinesLeadingSwitchPreview",
+          "caption": "List item — two lines leading switch. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-simple-error",
+          "preview": "ListItemTwoLinesSimpleErrorPreview",
+          "caption": "List item — two lines simple error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-simple",
+          "preview": "ListItemTwoLinesSimplePreview",
+          "caption": "List item — two lines simple. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-check-box-error",
+          "preview": "ListItemTwoLinesTrailingCheckBoxErrorPreview",
+          "caption": "List item — two lines trailing check box error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-check-box",
+          "preview": "ListItemTwoLinesTrailingCheckBoxPreview",
+          "caption": "List item — two lines trailing check box. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-icon-error",
+          "preview": "ListItemTwoLinesTrailingIconErrorPreview",
+          "caption": "List item — two lines trailing icon error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-icon",
+          "preview": "ListItemTwoLinesTrailingIconPreview",
+          "caption": "List item — two lines trailing icon. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-radio-button-error",
+          "preview": "ListItemTwoLinesTrailingRadioButtonErrorPreview",
+          "caption": "List item — two lines trailing radio button error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-radio-button",
+          "preview": "ListItemTwoLinesTrailingRadioButtonPreview",
+          "caption": "List item — two lines trailing radio button. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-switch-error",
+          "preview": "ListItemTwoLinesTrailingSwitchErrorPreview",
+          "caption": "List item — two lines trailing switch error. ListItem.kt"
+        },
+        {
+          "componentId": "list-item-two-lines-trailing-switch",
+          "preview": "ListItemTwoLinesTrailingSwitchPreview",
+          "caption": "List item — two lines trailing switch. ListItem.kt"
+        },
+        {
+          "componentId": "list-section-header",
+          "preview": "ListSectionHeaderPreview",
+          "caption": "List section header. ListSectionHeader.kt"
+        },
+        {
+          "componentId": "list-section-header-with-description-and-divider",
+          "preview": "ListSectionHeaderWithDescriptionAndDividerPreview",
+          "caption": "List section header — with description and divider. ListSectionHeader.kt"
+        },
+        {
+          "componentId": "list-section-header-with-description",
+          "preview": "ListSectionHeaderWithDescriptionPreview",
+          "caption": "List section header — with description. ListSectionHeader.kt"
+        },
+        {
+          "componentId": "list-section-header-with-divider",
+          "preview": "ListSectionHeaderWithDividerPreview",
+          "caption": "List section header — with divider. ListSectionHeader.kt"
+        },
+        {
+          "componentId": "list-supporting-text-custom-padding",
+          "preview": "ListSupportingTextCustomPaddingPreview",
+          "caption": "List supporting text — custom padding. ListSupportingText.kt"
+        },
+        {
+          "componentId": "list-supporting-text-default-padding",
+          "preview": "ListSupportingTextDefaultPaddingPreview",
+          "caption": "List supporting text — default padding. ListSupportingText.kt"
+        },
+        {
+          "componentId": "list-supporting-text-large-padding",
+          "preview": "ListSupportingTextLargePaddingPreview",
+          "caption": "List supporting text — large padding. ListSupportingText.kt"
+        },
+        {
+          "componentId": "list-supporting-text-no-padding",
+          "preview": "ListSupportingTextNoPaddingPreview",
+          "caption": "List supporting text — no padding. ListSupportingText.kt"
+        },
+        {
+          "componentId": "list-supporting-text-small-padding",
+          "preview": "ListSupportingTextSmallPaddingPreview",
+          "caption": "List supporting text — small padding. ListSupportingText.kt"
+        },
+        {
+          "componentId": "medium-top-app-bar",
+          "preview": "MediumTopAppBarPreview",
+          "caption": "Medium top app bar. MediumTopAppBar.kt"
+        },
+        {
+          "componentId": "modal-bottom-sheet-dark",
+          "preview": "ModalBottomSheetDarkPreview",
+          "caption": "Modal bottom sheet — dark. ModalBottomSheet.kt"
+        },
+        {
+          "componentId": "modal-bottom-sheet-light",
+          "preview": "ModalBottomSheetLightPreview",
+          "caption": "Modal bottom sheet — light. ModalBottomSheet.kt"
+        },
+        {
+          "componentId": "navigation-bar",
+          "preview": "NavigationBarPreview",
+          "caption": "Navigation bar. NavigationBar.kt"
+        },
+        {
+          "componentId": "radio-button",
+          "preview": "RadioButtonPreview",
+          "caption": "Radio button. RadioButton.kt"
+        },
+        {
+          "componentId": "search-bar-active-none-query",
+          "preview": "SearchBarActiveNoneQueryPreview",
+          "caption": "Search bar — active none query. SearchBar.kt"
+        },
+        {
+          "componentId": "search-bar-active-with-content",
+          "preview": "SearchBarActiveWithContentPreview",
+          "caption": "Search bar — active with content. SearchBar.kt"
+        },
+        {
+          "componentId": "search-bar-active-with-no-results",
+          "preview": "SearchBarActiveWithNoResultsPreview",
+          "caption": "Search bar — active with no results. SearchBar.kt"
+        },
+        {
+          "componentId": "search-bar-active-with-query-no-back-button",
+          "preview": "SearchBarActiveWithQueryNoBackButtonPreview",
+          "caption": "Search bar — active with query no back button. SearchBar.kt"
+        },
+        {
+          "componentId": "search-bar-active-with-query",
+          "preview": "SearchBarActiveWithQueryPreview",
+          "caption": "Search bar — active with query. SearchBar.kt"
+        },
+        {
+          "componentId": "search-bar-inactive",
+          "preview": "SearchBarInactivePreview",
+          "caption": "Search bar — inactive. SearchBar.kt"
+        },
+        {
+          "componentId": "search-fields-dark",
+          "preview": "SearchFieldsDarkPreview",
+          "caption": "Search field — s dark. SearchField.kt"
+        },
+        {
+          "componentId": "search-fields-light",
+          "preview": "SearchFieldsLightPreview",
+          "caption": "Search field — s light. SearchField.kt"
+        },
+        {
+          "componentId": "sliders",
+          "preview": "SlidersPreview",
+          "caption": "Slider — s. Slider.kt"
+        },
+        {
+          "componentId": "snackbar",
+          "preview": "SnackbarPreview",
+          "caption": "Snackbar. Snackbar.kt"
+        },
+        {
+          "componentId": "snackbar-with-action-and-close-button",
+          "preview": "SnackbarWithActionAndCloseButtonPreview",
+          "caption": "Snackbar — with action and close button. Snackbar.kt"
+        },
+        {
+          "componentId": "snackbar-with-action-on-new-line-and-close-button",
+          "preview": "SnackbarWithActionOnNewLineAndCloseButtonPreview",
+          "caption": "Snackbar — with action on new line and close button. Snackbar.kt"
+        },
+        {
+          "componentId": "snackbar-with-action-on-new-line",
+          "preview": "SnackbarWithActionOnNewLinePreview",
+          "caption": "Snackbar — with action on new line. Snackbar.kt"
+        },
+        {
+          "componentId": "snackbar-with-action",
+          "preview": "SnackbarWithActionPreview",
+          "caption": "Snackbar — with action. Snackbar.kt"
+        },
+        {
+          "componentId": "surface",
+          "preview": "SurfacePreview",
+          "caption": "Surface. Surface.kt"
+        },
+        {
+          "componentId": "switch",
+          "preview": "SwitchPreview",
+          "caption": "Switch. Switch.kt"
+        },
+        {
+          "componentId": "text-dark",
+          "preview": "TextDarkPreview",
+          "caption": "Text — dark. Text.kt"
+        },
+        {
+          "componentId": "text-light",
+          "preview": "TextLightPreview",
+          "caption": "Text — light. Text.kt"
+        },
+        {
+          "componentId": "text-fields-dark",
+          "preview": "TextFieldsDarkPreview",
+          "caption": "Text field — s dark. TextField.kt"
+        },
+        {
+          "componentId": "text-fields-light",
+          "preview": "TextFieldsLightPreview",
+          "caption": "Text field — s light. TextField.kt"
+        },
+        {
+          "componentId": "top-app-bar",
+          "preview": "TopAppBarPreview",
+          "caption": "Top app bar. TopAppBar.kt"
+        },
+        {
+          "componentId": "top-app-bar-str",
+          "preview": "TopAppBarStrPreview",
+          "caption": "Top app bar — str. TopAppBar.kt"
+        },
+        {
+          "componentId": "date-picker-dark",
+          "preview": "DatePickerDarkPreview",
+          "caption": "Date picker dark. DatePickerPreview.kt"
+        },
+        {
+          "componentId": "date-picker-light",
+          "preview": "DatePickerLightPreview",
+          "caption": "Date picker light. DatePickerPreview.kt"
+        },
+        {
+          "componentId": "menu",
+          "preview": "MenuPreview",
+          "caption": "Menu. MenuPreview.kt"
+        },
+        {
+          "componentId": "time-picker-horizontal",
+          "preview": "TimePickerHorizontalPreview",
+          "caption": "Time picker horizontal. TimePickerPreview.kt"
+        },
+        {
+          "componentId": "time-picker-vertical-dark",
+          "preview": "TimePickerVerticalDarkPreview",
+          "caption": "Time picker vertical dark. TimePickerPreview.kt"
+        },
+        {
+          "componentId": "time-picker-vertical-light",
+          "preview": "TimePickerVerticalLightPreview",
+          "caption": "Time picker vertical light. TimePickerPreview.kt"
+        }
+      ]
+    },
+    {
+      "name": "Buttons",
+      "components": [
+        {
+          "componentId": "back-button",
+          "preview": "BackButtonPreview",
+          "caption": "Back button. BackButton.kt"
+        },
+        {
+          "componentId": "gradient-floating-action-button-circle-shape",
+          "preview": "GradientFloatingActionButtonCircleShapePreview",
+          "caption": "Gradient floating action button — circle shape. GradientFloatingActionButton.kt"
+        },
+        {
+          "componentId": "gradient-floating-action-button",
+          "preview": "GradientFloatingActionButtonPreview",
+          "caption": "Gradient floating action button. GradientFloatingActionButton.kt"
+        },
+        {
+          "componentId": "main-action-button",
+          "preview": "MainActionButtonPreview",
+          "caption": "Main action button. MainActionButton.kt"
+        },
+        {
+          "componentId": "super-button",
+          "preview": "SuperButtonPreview",
+          "caption": "Super button. SuperButton.kt"
+        }
+      ]
+    },
+    {
+      "name": "Dialogs",
+      "components": [
+        {
+          "componentId": "alert-dialog-content",
+          "preview": "AlertDialogContentPreview",
+          "caption": "Alert dialog — content. AlertDialog.kt"
+        },
+        {
+          "componentId": "alert-dialog",
+          "preview": "AlertDialogPreview",
+          "caption": "Alert dialog. AlertDialog.kt"
+        },
+        {
+          "componentId": "confirmation-dialog-content",
+          "preview": "ConfirmationDialogContentPreview",
+          "caption": "Confirmation dialog — content. ConfirmationDialog.kt"
+        },
+        {
+          "componentId": "confirmation-dialog",
+          "preview": "ConfirmationDialogPreview",
+          "caption": "Confirmation dialog. ConfirmationDialog.kt"
+        },
+        {
+          "componentId": "error-dialog-content",
+          "preview": "ErrorDialogContentPreview",
+          "caption": "Error dialog — content. ErrorDialog.kt"
+        },
+        {
+          "componentId": "error-dialog",
+          "preview": "ErrorDialogPreview",
+          "caption": "Error dialog. ErrorDialog.kt"
+        },
+        {
+          "componentId": "error-dialog-with-do-not-show-again",
+          "preview": "ErrorDialogWithDoNotShowAgainPreview",
+          "caption": "Error dialog with do not show again. ErrorDialogWithDoNotShowAgain.kt"
+        },
+        {
+          "componentId": "list-dialog-content",
+          "preview": "ListDialogContentPreview",
+          "caption": "List dialog — content. ListDialog.kt"
+        },
+        {
+          "componentId": "list-dialog",
+          "preview": "ListDialogPreview",
+          "caption": "List dialog. ListDialog.kt"
+        },
+        {
+          "componentId": "multiple-selection-dialog-content",
+          "preview": "MultipleSelectionDialogContentPreview",
+          "caption": "Multiple selection dialog — content. MultipleSelectionDialog.kt"
+        },
+        {
+          "componentId": "multiple-selection-dialog",
+          "preview": "MultipleSelectionDialogPreview",
+          "caption": "Multiple selection dialog. MultipleSelectionDialog.kt"
+        },
+        {
+          "componentId": "retry-dialog-content",
+          "preview": "RetryDialogContentPreview",
+          "caption": "Retry dialog — content. RetryDialog.kt"
+        },
+        {
+          "componentId": "retry-dialog",
+          "preview": "RetryDialogPreview",
+          "caption": "Retry dialog. RetryDialog.kt"
+        },
+        {
+          "componentId": "save-changes-dialog",
+          "preview": "SaveChangesDialogPreview",
+          "caption": "Save changes dialog. SaveChangesDialog.kt"
+        },
+        {
+          "componentId": "single-selection-dialog-content",
+          "preview": "SingleSelectionDialogContentPreview",
+          "caption": "Single selection dialog — content. SingleSelectionDialog.kt"
+        },
+        {
+          "componentId": "single-selection-dialog",
+          "preview": "SingleSelectionDialogPreview",
+          "caption": "Single selection dialog. SingleSelectionDialog.kt"
+        },
+        {
+          "componentId": "text-field-dialog",
+          "preview": "TextFieldDialogPreview",
+          "caption": "Text field dialog. TextFieldDialog.kt"
+        },
+        {
+          "componentId": "text-field-dialog-with-error",
+          "preview": "TextFieldDialogWithErrorPreview",
+          "caption": "Text field dialog — with error. TextFieldDialog.kt"
+        }
+      ]
+    },
+    {
+      "name": "List items",
+      "components": [
+        {
+          "componentId": "mutiple-selection-list-item",
+          "preview": "MutipleSelectionListItemPreview",
+          "caption": "Mutiple selection list item. MultipleSelectionListItem.kt"
+        },
+        {
+          "componentId": "mutiple-selection-list-item-selected",
+          "preview": "MutipleSelectionListItemSelectedPreview",
+          "caption": "Mutiple selection list item selected. MultipleSelectionListItem.kt"
+        },
+        {
+          "componentId": "mutiple-selection-list-item-selected-trailing-content",
+          "preview": "MutipleSelectionListItemSelectedTrailingContentPreview",
+          "caption": "Mutiple selection list item selected trailing content. MultipleSelectionListItem.kt"
+        },
+        {
+          "componentId": "single-selection-list-item-custom-formattert",
+          "preview": "SingleSelectionListItemCustomFormattertPreview",
+          "caption": "Single selection list item — custom formattert. SingleSelectionListItem.kt"
+        },
+        {
+          "componentId": "single-selection-list-item",
+          "preview": "SingleSelectionListItemPreview",
+          "caption": "Single selection list item. SingleSelectionListItem.kt"
+        },
+        {
+          "componentId": "single-selection-list-item-selected-in-supporting-text",
+          "preview": "SingleSelectionListItemSelectedInSupportingTextPreview",
+          "caption": "Single selection list item — selected in supporting text. SingleSelectionListItem.kt"
+        },
+        {
+          "componentId": "single-selection-list-item-selected-in-trailing-content",
+          "preview": "SingleSelectionListItemSelectedInTrailingContentPreview",
+          "caption": "Single selection list item — selected in trailing content. SingleSelectionListItem.kt"
+        },
+        {
+          "componentId": "single-selection-list-item-unselected-with-supporting-text",
+          "preview": "SingleSelectionListItemUnselectedWithSupportingTextPreview",
+          "caption": "Single selection list item — unselected with supporting text. SingleSelectionListItem.kt"
+        },
+        {
+          "componentId": "text-field-list-item-empty",
+          "preview": "TextFieldListItemEmptyPreview",
+          "caption": "Text field list item — empty. TextFieldListItem.kt"
+        },
+        {
+          "componentId": "text-field-list-item",
+          "preview": "TextFieldListItemPreview",
+          "caption": "Text field list item. TextFieldListItem.kt"
+        },
+        {
+          "componentId": "text-field-list-item-text-field-value",
+          "preview": "TextFieldListItemTextFieldValuePreview",
+          "caption": "Text field list item — text field value. TextFieldListItem.kt"
+        }
+      ]
+    },
+    {
+      "name": "Preferences",
+      "components": [
+        {
+          "componentId": "preference-category",
+          "preview": "PreferenceCategoryPreview",
+          "caption": "Preference category. PreferenceCategory.kt"
+        },
+        {
+          "componentId": "preference-checkbox",
+          "preview": "PreferenceCheckboxPreview",
+          "caption": "Preference checkbox. PreferenceCheckbox.kt"
+        },
+        {
+          "componentId": "preference-divider",
+          "preview": "PreferenceDividerPreview",
+          "caption": "Preference divider. PreferenceDivider.kt"
+        },
+        {
+          "componentId": "preference-dropdown",
+          "preview": "PreferenceDropdownPreview",
+          "caption": "Preference dropdown. PreferenceDropdown.kt"
+        },
+        {
+          "componentId": "preference-page",
+          "preview": "PreferencePagePreview",
+          "caption": "Preference page. PreferencePage.kt"
+        },
+        {
+          "componentId": "preference-row",
+          "preview": "PreferenceRowPreview",
+          "caption": "Preference row. PreferenceRow.kt"
+        },
+        {
+          "componentId": "preference-slide",
+          "preview": "PreferenceSlidePreview",
+          "caption": "Preference slide. PreferenceSlide.kt"
+        },
+        {
+          "componentId": "preference-switch",
+          "preview": "PreferenceSwitchPreview",
+          "caption": "Preference switch. PreferenceSwitch.kt"
+        },
+        {
+          "componentId": "preference-icon",
+          "preview": "PreferenceIconPreview",
+          "caption": "Preference icon. PreferenceIcon.kt"
+        },
+        {
+          "componentId": "preference-icon-with-badge",
+          "preview": "PreferenceIconWithBadgePreview",
+          "caption": "Preference icon — with badge. PreferenceIcon.kt"
+        }
+      ]
+    },
+    {
+      "name": "Avatars",
+      "components": [
+        {
+          "componentId": "avatar",
+          "preview": "AvatarPreview",
+          "caption": "Avatar. Avatar.kt"
+        },
+        {
+          "componentId": "avatar-row-last-on-top",
+          "preview": "AvatarRowLastOnTopPreview",
+          "caption": "Avatar row — last on top. AvatarRow.kt"
+        },
+        {
+          "componentId": "avatar-row-last-on-top-rtl",
+          "preview": "AvatarRowLastOnTopRtlPreview",
+          "caption": "Avatar row — last on top rtl. AvatarRow.kt"
+        },
+        {
+          "componentId": "avatar-row",
+          "preview": "AvatarRowPreview",
+          "caption": "Avatar row. AvatarRow.kt"
+        },
+        {
+          "componentId": "avatar-row-rtl",
+          "preview": "AvatarRowRtlPreview",
+          "caption": "Avatar row — rtl. AvatarRow.kt"
+        },
+        {
+          "componentId": "avatar-cluster",
+          "preview": "AvatarClusterPreview",
+          "caption": "Avatar cluster. AvatarCluster.kt"
+        },
+        {
+          "componentId": "space-avatar",
+          "preview": "SpaceAvatarPreview",
+          "caption": "Space avatar. SpaceAvatar.kt"
+        },
+        {
+          "componentId": "text-avatar",
+          "preview": "TextAvatarPreview",
+          "caption": "Text avatar. TextAvatar.kt"
+        },
+        {
+          "componentId": "tombstoned-room-avatar",
+          "preview": "TombstonedRoomAvatarPreview",
+          "caption": "Tombstoned room avatar. TombstonedRoomAvatar.kt"
+        },
+        {
+          "componentId": "user-avatar-colors",
+          "preview": "UserAvatarColorsPreview",
+          "caption": "User avatar colors. UserAvatarPreview.kt"
+        }
+      ]
+    },
+    {
+      "name": "Async states",
+      "components": [
+        {
+          "componentId": "async-action-view",
+          "preview": "AsyncActionViewPreview",
+          "caption": "Async action view. AsyncActionView.kt"
+        },
+        {
+          "componentId": "async-failure",
+          "preview": "AsyncFailurePreview",
+          "caption": "Async failure. AsyncFailure.kt"
+        },
+        {
+          "componentId": "async-indicator-failure",
+          "preview": "AsyncIndicatorFailurePreview",
+          "caption": "Async indicator failure. AsyncIndicatorView.kt"
+        },
+        {
+          "componentId": "async-indicator-loading",
+          "preview": "AsyncIndicatorLoadingPreview",
+          "caption": "Async indicator loading. AsyncIndicatorView.kt"
+        },
+        {
+          "componentId": "async-loading",
+          "preview": "AsyncLoadingPreview",
+          "caption": "Async loading. AsyncLoading.kt"
+        }
+      ]
+    },
+    {
+      "name": "Components",
+      "components": [
+        {
+          "componentId": "announcement",
+          "preview": "AnnouncementPreview",
+          "caption": "Announcement. Announcement.kt"
+        },
+        {
+          "componentId": "badge",
+          "preview": "BadgePreview",
+          "caption": "Badge. Badge.kt"
+        },
+        {
+          "componentId": "big-icon",
+          "preview": "BigIconPreview",
+          "caption": "Big icon. BigIcon.kt"
+        },
+        {
+          "componentId": "clickable-link-text",
+          "preview": "ClickableLinkTextPreview",
+          "caption": "Clickable link text. ClickableLinkText.kt"
+        },
+        {
+          "componentId": "expandable-bottom-sheet-layout",
+          "preview": "ExpandableBottomSheetLayoutPreview",
+          "caption": "Expandable bottom sheet layout. ExpandableBottomSheetLayout.kt"
+        },
+        {
+          "componentId": "labelled-checkbox",
+          "preview": "LabelledCheckboxPreview",
+          "caption": "Labelled checkbox. LabelledCheckbox.kt"
+        },
+        {
+          "componentId": "location-pin",
+          "preview": "LocationPinPreview",
+          "caption": "Location pin. LocationPin.kt"
+        },
+        {
+          "componentId": "progress-dialog-content",
+          "preview": "ProgressDialogContentPreview",
+          "caption": "Progress dialog — content. ProgressDialog.kt"
+        },
+        {
+          "componentId": "progress-dialog",
+          "preview": "ProgressDialogPreview",
+          "caption": "Progress dialog. ProgressDialog.kt"
+        },
+        {
+          "componentId": "progress-dialog-with-content",
+          "preview": "ProgressDialogWithContentPreview",
+          "caption": "Progress dialog — with content. ProgressDialog.kt"
+        },
+        {
+          "componentId": "progress-dialog-with-text-and-content",
+          "preview": "ProgressDialogWithTextAndContentPreview",
+          "caption": "Progress dialog — with text and content. ProgressDialog.kt"
+        },
+        {
+          "componentId": "simple-modal-bottom-sheet",
+          "preview": "SimpleModalBottomSheetPreview",
+          "caption": "Simple modal bottom sheet. SimpleModalBottomSheet.kt"
+        },
+        {
+          "componentId": "waveform-playback-view",
+          "preview": "WaveformPlaybackViewPreview",
+          "caption": "Waveform playback view. WaveformPlaybackView.kt"
+        },
+        {
+          "componentId": "visual-list",
+          "preview": "VisualListPreview",
+          "caption": "Visual list. VisualList.kt"
+        },
+        {
+          "componentId": "visual-list-item",
+          "preview": "VisualListItemPreview",
+          "caption": "Visual list item. VisualListItem.kt"
+        }
+      ]
+    },
+    {
+      "name": "Atoms",
+      "components": [
+        {
+          "componentId": "beta-label",
+          "preview": "BetaLabelPreview",
+          "caption": "Beta label. BetaLabel.kt"
+        },
+        {
+          "componentId": "counter-atom",
+          "preview": "CounterAtomPreview",
+          "caption": "Counter atom. CounterAtom.kt"
+        },
+        {
+          "componentId": "element-logo-atom-large-no-blur-shadow",
+          "preview": "ElementLogoAtomLargeNoBlurShadowPreview",
+          "caption": "Element logo atom — large no blur shadow. ElementLogoAtom.kt"
+        },
+        {
+          "componentId": "element-logo-atom-large",
+          "preview": "ElementLogoAtomLargePreview",
+          "caption": "Element logo atom — large. ElementLogoAtom.kt"
+        },
+        {
+          "componentId": "element-logo-atom-medium-no-blur-shadow",
+          "preview": "ElementLogoAtomMediumNoBlurShadowPreview",
+          "caption": "Element logo atom — medium no blur shadow. ElementLogoAtom.kt"
+        },
+        {
+          "componentId": "element-logo-atom-medium",
+          "preview": "ElementLogoAtomMediumPreview",
+          "caption": "Element logo atom — medium. ElementLogoAtom.kt"
+        },
+        {
+          "componentId": "matrix-badge-atom-info",
+          "preview": "MatrixBadgeAtomInfoPreview",
+          "caption": "Matrix badge atom — info. MatrixBadgeAtom.kt"
+        },
+        {
+          "componentId": "matrix-badge-atom-negative",
+          "preview": "MatrixBadgeAtomNegativePreview",
+          "caption": "Matrix badge atom — negative. MatrixBadgeAtom.kt"
+        },
+        {
+          "componentId": "matrix-badge-atom-neutral",
+          "preview": "MatrixBadgeAtomNeutralPreview",
+          "caption": "Matrix badge atom — neutral. MatrixBadgeAtom.kt"
+        },
+        {
+          "componentId": "matrix-badge-atom-neutral-wrapping",
+          "preview": "MatrixBadgeAtomNeutralWrappingPreview",
+          "caption": "Matrix badge atom — neutral wrapping. MatrixBadgeAtom.kt"
+        },
+        {
+          "componentId": "matrix-badge-atom-positive",
+          "preview": "MatrixBadgeAtomPositivePreview",
+          "caption": "Matrix badge atom — positive. MatrixBadgeAtom.kt"
+        },
+        {
+          "componentId": "placeholder-atom",
+          "preview": "PlaceholderAtomPreview",
+          "caption": "Placeholder atom. PlaceholderAtom.kt"
+        },
+        {
+          "componentId": "playback-speed-button",
+          "preview": "PlaybackSpeedButtonPreview",
+          "caption": "Playback speed button. PlaybackSpeedButton.kt"
+        },
+        {
+          "componentId": "red-indicator-atom",
+          "preview": "RedIndicatorAtomPreview",
+          "caption": "Red indicator atom. RedIndicatorAtom.kt"
+        },
+        {
+          "componentId": "room-preview-alias-atom",
+          "preview": "RoomPreviewAliasAtomPreview",
+          "caption": "Room preview alias atom. RoomPreviewAliasAtom.kt"
+        },
+        {
+          "componentId": "rounded-icon-atom",
+          "preview": "RoundedIconAtomPreview",
+          "caption": "Rounded icon atom. RoundedIconAtom.kt"
+        },
+        {
+          "componentId": "selected-indicator-atom",
+          "preview": "SelectedIndicatorAtomPreview",
+          "caption": "Selected indicator atom. SelectedIndicatorAtom.kt"
+        },
+        {
+          "componentId": "unread-indicator-atom",
+          "preview": "UnreadIndicatorAtomPreview",
+          "caption": "Unread indicator atom. UnreadIndicatorAtom.kt"
+        }
+      ]
+    },
+    {
+      "name": "Molecules",
+      "components": [
+        {
+          "componentId": "button-column-molecule",
+          "preview": "ButtonColumnMoleculePreview",
+          "caption": "Button column molecule. ButtonColumnMolecule.kt"
+        },
+        {
+          "componentId": "button-row-molecule",
+          "preview": "ButtonRowMoleculePreview",
+          "caption": "Button row molecule. ButtonRowMolecule.kt"
+        },
+        {
+          "componentId": "composer-alert-molecule",
+          "preview": "ComposerAlertMoleculePreview",
+          "caption": "Composer alert molecule. ComposerAlertMolecule.kt"
+        },
+        {
+          "componentId": "icon-title-placeholders-row-molecule",
+          "preview": "IconTitlePlaceholdersRowMoleculePreview",
+          "caption": "Icon title placeholders row molecule. IconTitlePlaceholdersRowMolecule.kt"
+        },
+        {
+          "componentId": "icon-title-subtitle-molecule",
+          "preview": "IconTitleSubtitleMoleculePreview",
+          "caption": "Icon title subtitle molecule. IconTitleSubtitleMolecule.kt"
+        },
+        {
+          "componentId": "members-count-molecule",
+          "preview": "MembersCountMoleculePreview",
+          "caption": "Members count molecule. MembersCountMolecule.kt"
+        }
+      ]
+    },
+    {
+      "name": "Page scaffolds",
+      "components": [
+        {
+          "componentId": "flow-step-page",
+          "preview": "FlowStepPagePreview",
+          "caption": "Flow step page. FlowStepPage.kt"
+        },
+        {
+          "componentId": "header-footer-page",
+          "preview": "HeaderFooterPagePreview",
+          "caption": "Header footer page. HeaderFooterPage.kt"
+        },
+        {
+          "componentId": "header-footer-page-scrollable",
+          "preview": "HeaderFooterPageScrollablePreview",
+          "caption": "Header footer page — scrollable. HeaderFooterPage.kt"
+        },
+        {
+          "componentId": "on-boarding-page",
+          "preview": "OnBoardingPagePreview",
+          "caption": "On boarding page. OnBoardingPage.kt"
+        },
+        {
+          "componentId": "sunset-page",
+          "preview": "SunsetPagePreview",
+          "caption": "Sunset page. SunsetPage.kt"
+        }
+      ]
+    },
+    {
+      "name": "Backgrounds",
+      "components": [
+        {
+          "componentId": "light-gradient-background",
+          "preview": "LightGradientBackgroundPreview",
+          "caption": "Light gradient background. LightGradientBackground.kt"
+        },
+        {
+          "componentId": "onboarding-background",
+          "preview": "OnboardingBackgroundPreview",
+          "caption": "Onboarding background. OnboardingBackground.kt"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "components": [
+        {
+          "componentId": "adaptative-title",
+          "preview": "AdaptativeTitlePreview",
+          "caption": "Adaptative title. AdaptativeTitle.kt"
+        },
+        {
+          "componentId": "dp-scale_0_75f_",
+          "preview": "DpScale_0_75f_Preview",
+          "caption": "Dp scale — 0 75f. DpScale.kt"
+        },
+        {
+          "componentId": "dp-scale_1_0f_",
+          "preview": "DpScale_1_0f_Preview",
+          "caption": "Dp scale — 1 0f. DpScale.kt"
+        },
+        {
+          "componentId": "dp-scale_1_5f_",
+          "preview": "DpScale_1_5f_Preview",
+          "caption": "Dp scale — 1 5f. DpScale.kt"
+        }
+      ]
+    },
+    {
+      "name": "Icons",
+      "components": [
+        {
+          "componentId": "icons-other",
+          "preview": "IconsOtherPreview",
+          "caption": "Icons other. IconsPreview.kt"
+        }
+      ]
+    },
+    {
+      "name": "Modifiers",
+      "components": [
+        {
+          "componentId": "background-vertical-gradient-disabled",
+          "preview": "BackgroundVerticalGradientDisabledPreview",
+          "caption": "Background vertical gradient disabled. Gradient.kt"
+        },
+        {
+          "componentId": "background-vertical-gradient",
+          "preview": "BackgroundVerticalGradientPreview",
+          "caption": "Background vertical gradient. Gradient.kt"
+        },
+        {
+          "componentId": "square-size-modifier-inside-square",
+          "preview": "SquareSizeModifierInsideSquarePreview",
+          "caption": "Square size modifier — inside square. SquareSizeModifier.kt"
+        },
+        {
+          "componentId": "square-size-modifier-large-height",
+          "preview": "SquareSizeModifierLargeHeightPreview",
+          "caption": "Square size modifier — large height. SquareSizeModifier.kt"
+        },
+        {
+          "componentId": "square-size-modifier-large-width",
+          "preview": "SquareSizeModifierLargeWidthPreview",
+          "caption": "Square size modifier — large width. SquareSizeModifier.kt"
+        }
+      ]
+    },
+    {
+      "name": "Rulers",
+      "components": [
+        {
+          "componentId": "horizontal-ruler",
+          "preview": "HorizontalRulerPreview",
+          "caption": "Horizontal ruler. HorizontalRuler.kt"
+        },
+        {
+          "componentId": "vertical-ruler",
+          "preview": "VerticalRulerPreview",
+          "caption": "Vertical ruler. VerticalRuler.kt"
+        },
+        {
+          "componentId": "with-rulers",
+          "preview": "WithRulersPreview",
+          "caption": "With rulers. WithRulers.kt"
+        }
+      ]
+    }
+  ]
 }
