@@ -6,5 +6,8 @@
     ":wear"
   ],
   "renderer": "android",
-  "notes": "The Wear OS half of the Home Assistant Companion, from the same repository as the phone import: :wear declares 30 @Preview functions over the entity list, tile configuration, sensor management and onboarding surfaces, all Wear Compose Material. No multipreview annotations are involved (every preview is a plain @Preview), so previewAnnotations is not needed here. Same build caveat as the phone import: the root build applies dependencyLocking { lockAllConfigurations() }, handled by the pipeline's --write-locks. Licence: Apache-2.0."
+  "stubGoogleServices": [
+    "io.homeassistant.companion.android.debug"
+  ],
+  "notes": "The Wear OS half of the Home Assistant Companion, from the same repository as the phone import: :wear declares 30 @Preview functions over the entity list, tile configuration, sensor management and onboarding surfaces, all Wear Compose Material. No multipreview annotations are involved (every preview is a plain @Preview), so previewAnnotations is not needed here. Same build caveat as the phone import: the root build applies dependencyLocking { lockAllConfigurations() }, handled by the pipeline's --write-locks. Licence: Apache-2.0. Same blocker as the phone import: :wear applies the same AndroidApplicationConventionPlugin, so the Google Services plugin is applied and :wear died on processDebugGoogleServices before a preview was discovered. :wear declares no product flavours — the failing task carried no flavour segment — so the single id here is the base applicationId plus the debug build-type suffix, read off the upstream convention plugin rather than guessed. The plugin does no prefix fallback, so it has to be the exact variant id."
 }
