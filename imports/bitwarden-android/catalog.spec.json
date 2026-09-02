@@ -248,11 +248,6 @@
       "name": "Dialogs and feedback",
       "components": [
         {
-          "componentId": "basic-dialog",
-          "preview": "BitwardenBasicDialog_preview",
-          "caption": "The basic alert dialog: title, body, confirm."
-        },
-        {
           "componentId": "loading-dialog",
           "preview": "BitwardenLoadingDialog_preview",
           "caption": "The blocking loading dialog, for work the user must wait on."
