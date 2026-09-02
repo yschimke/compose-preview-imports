@@ -1,8 +1,343 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project. It carries no component inventory on purpose: that comes from @CatalogComponent / @CatalogVariant annotations beside the previews, and a project imported without its maintainers' involvement has none. What is published is therefore the previews as the project declares them, grouped by nothing, which is the honest presentation of somebody else's app.",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository.",
   "system": "droidkaigi-conference-app-2026",
   "title": "DroidKaigi 2026",
   "module": "core:ui",
-  "modes": ["light", "dark"]
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "groups": [
+    {
+      "name": "Controls",
+      "components": [
+        {
+          "componentId": "kaigi-button",
+          "preview": "KaigiButtonPreview",
+          "caption": "The conference app's button."
+        },
+        {
+          "componentId": "kaigi-icon-button",
+          "preview": "KaigiIconButtonPreview",
+          "caption": "Its icon-only form."
+        },
+        {
+          "componentId": "kaigi-text-field",
+          "preview": "KaigiTextFieldPreview",
+          "caption": "The text field."
+        },
+        {
+          "componentId": "kaigi-chip",
+          "preview": "KaigiChipPreview",
+          "caption": "The base chip."
+        },
+        {
+          "componentId": "kaigi-filter-chip",
+          "preview": "KaigiFilterChipPreview",
+          "caption": "The filter chip, which is how the timetable is narrowed."
+        },
+        {
+          "componentId": "language-chip",
+          "preview": "LanguageChipPreview",
+          "caption": "The chip marking a session's language — a bilingual conference's most-used badge."
+        },
+        {
+          "componentId": "language-toggle",
+          "preview": "LanguageToggleButtonPreview",
+          "caption": "The toggle that switches the app between Japanese and English."
+        },
+        {
+          "componentId": "room-chip",
+          "preview": "RoomChipPreview",
+          "caption": "The room chip, colour-coded per track."
+        },
+        {
+          "componentId": "segmented-first",
+          "preview": "KaigiSegmentedButtonFirstSelectedPreview",
+          "caption": "The segmented control with its first segment selected."
+        },
+        {
+          "componentId": "segmented-second",
+          "preview": "KaigiSegmentedButtonSecondSelectedPreview",
+          "caption": "With the second selected."
+        },
+        {
+          "componentId": "segmented-three",
+          "preview": "KaigiSegmentedButtonThreeSegmentsPreview",
+          "caption": "And in its three-segment form."
+        },
+        {
+          "componentId": "back-button",
+          "preview": "ListDetailSceneAwareBackButtonPreview",
+          "caption": "The back button that knows whether it is in a list-detail pane or a full screen."
+        }
+      ]
+    },
+    {
+      "name": "Navigation and structure",
+      "components": [
+        {
+          "componentId": "navigation-bar",
+          "preview": "KaigiNavigationBarPreview",
+          "caption": "The bottom navigation bar."
+        },
+        {
+          "componentId": "navigation-rail",
+          "preview": "KaigiNavigationRailPreview",
+          "caption": "The rail it becomes on a wide window."
+        },
+        {
+          "componentId": "top-app-bar",
+          "preview": "KaigiTopAppBarPreview",
+          "caption": "The top app bar."
+        },
+        {
+          "componentId": "large-top-app-bar",
+          "preview": "KaigiLargeTopAppBarPreview",
+          "caption": "Its large variant."
+        },
+        {
+          "componentId": "collapsing-header",
+          "preview": "CollapsingHeaderLayoutPreview",
+          "caption": "The collapsing header layout the content screens scroll under."
+        }
+      ]
+    },
+    {
+      "name": "Timetable",
+      "components": [
+        {
+          "componentId": "timetable-item-card",
+          "preview": "TimetableItemCardPreview",
+          "caption": "The session card — the unit the whole timetable is built from."
+        },
+        {
+          "componentId": "timetable-day-header",
+          "preview": "TimetableDayHeaderPreview",
+          "caption": "The day header separating the conference's days."
+        },
+        {
+          "componentId": "timetable-time-range",
+          "preview": "TimetableTimeRangePreview",
+          "caption": "A session's time range as the timetable prints it."
+        },
+        {
+          "componentId": "timetable-live-badge",
+          "preview": "TimetableLiveBadgePreview",
+          "caption": "The badge marking a session happening right now."
+        }
+      ]
+    },
+    {
+      "name": "Profile card",
+      "components": [
+        {
+          "componentId": "profile-card-front",
+          "preview": "ProfileCardFrontPreview",
+          "caption": "The attendee profile card, front."
+        },
+        {
+          "componentId": "profile-card-back",
+          "preview": "ProfileCardBackPreview",
+          "caption": "And back."
+        },
+        {
+          "componentId": "profile-card-face",
+          "preview": "ProfileCardFacePreview",
+          "caption": "One face of it in isolation."
+        },
+        {
+          "componentId": "mascot-icon",
+          "preview": "MascotIconPreview",
+          "caption": "The mascot icon."
+        },
+        {
+          "componentId": "filled-mascot-image",
+          "preview": "FilledMascotImagePreview",
+          "caption": "The filled mascot image."
+        },
+        {
+          "componentId": "kaigi-avatar",
+          "preview": "KaigiAvatarPreview",
+          "caption": "The avatar."
+        }
+      ]
+    },
+    {
+      "name": "Sketch",
+      "components": [
+        {
+          "componentId": "sketch-card",
+          "preview": "SketchCardPreview",
+          "caption": "The sketch-styled card — the hand-drawn look this year's app is built around."
+        },
+        {
+          "componentId": "sketch-shape",
+          "preview": "SketchShapePreview",
+          "caption": "The sketch shapes."
+        },
+        {
+          "componentId": "sketch-segmented",
+          "preview": "SketchSegmentedPreview",
+          "caption": "A segmented control in the sketch idiom."
+        },
+        {
+          "componentId": "sketch-marked-text",
+          "preview": "SketchMarkedTextPreview",
+          "caption": "Text with the sketch marker treatment."
+        },
+        {
+          "componentId": "sketch-resize",
+          "preview": "SketchResizePreview",
+          "caption": "How the sketch borders behave under resize."
+        },
+        {
+          "componentId": "sketch-border-taste",
+          "preview": "SketchBorderTastePreview",
+          "caption": "The border's “taste” parameter, the roughness of the line."
+        },
+        {
+          "componentId": "sketch-border-radius",
+          "preview": "SketchBorderCornerRadiusPreview",
+          "caption": "Its corner radius."
+        },
+        {
+          "componentId": "sketch-divider",
+          "preview": "SketchHorizontalDividerPreview",
+          "caption": "The sketch divider."
+        },
+        {
+          "componentId": "sketch-divider-taste",
+          "preview": "SketchHorizontalDividerTastePreview",
+          "caption": "Its taste."
+        },
+        {
+          "componentId": "sketch-divider-weight",
+          "preview": "SketchHorizontalDividerWeightPreview",
+          "caption": "Its weight."
+        },
+        {
+          "componentId": "sketch-divider-fineness",
+          "preview": "SketchHorizontalDividerFinenessPreview",
+          "caption": "And its fineness — three knobs previewed separately, which is unusually complete for a drawn primitive."
+        },
+        {
+          "componentId": "sketch-wavy-line",
+          "preview": "SketchVerticalWavyLinePreview",
+          "caption": "The vertical wavy line."
+        },
+        {
+          "componentId": "lantern",
+          "preview": "LanternPreview",
+          "caption": "The lantern motif."
+        }
+      ]
+    },
+    {
+      "name": "Doodle",
+      "components": [
+        {
+          "componentId": "doodle-canvas",
+          "preview": "DoodleCanvasViewPreview",
+          "caption": "The doodle canvas."
+        },
+        {
+          "componentId": "doodle-canvas-magnified",
+          "preview": "DoodleCanvasViewMagnifiedPreview",
+          "caption": "Magnified."
+        },
+        {
+          "componentId": "doodle-layer",
+          "preview": "DoodleLayerViewPreview",
+          "caption": "The layer view."
+        },
+        {
+          "componentId": "doodle-ink-row",
+          "preview": "DoodleInkRowPreview",
+          "caption": "The ink picker."
+        },
+        {
+          "componentId": "doodle-ink-row-selected",
+          "preview": "DoodleInkRowBandSelectedPreview",
+          "caption": "With a band selected."
+        },
+        {
+          "componentId": "doodle-pen-size",
+          "preview": "DoodlePenSizeRowPreview",
+          "caption": "The pen-size row."
+        },
+        {
+          "componentId": "doodle-pen-size-thick",
+          "preview": "DoodlePenSizeRowThickSelectedPreview",
+          "caption": "With the thick pen selected."
+        },
+        {
+          "componentId": "doodle-stroke-controls",
+          "preview": "DoodleStrokeControlsRowPreview",
+          "caption": "The stroke controls."
+        },
+        {
+          "componentId": "doodle-stroke-controls-idle",
+          "preview": "DoodleStrokeControlsRowIdlePreview",
+          "caption": "At idle."
+        },
+        {
+          "componentId": "doodle-outline-toggle",
+          "preview": "DoodleOutlineTogglePreview",
+          "caption": "The outline toggle, on."
+        },
+        {
+          "componentId": "doodle-outline-toggle-off",
+          "preview": "DoodleOutlineToggleOffPreview",
+          "caption": "And off."
+        },
+        {
+          "componentId": "doodle-flip-button",
+          "preview": "DoodleFlipButtonPreview",
+          "caption": "The flip button."
+        },
+        {
+          "componentId": "doodle-flip-button-back",
+          "preview": "DoodleFlipButtonShowingBackPreview",
+          "caption": "Showing the back."
+        },
+        {
+          "componentId": "doodle-zoom-controls",
+          "preview": "DoodleZoomControlsViewPreview",
+          "caption": "The zoom controls."
+        },
+        {
+          "componentId": "doodle-zoom-actual-size",
+          "preview": "DoodleZoomControlsViewActualSizePreview",
+          "caption": "At actual size."
+        }
+      ]
+    },
+    {
+      "name": "Empty and error states",
+      "components": [
+        {
+          "componentId": "error-fallback-rain",
+          "preview": "ErrorFallbackRainPreview",
+          "caption": "The error fallback, rain illustration."
+        },
+        {
+          "componentId": "error-fallback-cable",
+          "preview": "ErrorFallbackUnpluggedCablePreview",
+          "caption": "Unplugged cable."
+        },
+        {
+          "componentId": "error-fallback-backstage",
+          "preview": "ErrorFallbackBackstagePreview",
+          "caption": "Backstage — three drawn error states, chosen per failure."
+        },
+        {
+          "componentId": "lantern-loading",
+          "preview": "LanternLoadingFallbackPreview",
+          "caption": "The loading fallback, lit by the lantern motif."
+        }
+      ]
+    }
+  ]
 }
