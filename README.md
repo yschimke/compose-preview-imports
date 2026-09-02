@@ -144,6 +144,8 @@ any other.
 | `excludePreviewIds` | Optional. Array of preview-id patterns this import cannot render, left unrendered instead of failing the run. See below. |
 | `stubGoogleServices` | Optional. Array of Android applicationIds to write a placeholder `google-services.json` for, when the upstream build needs one it does not commit. See below. |
 | `workingDirectory` | Optional. Repo-relative subdirectory of the upstream checkout holding the Gradle build, for a project whose build is not at its repository root. Omit for the usual case. |
+| `variant` | Optional. Android variant to render (e.g. `fullDebug`), for a module with product flavors and therefore no plain `debug`. See below. |
+| `renderTimeout` | Optional. Seconds the render may spend, when the default 600 is not enough for the module's preview count. See below. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
 
@@ -179,6 +181,41 @@ nothing to show for it. Listing the ids keeps every other render failure fatal, 
 reviewable: the pull request says exactly what this import gives up. Say why in `notes`. The patterns
 are appended to the exclusions the pipeline always applies, so naming one here does not re-enable the
 synthetic app-launching previews.
+
+`variant` exists because the preview plugin attaches its `composePreview*` tasks to **one** variant,
+and its convention is `debug`. A module with product flavors has no plain `debug`, so the variant
+picked for you may not be the one that builds. `home-assistant/android`'s `:app` is the case:
+`app/src/screenshotTest/` is flavor-agnostic but references `SettingsWearOnboardingViewContent`,
+which exists only in `app/src/full/`. The plugin compiles screenshot-test sources deliberately — it
+renders `@Preview` functions declared there — so `minimalDebug` dies before a preview exists:
+
+```
+e: .../SettingsWearOnboardingViewPreviewsTest.kt:16:13
+   Unresolved reference 'SettingsWearOnboardingViewContent'.
+Execution failed for task ':app:compileMinimalDebugScreenshotTestKotlin'
+```
+
+```json
+"variant": "fullDebug"
+```
+
+Omit it for any module without flavors, which is every import but that one. It reaches discovery as
+well as the render, because `compose-preview list` enumerates a module by its `composePreview*`
+tasks — a discovery run on a different variant than the render finds nothing.
+
+`renderTimeout` exists because the pipeline's default of 600 seconds is the **inner** budget on the
+render itself, not the job timeout. A render can sit well inside the job's limit and still be killed,
+and the failure reads as a bare `Build timed out after 600s` with nothing else wrong — pocketcasts'
+`:modules:services:compose` was four minutes into `composePreviewRender` and still making progress
+when it ran out. The budget scales with the preview count, so a large catalog outgrows the default
+long before it outgrows the job.
+
+```json
+"renderTimeout": 1800
+```
+
+Raise it rather than thinning the catalog: an import exists to show what the project's design system
+actually contains.
 
 `stubGoogleServices` exists because some builds cannot **configure** without a file their
 repository deliberately does not contain. `home-assistant/android`'s convention plugin applies the

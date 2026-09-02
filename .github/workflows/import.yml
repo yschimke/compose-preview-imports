@@ -90,6 +90,8 @@ jobs:
       workingDirectory: ${{ steps.read.outputs.workingDirectory }}
       excludePreviewIds: ${{ steps.read.outputs.excludePreviewIds }}
       stubGoogleServices: ${{ steps.read.outputs.stubGoogleServices }}
+      variant: ${{ steps.read.outputs.variant }}
+      renderTimeout: ${{ steps.read.outputs.renderTimeout }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -246,6 +248,42 @@ jobs:
             exit 1
           }
 
+          # The Android variant the preview plugin attaches its tasks to.
+          #
+          # The plugin's convention is `debug`, which is right for any module without product
+          # flavors — and wrong for one with them, because there is then no plain `debug` and the
+          # flavor picked for you may not be the one that builds. home-assistant/android's :app is
+          # the case: `app/src/screenshotTest/` is flavor-agnostic but references a symbol declared
+          # only in `app/src/full/`, so `minimalDebug` fails to compile the screenshot-test sources
+          # the plugin renders previews from, before a preview exists.
+          variant=$(jq -r '.variant // ""' "$config")
+          # A Gradle variant name: letters and digits, and that is the whole grammar AGP allows for
+          # a flavor or build type. `grep -z` for the same reason as the fields above — the value
+          # reaches $GITHUB_OUTPUT.
+          [ -z "$variant" ] || \
+            printf '%s' "$variant" | grep -zEq '^[A-Za-z][A-Za-z0-9]*$' || {
+            echo "::error::variant '${variant}' must be a Gradle variant name" \
+              "(letters and digits, e.g. fullDebug)"
+            exit 1
+          }
+
+          # Seconds the render may spend, when the default 600 is not enough.
+          #
+          # This is the INNER timeout on `bundle pack`, not the job timeout: a render can sit well
+          # inside the job budget and still be killed here, and the failure reads as a bare
+          # "Build timed out after 600s" with nothing else wrong. It scales with the preview count,
+          # so a large catalog outgrows the default long before it outgrows the job — pocketcasts'
+          # :modules:services:compose was still making progress at 600s.
+          render_timeout=$(jq -r '.renderTimeout // ""' "$config")
+          # Digits only, and bounded: the reusable workflow's own job timeout is the real ceiling,
+          # so a value above it would just move where the run dies.
+          [ -z "$render_timeout" ] || \
+            printf '%s' "$render_timeout" | grep -zEq '^[1-9][0-9]{2,4}$' || {
+            echo "::error::renderTimeout '${render_timeout}' must be a whole number of seconds" \
+              "between 100 and 99999"
+            exit 1
+          }
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -271,6 +309,8 @@ jobs:
             echo "workingDirectory=${working_directory}"
             echo "excludePreviewIds=${exclude_preview_ids}"
             echo "stubGoogleServices=${stub_google_services}"
+            echo "variant=${variant}"
+            echo "renderTimeout=${render_timeout}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -317,6 +357,13 @@ jobs:
       # job. Empty for every import whose upstream does not apply the Google Services plugin, which
       # is all of them but home-assistant.
       stub-google-services-packages: ${{ needs.config.outputs.stubGoogleServices }}
+      # The Android variant to render — see the config job. Empty for every module without product
+      # flavors, which is all of them but home-assistant/android's :app.
+      variant: ${{ needs.config.outputs.variant }}
+      # Seconds the render may spend — see the config job. `fromJSON` because the reusable
+      # workflow's input is typed `number` and a job output is always a string; the literal 600
+      # repeats that input's own default, so an import that says nothing is unchanged.
+      render-timeout: ${{ needs.config.outputs.renderTimeout != '' && fromJSON(needs.config.outputs.renderTimeout) || 600 }}
       # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
       # serve box that bakes the matching daemon re-renders these previews live — device, theme and
       # knob controls work instead of replaying a snapshot.
