@@ -17,6 +17,16 @@
       "system": "element-hq-element-x-android"
     },
     {
+      "importedFrom": "home-assistant/android",
+      "listed": true,
+      "system": "home-assistant-android"
+    },
+    {
+      "importedFrom": "home-assistant/android",
+      "listed": true,
+      "system": "home-assistant-wear"
+    },
+    {
       "importedFrom": "JetBrains/kotlinconf-app",
       "listed": true,
       "system": "jetbrains-kotlinconf-app"
@@ -45,6 +55,16 @@
       "importedFrom": "mullvad/mullvadvpn-app",
       "listed": true,
       "system": "mullvad-mullvadvpn-app"
+    },
+    {
+      "importedFrom": "Automattic/pocket-casts-android",
+      "listed": true,
+      "system": "pocketcasts-wear"
+    },
+    {
+      "importedFrom": "Automattic/pocket-casts-android",
+      "listed": true,
+      "system": "pocketcasts"
     },
     {
       "importedFrom": "thunderbird/thunderbird-android",
