@@ -45,7 +45,7 @@
         {
           "componentId": "Buttons/Row button",
           "preview": "RowButtonLightPreview",
-          "caption": "The filled full-width action button \u2014 the primary call to action on almost every Pocket Casts sheet.",
+          "caption": "The filled full-width action button — the primary call to action on almost every Pocket Casts sheet.",
           "variants": [
             {
               "preview": "RowButtonDarkPreview",
@@ -54,7 +54,7 @@
             },
             {
               "preview": "RowButtonDisabledPreview",
-              "caption": "Disabled \u2014 the fill drops to the disabled alpha rather than changing hue.",
+              "caption": "Disabled — the fill drops to the disabled alpha rather than changing hue.",
               "state": "disabled"
             },
             {
@@ -76,7 +76,7 @@
         {
           "componentId": "Buttons/Row outlined button",
           "preview": "RowOutlinedButtonLightPreview",
-          "caption": "The secondary full-width action \u2014 a border and a tinted label rather than a fill.",
+          "caption": "The secondary full-width action — a border and a tinted label rather than a fill.",
           "variants": [
             {
               "preview": "RowOutlinedButtonDarkPreview",
@@ -224,7 +224,7 @@
         {
           "componentId": "Inputs/Email and password fields",
           "preview": "UserPasswordFieldsLightPreview",
-          "caption": "The paired email and password fields with their reveal toggle \u2014 the sign-in form.",
+          "caption": "The paired email and password fields with their reveal toggle — the sign-in form.",
           "variants": [
             {
               "preview": "UserPasswordFieldsDarkPreview",
@@ -274,7 +274,7 @@
         {
           "componentId": "Content/Text styles",
           "preview": "TextStylesLightPreview",
-          "caption": "The whole H10\u2013P60 type ramp in one sheet \u2014 the sizes, weights and colours every other component draws from.",
+          "caption": "The whole H10–P60 type ramp in one sheet — the sizes, weights and colours every other component draws from.",
           "variants": [
             {
               "preview": "TextStylesDarkPreview",
@@ -304,7 +304,7 @@
           "variants": [
             {
               "preview": "ExpandedTextPreviewShort",
-              "caption": "Content short enough that no affordance is needed \u2014 the case where the toggle must not appear.",
+              "caption": "Content short enough that no affordance is needed — the case where the toggle must not appear.",
               "state": "short"
             },
             {
@@ -326,7 +326,7 @@
           "variants": [
             {
               "preview": "PodcastSelectedTextFrenchPreview",
-              "caption": "French \u2014 the pluralisation and length case that catches hard-coded English grammar.",
+              "caption": "French — the pluralisation and length case that catches hard-coded English grammar.",
               "props": {
                 "locale": "fr"
               }
@@ -418,7 +418,7 @@
         {
           "componentId": "Feedback/No content banner",
           "preview": "UpNextNoContentBannerPreview",
-          "caption": "The empty-state banner \u2014 icon, title, subtitle and up to two actions, across all nine palettes.",
+          "caption": "The empty-state banner — icon, title, subtitle and up to two actions, across all nine palettes.",
           "variants": [
             {
               "preview": "UpNextNoContentBannerWithoutSubtitlePreview",
@@ -504,7 +504,7 @@
         {
           "componentId": "Chrome/Bottom sheet content",
           "preview": "BottomSheetContentPreview",
-          "caption": "The full modal sheet body \u2014 title, copy and stacked actions, across all nine palettes."
+          "caption": "The full modal sheet body — title, copy and stacked actions, across all nine palettes."
         },
         {
           "componentId": "Chrome/Pager dot indicator",
@@ -521,7 +521,7 @@
         {
           "componentId": "Chrome/Divider",
           "preview": "HorizontalDividerLightPreview",
-          "caption": "The list divider \u2014 the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette."
+          "caption": "The list divider — the thinnest thing in the system, and the one most likely to vanish on a low-contrast palette."
         },
         {
           "componentId": "Chrome/Rearrangeable menu action",
@@ -612,7 +612,7 @@
           "variants": [
             {
               "preview": "UserAvatarTierPreview",
-              "caption": "Each subscription tier's ring treatment \u2014 free, Plus and Patron.",
+              "caption": "Each subscription tier's ring treatment — free, Plus and Patron.",
               "props": {
                 "tier": "all"
               }
@@ -638,7 +638,7 @@
             },
             {
               "preview": "SubscriptionBadgePlusWithGradientBackgroundPreview",
-              "caption": "Plus on its gradient background \u2014 the upgrade-path treatment.",
+              "caption": "Plus on its gradient background — the upgrade-path treatment.",
               "state": "gradient"
             },
             {
@@ -699,7 +699,7 @@
           "variants": [
             {
               "preview": "CountBadgeSmallPreview",
-              "caption": "Small \u2014 the size where a three-digit count is tightest.",
+              "caption": "Small — the size where a three-digit count is tightest.",
               "props": {
                 "size": "small"
               }
@@ -757,7 +757,7 @@
             },
             {
               "preview": "AdBannerPodcastPreview",
-              "caption": "Across a range of podcast colour schemes \u2014 the axis that decides whether the banner stays legible.",
+              "caption": "Across a range of podcast colour schemes — the axis that decides whether the banner stays legible.",
               "props": {
                 "podcastColors": "all"
               }
@@ -813,7 +813,7 @@
         {
           "componentId": "Insights/Calendar heat map",
           "preview": "CalendarHeatMapPreview",
-          "caption": "The listening-history heat map \u2014 a bespoke grid whose correctness is only visible as pixels. Across all nine palettes.",
+          "caption": "The listening-history heat map — a bespoke grid whose correctness is only visible as pixels. Across all nine palettes.",
           "variants": [
             {
               "preview": "CalendarHeatMapPreviewFont150Percent",
@@ -824,7 +824,7 @@
             },
             {
               "preview": "CalendarHeatMapPreviewFont200Percent",
-              "caption": "At 200% font scale \u2014 the accessibility ceiling the grid has to survive.",
+              "caption": "At 200% font scale — the accessibility ceiling the grid has to survive.",
               "props": {
                 "fontScale": "2.0"
               }
@@ -835,26 +835,6 @@
               "props": {
                 "locale": "non-en"
               }
-            }
-          ]
-        },
-        {
-          "componentId": "Insights/Summary content",
-          "preview": "SummaryContentPreview",
-          "caption": "The listening-summary card, across all nine palettes.",
-          "capture": "none"
-        },
-        {
-          "componentId": "Insights/Summary paywall",
-          "preview": "SummaryPaywallPreview",
-          "caption": "The summary paywall, across all nine palettes.",
-          "capture": "none",
-          "variants": [
-            {
-              "preview": "SummaryPaywallFreeTrialPreview",
-              "caption": "The free-trial wording, which is longer and pushes the layout hardest.",
-              "state": "free-trial",
-              "capture": "none"
             }
           ]
         },
