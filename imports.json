@@ -18,6 +18,11 @@
       "upstream": "joreilly/ClimateTraceKMP"
     },
     {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
+    },
+    {
       "slug": "element-hq-element-x-android",
       "branch": "import/element-hq-element-x-android",
       "upstream": "element-hq/element-x-android"

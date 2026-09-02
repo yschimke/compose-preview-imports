@@ -17,6 +17,11 @@
       "system": "joreilly-climatetracekmp"
     },
     {
+      "importedFrom": "bitwarden/android",
+      "listed": true,
+      "system": "bitwarden-android"
+    },
+    {
       "importedFrom": "element-hq/element-x-android",
       "listed": true,
       "system": "element-hq-element-x-android"
