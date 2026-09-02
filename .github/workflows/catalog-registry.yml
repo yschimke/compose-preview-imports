@@ -1,27 +1,46 @@
 name: Catalog registry
 
-# `.compose-preview/catalogs.json` is what a preview server fetches when it nominates this
-# repository with `--catalog-registry`. It is derived from `imports.json`, and two files holding one
-# fact drift the moment nobody checks — so this checks, on every change to either.
+# `.compose-preview/catalogs.json` is what a preview server fetches when it nominates this repository
+# with `--catalog-registry`. It is DERIVED from the `imports/` directory, and the two jobs here are
+# split so that deriving it never lands in a pull request:
+#
+#   lint (pull requests) — checks the import descriptions themselves. It deliberately does NOT check
+#     that the generated document agrees: an import's pull request adds imports/<slug>/import.json
+#     and nothing else, so on that branch the document is expected to be one entry behind.
+#
+#   sync (push to main)  — regenerates the document and commits it when it changed. This is why an
+#     import's pull request touches only its own files: the shared, generated one is written here,
+#     after the merge, instead of by every open pull request racing to append the same line.
+#
+# The job that writes runs no third-party code — it runs `jq` over files already merged into this
+# repository — so the boundary docs/SECURITY.md draws is unaffected: nothing an imported project
+# controls executes in a job holding a writable token.
 
 on:
   pull_request:
     paths:
-      - 'imports.json'
+      - 'imports/**'
       - '.compose-preview/catalogs.json'
       - 'scripts/sync-catalog-registry.sh'
       - '.github/workflows/catalog-registry.yml'
   push:
     branches: [main]
     paths:
-      - 'imports.json'
+      - 'imports/**'
       - '.compose-preview/catalogs.json'
       - 'scripts/sync-catalog-registry.sh'
 
 permissions: {}
 
+concurrency:
+  # Serialised: two imports merging within a minute of each other must not race to push the same
+  # regenerated document.
+  group: catalog-registry
+  cancel-in-progress: false
+
 jobs:
-  check:
+  lint:
+    if: ${{ github.event_name == 'pull_request' }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -30,5 +49,41 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: The published registry document matches imports.json
-        run: ./scripts/sync-catalog-registry.sh --check
+      - name: The import descriptions are well-formed
+        run: ./scripts/sync-catalog-registry.sh --lint
+
+  sync:
+    if: ${{ github.event_name == 'push' }}
+    runs-on: ubuntu-latest
+    permissions:
+      # The only write here, in a job that runs no third-party code.
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - name: Regenerate the published registry document
+        id: sync
+        run: |
+          set -euo pipefail
+          ./scripts/sync-catalog-registry.sh
+          if git diff --quiet -- .compose-preview/catalogs.json; then
+            echo "::notice::.compose-preview/catalogs.json already agrees with the imports/ directory"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit it
+        if: ${{ steps.sync.outputs.changed == 'true' }}
+        run: |
+          set -euo pipefail
+          git config user.name "compose-preview-imports"
+          git config user.email "noreply@schimke.ee"
+          git add .compose-preview/catalogs.json
+          git commit -m "chore: regenerate the catalog registry document"
+          # A second import merging while this ran would have moved main; rebase onto it rather than
+          # failing the push, since this commit only ever touches the generated file.
+          git pull --rebase origin main
+          git push origin HEAD:main
