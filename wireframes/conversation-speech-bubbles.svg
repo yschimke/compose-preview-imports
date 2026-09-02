@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 403" width="384" height="403" role="img" aria-label="Conversation/Speech bubbles layout wireframe">
+  <title>Conversation/Speech bubbles — layout wireframe (slots + tokens)</title>
+  <rect width="384" height="403" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="384" height="384" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="384" height="384" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="384" height="384" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="-19" width="384" height="422" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="20" y="75" width="344" height="73" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="68" y="83" width="296" height="57" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M275.5,91 H335.5 A20.5,20.5 0 0 1 356,111.5 V132 A0,0 0 0 1 356,132 H275.5 A20.5,20.5 0 0 1 255,111.5 V111.5 A20.5,20.5 0 0 1 275.5,91 Z" fill="#B3E5FC" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="258" y="103" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFB3E5FC  pad 4.0dp</text>
+  </g>
+  <g>
+    <rect x="259" y="95" width="93" height="33" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="20" y="156" width="344" height="73" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="20" y="164" width="296" height="57" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M48.5,172 H138.5 A20.5,20.5 0 0 1 159,192.5 V192.5 A20.5,20.5 0 0 1 138.5,213 H28 A0,0 0 0 1 28,213 V192.5 A20.5,20.5 0 0 1 48.5,172 Z" fill="#03A9F4" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="31" y="184" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FF03A9F4  pad 4.0dp</text>
+  </g>
+  <g>
+    <rect x="32" y="176" width="123" height="33" fill="none" fill-opacity="0" stroke="#7A7A33" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

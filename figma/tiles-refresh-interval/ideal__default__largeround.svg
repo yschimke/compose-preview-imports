@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="454" height="454" viewBox="0 0 454 454" text-rendering="geometricPrecision" font-family="sans-serif">
+<defs>
+  <g id="material-icon-materialicons-check">
+    <path d="M9 16.17 L4.83 12 l-1.42 1.41 L9 19 L21 7 l-1.41 -1.41 Z" fill="#210F48"/>
+  </g>
+</defs>
+<clipPath id="deviceRound"><circle cx="227" cy="227" r="227"/></clipPath>
+<g transform="translate(0, 0)" clip-path="url(#deviceRound)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+      <g id="ReusableComposeNode">
+        <image href="ideal__default__largeround.figma-raster/79.png" x="203" y="24" width="48" height="48"/>
+      </g>
+      <g id="ReusableComposeNode">
+        <image href="ideal__default__largeround.figma-raster/81.png" x="113" y="96" width="228" height="262"/>
+      </g>
+      <g id="ReusableComposeNode">
+        <rect x="179" y="358" width="96" height="96" rx="48" ry="48" fill="#E9DDFF"/>
+        <g id="ReusableComposeNode" data-material-icon="check" data-material-icon-style="Filled" data-material-icon-url="https://fonts.gstatic.com/s/i/materialicons/check/v1/24px.svg">
+          <g transform="translate(203 382) scale(2 2)">
+            <use href="#material-icon-materialicons-check" xlink:href="#material-icon-materialicons-check"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,2890 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "home-landing__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 144,
+          "y": 104,
+          "width": 167,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 287,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 62,
+          "y": 398,
+          "width": 329,
+          "height": 56
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 144,
+          "y": 104,
+          "width": 167,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Entity state",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 192,
+          "width": 193,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Choose entity",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 230,
+          "width": 112,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 321,
+          "width": 250,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Show entity name",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 425,
+          "width": 175,
+          "height": 28
+        },
+        "label": "text 15sp/18",
+        "role": "Show entity unit",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "home-sensors__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 167,
+          "y": 212,
+          "width": 121,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 167,
+          "y": 212,
+          "width": 121,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Sensors",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "entities-detail-panel__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 179,
+          "y": 75,
+          "width": 96,
+          "height": 96
+        },
+        "label": "pad 0dp · r 24dp",
+        "role": "Checkbox",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 160,
+          "y": 212,
+          "width": 134,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 283,
+          "width": 385,
+          "height": 37
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Brightness: 62%",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 18,
+          "y": 324,
+          "width": 417,
+          "height": 102
+        },
+        "label": "pad t 2dp e 0dp b 8dp s 0dp · r 26dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "2",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 113,
+          "y": 363,
+          "width": 227,
+          "height": 24
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 90,
+          "y": 450,
+          "width": 273,
+          "height": 4
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Color temperature: 300",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 0dp b 8dp s 0dp · r 26dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 160,
+          "y": 212,
+          "width": 134,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 34,
+          "y": 283,
+          "width": 385,
+          "height": 37
+        },
+        "label": "text 16sp/18",
+        "role": "Brightness: 62%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 90,
+          "y": 450,
+          "width": 273,
+          "height": 4
+        },
+        "label": "text 16sp/18",
+        "role": "Color temperature: 300",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "entities-detail-panel__ideal__off__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 179,
+          "y": 75,
+          "width": 96,
+          "height": 96
+        },
+        "label": "pad 0dp · r 24dp",
+        "role": "Checkbox",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 160,
+          "y": 212,
+          "width": 134,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 283,
+          "width": 385,
+          "height": 37
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Brightness: 62%",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 18,
+          "y": 324,
+          "width": 417,
+          "height": 102
+        },
+        "label": "pad t 2dp e 0dp b 8dp s 0dp · r 26dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "2",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 113,
+          "y": 363,
+          "width": 227,
+          "height": 24
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 90,
+          "y": 450,
+          "width": 273,
+          "height": 4
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Color temperature: 300",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 0dp b 8dp s 0dp · r 26dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 160,
+          "y": 212,
+          "width": 134,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 34,
+          "y": 283,
+          "width": 385,
+          "height": 37
+        },
+        "label": "text 16sp/18",
+        "role": "Brightness: 62%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 90,
+          "y": 450,
+          "width": 273,
+          "height": 4
+        },
+        "label": "text 16sp/18",
+        "role": "Color temperature: 300",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "entities-detail-panel__ideal__fan-on__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 179,
+          "y": 75,
+          "width": 96,
+          "height": 96
+        },
+        "label": "pad 0dp · r 24dp",
+        "role": "Checkbox",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 160,
+          "y": 212,
+          "width": 134,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 34,
+          "y": 283,
+          "width": 385,
+          "height": 37
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Brightness: 62%",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 18,
+          "y": 324,
+          "width": 417,
+          "height": 102
+        },
+        "label": "pad t 2dp e 0dp b 8dp s 0dp · r 26dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "2",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 113,
+          "y": 363,
+          "width": 227,
+          "height": 24
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 90,
+          "y": 450,
+          "width": 273,
+          "height": 4
+        },
+        "label": "pad 0dp/8dp",
+        "role": "Color temperature: 300",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "pad t 0dp e 0dp b 8dp s 0dp · r 26dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "r 26dp",
+        "detail": {
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 160,
+          "y": 212,
+          "width": 134,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 34,
+          "y": 283,
+          "width": 385,
+          "height": 37
+        },
+        "label": "text 16sp/18",
+        "role": "Brightness: 62%",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 90,
+          "y": 450,
+          "width": 273,
+          "height": 4
+        },
+        "label": "text 16sp/18",
+        "role": "Color temperature: 300",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-shortcut-selection__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 119,
+          "y": 104,
+          "width": 216,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 44,
+          "y": 318,
+          "width": 365,
+          "height": 74
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 73,
+          "y": 424,
+          "width": 307,
+          "height": 30
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 119,
+          "y": 104,
+          "width": 216,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Shortcuts tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 191,
+          "width": 230,
+          "height": 72
+        },
+        "label": "text 15sp/18",
+        "role": "Show names on tile",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 318,
+          "width": 365,
+          "height": 74
+        },
+        "label": "text 16sp/18",
+        "role": "Select shortcuts tile to manage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 93,
+          "y": 436,
+          "width": 168,
+          "height": 18
+        },
+        "label": "text 15sp/18",
+        "role": "Shortcuts tile #1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 13sp/16",
+        "role": "7 entities",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-shortcut-selection__ideal__empty__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 119,
+          "y": 104,
+          "width": 216,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 44,
+          "y": 318,
+          "width": 365,
+          "height": 74
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 73,
+          "y": 424,
+          "width": 307,
+          "height": 30
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 119,
+          "y": 104,
+          "width": 216,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Shortcuts tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 191,
+          "width": 230,
+          "height": 72
+        },
+        "label": "text 15sp/18",
+        "role": "Show names on tile",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 318,
+          "width": 365,
+          "height": 74
+        },
+        "label": "text 16sp/18",
+        "role": "Select shortcuts tile to manage",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 93,
+          "y": 436,
+          "width": 168,
+          "height": 18
+        },
+        "label": "text 15sp/18",
+        "role": "Shortcuts tile #1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 13sp/16",
+        "role": "7 entities",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-shortcut-order__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 96,
+          "y": 104,
+          "width": 263,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 179,
+          "y": 318,
+          "width": 95,
+          "height": 96
+        },
+        "label": "pad t 16dp e 0dp b 0dp s 0dp · r 24dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 96,
+          "y": 104,
+          "width": 263,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Choose shortcuts",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 192,
+          "width": 141,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Shortcut 1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 230,
+          "width": 112,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-camera-selection__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Camera tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 192,
+          "width": 204,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Camera tile #1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 230,
+          "width": 232,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "camera.buienradar",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-camera-selection__ideal__empty__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Camera tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 192,
+          "width": 204,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Camera tile #1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 230,
+          "width": 232,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "camera.buienradar",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-template-settings__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 131,
+          "y": 104,
+          "width": 193,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 70,
+          "y": 320,
+          "width": 315,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 131,
+          "y": 104,
+          "width": 193,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Template tile",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 192,
+          "width": 218,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Refresh interval",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 230,
+          "width": 86,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "In view",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 70,
+          "y": 320,
+          "width": 315,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Template tile content",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 56,
+          "y": 391,
+          "width": 341,
+          "height": 59
+        },
+        "label": "text 16sp/18",
+        "role": "Change template in phone settings",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "label": "text 16sp/18",
+        "role": "test",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "450",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-refresh-interval__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 203,
+          "y": 24,
+          "width": 48,
+          "height": 48
+        },
+        "label": "pad 0dp/14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "0",
+          "padding.end": "14",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 113,
+          "y": 96,
+          "width": 228,
+          "height": 262
+        },
+        "label": "pad 1dp/0dp",
+        "role": "Refresh interval",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "1",
+          "padding.end": "0",
+          "padding.bottom": "1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 179,
+          "y": 358,
+          "width": 96,
+          "height": 96
+        },
+        "label": "pad 0dp · r 24dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 167,
+          "y": 98,
+          "width": 120,
+          "height": 26
+        },
+        "label": "text 30sp/34",
+        "role": "10 hours",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "30",
+          "lineHeight": "34",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 120,
+          "y": 123,
+          "width": 213,
+          "height": 67
+        },
+        "label": "text 30sp/34",
+        "role": "24 hours",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "30",
+          "lineHeight": "34",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 126,
+          "y": 191,
+          "width": 202,
+          "height": 72
+        },
+        "label": "text 30sp/34",
+        "role": "Manual",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "30",
+          "lineHeight": "34",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 140,
+          "y": 262,
+          "width": 174,
+          "height": 67
+        },
+        "label": "text 30sp/34",
+        "role": "In view",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "30",
+          "lineHeight": "34",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 167,
+          "y": 330,
+          "width": 119,
+          "height": 26
+        },
+        "label": "text 30sp/34",
+        "role": "1 minute",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "30",
+          "lineHeight": "34",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-camera-settings__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Camera tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 192,
+          "width": 204,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Camera tile #1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 230,
+          "width": 232,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "camera.buienradar",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "tiles-camera-settings__ideal__empty__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 134,
+          "y": 104,
+          "width": 187,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Camera tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 192,
+          "width": 204,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Camera tile #1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 230,
+          "width": 232,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "camera.buienradar",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "sensors-manager__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 111,
+          "y": 104,
+          "width": 232,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 111,
+          "y": 104,
+          "width": 232,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Battery sensors",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 208,
+          "width": 156,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Is charging",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "settings-favorites__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 159,
+          "y": 104,
+          "width": 136,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 287,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 62,
+          "y": 398,
+          "width": 329,
+          "height": 56
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 159,
+          "y": 104,
+          "width": 136,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Favorites",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 209,
+          "width": 175,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Set favorites",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 321,
+          "width": 203,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Clear favorites",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 131,
+          "y": 410,
+          "width": 179,
+          "height": 44
+        },
+        "label": "text 15sp/18",
+        "role": "Only show favorites",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "settings-complication__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 144,
+          "y": 104,
+          "width": 167,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 287,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 62,
+          "y": 398,
+          "width": 329,
+          "height": 56
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 144,
+          "y": 104,
+          "width": 167,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Entity state",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 192,
+          "width": 193,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Choose entity",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 104,
+          "y": 230,
+          "width": 112,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 321,
+          "width": 250,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Show entity name",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 425,
+          "width": 175,
+          "height": 28
+        },
+        "label": "text 15sp/18",
+        "role": "Show entity unit",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "onboarding-install-phone-app__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 180,
+          "y": 56,
+          "width": 93,
+          "height": 93
+        },
+        "label": "pad t 24dp e 0dp b 0dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "24",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 190,
+          "width": 422,
+          "height": 74
+        },
+        "label": "pad 16dp/0dp",
+        "role": "Install Home Assistant on your phone to continue",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 17,
+          "y": 303,
+          "width": 419,
+          "height": 103
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 69,
+          "y": 415,
+          "width": 315,
+          "height": 39
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 16,
+          "y": 190,
+          "width": 422,
+          "height": 74
+        },
+        "label": "text 16sp/18",
+        "role": "Install Home Assistant on your phone to continue",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 45,
+          "y": 337,
+          "width": 363,
+          "height": 35
+        },
+        "label": "text 15sp/18",
+        "role": "Install",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 90,
+          "y": 440,
+          "width": 273,
+          "height": 14
+        },
+        "label": "text 15sp/18",
+        "role": "Refresh",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "conversation-speech-bubbles__ideal__default__smallround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 255,
+          "y": 91,
+          "width": 101,
+          "height": 41
+        },
+        "label": "pad 4dp · r 12dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 259,
+          "y": 95,
+          "width": 93,
+          "height": 33
+        },
+        "label": "pad 2dp",
+        "role": "Speech",
+        "detail": {
+          "padding.start": "2",
+          "padding.top": "2",
+          "padding.end": "2",
+          "padding.bottom": "2",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 28,
+          "y": 172,
+          "width": 131,
+          "height": 41
+        },
+        "label": "pad 4dp · r 12dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 32,
+          "y": 176,
+          "width": 123,
+          "height": 33
+        },
+        "label": "pad 2dp",
+        "role": "Response",
+        "detail": {
+          "padding.start": "2",
+          "padding.top": "2",
+          "padding.end": "2",
+          "padding.bottom": "2",
+          "unit": "dp"
+        }
+      }
+    ],
+    "entities-rows__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 454,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 104,
+          "width": 454,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 208,
+          "width": 454,
+          "height": 104
+        },
+        "label": "pad 6dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "6",
+          "padding.end": "14",
+          "padding.bottom": "6",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 88,
+          "y": 34,
+          "width": 282,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "light.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 88,
+          "y": 138,
+          "width": 338,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "scene.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 88,
+          "y": 242,
+          "width": 282,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "fan.first",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "sensors-rows__ideal__default__largeround": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 63,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 175,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 287,
+          "width": 422,
+          "height": 104
+        },
+        "label": "pad 8dp/14dp · r 26dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "8",
+          "padding.end": "14",
+          "padding.bottom": "8",
+          "cornerRadius": "26",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 80,
+          "width": 172,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Battery level",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 118,
+          "width": 63,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "80 %",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 192,
+          "width": 156,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Is charging",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 230,
+          "width": 49,
+          "height": 32
+        },
+        "label": "text 13sp/16",
+        "role": "true",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 44,
+          "y": 320,
+          "width": 195,
+          "height": 36
+        },
+        "label": "text 15sp/18",
+        "role": "Battery power",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "15",
+          "lineHeight": "18",
+          "fontWeight": "500",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "components-list-header__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 28,
+          "y": 33,
+          "width": 83,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 28,
+          "y": 33,
+          "width": 83,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Other",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ],
+    "components-list-header__ideal__expandable": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 28,
+          "y": 33,
+          "width": 83,
+          "height": 38
+        },
+        "label": "pad t 16dp e 14dp b 12dp s 14dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "16",
+          "padding.end": "14",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 28,
+          "y": 33,
+          "width": 83,
+          "height": 38
+        },
+        "label": "text 16sp/18",
+        "role": "Other",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "18",
+          "fontWeight": "550",
+          "fontFamily": "Roboto Flex"
+        }
+      }
+    ]
+  },
+  "references": {}
+}
