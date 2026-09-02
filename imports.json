@@ -28,6 +28,11 @@
       "upstream": "mullvad/mullvadvpn-app"
     },
     {
+      "slug": "msasikanth-twine",
+      "branch": "import/msasikanth-twine",
+      "upstream": "msasikanth/twine"
+    },
+    {
       "slug": "element-hq-element-x-android",
       "branch": "import/element-hq-element-x-android",
       "upstream": "element-hq/element-x-android"
