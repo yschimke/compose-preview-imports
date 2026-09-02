@@ -1,0 +1,29 @@
+{
+  "schema": "compose-preview-tags/v1",
+  "previews": {
+    "switch__ideal__default": {
+      "switch_test_tag": {
+        "count": 4,
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 137,
+          "height": 84
+        },
+        "space": "render-pixels"
+      }
+    },
+    "progress-indicator__ideal__default": {
+      "circular_progress_indicator_test_tag": {
+        "count": 3,
+        "bounds": {
+          "x": 53,
+          "y": 53,
+          "width": 105,
+          "height": 105
+        },
+        "space": "render-pixels"
+      }
+    }
+  }
+}

@@ -1,0 +1,1558 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "mullvad-mullvadvpn-app",
+  "title": "Mullvad VPN",
+  "components": [
+    {
+      "componentId": "primary-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/primary-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/primary-button__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonEnabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/primary-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 1050,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The primary button — the green Mullvad connect action, enabled.",
+      "wireframe": "wireframes/primary-button.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 64,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewPrimaryButtonEnabled"
+    },
+    {
+      "componentId": "primary-button-disabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/primary-button-disabled/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/primary-button-disabled__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonDisabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/primary-button-disabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 1050,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "And disabled.",
+      "wireframe": "wireframes/primary-button-disabled.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 70,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewPrimaryButtonDisabled"
+    },
+    {
+      "componentId": "variant-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/variant-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/variant-button__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonEnabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/variant-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 1050,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The variant button, enabled.",
+      "wireframe": "wireframes/variant-button.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 52,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewVariantButtonEnabled"
+    },
+    {
+      "componentId": "variant-button-disabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/variant-button-disabled/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/variant-button-disabled__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonDisabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/variant-button-disabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 1050,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "Disabled.",
+      "wireframe": "wireframes/variant-button-disabled.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 58,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewVariantButtonDisabled"
+    },
+    {
+      "componentId": "negative-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/negative-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/negative-button__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonEnabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/negative-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 1050,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The negative button — disconnect, and the destructive settings actions.",
+      "wireframe": "wireframes/negative-button.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 40,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewNegativeButtonEnabled"
+    },
+    {
+      "componentId": "negative-button-disabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/negative-button-disabled/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/negative-button-disabled__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonDisabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/negative-button-disabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 1050,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 1050,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "Disabled.",
+      "wireframe": "wireframes/negative-button-disabled.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 46,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewNegativeButtonDisabled"
+    },
+    {
+      "componentId": "text-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/text-button/ideal__default.png",
+          "state": "default",
+          "width": 287,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/text-button__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/text-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 287,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 287,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 287,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "The text button.",
+      "wireframe": "wireframes/text-button.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 76,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewTextButtonEnabled"
+    },
+    {
+      "componentId": "text-button-disabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/text-button-disabled/ideal__default.png",
+          "state": "default",
+          "width": 287,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/text-button-disabled__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/text-button-disabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 11,
+              "width": 287,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 287,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 11,
+            "width": 287,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Buttons",
+      "caption": "And disabled — four button roles, each previewed in both states, which is unusually complete.",
+      "wireframe": "wireframes/text-button-disabled.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 82,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewTextButtonDisabled"
+    },
+    {
+      "componentId": "checkbox",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/checkbox/ideal__default.png",
+          "state": "default",
+          "width": 147,
+          "height": 462,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/checkbox__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.PreviewCheckbox",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/checkbox__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Selection",
+      "caption": "The checkbox.",
+      "wireframe": "wireframes/checkbox.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/Checkbox.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 40,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewCheckbox"
+    },
+    {
+      "componentId": "switch",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/switch/ideal__default.png",
+          "state": "default",
+          "width": 221,
+          "height": 546,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/switch__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.SwitchKt.PreviewMullvadSwitch",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4279840325
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/switch__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "switch_test_tag",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 53,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 168,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "switch_test_tag",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 179,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 294,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "switch_test_tag",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 305,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 420,
+            "width": 137,
+            "height": 84
+          },
+          "testTag": "switch_test_tag",
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 52,
+            "y": 431,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        }
+      ],
+      "group": "Selection",
+      "caption": "The switch, in Mullvad's own colours rather than Material's.",
+      "wireframe": "wireframes/switch.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/Switch.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 24,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewMullvadSwitch"
+    },
+    {
+      "componentId": "filter-chip-enabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/filter-chip-enabled/ideal__default.png",
+          "state": "default",
+          "width": 418,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-enabled__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-enabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 63,
+              "width": 334,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 334,
+            "height": 84
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 334,
+            "height": 84
+          },
+          "role": "Checkbox",
+          "cornerRadius": 8
+        }
+      ],
+      "group": "Selection",
+      "caption": "The filter chip that narrows the relay list, enabled.",
+      "wireframe": "wireframes/filter-chip-enabled.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/FilterChip.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 23,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewEnabledMullvadFilterChip"
+    },
+    {
+      "componentId": "filter-chip-disabled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/filter-chip-disabled/ideal__default.png",
+          "state": "default",
+          "width": 366,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-disabled__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-disabled__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 63,
+              "width": 282,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 282,
+            "height": 84
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 282,
+            "height": 84
+          },
+          "role": "Checkbox",
+          "cornerRadius": 8
+        }
+      ],
+      "group": "Selection",
+      "caption": "Disabled.",
+      "wireframe": "wireframes/filter-chip-disabled.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/FilterChip.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 29,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewDisabledMullvadFilterChip"
+    },
+    {
+      "componentId": "filter-chip-inactive",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/filter-chip-inactive/ideal__default.png",
+          "state": "default",
+          "width": 418,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-inactive__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-inactive__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 63,
+              "width": 334,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 334,
+            "height": 84
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 334,
+            "height": 84
+          },
+          "role": "Checkbox",
+          "cornerRadius": 8
+        }
+      ],
+      "group": "Selection",
+      "caption": "And inactive — the third state the relay filters need.",
+      "wireframe": "wireframes/filter-chip-inactive.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/FilterChip.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 35,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewInactiveMullvadFilterChip"
+    },
+    {
+      "componentId": "feature-chip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feature-chip/ideal__default.png",
+          "state": "default",
+          "width": 543,
+          "height": 546,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/feature-chip__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/feature-chip__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 63,
+              "width": 186,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 186,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 231,
+              "width": 459,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 231,
+            "width": 459,
+            "height": 84
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 399,
+              "width": 305,
+              "height": 84
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 399,
+            "width": 305,
+            "height": 84
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 63,
+            "width": 186,
+            "height": 84
+          },
+          "role": "Checkbox",
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 231,
+            "width": 459,
+            "height": 84
+          },
+          "role": "Checkbox",
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 399,
+            "width": 305,
+            "height": 84
+          },
+          "role": "Checkbox",
+          "cornerRadius": 8
+        }
+      ],
+      "group": "Selection",
+      "caption": "The feature chip that marks what a relay supports.",
+      "wireframe": "wireframes/feature-chip.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/FeatureChip.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 26,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewMullvadFeatureChip"
+    },
+    {
+      "componentId": "list-item-leading",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-leading__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default__fontscale-1.15.png",
+          "state": "default",
+          "width": 1050,
+          "height": 156,
+          "props": {
+            "fontScale": "1.15"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default__fontscale-1.15"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default__fontscale-1.3.png",
+          "state": "default",
+          "width": 1050,
+          "height": 164,
+          "props": {
+            "fontScale": "1.3"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default__fontscale-1.3"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default__fontscale-1.5.png",
+          "state": "default",
+          "width": 1050,
+          "height": 175,
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default__fontscale-1.5"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default__fontscale-1.8.png",
+          "state": "default",
+          "width": 1050,
+          "height": 187,
+          "props": {
+            "fontScale": "1.8"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default__fontscale-1.8"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default__fontscale-2.0.png",
+          "state": "default",
+          "width": 1050,
+          "height": 195,
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default__fontscale-2.0"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading/ideal__default__fontscale-0.85.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "props": {
+            "fontScale": "0.85"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default__fontscale-0.85"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 147
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 42,
+            "width": 777,
+            "height": 63
+          },
+          "label": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Lists",
+      "caption": "A list item with leading content.",
+      "wireframe": "wireframes/list-item-leading.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 343,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewLeadingListItem"
+    },
+    {
+      "componentId": "list-item-leading-content",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-leading-content__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default__fontscale-1.15.png",
+          "state": "default",
+          "width": 1050,
+          "height": 156,
+          "props": {
+            "fontScale": "1.15"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default__fontscale-1.15"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default__fontscale-1.3.png",
+          "state": "default",
+          "width": 1050,
+          "height": 164,
+          "props": {
+            "fontScale": "1.3"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default__fontscale-1.3"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default__fontscale-1.5.png",
+          "state": "default",
+          "width": 1050,
+          "height": 175,
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default__fontscale-1.5"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default__fontscale-1.8.png",
+          "state": "default",
+          "width": 1050,
+          "height": 187,
+          "props": {
+            "fontScale": "1.8"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default__fontscale-1.8"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default__fontscale-2.0.png",
+          "state": "default",
+          "width": 1050,
+          "height": 195,
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default__fontscale-2.0"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-leading-content/ideal__default__fontscale-0.85.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "props": {
+            "fontScale": "0.85"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default__fontscale-0.85"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 147
+          },
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 242,
+            "y": 42,
+            "width": 661,
+            "height": 63
+          },
+          "label": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+          "padding": {
+            "start": 4,
+            "top": 16,
+            "end": 0,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Lists",
+      "caption": "Its leading-content variant.",
+      "wireframe": "wireframes/list-item-leading-content.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 298,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewLeadingContentListItem"
+    },
+    {
+      "componentId": "list-item-trailing",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-trailing__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default__fontscale-1.15.png",
+          "state": "default",
+          "width": 1050,
+          "height": 156,
+          "props": {
+            "fontScale": "1.15"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default__fontscale-1.15"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default__fontscale-1.3.png",
+          "state": "default",
+          "width": 1050,
+          "height": 164,
+          "props": {
+            "fontScale": "1.3"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default__fontscale-1.3"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default__fontscale-1.5.png",
+          "state": "default",
+          "width": 1050,
+          "height": 175,
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default__fontscale-1.5"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default__fontscale-1.8.png",
+          "state": "default",
+          "width": 1050,
+          "height": 187,
+          "props": {
+            "fontScale": "1.8"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default__fontscale-1.8"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default__fontscale-2.0.png",
+          "state": "default",
+          "width": 1050,
+          "height": 195,
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default__fontscale-2.0"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-trailing/ideal__default__fontscale-0.85.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "props": {
+            "fontScale": "0.85"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default__fontscale-0.85"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 147
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Lists",
+      "caption": "With trailing content.",
+      "wireframe": "wireframes/list-item-trailing.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 378,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewTrailingListItem"
+    },
+    {
+      "componentId": "list-item-hierarchy",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-hierarchy__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default__fontscale-1.15.png",
+          "state": "default",
+          "width": 1050,
+          "height": 156,
+          "props": {
+            "fontScale": "1.15"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default__fontscale-1.15"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default__fontscale-1.3.png",
+          "state": "default",
+          "width": 1050,
+          "height": 164,
+          "props": {
+            "fontScale": "1.3"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default__fontscale-1.3"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default__fontscale-1.5.png",
+          "state": "default",
+          "width": 1050,
+          "height": 175,
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default__fontscale-1.5"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default__fontscale-1.8.png",
+          "state": "default",
+          "width": 1050,
+          "height": 187,
+          "props": {
+            "fontScale": "1.8"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default__fontscale-1.8"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default__fontscale-2.0.png",
+          "state": "default",
+          "width": 1050,
+          "height": 195,
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default__fontscale-2.0"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-hierarchy/ideal__default__fontscale-0.85.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "props": {
+            "fontScale": "0.85"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default__fontscale-0.85"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 147
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Lists",
+      "caption": "The hierarchical item — how the relay list nests country, city and server.",
+      "wireframe": "wireframes/list-item-hierarchy.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 412,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewHierarchyListItem"
+    },
+    {
+      "componentId": "list-item-positions",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-positions__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default__fontscale-1.15.png",
+          "state": "default",
+          "width": 1050,
+          "height": 156,
+          "props": {
+            "fontScale": "1.15"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default__fontscale-1.15"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default__fontscale-1.3.png",
+          "state": "default",
+          "width": 1050,
+          "height": 164,
+          "props": {
+            "fontScale": "1.3"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default__fontscale-1.3"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default__fontscale-1.5.png",
+          "state": "default",
+          "width": 1050,
+          "height": 175,
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default__fontscale-1.5"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default__fontscale-1.8.png",
+          "state": "default",
+          "width": 1050,
+          "height": 187,
+          "props": {
+            "fontScale": "1.8"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default__fontscale-1.8"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default__fontscale-2.0.png",
+          "state": "default",
+          "width": 1050,
+          "height": 195,
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default__fontscale-2.0"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/list-item-positions/ideal__default__fontscale-0.85.png",
+          "state": "default",
+          "width": 1050,
+          "height": 147,
+          "props": {
+            "fontScale": "0.85"
+          },
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default__fontscale-0.85"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 147
+          },
+          "cornerRadius": 16
+        }
+      ],
+      "group": "Lists",
+      "caption": "Every position in a group at once: first, middle, last, and the shapes each takes.",
+      "wireframe": "wireframes/list-item-positions.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 447,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewListItemPositions"
+    },
+    {
+      "componentId": "list-header",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list-header/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 462,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-header__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
+          "previewParams": {
+            "showBackground": true,
+            "backgroundColor": 4279840325
+          },
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-header__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 893,
+              "y": 179,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 893,
+            "y": 179,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 893,
+            "y": 179,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Lists",
+      "caption": "The list header.",
+      "wireframe": "wireframes/list-header.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListHeader.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 85,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewListHeader"
+    },
+    {
+      "componentId": "progress-indicator",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/progress-indicator/ideal__default.png",
+          "state": "default",
+          "width": 211,
+          "height": 442,
+          "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/progress-indicator__ideal__default",
+          "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CircularProgressIndicatorKt.PreviewMullvadProgressIndicator",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 53,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          },
+          "testTag": "circular_progress_indicator_test_tag",
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        }
+      ],
+      "group": "Feedback",
+      "caption": "The circular progress indicator, which is what a tunnel negotiating looks like.",
+      "wireframe": "wireframes/progress-indicator.svg",
+      "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/CircularProgressIndicator.kt",
+      "sourceModule": ":lib:ui:designsystem",
+      "bodyLine": 20,
+      "sourceDirectory": "android/lib/ui/designsystem",
+      "sourceFunction": "PreviewMullvadProgressIndicator"
+    }
+  ],
+  "renderer": "compose-preview 1.66.0",
+  "generatedAt": "2026-09-02T22:32:14.078Z",
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":lib:ui:designsystem",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "mullvad/mullvadvpn-app",
+    "ref": "83ca2afbda77b7600bf0d33b91baab5195964209",
+    "module": ":lib:ui:designsystem"
+  }
+}

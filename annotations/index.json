@@ -1,0 +1,2214 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "primary-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 1050,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 32,
+          "width": 924,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Primary Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "primary-button-disabled__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 1050,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 32,
+          "width": 924,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Primary Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "variant-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 1050,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 32,
+          "width": 924,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Variant Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "variant-button-disabled__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 1050,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 32,
+          "width": 924,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Variant Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "negative-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 1050,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 32,
+          "width": 924,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Negative Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "negative-button-disabled__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 1050,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 32,
+          "width": 924,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Negative Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "text-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 287,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 32,
+          "y": 32,
+          "width": 223,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Text Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "text-button-disabled__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 11,
+          "width": 287,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 32,
+          "y": 32,
+          "width": 223,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Text Button",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "switch__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 137,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "role": "switch_test_tag",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 105,
+          "y": 53,
+          "width": 63,
+          "height": 63
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 168,
+          "width": 137,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "role": "switch_test_tag",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 179,
+          "width": 63,
+          "height": 63
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 294,
+          "width": 137,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "role": "switch_test_tag",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 105,
+          "y": 305,
+          "width": 63,
+          "height": 63
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 420,
+          "width": 137,
+          "height": 84
+        },
+        "label": "r 16dp",
+        "role": "switch_test_tag",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 52,
+          "y": 431,
+          "width": 63,
+          "height": 63
+        },
+        "label": "r 12dp",
+        "detail": {
+          "cornerRadius": "12",
+          "unit": "dp"
+        }
+      }
+    ],
+    "filter-chip-enabled__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 334,
+          "height": 84
+        },
+        "label": "r 8dp",
+        "role": "Checkbox",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 74,
+          "y": 79,
+          "width": 218,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Providers: 10",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "filter-chip-disabled__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 282,
+          "height": 84
+        },
+        "label": "r 8dp",
+        "role": "Checkbox",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 74,
+          "y": 79,
+          "width": 218,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Providers: 17",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "filter-chip-inactive__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 334,
+          "height": 84
+        },
+        "label": "r 8dp",
+        "role": "Checkbox",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 74,
+          "y": 79,
+          "width": 218,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Providers: 17",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "feature-chip__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 63,
+          "width": 186,
+          "height": 84
+        },
+        "label": "r 8dp",
+        "role": "Checkbox",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 231,
+          "width": 459,
+          "height": 84
+        },
+        "label": "r 8dp",
+        "role": "Checkbox",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 399,
+          "width": 305,
+          "height": 84
+        },
+        "label": "r 8dp",
+        "role": "Checkbox",
+        "detail": {
+          "cornerRadius": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 79,
+          "width": 102,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "DAITA",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 247,
+          "width": 375,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Local Network Sharing",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 158,
+          "y": 415,
+          "width": 147,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Multihop",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default__fontscale-1.15": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default__fontscale-1.3": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default__fontscale-1.5": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default__fontscale-1.8": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default__fontscale-2.0": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading__ideal__default__fontscale-0.85": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 777,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default__fontscale-1.15": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default__fontscale-1.3": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default__fontscale-1.5": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default__fontscale-1.8": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default__fontscale-2.0": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-leading-content__ideal__default__fontscale-0.85": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "pad t 16dp e 0dp b 16dp s 4dp",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "16",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 242,
+          "y": 42,
+          "width": 661,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Hello world fsadhkuhfiuskahf iuhsadhuf sa",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default__fontscale-1.15": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default__fontscale-1.3": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default__fontscale-1.5": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default__fontscale-1.8": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default__fontscale-2.0": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-trailing__ideal__default__fontscale-0.85": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 168,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default__fontscale-1.15": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default__fontscale-1.3": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default__fontscale-1.5": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default__fontscale-1.8": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default__fontscale-2.0": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-hierarchy__ideal__default__fontscale-0.85": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 294,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default__fontscale-1.15": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default__fontscale-1.3": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default__fontscale-1.5": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default__fontscale-1.8": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default__fontscale-2.0": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-item-positions__ideal__default__fontscale-0.85": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "r 16dp",
+        "detail": {
+          "cornerRadius": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 42,
+          "width": 246,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Item",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "600",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "list-header__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 893,
+          "y": 179,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 37,
+          "width": 120,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Header",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 205,
+          "width": 120,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Header",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 373,
+          "width": 120,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Header",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "sans-serif"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 807,
+          "y": 373,
+          "width": 201,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "3 out of 200",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "sans-serif"
+        }
+      }
+    ],
+    "progress-indicator__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 53,
+          "y": 53,
+          "width": 105,
+          "height": 105
+        },
+        "label": "pad 4dp",
+        "role": "circular_progress_indicator_test_tag",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      }
+    ]
+  },
+  "references": {}
+}
