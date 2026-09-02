@@ -142,6 +142,7 @@ any other.
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
 | `previewAnnotations` | Optional. Space-separated multipreview annotation names (e.g. `WearPreviewDevices WearPreviewFontScales`) that the spec pre-flight cannot see for itself. Wear catalogs always need this. |
 | `excludePreviewIds` | Optional. Array of preview-id patterns this import cannot render, left unrendered instead of failing the run. See below. |
+| `stubGoogleServices` | Optional. Array of Android applicationIds to write a placeholder `google-services.json` for, when the upstream build needs one it does not commit. See below. |
 | `workingDirectory` | Optional. Repo-relative subdirectory of the upstream checkout holding the Gradle build, for a project whose build is not at its repository root. Omit for the usual case. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
@@ -178,6 +179,30 @@ nothing to show for it. Listing the ids keeps every other render failure fatal, 
 reviewable: the pull request says exactly what this import gives up. Say why in `notes`. The patterns
 are appended to the exclusions the pipeline always applies, so naming one here does not re-enable the
 synthetic app-launching previews.
+
+`stubGoogleServices` exists because some builds cannot **configure** without a file their
+repository deliberately does not contain. `home-assistant/android`'s convention plugin applies the
+Google Services plugin to every application module, and contributors bring their own
+`google-services.json`, so both `:app` and `:wear` die before a preview is discovered:
+
+```
+Execution failed for task ':app:processMinimalDebugGoogleServices'.
+> File google-services.json is missing. The Google Services Plugin cannot function without it.
+```
+
+Naming the applicationIds has the pipeline write a placeholder — a zeroed project number and no real
+project anywhere — into the rendered module of the throwaway checkout.
+
+```json
+"stubGoogleServices": ["io.homeassistant.companion.android.minimal.debug"]
+```
+
+They must be the **exact** applicationId of the variant being rendered, suffixes and all. The Google
+Services plugin does no prefix fallback: a stub naming only the base package fails with *"No matching
+client found for package name"*. Read them off the upstream's build rather than guessing — for
+home-assistant the base id, the flavour suffix and the build-type suffix live in three different
+convention plugins. Declaring them here also means the pull request shows exactly what is being
+fabricated, instead of the pipeline inventing a file quietly.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding
