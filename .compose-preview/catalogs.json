@@ -27,6 +27,11 @@
       "system": "home-assistant-wear"
     },
     {
+      "importedFrom": "google/horologist",
+      "listed": true,
+      "system": "horologist"
+    },
+    {
       "importedFrom": "JetBrains/kotlinconf-app",
       "listed": true,
       "system": "jetbrains-kotlinconf-app"
