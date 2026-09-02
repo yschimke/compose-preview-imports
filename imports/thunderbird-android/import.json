@@ -1,0 +1,8 @@
+{
+  "slug": "thunderbird-android",
+  "upstream": "thunderbird/thunderbird-android",
+  "ref": "main",
+  "modules": [":feature:account:setup"],
+  "renderer": "android",
+  "notes": "Thunderbird for Android (formerly K-9 Mail) on Google Play as net.thunderbird.android, MZLA-funded with in-house design and 235 preview-bearing files. The obvious target was the Bolt design system, but it is NOT addressable from this build: components/ is an included build wired in by dependency substitution, so its :ui:bolt is a module of that build and not of the root one. :feature:account:setup is the largest previewable module of the root build — the whole account setup and auto-discovery flow, which is the part of this app a reader would recognise. Its previews live in src/debug source sets rather than src/main, which is where this project keeps them; they are ordinary androidx previews and render on the Robolectric lane. Large monorepo with its own build-plugin included build, so the first run is the one that tells us whether it needs a javaVersion. Apache-2.0."
+}
