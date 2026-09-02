@@ -1,0 +1,10 @@
+{
+  "slug": "home-assistant-android",
+  "upstream": "home-assistant/android",
+  "ref": "main",
+  "modules": [
+    ":app"
+  ],
+  "renderer": "android",
+  "notes": "The Home Assistant Companion app for Android, on Google Play as io.homeassistant.companion.android and one of the largest actively-maintained open-source Compose codebases: :app alone declares 99 @Preview functions across settings, onboarding, Matter commissioning and the Wear-companion surfaces, with a house theme rather than stock Material. Ordinary Android Compose, single Gradle build at the repository root. One thing a reviewer should know about the build: the root build.gradle.kts calls dependencyLocking { lockAllConfigurations() } and the repository ships gradle.lockfile, so injecting the preview plugin adds modules the lock state does not describe. That is what COMPOSE_PREVIEW_WRITE_LOCKS / --write-locks in the reusable pipeline exists for; nothing is edited in the upstream checkout beyond Gradle regenerating its own lock state for the throwaway build. Licence: Apache-2.0."
+}
