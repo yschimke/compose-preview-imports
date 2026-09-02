@@ -7,7 +7,7 @@
     "ref": "d6f4b1a843c82a1d8fbc913ded27b4eb084028c5",
     "module": ":app"
   },
-  "generatedAt": "2026-09-01T09:34:18.231Z",
+  "generatedAt": "2026-09-02T08:55:19.432Z",
   "mappings": [
     {
       "componentId": "person-view",
@@ -17,7 +17,7 @@
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PersonViewPreview",
-      "codeSnippet": "PersonView(\n    index = TODO(\"Int\"),\n    person = TODO(\"Assignment\"),\n    personSelected = { },\n)",
+      "codeSnippet": "PersonView(\n    index = TODO(\"Int\"),\n    person = TODO(\"Assignment\"),\n    personSelected = TODO(\"(Assignment) -> Unit\"),\n)",
       "imports": [
         "import dev.johnoreilly.peopleinspace.personlist.PersonView"
       ],
@@ -38,7 +38,7 @@
           "name": "personSelected",
           "type": "(Assignment) -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": false
         }
       ],
       "figmaSvg": "figma/person-view.svg"
