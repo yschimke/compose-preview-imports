@@ -11,8 +11,11 @@ execution boundary before changing a workflow.
 - Branch names use `agent/...` for work on this repository itself. `import/<slug>` is reserved for
   imports and `design-artifacts/<slug>` for machine-written delivery branches.
 - Commit subjects and PR titles use Conventional Commits.
-- `.compose-preview/catalogs.json` is generated from `imports.json`. Never hand-edit it: run
-  `scripts/sync-catalog-registry.sh` and commit the result. CI fails when the two disagree.
+- `.compose-preview/catalogs.json` is generated from the `imports/` directory. Never hand-edit it,
+  and do not commit it from an import's pull request: `catalog-registry.yml` regenerates it on `main`
+  after the merge, which is what stops concurrent imports colliding on one shared file. An import's
+  pull request adds `imports/<slug>/import.json` and `imports/<slug>/catalog.spec.json`, and nothing
+  else. `scripts/sync-catalog-registry.sh --lint` is what CI runs on the pull request.
 
 ## The rule that is the point of this repository
 
