@@ -93,9 +93,12 @@ those branches, so a merged import is picked up without a restart, and an import
 removed is retired.
 
 The file is **generated** from the `imports/` directory by
-[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is generated **on
-`main`, after a merge**, by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather
-than in the pull request. That is what keeps concurrent imports from colliding: each one adds its own
+[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is regenerated **after
+a merge to `main`** by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather than in
+the import's own pull request. `main` carries a ruleset — changes must arrive through a pull request —
+so that job opens one (`chore/catalog-registry`, force-pushed, so a run of merges updates a single
+pull request rather than a queue of them) and asks for auto-merge. **An import is not served until
+that pull request lands**, which is the one manual step left when a repository requires review. That is what keeps concurrent imports from colliding: each one adds its own
 `imports/<slug>/` and touches nothing shared, and the one shared, generated file is written once, by
 the job that watches `main`. On a pull request that same workflow only lints the import descriptions
 — that each `slug` matches its directory, and that each `upstream` is an owner/repo.
