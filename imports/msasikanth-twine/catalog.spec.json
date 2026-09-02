@@ -25,7 +25,8 @@
         {
           "componentId": "image-viewer",
           "preview": "ImageViewerPreview",
-          "caption": "The full-screen image viewer a post's artwork opens into."
+          "caption": "The full-screen image viewer a post's artwork opens into. Deferred: it installs Coil's singleton image loader, which throws when another preview in the same render has already created one, so it is served live rather than baked.",
+          "priority": "deferred"
         },
         {
           "componentId": "bookmarks",
