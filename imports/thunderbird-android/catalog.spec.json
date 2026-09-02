@@ -213,16 +213,6 @@
           "caption": "Preview magenta. ColorChipDefaults.kt"
         },
         {
-          "componentId": "badge-icon",
-          "preview": "BadgeIconPreview",
-          "caption": "Badge icon. BadgeIcon.kt"
-        },
-        {
-          "componentId": "badge-icon-with-tint",
-          "preview": "BadgeIconWithTintPreview",
-          "caption": "Badge icon — with tint. BadgeIcon.kt"
-        },
-        {
           "componentId": "icon-tinted",
           "preview": "IconTintedPreview",
           "caption": "Icon — tinted. Icon.kt"
@@ -266,11 +256,6 @@
           "componentId": "fixed-scale-image-vertically-cropped",
           "preview": "FixedScaleImageVerticallyCroppedPreview",
           "caption": "Fixed scale image — vertically cropped. FixedScaleImage.kt"
-        },
-        {
-          "componentId": "remote-image",
-          "preview": "RemoteImagePreview",
-          "caption": "Remote image. RemoteImage.kt"
         },
         {
           "componentId": "tab-primary",
