@@ -18,6 +18,11 @@
       "upstream": "joreilly/ClimateTraceKMP"
     },
     {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
+    },
+    {
       "slug": "droidkaigi-conference-app-2026",
       "branch": "import/droidkaigi-conference-app-2026",
       "upstream": "DroidKaigi/conference-app-2026"
