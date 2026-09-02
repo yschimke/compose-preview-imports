@@ -87,6 +87,7 @@ jobs:
       renderer: ${{ steps.read.outputs.renderer }}
       javaVersion: ${{ steps.read.outputs.javaVersion }}
       previewAnnotations: ${{ steps.read.outputs.previewAnnotations }}
+      workingDirectory: ${{ steps.read.outputs.workingDirectory }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -163,6 +164,26 @@ jobs:
             exit 1
           }
 
+          # Where the upstream's Gradle build actually is. Most projects put it at the repository
+          # root, which is what the pipeline assumes; some do not — mullvadvpn-app is one Rust
+          # repository whose Android client is an entire Gradle build under `android/`, with no
+          # settings.gradle.kts at the root at all, so a render from the root finds nothing to
+          # build. The reusable workflow already understands this (`working-directory`, applied
+          # INSIDE the upstream checkout in import mode); it just had no way to be told from here.
+          working_directory=$(jq -r '.workingDirectory // ""' "$config")
+          # A repo-relative subdirectory and nothing else: it is joined onto the checkout path, so
+          # an absolute path or a `..` segment would name a directory outside the upstream tree.
+          echo "$working_directory" | grep -Eq '^([A-Za-z0-9._-]+(/[A-Za-z0-9._-]+)*)?$' || {
+            echo "::error::workingDirectory '${working_directory}' is not a relative path inside the upstream checkout"
+            exit 1
+          }
+          case "/${working_directory}/" in
+            */../*)
+              echo "::error::workingDirectory '${working_directory}' must not contain a '..' segment"
+              exit 1
+              ;;
+          esac
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -185,6 +206,7 @@ jobs:
             echo "renderer=${renderer}"
             echo "javaVersion=${java_version}"
             echo "previewAnnotations=${preview_annotations}"
+            echo "workingDirectory=${working_directory}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -202,6 +224,10 @@ jobs:
       ref: import/${{ inputs.slug }}
       upstream-repository: ${{ needs.config.outputs.upstream }}
       upstream-ref: ${{ needs.config.outputs.ref }}
+      # An upstream whose Gradle build is not at its repository root says so, and the render happens
+      # in that subdirectory of the checkout instead. `spec` is unaffected — it is read from THIS
+      # repository, and stays repo-root-relative.
+      working-directory: ${{ needs.config.outputs.workingDirectory }}
       # Exactly one of these carries: `modules: all` sweeps every previewable module, `module`
       # names one. The config job guarantees they are mutually exclusive.
       modules: ${{ needs.config.outputs.modules == '' && 'all' || '' }}

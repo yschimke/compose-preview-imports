@@ -18,6 +18,11 @@
       "upstream": "joreilly/ClimateTraceKMP"
     },
     {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
+    },
+    {
       "slug": "jetbrains-kotlinconf-app",
       "branch": "import/jetbrains-kotlinconf-app",
       "upstream": "JetBrains/kotlinconf-app"

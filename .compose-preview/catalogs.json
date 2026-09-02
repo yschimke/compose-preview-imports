@@ -17,6 +17,11 @@
       "system": "joreilly-climatetracekmp"
     },
     {
+      "importedFrom": "bitwarden/android",
+      "listed": true,
+      "system": "bitwarden-android"
+    },
+    {
       "importedFrom": "JetBrains/kotlinconf-app",
       "listed": true,
       "system": "jetbrains-kotlinconf-app"
