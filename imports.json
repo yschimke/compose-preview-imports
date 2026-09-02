@@ -16,6 +16,11 @@
       "slug": "joreilly-climatetracekmp",
       "branch": "import/joreilly-climatetracekmp",
       "upstream": "joreilly/ClimateTraceKMP"
+    },
+    {
+      "slug": "jetbrains-kotlinconf-app",
+      "branch": "import/jetbrains-kotlinconf-app",
+      "upstream": "JetBrains/kotlinconf-app"
     }
   ]
 }

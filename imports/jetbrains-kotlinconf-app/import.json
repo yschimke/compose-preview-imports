@@ -1,0 +1,9 @@
+{
+  "slug": "jetbrains-kotlinconf-app",
+  "upstream": "JetBrains/kotlinconf-app",
+  "ref": "main",
+  "modules": [":app:ui-components"],
+  "renderer": "android",
+  "previewAnnotations": "WidePreviewLightDark",
+  "notes": "JetBrains' own KotlinConf app, on Google Play (com.jetbrains.kotlinconf) and the App Store, designed by JetBrains and targeting Android, iOS, desktop and web from one Compose Multiplatform codebase. :app:ui-components is its component library: 38 preview-bearing files in app/ui-components/src/commonMain, importing androidx.compose.ui.tooling.preview.Preview, in a module that applies the androidMultiplatformLibrary plugin and adds compose.ui.tooling to the Android runtime classpath specifically so previews work. Android target ⇒ Robolectric lane; the module also declares jvm(), so if the Android lane proves awkward under the new KMP-Android plugin the desktop lane is a real fallback rather than a guess. previewAnnotations names WidePreviewLightDark, the module's own multipreview. jvmToolchain(21). Apache-2.0."
+}

@@ -15,6 +15,11 @@
       "importedFrom": "joreilly/ClimateTraceKMP",
       "listed": true,
       "system": "joreilly-climatetracekmp"
+    },
+    {
+      "importedFrom": "JetBrains/kotlinconf-app",
+      "listed": true,
+      "system": "jetbrains-kotlinconf-app"
     }
   ],
   "groups": []
