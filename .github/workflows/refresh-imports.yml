@@ -3,7 +3,8 @@ name: Refresh all imports
 # Rebuilds every registered import on a schedule, so a catalog here follows the project it was
 # imported from instead of freezing at the commit it was first built from.
 #
-# The registry lives on `main` and the per-import config lives on `import/<slug>` branches. That
+# The registry is the imports/ directory on `main`, and the per-import config that a build reads
+# lives on `import/<slug>` branches. That
 # split is not cosmetic: a `schedule` trigger only ever fires for a workflow on the DEFAULT branch
 # and checks that branch out, so a sweep driven from the import branches themselves would never run.
 # `main` holds the list; each dispatched run checks out its own import branch for the detail.
@@ -37,7 +38,10 @@ jobs:
         id: read
         run: |
           set -euo pipefail
-          slugs=$(jq -c '[.imports[].slug]' imports.json)
+          # The registry is the imports/ directory itself: one description per import, and no
+          # shared list for concurrent import pull requests to collide over.
+          slugs=$(find imports -mindepth 2 -maxdepth 2 -name import.json -type f \
+            | sort | xargs -r jq -r '.slug' | jq -R . | jq -sc .)
           echo "slugs=${slugs}" >> "$GITHUB_OUTPUT"
           # An empty registry is the normal state of a freshly bootstrapped repository, not a
           # failure — a matrix over an empty list is an error, so the build job is skipped instead.
