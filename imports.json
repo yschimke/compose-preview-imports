@@ -18,6 +18,11 @@
       "upstream": "joreilly/ClimateTraceKMP"
     },
     {
+      "slug": "bitwarden-android",
+      "branch": "import/bitwarden-android",
+      "upstream": "bitwarden/android"
+    },
+    {
       "slug": "msasikanth-twine",
       "branch": "import/msasikanth-twine",
       "upstream": "msasikanth/twine"
