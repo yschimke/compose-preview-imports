@@ -93,9 +93,12 @@ those branches, so a merged import is picked up without a restart, and an import
 removed is retired.
 
 The file is **generated** from the `imports/` directory by
-[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is generated **on
-`main`, after a merge**, by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather
-than in the pull request. That is what keeps concurrent imports from colliding: each one adds its own
+[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is regenerated **after
+a merge to `main`** by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather than in
+the import's own pull request. `main` carries a ruleset — changes must arrive through a pull request —
+so that job opens one (`chore/catalog-registry`, force-pushed, so a run of merges updates a single
+pull request rather than a queue of them) and asks for auto-merge. **An import is not served until
+that pull request lands**, which is the one manual step left when a repository requires review. That is what keeps concurrent imports from colliding: each one adds its own
 `imports/<slug>/` and touches nothing shared, and the one shared, generated file is written once, by
 the job that watches `main`. On a pull request that same workflow only lints the import descriptions
 — that each `slug` matches its directory, and that each `upstream` is an owner/repo.
@@ -138,6 +141,7 @@ any other.
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
 | `previewAnnotations` | Optional. Space-separated multipreview annotation names (e.g. `WearPreviewDevices WearPreviewFontScales`) that the spec pre-flight cannot see for itself. Wear catalogs always need this. |
+| `excludePreviewIds` | Optional. Array of preview-id patterns this import cannot render, left unrendered instead of failing the run. See below. |
 | `workingDirectory` | Optional. Repo-relative subdirectory of the upstream checkout holding the Gradle build, for a project whose build is not at its repository root. Omit for the usual case. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
@@ -155,6 +159,25 @@ Gradle build under `android/`, with no `settings.gradle.kts` at the root, so a r
 root has nothing to build. The reusable pipeline already renders in a named subdirectory of the
 upstream checkout; naming it here is what reaches it. `catalog.spec.json` is unaffected — it is read
 from this repository, and its path stays repo-root-relative.
+
+`excludePreviewIds` exists because some previews only render inside their own application. One that
+reads a `CompositionLocal` the host installs, resolves a Hilt entry point, or touches a process-wide
+singleton is fine in the app and impossible standalone — there is nothing to fix upstream, and
+nothing to fix here. Without a way to say so, a single such preview fails the entire import:
+bitwarden rendered **55 of 56** and published nothing, `pocketcasts-wear` **24 of 28**, twine
+**21 of 22**.
+
+```json
+"excludePreviewIds": ["*.BitwardenBasicDialog_preview"]
+```
+
+Named ids rather than the pipeline's `allow-incomplete`, and the distinction is the point. Allowing
+incomplete renders would also swallow the *next* breakage — an upstream refactor that quietly stops
+rendering half the catalog — and the nightly refresh would go on publishing a thinner catalog with
+nothing to show for it. Listing the ids keeps every other render failure fatal, and the list is
+reviewable: the pull request says exactly what this import gives up. Say why in `notes`. The patterns
+are appended to the exclusions the pipeline always applies, so naming one here does not re-enable the
+synthetic app-launching previews.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding

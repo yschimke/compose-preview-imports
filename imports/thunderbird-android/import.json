@@ -1,0 +1,12 @@
+{
+  "slug": "thunderbird-android",
+  "upstream": "thunderbird/thunderbird-android",
+  "ref": "main",
+  "modules": [
+    ":ui:bolt"
+  ],
+  "renderer": "android",
+  "notes": "Thunderbird for Android (formerly K-9 Mail) on Google Play as net.thunderbird.android, MZLA-funded with in-house design. This import RETARGETS: it was written against :feature:account:setup of the root build, and a checkout says that cannot work. Every preview in the root build lives in a src/debug source set — 116 files of them — and the preview plugin discovers the MAIN source set only, which is the same reason Confetti's screenshotTest previews were dropped from its spec. The design system is the right target anyway: components/ is an included build (rootProject.name = \"components\", its own settings.gradle.kts) whose :ui:bolt module holds 102 files declaring 288 @Preview functions in commonMain, organised atom / molecule / organism / template. It was unreachable from here until workingDirectory existed; naming components as the Gradle root is exactly what that field is for, and this is its second user after mullvad. Bolt is a KMP Compose module with an Android target and pulls in compose.ui.tooling deliberately \"to enable Android Studio Composable preview\", so it renders on the Robolectric lane. previewAnnotations names the four multipreviews its previews carry — @PreviewLightDark from AndroidX plus Bolt's own @PreviewDevices, @PreviewDevicesWithBackground and @PreviewLightDarkLandscape — without which discovery sees 232 of the 288. The inventory catalogues 252 of them: 36 previews are declared under a name Bolt reuses across files — 32 called simply `Preview` and four `IconPreview` — and a spec entry naming one would fold every same-named preview into a single sticker, which the pre-flight warns about. They stay out. Apache-2.0.",
+  "workingDirectory": "components",
+  "previewAnnotations": "PreviewLightDark PreviewDevices PreviewDevicesWithBackground PreviewLightDarkLandscape"
+}

@@ -1,0 +1,258 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Home Assistant Companion Wear OS catalog rendered from :wear. Complete destinations and device-bound chrome use explicit Wear device canvases; isolated rows, bubbles, and headers remain wrap-content component previews. Synthetic Hilt Activity captures are intentionally not catalog entries. The toggle-control entry was dropped when upstream removed the ToggleSwitch/ToggleCheckbox helpers.",
+  "system": "home-assistant-wear",
+  "title": "Home Assistant Companion for Wear OS",
+  "library": [
+    "Wear Compose Material + Home Assistant surfaces"
+  ],
+  "module": "wear",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "breakpoints": [
+    {
+      "size": "smallRound",
+      "device": "id:wearos_small_round",
+      "widthDp": 192
+    },
+    {
+      "size": "largeRound",
+      "device": "id:wearos_large_round",
+      "widthDp": 227
+    }
+  ],
+  "display": {
+    "surface": "dark",
+    "hero": "Home/Entity list"
+  },
+  "groupOrder": [
+    "Home",
+    "Entity details",
+    "Tiles",
+    "Sensor management",
+    "Settings",
+    "Onboarding",
+    "Conversation",
+    "Entity rows",
+    "Sensor rows",
+    "List structure",
+    "Device chrome"
+  ],
+  "groups": [
+    {
+      "name": "Home",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Home/Landing",
+          "preview": "PreviewMainConfigView",
+          "caption": "State-hoisted Wear landing destination with favorites, area navigation, domain navigation, and settings in light and dark themes."
+        },
+        {
+          "componentId": "Home/Entity list",
+          "preview": "PreviewEntityListView",
+          "caption": "Large-round Wear destination with mixed on/off entities.",
+          "variants": [
+            {
+              "preview": "PreviewEntityListScenes",
+              "caption": "Scene entities use action rows instead of switches.",
+              "state": "scenes"
+            },
+            {
+              "preview": "PreviewEntityListEmpty",
+              "caption": "Empty entity list.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Home/Sensors",
+          "preview": "PreviewSensorsView",
+          "caption": "Large-round Wear sensor overview destination."
+        }
+      ]
+    },
+    {
+      "name": "Entity details",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Entities/Detail panel",
+          "preview": "PreviewDetailsPaneViewEntityLightOn",
+          "caption": "Large-round light detail destination with brightness state.",
+          "variants": [
+            {
+              "preview": "PreviewDetailsPaneViewEntityLightOff",
+              "caption": "Light controls in the off state.",
+              "state": "off"
+            },
+            {
+              "preview": "PreviewDetailsPaneViewEntityFanOn",
+              "caption": "Fan detail controls.",
+              "state": "fan-on"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tiles",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Tiles/Shortcut selection",
+          "preview": "PreviewSelectShortcutsTileView",
+          "caption": "Large-round shortcut tile selection destination.",
+          "variants": [
+            {
+              "preview": "PreviewSelectShortcutsTileEmptyView",
+              "caption": "No shortcuts available.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Tiles/Shortcut order",
+          "preview": "PreviewSetTileShortcutsView",
+          "caption": "Large-round selected shortcut ordering destination."
+        },
+        {
+          "componentId": "Tiles/Camera selection",
+          "preview": "PreviewSelectCameraTileViewOne",
+          "caption": "Large-round camera tile selection destination.",
+          "variants": [
+            {
+              "preview": "PreviewSelectCameraTileViewEmpty",
+              "caption": "No cameras available.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Tiles/Template settings",
+          "preview": "PreviewTemplateTileSettingView",
+          "caption": "Large-round template tile configuration destination."
+        },
+        {
+          "componentId": "Tiles/Refresh interval",
+          "preview": "PreviewRefreshIntervalPickerView",
+          "caption": "Large-round refresh interval picker destination."
+        },
+        {
+          "componentId": "Tiles/Camera settings",
+          "preview": "PreviewSelectCameraTileViewOne",
+          "caption": "Large-round camera tile settings with a selected entity and refresh interval.",
+          "variants": [
+            {
+              "preview": "PreviewSelectCameraTileViewEmpty",
+              "caption": "Camera tile settings before a camera is selected.",
+              "state": "empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sensor management",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Sensors/Manager",
+          "preview": "PreviewSensorManagerUI",
+          "caption": "Large-round sensor manager destination with header and toggle rows."
+        }
+      ]
+    },
+    {
+      "name": "Settings",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Settings/Favorites",
+          "preview": "PreviewSettingsView",
+          "caption": "Large-round favorites and visibility settings destination."
+        },
+        {
+          "componentId": "Settings/Complication",
+          "preview": "PreviewMainConfigView",
+          "caption": "Large-round complication configuration destination."
+        }
+      ]
+    },
+    {
+      "name": "Onboarding",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Onboarding/Install phone app",
+          "preview": "PhoneInstallViewPreview",
+          "caption": "Large-round prompt to install Home Assistant on the paired phone."
+        }
+      ]
+    },
+    {
+      "name": "Conversation",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Conversation/Speech bubbles",
+          "preview": "PreviewSpeechBubble",
+          "caption": "Wrap-content Assist request and response bubble components."
+        }
+      ]
+    },
+    {
+      "name": "Entity rows",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Entities/Rows",
+          "preview": "PreviewEntityUI",
+          "caption": "Wrap-content entity toggle and action row components."
+        }
+      ]
+    },
+    {
+      "name": "Sensor rows",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Sensors/Rows",
+          "preview": "PreviewSensorUI",
+          "caption": "Wrap-content enabled, charging, and default sensor toggle rows."
+        }
+      ]
+    },
+    {
+      "name": "List structure",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Components/List header",
+          "preview": "PreviewListHeader",
+          "caption": "Wrap-content heading for a Wear list.",
+          "variants": [
+            {
+              "preview": "PreviewExpandableListHeader",
+              "caption": "Expandable list heading with disclosure affordance.",
+              "state": "expandable"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Device chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Components/Time text",
+          "preview": "PreviewTimeText",
+          "caption": "Device-bound time label whose placement is evaluated on a large-round canvas."
+        }
+      ]
+    }
+  ]
+}
