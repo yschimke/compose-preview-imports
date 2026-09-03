@@ -12,8 +12,10 @@ execution boundary before changing a workflow.
   imports and `design-artifacts/<slug>` for machine-written delivery branches.
 - Commit subjects and PR titles use Conventional Commits.
 - `.compose-preview/catalogs.json` is generated from the `imports/` directory. Never hand-edit it,
-  and do not commit it from an import's pull request: `catalog-registry.yml` regenerates it on `main`
-  after the merge, which is what stops concurrent imports colliding on one shared file. An import's
+  and do not commit it from an import's pull request: `catalog-registry.yml` regenerates it after the
+  merge and opens `chore/catalog-registry` to land it, which is what stops concurrent imports
+  colliding on one shared file. Nothing may push to `main` directly — a ruleset rejects it — so a
+  workflow that needs to change a tracked file opens a pull request. An import's
   pull request adds `imports/<slug>/import.json` and `imports/<slug>/catalog.spec.json`, and nothing
   else. `scripts/sync-catalog-registry.sh --lint` is what CI runs on the pull request.
 

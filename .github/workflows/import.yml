@@ -88,6 +88,11 @@ jobs:
       javaVersion: ${{ steps.read.outputs.javaVersion }}
       previewAnnotations: ${{ steps.read.outputs.previewAnnotations }}
       workingDirectory: ${{ steps.read.outputs.workingDirectory }}
+      excludePreviewIds: ${{ steps.read.outputs.excludePreviewIds }}
+      stubGoogleServices: ${{ steps.read.outputs.stubGoogleServices }}
+      variant: ${{ steps.read.outputs.variant }}
+      renderTimeout: ${{ steps.read.outputs.renderTimeout }}
+      renderRuntimeProjects: ${{ steps.read.outputs.renderRuntimeProjects }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -184,6 +189,127 @@ jobs:
               ;;
           esac
 
+          # Previews this import cannot render, named individually.
+          #
+          # A preview that reads a CompositionLocal its host application installs, resolves a Hilt
+          # entry point, or touches a process-wide singleton renders fine in the app and not at all
+          # standalone. There is nothing to fix upstream and nothing to fix here — it is simply not
+          # a preview an import can produce. Without a way to say so, ONE of them fails the whole
+          # run: bitwarden rendered 55 of 56 and published nothing, pocketcasts-wear 24 of 28,
+          # twine 21 of 22.
+          #
+          # Named ids rather than `allow-incomplete`, deliberately. Allowing incomplete renders
+          # would also swallow the next real breakage — an upstream refactor that quietly stops
+          # rendering half the catalog — and the import would go on publishing a thinner catalog
+          # every night without anyone noticing. Listing the ids keeps every OTHER render failure
+          # fatal, and the list itself is reviewable: a reader of the pull request sees exactly what
+          # this import gives up, and why, in `notes`.
+          exclude_preview_ids=$(jq -r '.excludePreviewIds // [] | join(",")' "$config")
+          # Comma-separated preview-id glob patterns. The value is appended to the reusable
+          # workflow's own always-on patterns and split on commas there, so a comma inside an entry
+          # or a stray space would silently become a different pattern than the author wrote.
+          #
+          # `grep -z`, not plain `grep`, and that is not a flourish. `grep -Eq '^…$'` anchors PER
+          # LINE, so a value containing a newline passes as long as each line matches on its own —
+          # and this value is then written to $GITHUB_OUTPUT as `excludePreviewIds=<value>`, where
+          # an embedded newline starts a second key=value the reader never wrote. -z makes the whole
+          # NUL-terminated value one record, so ^ and $ mean the ends of the VALUE. The empty case
+          # is handled before it because -z sees no record at all in empty input and would reject
+          # the field simply being absent, which is every import that has not needed this.
+          [ -z "$exclude_preview_ids" ] || \
+            printf '%s' "$exclude_preview_ids" |
+              grep -zEq '^[A-Za-z0-9_.$*?-]+(,[A-Za-z0-9_.$*?-]+)*$' || {
+            echo "::error::excludePreviewIds '${exclude_preview_ids}' must be preview-id patterns" \
+              "(letters, digits, . _ - \$ and the * ? globs), one per array entry, no spaces"
+            exit 1
+          }
+
+          # Android applicationIds to write a stub google-services.json for.
+          #
+          # An upstream that applies the Google Services plugin but does not commit the file cannot
+          # CONFIGURE without one. home-assistant/android is the case: its convention plugin applies
+          # the plugin to every application module and contributors bring their own file, so :app
+          # dies on `processMinimalDebugGoogleServices` before a preview is discovered.
+          #
+          # These must be the EXACT applicationId of the variant being rendered, suffixes included.
+          # Verified against a real AGP build rather than assumed: a stub naming only the base
+          # package fails with "No matching client found for package name", so there is no prefix
+          # fallback, and nothing in the pipeline can guess a flavour suffix a convention plugin in
+          # another repository decided on. Naming them here makes the stub the import's declared
+          # statement rather than a guess, and a reviewer can check them against the upstream build.
+          stub_google_services=$(jq -r '.stubGoogleServices // [] | join(",")' "$config")
+          # Package names and commas, nothing else. `grep -z` for the same reason as above: the
+          # value reaches $GITHUB_OUTPUT, and a plain anchored grep matches per LINE, so an embedded
+          # newline would pass and start a second key=value nobody wrote.
+          [ -z "$stub_google_services" ] || \
+            printf '%s' "$stub_google_services" |
+              grep -zEq '^[A-Za-z0-9_.]+(,[A-Za-z0-9_.]+)*$' || {
+            echo "::error::stubGoogleServices '${stub_google_services}' must be Android" \
+              "applicationIds (letters, digits, . and _), one per array entry, no spaces"
+            exit 1
+          }
+
+          # The Android variant the preview plugin attaches its tasks to.
+          #
+          # The plugin's convention is `debug`, which is right for any module without product
+          # flavors — and wrong for one with them, because there is then no plain `debug` and the
+          # flavor picked for you may not be the one that builds. home-assistant/android's :app is
+          # the case: `app/src/screenshotTest/` is flavor-agnostic but references a symbol declared
+          # only in `app/src/full/`, so `minimalDebug` fails to compile the screenshot-test sources
+          # the plugin renders previews from, before a preview exists.
+          variant=$(jq -r '.variant // ""' "$config")
+          # A Gradle variant name: letters and digits, and that is the whole grammar AGP allows for
+          # a flavor or build type. `grep -z` for the same reason as the fields above — the value
+          # reaches $GITHUB_OUTPUT.
+          [ -z "$variant" ] || \
+            printf '%s' "$variant" | grep -zEq '^[A-Za-z][A-Za-z0-9]*$' || {
+            echo "::error::variant '${variant}' must be a Gradle variant name" \
+              "(letters and digits, e.g. fullDebug)"
+            exit 1
+          }
+
+          # Gradle projects to put on the rendered module's RUNTIME classpath, for an upstream that
+          # binds an implementation at runtime and keeps it off the production classpath.
+          #
+          # DroidKaigi/conference-app-2026 is the case: :core:preview:wrapper declares
+          # compileOnly(project(":core:preview:impl")) on androidMain and jvmMain — "impl stays off
+          # production classpaths", in its own words — and the binding is supplied by the app and by
+          # the repository's screenshot-test convention plugin. A render of :core:ui is neither, so
+          # every one of its 450 previews dies with ClassNotFoundException on
+          # …core.preview.impl.DefaultPreviewImageResolver.
+          #
+          # Declared per import rather than inferred, for the same reason as stubGoogleServices:
+          # nothing here can know which of an upstream's modules is the runtime half of a
+          # compileOnly binding, and a reviewer of the pull request can check the named projects
+          # against the upstream build.
+          render_runtime_projects=$(jq -r '.renderRuntimeProjects // [] | join(",")' "$config")
+          # Gradle project paths: a leading colon, then colon-separated segments. `grep -z` for the
+          # same reason as the fields above — the value reaches $GITHUB_OUTPUT.
+          [ -z "$render_runtime_projects" ] || \
+            printf '%s' "$render_runtime_projects" |
+              grep -zEq '^:[A-Za-z0-9_.-]+(:[A-Za-z0-9_.-]+)*(,:[A-Za-z0-9_.-]+(:[A-Za-z0-9_.-]+)*)*$' || {
+            echo "::error::renderRuntimeProjects '${render_runtime_projects}' must be Gradle project" \
+              "paths (leading colon, e.g. :core:preview:impl), one per array entry, no spaces"
+            exit 1
+          }
+
+          # Seconds the render may spend, when the default 600 is not enough.
+          #
+          # This is the INNER timeout on `bundle pack`, not the job timeout: a render can sit well
+          # inside the job budget and still be killed here, and the failure reads as a bare
+          # "Build timed out after 600s" with nothing else wrong. It scales with the preview count,
+          # so a large catalog outgrows the default long before it outgrows the job — pocketcasts'
+          # :modules:services:compose was still making progress at 600s.
+          render_timeout=$(jq -r '.renderTimeout // ""' "$config")
+          # Digits only, and bounded: the reusable workflow's own job timeout is the real ceiling,
+          # so a value above it would just move where the run dies.
+          [ -z "$render_timeout" ] || \
+            printf '%s' "$render_timeout" | grep -zEq '^[1-9][0-9]{2,4}$' || {
+            echo "::error::renderTimeout '${render_timeout}' must be a whole number of seconds" \
+              "between 100 and 99999"
+            exit 1
+          }
+
           # The slug names the delivery branch and the route the server serves this at, so a branch
           # whose import.json disagrees with its own name would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
@@ -207,6 +333,11 @@ jobs:
             echo "javaVersion=${java_version}"
             echo "previewAnnotations=${preview_annotations}"
             echo "workingDirectory=${working_directory}"
+            echo "excludePreviewIds=${exclude_preview_ids}"
+            echo "stubGoogleServices=${stub_google_services}"
+            echo "variant=${variant}"
+            echo "renderTimeout=${render_timeout}"
+            echo "renderRuntimeProjects=${render_runtime_projects}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -245,6 +376,25 @@ jobs:
       # Teaches the build-free spec pre-flight about multipreviews declared in another module. See
       # the config job: without it a Wear catalog's spec entries all fail as "matches no @Preview".
       preview-annotations: ${{ needs.config.outputs.previewAnnotations }}
+      # The previews this import has declared it cannot render — see the config job. Appended to the
+      # pipeline's own always-on exclusions rather than replacing them, so naming one here does not
+      # quietly re-enable the synthetic app-launching previews.
+      exclude-preview-ids: ${{ needs.config.outputs.excludePreviewIds }}
+      # The applicationIds this import needs a placeholder google-services.json for — see the config
+      # job. Empty for every import whose upstream does not apply the Google Services plugin, which
+      # is all of them but home-assistant.
+      stub-google-services-packages: ${{ needs.config.outputs.stubGoogleServices }}
+      # The Android variant to render — see the config job. Empty for every module without product
+      # flavors, which is all of them but home-assistant/android's :app.
+      variant: ${{ needs.config.outputs.variant }}
+      # Seconds the render may spend — see the config job. `fromJSON` because the reusable
+      # workflow's input is typed `number` and a job output is always a string; the literal 600
+      # repeats that input's own default, so an import that says nothing is unchanged.
+      render-timeout: ${{ needs.config.outputs.renderTimeout != '' && fromJSON(needs.config.outputs.renderTimeout) || 600 }}
+      # Implementations this upstream binds at runtime and keeps off its production classpath —
+      # see the config job. Added to the module's build file in the throwaway checkout only, on
+      # runtimeOnly configurations, so nothing it compiles against changes.
+      render-runtime-projects: ${{ needs.config.outputs.renderRuntimeProjects }}
       # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
       # serve box that bakes the matching daemon re-renders these previews live — device, theme and
       # knob controls work instead of replaying a snapshot.

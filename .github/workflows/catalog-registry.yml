@@ -8,9 +8,21 @@ name: Catalog registry
 #     that the generated document agrees: an import's pull request adds imports/<slug>/import.json
 #     and nothing else, so on that branch the document is expected to be one entry behind.
 #
-#   sync (push to main)  — regenerates the document and commits it when it changed. This is why an
-#     import's pull request touches only its own files: the shared, generated one is written here,
-#     after the merge, instead of by every open pull request racing to append the same line.
+#   sync (push to main)  — regenerates the document and, when it changed, opens a pull request
+#     carrying it. This is why an import's pull request touches only its own files: the shared,
+#     generated one is written here, after the merge, instead of by every open pull request racing to
+#     append the same line.
+#
+#     It opens a pull request rather than pushing, because `main` carries a ruleset — "Changes must be
+#     made through a pull request" — and a job that pushes directly is simply rejected:
+#
+#       ! [remote rejected] HEAD -> main (push declined due to repository rule violations)
+#
+#     which is exactly what happened to the first three imports that merged with this workflow in
+#     place: their builds ran, and the catalogs they published were not listed for the server. So the
+#     regeneration goes through the same gate as everything else. The branch is fixed and force-pushed,
+#     so several merges in a row update ONE pull request rather than opening a queue of them, and
+#     auto-merge is requested so it lands without needing a human when the repository allows it.
 #
 # The job that writes runs no third-party code — it runs `jq` over files already merged into this
 # repository — so the boundary docs/SECURITY.md draws is unaffected: nothing an imported project
@@ -56,8 +68,9 @@ jobs:
     if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-latest
     permissions:
-      # The only write here, in a job that runs no third-party code.
+      # The only writes here, in a job that runs no third-party code.
       contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -75,15 +88,30 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit it
+      - name: Open a pull request carrying it
         if: ${{ steps.sync.outputs.changed == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
+          branch=chore/catalog-registry
           git config user.name "compose-preview-imports"
           git config user.email "noreply@schimke.ee"
+          git checkout -B "$branch"
           git add .compose-preview/catalogs.json
           git commit -m "chore: regenerate the catalog registry document"
-          # A second import merging while this ran would have moved main; rebase onto it rather than
-          # failing the push, since this commit only ever touches the generated file.
-          git pull --rebase origin main
-          git push origin HEAD:main
+          # One branch, force-pushed: several imports merging in a row update the SAME pull request
+          # instead of opening a queue of them. Nothing else ever writes here, and the branch carries
+          # one generated file, so there is no history worth preserving on it.
+          git push --force origin "HEAD:refs/heads/$branch"
+
+          # Reuse the open pull request when there is one; the force-push above already updated it.
+          if [ -z "$(gh pr list --head "$branch" --state open --json number --jq '.[].number')" ]; then
+            gh pr create --base main --head "$branch" \
+              --title "chore: regenerate the catalog registry document" \
+              --body "Generated from the \`imports/\` directory by \`scripts/sync-catalog-registry.sh\`, which ran on main after $GITHUB_SHA. This is the document a preview server fetches, so an import is not served until this lands."
+          fi
+          # Land it without a human where the repository allows that; a ruleset requiring review just
+          # leaves the pull request open, which is visible rather than silent.
+          gh pr merge --auto --squash "$branch" || \
+            echo "::notice::auto-merge unavailable — the registry pull request needs merging by hand"
