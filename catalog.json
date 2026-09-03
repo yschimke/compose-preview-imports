@@ -5861,7 +5861,7 @@
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -6025,7 +6025,7 @@
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -6174,7 +6174,7 @@
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -6305,7 +6305,7 @@
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -6479,7 +6479,7 @@
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -6534,7 +6534,7 @@
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -6588,7 +6588,7 @@
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -6659,7 +6659,7 @@
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -13100,7 +13100,48 @@
       "sourceModule": ":compose-layout",
       "bodyLine": 25,
       "sourceDirectory": "compose-layout",
-      "sourceFunction": "VerticalPagerIndicatorPreview"
+      "sourceFunction": "VerticalPagerIndicatorPreview",
+      "parameters": [
+        {
+          "name": "pageIndicatorState",
+          "type": "PageIndicatorState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "indicatorStyle",
+          "type": "PageIndicatorStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "selectedColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "unselectedColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "indicatorSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "indicatorShape",
+          "type": "Shape",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/AlertDialogPreview",
@@ -44905,8 +44946,8 @@
   "library": [
     "com.google.android.horologist"
   ],
-  "renderer": "compose-preview 1.67.0",
-  "generatedAt": "2026-09-03T02:07:45.032Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:05:53.772Z",
   "display": {
     "surface": "dark"
   },

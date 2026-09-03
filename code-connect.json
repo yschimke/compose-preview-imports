@@ -6,7 +6,7 @@
     "repo": "google/horologist",
     "ref": "669474cba22a1130cd20ec78e8dbdc36e5c07231"
   },
-  "generatedAt": "2026-09-03T02:07:46.979Z",
+  "generatedAt": "2026-09-03T10:05:55.778Z",
   "mappings": [
     {
       "componentId": "Chip",
@@ -2254,21 +2254,24 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "navController",
           "type": "NavHostController",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "uiState",
           "type": "DeviceStatusUiState?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-gemini-defaultpreview.svg"
@@ -2291,21 +2294,24 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "navController",
           "type": "NavHostController",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "uiState",
           "type": "PromptUiState?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-prompt-app-ai-sample-wear-prompt-app-defaultpreview.svg"
@@ -2328,21 +2334,24 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SamplePromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-prompt-app-samplepromptscreenpreviewempty.svg"
@@ -2365,21 +2374,24 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SamplePromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-prompt-app-samplepromptscreenpreviewmany.svg"
@@ -2402,21 +2414,24 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SamplePromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-prompt-app-samplepromptscreenpreviewquestion.svg"
@@ -2439,21 +2454,24 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SamplePromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSettingsClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-prompt-app-samplepromptscreenpreviewmarkdown.svg"
@@ -2476,14 +2494,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SettingsViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/ai-sample-wear-prompt-app-settingsscreenpreview.svg"
@@ -2506,28 +2526,32 @@
           "type": "PromptOrResponseUiModel",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "transformation",
           "type": "SurfaceTransformation?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/ai-ui-textresponsecardpreview__ideal__default__largeround.svg"
@@ -2550,28 +2574,32 @@
           "type": "PromptOrResponseUiModel",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "transformation",
           "type": "SurfaceTransformation?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/ai-ui-failedresponsechippreview__ideal__default__largeround.svg"
@@ -2594,28 +2622,32 @@
           "type": "PromptOrResponseUiModel",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "transformation",
           "type": "SurfaceTransformation?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "figma/ai-ui-responseinprogresscardpreview.svg"
@@ -2638,28 +2670,32 @@
           "type": "TextPromptUiModel",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "transformation",
           "type": "SurfaceTransformation?",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/ai-ui-textpromptdisplaypreview__ideal__default__largeround.svg"
@@ -3246,14 +3282,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "navController",
           "type": "NavHostController",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-sample-wear-auth-sample-wear-defaultpreview__ideal__default__smallround.svg"
@@ -3276,14 +3314,16 @@
           "type": "(String) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-sample-wear-authmenuscreenpreview__ideal__default__largeround.svg"
@@ -3306,21 +3346,24 @@
           "type": "NavHostController",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-sample-wear-googlesigninpromptsamplescreenpreview__ideal__default__largeround.svg"
@@ -3343,49 +3386,56 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAlreadySignedIn",
           "type": "(AccountUiModel) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "title",
           "type": "String",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "loadingContent",
           "type": "() -> Unit",
           "hasDefault": true,
           "composableSlot": true,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-ui-signinpromptscreenpreviewsignedout__ideal__default__largeround.svg"
@@ -3408,49 +3458,56 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAlreadySignedIn",
           "type": "(AccountUiModel) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "title",
           "type": "String",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "loadingContent",
           "type": "() -> Unit",
           "hasDefault": true,
           "composableSlot": true,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-ui-signinpromptscreenpreviewloading__ideal__default__largeround.svg"
@@ -3473,49 +3530,56 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAlreadySignedIn",
           "type": "(AccountUiModel) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "title",
           "type": "String",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "loadingContent",
           "type": "() -> Unit",
           "hasDefault": true,
           "composableSlot": true,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-ui-signinpromptscreenpreviewcustomloading__ideal__default__largeround.svg"
@@ -3538,49 +3602,56 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAlreadySignedIn",
           "type": "(AccountUiModel) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "title",
           "type": "String",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "loadingContent",
           "type": "() -> Unit",
           "hasDefault": true,
           "composableSlot": true,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-ui-material3-auth-ui-material3-signinpromptscreenpreviewsignedout__ideal__default__largeround.svg"
@@ -3603,49 +3674,56 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAlreadySignedIn",
           "type": "(AccountUiModel) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "title",
           "type": "String",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "loadingContent",
           "type": "() -> Unit",
           "hasDefault": true,
           "composableSlot": true,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-ui-material3-auth-ui-material3-signinpromptscreenpreviewloading__ideal__default__largeround.svg"
@@ -3668,49 +3746,56 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAlreadySignedIn",
           "type": "(AccountUiModel) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "title",
           "type": "String",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "loadingContent",
           "type": "() -> Unit",
           "hasDefault": true,
           "composableSlot": true,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/auth-ui-material3-auth-ui-material3-signinpromptscreenpreviewcustomloading__ideal__default__largeround.svg"
@@ -4312,11 +4397,81 @@
     {
       "componentId": "compose-layout/VerticalPagerIndicatorPreview",
       "figmaLayerName": "compose-layout/VerticalPagerIndicatorPreview",
-      "componentName": "VerticalPagerIndicatorPreview",
-      "source": "https://github.com/google/horologist/blob/669474cba22a1130cd20ec78e8dbdc36e5c07231/src/debug/java/com/google/android/horologist/compose/pager/VerticalPagerIndicatorPreview.kt",
+      "componentName": "VerticalPageIndicator",
+      "source": "https://github.com/google/horologist/blob/669474cba22a1130cd20ec78e8dbdc36e5c07231/src/main/java/com/google/android/horologist/compose/pager/VerticalPageIndicator.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "VerticalPagerIndicatorPreview",
+      "codeSnippet": "VerticalPageIndicator(\n    pageIndicatorState = TODO(\"PageIndicatorState\"),\n)",
+      "imports": [
+        "import com.google.android.horologist.compose.pager.VerticalPageIndicator"
+      ],
+      "parameters": [
+        {
+          "name": "pageIndicatorState",
+          "type": "PageIndicatorState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "indicatorStyle",
+          "type": "PageIndicatorStyle",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "selectedColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "unselectedColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "indicatorSize",
+          "type": "Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "indicatorShape",
+          "type": "Shape",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/compose-layout-verticalpagerindicatorpreview__ideal__default__largeround.svg"
     },
     {
@@ -7697,14 +7852,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "InstallAppPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-installappcustompromptdemoscreenpreview__ideal__default.svg"
@@ -7727,14 +7884,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "InstallAppPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-installappcustompromptdemoscreenpreviewwithprompt__ideal__default.svg"
@@ -7757,14 +7916,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "InstallTilePromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-installtilecustompromptdemoscreenpreview__ideal__default.svg"
@@ -7787,14 +7948,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "InstallTilePromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-installtilecustompromptdemoscreenpreviewwithprompt__ideal__default.svg"
@@ -7817,14 +7980,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "ReEngageCustomPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-reengagecustompromptdemoscreenpreview__ideal__default.svg"
@@ -7847,14 +8012,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInCustomPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-signincustompromptdemoscreenpreview__ideal__default.svg"
@@ -7877,14 +8044,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInCustomPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-signincustompromptdemoscreenpreviewwithprompt__ideal__default.svg"
@@ -7907,14 +8076,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "InstallAppPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-installapppromptdemoscreenpreview__ideal__default.svg"
@@ -7937,14 +8108,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "InstallTilePromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-installtilepromptdemoscreenpreview__ideal__default.svg"
@@ -7967,14 +8140,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "ReEngagePromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-reengagepromptdemoscreenpreview__ideal__default.svg"
@@ -7997,14 +8172,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "SignInPromptDemoViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-signinpromptdemoscreenpreview__ideal__default.svg"
@@ -8027,42 +8204,48 @@
           "type": "AppHelperNodeStatus",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onInstallOnNodeClick",
           "type": "(String) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onStartCompanionClick",
           "type": "(String) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onStartRemoteOwnAppClick",
           "type": "(String) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onStartRemoteActivityClick",
           "type": "(String) -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodecardpreview__ideal__default.svg"
@@ -8085,14 +8268,16 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onDismissRequest",
           "type": "() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodesactionsucceededdialogpreview__ideal__default.svg"
@@ -8115,14 +8300,16 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onDismissRequest",
           "type": "() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodesactionfailuredialogpreview__ideal__default.svg"
@@ -8145,21 +8332,24 @@
           "type": "String",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onDismissRequest",
           "type": "() -> Unit",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "imageVector",
           "type": "ImageVector",
           "hasDefault": false,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodesactiondialogpreview__ideal__default.svg"
@@ -8182,14 +8372,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "NodesViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodesscreenpreview__ideal__default.svg"
@@ -8212,14 +8404,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "NodesViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodesscreenpreviewemptynodes__ideal__default.svg"
@@ -8242,14 +8436,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "NodesViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodesscreenpreviewapinotavailable__ideal__default.svg"
@@ -8272,14 +8468,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "NodesListenerViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodeslistenerscreenpreview__ideal__default.svg"
@@ -8302,14 +8500,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "NodesListenerViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodeslistenerscreenpreviewemptynodes__ideal__default.svg"
@@ -8332,14 +8532,16 @@
           "type": "Modifier",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "viewModel",
           "type": "NodesListenerViewModel",
           "hasDefault": true,
           "composableSlot": false,
-          "composableSlotReceiver": null
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/horologist/render/datalayer-sample-phone-nodeslistenerscreenpreviewapinotavailable__ideal__default.svg"
