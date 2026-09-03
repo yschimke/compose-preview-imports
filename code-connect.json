@@ -1,0 +1,423 @@
+{
+  "system": "home-assistant-android",
+  "title": "Home Assistant Companion",
+  "label": "Compose",
+  "source": {
+    "repo": "home-assistant/android",
+    "ref": "6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe",
+    "module": ":app"
+  },
+  "generatedAt": "2026-09-03T07:48:37.710Z",
+  "mappings": [
+    {
+      "componentId": "Settings/Wear companion",
+      "figmaLayerName": "Settings/Wear companion",
+      "componentName": "SettingWearLandingView",
+      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PreviewSettingWearLandingView",
+      "codeSnippet": "SettingWearLandingView(\n    deviceName = TODO(\"String\"),\n    hasData = TODO(\"Boolean\"),\n    isAuthed = TODO(\"Boolean\"),\n    navigateFavorites = TODO(\"() -> Unit\"),\n    navigateTemplateTile = TODO(\"() -> Unit\"),\n    loginWearOs = TODO(\"() -> Unit\"),\n    onBackClicked = TODO(\"() -> Unit\"),\n    events = TODO(\"Flow<String>\"),\n)",
+      "imports": [
+        "import io.homeassistant.companion.android.settings.wear.views.SettingWearLandingView"
+      ],
+      "parameters": [
+        {
+          "name": "deviceName",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "hasData",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "isAuthed",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "navigateFavorites",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "navigateTemplateTile",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "loginWearOs",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onBackClicked",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "events",
+          "type": "Flow<String>",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
+      "figmaSvg": "figma/settings-wear-companion.svg"
+    },
+    {
+      "componentId": "Onboarding/Matter commissioning",
+      "figmaLayerName": "Onboarding/Matter commissioning",
+      "componentName": "MatterCommissioningScreen",
+      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PreviewMatterCommissioningScreen",
+      "codeSnippet": "MatterCommissioningScreen(\n    step = TODO(\"CommissioningFlowStep\"),\n    deviceName = TODO(\"String?\"),\n    serverChooserItems = TODO(\"List<ServerChooserItem>\"),\n    onSelectServer = TODO(\"(Int) -> Unit\"),\n    onConfirmCommissioning = TODO(\"() -> Unit\"),\n    onClose = TODO(\"() -> Unit\"),\n    onContinue = TODO(\"() -> Unit\"),\n)",
+      "imports": [
+        "import io.homeassistant.companion.android.matter.MatterCommissioningScreen"
+      ],
+      "parameters": [
+        {
+          "name": "step",
+          "type": "CommissioningFlowStep",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "deviceName",
+          "type": "String?",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "serverChooserItems",
+          "type": "List<ServerChooserItem>",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onSelectServer",
+          "type": "(Int) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onConfirmCommissioning",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onClose",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onContinue",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/onboarding-matter-commissioning__ideal__default.svg"
+    },
+    {
+      "componentId": "Settings/Wi-Fi SSIDs",
+      "figmaLayerName": "Settings/Wi-Fi SSIDs",
+      "componentName": "SsidView",
+      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "PreviewSsidViewItems",
+      "codeSnippet": "SsidView(\n    wifiSsids = TODO(\"List<String>\"),\n    canReadWifi = TODO(\"Boolean\"),\n    ethernet = TODO(\"Boolean?\"),\n    vpn = TODO(\"Boolean?\"),\n    prioritizeInternal = TODO(\"Boolean\"),\n    usingWifi = TODO(\"Boolean\"),\n    activeSsid = TODO(\"String?\"),\n    activeBssid = TODO(\"String?\"),\n    onAddWifiSsid = TODO(\"(String) -> Boolean\"),\n    onRemoveWifiSsid = TODO(\"(String) -> Unit\"),\n    onRequestPermission = TODO(\"() -> Unit\"),\n    onSetEthernet = TODO(\"(Boolean) -> Unit\"),\n    onSetVpn = TODO(\"(Boolean) -> Unit\"),\n    onSetPrioritize = TODO(\"(Boolean) -> Unit\"),\n)",
+      "imports": [
+        "import io.homeassistant.companion.android.settings.ssid.views.SsidView"
+      ],
+      "parameters": [
+        {
+          "name": "wifiSsids",
+          "type": "List<String>",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "canReadWifi",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "ethernet",
+          "type": "Boolean?",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "vpn",
+          "type": "Boolean?",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "prioritizeInternal",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "usingWifi",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "activeSsid",
+          "type": "String?",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "activeBssid",
+          "type": "String?",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "onAddWifiSsid",
+          "type": "(String) -> Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onRemoveWifiSsid",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onRequestPermission",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onSetEthernet",
+          "type": "(Boolean) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onSetVpn",
+          "type": "(Boolean) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onSetPrioritize",
+          "type": "(Boolean) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
+      "figmaSvg": "figma/settings-wi-fi-ssids.svg"
+    },
+    {
+      "componentId": "Settings/External URL",
+      "figmaLayerName": "Settings/External URL",
+      "componentName": "ExternalUrlView",
+      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "PreviewExternalUrlViewCloudOn",
+      "codeSnippet": "ExternalUrlView(\n    canUseCloud = TODO(\"Boolean\"),\n    useCloud = TODO(\"Boolean\"),\n    externalUrl = TODO(\"String?\"),\n    onUseCloudToggle = TODO(\"(Boolean) -> Unit\"),\n    onExternalUrlSaved = TODO(\"(String) -> Unit\"),\n)",
+      "imports": [
+        "import io.homeassistant.companion.android.settings.url.views.ExternalUrlView"
+      ],
+      "parameters": [
+        {
+          "name": "canUseCloud",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "useCloud",
+          "type": "Boolean",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "externalUrl",
+          "type": "String?",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "onUseCloudToggle",
+          "type": "(Boolean) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onExternalUrlSaved",
+          "type": "(String) -> Unit",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-external-url__ideal__default.svg"
+    },
+    {
+      "componentId": "Settings/Notification detail",
+      "figmaLayerName": "Settings/Notification detail",
+      "componentName": "LoadNotification",
+      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "PreviewNotificationDetails",
+      "codeSnippet": "LoadNotification(\n    notification = TODO(\"NotificationItem\"),\n)",
+      "imports": [
+        "import io.homeassistant.companion.android.settings.notification.views.LoadNotification"
+      ],
+      "parameters": [
+        {
+          "name": "notification",
+          "type": "NotificationItem",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
+      "figmaSvg": "figma/settings-notification-detail.svg"
+    },
+    {
+      "componentId": "Components/Icon dialog",
+      "figmaLayerName": "Components/Icon dialog",
+      "componentName": "IconDialogPreview",
+      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "IconDialogPreview",
+      "figmaSvg": "figma/components-icon-dialog.svg"
+    }
+  ]
+}

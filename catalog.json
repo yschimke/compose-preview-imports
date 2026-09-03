@@ -1,0 +1,2627 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "home-assistant-android",
+  "title": "Home Assistant Companion",
+  "components": [
+    {
+      "componentId": "Settings/Wear companion",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-wear-companion/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-wear-companion__ideal__default",
+          "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearLandingViewKt.PreviewSettingWearLandingView",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 43,
+              "y": 43,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 43,
+            "y": 43,
+            "width": 63,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 945,
+              "y": 43,
+              "width": 63,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 945,
+            "y": 43,
+            "width": 63,
+            "height": 63
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 273,
+            "width": 1050,
+            "height": 200
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 473,
+            "width": 1050,
+            "height": 200
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "section": "Screens",
+      "group": "Wear settings",
+      "caption": "Full compact-device destination for configuring a paired Wear OS companion.",
+      "wireframe": "wireframes/settings-wear-companion.svg",
+      "sourceFile": "src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
+      "sourceModule": ":app",
+      "bodyLine": 130,
+      "sourceDirectory": "app",
+      "sourceFunction": "PreviewSettingWearLandingView",
+      "parameters": [
+        {
+          "name": "deviceName",
+          "type": "String"
+        },
+        {
+          "name": "hasData",
+          "type": "Boolean"
+        },
+        {
+          "name": "isAuthed",
+          "type": "Boolean"
+        },
+        {
+          "name": "navigateFavorites",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "navigateTemplateTile",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "loginWearOs",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onBackClicked",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "events",
+          "type": "Flow<String>"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Onboarding/Matter commissioning",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/onboarding-matter-commissioning/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/onboarding-matter-commissioning__ideal__default",
+          "previewId": "io.homeassistant.companion.android.matter.MatterCommissioningScreenKt.PreviewMatterCommissioningScreen",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/onboarding-matter-commissioning__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 1922,
+              "width": 966,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 1922,
+            "width": 966,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 2100
+          },
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 24
+        },
+        {
+          "bounds": {
+            "x": 368,
+            "y": 284,
+            "width": 315,
+            "height": 315
+          },
+          "padding": {
+            "start": 0,
+            "top": 24,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 1922,
+            "width": 966,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 1000
+        },
+        {
+          "bounds": {
+            "x": 478,
+            "y": 1953,
+            "width": 95,
+            "height": 43
+          },
+          "label": "Close",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Commissioning",
+      "caption": "Wrap-content Matter commissioning panel across the states supplied by MatterCommissioningViewPreviewStates.",
+      "wireframe": "wireframes/onboarding-matter-commissioning.svg",
+      "sourceFile": "src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
+      "sourceModule": ":app",
+      "bodyLine": 266,
+      "sourceDirectory": "app",
+      "sourceFunction": "PreviewMatterCommissioningScreen",
+      "parameters": [
+        {
+          "name": "step",
+          "type": "CommissioningFlowStep"
+        },
+        {
+          "name": "deviceName",
+          "type": "String?"
+        },
+        {
+          "name": "serverChooserItems",
+          "type": "List<ServerChooserItem>"
+        },
+        {
+          "name": "onSelectServer",
+          "type": "(Int) -> Unit"
+        },
+        {
+          "name": "onConfirmCommissioning",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onClose",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onContinue",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Settings/Wi-Fi SSIDs",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-wi-fi-ssids/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1996,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-wi-fi-ssids__ideal__default",
+          "previewId": "io.homeassistant.companion.android.settings.ssid.views.SsidViewKt.PreviewSsidViewItems",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-wi-fi-ssids/ideal__empty.png",
+          "state": "empty",
+          "width": 1050,
+          "height": 1488,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-wi-fi-ssids__ideal__empty",
+          "previewId": "io.homeassistant.companion.android.settings.ssid.views.SsidViewKt.PreviewSsidViewEmpty",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 840,
+              "y": 403,
+              "width": 168,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 840,
+            "y": 403,
+            "width": 168,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 172
+          },
+          "label": "Indicate when you're connected to your home network, based on Wi-Fi, ethernet or VPN. This can be used to, for example, use the internal connection URL or disable the app lock when at home.",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 298,
+            "width": 861,
+            "height": 63
+          },
+          "label": "Wi-Fi network connected",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 840,
+            "y": 403,
+            "width": 168,
+            "height": 147
+          },
+          "role": "Button",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 592,
+            "width": 693,
+            "height": 43
+          },
+          "label": "home-assistant-wifi",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 882,
+            "y": 550,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Image",
+          "label": "Remove SSID",
+          "padding": {
+            "start": 12,
+            "top": 12,
+            "end": 12,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 718,
+            "width": 798,
+            "height": 43
+          },
+          "label": "wifi-one",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 882,
+            "y": 676,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Image",
+          "label": "Remove SSID",
+          "padding": {
+            "start": 12,
+            "top": 12,
+            "end": 12,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 844,
+            "width": 798,
+            "height": 43
+          },
+          "label": "1A:2B:3C:4D:5E:6F",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 882,
+            "y": 802,
+            "width": 126,
+            "height": 126
+          },
+          "role": "Image",
+          "label": "Remove SSID",
+          "padding": {
+            "start": 12,
+            "top": 12,
+            "end": 12,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 928,
+            "width": 1050,
+            "height": 147
+          },
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 970,
+            "width": 762,
+            "height": 63
+          },
+          "label": "VPN connected",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 951,
+            "y": 975,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1117,
+            "width": 1050,
+            "height": 147
+          },
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 1159,
+            "width": 762,
+            "height": 63
+          },
+          "label": "Ethernet connected",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 914,
+            "y": 1164,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1369,
+            "width": 924,
+            "height": 172
+          },
+          "padding": {
+            "start": 8,
+            "top": 8,
+            "end": 8,
+            "bottom": 8
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 1369,
+            "width": 924,
+            "height": 172
+          },
+          "label": "Make sure to set up your home network correctly. Adding public Wi-Fi networks or using multiple ethernet/VPN connections may unintentionally expose information about or access to your app or server.",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 1688,
+            "width": 966,
+            "height": 3
+          },
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 1691,
+            "width": 1050,
+            "height": 263
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Settings content",
+      "caption": "Wrap-content Wi-Fi settings body with saved networks and connection state.",
+      "wireframe": "wireframes/settings-wi-fi-ssids.svg",
+      "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
+      "sourceModule": ":app",
+      "bodyLine": 422,
+      "sourceDirectory": "app",
+      "sourceFunction": "PreviewSsidViewItems",
+      "parameters": [
+        {
+          "name": "wifiSsids",
+          "type": "List<String>"
+        },
+        {
+          "name": "canReadWifi",
+          "type": "Boolean"
+        },
+        {
+          "name": "ethernet",
+          "type": "Boolean?"
+        },
+        {
+          "name": "vpn",
+          "type": "Boolean?"
+        },
+        {
+          "name": "prioritizeInternal",
+          "type": "Boolean"
+        },
+        {
+          "name": "usingWifi",
+          "type": "Boolean"
+        },
+        {
+          "name": "activeSsid",
+          "type": "String?"
+        },
+        {
+          "name": "activeBssid",
+          "type": "String?"
+        },
+        {
+          "name": "onAddWifiSsid",
+          "type": "(String) -> Boolean"
+        },
+        {
+          "name": "onRemoveWifiSsid",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "onRequestPermission",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onSetEthernet",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "onSetVpn",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "onSetPrioritize",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Settings/External URL",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-external-url/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 294,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-external-url__ideal__default",
+          "previewId": "io.homeassistant.companion.android.settings.url.views.ExternalUrlViewKt.PreviewExternalUrlViewCloudOn",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-external-url__ideal__default.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-external-url/ideal__cloud-off.png",
+          "state": "cloud-off",
+          "width": 1050,
+          "height": 462,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-external-url__ideal__cloud-off",
+          "previewId": "io.homeassistant.companion.android.settings.url.views.ExternalUrlViewKt.PreviewExternalUrlViewCloudOff",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/settings-external-url/ideal__cloud-unavailable.png",
+          "state": "cloud-unavailable",
+          "width": 1050,
+          "height": 252,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-external-url__ideal__cloud-unavailable",
+          "previewId": "io.homeassistant.companion.android.settings.url.views.ExternalUrlViewKt.PreviewExternalUrlViewCloudNone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 42,
+            "width": 1050,
+            "height": 147
+          },
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 94,
+            "width": 825,
+            "height": 43
+          },
+          "label": "Use Home Assistant Cloud",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 951,
+            "y": 89,
+            "width": 53,
+            "height": 53
+          },
+          "cornerRadius": 10.1
+        }
+      ],
+      "section": "Components",
+      "group": "Settings content",
+      "caption": "Wrap-content external connection settings body with Home Assistant Cloud connected.",
+      "wireframe": "wireframes/settings-external-url.svg",
+      "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
+      "sourceModule": ":app",
+      "bodyLine": 91,
+      "sourceDirectory": "app",
+      "sourceFunction": "PreviewExternalUrlViewCloudOn",
+      "parameters": [
+        {
+          "name": "canUseCloud",
+          "type": "Boolean"
+        },
+        {
+          "name": "useCloud",
+          "type": "Boolean"
+        },
+        {
+          "name": "externalUrl",
+          "type": "String?"
+        },
+        {
+          "name": "onUseCloudToggle",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "onExternalUrlSaved",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Settings/Notification detail",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings-notification-detail/ideal__default.png",
+          "state": "default",
+          "width": 591,
+          "height": 1066,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-notification-detail__ideal__default",
+          "previewId": "io.homeassistant.companion.android.settings.notification.views.NotificationDetailViewKt.PreviewNotificationDetails",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 84,
+            "width": 549,
+            "height": 62
+          },
+          "label": "Notification received at",
+          "padding": {
+            "start": 16,
+            "top": 32,
+            "end": 0,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 188,
+            "width": 506,
+            "height": 43
+          },
+          "label": "Mon Nov 08 16:34:48 UTC 2021",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 315,
+            "width": 449,
+            "height": 62
+          },
+          "label": "Notification source",
+          "padding": {
+            "start": 16,
+            "top": 32,
+            "end": 0,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 419,
+            "width": 74,
+            "height": 43
+          },
+          "label": "FCM",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 546,
+            "width": 214,
+            "height": 62
+          },
+          "label": "Message",
+          "padding": {
+            "start": 16,
+            "top": 32,
+            "end": 0,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 650,
+            "width": 129,
+            "height": 57
+          },
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 791,
+            "width": 482,
+            "height": 62
+          },
+          "label": "Full notification data",
+          "padding": {
+            "start": 16,
+            "top": 32,
+            "end": 0,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 895,
+            "width": 312,
+            "height": 129
+          },
+          "label": "{\n    \"message\": \"test\"\n}",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "section": "Components",
+      "group": "Settings content",
+      "caption": "Wrap-content notification detail controls and explanatory content.",
+      "wireframe": "wireframes/settings-notification-detail.svg",
+      "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
+      "sourceModule": ":app",
+      "bodyLine": 95,
+      "sourceDirectory": "app",
+      "sourceFunction": "PreviewNotificationDetails",
+      "parameters": [
+        {
+          "name": "notification",
+          "type": "NotificationItem"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "Components/Icon dialog",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/components-icon-dialog/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1313,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/components-icon-dialog__ideal__default",
+          "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogKt.IconDialogPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/components-icon-dialog/ideal__search.png",
+          "state": "search",
+          "width": 1050,
+          "height": 148,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/components-icon-dialog__ideal__search",
+          "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogSearchKt.IconDialogSearchPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/components-icon-dialog/ideal__results.png",
+          "state": "results",
+          "width": 1050,
+          "height": 1313,
+          "livePreview": "https://preview.coo.ee/home-assistant-android/p/components-icon-dialog__ideal__results",
+          "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogGridKt.IconDialogGridPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 180,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 180,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 180,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 180,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 180,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 180,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 180,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 180,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 180,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 180,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 180,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 180,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 180,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 180,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 180,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 180,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 306,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 306,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 306,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 306,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 306,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 306,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 306,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 306,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 306,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 306,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 306,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 306,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 306,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 306,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 306,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 306,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 432,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 432,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 432,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 432,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 432,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 432,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 432,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 432,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 432,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 432,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 432,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 432,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 432,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 432,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 432,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 432,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 558,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 558,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 558,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 558,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 558,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 558,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 558,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 558,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 558,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 558,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 558,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 558,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 558,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 558,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 558,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 558,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 684,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 684,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 684,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 684,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 684,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 684,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 684,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 684,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 684,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 684,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 684,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 684,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 684,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 684,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 684,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 684,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 810,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 810,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 810,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 810,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 810,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 810,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 810,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 810,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 810,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 810,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 810,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 810,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 810,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 810,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 810,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 810,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 936,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 936,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 936,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 936,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 936,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 936,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 936,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 936,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 936,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 936,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 936,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 936,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 936,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 936,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 936,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 936,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 1062,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 1062,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 1062,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 1062,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 1062,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 1062,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 1062,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 1062,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 1062,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 1062,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 1062,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 1062,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 1062,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 1062,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 1062,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 1062,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 1188,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 1188,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 132,
+              "y": 1188,
+              "width": 132,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 132,
+            "y": 1188,
+            "width": 132,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 264,
+              "y": 1188,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 264,
+            "y": 1188,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 1188,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 1188,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 526,
+              "y": 1188,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 526,
+            "y": 1188,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 657,
+              "y": 1188,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 657,
+            "y": 1188,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 788,
+              "y": 1188,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 788,
+            "y": 1188,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 919,
+              "y": 1188,
+              "width": 131,
+              "height": 63
+            }
+          },
+          "bounds": {
+            "x": 919,
+            "y": 1188,
+            "width": 131,
+            "height": 63
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 1050,
+            "height": 1313
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "section": "Components",
+      "group": "Dialogs",
+      "caption": "Icon picker dialog shell with search and result content.",
+      "wireframe": "wireframes/components-icon-dialog.svg",
+      "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
+      "sourceModule": ":app",
+      "bodyLine": 60,
+      "sourceDirectory": "app",
+      "sourceFunction": "IconDialogPreview"
+    }
+  ],
+  "library": [
+    "Jetpack Compose Material + Home Assistant theme"
+  ],
+  "renderer": "compose-preview 1.69.0",
+  "generatedAt": "2026-09-03T07:48:33.056Z",
+  "display": {
+    "surface": "light",
+    "hero": "Settings/Wear companion"
+  },
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":app",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "home-assistant/android",
+    "ref": "6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe",
+    "module": ":app"
+  }
+}

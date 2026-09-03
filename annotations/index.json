@@ -1,0 +1,1711 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "settings-wear-companion__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 273,
+          "width": 1050,
+          "height": 200
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 473,
+          "width": 1050,
+          "height": 200
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 184,
+          "width": 480,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Manage device Device Name",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "700"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 315,
+          "width": 318,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Favorite entities",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 378,
+          "width": 531,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Set favorites on Wear OS device",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 515,
+          "width": 282,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Template tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 578,
+          "width": 734,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Configure templates to use as Wear OS tiles",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 190,
+          "y": 42,
+          "width": 492,
+          "height": 63
+        },
+        "label": "text 20sp/24",
+        "role": "Wear device settings",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "20",
+          "lineHeight": "24",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "onboarding-matter-commissioning__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 2100
+        },
+        "label": "pad 0dp/16dp · gap 24dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "24",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 368,
+          "y": 284,
+          "width": 315,
+          "height": 315
+        },
+        "label": "pad t 24dp e 0dp b 0dp s 0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "24",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 1922,
+          "width": 966,
+          "height": 105
+        },
+        "label": "r 1000dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "1000",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 478,
+          "y": 1953,
+          "width": 95,
+          "height": 43
+        },
+        "label": "pad 0dp/16dp",
+        "role": "Close",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 182,
+          "y": 715,
+          "width": 687,
+          "height": 99
+        },
+        "label": "text 32sp/40",
+        "role": "Add Matter device",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "32",
+          "lineHeight": "40",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 877,
+          "width": 966,
+          "height": 112
+        },
+        "label": "text 16sp/24",
+        "role": "Please connect to your Home Assistant server before adding a Matter device.",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 478,
+          "y": 1953,
+          "width": 95,
+          "height": 43
+        },
+        "label": "text 14sp/24",
+        "role": "Close",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "24",
+          "fontWeight": "500"
+        }
+      }
+    ],
+    "settings-wi-fi-ssids__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 172
+        },
+        "label": "pad 0dp/16dp",
+        "role": "Indicate when you're connected to your home network, based on Wi-Fi, ethernet or VPN. This can be used to, for example, use the internal connection URL or disable the app lock when at home.",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 298,
+          "width": 861,
+          "height": 63
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 16dp",
+        "role": "Wi-Fi network connected",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 840,
+          "y": 403,
+          "width": 168,
+          "height": 147
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 8dp · r 4dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 592,
+          "width": 693,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "home-assistant-wifi",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 882,
+          "y": 550,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 12dp",
+        "role": "Remove SSID",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 718,
+          "width": 798,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "wifi-one",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 882,
+          "y": 676,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 12dp",
+        "role": "Remove SSID",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 844,
+          "width": 798,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "1A:2B:3C:4D:5E:6F",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 882,
+          "y": 802,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 12dp",
+        "role": "Remove SSID",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 928,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 0dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 970,
+          "width": 762,
+          "height": 63
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 16dp",
+        "role": "VPN connected",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 951,
+          "y": 975,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 1117,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 0dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 1159,
+          "width": 762,
+          "height": 63
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 16dp",
+        "role": "Ethernet connected",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 914,
+          "y": 1164,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 1369,
+          "width": 924,
+          "height": 172
+        },
+        "label": "pad 8dp · r 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 1369,
+          "width": 924,
+          "height": 172
+        },
+        "label": "pad 0dp",
+        "role": "Make sure to set up your home network correctly. Adding public Wi-Fi networks or using multiple ethernet/VPN connections may unintentionally expose information about or access to your app or server.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 1688,
+          "width": 966,
+          "height": 3
+        },
+        "label": "pad 0dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 1691,
+          "width": 1050,
+          "height": 263
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 298,
+          "width": 861,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Wi-Fi network connected",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 445,
+          "width": 292,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "New Wi-Fi SSID",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 888,
+          "y": 455,
+          "width": 72,
+          "height": 43
+        },
+        "label": "text 14sp/16",
+        "role": "Add",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 970,
+          "width": 762,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "VPN connected",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 1159,
+          "width": 762,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ethernet connected",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1733,
+          "width": 966,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "When loading dashboard and unknown if connected to home network",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1859,
+          "width": 694,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Use Home Assistant URL (recommended)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "settings-wi-fi-ssids__ideal__empty": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 172
+        },
+        "label": "pad 0dp/16dp",
+        "role": "Indicate when you're connected to your home network, based on Wi-Fi, ethernet or VPN. This can be used to, for example, use the internal connection URL or disable the app lock when at home.",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 298,
+          "width": 861,
+          "height": 63
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 16dp",
+        "role": "Wi-Fi network connected",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 840,
+          "y": 403,
+          "width": 168,
+          "height": 147
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 8dp · r 4dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 592,
+          "width": 693,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "home-assistant-wifi",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 882,
+          "y": 550,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 12dp",
+        "role": "Remove SSID",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 718,
+          "width": 798,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "wifi-one",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 882,
+          "y": 676,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 12dp",
+        "role": "Remove SSID",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 844,
+          "width": 798,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "1A:2B:3C:4D:5E:6F",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 882,
+          "y": 802,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 12dp",
+        "role": "Remove SSID",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 928,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 0dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 970,
+          "width": 762,
+          "height": 63
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 16dp",
+        "role": "VPN connected",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 951,
+          "y": 975,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 1117,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 0dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 147,
+          "y": 1159,
+          "width": 762,
+          "height": 63
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 16dp",
+        "role": "Ethernet connected",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 914,
+          "y": 1164,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 1369,
+          "width": 924,
+          "height": 172
+        },
+        "label": "pad 8dp · r 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "8",
+          "padding.end": "8",
+          "padding.bottom": "8",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 1369,
+          "width": 924,
+          "height": 172
+        },
+        "label": "pad 0dp",
+        "role": "Make sure to set up your home network correctly. Adding public Wi-Fi networks or using multiple ethernet/VPN connections may unintentionally expose information about or access to your app or server.",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 1688,
+          "width": 966,
+          "height": 3
+        },
+        "label": "pad 0dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 1691,
+          "width": 1050,
+          "height": 263
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 298,
+          "width": 861,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Wi-Fi network connected",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 445,
+          "width": 292,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "New Wi-Fi SSID",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 888,
+          "y": 455,
+          "width": 72,
+          "height": 43
+        },
+        "label": "text 14sp/16",
+        "role": "Add",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "500"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 970,
+          "width": 762,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "VPN connected",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 147,
+          "y": 1159,
+          "width": 762,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Ethernet connected",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1733,
+          "width": 966,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "When loading dashboard and unknown if connected to home network",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 1859,
+          "width": 694,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Use Home Assistant URL (recommended)",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "settings-external-url__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 42,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 8dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "8",
+          "padding.end": "16",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 94,
+          "width": 825,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "Use Home Assistant Cloud",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 951,
+          "y": 89,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      }
+    ],
+    "settings-external-url__ideal__cloud-off": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 42,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 8dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "8",
+          "padding.end": "16",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 94,
+          "width": 825,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "Use Home Assistant Cloud",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 951,
+          "y": 89,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      }
+    ],
+    "settings-external-url__ideal__cloud-unavailable": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 42,
+          "width": 1050,
+          "height": 147
+        },
+        "label": "pad 8dp/16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "8",
+          "padding.end": "16",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 94,
+          "width": 825,
+          "height": 43
+        },
+        "label": "pad t 0dp e 16dp b 0dp s 0dp",
+        "role": "Use Home Assistant Cloud",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 951,
+          "y": 89,
+          "width": 53,
+          "height": 53
+        },
+        "label": "r 10.1dp",
+        "detail": {
+          "cornerRadius": "10.1",
+          "unit": "dp"
+        }
+      }
+    ],
+    "settings-notification-detail__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 84,
+          "width": 549,
+          "height": 62
+        },
+        "label": "pad t 32dp e 0dp b 16dp s 16dp",
+        "role": "Notification received at",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "32",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 188,
+          "width": 506,
+          "height": 43
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 24dp",
+        "role": "Mon Nov 08 16:34:48 UTC 2021",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 315,
+          "width": 449,
+          "height": 62
+        },
+        "label": "pad t 32dp e 0dp b 16dp s 16dp",
+        "role": "Notification source",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "32",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 419,
+          "width": 74,
+          "height": 43
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 24dp",
+        "role": "FCM",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 546,
+          "width": 214,
+          "height": 62
+        },
+        "label": "pad t 32dp e 0dp b 16dp s 16dp",
+        "role": "Message",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "32",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 650,
+          "width": 129,
+          "height": 57
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 24dp",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 791,
+          "width": 482,
+          "height": 62
+        },
+        "label": "pad t 32dp e 0dp b 16dp s 16dp",
+        "role": "Full notification data",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "32",
+          "padding.end": "0",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 895,
+          "width": 312,
+          "height": 129
+        },
+        "label": "pad t 0dp e 0dp b 0dp s 24dp",
+        "role": "{\n    \"message\": \"test\"\n}",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 84,
+          "width": 549,
+          "height": 62
+        },
+        "label": "text 20sp",
+        "role": "Notification received at",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "20",
+          "fontWeight": "800"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 315,
+          "width": 449,
+          "height": 62
+        },
+        "label": "text 20sp",
+        "role": "Notification source",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "20",
+          "fontWeight": "800"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 546,
+          "width": 214,
+          "height": 62
+        },
+        "label": "text 20sp",
+        "role": "Message",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "20",
+          "fontWeight": "800"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 791,
+          "width": 482,
+          "height": 62
+        },
+        "label": "text 20sp",
+        "role": "Full notification data",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "20",
+          "fontWeight": "800"
+        }
+      }
+    ],
+    "components-icon-dialog__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 1313
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 148
+        },
+        "label": "text 16sp/24",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 137,
+          "y": 43,
+          "width": 245,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Search icons",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "components-icon-dialog__ideal__search": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 1313
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 148
+        },
+        "label": "text 16sp/24",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 137,
+          "y": 43,
+          "width": 245,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Search icons",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      }
+    ],
+    "components-icon-dialog__ideal__results": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 1313
+        },
+        "label": "r 4dp",
+        "detail": {
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 1050,
+          "height": 148
+        },
+        "label": "text 16sp/24",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 137,
+          "y": 43,
+          "width": 245,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Search icons",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400"
+        }
+      }
+    ]
+  },
+  "references": {}
+}
