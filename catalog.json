@@ -14,7 +14,8 @@
           "height": 310,
           "livePreview": "https://preview.coo.ee/joreilly-peopleinspace/p/person-view__ideal__default",
           "previewId": "dev.johnoreilly.peopleinspace.personlist.PersonListScreenKt.PersonViewPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-peopleinspace/render/person-view__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -94,8 +95,8 @@
       "sourceFunction": "PeopleInSpaceCardPreview"
     }
   ],
-  "renderer": "compose-preview 1.63.0",
-  "generatedAt": "2026-09-02T08:55:18.784Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:13:00.285Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -110,7 +111,7 @@
   ],
   "source": {
     "repo": "joreilly/PeopleInSpace",
-    "ref": "d6f4b1a843c82a1d8fbc913ded27b4eb084028c5",
+    "ref": "c22f798306a1f49a4de41def045320e168fd4262",
     "module": ":app"
   }
 }

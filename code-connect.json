@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "joreilly/PeopleInSpace",
-    "ref": "d6f4b1a843c82a1d8fbc913ded27b4eb084028c5",
+    "ref": "c22f798306a1f49a4de41def045320e168fd4262",
     "module": ":app"
   },
-  "generatedAt": "2026-09-02T08:55:19.432Z",
+  "generatedAt": "2026-09-03T10:13:00.934Z",
   "mappings": [
     {
       "componentId": "person-view",
       "figmaLayerName": "person-view",
       "componentName": "PersonView",
-      "source": "https://github.com/joreilly/PeopleInSpace/blob/d6f4b1a843c82a1d8fbc913ded27b4eb084028c5/app/dev/johnoreilly/peopleinspace/personlist/PersonListScreen.kt",
+      "source": "https://github.com/joreilly/PeopleInSpace/blob/c22f798306a1f49a4de41def045320e168fd4262/app/dev/johnoreilly/peopleinspace/personlist/PersonListScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PersonViewPreview",
@@ -26,28 +26,34 @@
           "name": "index",
           "type": "Int",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "person",
           "type": "Assignment",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "personSelected",
           "type": "(Assignment) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
-      "figmaSvg": "figma/person-view.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-peopleinspace/render/person-view__ideal__default.svg"
     },
     {
       "componentId": "people-in-space-card",
       "figmaLayerName": "people-in-space-card",
       "componentName": "PeopleInSpaceCardPreview",
-      "source": "https://github.com/joreilly/PeopleInSpace/blob/d6f4b1a843c82a1d8fbc913ded27b4eb084028c5/app/src/main/java/dev/johnoreilly/peopleinspace/peopleinspace/remotecompose/PeopleInSpaceCard.kt",
+      "source": "https://github.com/joreilly/PeopleInSpace/blob/c22f798306a1f49a4de41def045320e168fd4262/app/src/main/java/dev/johnoreilly/peopleinspace/peopleinspace/remotecompose/PeopleInSpaceCard.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PeopleInSpaceCardPreview",
