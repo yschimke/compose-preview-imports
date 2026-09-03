@@ -7,7 +7,7 @@
     "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
     "module": ":common"
   },
-  "generatedAt": "2026-09-02T08:54:38.418Z",
+  "generatedAt": "2026-09-03T09:57:44.353Z",
   "mappings": [
     {
       "componentId": "station-view",
@@ -26,10 +26,12 @@
           "name": "station",
           "type": "Station",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
-      "figmaSvg": "figma/station-view.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view__ideal__default.svg"
     },
     {
       "componentId": "station-view-mixed",
@@ -39,7 +41,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "StationViewMixedPreview",
-      "figmaSvg": "figma/station-view-mixed.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-mixed__ideal__default.svg"
     },
     {
       "componentId": "station-view-full",
@@ -49,7 +51,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "StationViewFullPreview",
-      "figmaSvg": "figma/station-view-full.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-full__ideal__default.svg"
     },
     {
       "componentId": "station-view-empty",
@@ -59,7 +61,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "StationViewEmptyPreview",
-      "figmaSvg": "figma/station-view-empty.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-empty__ideal__default.svg"
     },
     {
       "componentId": "station-list",
@@ -69,7 +71,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "StationListContentPreview",
-      "figmaSvg": "figma/station-list.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-list__ideal__default.svg"
     },
     {
       "componentId": "network-view",
@@ -79,7 +81,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "NetworkViewPreview",
-      "figmaSvg": "figma/network-view.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/network-view__ideal__default.svg"
     },
     {
       "componentId": "network-list",
@@ -89,7 +91,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "NetworkListPreview",
-      "figmaSvg": "figma/network-list.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/network-list__ideal__default.svg"
     },
     {
       "componentId": "country-view",
@@ -114,12 +116,42 @@
     {
       "componentId": "color-scheme",
       "figmaLayerName": "color-scheme",
-      "componentName": "ColorSchemeSpecimenPreview",
+      "componentName": "Swatch",
       "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "ColorSchemeSpecimenPreview",
-      "figmaSvg": "figma/color-scheme.svg"
+      "codeSnippet": "Swatch(\n    name = TODO(\"String\"),\n    color = TODO(\"Color\"),\n    onColor = TODO(\"Color\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.ui.Swatch"
+      ],
+      "parameters": [
+        {
+          "name": "name",
+          "type": "String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "onColor",
+          "type": "Color",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/color-scheme__ideal__default.svg"
     },
     {
       "componentId": "typography",
@@ -129,7 +161,7 @@
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "TypographySpecimenPreview",
-      "figmaSvg": "figma/typography.svg"
+      "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/typography__ideal__default.svg"
     }
   ]
 }

@@ -14,7 +14,8 @@
           "height": 348,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view__ideal__default",
           "previewId": "dev.johnoreilly.common.stationlist.StationListUIKt.StationViewPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -88,7 +89,8 @@
           "height": 348,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view-mixed__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewMixedPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-mixed__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -156,7 +158,8 @@
           "height": 348,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view-full__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewFullPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-full__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -224,7 +227,8 @@
           "height": 348,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-view-empty__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewEmptyPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-empty__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -292,7 +296,8 @@
           "height": 1086,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/station-list__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationListContentPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-list__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -444,7 +449,8 @@
           "height": 200,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/network-view__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.NetworkViewPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/network-view__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -488,7 +494,8 @@
           "height": 642,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/network-list__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.NetworkListPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/network-list__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -716,7 +723,8 @@
           "height": 1067,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/color-scheme__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.ColorSchemeSpecimenPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/color-scheme__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -921,7 +929,21 @@
       "sourceModule": ":common",
       "bodyLine": 169,
       "sourceDirectory": "common",
-      "sourceFunction": "ColorSchemeSpecimenPreview"
+      "sourceFunction": "ColorSchemeSpecimenPreview",
+      "parameters": [
+        {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "color",
+          "type": "Color"
+        },
+        {
+          "name": "onColor",
+          "type": "Color"
+        }
+      ]
     },
     {
       "componentId": "typography",
@@ -934,7 +956,8 @@
           "height": 869,
           "livePreview": "https://preview.coo.ee/joreilly-bikeshare/p/typography__ideal__default",
           "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.TypographySpecimenPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/typography__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -949,8 +972,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 1.63.0",
-  "generatedAt": "2026-09-02T08:54:37.946Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T09:57:43.874Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
