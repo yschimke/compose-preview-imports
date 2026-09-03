@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project. Unlike every other import here, this inventory was not written from the outside: google/horologist already carries this spec at its repository root, beside a design-artifacts workflow that has never published a delivery branch (the repository has none). So this is that file, copied at the commit named in import.json's notes and kept in step with it — the maintainers' own description of their own previews, which beats a re-derived one. `modules: all` renders them wherever they live, exactly as the upstream workflow would. Apache-2.0, like the code it describes.",
+  "$comment": "Cover sheet for an IMPORTED project. Unlike every other import here, this inventory was not written from the outside: google/horologist already carries this spec at its repository root, beside a design-artifacts workflow that has never published a delivery branch (the repository has none). So this is that file, copied at the commit named in import.json's notes and kept in step with it — the maintainers' own description of their own previews, which beats a re-derived one. `modules: all` renders them wherever they live, exactly as the upstream workflow would. Apache-2.0, like the code it describes. It diverges from upstream's copy in one place: `breakpoints` is declared here. The Wear device names are applied automatically only to a catalog whose `library` names an `androidx.wear.compose:` coordinate, and this one names `com.google.android.horologist`, so 192 dp and 227 dp both classified as the generic Material `compact` and two renders of the same component landed on one output axis.",
   "system": "horologist",
   "title": "Horologist",
   "library": [
@@ -9,6 +9,28 @@
   "modes": [
     "dark",
     "light"
+  ],
+  "breakpoints": [
+    {
+      "size": "smallRound",
+      "widthDp": 192,
+      "device": "id:wearos_small_round"
+    },
+    {
+      "size": "largeRound",
+      "widthDp": 227,
+      "device": "id:wearos_large_round"
+    },
+    {
+      "size": "xlRound",
+      "widthDp": 240,
+      "device": "id:wearos_xl_round"
+    },
+    {
+      "size": "smallSquare",
+      "widthDp": 180,
+      "device": "id:wearos_square"
+    }
   ],
   "display": {
     "surface": "dark"
