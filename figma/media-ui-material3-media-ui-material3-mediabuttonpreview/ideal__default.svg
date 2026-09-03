@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="104" viewBox="0 0 104 104" text-rendering="geometricPrecision" font-family="sans-serif">
+<defs>
+  <g id="material-icon-materialicons-album">
+    <path d="M12 2 C 6.48 2 2 6.48 2 12 s 4.48 10 10 10 s 10 -4.48 10 -10 S 17.52 2 12 2 Z M12 16.5 c -2.49 0 -4.5 -2.01 -4.5 -4.5 S 9.51 7.5 12 7.5 s 4.5 2.01 4.5 4.5 s -2.01 4.5 -4.5 4.5 Z M12 11 c -0.55 0 -1 0.45 -1 1 s 0.45 1 1 1 s 1 -0.45 1 -1 s -0.45 -1 -1 -1 Z" fill="#210F48"/>
+  </g>
+</defs>
+<g transform="translate(0, 0)">
+  <g id="Root">
+    <clipPath id="clip-0"><rect x="0" y="0" width="104" height="104" rx="52" ry="52"/></clipPath>
+    <g id="ReusableComposeNode">
+      <image href="ideal__default.figma-raster/337.png" x="0" y="0" width="104" height="104" clip-path="url(#clip-0)"/>
+      <g clip-path="url(#clip-0)">
+        <g id="ReusableComposeNode" data-material-icon="album" data-material-icon-style="Filled" data-material-icon-url="https://fonts.gstatic.com/s/i/materialicons/album/v1/24px.svg">
+          <g transform="translate(20 20) scale(2.66 2.66)">
+            <use href="#material-icon-materialicons-album" xlink:href="#material-icon-materialicons-album"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>

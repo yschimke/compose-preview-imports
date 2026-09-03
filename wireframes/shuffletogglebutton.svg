@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454 136" width="454" height="136" role="img" aria-label="ShuffleToggleButton layout wireframe">
+  <title>ShuffleToggleButton — layout wireframe (slots + tokens)</title>
+  <rect width="454" height="136" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="454" height="136" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="136" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="16" y="16" width="422" height="104" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M68,16 H68 A52,52 0 0 1 120,68 V68 A52,52 0 0 1 68,120 H68 A52,52 0 0 1 16,68 V68 A52,52 0 0 1 68,16 Z" fill="#000000" fill-opacity="0.38" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="19" y="28" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#61000000</text>
+  </g>
+  <g>
+    <rect x="44" y="44" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M188,16 H188 A52,52 0 0 1 240,68 V68 A52,52 0 0 1 188,120 H188 A52,52 0 0 1 136,68 V68 A52,52 0 0 1 188,16 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="164" y="44" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M308,16 H308 A52,52 0 0 1 360,68 V68 A52,52 0 0 1 308,120 H308 A52,52 0 0 1 256,68 V68 A52,52 0 0 1 308,16 Z" fill="#000000" fill-opacity="0.38" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="259" y="28" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#61000000</text>
+  </g>
+  <g>
+    <rect x="284" y="44" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M407,16 H407 A31,31 0 0 1 438,47 V89 A31,31 0 0 1 407,120 H407 A31,31 0 0 1 376,89 V47 A31,31 0 0 1 407,16 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="383" y="44" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 454 454" width="454" height="454" role="img" aria-label="ai/ui/TextPromptDisplayPreview layout wireframe">
+  <title>ai/ui/TextPromptDisplayPreview — layout wireframe (slots + tokens)</title>
+  <rect width="454" height="454" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="454" height="454" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M64,187 H390 A40,40 0 0 1 430,227 V227 A40,40 0 0 1 390,267 H64 A40,40 0 0 1 24,227 V227 A40,40 0 0 1 64,187 Z" fill="#3A4376" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="27" y="199" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FF3A4376  pad 12.0dp</text>
+  </g>
+  <g>
+    <rect x="24" y="187" width="406" height="74" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

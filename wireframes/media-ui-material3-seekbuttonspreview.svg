@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 104" width="416" height="104" role="img" aria-label="media/ui-material3/SeekButtonsPreview layout wireframe">
+  <title>media/ui-material3/SeekButtonsPreview — layout wireframe (slots + tokens)</title>
+  <rect width="416" height="104" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="416" height="104" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="416" height="104" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="416" height="104" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M52,0 H52 A52,52 0 0 1 104,52 V52 A52,52 0 0 1 52,104 H52 A52,52 0 0 1 0,52 V52 A52,52 0 0 1 52,0 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">pad 0.0dp</text>
+  </g>
+  <g>
+    <rect x="28" y="28" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M156,0 H156 A52,52 0 0 1 208,52 V52 A52,52 0 0 1 156,104 H156 A52,52 0 0 1 104,52 V52 A52,52 0 0 1 156,0 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="107" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">pad 0.0dp</text>
+  </g>
+  <g>
+    <rect x="132" y="28" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M260,0 H260 A52,52 0 0 1 312,52 V52 A52,52 0 0 1 260,104 H260 A52,52 0 0 1 208,52 V52 A52,52 0 0 1 260,0 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="211" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">pad 0.0dp</text>
+  </g>
+  <g>
+    <rect x="236" y="28" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M364,0 H364 A52,52 0 0 1 416,52 V52 A52,52 0 0 1 364,104 H364 A52,52 0 0 1 312,52 V52 A52,52 0 0 1 364,0 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="315" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">pad 0.0dp</text>
+  </g>
+  <g>
+    <rect x="340" y="28" width="48" height="48" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

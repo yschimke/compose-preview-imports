@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="454" height="454" viewBox="0 0 454 454" text-rendering="geometricPrecision" font-family="sans-serif">
+<clipPath id="deviceRound"><circle cx="227" cy="227" r="227"/></clipPath>
+<g transform="translate(0, 0)" clip-path="url(#deviceRound)">
+  <g id="Root">
+    <g id="ReusableComposeNode">
+        <rect x="0" y="0" width="454" height="454" fill="#000000"/>
+      <g id="ReusableComposeNode">
+        <g id="Column">
+          <image href="sample-scrollawayscreenpreview.figma-raster/440.png" x="0" y="0" width="454" height="227"/>
+        </g>
+        <g id="Column">
+          <image href="sample-scrollawayscreenpreview.figma-raster/444.png" x="0" y="227" width="454" height="227"/>
+        </g>
+      </g>
+      <g id="ReusableComposeNode">
+        <path id="curve-c0" d="M 191.93 34.74 A 195.42 195.42 0 0 1 262.06 34.74" fill="none"/><text font-size="28" font-weight="500" fill="#FFFFFF" dominant-baseline="alphabetic"><textPath href="#curve-c0" startOffset="50%" text-anchor="middle">10:10</textPath></text>
+        <g id="ReusableComposeNode">
+        </g>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
