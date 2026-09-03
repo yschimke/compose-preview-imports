@@ -1,0 +1,173 @@
+{
+  "schema": "compose-preview-tags/v1",
+  "previews": {
+    "large-top-app-bar__ideal__default": {
+      "KaigiTopAppBarBackButtonTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 22,
+          "y": 32,
+          "width": 105,
+          "height": 105
+        },
+        "space": "render-pixels"
+      }
+    },
+    "timetable-time-range__ideal__default": {
+      "TimetableLiveBadgeTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 381,
+          "y": 64,
+          "width": 142,
+          "height": 58
+        },
+        "space": "render-pixels"
+      }
+    },
+    "timetable-live-badge__ideal__default": {
+      "TimetableLiveBadgeTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 142,
+          "height": 58
+        },
+        "space": "render-pixels"
+      }
+    },
+    "doodle-canvas__ideal__default": {
+      "DoodleCanvasFrameTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 869,
+          "height": 646
+        },
+        "space": "render-pixels"
+      }
+    },
+    "doodle-canvas-magnified__ideal__default": {
+      "DoodleCanvasFrameTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 869,
+          "height": 646
+        },
+        "space": "render-pixels"
+      }
+    },
+    "doodle-ink-row__ideal__default": {
+      "DoodleInkSwatch:Ink": {
+        "count": 1,
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      },
+      "DoodleInkSwatch:Band": {
+        "count": 1,
+        "bounds": {
+          "x": 179,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      },
+      "DoodleInkSwatch:Paper": {
+        "count": 1,
+        "bounds": {
+          "x": 316,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      },
+      "DoodleInkSwatch:Banner": {
+        "count": 1,
+        "bounds": {
+          "x": 453,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      }
+    },
+    "doodle-ink-row-selected__ideal__default": {
+      "DoodleInkSwatch:Ink": {
+        "count": 1,
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      },
+      "DoodleInkSwatch:Band": {
+        "count": 1,
+        "bounds": {
+          "x": 179,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      },
+      "DoodleInkSwatch:Paper": {
+        "count": 1,
+        "bounds": {
+          "x": 316,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      },
+      "DoodleInkSwatch:Banner": {
+        "count": 1,
+        "bounds": {
+          "x": 453,
+          "y": 42,
+          "width": 116,
+          "height": 116
+        },
+        "space": "render-pixels"
+      }
+    },
+    "doodle-outline-toggle__ideal__default": {
+      "DoodleOutlineToggleTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 42,
+          "y": 58,
+          "width": 274,
+          "height": 95
+        },
+        "space": "render-pixels"
+      }
+    },
+    "doodle-outline-toggle-off__ideal__default": {
+      "DoodleOutlineToggleTestTag": {
+        "count": 1,
+        "bounds": {
+          "x": 42,
+          "y": 58,
+          "width": 216,
+          "height": 95
+        },
+        "space": "render-pixels"
+      }
+    }
+  }
+}

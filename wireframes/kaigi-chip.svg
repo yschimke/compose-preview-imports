@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 142" width="360" height="142" role="img" aria-label="kaigi-chip layout wireframe">
+  <title>kaigi-chip — layout wireframe (slots + tokens)</title>
+  <rect width="360" height="142" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="360" height="142" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="360" height="142" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="276" height="58" fill="#D6DCE8" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFD6DCE8  pad 16.0dp  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="42" y="42" width="175" height="58" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="63" y="50" width="133" height="42" fill="#E2DCFE" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="66" y="62" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFE2DCFE  pad ·  gap 4.0dp</text>
+  </g>
+  <g>
+    <rect x="63" y="50" width="133" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="175" height="58" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="238" y="42" width="80" height="58" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="259" y="50" width="38" height="42" fill="#E8D8B8" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="262" y="62" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFE8D8B8  pad ·  gap 4.0dp</text>
+  </g>
+  <g>
+    <rect x="259" y="50" width="38" height="42" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="238" y="42" width="80" height="58" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

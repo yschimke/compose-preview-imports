@@ -1,0 +1,3834 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "droidkaigi-conference-app-2026",
+  "title": "DroidKaigi 2026",
+  "components": [
+    {
+      "componentId": "kaigi-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/kaigi-button/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 368,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/kaigi-button__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiButtonKt.KaigiButtonPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 47,
+              "width": 966,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 47,
+            "width": 966,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 205,
+              "width": 472,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 205,
+            "width": 472,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 535,
+              "y": 205,
+              "width": 473,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 535,
+            "y": 205,
+            "width": 473,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 284
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 12
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 47,
+            "width": 966,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 205,
+            "width": 472,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 535,
+            "y": 205,
+            "width": 473,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Controls",
+      "caption": "The conference app's button.",
+      "wireframe": "wireframes/kaigi-button.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 202,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiButtonPreview"
+    },
+    {
+      "componentId": "kaigi-icon-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/kaigi-icon-button/ideal__default.png",
+          "state": "default",
+          "width": 448,
+          "height": 184,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/kaigi-icon-button__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiIconButtonKt.KaigiIconButtonPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/kaigi-icon-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 174,
+              "y": 42,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 174,
+            "y": 42,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 306,
+              "y": 42,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 306,
+            "y": 42,
+            "width": 100,
+            "height": 100
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 364,
+            "height": 100
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 12
+        }
+      ],
+      "group": "Controls",
+      "caption": "Its icon-only form.",
+      "wireframe": "wireframes/kaigi-icon-button.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiIconButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 98,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiIconButtonPreview"
+    },
+    {
+      "componentId": "kaigi-text-field",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/kaigi-text-field/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 496,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/kaigi-text-field__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTextFieldKt.KaigiTextFieldPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 412
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 12
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 74,
+            "width": 902,
+            "height": 52
+          },
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 222,
+            "width": 902,
+            "height": 52
+          },
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 74,
+            "y": 367,
+            "width": 902,
+            "height": 59
+          },
+          "padding": {
+            "start": 12,
+            "top": 0,
+            "end": 12,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Controls",
+      "caption": "The text field.",
+      "wireframe": "wireframes/kaigi-text-field.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTextField.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 98,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiTextFieldPreview"
+    },
+    {
+      "componentId": "kaigi-chip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/kaigi-chip/ideal__default.png",
+          "state": "default",
+          "width": 360,
+          "height": 142,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/kaigi-chip__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiChipKt.KaigiChipPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 276,
+            "height": 58
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 63,
+            "y": 50,
+            "width": 133,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 259,
+            "y": 50,
+            "width": 38,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        }
+      ],
+      "group": "Controls",
+      "caption": "The base chip.",
+      "wireframe": "wireframes/kaigi-chip.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiChip.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 87,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiChipPreview"
+    },
+    {
+      "componentId": "kaigi-filter-chip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/kaigi-filter-chip/ideal__default.png",
+          "state": "default",
+          "width": 438,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/kaigi-filter-chip__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiFilterChipKt.KaigiFilterChipPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 354,
+            "height": 126
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Controls",
+      "caption": "The filter chip, which is how the timetable is narrowed.",
+      "wireframe": "wireframes/kaigi-filter-chip.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiFilterChip.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 140,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiFilterChipPreview"
+    },
+    {
+      "componentId": "language-chip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/language-chip/ideal__default.png",
+          "state": "default",
+          "width": 80,
+          "height": 58,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/language-chip__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.LanguageChipKt.LanguageChipPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 21,
+            "y": 8,
+            "width": 38,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        }
+      ],
+      "group": "Controls",
+      "caption": "The chip marking a session's language — a bilingual conference's most-used badge.",
+      "wireframe": "wireframes/language-chip.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanguageChip.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 27,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "LanguageChipPreview"
+    },
+    {
+      "componentId": "language-toggle",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/language-toggle/ideal__default.png",
+          "state": "default",
+          "width": 336,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/language-toggle__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.LanguageToggleButtonKt.LanguageToggleButtonPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 53,
+              "y": 53,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 53,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 179,
+              "y": 53,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 179,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 252,
+            "height": 126
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 53,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 179,
+            "y": 53,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Controls",
+      "caption": "The toggle that switches the app between Japanese and English.",
+      "wireframe": "wireframes/language-toggle.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanguageToggleButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 66,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "LanguageToggleButtonPreview"
+    },
+    {
+      "componentId": "room-chip",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/room-chip/ideal__default.png",
+          "state": "default",
+          "width": 852,
+          "height": 142,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/room-chip__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.RoomChipKt.RoomChipPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 63,
+            "y": 50,
+            "width": 165,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 286,
+            "y": 50,
+            "width": 127,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 471,
+            "y": 50,
+            "width": 165,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 694,
+            "y": 50,
+            "width": 95,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        }
+      ],
+      "group": "Controls",
+      "caption": "The room chip, colour-coded per track.",
+      "wireframe": "wireframes/room-chip.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/RoomChip.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 88,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "RoomChipPreview"
+    },
+    {
+      "componentId": "segmented-first",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/segmented-first/ideal__default.png",
+          "state": "default",
+          "width": 714,
+          "height": 189,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/segmented-first__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSegmentedButtonFirstSelectedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 630,
+            "height": 105
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Controls",
+      "caption": "The segmented control with its first segment selected.",
+      "wireframe": "wireframes/segmented-first.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 205,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiSegmentedButtonFirstSelectedPreview"
+    },
+    {
+      "componentId": "segmented-second",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/segmented-second/ideal__default.png",
+          "state": "default",
+          "width": 714,
+          "height": 189,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/segmented-second__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSegmentedButtonSecondSelectedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 630,
+            "height": 105
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Controls",
+      "caption": "With the second selected.",
+      "wireframe": "wireframes/segmented-second.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 228,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiSegmentedButtonSecondSelectedPreview"
+    },
+    {
+      "componentId": "segmented-three",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/segmented-three/ideal__default.png",
+          "state": "default",
+          "width": 714,
+          "height": 189,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/segmented-three__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSegmentedButtonThreeSegmentsPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 630,
+            "height": 105
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Controls",
+      "caption": "And in its three-segment form.",
+      "wireframe": "wireframes/segmented-three.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 251,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiSegmentedButtonThreeSegmentsPreview"
+    },
+    {
+      "componentId": "back-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/back-button/ideal__default.png",
+          "state": "default",
+          "width": 126,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/back-button__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButtonKt.ListDetailSceneAwareBackButtonPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 11,
+              "y": 11,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 11,
+            "y": 11,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "testTag": "KaigiTopAppBarBackButtonTestTag",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Controls",
+      "caption": "The back button that knows whether it is in a list-detail pane or a full screen.",
+      "wireframe": "wireframes/back-button.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ListDetailSceneAwareBackButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 49,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ListDetailSceneAwareBackButtonPreview"
+    },
+    {
+      "componentId": "navigation-bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/navigation-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 308,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/navigation-bar__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt.KaigiNavigationBarPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/navigation-bar__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 152,
+              "y": 32,
+              "width": 248,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 152,
+            "y": 32,
+            "width": 248,
+            "height": 147
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 400,
+              "y": 32,
+              "width": 249,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 400,
+            "y": 32,
+            "width": 249,
+            "height": 147
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 649,
+              "y": 32,
+              "width": 249,
+              "height": 147
+            }
+          },
+          "bounds": {
+            "x": 649,
+            "y": 32,
+            "width": 249,
+            "height": 147
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 152,
+            "y": 32,
+            "width": 746,
+            "height": 147
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Navigation and structure",
+      "caption": "The bottom navigation bar.",
+      "wireframe": "wireframes/navigation-bar.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 386,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiNavigationBarPreview"
+    },
+    {
+      "componentId": "navigation-rail",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/navigation-rail/ideal__default.png",
+          "state": "default",
+          "width": 210,
+          "height": 1050,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/navigation-rail__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt.KaigiNavigationRailPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/navigation-rail__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 32,
+              "y": 152,
+              "width": 147,
+              "height": 248
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 152,
+            "width": 147,
+            "height": 248
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 32,
+              "y": 400,
+              "width": 147,
+              "height": 249
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 400,
+            "width": 147,
+            "height": 249
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "tab",
+          "detail": {
+            "role": "tab",
+            "bounds": {
+              "x": 32,
+              "y": 649,
+              "width": 147,
+              "height": 249
+            }
+          },
+          "bounds": {
+            "x": 32,
+            "y": 649,
+            "width": 147,
+            "height": 249
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 32,
+            "y": 152,
+            "width": 147,
+            "height": 746
+          },
+          "padding": {
+            "start": 0,
+            "top": 8,
+            "end": 0,
+            "bottom": 8
+          }
+        }
+      ],
+      "group": "Navigation and structure",
+      "caption": "The rail it becomes on a wide window.",
+      "wireframe": "wireframes/navigation-rail.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 408,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiNavigationRailPreview"
+    },
+    {
+      "componentId": "top-app-bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/top-app-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 168,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/top-app-bar__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiTopAppBarPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 786,
+              "y": 34,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 786,
+            "y": 34,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 907,
+              "y": 34,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 907,
+            "y": 34,
+            "width": 100,
+            "height": 100
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 43,
+            "y": 36,
+            "width": 397,
+            "height": 95
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Navigation and structure",
+      "caption": "The top app bar.",
+      "wireframe": "wireframes/top-app-bar.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 209,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiTopAppBarPreview"
+    },
+    {
+      "componentId": "large-top-app-bar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/large-top-app-bar/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 294,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/large-top-app-bar__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiLargeTopAppBarPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 22,
+              "y": 32,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 22,
+            "y": 32,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 22,
+            "y": 32,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "testTag": "KaigiTopAppBarBackButtonTestTag",
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 148,
+            "y": 36,
+            "width": 530,
+            "height": 95
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 148,
+            "y": 36,
+            "width": 530,
+            "height": 95
+          },
+          "label": "Contributors",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 168,
+            "width": 530,
+            "height": 95
+          },
+          "padding": {
+            "start": 4,
+            "top": 0,
+            "end": 4,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 43,
+            "y": 168,
+            "width": 530,
+            "height": 95
+          },
+          "label": "Contributors",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 0,
+            "bottom": 0
+          }
+        }
+      ],
+      "group": "Navigation and structure",
+      "caption": "Its large variant.",
+      "wireframe": "wireframes/large-top-app-bar.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 226,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiLargeTopAppBarPreview"
+    },
+    {
+      "componentId": "collapsing-header",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/collapsing-header/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 2100,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/collapsing-header__ideal__default__compact",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.CollapsingHeaderLayoutKt.CollapsingHeaderLayoutPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/collapsing-header__ideal__default__compact.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Navigation and structure",
+      "caption": "The collapsing header layout the content screens scroll under.",
+      "wireframe": "wireframes/collapsing-header.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/CollapsingHeaderLayout.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 136,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "CollapsingHeaderLayoutPreview"
+    },
+    {
+      "componentId": "timetable-item-card",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/timetable-item-card/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1303,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/timetable-item-card__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableItemCardKt.TimetableItemCardPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 105,
+            "y": 92,
+            "width": 165,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 323,
+            "y": 92,
+            "width": 95,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 74,
+            "width": 63,
+            "height": 63
+          },
+          "role": "Image",
+          "label": "Remove favorite",
+          "padding": {
+            "start": 12,
+            "top": 12,
+            "end": 12,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 355,
+            "width": 756,
+            "height": 42
+          },
+          "label": "This session has been cancelled / Cancelled",
+          "padding": {
+            "start": 0,
+            "top": 0,
+            "end": 32,
+            "bottom": 0
+          },
+          "cornerRadius": 6
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 439,
+            "width": 127,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 285,
+            "y": 439,
+            "width": 38,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 667,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 12.8
+        },
+        {
+          "bounds": {
+            "x": 97,
+            "y": 680,
+            "width": 58,
+            "height": 58
+          },
+          "padding": {
+            "start": 4.8,
+            "top": 4.8,
+            "end": 4.8,
+            "bottom": 4.8
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 337,
+            "width": 63,
+            "height": 63
+          },
+          "role": "Image",
+          "label": "Add favorite",
+          "padding": {
+            "start": 12,
+            "top": 12,
+            "end": 12,
+            "bottom": 12
+          }
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 875,
+            "width": 127,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 285,
+            "y": 875,
+            "width": 38,
+            "height": 42
+          },
+          "padding": {
+            "start": 8,
+            "top": 3,
+            "end": 8,
+            "bottom": 3
+          },
+          "gap": 4
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1040,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 12.8
+        },
+        {
+          "bounds": {
+            "x": 97,
+            "y": 1053,
+            "width": 58,
+            "height": 58
+          },
+          "padding": {
+            "start": 4.8,
+            "top": 4.8,
+            "end": 4.8,
+            "bottom": 4.8
+          }
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1135,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 12.8
+        },
+        {
+          "bounds": {
+            "x": 97,
+            "y": 1148,
+            "width": 58,
+            "height": 58
+          },
+          "padding": {
+            "start": 4.8,
+            "top": 4.8,
+            "end": 4.8,
+            "bottom": 4.8
+          }
+        },
+        {
+          "bounds": {
+            "x": 913,
+            "y": 857,
+            "width": 63,
+            "height": 63
+          },
+          "role": "Image",
+          "label": "Remove favorite",
+          "padding": {
+            "start": 12,
+            "top": 12,
+            "end": 12,
+            "bottom": 12
+          }
+        }
+      ],
+      "group": "Timetable",
+      "caption": "The session card — the unit the whole timetable is built from.",
+      "wireframe": "wireframes/timetable-item-card.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableItemCard.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 260,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "TimetableItemCardPreview"
+    },
+    {
+      "componentId": "timetable-day-header",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/timetable-day-header/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 159,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/timetable-day-header__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableDayHeaderKt.TimetableDayHeaderPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 68,
+            "y": 53,
+            "width": 940,
+            "height": 53
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 16
+        }
+      ],
+      "group": "Timetable",
+      "caption": "The day header separating the conference's days.",
+      "wireframe": "wireframes/timetable-day-header.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableDayHeader.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 51,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "TimetableDayHeaderPreview"
+    },
+    {
+      "componentId": "timetable-time-range",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/timetable-time-range/ideal__default.png",
+          "state": "default",
+          "width": 714,
+          "height": 291,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/timetable-time-range__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableTimeRangeKt.TimetableTimeRangePreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 381,
+            "y": 64,
+            "width": 142,
+            "height": 58
+          },
+          "testTag": "TimetableLiveBadgeTestTag",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 9,
+            "bottom": 0
+          },
+          "gap": 5
+        },
+        {
+          "bounds": {
+            "x": 402,
+            "y": 88,
+            "width": 11,
+            "height": 11
+          },
+          "cornerRadius": 2.1
+        }
+      ],
+      "group": "Timetable",
+      "caption": "A session's time range as the timetable prints it.",
+      "wireframe": "wireframes/timetable-time-range.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableTimeRange.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 106,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "TimetableTimeRangePreview"
+    },
+    {
+      "componentId": "timetable-live-badge",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/timetable-live-badge/ideal__default.png",
+          "state": "default",
+          "width": 142,
+          "height": 58,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/timetable-live-badge__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableLiveBadgeKt.TimetableLiveBadgePreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 142,
+            "height": 58
+          },
+          "testTag": "TimetableLiveBadgeTestTag",
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 9,
+            "bottom": 0
+          },
+          "gap": 5
+        },
+        {
+          "bounds": {
+            "x": 21,
+            "y": 24,
+            "width": 11,
+            "height": 11
+          },
+          "cornerRadius": 2.1
+        }
+      ],
+      "group": "Timetable",
+      "caption": "The badge marking a session happening right now.",
+      "wireframe": "wireframes/timetable-live-badge.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableLiveBadge.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 129,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "TimetableLiveBadgePreview"
+    },
+    {
+      "componentId": "profile-card-front",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/profile-card-front/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1512,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/profile-card-front__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFrontKt.ProfileCardFrontPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Profile card",
+      "caption": "The attendee profile card, front.",
+      "wireframe": "wireframes/profile-card-front.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFront.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 411,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ProfileCardFrontPreview"
+    },
+    {
+      "componentId": "profile-card-back",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/profile-card-back/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1512,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/profile-card-back__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardBackKt.ProfileCardBackPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 335,
+            "y": 619,
+            "width": 381,
+            "height": 381
+          },
+          "padding": {
+            "start": 11,
+            "top": 11,
+            "end": 11,
+            "bottom": 11
+          }
+        },
+        {
+          "bounds": {
+            "x": 375,
+            "y": 659,
+            "width": 301,
+            "height": 300
+          },
+          "padding": {
+            "start": 14,
+            "top": 14,
+            "end": 14,
+            "bottom": 14
+          },
+          "cornerRadius": 4
+        }
+      ],
+      "group": "Profile card",
+      "caption": "And back.",
+      "wireframe": "wireframes/profile-card-back.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardBack.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 425,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ProfileCardBackPreview"
+    },
+    {
+      "componentId": "profile-card-face",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/profile-card-face/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 1491,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/profile-card-face__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFaceKt.ProfileCardFacePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Profile card",
+      "caption": "One face of it in isolation.",
+      "wireframe": "wireframes/profile-card-face.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFace.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 381,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ProfileCardFacePreview"
+    },
+    {
+      "componentId": "mascot-icon",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/mascot-icon/ideal__default.png",
+          "state": "default",
+          "width": 972,
+          "height": 232,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/mascot-icon__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.MascotIconKt.MascotIconPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/mascot-icon__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 53,
+            "y": 53,
+            "width": 126,
+            "height": 126
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 201,
+            "y": 53,
+            "width": 126,
+            "height": 126
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 349,
+            "y": 53,
+            "width": 126,
+            "height": 126
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 497,
+            "y": 53,
+            "width": 126,
+            "height": 126
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 645,
+            "y": 53,
+            "width": 126,
+            "height": 126
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 793,
+            "y": 53,
+            "width": 126,
+            "height": 126
+          },
+          "padding": {
+            "start": 4,
+            "top": 4,
+            "end": 4,
+            "bottom": 4
+          }
+        }
+      ],
+      "group": "Profile card",
+      "caption": "The mascot icon.",
+      "wireframe": "wireframes/mascot-icon.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/MascotIcon.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 60,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "MascotIconPreview"
+    },
+    {
+      "componentId": "filled-mascot-image",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/filled-mascot-image/ideal__default.png",
+          "state": "default",
+          "width": 131,
+          "height": 152,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/filled-mascot-image__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.FilledMascotImageKt.FilledMascotImagePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/filled-mascot-image__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Profile card",
+      "caption": "The filled mascot image.",
+      "wireframe": "wireframes/filled-mascot-image.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/FilledMascotImage.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 93,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "FilledMascotImagePreview"
+    },
+    {
+      "componentId": "kaigi-avatar",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/kaigi-avatar/ideal__default.png",
+          "state": "default",
+          "width": 716,
+          "height": 937,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/kaigi-avatar__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiAvatarKt.KaigiAvatarPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 632,
+            "height": 853
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "gap": 12
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 263,
+            "height": 263
+          },
+          "cornerRadius": 40.08
+        },
+        {
+          "bounds": {
+            "x": 337,
+            "y": 111,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 19.2
+        },
+        {
+          "bounds": {
+            "x": 495,
+            "y": 132,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 12.8
+        },
+        {
+          "bounds": {
+            "x": 611,
+            "y": 142,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 9.6
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 337,
+            "width": 263,
+            "height": 263
+          },
+          "cornerRadius": 40.08
+        },
+        {
+          "bounds": {
+            "x": 81,
+            "y": 376,
+            "width": 185,
+            "height": 185
+          },
+          "padding": {
+            "start": 15.000001,
+            "top": 15.000001,
+            "end": 15.000001,
+            "bottom": 15.000001
+          }
+        },
+        {
+          "bounds": {
+            "x": 337,
+            "y": 406,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 19.2
+        },
+        {
+          "bounds": {
+            "x": 356,
+            "y": 425,
+            "width": 88,
+            "height": 88
+          },
+          "padding": {
+            "start": 7.2000003,
+            "top": 7.2000003,
+            "end": 7.2000003,
+            "bottom": 7.2000003
+          }
+        },
+        {
+          "bounds": {
+            "x": 495,
+            "y": 427,
+            "width": 84,
+            "height": 84
+          },
+          "cornerRadius": 12.8
+        },
+        {
+          "bounds": {
+            "x": 508,
+            "y": 440,
+            "width": 58,
+            "height": 58
+          },
+          "padding": {
+            "start": 4.8,
+            "top": 4.8,
+            "end": 4.8,
+            "bottom": 4.8
+          }
+        },
+        {
+          "bounds": {
+            "x": 611,
+            "y": 437,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 9.6
+        },
+        {
+          "bounds": {
+            "x": 620,
+            "y": 446,
+            "width": 45,
+            "height": 45
+          },
+          "padding": {
+            "start": 3.6000001,
+            "top": 3.6000001,
+            "end": 3.6000001,
+            "bottom": 3.6000001
+          }
+        }
+      ],
+      "group": "Profile card",
+      "caption": "The avatar.",
+      "wireframe": "wireframes/kaigi-avatar.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiAvatar.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 226,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "KaigiAvatarPreview"
+    },
+    {
+      "componentId": "sketch-card",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-card/ideal__default.png",
+          "state": "default",
+          "width": 767,
+          "height": 231,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-card__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchCardKt.SketchCardPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 683,
+            "height": 147
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 84,
+            "width": 599,
+            "height": 63
+          },
+          "label": "スタンプラリー",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "The sketch-styled card — the hand-drawn look this year's app is built around.",
+      "wireframe": "wireframes/sketch-card.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/SketchCard.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 48,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchCardPreview"
+    },
+    {
+      "componentId": "sketch-shape",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-shape/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 305,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-shape__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchShapePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 221
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "The sketch shapes.",
+      "wireframe": "wireframes/sketch-shape.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 824,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchShapePreview"
+    },
+    {
+      "componentId": "sketch-segmented",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-segmented/ideal__default.png",
+          "state": "default",
+          "width": 630,
+          "height": 336,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-segmented__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchSegmentedPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 546,
+            "height": 252
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "A segmented control in the sketch idiom.",
+      "wireframe": "wireframes/sketch-segmented.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 880,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchSegmentedPreview"
+    },
+    {
+      "componentId": "sketch-marked-text",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-marked-text/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 462,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-marked-text__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchMarkedTextKt.SketchMarkedTextPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/sketch-marked-text__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 378
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "Text with the sketch marker treatment.",
+      "wireframe": "wireframes/sketch-marked-text.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/SketchMarkedText.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 392,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchMarkedTextPreview"
+    },
+    {
+      "componentId": "sketch-resize",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-resize/ideal__default.png",
+          "state": "default",
+          "width": 924,
+          "height": 832,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-resize__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchResizePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 840,
+            "height": 748
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        },
+        {
+          "bounds": {
+            "x": 16,
+            "y": 121,
+            "width": 892,
+            "height": 116
+          },
+          "padding": {
+            "start": 10,
+            "top": 0,
+            "end": 10,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 539,
+            "y": 121,
+            "width": 11,
+            "height": 116
+          },
+          "cornerRadius": 2.1
+        }
+      ],
+      "group": "Sketch",
+      "caption": "How the sketch borders behave under resize.",
+      "wireframe": "wireframes/sketch-resize.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 932,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchResizePreview"
+    },
+    {
+      "componentId": "sketch-border-taste",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-border-taste/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 970,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-border-taste__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchBorderTastePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 886
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "The border's “taste” parameter, the roughness of the line.",
+      "wireframe": "wireframes/sketch-border-taste.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 779,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchBorderTastePreview"
+    },
+    {
+      "componentId": "sketch-border-radius",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-border-radius/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 305,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-border-radius__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchBorderCornerRadiusPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 221
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "Its corner radius.",
+      "wireframe": "wireframes/sketch-border-radius.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 745,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchBorderCornerRadiusPreview"
+    },
+    {
+      "componentId": "sketch-divider",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-divider/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 188,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-divider__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchHorizontalDividerPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 104
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "The sketch divider.",
+      "wireframe": "wireframes/sketch-divider.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 586,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchHorizontalDividerPreview"
+    },
+    {
+      "componentId": "sketch-divider-taste",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-divider-taste/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 624,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-divider-taste__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchHorizontalDividerTastePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 540
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "Its taste.",
+      "wireframe": "wireframes/sketch-divider-taste.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 606,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchHorizontalDividerTastePreview"
+    },
+    {
+      "componentId": "sketch-divider-weight",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-divider-weight/ideal__default.png",
+          "state": "default",
+          "width": 924,
+          "height": 450,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-divider-weight__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchHorizontalDividerWeightPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 840,
+            "height": 366
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "Its weight.",
+      "wireframe": "wireframes/sketch-divider-weight.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 671,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchHorizontalDividerWeightPreview"
+    },
+    {
+      "componentId": "sketch-divider-fineness",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-divider-fineness/ideal__default.png",
+          "state": "default",
+          "width": 924,
+          "height": 456,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-divider-fineness__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchHorizontalDividerFinenessPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 840,
+            "height": 372
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "And its fineness — three knobs previewed separately, which is unusually complete for a drawn primitive.",
+      "wireframe": "wireframes/sketch-divider-fineness.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 643,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchHorizontalDividerFinenessPreview"
+    },
+    {
+      "componentId": "sketch-wavy-line",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sketch-wavy-line/ideal__default.png",
+          "state": "default",
+          "width": 1013,
+          "height": 295,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/sketch-wavy-line__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.SketchKt.SketchVerticalWavyLinePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 929,
+            "height": 211
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Sketch",
+      "caption": "The vertical wavy line.",
+      "wireframe": "wireframes/sketch-wavy-line.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 698,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "SketchVerticalWavyLinePreview"
+    },
+    {
+      "componentId": "lantern",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/lantern/ideal__default.png",
+          "state": "default",
+          "width": 456,
+          "height": 186,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/lantern__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.LanternKt.LanternPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Sketch",
+      "caption": "The lantern motif.",
+      "wireframe": "wireframes/lantern.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Lantern.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 286,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "LanternPreview"
+    },
+    {
+      "componentId": "doodle-canvas",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-canvas/ideal__default.png",
+          "state": "default",
+          "width": 869,
+          "height": 646,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-canvas__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasViewPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 748,
+              "y": 21,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 748,
+            "y": 21,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 748,
+              "y": 137,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 748,
+            "y": 137,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 748,
+              "y": 253,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 748,
+            "y": 253,
+            "width": 100,
+            "height": 100
+          }
+        }
+      ],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "The doodle canvas.",
+      "wireframe": "wireframes/doodle-canvas.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleCanvasView.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 301,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleCanvasViewPreview"
+    },
+    {
+      "componentId": "doodle-canvas-magnified",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-canvas-magnified/ideal__default.png",
+          "state": "default",
+          "width": 869,
+          "height": 646,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-canvas-magnified__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasViewMagnifiedPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 748,
+              "y": 21,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 748,
+            "y": 21,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 748,
+              "y": 137,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 748,
+            "y": 137,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 748,
+              "y": 253,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 748,
+            "y": 253,
+            "width": 100,
+            "height": 100
+          }
+        }
+      ],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "Magnified.",
+      "wireframe": "wireframes/doodle-canvas-magnified.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleCanvasView.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 324,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleCanvasViewMagnifiedPreview"
+    },
+    {
+      "componentId": "doodle-layer",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-layer/ideal__default.png",
+          "state": "default",
+          "width": 869,
+          "height": 646,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-layer__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleLayerViewKt.DoodleLayerViewPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-layer__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "The layer view.",
+      "wireframe": "wireframes/doodle-layer.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleLayerView.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 107,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleLayerViewPreview"
+    },
+    {
+      "componentId": "doodle-ink-row",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-ink-row/ideal__default.png",
+          "state": "default",
+          "width": 611,
+          "height": 200,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-ink-row__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRowPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "The ink picker.",
+      "wireframe": "wireframes/doodle-ink-row.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleInkRow.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 150,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleInkRowPreview"
+    },
+    {
+      "componentId": "doodle-ink-row-selected",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-ink-row-selected/ideal__default.png",
+          "state": "default",
+          "width": 611,
+          "height": 200,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-ink-row-selected__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRowBandSelectedPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "With a band selected.",
+      "wireframe": "wireframes/doodle-ink-row-selected.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleInkRow.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 166,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleInkRowBandSelectedPreview"
+    },
+    {
+      "componentId": "doodle-pen-size",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-pen-size/ideal__default.png",
+          "state": "default",
+          "width": 630,
+          "height": 105,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-pen-size__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRowPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "The pen-size row.",
+      "wireframe": "wireframes/doodle-pen-size.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodlePenSizeRow.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 63,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodlePenSizeRowPreview"
+    },
+    {
+      "componentId": "doodle-pen-size-thick",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-pen-size-thick/ideal__default.png",
+          "state": "default",
+          "width": 630,
+          "height": 105,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-pen-size-thick__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRowThickSelectedPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "With the thick pen selected.",
+      "wireframe": "wireframes/doodle-pen-size-thick.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodlePenSizeRow.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 73,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodlePenSizeRowThickSelectedPreview"
+    },
+    {
+      "componentId": "doodle-stroke-controls",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-stroke-controls/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-stroke-controls__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRowPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 5,
+              "width": 514,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 514,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 535,
+              "y": 5,
+              "width": 515,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 535,
+            "y": 5,
+            "width": 515,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 514,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 535,
+            "y": 5,
+            "width": 515,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Doodle",
+      "caption": "The stroke controls.",
+      "wireframe": "wireframes/doodle-stroke-controls.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleStrokeControlsRow.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 61,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleStrokeControlsRowPreview"
+    },
+    {
+      "componentId": "doodle-stroke-controls-idle",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-stroke-controls-idle/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-stroke-controls-idle__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRowIdlePreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 5,
+              "width": 514,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 514,
+            "height": 116
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 535,
+              "y": 5,
+              "width": 515,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 535,
+            "y": 5,
+            "width": 515,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 5,
+            "width": 514,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 8
+        },
+        {
+          "bounds": {
+            "x": 535,
+            "y": 5,
+            "width": 515,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 16,
+            "top": 0,
+            "end": 16,
+            "bottom": 0
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Doodle",
+      "caption": "At idle.",
+      "wireframe": "wireframes/doodle-stroke-controls-idle.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleStrokeControlsRow.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 76,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleStrokeControlsRowIdlePreview"
+    },
+    {
+      "componentId": "doodle-outline-toggle",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-outline-toggle/ideal__default.png",
+          "state": "default",
+          "width": 358,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-outline-toggle__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineTogglePreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 58,
+              "width": 274,
+              "height": 95
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 58,
+            "width": 274,
+            "height": 95
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 58,
+            "width": 274,
+            "height": 95
+          },
+          "role": "Checkbox",
+          "testTag": "DoodleOutlineToggleTestTag",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Doodle",
+      "caption": "The outline toggle, on.",
+      "wireframe": "wireframes/doodle-outline-toggle.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleOutlineToggle.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 41,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleOutlineTogglePreview"
+    },
+    {
+      "componentId": "doodle-outline-toggle-off",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-outline-toggle-off/ideal__default.png",
+          "state": "default",
+          "width": 300,
+          "height": 210,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-outline-toggle-off__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineToggleOffPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "checkbox",
+          "detail": {
+            "role": "checkbox",
+            "bounds": {
+              "x": 42,
+              "y": 58,
+              "width": 216,
+              "height": 95
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 58,
+            "width": 216,
+            "height": 95
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 58,
+            "width": 216,
+            "height": 95
+          },
+          "role": "Checkbox",
+          "testTag": "DoodleOutlineToggleTestTag",
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Doodle",
+      "caption": "And off.",
+      "wireframe": "wireframes/doodle-outline-toggle-off.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleOutlineToggle.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 57,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleOutlineToggleOffPreview"
+    },
+    {
+      "componentId": "doodle-flip-button",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-flip-button/ideal__default.png",
+          "state": "default",
+          "width": 116,
+          "height": 116,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-flip-button__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButtonPreview_en",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-flip-button__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 116,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 116,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "The flip button.",
+      "wireframe": "wireframes/doodle-flip-button.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleFlipButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 52,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleFlipButtonPreview"
+    },
+    {
+      "componentId": "doodle-flip-button-back",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-flip-button-back/ideal__default.png",
+          "state": "default",
+          "width": 116,
+          "height": 116,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-flip-button-back__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButtonShowingBackPreview_en",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-flip-button-back__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 0,
+              "width": 116,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 0,
+            "width": 116,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [],
+      "group": "Doodle",
+      "caption": "Showing the back.",
+      "wireframe": "wireframes/doodle-flip-button-back.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleFlipButton.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 62,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleFlipButtonShowingBackPreview"
+    },
+    {
+      "componentId": "doodle-zoom-controls",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-zoom-controls/ideal__default.png",
+          "state": "default",
+          "width": 184,
+          "height": 416,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-zoom-controls__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsViewPreview_en",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-zoom-controls__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 158,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 158,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 274,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 274,
+            "width": 100,
+            "height": 100
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 100,
+            "height": 332
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Doodle",
+      "caption": "The zoom controls.",
+      "wireframe": "wireframes/doodle-zoom-controls.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleZoomControlsView.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 77,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleZoomControlsViewPreview"
+    },
+    {
+      "componentId": "doodle-zoom-actual-size",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/doodle-zoom-actual-size/ideal__default.png",
+          "state": "default",
+          "width": 184,
+          "height": 416,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/doodle-zoom-actual-size__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsViewActualSizePreview_en",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-zoom-actual-size__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 42,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 158,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 158,
+            "width": 100,
+            "height": 100
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 42,
+              "y": 274,
+              "width": 100,
+              "height": 100
+            }
+          },
+          "bounds": {
+            "x": 42,
+            "y": 274,
+            "width": 100,
+            "height": 100
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 100,
+            "height": 332
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          }
+        }
+      ],
+      "group": "Doodle",
+      "caption": "At actual size.",
+      "wireframe": "wireframes/doodle-zoom-actual-size.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleZoomControlsView.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 98,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "DoodleZoomControlsViewActualSizePreview"
+    },
+    {
+      "componentId": "error-fallback-rain",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/error-fallback-rain/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 2100,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/error-fallback-rain__ideal__default__compact",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackRainPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 348,
+              "y": 1672,
+              "width": 249,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 348,
+            "y": 1672,
+            "width": 249,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1139,
+            "width": 777,
+            "height": 961
+          },
+          "padding": {
+            "start": 32,
+            "top": 0,
+            "end": 32,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 348,
+            "y": 1672,
+            "width": 249,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Empty and error states",
+      "caption": "The error fallback, rain illustration.",
+      "wireframe": "wireframes/error-fallback-rain.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 142,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ErrorFallbackRainPreview"
+    },
+    {
+      "componentId": "error-fallback-cable",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/error-fallback-cable/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 2100,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/error-fallback-cable__ideal__default__compact",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackUnpluggedCablePreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 348,
+              "y": 1672,
+              "width": 249,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 348,
+            "y": 1672,
+            "width": 249,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1139,
+            "width": 777,
+            "height": 961
+          },
+          "padding": {
+            "start": 32,
+            "top": 0,
+            "end": 32,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 348,
+            "y": 1672,
+            "width": 249,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Empty and error states",
+      "caption": "Unplugged cable.",
+      "wireframe": "wireframes/error-fallback-cable.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 129,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ErrorFallbackUnpluggedCablePreview"
+    },
+    {
+      "componentId": "error-fallback-backstage",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/error-fallback-backstage/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 2100,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/error-fallback-backstage__ideal__default__compact",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackBackstagePreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 348,
+              "y": 1672,
+              "width": 249,
+              "height": 116
+            }
+          },
+          "bounds": {
+            "x": 348,
+            "y": 1672,
+            "width": 249,
+            "height": 116
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 84,
+            "y": 1139,
+            "width": 777,
+            "height": 961
+          },
+          "padding": {
+            "start": 32,
+            "top": 0,
+            "end": 32,
+            "bottom": 0
+          }
+        },
+        {
+          "bounds": {
+            "x": 348,
+            "y": 1672,
+            "width": 249,
+            "height": 116
+          },
+          "role": "Button",
+          "padding": {
+            "start": 24,
+            "top": 0,
+            "end": 24,
+            "bottom": 0
+          },
+          "gap": 8
+        }
+      ],
+      "group": "Empty and error states",
+      "caption": "Backstage — three drawn error states, chosen per failure.",
+      "wireframe": "wireframes/error-fallback-backstage.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 155,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "ErrorFallbackBackstagePreview"
+    },
+    {
+      "componentId": "lantern-loading",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/lantern-loading/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 557,
+          "livePreview": "https://preview.coo.ee/droidkaigi-conference-app-2026/p/lantern-loading__ideal__default",
+          "previewId": "io.github.droidkaigi.confsched.core.ui.LanternLoadingFallbackKt.LanternLoadingFallbackPreview_en",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Empty and error states",
+      "caption": "The loading fallback, lit by the lantern motif.",
+      "wireframe": "wireframes/lantern-loading.svg",
+      "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanternLoadingFallback.kt",
+      "sourceModule": ":core:ui",
+      "bodyLine": 132,
+      "sourceDirectory": "core/ui",
+      "sourceFunction": "LanternLoadingFallbackPreview"
+    }
+  ],
+  "renderer": "compose-preview 1.69.0",
+  "generatedAt": "2026-09-03T07:34:09.304Z",
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":core:ui",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "DroidKaigi/conference-app-2026",
+    "ref": "a1f71794e78c3c25e386ef48cbcabd336a0fb4d7",
+    "module": ":core:ui"
+  }
+}

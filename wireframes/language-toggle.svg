@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 336 210" width="336" height="210" role="img" aria-label="language-toggle layout wireframe">
+  <title>language-toggle — layout wireframe (slots + tokens)</title>
+  <rect width="336" height="210" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="336" height="210" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="336" height="210" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="42" y="42" width="252" height="126" fill="#3A4060" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FF3A4060  pad 16.0dp</text>
+  </g>
+  <g>
+    <path d="M105.5,53 H105.5 A52.5,52.5 0 0 1 158,105.5 V105.5 A52.5,52.5 0 0 1 105.5,158 H105.5 A52.5,52.5 0 0 1 53,105.5 V105.5 A52.5,52.5 0 0 1 105.5,53 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="73" y="73" width="66" height="66" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M231.5,53 H231.5 A52.5,52.5 0 0 1 284,105.5 V105.5 A52.5,52.5 0 0 1 231.5,158 H231.5 A52.5,52.5 0 0 1 179,105.5 V105.5 A52.5,52.5 0 0 1 231.5,53 Z" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="199" y="73" width="66" height="66" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 58" width="142" height="58" role="img" aria-label="timetable-live-badge layout wireframe">
+  <title>timetable-live-badge — layout wireframe (slots + tokens)</title>
+  <rect width="142" height="58" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="142" height="58" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="142" height="58" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="0" width="97" height="58" fill="#3A4478" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FF3A4478  pad ·  gap 5.0dp</text>
+  </g>
+  <g>
+    <path d="M26.5,24 H26.5 A5.5,5.5 0 0 1 32,29.5 V29.5 A5.5,5.5 0 0 1 26.5,35 H26.5 A5.5,5.5 0 0 1 21,29.5 V29.5 A5.5,5.5 0 0 1 26.5,24 Z" fill="#FFFFFF" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+  </g>
+  <g>
+    <rect x="45" y="8" width="72" height="42" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

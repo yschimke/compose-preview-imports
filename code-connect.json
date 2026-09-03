@@ -1,0 +1,603 @@
+{
+  "system": "droidkaigi-conference-app-2026",
+  "title": "DroidKaigi 2026",
+  "label": "Compose",
+  "source": {
+    "repo": "DroidKaigi/conference-app-2026",
+    "ref": "a1f71794e78c3c25e386ef48cbcabd336a0fb4d7",
+    "module": ":core:ui"
+  },
+  "generatedAt": "2026-09-03T07:34:10.872Z",
+  "mappings": [
+    {
+      "componentId": "kaigi-button",
+      "figmaLayerName": "kaigi-button",
+      "componentName": "KaigiButtonPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiButtonPreview",
+      "figmaSvg": "figma/kaigi-button.svg"
+    },
+    {
+      "componentId": "kaigi-icon-button",
+      "figmaLayerName": "kaigi-icon-button",
+      "componentName": "KaigiIconButtonPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiIconButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiIconButtonPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/kaigi-icon-button__ideal__default.svg"
+    },
+    {
+      "componentId": "kaigi-text-field",
+      "figmaLayerName": "kaigi-text-field",
+      "componentName": "KaigiTextFieldPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTextField.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiTextFieldPreview",
+      "figmaSvg": "figma/kaigi-text-field.svg"
+    },
+    {
+      "componentId": "kaigi-chip",
+      "figmaLayerName": "kaigi-chip",
+      "componentName": "KaigiChipPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiChip.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiChipPreview",
+      "figmaSvg": "figma/kaigi-chip.svg"
+    },
+    {
+      "componentId": "kaigi-filter-chip",
+      "figmaLayerName": "kaigi-filter-chip",
+      "componentName": "KaigiFilterChipPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiFilterChip.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiFilterChipPreview",
+      "figmaSvg": "figma/kaigi-filter-chip.svg"
+    },
+    {
+      "componentId": "language-chip",
+      "figmaLayerName": "language-chip",
+      "componentName": "LanguageChipPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanguageChip.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "LanguageChipPreview",
+      "figmaSvg": "figma/language-chip.svg"
+    },
+    {
+      "componentId": "language-toggle",
+      "figmaLayerName": "language-toggle",
+      "componentName": "LanguageToggleButtonPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanguageToggleButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "LanguageToggleButtonPreview",
+      "figmaSvg": "figma/language-toggle.svg"
+    },
+    {
+      "componentId": "room-chip",
+      "figmaLayerName": "room-chip",
+      "componentName": "RoomChipPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/RoomChip.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "RoomChipPreview",
+      "figmaSvg": "figma/room-chip.svg"
+    },
+    {
+      "componentId": "segmented-first",
+      "figmaLayerName": "segmented-first",
+      "componentName": "KaigiSegmentedButtonFirstSelectedPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiSegmentedButtonFirstSelectedPreview",
+      "figmaSvg": "figma/segmented-first.svg"
+    },
+    {
+      "componentId": "segmented-second",
+      "figmaLayerName": "segmented-second",
+      "componentName": "KaigiSegmentedButtonSecondSelectedPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiSegmentedButtonSecondSelectedPreview",
+      "figmaSvg": "figma/segmented-second.svg"
+    },
+    {
+      "componentId": "segmented-three",
+      "figmaLayerName": "segmented-three",
+      "componentName": "KaigiSegmentedButtonThreeSegmentsPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiSegmentedButtonThreeSegmentsPreview",
+      "figmaSvg": "figma/segmented-three.svg"
+    },
+    {
+      "componentId": "back-button",
+      "figmaLayerName": "back-button",
+      "componentName": "ListDetailSceneAwareBackButtonPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ListDetailSceneAwareBackButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ListDetailSceneAwareBackButtonPreview",
+      "figmaSvg": "figma/back-button.svg"
+    },
+    {
+      "componentId": "navigation-bar",
+      "figmaLayerName": "navigation-bar",
+      "componentName": "KaigiNavigationBarPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiNavigationBarPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/navigation-bar__ideal__default.svg"
+    },
+    {
+      "componentId": "navigation-rail",
+      "figmaLayerName": "navigation-rail",
+      "componentName": "KaigiNavigationRailPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiNavigationRailPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/navigation-rail__ideal__default.svg"
+    },
+    {
+      "componentId": "top-app-bar",
+      "figmaLayerName": "top-app-bar",
+      "componentName": "KaigiTopAppBarPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiTopAppBarPreview",
+      "figmaSvg": "figma/top-app-bar.svg"
+    },
+    {
+      "componentId": "large-top-app-bar",
+      "figmaLayerName": "large-top-app-bar",
+      "componentName": "KaigiLargeTopAppBarPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiLargeTopAppBarPreview",
+      "figmaSvg": "figma/large-top-app-bar.svg"
+    },
+    {
+      "componentId": "collapsing-header",
+      "figmaLayerName": "collapsing-header",
+      "componentName": "CollapsingHeaderLayoutPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/CollapsingHeaderLayout.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "CollapsingHeaderLayoutPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/collapsing-header__ideal__default__compact.svg"
+    },
+    {
+      "componentId": "timetable-item-card",
+      "figmaLayerName": "timetable-item-card",
+      "componentName": "TimetableItemCardPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableItemCard.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TimetableItemCardPreview",
+      "figmaSvg": "figma/timetable-item-card.svg"
+    },
+    {
+      "componentId": "timetable-day-header",
+      "figmaLayerName": "timetable-day-header",
+      "componentName": "TimetableDayHeaderPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableDayHeader.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TimetableDayHeaderPreview",
+      "figmaSvg": "figma/timetable-day-header.svg"
+    },
+    {
+      "componentId": "timetable-time-range",
+      "figmaLayerName": "timetable-time-range",
+      "componentName": "TimetableTimeRangePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableTimeRange.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TimetableTimeRangePreview",
+      "figmaSvg": "figma/timetable-time-range.svg"
+    },
+    {
+      "componentId": "timetable-live-badge",
+      "figmaLayerName": "timetable-live-badge",
+      "componentName": "TimetableLiveBadgePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableLiveBadge.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "TimetableLiveBadgePreview",
+      "figmaSvg": "figma/timetable-live-badge.svg"
+    },
+    {
+      "componentId": "profile-card-front",
+      "figmaLayerName": "profile-card-front",
+      "componentName": "ProfileCardFrontPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFront.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ProfileCardFrontPreview",
+      "figmaSvg": "figma/profile-card-front.svg"
+    },
+    {
+      "componentId": "profile-card-back",
+      "figmaLayerName": "profile-card-back",
+      "componentName": "ProfileCardBackPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardBack.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ProfileCardBackPreview",
+      "figmaSvg": "figma/profile-card-back.svg"
+    },
+    {
+      "componentId": "profile-card-face",
+      "figmaLayerName": "profile-card-face",
+      "componentName": "ProfileCardFacePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFace.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ProfileCardFacePreview",
+      "figmaSvg": "figma/profile-card-face.svg"
+    },
+    {
+      "componentId": "mascot-icon",
+      "figmaLayerName": "mascot-icon",
+      "componentName": "MascotIconPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/MascotIcon.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "MascotIconPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/mascot-icon__ideal__default.svg"
+    },
+    {
+      "componentId": "filled-mascot-image",
+      "figmaLayerName": "filled-mascot-image",
+      "componentName": "FilledMascotImagePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/FilledMascotImage.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "FilledMascotImagePreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/filled-mascot-image__ideal__default.svg"
+    },
+    {
+      "componentId": "kaigi-avatar",
+      "figmaLayerName": "kaigi-avatar",
+      "componentName": "KaigiAvatarPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiAvatar.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "KaigiAvatarPreview",
+      "figmaSvg": "figma/kaigi-avatar.svg"
+    },
+    {
+      "componentId": "sketch-card",
+      "figmaLayerName": "sketch-card",
+      "componentName": "SketchCardPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/SketchCard.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchCardPreview",
+      "figmaSvg": "figma/sketch-card.svg"
+    },
+    {
+      "componentId": "sketch-shape",
+      "figmaLayerName": "sketch-shape",
+      "componentName": "SketchShapePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchShapePreview",
+      "figmaSvg": "figma/sketch-shape.svg"
+    },
+    {
+      "componentId": "sketch-segmented",
+      "figmaLayerName": "sketch-segmented",
+      "componentName": "SketchSegmentedPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchSegmentedPreview",
+      "figmaSvg": "figma/sketch-segmented.svg"
+    },
+    {
+      "componentId": "sketch-marked-text",
+      "figmaLayerName": "sketch-marked-text",
+      "componentName": "SketchMarkedTextPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/SketchMarkedText.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchMarkedTextPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/sketch-marked-text__ideal__default.svg"
+    },
+    {
+      "componentId": "sketch-resize",
+      "figmaLayerName": "sketch-resize",
+      "componentName": "SketchResizePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchResizePreview",
+      "figmaSvg": "figma/sketch-resize.svg"
+    },
+    {
+      "componentId": "sketch-border-taste",
+      "figmaLayerName": "sketch-border-taste",
+      "componentName": "SketchBorderTastePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchBorderTastePreview",
+      "figmaSvg": "figma/sketch-border-taste.svg"
+    },
+    {
+      "componentId": "sketch-border-radius",
+      "figmaLayerName": "sketch-border-radius",
+      "componentName": "SketchBorderCornerRadiusPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchBorderCornerRadiusPreview",
+      "figmaSvg": "figma/sketch-border-radius.svg"
+    },
+    {
+      "componentId": "sketch-divider",
+      "figmaLayerName": "sketch-divider",
+      "componentName": "SketchHorizontalDividerPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchHorizontalDividerPreview",
+      "figmaSvg": "figma/sketch-divider.svg"
+    },
+    {
+      "componentId": "sketch-divider-taste",
+      "figmaLayerName": "sketch-divider-taste",
+      "componentName": "SketchHorizontalDividerTastePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchHorizontalDividerTastePreview",
+      "figmaSvg": "figma/sketch-divider-taste.svg"
+    },
+    {
+      "componentId": "sketch-divider-weight",
+      "figmaLayerName": "sketch-divider-weight",
+      "componentName": "SketchHorizontalDividerWeightPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchHorizontalDividerWeightPreview",
+      "figmaSvg": "figma/sketch-divider-weight.svg"
+    },
+    {
+      "componentId": "sketch-divider-fineness",
+      "figmaLayerName": "sketch-divider-fineness",
+      "componentName": "SketchHorizontalDividerFinenessPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchHorizontalDividerFinenessPreview",
+      "figmaSvg": "figma/sketch-divider-fineness.svg"
+    },
+    {
+      "componentId": "sketch-wavy-line",
+      "figmaLayerName": "sketch-wavy-line",
+      "componentName": "SketchVerticalWavyLinePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "SketchVerticalWavyLinePreview",
+      "figmaSvg": "figma/sketch-wavy-line.svg"
+    },
+    {
+      "componentId": "lantern",
+      "figmaLayerName": "lantern",
+      "componentName": "LanternPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Lantern.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "LanternPreview",
+      "figmaSvg": "figma/lantern.svg"
+    },
+    {
+      "componentId": "doodle-canvas",
+      "figmaLayerName": "doodle-canvas",
+      "componentName": "DoodleCanvasViewPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleCanvasView.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleCanvasViewPreview",
+      "figmaSvg": "figma/doodle-canvas.svg"
+    },
+    {
+      "componentId": "doodle-canvas-magnified",
+      "figmaLayerName": "doodle-canvas-magnified",
+      "componentName": "DoodleCanvasViewMagnifiedPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleCanvasView.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleCanvasViewMagnifiedPreview",
+      "figmaSvg": "figma/doodle-canvas-magnified.svg"
+    },
+    {
+      "componentId": "doodle-layer",
+      "figmaLayerName": "doodle-layer",
+      "componentName": "DoodleLayerViewPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleLayerView.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleLayerViewPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-layer__ideal__default.svg"
+    },
+    {
+      "componentId": "doodle-ink-row",
+      "figmaLayerName": "doodle-ink-row",
+      "componentName": "DoodleInkRowPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleInkRow.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleInkRowPreview",
+      "figmaSvg": "figma/doodle-ink-row.svg"
+    },
+    {
+      "componentId": "doodle-ink-row-selected",
+      "figmaLayerName": "doodle-ink-row-selected",
+      "componentName": "DoodleInkRowBandSelectedPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleInkRow.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleInkRowBandSelectedPreview",
+      "figmaSvg": "figma/doodle-ink-row-selected.svg"
+    },
+    {
+      "componentId": "doodle-pen-size",
+      "figmaLayerName": "doodle-pen-size",
+      "componentName": "DoodlePenSizeRowPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodlePenSizeRow.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodlePenSizeRowPreview",
+      "figmaSvg": "figma/doodle-pen-size.svg"
+    },
+    {
+      "componentId": "doodle-pen-size-thick",
+      "figmaLayerName": "doodle-pen-size-thick",
+      "componentName": "DoodlePenSizeRowThickSelectedPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodlePenSizeRow.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodlePenSizeRowThickSelectedPreview",
+      "figmaSvg": "figma/doodle-pen-size-thick.svg"
+    },
+    {
+      "componentId": "doodle-stroke-controls",
+      "figmaLayerName": "doodle-stroke-controls",
+      "componentName": "DoodleStrokeControlsRowPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleStrokeControlsRow.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleStrokeControlsRowPreview",
+      "figmaSvg": "figma/doodle-stroke-controls.svg"
+    },
+    {
+      "componentId": "doodle-stroke-controls-idle",
+      "figmaLayerName": "doodle-stroke-controls-idle",
+      "componentName": "DoodleStrokeControlsRowIdlePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleStrokeControlsRow.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleStrokeControlsRowIdlePreview",
+      "figmaSvg": "figma/doodle-stroke-controls-idle.svg"
+    },
+    {
+      "componentId": "doodle-outline-toggle",
+      "figmaLayerName": "doodle-outline-toggle",
+      "componentName": "DoodleOutlineTogglePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleOutlineToggle.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleOutlineTogglePreview",
+      "figmaSvg": "figma/doodle-outline-toggle.svg"
+    },
+    {
+      "componentId": "doodle-outline-toggle-off",
+      "figmaLayerName": "doodle-outline-toggle-off",
+      "componentName": "DoodleOutlineToggleOffPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleOutlineToggle.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleOutlineToggleOffPreview",
+      "figmaSvg": "figma/doodle-outline-toggle-off.svg"
+    },
+    {
+      "componentId": "doodle-flip-button",
+      "figmaLayerName": "doodle-flip-button",
+      "componentName": "DoodleFlipButtonPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleFlipButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleFlipButtonPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-flip-button__ideal__default.svg"
+    },
+    {
+      "componentId": "doodle-flip-button-back",
+      "figmaLayerName": "doodle-flip-button-back",
+      "componentName": "DoodleFlipButtonShowingBackPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleFlipButton.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleFlipButtonShowingBackPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-flip-button-back__ideal__default.svg"
+    },
+    {
+      "componentId": "doodle-zoom-controls",
+      "figmaLayerName": "doodle-zoom-controls",
+      "componentName": "DoodleZoomControlsViewPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleZoomControlsView.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleZoomControlsViewPreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-zoom-controls__ideal__default.svg"
+    },
+    {
+      "componentId": "doodle-zoom-actual-size",
+      "figmaLayerName": "doodle-zoom-actual-size",
+      "componentName": "DoodleZoomControlsViewActualSizePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleZoomControlsView.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "DoodleZoomControlsViewActualSizePreview",
+      "figmaSvg": "https://preview.coo.ee/droidkaigi-conference-app-2026/render/doodle-zoom-actual-size__ideal__default.svg"
+    },
+    {
+      "componentId": "error-fallback-rain",
+      "figmaLayerName": "error-fallback-rain",
+      "componentName": "ErrorFallbackRainPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ErrorFallbackRainPreview",
+      "figmaSvg": "figma/error-fallback-rain.svg"
+    },
+    {
+      "componentId": "error-fallback-cable",
+      "figmaLayerName": "error-fallback-cable",
+      "componentName": "ErrorFallbackUnpluggedCablePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ErrorFallbackUnpluggedCablePreview",
+      "figmaSvg": "figma/error-fallback-cable.svg"
+    },
+    {
+      "componentId": "error-fallback-backstage",
+      "figmaLayerName": "error-fallback-backstage",
+      "componentName": "ErrorFallbackBackstagePreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ErrorFallbackBackstagePreview",
+      "figmaSvg": "figma/error-fallback-backstage.svg"
+    },
+    {
+      "componentId": "lantern-loading",
+      "figmaLayerName": "lantern-loading",
+      "componentName": "LanternLoadingFallbackPreview",
+      "source": "https://github.com/DroidKaigi/conference-app-2026/blob/a1f71794e78c3c25e386ef48cbcabd336a0fb4d7/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanternLoadingFallback.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "LanternLoadingFallbackPreview",
+      "figmaSvg": "figma/lantern-loading.svg"
+    }
+  ]
+}

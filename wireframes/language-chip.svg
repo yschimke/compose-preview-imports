@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 58" width="80" height="58" role="img" aria-label="language-chip layout wireframe">
+  <title>language-chip — layout wireframe (slots + tokens)</title>
+  <rect width="80" height="58" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="80" height="58" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="80" height="58" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="80" height="58" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="21" y="8" width="38" height="42" fill="#E8D8B8" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="20" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFE8D8B8  pad ·  gap 4.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="8" width="38" height="42" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="80" height="58" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,4555 @@
+{
+  "schema": "compose-preview-annotations/v1",
+  "previews": {
+    "kaigi-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 284
+        },
+        "label": "pad 16dp · gap 12dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 47,
+          "width": 966,
+          "height": 116
+        },
+        "label": "pad 0dp/24dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "24",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 205,
+          "width": 472,
+          "height": 116
+        },
+        "label": "pad 0dp/16dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 535,
+          "y": 205,
+          "width": 473,
+          "height": 116
+        },
+        "label": "pad 0dp/16dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 425,
+          "y": 79,
+          "width": 200,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Show more",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 226,
+          "y": 237,
+          "width": 104,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Slides",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 753,
+          "y": 237,
+          "width": 101,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Video",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "kaigi-icon-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 364,
+          "height": 100
+        },
+        "label": "pad 16dp · gap 12dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "12",
+          "unit": "dp"
+        }
+      }
+    ],
+    "kaigi-text-field__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 412
+        },
+        "label": "pad 16dp · gap 12dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 74,
+          "y": 74,
+          "width": 902,
+          "height": 52
+        },
+        "label": "pad 0dp/12dp",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "0",
+          "padding.end": "12",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 74,
+          "y": 222,
+          "width": 902,
+          "height": 52
+        },
+        "label": "pad 0dp/12dp",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "0",
+          "padding.end": "12",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 74,
+          "y": 367,
+          "width": 902,
+          "height": 59
+        },
+        "label": "pad 0dp/12dp",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "0",
+          "padding.end": "12",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 74,
+          "y": 74,
+          "width": 902,
+          "height": 52
+        },
+        "label": "text 14sp/20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 74,
+          "y": 222,
+          "width": 902,
+          "height": 52
+        },
+        "label": "text 14sp/20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 74,
+          "y": 367,
+          "width": 902,
+          "height": 59
+        },
+        "label": "text 14sp/20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "kaigi-chip__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 276,
+          "height": 58
+        },
+        "label": "pad 16dp · gap 8dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 50,
+          "width": 133,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 259,
+          "y": 50,
+          "width": 38,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 50,
+          "width": 133,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "NARWHAL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 259,
+          "y": 50,
+          "width": 38,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "EN",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "kaigi-filter-chip__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 354,
+          "height": 126
+        },
+        "label": "pad 16dp · gap 8dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 142,
+          "y": 79,
+          "width": 41,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "1F",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "600",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 288,
+          "y": 79,
+          "width": 66,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "B1F",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "language-chip__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 21,
+          "y": 8,
+          "width": 38,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 21,
+          "y": 8,
+          "width": 38,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "EN",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "language-toggle__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 252,
+          "height": 126
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 53,
+          "y": 53,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 179,
+          "y": 53,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "Button",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      }
+    ],
+    "room-chip__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 63,
+          "y": 50,
+          "width": 165,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 286,
+          "y": 50,
+          "width": 127,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 471,
+          "y": 50,
+          "width": 165,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 694,
+          "y": 50,
+          "width": 95,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 95,
+          "y": 50,
+          "width": 133,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "NARWHAL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 318,
+          "y": 50,
+          "width": 95,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "QUAIL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 503,
+          "y": 50,
+          "width": 133,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "MEERKAT",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 694,
+          "y": 50,
+          "width": 95,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Foyer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "segmented-first__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 630,
+          "height": 105
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 171,
+          "y": 68,
+          "width": 57,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "9/2",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 486,
+          "y": 68,
+          "width": 57,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "9/3",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "segmented-second__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 630,
+          "height": 105
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 171,
+          "y": 68,
+          "width": 57,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "9/2",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 486,
+          "y": 68,
+          "width": 57,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "9/3",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "segmented-three__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 630,
+          "height": 105
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 68,
+          "width": 25,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "A",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 345,
+          "y": 68,
+          "width": 25,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "B",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 555,
+          "y": 68,
+          "width": 24,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "C",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "back-button__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 11,
+          "y": 11,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "KaigiTopAppBarBackButtonTestTag",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      }
+    ],
+    "navigation-bar__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 152,
+          "y": 32,
+          "width": 746,
+          "height": 147
+        },
+        "label": "pad 0dp/8dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "8",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      }
+    ],
+    "navigation-rail__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 32,
+          "y": 152,
+          "width": 147,
+          "height": 746
+        },
+        "label": "pad 8dp/0dp",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "8",
+          "padding.end": "0",
+          "padding.bottom": "8",
+          "unit": "dp"
+        }
+      }
+    ],
+    "top-app-bar__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 43,
+          "y": 36,
+          "width": 397,
+          "height": 95
+        },
+        "label": "pad 0dp/4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "0",
+          "padding.end": "4",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 43,
+          "y": 36,
+          "width": 397,
+          "height": 95
+        },
+        "label": "text 28sp/36",
+        "role": "Timetable",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "28",
+          "lineHeight": "36",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "large-top-app-bar__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 22,
+          "y": 32,
+          "width": 105,
+          "height": 105
+        },
+        "label": "r 20dp",
+        "role": "KaigiTopAppBarBackButtonTestTag",
+        "detail": {
+          "cornerRadius": "20",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 148,
+          "y": 36,
+          "width": 530,
+          "height": 95
+        },
+        "label": "pad 0dp/4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "0",
+          "padding.end": "4",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 148,
+          "y": 36,
+          "width": 530,
+          "height": 95
+        },
+        "label": "pad 0dp",
+        "role": "Contributors",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 43,
+          "y": 168,
+          "width": 530,
+          "height": 95
+        },
+        "label": "pad 0dp/4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "0",
+          "padding.end": "4",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 43,
+          "y": 168,
+          "width": 530,
+          "height": 95
+        },
+        "label": "pad 0dp",
+        "role": "Contributors",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "0",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 148,
+          "y": 36,
+          "width": 530,
+          "height": 95
+        },
+        "label": "text 28sp/36",
+        "role": "Contributors",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "28",
+          "lineHeight": "36",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 43,
+          "y": 168,
+          "width": 530,
+          "height": 95
+        },
+        "label": "text 28sp/36",
+        "role": "Contributors",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "28",
+          "lineHeight": "36",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "collapsing-header__ideal__default__compact": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 126,
+          "width": 136,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Item 0",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 252,
+          "width": 136,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Item 1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 378,
+          "width": 136,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Item 2",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 504,
+          "width": 136,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Item 3",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 630,
+          "width": 136,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Item 4",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 0,
+          "y": 756,
+          "width": 136,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Item 5",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "timetable-item-card__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 105,
+          "y": 92,
+          "width": 165,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 323,
+          "y": 92,
+          "width": 95,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 913,
+          "y": 74,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 12dp",
+        "role": "Remove favorite",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 105,
+          "y": 355,
+          "width": 756,
+          "height": 42
+        },
+        "label": "pad t 0dp e 32dp b 0dp s 0dp · r 6dp",
+        "role": "This session has been cancelled / Cancelled",
+        "detail": {
+          "padding.start": "0",
+          "padding.top": "0",
+          "padding.end": "32",
+          "padding.bottom": "0",
+          "cornerRadius": "6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 105,
+          "y": 439,
+          "width": 127,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 285,
+          "y": 439,
+          "width": 38,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 667,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 12.8dp",
+        "detail": {
+          "cornerRadius": "12.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 97,
+          "y": 680,
+          "width": 58,
+          "height": 58
+        },
+        "label": "pad 4.8dp",
+        "detail": {
+          "padding.start": "4.8",
+          "padding.top": "4.8",
+          "padding.end": "4.8",
+          "padding.bottom": "4.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 913,
+          "y": 337,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 12dp",
+        "role": "Add favorite",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 105,
+          "y": 875,
+          "width": 127,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 285,
+          "y": 875,
+          "width": 38,
+          "height": 42
+        },
+        "label": "pad 3dp/8dp · gap 4dp",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "3",
+          "padding.end": "8",
+          "padding.bottom": "3",
+          "gap": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 1040,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 12.8dp",
+        "detail": {
+          "cornerRadius": "12.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 97,
+          "y": 1053,
+          "width": 58,
+          "height": 58
+        },
+        "label": "pad 4.8dp",
+        "detail": {
+          "padding.start": "4.8",
+          "padding.top": "4.8",
+          "padding.end": "4.8",
+          "padding.bottom": "4.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 1135,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 12.8dp",
+        "detail": {
+          "cornerRadius": "12.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 97,
+          "y": 1148,
+          "width": 58,
+          "height": 58
+        },
+        "label": "pad 4.8dp",
+        "detail": {
+          "padding.start": "4.8",
+          "padding.top": "4.8",
+          "padding.end": "4.8",
+          "padding.bottom": "4.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 913,
+          "y": 857,
+          "width": 63,
+          "height": 63
+        },
+        "label": "pad 12dp",
+        "role": "Remove favorite",
+        "detail": {
+          "padding.start": "12",
+          "padding.top": "12",
+          "padding.end": "12",
+          "padding.bottom": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 137,
+          "y": 92,
+          "width": 133,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "NARWHAL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 323,
+          "y": 92,
+          "width": 95,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "MIXED",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 168,
+          "width": 358,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Session A",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 105,
+          "y": 355,
+          "width": 756,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "This session has been cancelled / Cancelled",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 137,
+          "y": 439,
+          "width": 95,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "OTTER",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 285,
+          "y": 439,
+          "width": 38,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "EN",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 515,
+          "width": 882,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "サンプルセッションE、折り返しを確かめるための長いプレースホルダーのタイトル",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 688,
+          "width": 158,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Speaker B",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 137,
+          "y": 875,
+          "width": 95,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "QUAIL",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 285,
+          "y": 875,
+          "width": 38,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "EN",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 951,
+          "width": 357,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Session C",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 1061,
+          "width": 158,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Speaker C",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 189,
+          "y": 1156,
+          "width": 161,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "Speaker D",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "timetable-day-header__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 68,
+          "y": 53,
+          "width": 940,
+          "height": 53
+        },
+        "label": "pad 16dp · gap 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 68,
+          "y": 53,
+          "width": 121,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "9/2",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "timetable-time-range__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 381,
+          "y": 64,
+          "width": 142,
+          "height": 58
+        },
+        "label": "pad t 0dp e 9dp b 0dp s 8dp · gap 5dp",
+        "role": "TimetableLiveBadgeTestTag",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "9",
+          "padding.bottom": "0",
+          "gap": "5",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 402,
+          "y": 88,
+          "width": 11,
+          "height": 11
+        },
+        "label": "r 2.1dp",
+        "detail": {
+          "cornerRadius": "2.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 26,
+          "y": 0,
+          "width": 96,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "10:00",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 30,
+          "y": 180,
+          "width": 88,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "10:20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 215,
+          "y": 0,
+          "width": 96,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "10:00",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 219,
+          "y": 180,
+          "width": 88,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "10:20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 404,
+          "y": 0,
+          "width": 96,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "10:00",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 426,
+          "y": 72,
+          "width": 72,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "LIVE",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 408,
+          "y": 249,
+          "width": 88,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "10:20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 593,
+          "y": 0,
+          "width": 96,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "10:00",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 597,
+          "y": 180,
+          "width": 88,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "10:20",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "timetable-live-badge__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 0,
+          "width": 142,
+          "height": 58
+        },
+        "label": "pad t 0dp e 9dp b 0dp s 8dp · gap 5dp",
+        "role": "TimetableLiveBadgeTestTag",
+        "detail": {
+          "padding.start": "8",
+          "padding.top": "0",
+          "padding.end": "9",
+          "padding.bottom": "0",
+          "gap": "5",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 21,
+          "y": 24,
+          "width": 11,
+          "height": 11
+        },
+        "label": "r 2.1dp",
+        "detail": {
+          "cornerRadius": "2.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 45,
+          "y": 8,
+          "width": 72,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "LIVE",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "profile-card-front__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 138,
+          "width": 364,
+          "height": 47
+        },
+        "label": "text 14sp/16",
+        "role": "DROIDKAIGI 2026",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 697,
+          "y": 374,
+          "width": 133,
+          "height": 85
+        },
+        "label": "text 14sp/20",
+        "role": "Hi!!!",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 846,
+          "width": 794,
+          "height": 127
+        },
+        "label": "text 36sp/44",
+        "role": "droidkaigi",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "36",
+          "lineHeight": "44",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 1000,
+          "width": 771,
+          "height": 46
+        },
+        "label": "text 12sp/16",
+        "role": "Software Engineer",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 1127,
+          "width": 607,
+          "height": 58
+        },
+        "label": "text 14sp/20",
+        "role": "BELLESALLE SHIBUYA GARDEN",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 128,
+          "y": 1189,
+          "width": 437,
+          "height": 58
+        },
+        "label": "text 14sp/20",
+        "role": "2026.09.01 - 09.03",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "profile-card-back__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 335,
+          "y": 619,
+          "width": 381,
+          "height": 381
+        },
+        "label": "pad 11dp",
+        "detail": {
+          "padding.start": "11",
+          "padding.top": "11",
+          "padding.end": "11",
+          "padding.bottom": "11",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 375,
+          "y": 659,
+          "width": 301,
+          "height": 300
+        },
+        "label": "pad 14dp · r 4dp",
+        "detail": {
+          "padding.start": "14",
+          "padding.top": "14",
+          "padding.end": "14",
+          "padding.bottom": "14",
+          "cornerRadius": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 138,
+          "width": 924,
+          "height": 47
+        },
+        "label": "text 14sp/16",
+        "role": "DROIDKAIGI 2026",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 63,
+          "y": 226,
+          "width": 924,
+          "height": 127
+        },
+        "label": "text 36sp/44",
+        "role": "SCAN ME",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "36",
+          "lineHeight": "44",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "profile-card-face__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 146,
+          "y": 156,
+          "width": 348,
+          "height": 44
+        },
+        "label": "text 14sp/16",
+        "role": "DROIDKAIGI 2026",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "16",
+          "fontWeight": "700",
+          "fontFamily": "Kaigi Mono Bold.Ttf:Font Weight(Weight=700):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 414,
+          "y": 713,
+          "width": 222,
+          "height": 66
+        },
+        "label": "text 16sp/24",
+        "role": "droidkaigi",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Sans Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "mascot-icon__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 53,
+          "y": 53,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 201,
+          "y": 53,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 349,
+          "y": 53,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 497,
+          "y": 53,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 645,
+          "y": 53,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 793,
+          "y": 53,
+          "width": 126,
+          "height": 126
+        },
+        "label": "pad 4dp",
+        "detail": {
+          "padding.start": "4",
+          "padding.top": "4",
+          "padding.end": "4",
+          "padding.bottom": "4",
+          "unit": "dp"
+        }
+      }
+    ],
+    "kaigi-avatar__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 632,
+          "height": 853
+        },
+        "label": "pad 16dp · gap 12dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "gap": "12",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 263,
+          "height": 263
+        },
+        "label": "r 40.1dp",
+        "detail": {
+          "cornerRadius": "40.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 337,
+          "y": 111,
+          "width": 126,
+          "height": 126
+        },
+        "label": "r 19.2dp",
+        "detail": {
+          "cornerRadius": "19.2",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 495,
+          "y": 132,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 12.8dp",
+        "detail": {
+          "cornerRadius": "12.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 611,
+          "y": 142,
+          "width": 63,
+          "height": 63
+        },
+        "label": "r 9.6dp",
+        "detail": {
+          "cornerRadius": "9.6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 337,
+          "width": 263,
+          "height": 263
+        },
+        "label": "r 40.1dp",
+        "detail": {
+          "cornerRadius": "40.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 81,
+          "y": 376,
+          "width": 185,
+          "height": 185
+        },
+        "label": "pad 15dp",
+        "detail": {
+          "padding.start": "15",
+          "padding.top": "15",
+          "padding.end": "15",
+          "padding.bottom": "15",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 337,
+          "y": 406,
+          "width": 126,
+          "height": 126
+        },
+        "label": "r 19.2dp",
+        "detail": {
+          "cornerRadius": "19.2",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 356,
+          "y": 425,
+          "width": 88,
+          "height": 88
+        },
+        "label": "pad 7.2dp",
+        "detail": {
+          "padding.start": "7.2",
+          "padding.top": "7.2",
+          "padding.end": "7.2",
+          "padding.bottom": "7.2",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 495,
+          "y": 427,
+          "width": 84,
+          "height": 84
+        },
+        "label": "r 12.8dp",
+        "detail": {
+          "cornerRadius": "12.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 508,
+          "y": 440,
+          "width": 58,
+          "height": 58
+        },
+        "label": "pad 4.8dp",
+        "detail": {
+          "padding.start": "4.8",
+          "padding.top": "4.8",
+          "padding.end": "4.8",
+          "padding.bottom": "4.8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 611,
+          "y": 437,
+          "width": 63,
+          "height": 63
+        },
+        "label": "r 9.6dp",
+        "detail": {
+          "cornerRadius": "9.6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 620,
+          "y": 446,
+          "width": 45,
+          "height": 45
+        },
+        "label": "pad 3.6dp",
+        "detail": {
+          "padding.start": "3.6",
+          "padding.top": "3.6",
+          "padding.end": "3.6",
+          "padding.bottom": "3.6",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 732,
+          "width": 77,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "C01",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 362,
+          "y": 733,
+          "width": 77,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "C01",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 499,
+          "y": 733,
+          "width": 77,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "C01",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 611,
+          "y": 732,
+          "width": 63,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "C01",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-card__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 683,
+          "height": 147
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 84,
+          "width": 599,
+          "height": 63
+        },
+        "label": "pad 16dp",
+        "role": "スタンプラリー",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 84,
+          "width": 599,
+          "height": 63
+        },
+        "label": "text 16sp/24",
+        "role": "スタンプラリー",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-shape__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 221
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 134,
+          "y": 221,
+          "width": 53,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "clip",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 333,
+          "y": 221,
+          "width": 191,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "clip + border",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 640,
+          "y": 221,
+          "width": 113,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "Surface",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 857,
+          "y": 221,
+          "width": 141,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "tremor=1",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-segmented__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 546,
+          "height": 252
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      }
+    ],
+    "sketch-marked-text__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 378
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Compose Multiplatform and Compose Runtime",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 168,
+          "width": 966,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Jetpack Compose で始めるアプリパフォーマンス計測と改善",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 294,
+          "width": 966,
+          "height": 126
+        },
+        "label": "text 16sp/24",
+        "role": "Sample Session with a placeholder title long enough to wrap onto several lines",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "16",
+          "lineHeight": "24",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-resize__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 840,
+          "height": 748
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 16,
+          "y": 121,
+          "width": 892,
+          "height": 116
+        },
+        "label": "pad 0dp/10dp",
+        "detail": {
+          "padding.start": "10",
+          "padding.top": "0",
+          "padding.end": "10",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 539,
+          "y": 121,
+          "width": 11,
+          "height": 116
+        },
+        "label": "r 2.1dp",
+        "detail": {
+          "cornerRadius": "2.1",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 230,
+          "height": 42
+        },
+        "label": "text 12sp/16",
+        "role": "width = 296dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "12",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 305,
+          "y": 474,
+          "width": 251,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "no referenceSize",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 258,
+          "y": 748,
+          "width": 346,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "referenceSize = 292×72",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-border-taste__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 886
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 126,
+          "y": 274,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "0dp / 0.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 505,
+          "y": 274,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "0dp / 0.3.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 815,
+          "y": 274,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "0dp / 1.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 126,
+          "y": 580,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "1dp / 0.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 505,
+          "y": 580,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "1dp / 0.3.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 815,
+          "y": 580,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "1dp / 1.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 126,
+          "y": 886,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "3dp / 0.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 505,
+          "y": 886,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "3dp / 0.3.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 815,
+          "y": 886,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "3dp / 1.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-border-radius__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 221
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 135,
+          "y": 221,
+          "width": 50,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "r=0",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 403,
+          "y": 221,
+          "width": 50,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "r=8",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 662,
+          "y": 221,
+          "width": 68,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "r=16",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 893,
+          "y": 221,
+          "width": 68,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "r=28",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-divider__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 104
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      }
+    ],
+    "sketch-divider-taste__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 966,
+          "height": 540
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 150,
+          "y": 61,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "0dp / 0.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 591,
+          "y": 62,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "0dp / 0.3.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 924,
+          "y": 66,
+          "width": 84,
+          "height": 126
+        },
+        "label": "text 11sp/16",
+        "role": "0dp / 1.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 150,
+          "y": 251,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "1dp / 0.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 591,
+          "y": 252,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "1dp / 0.3.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 924,
+          "y": 256,
+          "width": 84,
+          "height": 126
+        },
+        "label": "text 11sp/16",
+        "role": "1dp / 1.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 150,
+          "y": 451,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "3dp / 0.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 591,
+          "y": 453,
+          "width": 179,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "3dp / 0.3.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 924,
+          "y": 456,
+          "width": 84,
+          "height": 126
+        },
+        "label": "text 11sp/16",
+        "role": "3dp / 1.0.dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-divider-weight__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 840,
+          "height": 366
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 411,
+          "y": 62,
+          "width": 102,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "0.75dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 420,
+          "y": 158,
+          "width": 84,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "1.5dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 420,
+          "y": 258,
+          "width": 84,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "3.0dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 420,
+          "y": 366,
+          "width": 84,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "6.0dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-divider-fineness__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 840,
+          "height": 372
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 425,
+          "y": 69,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "80dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 425,
+          "y": 170,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "42dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 425,
+          "y": 271,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "20dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 425,
+          "y": 372,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "10dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "sketch-wavy-line__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 929,
+          "height": 211
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 42,
+          "y": 211,
+          "width": 83,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "n=0.0",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 167,
+          "y": 211,
+          "width": 83,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "n=0.4",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 292,
+          "y": 211,
+          "width": 83,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "n=0.8",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 417,
+          "y": 211,
+          "width": 83,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "n=1.2",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 563,
+          "y": 211,
+          "width": 57,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "6dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 662,
+          "y": 211,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "10dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 779,
+          "y": 211,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "16dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 896,
+          "y": 211,
+          "width": 75,
+          "height": 42
+        },
+        "label": "text 11sp/16",
+        "role": "24dp",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "11",
+          "lineHeight": "16",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-pen-size__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 66,
+          "y": 26,
+          "width": 78,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Thin",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 248,
+          "y": 26,
+          "width": 134,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Normal",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 478,
+          "y": 26,
+          "width": 94,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Thick",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-pen-size-thick__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 66,
+          "y": 26,
+          "width": 78,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Thin",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 248,
+          "y": 26,
+          "width": 134,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Normal",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 478,
+          "y": 26,
+          "width": 94,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Thick",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-stroke-controls__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 5,
+          "width": 514,
+          "height": 116
+        },
+        "label": "pad 0dp/16dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 535,
+          "y": 5,
+          "width": 515,
+          "height": 116
+        },
+        "label": "pad 0dp/16dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 209,
+          "y": 37,
+          "width": 97,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Undo",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 746,
+          "y": 37,
+          "width": 93,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Clear",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-stroke-controls-idle__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 0,
+          "y": 5,
+          "width": 514,
+          "height": 116
+        },
+        "label": "pad 0dp/16dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 535,
+          "y": 5,
+          "width": 515,
+          "height": 116
+        },
+        "label": "pad 0dp/16dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "0",
+          "padding.end": "16",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 209,
+          "y": 37,
+          "width": 97,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Undo",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 746,
+          "y": 37,
+          "width": 93,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Clear",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-outline-toggle__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 58,
+          "width": 274,
+          "height": 95
+        },
+        "label": "pad 16dp",
+        "role": "DoodleOutlineToggleTestTag",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 142,
+          "y": 79,
+          "width": 132,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Outline",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "600",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-outline-toggle-off__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 58,
+          "width": 216,
+          "height": 95
+        },
+        "label": "pad 16dp",
+        "role": "DoodleOutlineToggleTestTag",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 79,
+          "width": 132,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Outline",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "doodle-zoom-controls__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 100,
+          "height": 332
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      }
+    ],
+    "doodle-zoom-actual-size__ideal__default": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 42,
+          "y": 42,
+          "width": 100,
+          "height": 332
+        },
+        "label": "pad 16dp",
+        "detail": {
+          "padding.start": "16",
+          "padding.top": "16",
+          "padding.end": "16",
+          "padding.bottom": "16",
+          "unit": "dp"
+        }
+      }
+    ],
+    "error-fallback-rain__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 1139,
+          "width": 777,
+          "height": 961
+        },
+        "label": "pad 0dp/32dp",
+        "detail": {
+          "padding.start": "32",
+          "padding.top": "0",
+          "padding.end": "32",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 348,
+          "y": 1672,
+          "width": 249,
+          "height": 116
+        },
+        "label": "pad 0dp/24dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "24",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 1257,
+          "width": 777,
+          "height": 168
+        },
+        "label": "text 24sp/32",
+        "role": "Couldn’t load content",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "24",
+          "lineHeight": "32",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 169,
+          "y": 1496,
+          "width": 607,
+          "height": 53
+        },
+        "label": "text 13sp/20",
+        "role": "Check your connection and try again",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 411,
+          "y": 1704,
+          "width": 123,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Reload",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "error-fallback-cable__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 1139,
+          "width": 777,
+          "height": 961
+        },
+        "label": "pad 0dp/32dp",
+        "detail": {
+          "padding.start": "32",
+          "padding.top": "0",
+          "padding.end": "32",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 348,
+          "y": 1672,
+          "width": 249,
+          "height": 116
+        },
+        "label": "pad 0dp/24dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "24",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 1257,
+          "width": 777,
+          "height": 168
+        },
+        "label": "text 24sp/32",
+        "role": "Couldn’t load content",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "24",
+          "lineHeight": "32",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 169,
+          "y": 1496,
+          "width": 607,
+          "height": 53
+        },
+        "label": "text 13sp/20",
+        "role": "Check your connection and try again",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 411,
+          "y": 1704,
+          "width": 123,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Reload",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "error-fallback-backstage__ideal__default__compact": [
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 84,
+          "y": 1139,
+          "width": 777,
+          "height": 961
+        },
+        "label": "pad 0dp/32dp",
+        "detail": {
+          "padding.start": "32",
+          "padding.top": "0",
+          "padding.end": "32",
+          "padding.bottom": "0",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
+          "x": 348,
+          "y": 1672,
+          "width": 249,
+          "height": 116
+        },
+        "label": "pad 0dp/24dp · gap 8dp",
+        "role": "Button",
+        "detail": {
+          "padding.start": "24",
+          "padding.top": "0",
+          "padding.end": "24",
+          "padding.bottom": "0",
+          "gap": "8",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 84,
+          "y": 1257,
+          "width": 777,
+          "height": 168
+        },
+        "label": "text 24sp/32",
+        "role": "Couldn’t load content",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "24",
+          "lineHeight": "32",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 169,
+          "y": 1496,
+          "width": 607,
+          "height": 53
+        },
+        "label": "text 13sp/20",
+        "role": "Check your connection and try again",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 411,
+          "y": 1704,
+          "width": 123,
+          "height": 53
+        },
+        "label": "text 14sp/20",
+        "role": "Reload",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "14",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ],
+    "lantern-loading__ideal__default": [
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 393,
+          "y": 383,
+          "width": 265,
+          "height": 84
+        },
+        "label": "text 24sp/32",
+        "role": "Loading",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "24",
+          "lineHeight": "32",
+          "fontWeight": "400",
+          "fontFamily": "Kaigi Mono Regular.Ttf:Font Weight(Weight=400):Normal:Setting Float(Ital"
+        }
+      },
+      {
+        "kind": "typography",
+        "bounds": {
+          "x": 405,
+          "y": 504,
+          "width": 242,
+          "height": 53
+        },
+        "label": "text 13sp/20",
+        "role": "Just a moment",
+        "detail": {
+          "token": "text",
+          "unit": "sp",
+          "fontSize": "13",
+          "lineHeight": "20",
+          "fontWeight": "500",
+          "fontFamily": "Kaigi Sans Medium.Ttf:Font Weight(Weight=500):Normal:Setting Float(Ital"
+        }
+      }
+    ]
+  },
+  "references": {}
+}
