@@ -528,7 +528,41 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 76,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "GradientRowButtonPreview"
+      "sourceFunction": "GradientRowButtonPreview",
+      "parameters": [
+        {
+          "name": "primaryText",
+          "type": "String"
+        },
+        {
+          "name": "textColor",
+          "type": "Color"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryText",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "fontWeight",
+          "type": "FontWeight",
+          "hasDefault": true
+        },
+        {
+          "name": "gradientBackgroundColor",
+          "type": "Brush",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Buttons/Row close button",
@@ -1402,7 +1436,43 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 63,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "NumberStepperPreview"
+      "sourceFunction": "NumberStepperPreview",
+      "parameters": [
+        {
+          "name": "onMinusClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPlusClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "minusContentDescription",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "plusContentDescription",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "tint",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "(RowScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Inputs/Segmented tab bar",
@@ -2552,7 +2622,32 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 240,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "PlaylistArtworkSingleEpisodePreview"
+      "sourceFunction": "PlaylistArtworkSingleEpisodePreview",
+      "parameters": [
+        {
+          "name": "podcastUuids",
+          "type": "List<String>"
+        },
+        {
+          "name": "artworkSize",
+          "type": "Dp"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "elevation",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Content/Folder image",
@@ -3013,10 +3108,10 @@
           "bounds": {
             "x": 42,
             "y": 104,
-            "width": 240,
+            "width": 241,
             "height": 37
           },
-          "label": "Sep 2, 11:57 PM",
+          "label": "Sep 3, 10:39 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3039,10 +3134,10 @@
           "bounds": {
             "x": 147,
             "y": 287,
-            "width": 240,
+            "width": 241,
             "height": 37
           },
-          "label": "Sep 2, 11:57 PM",
+          "label": "Sep 3, 10:39 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3065,10 +3160,10 @@
           "bounds": {
             "x": 147,
             "y": 470,
-            "width": 240,
+            "width": 241,
             "height": 37
           },
-          "label": "Sep 2, 11:57 PM",
+          "label": "Sep 3, 10:39 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3564,7 +3659,7 @@
       "wireframe": "wireframes/feedback-tooltip.svg",
       "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Tooltip.kt",
       "sourceModule": ":modules:services:compose",
-      "bodyLine": 457,
+      "bodyLine": 469,
       "sourceDirectory": "modules/services/compose",
       "sourceFunction": "TooltipThemePreview",
       "parameters": [
@@ -4265,7 +4360,33 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 79,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "PagerDotIndicatorPreview"
+      "sourceFunction": "PagerDotIndicatorPreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "PagerState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "activeDotColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "inactiveDotColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "dotWidth",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Chrome/Divider",
@@ -6045,13 +6166,41 @@
       "sourceFunction": "CalendarHeatMapPreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "start",
+          "type": "LocalDate"
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
+          "name": "end",
+          "type": "LocalDate"
+        },
+        {
+          "name": "heatLevels",
+          "type": "Map<LocalDate, HeatLevel>"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "cellSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "cellSpacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "scrollState",
+          "type": "ScrollState",
+          "hasDefault": true
+        },
+        {
+          "name": "locale",
+          "type": "Locale",
+          "hasDefault": true
         }
       ]
     },
@@ -6126,7 +6275,8 @@
           "size": "compact",
           "livePreview": "https://preview.coo.ee/pocketcasts/p/motion-animated-play-button__ideal__default__compact",
           "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.AnimatedPlayPauseButtonKt.AnimatedPlayButtonPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts/render/motion-animated-play-button__ideal__default__compact.svg"
         }
       ],
       "greenlines": [
@@ -6173,14 +6323,54 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 101,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "AnimatedPlayButtonPreview"
+      "sourceFunction": "AnimatedPlayButtonPreview",
+      "parameters": [
+        {
+          "name": "isPlaying",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "iconHeight",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "circleSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "circleColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     }
   ],
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 1.67.0",
-  "generatedAt": "2026-09-02T23:59:04.612Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:41:04.806Z",
   "display": {
     "surface": "light",
     "hero": "Buttons/Row button"
@@ -6199,7 +6389,7 @@
   ],
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "4538b34c3b4ab665a8194afc1258be686b0570bd",
+    "ref": "52d7991777bd83569d66562fe7156d19552a32d0",
     "module": ":modules:services:compose"
   }
 }
