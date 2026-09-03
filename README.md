@@ -146,6 +146,7 @@ any other.
 | `workingDirectory` | Optional. Repo-relative subdirectory of the upstream checkout holding the Gradle build, for a project whose build is not at its repository root. Omit for the usual case. |
 | `variant` | Optional. Android variant to render (e.g. `fullDebug`), for a module with product flavors and therefore no plain `debug`. See below. |
 | `renderTimeout` | Optional. Seconds the render may spend, when the default 600 is not enough for the module's preview count. See below. |
+| `renderRuntimeProjects` | Optional. Array of Gradle project paths to put on the render's runtime classpath, for an upstream that binds an implementation at runtime and keeps it off the production classpath. See below. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
 
@@ -216,6 +217,34 @@ long before it outgrows the job.
 
 Raise it rather than thinning the catalog: an import exists to show what the project's design system
 actually contains.
+
+`renderRuntimeProjects` exists because an upstream may bind an implementation at runtime and
+deliberately keep it off the production compile classpath. `DroidKaigi/conference-app-2026` is the
+case. Its `:core:preview:wrapper` declares
+
+```kotlin
+androidMain.dependencies { compileOnly(project(":core:preview:impl")) }
+jvmMain.dependencies    { compileOnly(project(":core:preview:impl")) }
+```
+
+with its own comment saying *"impl stays off production classpaths"*, and supplies the binding at
+runtime only from the app (`devImplementation`) and from the repository's screenshot-test convention
+plugin. A render of `:core:ui` is neither of those, so all 450 of its previews die with
+`ClassNotFoundException: …core.preview.impl.DefaultPreviewImageResolver`.
+
+```json
+"renderRuntimeProjects": [":core:preview:impl"]
+```
+
+Named rather than inferred, for the same reason as `stubGoogleServices`: nothing here can know which
+of an upstream's modules is the runtime half of a `compileOnly` binding, and a reviewer of the pull
+request can check the named projects against the upstream build.
+
+The pipeline appends them to the module's build file **in the throwaway checkout**, on
+`runtimeOnly`-shaped configurations only. Nothing the module compiles against changes, so this
+cannot make a preview compile that would not compile for a real consumer — it supplies, for the
+render, what the upstream already supplies for its own screenshot tests. Nothing is written anywhere
+that outlives the job.
 
 `stubGoogleServices` exists because some builds cannot **configure** without a file their
 repository deliberately does not contain. `home-assistant/android`'s convention plugin applies the

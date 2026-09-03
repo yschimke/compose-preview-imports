@@ -92,6 +92,7 @@ jobs:
       stubGoogleServices: ${{ steps.read.outputs.stubGoogleServices }}
       variant: ${{ steps.read.outputs.variant }}
       renderTimeout: ${{ steps.read.outputs.renderTimeout }}
+      renderRuntimeProjects: ${{ steps.read.outputs.renderRuntimeProjects }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -267,6 +268,31 @@ jobs:
             exit 1
           }
 
+          # Gradle projects to put on the rendered module's RUNTIME classpath, for an upstream that
+          # binds an implementation at runtime and keeps it off the production classpath.
+          #
+          # DroidKaigi/conference-app-2026 is the case: :core:preview:wrapper declares
+          # compileOnly(project(":core:preview:impl")) on androidMain and jvmMain — "impl stays off
+          # production classpaths", in its own words — and the binding is supplied by the app and by
+          # the repository's screenshot-test convention plugin. A render of :core:ui is neither, so
+          # every one of its 450 previews dies with ClassNotFoundException on
+          # …core.preview.impl.DefaultPreviewImageResolver.
+          #
+          # Declared per import rather than inferred, for the same reason as stubGoogleServices:
+          # nothing here can know which of an upstream's modules is the runtime half of a
+          # compileOnly binding, and a reviewer of the pull request can check the named projects
+          # against the upstream build.
+          render_runtime_projects=$(jq -r '.renderRuntimeProjects // [] | join(",")' "$config")
+          # Gradle project paths: a leading colon, then colon-separated segments. `grep -z` for the
+          # same reason as the fields above — the value reaches $GITHUB_OUTPUT.
+          [ -z "$render_runtime_projects" ] || \
+            printf '%s' "$render_runtime_projects" |
+              grep -zEq '^:[A-Za-z0-9_.-]+(:[A-Za-z0-9_.-]+)*(,:[A-Za-z0-9_.-]+(:[A-Za-z0-9_.-]+)*)*$' || {
+            echo "::error::renderRuntimeProjects '${render_runtime_projects}' must be Gradle project" \
+              "paths (leading colon, e.g. :core:preview:impl), one per array entry, no spaces"
+            exit 1
+          }
+
           # Seconds the render may spend, when the default 600 is not enough.
           #
           # This is the INNER timeout on `bundle pack`, not the job timeout: a render can sit well
@@ -311,6 +337,7 @@ jobs:
             echo "stubGoogleServices=${stub_google_services}"
             echo "variant=${variant}"
             echo "renderTimeout=${render_timeout}"
+            echo "renderRuntimeProjects=${render_runtime_projects}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -364,6 +391,10 @@ jobs:
       # workflow's input is typed `number` and a job output is always a string; the literal 600
       # repeats that input's own default, so an import that says nothing is unchanged.
       render-timeout: ${{ needs.config.outputs.renderTimeout != '' && fromJSON(needs.config.outputs.renderTimeout) || 600 }}
+      # Implementations this upstream binds at runtime and keeps off its production classpath —
+      # see the config job. Added to the module's build file in the throwaway checkout only, on
+      # runtimeOnly configurations, so nothing it compiles against changes.
+      render-runtime-projects: ${{ needs.config.outputs.renderRuntimeProjects }}
       # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
       # serve box that bakes the matching daemon re-renders these previews live — device, theme and
       # knob controls work instead of replaying a snapshot.
