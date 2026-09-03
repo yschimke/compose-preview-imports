@@ -2592,7 +2592,79 @@
       "sourceModule": ":ui",
       "bodyLine": 128,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenEmptyContent_preview"
+      "sourceFunction": "BitwardenEmptyContent_preview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "topBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "utilityBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "overlay",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "snackbarHost",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "floatingActionButton",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "floatingActionButtonPosition",
+          "type": "FabPosition",
+          "hasDefault": true
+        },
+        {
+          "name": "navigationData",
+          "type": "ScaffoldNavigationData?",
+          "hasDefault": true
+        },
+        {
+          "name": "pullToRefreshState",
+          "type": "BitwardenPullToRefreshState",
+          "hasDefault": true
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentWindowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "loading-content",
@@ -2630,7 +2702,79 @@
       "sourceModule": ":ui",
       "bodyLine": 56,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenLoadingContent_preview"
+      "sourceFunction": "BitwardenLoadingContent_preview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "topBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "utilityBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "overlay",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "snackbarHost",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "floatingActionButton",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "floatingActionButtonPosition",
+          "type": "FabPosition",
+          "hasDefault": true
+        },
+        {
+          "name": "navigationData",
+          "type": "ScaffoldNavigationData?",
+          "hasDefault": true
+        },
+        {
+          "name": "pullToRefreshState",
+          "type": "BitwardenPullToRefreshState",
+          "hasDefault": true
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentWindowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "text-row-tooltip",
@@ -2761,7 +2905,7 @@
         },
         {
           "name": "content",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         }
@@ -2862,7 +3006,7 @@
         },
         {
           "name": "content",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         }
@@ -5559,7 +5703,33 @@
       "sourceModule": ":ui",
       "bodyLine": 67,
       "sourceDirectory": "ui",
-      "sourceFunction": "NotificationBadge_preview"
+      "sourceFunction": "NotificationBadge_preview",
+      "parameters": [
+        {
+          "name": "notificationCount",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isVisible",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "coach-mark",
@@ -5697,8 +5867,8 @@
       "sourceFunction": "BitwardenTypography_preview"
     }
   ],
-  "renderer": "compose-preview 1.65.0",
-  "generatedAt": "2026-09-02T22:16:00.175Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T09:06:35.048Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

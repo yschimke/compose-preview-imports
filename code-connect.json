@@ -7,7 +7,7 @@
     "ref": "9b9f41ffe4e2dfcfdcaae23fd033bd495857acad",
     "module": ":ui"
   },
-  "generatedAt": "2026-09-02T22:16:01.438Z",
+  "generatedAt": "2026-09-03T09:06:36.351Z",
   "mappings": [
     {
       "componentId": "filled-button",
@@ -26,31 +26,41 @@
           "name": "buttonData",
           "type": "BitwardenButtonData",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "colors",
           "type": "ButtonColors",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "cardStyle",
           "type": "CardStyle?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "cardInsets",
           "type": "PaddingValues",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-button__ideal__default.svg"
@@ -72,31 +82,41 @@
           "name": "buttonData",
           "type": "BitwardenButtonData",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "colors",
           "type": "BitwardenOutlinedButtonColors",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "cardStyle",
           "type": "CardStyle?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "cardInsets",
           "type": "PaddingValues",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-button__ideal__default.svg"
@@ -118,7 +138,9 @@
           "name": "id",
           "type": "Int",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-error-button__ideal__default.svg"
@@ -140,7 +162,9 @@
           "name": "id",
           "type": "Int",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-error-button__ideal__default.svg"
@@ -332,19 +356,25 @@
           "name": "text",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "startIcon",
           "type": "IconData?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/info-callout__ideal__default.svg"
@@ -362,21 +392,241 @@
     {
       "componentId": "empty-content",
       "figmaLayerName": "empty-content",
-      "componentName": "BitwardenEmptyContent_preview",
-      "source": "https://github.com/bitwarden/android/blob/9b9f41ffe4e2dfcfdcaae23fd033bd495857acad/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenEmptyContent.kt",
+      "componentName": "BitwardenScaffold",
+      "source": "https://github.com/bitwarden/android/blob/9b9f41ffe4e2dfcfdcaae23fd033bd495857acad/ui/src/main/kotlin/com/bitwarden/ui/platform/components/scaffold/BitwardenScaffold.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "BitwardenEmptyContent_preview",
+      "codeSnippet": "BitwardenScaffold(\n    content = { },\n)",
+      "imports": [
+        "import com.bitwarden.ui.platform.components.scaffold.BitwardenScaffold"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "topBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "utilityBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "overlay",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "snackbarHost",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "floatingActionButton",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "floatingActionButtonPosition",
+          "type": "FabPosition",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "navigationData",
+          "type": "ScaffoldNavigationData?",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "pullToRefreshState",
+          "type": "BitwardenPullToRefreshState",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "contentWindowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/empty-content__ideal__default.svg"
     },
     {
       "componentId": "loading-content",
       "figmaLayerName": "loading-content",
-      "componentName": "BitwardenLoadingContent_preview",
-      "source": "https://github.com/bitwarden/android/blob/9b9f41ffe4e2dfcfdcaae23fd033bd495857acad/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenLoadingContent.kt",
+      "componentName": "BitwardenScaffold",
+      "source": "https://github.com/bitwarden/android/blob/9b9f41ffe4e2dfcfdcaae23fd033bd495857acad/ui/src/main/kotlin/com/bitwarden/ui/platform/components/scaffold/BitwardenScaffold.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "BitwardenLoadingContent_preview",
+      "codeSnippet": "BitwardenScaffold(\n    content = { },\n)",
+      "imports": [
+        "import com.bitwarden.ui.platform.components.scaffold.BitwardenScaffold"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "topBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "utilityBar",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "overlay",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "snackbarHost",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "floatingActionButton",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "floatingActionButtonPosition",
+          "type": "FabPosition",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "navigationData",
+          "type": "ScaffoldNavigationData?",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
+        },
+        {
+          "name": "pullToRefreshState",
+          "type": "BitwardenPullToRefreshState",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "contentWindowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
       "figmaSvg": "figma/loading-content.svg"
     },
     {
@@ -396,73 +646,97 @@
           "name": "text",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "cardStyle",
           "type": "CardStyle",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "description",
           "type": "AnnotatedString?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "textTestTag",
           "type": "String?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "isEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "clickable",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "isExternalLink",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "withDivider",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "helpData",
           "type": "BitwardenHelpButtonData?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "content",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-tooltip__ideal__default.svg"
@@ -484,73 +758,97 @@
           "name": "text",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "cardStyle",
           "type": "CardStyle",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "description",
           "type": "AnnotatedString?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "textTestTag",
           "type": "String?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "isEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "clickable",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "isExternalLink",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "withDivider",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "helpData",
           "type": "BitwardenHelpButtonData?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "content",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": true
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-disabled__ideal__default.svg"
@@ -652,19 +950,25 @@
           "name": "contentDescription",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "isDisplayed",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/search-action__ideal__default.svg"
@@ -706,67 +1010,89 @@
           "name": "isVisible",
           "type": "Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "accountSummaries",
           "type": "ImmutableList<AccountSummary>",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSwitchAccountClick",
           "type": "(AccountSummary) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onLockAccountClick",
           "type": "(AccountSummary) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onLogoutAccountClick",
           "type": "(AccountSummary) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onAddAccountClick",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onDismissRequest",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "topAppBarScrollBehavior",
           "type": "TopAppBarScrollBehavior",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "windowInsets",
           "type": "WindowInsets",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "isAddAccountAvailable",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/account-switcher.svg"
@@ -844,11 +1170,57 @@
     {
       "componentId": "notification-badge",
       "figmaLayerName": "notification-badge",
-      "componentName": "NotificationBadge_preview",
+      "componentName": "NotificationBadge",
       "source": "https://github.com/bitwarden/android/blob/9b9f41ffe4e2dfcfdcaae23fd033bd495857acad/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/NotificationBadge.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "NotificationBadge_preview",
+      "codeSnippet": "NotificationBadge(\n    notificationCount = TODO(\"Int\"),\n)",
+      "imports": [
+        "import com.bitwarden.ui.platform.components.badge.NotificationBadge"
+      ],
+      "parameters": [
+        {
+          "name": "notificationCount",
+          "type": "Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "isVisible",
+          "type": "Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/notification-badge__ideal__default.svg"
     },
     {
