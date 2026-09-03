@@ -147,6 +147,7 @@ any other.
 | `variant` | Optional. Android variant to render (e.g. `fullDebug`), for a module with product flavors and therefore no plain `debug`. See below. |
 | `renderTimeout` | Optional. Seconds the render may spend, when the default 600 is not enough for the module's preview count. See below. |
 | `renderRuntimeProjects` | Optional. Array of Gradle project paths to put on the render's runtime classpath, for an upstream that binds an implementation at runtime and keeps it off the production classpath. See below. |
+| `gradleProperties` | Optional. Object of Gradle `key: value` properties to set in the throwaway checkout, for something the pipeline has no step of its own for. See below. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
 
@@ -245,6 +246,22 @@ The pipeline appends them to the module's build file **in the throwaway checkout
 cannot make a preview compile that would not compile for a real consumer — it supplies, for the
 render, what the upstream already supplies for its own screenshot tests. Nothing is written anywhere
 that outlives the job.
+
+`gradleProperties` is the escape hatch. The pipeline already rewrites the throwaway checkout's
+`gradle.properties` for the cases it knows the reason for — dependency verification, Isolated
+Projects, the render variant — each as its own step. This is for the ones it does not, so that
+establishing *whether* a property fixes an import does not need a pipeline change per hypothesis.
+
+```json
+"gradleProperties": { "android.nonTransitiveRClass": "false" }
+```
+
+Two rules keep it from becoming a junk drawer. It is applied **before** the properties the pipeline
+owns, so an import cannot use it to turn dependency verification back to strict or Isolated Projects
+back on. And every entry must say in `notes` what was established and how — a property set here
+without a recorded reason is indistinguishable from a guess nobody revisited. When one turns out to
+be needed by more than one import, it belongs in a pipeline step of its own, with the reasoning
+written down once, rather than copied between `import.json` files.
 
 `stubGoogleServices` exists because some builds cannot **configure** without a file their
 repository deliberately does not contain. `home-assistant/android`'s convention plugin applies the

@@ -93,6 +93,7 @@ jobs:
       variant: ${{ steps.read.outputs.variant }}
       renderTimeout: ${{ steps.read.outputs.renderTimeout }}
       renderRuntimeProjects: ${{ steps.read.outputs.renderRuntimeProjects }}
+      gradleProperties: ${{ steps.read.outputs.gradleProperties }}
     steps:
       - name: Check out the import branch
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -293,6 +294,26 @@ jobs:
             exit 1
           }
 
+          # Gradle properties this import's render needs, for something the pipeline has no step of
+          # its own for. An object of key/value pairs, flattened to key=value pairs here.
+          #
+          # The pipeline owns the properties it knows the reason for — dependency verification,
+          # Isolated Projects, the render variant — and applies this BEFORE those, so an import
+          # cannot use this door to turn one of them back off. Say in `notes` what was established
+          # and how, because a property set here without a recorded reason is indistinguishable
+          # from a guess nobody revisited.
+          gradle_properties=$(jq -r '.gradleProperties // {} | to_entries | map("\(.key)=\(.value)") | join(",")' "$config")
+          # Property keys and values: letters, digits and . _ - are enough for every case so far,
+          # and a comma or an `=` in a VALUE would split into a pair nobody wrote. `grep -z` for the
+          # same reason as the fields above — this reaches $GITHUB_OUTPUT.
+          [ -z "$gradle_properties" ] || \
+            printf '%s' "$gradle_properties" |
+              grep -zEq '^[A-Za-z0-9_.-]+=[A-Za-z0-9_.-]*(,[A-Za-z0-9_.-]+=[A-Za-z0-9_.-]*)*$' || {
+            echo "::error::gradleProperties '${gradle_properties}' must be key=value pairs" \
+              "(letters, digits, . _ - in each), no spaces, no commas or = inside a value"
+            exit 1
+          }
+
           # Seconds the render may spend, when the default 600 is not enough.
           #
           # This is the INNER timeout on `bundle pack`, not the job timeout: a render can sit well
@@ -338,6 +359,7 @@ jobs:
             echo "variant=${variant}"
             echo "renderTimeout=${render_timeout}"
             echo "renderRuntimeProjects=${render_runtime_projects}"
+            echo "gradleProperties=${gradle_properties}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -395,6 +417,9 @@ jobs:
       # see the config job. Added to the module's build file in the throwaway checkout only, on
       # runtimeOnly configurations, so nothing it compiles against changes.
       render-runtime-projects: ${{ needs.config.outputs.renderRuntimeProjects }}
+      # Gradle properties this import's render needs — see the config job. Applied to the
+      # throwaway checkout only, and before the properties the pipeline owns itself.
+      gradle-properties: ${{ needs.config.outputs.gradleProperties }}
       # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
       # serve box that bakes the matching daemon re-renders these previews live — device, theme and
       # knob controls work instead of replaying a snapshot.
