@@ -4944,6 +4944,15 @@
         },
         {
           "bounds": {
+            "x": 934,
+            "y": 845,
+            "width": 32,
+            "height": 32
+          },
+          "cornerRadius": 2
+        },
+        {
+          "bounds": {
             "x": 709,
             "y": 1005,
             "width": 32,
@@ -5820,8 +5829,8 @@
       "sourceFunction": "AboutPreview"
     }
   ],
-  "renderer": "compose-preview 1.65.0",
-  "generatedAt": "2026-09-02T22:07:42.846Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:13:29.281Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

@@ -708,6 +708,9 @@
                         <g id="BoxKt">
                           <rect x="934" y="802" width="32" height="32" rx="5.25" ry="5.25" fill="#141E16" fill-opacity="0.1"/>
                         </g>
+                        <g id="BoxKt">
+                          <rect x="934" y="845" width="32" height="32" rx="5.25" ry="5.25" fill="#141E16" fill-opacity="0.1"/>
+                        </g>
                       </g>
                     </g>
                   </g>
@@ -756,13 +759,8 @@
               <g id="Row">
                 <g id="Box">
                     <rect x="63" y="1239" width="126" height="126" rx="31.5" ry="31.5" fill="#FFFFFF"/>
-                  <g id="BoxKt">
-                    <g transform="translate(95 1271) scale(0.06 0.06)">
-                      <path d="M200 840 q -33 0 -56.5 -23.5 T 0 0 q 0 -33 23.5 -56.5 T 0 0 q 33 0 56.5 23.5 T 0 0 q 0 33 -23.5 56.5 T 0 0 Z M739 840 q -24 0 -41.5 -17 T 0 0 q -10 -98 -52.5 -184 t 0 0 Q 449 378 363 335.5 T 0 0 q -25 -3 -42 -21 t 0 0 q 0 -25 17.5 -41.5 T 0 0 q 123 10 231 62 t 0 0 Q 683 442 735 550 t 0 0 q 2 24 -15 41.5 T 0 0 Z M499 840 q -23 0 -41.5 -16.5 T 0 0 q -18 -97 -88 -167 t 0 0 q -26 -5 -42.5 -24 T 0 0 q 0 -26 18 -42 t 0 0 q 148 20 252.5 124.5 T 0 0 q 3 23 -14 41 t 0 0 Z" fill="#006D3A"/>
-                    </g>
-                  </g>
                   <g id="UtilsKt">
-                    <image href="settings-data.figma-raster/1054.png" x="63" y="1239" width="126" height="126"/>
+                    <image href="settings-data.figma-raster/1318.png" x="63" y="1239" width="126" height="126"/>
                   </g>
                 </g>
                 <g id="Spacer">
@@ -793,7 +791,7 @@
                     </g>
                   </g>
                   <g id="UtilsKt">
-                    <image href="settings-data.figma-raster/1066.png" x="63" y="1407" width="63" height="63"/>
+                    <image href="settings-data.figma-raster/1330.png" x="63" y="1407" width="63" height="63"/>
                   </g>
                 </g>
                 <g id="Spacer">
@@ -819,7 +817,7 @@
                     </g>
                   </g>
                   <g id="UtilsKt">
-                    <image href="settings-data.figma-raster/1077.png" x="63" y="1512" width="63" height="63"/>
+                    <image href="settings-data.figma-raster/1341.png" x="63" y="1512" width="63" height="63"/>
                   </g>
                 </g>
                 <g id="Spacer">
@@ -839,13 +837,8 @@
               <g id="Row">
                 <g id="Box">
                     <rect x="63" y="1617" width="63" height="63" rx="15.75" ry="15.75" fill="#FFFFFF"/>
-                  <g id="BoxKt">
-                    <g transform="translate(63 1617) scale(0.06 0.06)">
-                      <path d="M200 840 q -33 0 -56.5 -23.5 T 0 0 q 0 -33 23.5 -56.5 T 0 0 q 33 0 56.5 23.5 T 0 0 q 0 33 -23.5 56.5 T 0 0 Z M739 840 q -24 0 -41.5 -17 T 0 0 q -10 -98 -52.5 -184 t 0 0 Q 449 378 363 335.5 T 0 0 q -25 -3 -42 -21 t 0 0 q 0 -25 17.5 -41.5 T 0 0 q 123 10 231 62 t 0 0 Q 683 442 735 550 t 0 0 q 2 24 -15 41.5 T 0 0 Z M499 840 q -23 0 -41.5 -16.5 T 0 0 q -18 -97 -88 -167 t 0 0 q -26 -5 -42.5 -24 T 0 0 q 0 -26 18 -42 t 0 0 q 148 20 252.5 124.5 T 0 0 q 3 23 -14 41 t 0 0 Z" fill="#006D3A"/>
-                    </g>
-                  </g>
                   <g id="UtilsKt">
-                    <image href="settings-data.figma-raster/1088.png" x="63" y="1617" width="63" height="63"/>
+                    <image href="settings-data.figma-raster/1352.png" x="63" y="1617" width="63" height="63"/>
                   </g>
                 </g>
                 <g id="Spacer">
@@ -871,7 +864,7 @@
                     </g>
                   </g>
                   <g id="UtilsKt">
-                    <image href="settings-data.figma-raster/1099.png" x="63" y="1722" width="63" height="63"/>
+                    <image href="settings-data.figma-raster/1363.png" x="63" y="1722" width="63" height="63"/>
                   </g>
                 </g>
                 <g id="Spacer">
@@ -892,7 +885,7 @@
           </g>
           <g id="Box">
             <g id="Box">
-              <image href="settings-data.figma-raster/758.png" x="0" y="0" width="1050" height="210"/>
+              <image href="settings-data.figma-raster/1021.png" x="0" y="0" width="1050" height="210"/>
               <g id="TopAppBar">
                 <g id="Box">
                   <rect x="43" y="52" width="105" height="105" rx="52.5" ry="52.5" fill="#141E16" fill-opacity="0.07"/>

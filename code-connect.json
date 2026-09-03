@@ -7,7 +7,7 @@
     "ref": "bce23e5de2f56b0e34752f89c564beff26dad98b",
     "module": ":shared"
   },
-  "generatedAt": "2026-09-02T22:07:44.021Z",
+  "generatedAt": "2026-09-03T10:13:30.422Z",
   "mappings": [
     {
       "componentId": "home",
@@ -196,19 +196,25 @@
           "name": "state",
           "type": "StatisticsState",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "goBack",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/settings-data.svg"
