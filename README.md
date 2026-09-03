@@ -256,6 +256,11 @@ establishing *whether* a property fixes an import does not need a pipeline chang
 "gradleProperties": { "android.nonTransitiveRClass": "false" }
 ```
 
+Keys are letters, digits and `.` `_` `-`. Values may be strings, numbers or booleans, and a string
+value may contain any character except a newline — a comma included, as in
+`"android.suppressUnsupportedCompileSdk": "35,36"`, because the value reaches the pipeline as JSON
+rather than as an item in a comma-joined list.
+
 Two rules keep it from becoming a junk drawer. It is applied **before** the properties the pipeline
 owns, so an import cannot use it to turn dependency verification back to strict or Isolated Projects
 back on. And every entry must say in `notes` what was established and how — a property set here
