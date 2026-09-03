@@ -7498,7 +7498,29 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 49,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "PreviewBigRed"
+      "sourceFunction": "PreviewBigRed",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "height",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "preview-default",
@@ -7524,7 +7546,29 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 35,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "PreviewDefault"
+      "sourceFunction": "PreviewDefault",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "height",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "preview-magenta",
@@ -7550,7 +7594,29 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 41,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "PreviewMagenta"
+      "sourceFunction": "PreviewMagenta",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "height",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "icon-tinted",
@@ -7681,7 +7747,28 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 115,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "FilledThundermailPreview"
+      "sourceFunction": "FilledThundermailPreview",
+      "parameters": [
+        {
+          "name": "imageVector",
+          "type": "ImageVector"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "tint",
+          "type": "Color?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "qr-code",
@@ -7710,7 +7797,28 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 103,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "QrCodePreview"
+      "sourceFunction": "QrCodePreview",
+      "parameters": [
+        {
+          "name": "imageVector",
+          "type": "ImageVector"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "tint",
+          "type": "Color?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "outlined-reply-all",
@@ -7739,7 +7847,28 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 54,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "OutlinedReplyAllPreview"
+      "sourceFunction": "OutlinedReplyAllPreview",
+      "parameters": [
+        {
+          "name": "imageVector",
+          "type": "ImageVector"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "tint",
+          "type": "Color?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "outlined-reply",
@@ -7768,7 +7897,28 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 69,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "OutlinedReplyPreview"
+      "sourceFunction": "OutlinedReplyPreview",
+      "parameters": [
+        {
+          "name": "imageVector",
+          "type": "ImageVector"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "tint",
+          "type": "Color?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "fixed-scale-image-bottom-center",
@@ -7959,34 +8109,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 97,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "TabPrimaryPreview",
-      "parameters": [
-        {
-          "name": "themeType",
-          "type": "PreviewThemeType",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "TabPrimaryPreview"
     },
     {
       "componentId": "tab-secondary",
@@ -29949,44 +30072,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 105,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "InfoBannerGlobalNotificationCardLongNoActionTextPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "useRow",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "arrangement",
-          "type": "HorizontalOrVertical",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "InfoBannerGlobalNotificationCardLongNoActionTextPreview"
     },
     {
       "componentId": "info-banner-global-notification-card-long-text",
@@ -30148,44 +30234,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 82,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "InfoBannerGlobalNotificationCardLongTextPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "useRow",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "arrangement",
-          "type": "HorizontalOrVertical",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "InfoBannerGlobalNotificationCardLongTextPreview"
     },
     {
       "componentId": "info-banner-global-notification-card-no-action",
@@ -30822,44 +30871,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 105,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "SuccessBannerGlobalNotificationCardLongNoActionTextPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "useRow",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "arrangement",
-          "type": "HorizontalOrVertical",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "SuccessBannerGlobalNotificationCardLongNoActionTextPreview"
     },
     {
       "componentId": "success-banner-global-notification-card-long-text",
@@ -31021,44 +31033,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 82,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "SuccessBannerGlobalNotificationCardLongTextPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "useRow",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "arrangement",
-          "type": "HorizontalOrVertical",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "SuccessBannerGlobalNotificationCardLongTextPreview"
     },
     {
       "componentId": "success-banner-global-notification-card-no-action",
@@ -31695,44 +31670,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 105,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "WarningBannerGlobalNotificationCardLongNoActionTextPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "useRow",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "arrangement",
-          "type": "HorizontalOrVertical",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "WarningBannerGlobalNotificationCardLongNoActionTextPreview"
     },
     {
       "componentId": "warning-banner-global-notification-card-long-text",
@@ -31894,44 +31832,7 @@
       "sourceModule": ":ui:bolt",
       "bodyLine": 82,
       "sourceDirectory": "components/ui/bolt",
-      "sourceFunction": "WarningBannerGlobalNotificationCardLongTextPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "useRow",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "useScrim",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimAlpha",
-          "type": "Float",
-          "hasDefault": true
-        },
-        {
-          "name": "scrimPadding",
-          "type": "PaddingValues",
-          "hasDefault": true
-        },
-        {
-          "name": "arrangement",
-          "type": "HorizontalOrVertical",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "WarningBannerGlobalNotificationCardLongTextPreview"
     },
     {
       "componentId": "warning-banner-global-notification-card-no-action",
@@ -39256,8 +39157,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 1.67.0",
-  "generatedAt": "2026-09-03T05:57:19.932Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:40:52.984Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -39272,7 +39173,7 @@
   ],
   "source": {
     "repo": "thunderbird/thunderbird-android",
-    "ref": "f1e79b228c1e7910316afb5e2989078d87585159",
+    "ref": "d5afc89de5f2316b0fa85755e0c6a6fdd519b251",
     "module": ":ui:bolt"
   }
 }
