@@ -184,7 +184,8 @@
           "height": 204,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/key-figures-row__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.KeyFiguresRowPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/key-figures-row__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -246,7 +247,8 @@
           "height": 204,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/key-figures-row-rising__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.KeyFiguresRowRisingPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/key-figures-row-rising__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -308,7 +310,8 @@
           "height": 315,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/co2-trend-sparkline__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CO2TrendSparklinePreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/co2-trend-sparkline__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -333,7 +336,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/empty-state__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.EmptyStatePreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/empty-state__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -358,7 +362,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/empty-state-message__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.EmptyStateWithMessagePreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/empty-state-message__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -383,7 +388,8 @@
           "height": 1067,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/color-scheme__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.ColorSchemeLightPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/color-scheme__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -601,7 +607,8 @@
           "height": 1067,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/color-scheme-dark__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.ColorSchemeDarkPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/color-scheme-dark__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -819,7 +826,8 @@
           "height": 1271,
           "livePreview": "https://preview.coo.ee/joreilly-climatetracekmp/p/typography__ideal__default",
           "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.TypographySpecimenPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/typography__ideal__default.svg"
         }
       ],
       "greenlines": [],
@@ -834,8 +842,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 1.63.0",
-  "generatedAt": "2026-09-02T09:00:47.496Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:05:52.536Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
