@@ -302,17 +302,38 @@ jobs:
           # cannot use this door to turn one of them back off. Say in `notes` what was established
           # and how, because a property set here without a recorded reason is indistinguishable
           # from a guess nobody revisited.
-          gradle_properties=$(jq -r '.gradleProperties // {} | to_entries | map("\(.key)=\(.value)") | join(",")' "$config")
-          # Property keys and values: letters, digits and . _ - are enough for every case so far,
-          # and a comma or an `=` in a VALUE would split into a pair nobody wrote. `grep -z` for the
-          # same reason as the fields above — this reaches $GITHUB_OUTPUT.
-          [ -z "$gradle_properties" ] || \
-            printf '%s' "$gradle_properties" |
-              grep -zEq '^[A-Za-z0-9_.-]+=[A-Za-z0-9_.-]*(,[A-Za-z0-9_.-]+=[A-Za-z0-9_.-]*)*$' || {
-            echo "::error::gradleProperties '${gradle_properties}' must be key=value pairs" \
-              "(letters, digits, . _ - in each), no spaces, no commas or = inside a value"
-            exit 1
-          }
+          # Passed as compact JSON, not flattened to a comma-joined `key=value` list. The flattened
+          # form cannot express a value containing a comma — `android.suppressUnsupportedCompileSdk=35,36`
+          # is a real one — and the old validator's answer was to forbid such values outright, which
+          # ruled out legitimate configuration to work around a transport this repo chose.
+          gradle_properties=$(jq -c '.gradleProperties // {}' "$config")
+          if [ "$gradle_properties" = "{}" ]; then
+            # Absent rather than empty, so the pipeline's `if:` guard skips the step entirely.
+            gradle_properties=""
+          else
+            # Keys stay conservative (a Gradle property key is letters, digits and . _ -). Values are
+            # now unrestricted apart from type and newlines: the pipeline writes them with python, so
+            # a comma, `&`, `|` or backslash is just a character.
+            jq -e '
+              (.gradleProperties | type) == "object"
+              and (.gradleProperties | length) > 0
+              and (.gradleProperties | keys_unsorted | all(test("^[A-Za-z0-9_.-]+$")))
+              and (.gradleProperties | to_entries | all((.value | type) as $t
+                     | $t == "string" or $t == "number" or $t == "boolean"))
+              and (.gradleProperties | to_entries | all((.value | tostring | test("[\n\r]")) | not))
+            ' "$config" >/dev/null || {
+              echo "::error::gradleProperties must be a non-empty JSON object whose keys are letters," \
+                "digits, . _ - and whose values are strings, numbers or booleans without newlines"
+              exit 1
+            }
+            # `grep -z` for the same reason as the fields above — this reaches $GITHUB_OUTPUT, and a
+            # newline in the value would inject a second key=value line into it. `jq -c` emits one
+            # line and JSON-escapes any newline inside a string, so this is a belt-and-braces check.
+            printf '%s' "$gradle_properties" | grep -zqv '[[:cntrl:]]' || {
+              echo "::error::gradleProperties must not contain control characters"
+              exit 1
+            }
+          fi
 
           # Seconds the render may spend, when the default 600 is not enough.
           #
