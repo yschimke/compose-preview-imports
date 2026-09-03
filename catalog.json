@@ -491,7 +491,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 40,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewCheckbox"
+      "sourceFunction": "PreviewCheckbox",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "switch",
@@ -598,7 +625,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 24,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewMullvadSwitch"
+      "sourceFunction": "PreviewMullvadSwitch",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "filter-chip-enabled",
@@ -656,7 +710,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 23,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewEnabledMullvadFilterChip"
+      "sourceFunction": "PreviewEnabledMullvadFilterChip",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "filter-chip-disabled",
@@ -714,7 +795,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 29,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewDisabledMullvadFilterChip"
+      "sourceFunction": "PreviewDisabledMullvadFilterChip",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "filter-chip-inactive",
@@ -772,7 +880,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 35,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewInactiveMullvadFilterChip"
+      "sourceFunction": "PreviewInactiveMullvadFilterChip",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "feature-chip",
@@ -890,7 +1025,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 26,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewMullvadFeatureChip"
+      "sourceFunction": "PreviewMullvadFeatureChip",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-item-leading",
@@ -1492,7 +1654,34 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 85,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewListHeader"
+      "sourceFunction": "PreviewListHeader",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "progress-indicator",
@@ -1533,11 +1722,38 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 20,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewMullvadProgressIndicator"
+      "sourceFunction": "PreviewMullvadProgressIndicator",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "spacing",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "verticalAlignment",
+          "type": "Vertical",
+          "hasDefault": true
+        },
+        {
+          "name": "horizontalAlignment",
+          "type": "Horizontal",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "ColumnScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     }
   ],
-  "renderer": "compose-preview 1.66.0",
-  "generatedAt": "2026-09-02T22:32:14.078Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T10:21:28.895Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -1552,7 +1768,7 @@
   ],
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "83ca2afbda77b7600bf0d33b91baab5195964209",
+    "ref": "a6d5be3ff8eecd6a3816a17a61f3f1d903253136",
     "module": ":lib:ui:designsystem"
   }
 }
