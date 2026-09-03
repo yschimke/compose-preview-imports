@@ -8,6 +8,14 @@
     "light",
     "dark"
   ],
+  "breakpoints": [
+    { "size": "smallPhone", "device": "spec:width=360dp,height=640dp,dpi=160", "widthDp": 360 },
+    { "size": "phone", "device": "spec:width=411dp,height=891dp,dpi=420", "widthDp": 411 },
+    { "size": "foldable", "device": "spec:width=673dp,height=841dp,dpi=420", "widthDp": 673 },
+    { "size": "phoneLandscape", "device": "spec:width=891dp,height=411dp,dpi=420", "widthDp": 891 },
+    { "size": "tablet", "device": "spec:width=1280dp,height=800dp,dpi=240", "widthDp": 1280 },
+    { "size": "desktop", "device": "spec:width=1920dp,height=1080dp,dpi=160", "widthDp": 1920 }
+  ],
   "groups": [
     {
       "name": "Atoms",
