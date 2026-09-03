@@ -335,7 +335,7 @@
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -9103,8 +9103,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 1.63.0",
-  "generatedAt": "2026-09-02T14:32:39.887Z",
+  "renderer": "compose-preview 1.70.0",
+  "generatedAt": "2026-09-03T09:52:05.223Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

@@ -7,7 +7,7 @@
     "ref": "7011707b0a2d6c7ceacc44e467ae21524c7db26e",
     "module": ":app:ui-components"
   },
-  "generatedAt": "2026-09-02T14:32:41.472Z",
+  "generatedAt": "2026-09-03T09:52:07.016Z",
   "mappings": [
     {
       "componentId": "button-primary",
@@ -26,19 +26,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/button-primary__ideal__default__light.svg"
@@ -60,19 +66,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/button-secondary__ideal__default__light.svg"
@@ -94,43 +106,57 @@
           "name": "label",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "icon",
           "type": "DrawableResource",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "size",
           "type": "ActionSize",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "enabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "iconRotation",
           "type": "Float",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/action__ideal__default__light.svg"
@@ -152,19 +178,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-text-button__ideal__default__light.svg"
@@ -186,19 +218,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-icon-button-enabled__ideal__default__light.svg"
@@ -220,19 +258,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/overlay-icon-button-disabled__ideal__default__light.svg"
@@ -254,25 +298,33 @@
           "name": "time",
           "type": "NowButtonState",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "enabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-button__ideal__default__light.svg"
@@ -294,25 +346,33 @@
           "name": "time",
           "type": "NowButtonState",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClick",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "enabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-button-floating__ideal__default__light.svg"
@@ -334,25 +394,33 @@
           "name": "options",
           "type": "List<HeaderToggleOption>",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "selectedIndex",
           "type": "Int",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSelect",
           "type": "(Int) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/header-toggle__ideal__default__light.svg"
@@ -374,19 +442,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button__ideal__default__light.svg"
@@ -408,19 +482,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-selected__ideal__default__light.svg"
@@ -442,19 +522,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-large__ideal__default__light.svg"
@@ -476,19 +562,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/top-menu-button-large-selected__ideal__default__light.svg"
@@ -510,19 +602,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-bar__ideal__default__light.svg"
@@ -544,31 +642,41 @@
           "name": "currentDestination",
           "type": "MainNavDestination<T>?",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true
         },
         {
           "name": "destinations",
           "type": "List<MainNavDestination<T>>",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSelect",
           "type": "(MainNavDestination<T>) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "expanded",
           "type": "Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-rail__ideal__default__light.svg"
@@ -590,19 +698,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-title__ideal__default__light.svg"
@@ -624,19 +738,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-back__ideal__default__light.svg"
@@ -658,19 +778,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-schedule__ideal__default__light.svg"
@@ -692,19 +818,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/main-header-search.svg"
@@ -726,19 +858,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-speaker__ideal__default__light.svg"
@@ -760,19 +898,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/large-main-header.svg"
@@ -794,19 +938,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title__ideal__default__light.svg"
@@ -828,19 +978,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-lightning__ideal__default__light.svg"
@@ -862,19 +1018,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-notes__ideal__default__light.svg"
@@ -896,19 +1058,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-title-large__ideal__default__light.svg"
@@ -930,19 +1098,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/section-title-text__ideal__default__light.svg"
@@ -964,19 +1138,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/section-title-time__ideal__default__light.svg"
@@ -998,19 +1178,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/paragraph-title__ideal__default__light.svg"
@@ -1032,43 +1218,57 @@
           "name": "month",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "day",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "line1",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "line2",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "fullWidth",
           "type": "Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "day2",
           "type": "String",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/day-header__ideal__default__light.svg"
@@ -1090,19 +1290,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-menu-item__ideal__default__light.svg"
@@ -1124,19 +1330,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/talk-card-upcoming__ideal__default__light.svg"
@@ -1158,19 +1370,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/talk-card-live.svg"
@@ -1192,19 +1410,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card__ideal__default__light.svg"
@@ -1226,19 +1450,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card-highlights__ideal__default__light.svg"
@@ -1260,19 +1490,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/partner-card__ideal__default__light.svg"
@@ -1294,19 +1530,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event__ideal__default__light.svg"
@@ -1328,19 +1570,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event-block__ideal__default__light.svg"
@@ -1362,19 +1610,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/service-event-party-live.svg"
@@ -1396,19 +1650,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-label__ideal__default__light.svg"
@@ -1430,19 +1690,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/card-tag__ideal__default__light.svg"
@@ -1464,19 +1730,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/card-tag-selected__ideal__default__light.svg"
@@ -1498,19 +1770,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/search-input-empty.svg"
@@ -1532,19 +1810,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/search-input-text.svg"
@@ -1566,43 +1850,57 @@
           "name": "searchValue",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSearchValueChange",
           "type": "(String) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onClear",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "hasAdditionalInputs",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "hint",
           "type": "String",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "interactionSource",
           "type": "MutableInteractionSource",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/large-search-bar.svg"
@@ -1624,19 +1922,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filters__ideal__default__light.svg"
@@ -1658,19 +1962,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filter-tag__ideal__default__light.svg"
@@ -1692,19 +2002,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filter-tag-selected__ideal__default__light.svg"
@@ -1726,19 +2042,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher__ideal__default__light.svg"
@@ -1760,19 +2082,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-short__ideal__default__light.svg"
@@ -1794,19 +2122,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-item__ideal__default__light.svg"
@@ -1828,19 +2162,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher-item-selected__ideal__default__light.svg"
@@ -1862,19 +2202,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher__ideal__default__light__expanded.svg"
@@ -1896,19 +2242,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher-item__ideal__default__light.svg"
@@ -1930,19 +2282,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher-item-selected__ideal__default__light.svg"
@@ -1964,19 +2322,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/error-minor__ideal__default__light.svg"
@@ -1998,19 +2362,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/error-normal.svg"
@@ -2032,19 +2402,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/error-normal-interactive.svg"
@@ -2066,19 +2442,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/error-normal-loading.svg"
@@ -2100,19 +2482,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/error-major.svg"
@@ -2134,19 +2522,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/loading-enabled.svg"
@@ -2168,19 +2562,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/loading-disabled.svg"
@@ -2202,49 +2602,65 @@
           "name": "feedbackText",
           "type": "String",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onFeedbackTextChange",
           "type": "(String) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "emotion",
           "type": "Emotion",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSubmit",
           "type": "(Emotion, String) -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "onSkip",
           "type": "() -> Unit",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "past",
           "type": "Boolean",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "bringIntoViewRequester",
           "type": "BringIntoViewRequester",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/feedback-form.svg"
@@ -2266,19 +2682,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/tooltip__ideal__default__light.svg"
@@ -2300,19 +2722,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/settings-item__ideal__default__light.svg"
@@ -2334,19 +2762,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/settings-item-note__ideal__default__light.svg"
@@ -2368,19 +2802,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/toggle-on__ideal__default__light.svg"
@@ -2402,19 +2842,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/toggle-off__ideal__default__light.svg"
@@ -2425,7 +2871,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "TextStylePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2436,19 +2882,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/text-styles__ideal__default__light.svg"
@@ -2470,19 +2922,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon__ideal__default__light.svg"
@@ -2504,19 +2962,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon-tinted__ideal__default__light.svg"
@@ -2538,19 +3002,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-horizontal__ideal__default__light.svg"
@@ -2572,19 +3042,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-vertical__ideal__default__light.svg"
@@ -2606,13 +3082,17 @@
           "name": "emotion",
           "type": "Emotion",
           "hasDefault": false,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/kodee-emotion.svg"
@@ -2634,19 +3114,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/kodee-icon-small.svg"
@@ -2668,19 +3154,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/kodee-icon-small-selected.svg"
@@ -2702,19 +3194,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/kodee-icon-large__ideal__default__light.svg"
@@ -2736,19 +3234,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/kodee-icon-large-selected__ideal__default__light.svg"
@@ -2770,19 +3274,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/party-animation.svg"
@@ -2804,19 +3314,25 @@
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "paddingEnabled",
           "type": "Boolean",
           "hasDefault": true,
-          "composableSlot": false
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
           "hasDefault": false,
-          "composableSlot": true
+          "composableSlot": true,
+          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "nullable": false
         }
       ],
       "figmaSvg": "figma/party-animation-baseline.svg"
