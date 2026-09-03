@@ -1,0 +1,18 @@
+{
+  "slug": "pocketcasts",
+  "upstream": "Automattic/pocket-casts-android",
+  "ref": "main",
+  "modules": [
+    ":modules:services:compose"
+  ],
+  "renderer": "android",
+  "excludePreviewIds": [
+    "*.SummaryContentPreview",
+    "*.SummaryPaywallPreview",
+    "*.SummaryPaywallFreeTrialPreview",
+    "*.HtmlTextDarkPreview_Dark",
+    "*.HtmlTextLightPreview_Light"
+  ],
+  "renderTimeout": 1800,
+  "notes": "Pocket Casts for Android, on Google Play as au.com.shiftyjelly.pocketcasts and unambiguously designed rather than assembled. :modules:services:compose is the design-system module \u2014 buttons, inputs, dialogs, subscription badges, the theme roles \u2014 and declares 143 @Preview functions on its own, with no network, playback or DI code behind it. Ordinary Android Compose, single Gradle build at the repository root, no dependency locking or verification. The catalog omits five components whose previews exist only on the old yschimke fork; see the spec's $comment. Licence: MPL-2.0. Five renders are excluded, all UnsupportedOperationException: Failed to resolve attribute — a theme attribute the Pocket Casts application supplies that the render host's Theme.Material.Light.NoActionBar does not. The three summary previews have no surviving permutation, so their catalog entries go with them; HtmlText keeps its entry because only the Dark-on-dark and Light-on-light permutations fail. 140 of 145 render. renderTimeout is raised to 1800s: the default 600 kills a render that is still making progress — the run before this one was four minutes into composePreviewRender when the budget ran out, with nothing else wrong. 145 previews across a mode matrix is simply more than the default was sized for."
+}

@@ -12,6 +12,31 @@
       "system": "droidkaigi-conference-app-2026"
     },
     {
+      "importedFrom": "element-hq/element-x-android",
+      "listed": true,
+      "system": "element-hq-element-x-android"
+    },
+    {
+      "importedFrom": "home-assistant/android",
+      "listed": true,
+      "system": "home-assistant-android"
+    },
+    {
+      "importedFrom": "home-assistant/android",
+      "listed": true,
+      "system": "home-assistant-wear"
+    },
+    {
+      "importedFrom": "google/horologist",
+      "listed": true,
+      "system": "horologist"
+    },
+    {
+      "importedFrom": "JetBrains/kotlinconf-app",
+      "listed": true,
+      "system": "jetbrains-kotlinconf-app"
+    },
+    {
       "importedFrom": "joreilly/BikeShare",
       "listed": true,
       "system": "joreilly-bikeshare"
@@ -35,6 +60,21 @@
       "importedFrom": "mullvad/mullvadvpn-app",
       "listed": true,
       "system": "mullvad-mullvadvpn-app"
+    },
+    {
+      "importedFrom": "Automattic/pocket-casts-android",
+      "listed": true,
+      "system": "pocketcasts-wear"
+    },
+    {
+      "importedFrom": "Automattic/pocket-casts-android",
+      "listed": true,
+      "system": "pocketcasts"
+    },
+    {
+      "importedFrom": "thunderbird/thunderbird-android",
+      "listed": true,
+      "system": "thunderbird-android"
     }
   ],
   "groups": []

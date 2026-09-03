@@ -93,9 +93,12 @@ those branches, so a merged import is picked up without a restart, and an import
 removed is retired.
 
 The file is **generated** from the `imports/` directory by
-[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is generated **on
-`main`, after a merge**, by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather
-than in the pull request. That is what keeps concurrent imports from colliding: each one adds its own
+[`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is regenerated **after
+a merge to `main`** by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather than in
+the import's own pull request. `main` carries a ruleset — changes must arrive through a pull request —
+so that job opens one (`chore/catalog-registry`, force-pushed, so a run of merges updates a single
+pull request rather than a queue of them) and asks for auto-merge. **An import is not served until
+that pull request lands**, which is the one manual step left when a repository requires review. That is what keeps concurrent imports from colliding: each one adds its own
 `imports/<slug>/` and touches nothing shared, and the one shared, generated file is written once, by
 the job that watches `main`. On a pull request that same workflow only lints the import descriptions
 — that each `slug` matches its directory, and that each `upstream` is an owner/repo.
@@ -138,7 +141,13 @@ any other.
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |
 | `renderer` | `android` (default) or `desktop`. Which lane the module's previews render in — see below. |
 | `previewAnnotations` | Optional. Space-separated multipreview annotation names (e.g. `WearPreviewDevices WearPreviewFontScales`) that the spec pre-flight cannot see for itself. Wear catalogs always need this. |
+| `excludePreviewIds` | Optional. Array of preview-id patterns this import cannot render, left unrendered instead of failing the run. See below. |
+| `stubGoogleServices` | Optional. Array of Android applicationIds to write a placeholder `google-services.json` for, when the upstream build needs one it does not commit. See below. |
 | `workingDirectory` | Optional. Repo-relative subdirectory of the upstream checkout holding the Gradle build, for a project whose build is not at its repository root. Omit for the usual case. |
+| `variant` | Optional. Android variant to render (e.g. `fullDebug`), for a module with product flavors and therefore no plain `debug`. See below. |
+| `renderTimeout` | Optional. Seconds the render may spend, when the default 600 is not enough for the module's preview count. See below. |
+| `renderRuntimeProjects` | Optional. Array of Gradle project paths to put on the render's runtime classpath, for an upstream that binds an implementation at runtime and keeps it off the production classpath. See below. |
+| `gradleProperties` | Optional. Object of Gradle `key: value` properties to set in the throwaway checkout, for something the pipeline has no step of its own for. See below. |
 | `javaVersion` | Optional. Major version of an extra JDK to install, when the upstream build's own Gradle toolchain asks for one the runner does not carry. Omit unless a build fails for the lack of it. |
 | `notes` | Free text for the reviewer — why this project, and anything odd about its build. |
 
@@ -155,6 +164,128 @@ Gradle build under `android/`, with no `settings.gradle.kts` at the root, so a r
 root has nothing to build. The reusable pipeline already renders in a named subdirectory of the
 upstream checkout; naming it here is what reaches it. `catalog.spec.json` is unaffected — it is read
 from this repository, and its path stays repo-root-relative.
+
+`excludePreviewIds` exists because some previews only render inside their own application. One that
+reads a `CompositionLocal` the host installs, resolves a Hilt entry point, or touches a process-wide
+singleton is fine in the app and impossible standalone — there is nothing to fix upstream, and
+nothing to fix here. Without a way to say so, a single such preview fails the entire import:
+bitwarden rendered **55 of 56** and published nothing, `pocketcasts-wear` **24 of 28**, twine
+**21 of 22**.
+
+```json
+"excludePreviewIds": ["*.BitwardenBasicDialog_preview"]
+```
+
+Named ids rather than the pipeline's `allow-incomplete`, and the distinction is the point. Allowing
+incomplete renders would also swallow the *next* breakage — an upstream refactor that quietly stops
+rendering half the catalog — and the nightly refresh would go on publishing a thinner catalog with
+nothing to show for it. Listing the ids keeps every other render failure fatal, and the list is
+reviewable: the pull request says exactly what this import gives up. Say why in `notes`. The patterns
+are appended to the exclusions the pipeline always applies, so naming one here does not re-enable the
+synthetic app-launching previews.
+
+`variant` exists because the preview plugin attaches its `composePreview*` tasks to **one** variant,
+and its convention is `debug`. A module with product flavors has no plain `debug`, so the variant
+picked for you may not be the one that builds. `home-assistant/android`'s `:app` is the case:
+`app/src/screenshotTest/` is flavor-agnostic but references `SettingsWearOnboardingViewContent`,
+which exists only in `app/src/full/`. The plugin compiles screenshot-test sources deliberately — it
+renders `@Preview` functions declared there — so `minimalDebug` dies before a preview exists:
+
+```
+e: .../SettingsWearOnboardingViewPreviewsTest.kt:16:13
+   Unresolved reference 'SettingsWearOnboardingViewContent'.
+Execution failed for task ':app:compileMinimalDebugScreenshotTestKotlin'
+```
+
+```json
+"variant": "fullDebug"
+```
+
+Omit it for any module without flavors, which is every import but that one. It reaches discovery as
+well as the render, because `compose-preview list` enumerates a module by its `composePreview*`
+tasks — a discovery run on a different variant than the render finds nothing.
+
+`renderTimeout` exists because the pipeline's default of 600 seconds is the **inner** budget on the
+render itself, not the job timeout. A render can sit well inside the job's limit and still be killed,
+and the failure reads as a bare `Build timed out after 600s` with nothing else wrong — pocketcasts'
+`:modules:services:compose` was four minutes into `composePreviewRender` and still making progress
+when it ran out. The budget scales with the preview count, so a large catalog outgrows the default
+long before it outgrows the job.
+
+```json
+"renderTimeout": 1800
+```
+
+Raise it rather than thinning the catalog: an import exists to show what the project's design system
+actually contains.
+
+`renderRuntimeProjects` exists because an upstream may bind an implementation at runtime and
+deliberately keep it off the production compile classpath. `DroidKaigi/conference-app-2026` is the
+case. Its `:core:preview:wrapper` declares
+
+```kotlin
+androidMain.dependencies { compileOnly(project(":core:preview:impl")) }
+jvmMain.dependencies    { compileOnly(project(":core:preview:impl")) }
+```
+
+with its own comment saying *"impl stays off production classpaths"*, and supplies the binding at
+runtime only from the app (`devImplementation`) and from the repository's screenshot-test convention
+plugin. A render of `:core:ui` is neither of those, so all 450 of its previews die with
+`ClassNotFoundException: …core.preview.impl.DefaultPreviewImageResolver`.
+
+```json
+"renderRuntimeProjects": [":core:preview:impl"]
+```
+
+Named rather than inferred, for the same reason as `stubGoogleServices`: nothing here can know which
+of an upstream's modules is the runtime half of a `compileOnly` binding, and a reviewer of the pull
+request can check the named projects against the upstream build.
+
+The pipeline appends them to the module's build file **in the throwaway checkout**, on
+`runtimeOnly`-shaped configurations only. Nothing the module compiles against changes, so this
+cannot make a preview compile that would not compile for a real consumer — it supplies, for the
+render, what the upstream already supplies for its own screenshot tests. Nothing is written anywhere
+that outlives the job.
+
+`gradleProperties` is the escape hatch. The pipeline already rewrites the throwaway checkout's
+`gradle.properties` for the cases it knows the reason for — dependency verification, Isolated
+Projects, the render variant — each as its own step. This is for the ones it does not, so that
+establishing *whether* a property fixes an import does not need a pipeline change per hypothesis.
+
+```json
+"gradleProperties": { "android.nonTransitiveRClass": "false" }
+```
+
+Two rules keep it from becoming a junk drawer. It is applied **before** the properties the pipeline
+owns, so an import cannot use it to turn dependency verification back to strict or Isolated Projects
+back on. And every entry must say in `notes` what was established and how — a property set here
+without a recorded reason is indistinguishable from a guess nobody revisited. When one turns out to
+be needed by more than one import, it belongs in a pipeline step of its own, with the reasoning
+written down once, rather than copied between `import.json` files.
+
+`stubGoogleServices` exists because some builds cannot **configure** without a file their
+repository deliberately does not contain. `home-assistant/android`'s convention plugin applies the
+Google Services plugin to every application module, and contributors bring their own
+`google-services.json`, so both `:app` and `:wear` die before a preview is discovered:
+
+```
+Execution failed for task ':app:processMinimalDebugGoogleServices'.
+> File google-services.json is missing. The Google Services Plugin cannot function without it.
+```
+
+Naming the applicationIds has the pipeline write a placeholder — a zeroed project number and no real
+project anywhere — into the rendered module of the throwaway checkout.
+
+```json
+"stubGoogleServices": ["io.homeassistant.companion.android.minimal.debug"]
+```
+
+They must be the **exact** applicationId of the variant being rendered, suffixes and all. The Google
+Services plugin does no prefix fallback: a stub naming only the base package fails with *"No matching
+client found for package name"*. Read them off the upstream's build rather than guessing — for
+home-assistant the base id, the flavour suffix and the build-type suffix live in three different
+convention plugins. Declaring them here also means the pull request shows exactly what is being
+fabricated, instead of the pipeline inventing a file quietly.
 
 `javaVersion` exists because an imported project picks its own Gradle toolchain and this repository
 does not get to choose it. ClimateTraceKMP's `:composeApp` requests Java 24, so on a runner holding
