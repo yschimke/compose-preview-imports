@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" role="img" aria-label="responsive-content-with-background layout wireframe">
+  <title>responsive-content-with-background — layout wireframe (slots + tokens)</title>
+  <rect width="1920" height="1080" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="1920" height="1080" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1920" height="1080" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="1920" height="1080" fill="none" fill-opacity="0" stroke="#8E6BA8" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="90" width="1920" height="900" fill="#FBF7F7" fill-opacity="1" stroke="#B0813B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="102" font-family="system-ui, sans-serif" font-size="9" fill="#B0813B">#FFFBF7F7</text>
+  </g>
+  <g>
+    <rect x="540" y="90" width="840" height="900" fill="#FBF7F7" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="543" y="102" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFFBF7F7  pad ·</text>
+  </g>
+  <g>
+    <rect x="556" y="106" width="808" height="868" fill="#004F9B" fill-opacity="1" stroke="#A85B6B" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="559" y="118" font-family="system-ui, sans-serif" font-size="9" fill="#A85B6B">#FF004F9B  pad 16.0dp</text>
+  </g>
+</svg>
