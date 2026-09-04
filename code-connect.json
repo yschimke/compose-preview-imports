@@ -7,7 +7,7 @@
     "ref": "bce23e5de2f56b0e34752f89c564beff26dad98b",
     "module": ":shared"
   },
-  "generatedAt": "2026-09-03T10:13:30.422Z",
+  "generatedAt": "2026-09-04T10:05:28.387Z",
   "mappings": [
     {
       "componentId": "home",
@@ -195,6 +195,7 @@
         {
           "name": "state",
           "type": "StatisticsState",
+          "typeFqn": "dev.sasikanth.rss.reader.statistics.StatisticsState",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -203,6 +204,7 @@
         {
           "name": "goBack",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -211,6 +213,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
