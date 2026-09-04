@@ -7,7 +7,7 @@
     "ref": "c22f798306a1f49a4de41def045320e168fd4262",
     "module": ":app"
   },
-  "generatedAt": "2026-09-03T10:13:00.934Z",
+  "generatedAt": "2026-09-04T09:57:35.310Z",
   "mappings": [
     {
       "componentId": "person-view",
@@ -25,6 +25,7 @@
         {
           "name": "index",
           "type": "Int",
+          "typeFqn": "kotlin.Int",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -33,6 +34,7 @@
         {
           "name": "person",
           "type": "Assignment",
+          "typeFqn": "dev.johnoreilly.common.remote.Assignment",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -41,6 +43,7 @@
         {
           "name": "personSelected",
           "type": "(Assignment) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
