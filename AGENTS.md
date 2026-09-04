@@ -10,6 +10,17 @@ execution boundary before changing a workflow.
   or use an agent identity as author/committer. Scrub PR titles and bodies too.
 - Branch names use `agent/...` for work on this repository itself. `import/<slug>` is reserved for
   imports and `design-artifacts/<slug>` for machine-written delivery branches.
+- **Never open a pull request whose head is `import/<slug>`** — not even the one that adds the
+  import. `delete_branch_on_merge` is on and GitHub cannot tell a long-lived config carrier from an
+  ordinary topic branch, so merging such a pull request deletes the branch and the next dispatch of
+  that import dies at checkout. Raise every change to `imports/<slug>/` from an `agent/...` branch
+  against `main`; `import.yml`'s `sync` job advances `import/<slug>` to `main` on the way in, and
+  recreates it when it has been deleted anyway.
+- **`import/<slug>` is a carrier, `main` is the source.** `import.yml`'s `config` job reads
+  `imports/<slug>/` from the branch and refuses to build when it disagrees with `main`, because a
+  stale branch renders the previous configuration for half an hour with a green config job and
+  nothing on the run page to say so. Dispatch with `allow-config-drift` to build the branch as it
+  stands.
 - Commit subjects and PR titles use Conventional Commits.
 - `.compose-preview/catalogs.json` is generated from the `imports/` directory. Never hand-edit it,
   and do not commit it from an import's pull request: `catalog-registry.yml` regenerates it after the

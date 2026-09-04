@@ -47,18 +47,25 @@ which repository, which ref and which modules are about to be built before any o
    The response names each Gradle module, its `@Preview` count, and whether the preview plugin can
    be injected into it. That is what you write the import down from.
 
-2. **Open the import as a pull request.** Create the branch `import/<slug>` adding
+2. **Open the import as a pull request, from an `agent/<something>` branch.** Add
    `imports/<slug>/import.json` (below) and `imports/<slug>/catalog.spec.json` — its own two files
    and nothing else. Open it against `main`: the pull request is the review, and its diff says
    exactly which third-party code this repository is about to start building.
+
+   **Never raise the pull request from `import/<slug>` itself.** This repository has
+   `delete_branch_on_merge` on, and GitHub cannot tell a long-lived config carrier from an ordinary
+   topic branch: merging a pull request whose head is `import/<slug>` deletes it, and the next
+   dispatch of that import used to die at checkout until someone recreated it by hand. `import.yml`'s
+   `sync` job now recreates it from `main` instead, so the mistake self-heals — but the branch is
+   still not a place to open a pull request from.
 
    Nothing shared is edited on the way in, which is deliberate. The registry used to be a
    hand-kept array that every import appended to, so the first of several open imports to merge left
    all the others conflicting on a file where nothing had disagreed. The registry is now the
    `imports/` directory itself.
 
-   The branch is long-lived and is what the build reads, so it is not deleted on merge; merging is
-   what adds `imports/<slug>/` to `main`, which is the registry the scheduled refresh walks.
+   Merging is what adds `imports/<slug>/` to `main`, which is the registry the scheduled refresh
+   walks, and the `sync` job then advances `import/<slug>` to match.
 
 3. **When it lands, it builds.** Merging pushes `imports/<slug>/…` to `main`, and
    [`import-on-merge.yml`](.github/workflows/import-on-merge.yml) runs every import that push
@@ -120,7 +127,12 @@ any other.
 
 ## What an import looks like
 
-`imports/<slug>/import.json`, on the branch `import/<slug>`:
+`imports/<slug>/import.json`. It is **authored on `main`** — through an ordinary pull request from an
+`agent/…` branch — and *carried* on `import/<slug>`, which `import.yml`'s `config` job reads. Those
+two are kept identical by that workflow's `sync` job, which fast-forwards the branch to `main` before
+anything reads it; the `config` job then refuses to build a branch that still disagrees, rather than
+spending half an hour rendering a configuration nobody merged. Dispatch with **allow-config-drift**
+to try a configuration out on the branch as it stands.
 
 ```json
 {
@@ -175,6 +187,20 @@ bitwarden rendered **55 of 56** and published nothing, `pocketcasts-wear` **24 o
 ```json
 "excludePreviewIds": ["*.BitwardenBasicDialog_preview"]
 ```
+
+Entries are written **exactly as the preview id reads**, spaces and commas included — a
+`@Preview(name = "Content with HTTP auth dialog")` puts its name straight into the id, and a
+`@Preview(widthDp = …, heightDp = …)` fan-out mints `…Button_width=227dp, height=100dp, dpi=320`:
+
+```json
+"excludePreviewIds": ["*.FrontendScreen Content with HTTP auth dialog*"]
+```
+
+The array reaches the render as a JSON array and then as a newline-delimited file, so nothing between
+here and the renderer splits on a character an id may contain. It used to be flattened to one
+comma-joined string, and the validator forbade a space to compensate — which forbade the *id* rather
+than the ambiguity, and left `?` (which also matches any other character in that position) as the
+only way to name such a preview. Only a newline is refused now, because that is the delimiter.
 
 Named ids rather than the pipeline's `allow-incomplete`, and the distinction is the point. Allowing
 incomplete renders would also swallow the *next* breakage — an upstream refactor that quietly stops

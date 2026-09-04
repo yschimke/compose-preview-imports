@@ -54,6 +54,11 @@ on:
         required: false
         type: boolean
         default: true
+      allow-config-drift:
+        description: 'Build from import/<slug> even when its imports/<slug>/ disagrees with main. For trying a config out on the branch before proposing it; the default refuses, because a stale branch is what silently renders the previous config for half an hour.'
+        required: false
+        type: boolean
+        default: false
   workflow_call:
     inputs:
       slug:
@@ -63,6 +68,10 @@ on:
         required: false
         type: boolean
         default: true
+      allow-config-drift:
+        required: false
+        type: boolean
+        default: false
 
 # Default to nothing. Each job opts into exactly what it needs, below.
 permissions: {}
@@ -74,9 +83,81 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # Bring import/<slug> up to `main` before anything reads it.
+  #
+  # `main` is where an import's configuration is AUTHORED — a pull request adds or edits
+  # `imports/<slug>/`, and a ruleset means that is the only way it can change. The import branch is
+  # a carrier of that configuration, nothing more, and until this job existed nothing advanced it:
+  # merging a fix and dispatching the import ran the PREVIOUS config, silently, with a green config
+  # job and a full-length render that failed on exactly what the merge had fixed. Two ~30-minute
+  # runs were lost that way before it was noticed, because everything about the run looks normal.
+  #
+  # It also repairs the branch when it is simply gone. `delete_branch_on_merge` treats
+  # `import/<slug>` like an ordinary topic branch and deletes it whenever a pull request merges from
+  # one, after which the next dispatch dies at checkout. See AGENTS.md: an import's changes are
+  # raised from an `agent/…` branch precisely so that never happens — this is the backstop for when
+  # it does anyway, and it turns a manual `git push origin origin/main:refs/heads/import/<slug>`
+  # into something nobody has to remember.
+  #
+  # This job runs NO third-party code: it touches only this repository's own refs, and the imported
+  # project has not been checked out anywhere yet. That is what makes `contents: write` here
+  # consistent with the boundary described above rather than a hole in it.
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out main
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+          # Enough history to answer "is the import branch an ancestor of main?" without fetching
+          # the whole repository. A shallow checkout would make every merge-base query fail open.
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Fast-forward import/${{ inputs.slug }} to main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUG: ${{ inputs.slug }}
+        run: |
+          set -euo pipefail
+          branch="import/${SLUG}"
+          main_sha=$(git rev-parse HEAD)
+          # The credential is put on the command line's URL rather than persisted into the checkout,
+          # so nothing later in this job — or in a job that reuses the workspace — inherits a
+          # writable remote it did not ask for.
+          origin="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          if git fetch --no-tags "$origin" "+refs/heads/${branch}:refs/remotes/sync/${branch}" 2>/dev/null; then
+            branch_sha=$(git rev-parse "refs/remotes/sync/${branch}")
+            if [ "$branch_sha" = "$main_sha" ]; then
+              echo "::notice::${branch} already at main (${main_sha})"
+              exit 0
+            fi
+            # Only a fast-forward. A branch carrying commits that are NOT on main is someone trying
+            # a configuration out on it, and discarding that silently would be a worse bug than the
+            # one this job fixes — the config job's drift check reports it as an error instead, with
+            # the two things its author can do about it.
+            if ! git merge-base --is-ancestor "$branch_sha" "$main_sha"; then
+              echo "::warning::${branch} (${branch_sha}) is not an ancestor of main (${main_sha});" \
+                "leaving it alone. The config job will refuse to build from it unless" \
+                "allow-config-drift is set."
+              exit 0
+            fi
+          else
+            echo "::warning::${branch} does not exist — recreating it from main." \
+              "It was most likely auto-deleted by delete_branch_on_merge; see AGENTS.md for why an" \
+              "import's changes are raised from an agent/... branch rather than from this one."
+          fi
+
+          git push "$origin" "${main_sha}:refs/heads/${branch}"
+          echo "::notice::${branch} -> ${main_sha}"
+
   # Read the import's description off its own branch. Split out so the build job's inputs are
   # ordinary strings a human can read in the run log, rather than a JSON blob parsed mid-build.
   config:
+    needs: sync
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -100,6 +181,56 @@ jobs:
         with:
           ref: import/${{ inputs.slug }}
           persist-credentials: false
+
+      # The backstop to the `sync` job above, and worth having even though that job exists: the
+      # failure this guards is expensive precisely because it is SILENT. A stale import branch
+      # produces a green config job and then a full-length render against the previous
+      # configuration, failing on the very thing the merge was supposed to fix, with nothing on the
+      # run page to say so. Half an hour, twice, before anyone worked out why.
+      #
+      # `sync` cannot have left the branch behind main, so reaching here means it has commits of its
+      # own — someone trying a configuration out on the branch. That is a legitimate thing to do and
+      # an illegitimate thing to do by accident, so it is refused by default and allowed by saying
+      # so: `allow-config-drift`. Both `imports/<slug>/` files are compared, because the spec is
+      # read from this branch too and goes as stale as import.json does.
+      - name: Refuse a config that disagrees with main
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SLUG: ${{ inputs.slug }}
+          ALLOW_DRIFT: ${{ inputs.allow-config-drift }}
+        run: |
+          set -euo pipefail
+          # The checkout above persists no credential, so name one here rather than relying on
+          # `origin` being fetchable unauthenticated — this must not start passing or failing on
+          # whether the repository happens to be public.
+          git fetch --no-tags --depth=1 \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main
+          if git diff --quiet FETCH_HEAD HEAD -- "imports/${SLUG}/"; then
+            echo "::notice::imports/${SLUG}/ matches main"
+            exit 0
+          fi
+
+          {
+            echo "### import/${SLUG} disagrees with main"
+            echo
+            echo '```'
+            git --no-pager diff --stat FETCH_HEAD HEAD -- "imports/${SLUG}/"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          if [ "$ALLOW_DRIFT" = "true" ]; then
+            echo "::warning::imports/${SLUG}/ on import/${SLUG} differs from main;" \
+              "building it anyway because allow-config-drift is set."
+            git --no-pager diff FETCH_HEAD HEAD -- "imports/${SLUG}/"
+            exit 0
+          fi
+
+          git --no-pager diff FETCH_HEAD HEAD -- "imports/${SLUG}/"
+          echo "::error::imports/${SLUG}/ on import/${SLUG} differs from main, so this run would" \
+            "render a configuration nobody merged. Either open a pull request against main with" \
+            "these changes (the sync job then advances the branch on merge), or dispatch this" \
+            "workflow with allow-config-drift to build the branch as it stands."
+          exit 1
 
       - name: Read import.json
         id: read
@@ -205,25 +336,46 @@ jobs:
           # every night without anyone noticing. Listing the ids keeps every OTHER render failure
           # fatal, and the list itself is reviewable: a reader of the pull request sees exactly what
           # this import gives up, and why, in `notes`.
-          exclude_preview_ids=$(jq -r '.excludePreviewIds // [] | join(",")' "$config")
-          # Comma-separated preview-id glob patterns. The value is appended to the reusable
-          # workflow's own always-on patterns and split on commas there, so a comma inside an entry
-          # or a stray space would silently become a different pattern than the author wrote.
-          #
-          # `grep -z`, not plain `grep`, and that is not a flourish. `grep -Eq '^…$'` anchors PER
-          # LINE, so a value containing a newline passes as long as each line matches on its own —
-          # and this value is then written to $GITHUB_OUTPUT as `excludePreviewIds=<value>`, where
-          # an embedded newline starts a second key=value the reader never wrote. -z makes the whole
-          # NUL-terminated value one record, so ^ and $ mean the ends of the VALUE. The empty case
-          # is handled before it because -z sees no record at all in empty input and would reject
-          # the field simply being absent, which is every import that has not needed this.
-          [ -z "$exclude_preview_ids" ] || \
-            printf '%s' "$exclude_preview_ids" |
-              grep -zEq '^[A-Za-z0-9_.$*?-]+(,[A-Za-z0-9_.$*?-]+)*$' || {
-            echo "::error::excludePreviewIds '${exclude_preview_ids}' must be preview-id patterns" \
-              "(letters, digits, . _ - \$ and the * ? globs), one per array entry, no spaces"
-            exit 1
-          }
+          # Passed as a compact JSON array, not flattened to a comma-joined string. The flattened
+          # form cannot express an id containing a comma — a `@Preview(widthDp = …, heightDp = …)`
+          # mints `…Button_width=227dp, height=100dp, dpi=320` — and, far more often here, cannot
+          # express one containing a SPACE, because a `@Preview(name = "…")` puts the name straight
+          # into the id: `…FrontendScreen Content with HTTP auth dialog_foldable` is a real one.
+          # The old validator's answer was to forbid a space outright, which ruled out the ID
+          # rather than the ambiguity, and left the `?` glob as the only way to name such a preview
+          # — a pattern that also matches any OTHER character in that position, so the exclusion was
+          # broader than its author meant and stayed precise only by luck. The pipeline now carries
+          # both halves of the list in a newline-delimited file, where nothing inside an id can be
+          # the delimiter. Same treatment `gradleProperties` took below, for the same reason.
+          exclude_preview_ids=$(jq -c '.excludePreviewIds // []' "$config")
+          if [ "$exclude_preview_ids" = "[]" ]; then
+            # Absent rather than empty, so the pipeline sees the field unset exactly as it did for
+            # every import that has never needed this.
+            exclude_preview_ids=""
+          else
+            # An array of non-empty strings, and that is the whole grammar now: a space, a comma, a
+            # `=` or a bracket in an id is just a character. Only a NEWLINE is refused, because it
+            # is the delimiter the pipeline's file transport uses.
+            jq -e '
+              (.excludePreviewIds | type) == "array"
+              and (.excludePreviewIds | length) > 0
+              and (.excludePreviewIds | all(type == "string"))
+              and (.excludePreviewIds | all(length > 0))
+              and (.excludePreviewIds | all(test("[\n\r]") | not))
+            ' "$config" >/dev/null || {
+              echo "::error::excludePreviewIds must be a non-empty JSON array of non-empty strings" \
+                "without newlines"
+              exit 1
+            }
+            # `grep -z` for the same reason as the fields below — this value reaches $GITHUB_OUTPUT
+            # as `excludePreviewIds=<value>`, and a newline in it would start a second key=value
+            # nobody wrote. `jq -c` emits one line and JSON-escapes any newline inside a string, so
+            # this is a belt-and-braces check on top of the `test` above.
+            printf '%s' "$exclude_preview_ids" | grep -zqv '[[:cntrl:]]' || {
+              echo "::error::excludePreviewIds must not contain control characters"
+              exit 1
+            }
+          fi
 
           # Android applicationIds to write a stub google-services.json for.
           #
@@ -421,7 +573,9 @@ jobs:
       preview-annotations: ${{ needs.config.outputs.previewAnnotations }}
       # The previews this import has declared it cannot render — see the config job. Appended to the
       # pipeline's own always-on exclusions rather than replacing them, so naming one here does not
-      # quietly re-enable the synthetic app-launching previews.
+      # quietly re-enable the synthetic app-launching previews. A compact JSON array, so an id
+      # carrying a space or a comma reaches the render verbatim instead of having to be approximated
+      # with a `?` glob.
       exclude-preview-ids: ${{ needs.config.outputs.excludePreviewIds }}
       # The applicationIds this import needs a placeholder google-services.json for — see the config
       # job. Empty for every import whose upstream does not apply the Google Services plugin, which
