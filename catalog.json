@@ -39157,8 +39157,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 1.70.0",
-  "generatedAt": "2026-09-03T10:40:52.984Z",
+  "renderer": "compose-preview 1.71.0",
+  "generatedAt": "2026-09-04T10:25:55.988Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -39173,7 +39173,7 @@
   ],
   "source": {
     "repo": "thunderbird/thunderbird-android",
-    "ref": "d5afc89de5f2316b0fa85755e0c6a6fdd519b251",
+    "ref": "b6ccb4cfacc46b7cb6f5111e0adc23df24a6de9b",
     "module": ":ui:bolt"
   }
 }
