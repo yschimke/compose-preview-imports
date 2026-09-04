@@ -87,7 +87,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -215,7 +215,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -334,7 +334,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -462,7 +462,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -773,7 +773,38 @@
       "sourceModule": ":compose-material",
       "bodyLine": 47,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ChipIconWithProgressInProgressPreview"
+      "sourceFunction": "ChipIconWithProgressInProgressPreview",
+      "parameters": [
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "Paintable?",
+          "hasDefault": true
+        },
+        {
+          "name": "largeIcon",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "progressIndicatorColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "progressTrackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "ToggleChipSwitch",
@@ -819,7 +850,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 27,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipSwitchPreview"
+      "sourceFunction": "ToggleChipSwitchPreview",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "ToggleChipCheckbox",
@@ -865,7 +949,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 49,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipCheckboxPreview"
+      "sourceFunction": "ToggleChipCheckboxPreview",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "ToggleChipRadio",
@@ -911,7 +1048,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 38,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipRadioPreview"
+      "sourceFunction": "ToggleChipRadioPreview",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "ToggleChipUnchecked",
@@ -957,7 +1147,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 60,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipUncheckedPreview"
+      "sourceFunction": "ToggleChipUncheckedPreview",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "SplitToggleChipSwitch",
@@ -1304,7 +1547,65 @@
       "sourceModule": ":compose-material",
       "bodyLine": 28,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreview"
+      "sourceFunction": "ToggleButtonPreview",
+      "parameters": [
+        {
+          "name": "checkedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "notCheckedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "ToggleButtonIconOnly",
@@ -1430,7 +1731,57 @@
       "sourceModule": ":compose-material",
       "bodyLine": 76,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewText"
+      "sourceFunction": "ToggleButtonPreviewText",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "DatePicker",
@@ -2843,7 +3194,33 @@
       "sourceModule": ":media:ui",
       "bodyLine": 29,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayButtonPreview"
+      "sourceFunction": "PlayButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "PauseButton",
@@ -2936,7 +3313,33 @@
       "sourceModule": ":media:ui",
       "bodyLine": 29,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PauseButtonPreview"
+      "sourceFunction": "PauseButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "PlayPauseButton",
@@ -3068,7 +3471,52 @@
       "sourceModule": ":media:ui",
       "bodyLine": 29,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayPauseButtonPreview"
+      "sourceFunction": "PlayPauseButtonPreview",
+      "parameters": [
+        {
+          "name": "onPlayClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPauseClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "playing",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "progress",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "PlayPauseProgressButton",
@@ -3140,7 +3588,65 @@
       "sourceModule": ":media:ui",
       "bodyLine": 51,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayPauseProgressButtonPreview25"
+      "sourceFunction": "PlayPauseProgressButtonPreview25",
+      "parameters": [
+        {
+          "name": "onPlayClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPauseClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "playing",
+          "type": "Boolean"
+        },
+        {
+          "name": "trackPositionUiModel",
+          "type": "TrackPositionUiModel"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressStrokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "SeekToNextButton",
@@ -3233,7 +3739,33 @@
       "sourceModule": ":media:ui",
       "bodyLine": 29,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "SeekToNextButtonPreview"
+      "sourceFunction": "SeekToNextButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "SeekToPreviousButton",
@@ -3326,7 +3858,33 @@
       "sourceModule": ":media:ui",
       "bodyLine": 29,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "SeekToPreviousButtonPreview"
+      "sourceFunction": "SeekToPreviousButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "MediaControlButtons",
@@ -4825,7 +5383,48 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 28,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "SetAudioOutputButtonPreview"
+      "sourceFunction": "SetAudioOutputButtonPreview",
+      "parameters": [
+        {
+          "name": "onVolumeClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "volumeUiState",
+          "type": "VolumeUiState?",
+          "hasDefault": true
+        },
+        {
+          "name": "audioOutputUi",
+          "type": "AudioOutputUi?",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "badgeColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconAlignment",
+          "type": "Alignment",
+          "hasDefault": true
+        },
+        {
+          "name": "iconPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "InstallAppBottomSheet",
@@ -4971,7 +5570,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -5141,7 +5740,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -5311,7 +5910,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -5489,7 +6088,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -11365,7 +11964,47 @@
       "sourceModule": ":composables",
       "bodyLine": 31,
       "sourceDirectory": "composables",
-      "sourceFunction": "SegmentedProgressIndicatorRoundPreview"
+      "sourceFunction": "SegmentedProgressIndicatorRoundPreview",
+      "parameters": [
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "startAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "endAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "paddingAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/TimePicker12hPreview",
@@ -12000,7 +12639,53 @@
       "sourceModule": ":composables",
       "bodyLine": 48,
       "sourceDirectory": "composables",
-      "sourceFunction": "MarqueeTextTypicalPreview"
+      "sourceFunction": "MarqueeTextTypicalPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "followGap",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "edgeGradientWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "marqueeDpPerSecond",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "pauseTime",
+          "type": "Duration",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/MarqueeTextStyledPreview",
@@ -12030,7 +12715,58 @@
       "sourceModule": ":composables",
       "bodyLine": 58,
       "sourceDirectory": "composables",
-      "sourceFunction": "MarqueeTextStyledPreview"
+      "sourceFunction": "MarqueeTextStyledPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "AnnotatedString"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "inlineContent",
+          "type": "Map<String, InlineTextContent>",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "followGap",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "edgeGradientWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "marqueeDpPerSecond",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "pauseTime",
+          "type": "Duration",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/MarqueeTextShortTextCenterPreview",
@@ -12060,7 +12796,53 @@
       "sourceModule": ":composables",
       "bodyLine": 73,
       "sourceDirectory": "composables",
-      "sourceFunction": "MarqueeTextShortTextCenterPreview"
+      "sourceFunction": "MarqueeTextShortTextCenterPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "followGap",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "edgeGradientWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "marqueeDpPerSecond",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "pauseTime",
+          "type": "Duration",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/MarqueeTextShortTextRightPreview",
@@ -12090,7 +12872,53 @@
       "sourceModule": ":composables",
       "bodyLine": 83,
       "sourceDirectory": "composables",
-      "sourceFunction": "MarqueeTextShortTextRightPreview"
+      "sourceFunction": "MarqueeTextShortTextRightPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "followGap",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "edgeGradientWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "marqueeDpPerSecond",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "pauseTime",
+          "type": "Duration",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/MarqueeTextShortTextRtlPreview",
@@ -12150,7 +12978,53 @@
       "sourceModule": ":composables",
       "bodyLine": 101,
       "sourceDirectory": "composables",
-      "sourceFunction": "MarqueeTextConstantScrollingPreview"
+      "sourceFunction": "MarqueeTextConstantScrollingPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "followGap",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "edgeGradientWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "marqueeDpPerSecond",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "pauseTime",
+          "type": "Duration",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/MarqueeTextConstantWithIconScrollingPreview",
@@ -12180,7 +13054,58 @@
       "sourceModule": ":composables",
       "bodyLine": 112,
       "sourceDirectory": "composables",
-      "sourceFunction": "MarqueeTextConstantWithIconScrollingPreview"
+      "sourceFunction": "MarqueeTextConstantWithIconScrollingPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "AnnotatedString"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "inlineContent",
+          "type": "Map<String, InlineTextContent>",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "followGap",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "edgeGradientWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "marqueeDpPerSecond",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "pauseTime",
+          "type": "Duration",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/PlaceholderChipPreview",
@@ -12516,7 +13441,47 @@
       "sourceModule": ":composables",
       "bodyLine": 53,
       "sourceDirectory": "composables",
-      "sourceFunction": "SegmentedProgressIndicatorSquarePreview"
+      "sourceFunction": "SegmentedProgressIndicatorSquarePreview",
+      "parameters": [
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "startAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "endAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "paddingAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/PreviewProgressAnimation",
@@ -12565,7 +13530,42 @@
       "sourceModule": ":composables",
       "bodyLine": 55,
       "sourceDirectory": "composables",
-      "sourceFunction": "PreviewProgressAnimation"
+      "sourceFunction": "PreviewProgressAnimation",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerRadiusDp",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "paddingDp",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/PreviewHighCornerRadius",
@@ -12614,7 +13614,42 @@
       "sourceModule": ":composables",
       "bodyLine": 144,
       "sourceDirectory": "composables",
-      "sourceFunction": "PreviewHighCornerRadius"
+      "sourceFunction": "PreviewHighCornerRadius",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerRadiusDp",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "paddingDp",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/PreviewSquare",
@@ -12663,7 +13698,42 @@
       "sourceModule": ":composables",
       "bodyLine": 157,
       "sourceDirectory": "composables",
-      "sourceFunction": "PreviewSquare"
+      "sourceFunction": "PreviewSquare",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerRadiusDp",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "paddingDp",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/PreviewSquareWithBrushColors",
@@ -12711,7 +13781,42 @@
       "sourceModule": ":composables",
       "bodyLine": 169,
       "sourceDirectory": "composables",
-      "sourceFunction": "PreviewSquareWithBrushColors"
+      "sourceFunction": "PreviewSquareWithBrushColors",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerRadiusDp",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "paddingDp",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/PreviewSquareWithBrushAndColorsCombined",
@@ -12759,7 +13864,42 @@
       "sourceModule": ":composables",
       "bodyLine": 181,
       "sourceDirectory": "composables",
-      "sourceFunction": "PreviewSquareWithBrushAndColorsCombined"
+      "sourceFunction": "PreviewSquareWithBrushAndColorsCombined",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerRadiusDp",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "paddingDp",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/SegmentedProgressIndicatorBrushPreview",
@@ -12792,7 +13932,47 @@
       "sourceModule": ":composables",
       "bodyLine": 73,
       "sourceDirectory": "composables",
-      "sourceFunction": "SegmentedProgressIndicatorBrushPreview"
+      "sourceFunction": "SegmentedProgressIndicatorBrushPreview",
+      "parameters": [
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "startAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "endAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "paddingAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "composables/SegmentedProgressIndicatorBrushColorCombinedPreview",
@@ -12825,7 +14005,47 @@
       "sourceModule": ":composables",
       "bodyLine": 102,
       "sourceDirectory": "composables",
-      "sourceFunction": "SegmentedProgressIndicatorBrushColorCombinedPreview"
+      "sourceFunction": "SegmentedProgressIndicatorBrushColorCombinedPreview",
+      "parameters": [
+        {
+          "name": "trackSegments",
+          "type": "List<ProgressIndicatorSegment>"
+        },
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "startAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "endAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "strokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "paddingAngle",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-layout/FillMaxRectanglePreview",
@@ -13277,17 +14497,17 @@
         },
         {
           "name": "onCancel",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
           "name": "onOk",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
           "name": "icon",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         },
@@ -13323,7 +14543,7 @@
         },
         {
           "name": "content",
-          "type": "ScalingLazyListScope.() -> Unit?",
+          "type": "(ScalingLazyListScope.() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -13388,17 +14608,17 @@
         },
         {
           "name": "onCancel",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
           "name": "onOk",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
           "name": "icon",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         },
@@ -13434,7 +14654,7 @@
         },
         {
           "name": "content",
-          "type": "ScalingLazyListScope.() -> Unit?",
+          "type": "(ScalingLazyListScope.() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -13573,17 +14793,17 @@
         },
         {
           "name": "onCancel",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
           "name": "onOk",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
           "name": "icon",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         },
@@ -13619,7 +14839,7 @@
         },
         {
           "name": "content",
-          "type": "ScalingLazyListScope.() -> Unit?",
+          "type": "(ScalingLazyListScope.() -> Unit)?",
           "hasDefault": true
         }
       ]
@@ -13679,7 +14899,7 @@
       "parameters": [
         {
           "name": "icon",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         },
@@ -13755,7 +14975,7 @@
       "parameters": [
         {
           "name": "icon",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true,
           "composableSlot": true
         },
@@ -14001,7 +15221,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14102,7 +15322,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14203,7 +15423,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14304,7 +15524,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14405,7 +15625,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14506,7 +15726,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14607,7 +15827,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14675,7 +15895,38 @@
       "sourceModule": ":compose-material",
       "bodyLine": 57,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ChipIconWithProgressInProgressLargeIconPreview"
+      "sourceFunction": "ChipIconWithProgressInProgressLargeIconPreview",
+      "parameters": [
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "Paintable?",
+          "hasDefault": true
+        },
+        {
+          "name": "largeIcon",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "progressIndicatorColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "progressTrackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ChipIconWithProgressInProgressMediumIconPreview",
@@ -14725,7 +15976,38 @@
       "sourceModule": ":compose-material",
       "bodyLine": 67,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ChipIconWithProgressInProgressMediumIconPreview"
+      "sourceFunction": "ChipIconWithProgressInProgressMediumIconPreview",
+      "parameters": [
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "Paintable?",
+          "hasDefault": true
+        },
+        {
+          "name": "largeIcon",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "progressIndicatorColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "progressTrackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ChipIconWithProgressInProgressSmallIconPreview",
@@ -14775,7 +16057,38 @@
       "sourceModule": ":compose-material",
       "bodyLine": 77,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ChipIconWithProgressInProgressSmallIconPreview"
+      "sourceFunction": "ChipIconWithProgressInProgressSmallIconPreview",
+      "parameters": [
+        {
+          "name": "progress",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "Paintable?",
+          "hasDefault": true
+        },
+        {
+          "name": "largeIcon",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "progressIndicatorColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "progressTrackColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ChipPreviewWithLargeIcon",
@@ -14870,7 +16183,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -14998,7 +16311,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -15126,7 +16439,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -15254,7 +16567,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -15381,7 +16694,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -15508,7 +16821,7 @@
         },
         {
           "name": "onLongClick",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "hasDefault": true
         },
         {
@@ -15895,7 +17208,27 @@
       "sourceModule": ":compose-material",
       "bodyLine": 30,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "IconPreview"
+      "sourceFunction": "IconPreview",
+      "parameters": [
+        {
+          "name": "paintable",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "tint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/IconPreviewMirrored",
@@ -16915,7 +18248,33 @@
       "sourceModule": ":compose-material",
       "bodyLine": 27,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "SecondaryTitlePreview"
+      "sourceFunction": "SecondaryTitlePreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "ImageVector?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/SecondaryTitlePreviewWithLongText",
@@ -16975,7 +18334,33 @@
       "sourceModule": ":compose-material",
       "bodyLine": 33,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "SecondaryTitlePreviewWithLongText"
+      "sourceFunction": "SecondaryTitlePreviewWithLongText",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "ImageVector?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/SecondaryTitlePreviewWithIcon",
@@ -17035,7 +18420,33 @@
       "sourceModule": ":compose-material",
       "bodyLine": 44,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "SecondaryTitlePreviewWithIcon"
+      "sourceFunction": "SecondaryTitlePreviewWithIcon",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "ImageVector?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/SecondaryTitlePreviewWithIconAndLongText",
@@ -17095,7 +18506,33 @@
       "sourceModule": ":compose-material",
       "bodyLine": 50,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "SecondaryTitlePreviewWithIconAndLongText"
+      "sourceFunction": "SecondaryTitlePreviewWithIconAndLongText",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "ImageVector?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/SplitToggleChipRadioPreview",
@@ -18006,7 +19443,65 @@
       "sourceModule": ":compose-material",
       "bodyLine": 39,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewNotChecked"
+      "sourceFunction": "ToggleButtonPreviewNotChecked",
+      "parameters": [
+        {
+          "name": "checkedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "notCheckedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleButtonPreviewDisabled",
@@ -18068,7 +19563,65 @@
       "sourceModule": ":compose-material",
       "bodyLine": 51,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewDisabled"
+      "sourceFunction": "ToggleButtonPreviewDisabled",
+      "parameters": [
+        {
+          "name": "checkedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "notCheckedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleButtonPreviewNotCheckedDisabled",
@@ -18130,7 +19683,65 @@
       "sourceModule": ":compose-material",
       "bodyLine": 63,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewNotCheckedDisabled"
+      "sourceFunction": "ToggleButtonPreviewNotCheckedDisabled",
+      "parameters": [
+        {
+          "name": "checkedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "notCheckedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleButtonPreviewTextNotChecked",
@@ -18192,7 +19803,57 @@
       "sourceModule": ":compose-material",
       "bodyLine": 82,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewTextNotChecked"
+      "sourceFunction": "ToggleButtonPreviewTextNotChecked",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleButtonPreviewSmall",
@@ -18254,7 +19915,65 @@
       "sourceModule": ":compose-material",
       "bodyLine": 88,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewSmall"
+      "sourceFunction": "ToggleButtonPreviewSmall",
+      "parameters": [
+        {
+          "name": "checkedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "notCheckedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleButtonPreviewSmallNotChecked",
@@ -18316,7 +20035,65 @@
       "sourceModule": ":compose-material",
       "bodyLine": 100,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleButtonPreviewSmallNotChecked"
+      "sourceFunction": "ToggleButtonPreviewSmallNotChecked",
+      "parameters": [
+        {
+          "name": "checkedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "notCheckedIcon",
+          "type": "PaintableIcon"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "checked",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "Shape",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "smallSize",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleButtonPreviewIconOnlyNotChecked",
@@ -18424,7 +20201,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 71,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipWithSecondaryLabel"
+      "sourceFunction": "ToggleChipWithSecondaryLabel",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleChipPreviewWithIcon",
@@ -18479,7 +20309,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 83,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipPreviewWithIcon"
+      "sourceFunction": "ToggleChipPreviewWithIcon",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleChipPreviewWithSecondaryLabelAndIcon",
@@ -18534,7 +20417,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 99,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipPreviewWithSecondaryLabelAndIcon"
+      "sourceFunction": "ToggleChipPreviewWithSecondaryLabelAndIcon",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleChipPreviewDisabled",
@@ -18580,7 +20516,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 112,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipPreviewDisabled"
+      "sourceFunction": "ToggleChipPreviewDisabled",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "compose-material/ToggleChipUncheckedAndDisabledPreview",
@@ -18625,7 +20614,60 @@
       "sourceModule": ":compose-material",
       "bodyLine": 124,
       "sourceDirectory": "compose-material",
-      "sourceFunction": "ToggleChipUncheckedAndDisabledPreview"
+      "sourceFunction": "ToggleChipUncheckedAndDisabledPreview",
+      "parameters": [
+        {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChanged",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "toggleControl",
+          "type": "ToggleChipToggleControl"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "PaintableIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryLabel",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ToggleChipColors",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "datalayer/phone-ui/InstallAppBottomSheetContentPreviewNoIcon",
@@ -18770,7 +20812,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -18929,7 +20971,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -19088,7 +21130,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -19257,7 +21299,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -19416,7 +21458,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -19575,7 +21617,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -19744,7 +21786,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -19911,7 +21953,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -20078,7 +22120,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -20255,7 +22297,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -20422,7 +22464,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -20589,7 +22631,7 @@
       "parameters": [
         {
           "name": "image",
-          "type": "() -> Unit?",
+          "type": "(() -> Unit)?",
           "composableSlot": true
         },
         {
@@ -24553,23 +26595,7 @@
       "sourceModule": ":health:composables",
       "bodyLine": 201,
       "sourceDirectory": "health/composables",
-      "sourceFunction": "ActiveDurationTextCustomSeparatorPreview",
-      "parameters": [
-        {
-          "name": "checkpoint",
-          "type": "ActiveDurationCheckpoint"
-        },
-        {
-          "name": "state",
-          "type": "ExerciseState"
-        },
-        {
-          "name": "content",
-          "type": "(Duration) -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "ActiveDurationTextCustomSeparatorPreview"
     },
     {
       "componentId": "health/composables/MetricDisplayPreviewBottomRightText",
@@ -24985,7 +27011,48 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 39,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "SetAudioOutputButtonPreviewMinVolume"
+      "sourceFunction": "SetAudioOutputButtonPreviewMinVolume",
+      "parameters": [
+        {
+          "name": "onVolumeClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "volumeUiState",
+          "type": "VolumeUiState?",
+          "hasDefault": true
+        },
+        {
+          "name": "audioOutputUi",
+          "type": "AudioOutputUi?",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "badgeColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconAlignment",
+          "type": "Alignment",
+          "hasDefault": true
+        },
+        {
+          "name": "iconPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/audio-ui/SetAudioOutputButtonPreviewMaxVolume",
@@ -25060,7 +27127,48 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 50,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "SetAudioOutputButtonPreviewMaxVolume"
+      "sourceFunction": "SetAudioOutputButtonPreviewMaxVolume",
+      "parameters": [
+        {
+          "name": "onVolumeClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "volumeUiState",
+          "type": "VolumeUiState?",
+          "hasDefault": true
+        },
+        {
+          "name": "audioOutputUi",
+          "type": "AudioOutputUi?",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "badgeColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconAlignment",
+          "type": "Alignment",
+          "hasDefault": true
+        },
+        {
+          "name": "iconPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/audio-ui/SetAudioOutputButtonPreviewNoOutput",
@@ -25124,7 +27232,48 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 61,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "SetAudioOutputButtonPreviewNoOutput"
+      "sourceFunction": "SetAudioOutputButtonPreviewNoOutput",
+      "parameters": [
+        {
+          "name": "onVolumeClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "volumeUiState",
+          "type": "VolumeUiState?",
+          "hasDefault": true
+        },
+        {
+          "name": "audioOutputUi",
+          "type": "AudioOutputUi?",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "badgeColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconAlignment",
+          "type": "Alignment",
+          "hasDefault": true
+        },
+        {
+          "name": "iconPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/audio-ui/SettingsButtonsPreview",
@@ -25618,7 +27767,28 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 30,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "VolumeScreenLocalePreview"
+      "sourceFunction": "VolumeScreenLocalePreview",
+      "parameters": [
+        {
+          "name": "volumeUiState",
+          "type": "() -> VolumeUiState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "displayIndicatorEvents",
+          "type": "Flow<Unit>?",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/audio-ui/VolumeScreenPreview",
@@ -25886,7 +28056,28 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 75,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "VolumeScreenTheme"
+      "sourceFunction": "VolumeScreenTheme",
+      "parameters": [
+        {
+          "name": "volumeUiState",
+          "type": "() -> VolumeUiState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "displayIndicatorEvents",
+          "type": "Flow<Unit>?",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/audio-ui/VolumeScreenWithLabel",
@@ -25978,7 +28169,28 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 97,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "VolumeScreenWithLabel"
+      "sourceFunction": "VolumeScreenWithLabel",
+      "parameters": [
+        {
+          "name": "volumeUiState",
+          "type": "() -> VolumeUiState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "displayIndicatorEvents",
+          "type": "Flow<Unit>?",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/audio-ui/VolumeScreenLongLabelPreview",
@@ -26148,7 +28360,28 @@
       "sourceModule": ":media:audio-ui",
       "bodyLine": 57,
       "sourceDirectory": "media/audio-ui",
-      "sourceFunction": "VolumeScreenLongLabelPreview"
+      "sourceFunction": "VolumeScreenLongLabelPreview",
+      "parameters": [
+        {
+          "name": "volumeUiState",
+          "type": "() -> VolumeUiState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "displayIndicatorEvents",
+          "type": "Flow<Unit>?",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/sample/MediaCollectionWidgetSquirclePreview",
@@ -26811,7 +29044,65 @@
       "sourceModule": ":media:ui",
       "bodyLine": 35,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayPauseProgressButtonPreview0"
+      "sourceFunction": "PlayPauseProgressButtonPreview0",
+      "parameters": [
+        {
+          "name": "onPlayClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPauseClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "playing",
+          "type": "Boolean"
+        },
+        {
+          "name": "trackPositionUiModel",
+          "type": "TrackPositionUiModel"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressStrokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/ui/PlayPauseProgressButtonPreview75",
@@ -26883,7 +29174,65 @@
       "sourceModule": ":media:ui",
       "bodyLine": 63,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayPauseProgressButtonPreview75"
+      "sourceFunction": "PlayPauseProgressButtonPreview75",
+      "parameters": [
+        {
+          "name": "onPlayClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPauseClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "playing",
+          "type": "Boolean"
+        },
+        {
+          "name": "trackPositionUiModel",
+          "type": "TrackPositionUiModel"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressStrokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/ui/PlayPauseProgressButtonPreview100",
@@ -26955,7 +29304,65 @@
       "sourceModule": ":media:ui",
       "bodyLine": 79,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayPauseProgressButtonPreview100"
+      "sourceFunction": "PlayPauseProgressButtonPreview100",
+      "parameters": [
+        {
+          "name": "onPlayClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPauseClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "playing",
+          "type": "Boolean"
+        },
+        {
+          "name": "trackPositionUiModel",
+          "type": "TrackPositionUiModel"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressStrokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/ui/PlayPauseProgressButtonPreviewOnWhite",
@@ -27027,7 +29434,65 @@
       "sourceModule": ":media:ui",
       "bodyLine": 141,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "PlayPauseProgressButtonPreviewOnWhite"
+      "sourceFunction": "PlayPauseProgressButtonPreviewOnWhite",
+      "parameters": [
+        {
+          "name": "onPlayClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onPauseClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "playing",
+          "type": "Boolean"
+        },
+        {
+          "name": "trackPositionUiModel",
+          "type": "TrackPositionUiModel"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressStrokeWidth",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "progressColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "trackColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/ui/PodcastControlButtonsPreviewUnknown",
@@ -27960,7 +30425,46 @@
       "sourceModule": ":media:ui",
       "bodyLine": 32,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "MediaButtonPreview"
+      "sourceFunction": "MediaButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "icon",
+          "type": "ImageVector"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "iconAlign",
+          "type": "Horizontal",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/ui/SeekButtonsGalleryPreview",
@@ -28173,7 +30677,42 @@
       "sourceModule": ":media:ui",
       "bodyLine": 30,
       "sourceDirectory": "media/ui",
-      "sourceFunction": "SeekButtonsGalleryPreview"
+      "sourceFunction": "SeekButtonsGalleryPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "seekButtonIncrement",
+          "type": "SeekButtonIncrement"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "ImageVector",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "iconSize",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "media/ui/TextMediaDisplayPreview",
@@ -31062,7 +33601,7 @@
         },
         {
           "name": "onDownloadCompletedButtonClick",
-          "type": "(PlaylistUiModel) -> Unit?",
+          "type": "((PlaylistUiModel) -> Unit)?",
           "hasDefault": true
         },
         {
@@ -31383,7 +33922,7 @@
         },
         {
           "name": "onDownloadCompletedButtonClick",
-          "type": "(PlaylistUiModel) -> Unit?",
+          "type": "((PlaylistUiModel) -> Unit)?",
           "hasDefault": true
         },
         {
@@ -31713,7 +34252,7 @@
         },
         {
           "name": "onDownloadCompletedButtonClick",
-          "type": "(PlaylistUiModel) -> Unit?",
+          "type": "((PlaylistUiModel) -> Unit)?",
           "hasDefault": true
         },
         {
@@ -32043,7 +34582,7 @@
         },
         {
           "name": "onDownloadCompletedButtonClick",
-          "type": "(PlaylistUiModel) -> Unit?",
+          "type": "((PlaylistUiModel) -> Unit)?",
           "hasDefault": true
         },
         {
@@ -32364,7 +34903,7 @@
         },
         {
           "name": "onDownloadCompletedButtonClick",
-          "type": "(PlaylistUiModel) -> Unit?",
+          "type": "((PlaylistUiModel) -> Unit)?",
           "hasDefault": true
         },
         {
@@ -32552,7 +35091,7 @@
         },
         {
           "name": "onDownloadCompletedButtonClick",
-          "type": "(PlaylistUiModel) -> Unit?",
+          "type": "((PlaylistUiModel) -> Unit)?",
           "hasDefault": true
         },
         {
@@ -44946,8 +47485,8 @@
   "library": [
     "com.google.android.horologist"
   ],
-  "renderer": "compose-preview 1.70.0",
-  "generatedAt": "2026-09-03T10:05:53.772Z",
+  "renderer": "compose-preview 1.71.0",
+  "generatedAt": "2026-09-04T10:01:27.642Z",
   "display": {
     "surface": "dark"
   },
@@ -45091,7 +47630,7 @@
   ],
   "source": {
     "repo": "google/horologist",
-    "ref": "669474cba22a1130cd20ec78e8dbdc36e5c07231",
+    "ref": "7ec92453d8faed0f4e77ba1c9afa84b5cb9fcfff",
     "module": ""
   }
 }
