@@ -31,6 +31,38 @@
   ],
   "revisions": [
     {
+      "commit": "9eca4bbea80250116e47c4d4c440dc3df677146e",
+      "previews": [
+        "components-list-header__ideal__default",
+        "components-list-header__ideal__expandable",
+        "components-time-text__ideal__default__largeround",
+        "conversation-speech-bubbles__ideal__default__smallround",
+        "entities-detail-panel__ideal__default__largeround",
+        "entities-detail-panel__ideal__fan-on__largeround",
+        "entities-detail-panel__ideal__off__largeround",
+        "entities-rows__ideal__default__largeround",
+        "home-entity-list__ideal__default__largeround",
+        "home-entity-list__ideal__empty__largeround",
+        "home-entity-list__ideal__scenes__largeround",
+        "home-landing__ideal__default__largeround",
+        "home-sensors__ideal__default__largeround",
+        "onboarding-install-phone-app__ideal__default__largeround",
+        "sensors-manager__ideal__default__largeround",
+        "sensors-rows__ideal__default__largeround",
+        "settings-complication__ideal__default__largeround",
+        "settings-favorites__ideal__default__largeround",
+        "tiles-camera-selection__ideal__default__largeround",
+        "tiles-camera-selection__ideal__empty__largeround",
+        "tiles-camera-settings__ideal__default__largeround",
+        "tiles-camera-settings__ideal__empty__largeround",
+        "tiles-refresh-interval__ideal__default__largeround",
+        "tiles-shortcut-order__ideal__default__largeround",
+        "tiles-shortcut-selection__ideal__default__largeround",
+        "tiles-shortcut-selection__ideal__empty__largeround",
+        "tiles-template-settings__ideal__default__largeround"
+      ]
+    },
+    {
       "commit": "89a7316700bc9a9fc33cf71e557530f95de21d82",
       "previews": [
         "components-list-header__ideal__default",

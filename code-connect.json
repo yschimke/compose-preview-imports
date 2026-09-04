@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "26b01119af1d30c20d5bff773ec61b1b59774ee4",
+    "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
     "module": ":wear"
   },
-  "generatedAt": "2026-09-03T09:26:55.833Z",
+  "generatedAt": "2026-09-04T09:22:27.367Z",
   "mappings": [
     {
       "componentId": "Home/Landing",
       "figmaLayerName": "Home/Landing",
       "componentName": "MainConfigView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMainConfigView",
@@ -25,6 +25,7 @@
         {
           "name": "entity",
           "type": "SimplifiedEntity?",
+          "typeFqn": "io.homeassistant.companion.android.data.SimplifiedEntity",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -33,6 +34,7 @@
         {
           "name": "showTitle",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -41,6 +43,7 @@
         {
           "name": "showUnit",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -49,6 +52,7 @@
         {
           "name": "loadingState",
           "type": "LoadingState",
+          "typeFqn": "io.homeassistant.companion.android.complications.ComplicationConfigViewModel.LoadingState",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -57,6 +61,7 @@
         {
           "name": "onChooseEntityClicked",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -65,6 +70,7 @@
         {
           "name": "onShowTitleClicked",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -73,6 +79,7 @@
         {
           "name": "onShowUnitClicked",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -81,6 +88,7 @@
         {
           "name": "onAcceptClicked",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -93,7 +101,7 @@
       "componentId": "Home/Entity list",
       "figmaLayerName": "Home/Entity list",
       "componentName": "EntityViewList",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/EntityListView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/EntityListView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewEntityListView",
@@ -105,6 +113,7 @@
         {
           "name": "entityLists",
           "type": "Map<String, List<EntityDisplay>>",
+          "typeFqn": "kotlin.collections.Map",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -113,6 +122,7 @@
         {
           "name": "entityListsOrder",
           "type": "List<String>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -121,6 +131,7 @@
         {
           "name": "entityListFilter",
           "type": "(EntityDisplay) -> Boolean",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -129,6 +140,7 @@
         {
           "name": "onEntityClicked",
           "type": "(String, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -137,6 +149,7 @@
         {
           "name": "onEntityLongClicked",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -145,6 +158,7 @@
         {
           "name": "isHapticEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -153,6 +167,7 @@
         {
           "name": "isToastEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -165,7 +180,7 @@
       "componentId": "Home/Sensors",
       "figmaLayerName": "Home/Sensors",
       "componentName": "PreviewSensorsView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SensorsView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SensorsView.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewSensorsView",
@@ -175,7 +190,7 @@
       "componentId": "Entities/Detail panel",
       "figmaLayerName": "Entities/Detail panel",
       "componentName": "PreviewDetailsPaneViewEntityLightOn",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/DetailsPanelView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/DetailsPanelView.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewDetailsPaneViewEntityLightOn",
@@ -185,7 +200,7 @@
       "componentId": "Tiles/Shortcut selection",
       "figmaLayerName": "Tiles/Shortcut selection",
       "componentName": "SelectShortcutsTileView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SelectShortcutsTileView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SelectShortcutsTileView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSelectShortcutsTileView",
@@ -197,6 +212,7 @@
         {
           "name": "shortcutTileEntitiesCountById",
           "type": "Map<Int?, Int>",
+          "typeFqn": "kotlin.collections.Map",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -205,6 +221,7 @@
         {
           "name": "onSelectShortcutsTile",
           "type": "(Int?) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -213,6 +230,7 @@
         {
           "name": "isShowShortcutTextEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -221,6 +239,7 @@
         {
           "name": "onShowShortcutTextEnabled",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -233,7 +252,7 @@
       "componentId": "Tiles/Shortcut order",
       "figmaLayerName": "Tiles/Shortcut order",
       "componentName": "SetShortcutsTileView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SetShortcutsTileView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SetShortcutsTileView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSetTileShortcutsView",
@@ -245,6 +264,7 @@
         {
           "name": "shortcutEntities",
           "type": "List<SimplifiedEntity>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -253,6 +273,7 @@
         {
           "name": "onShortcutEntitySelectionChange",
           "type": "(Int) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -265,7 +286,7 @@
       "componentId": "Tiles/Camera selection",
       "figmaLayerName": "Tiles/Camera selection",
       "componentName": "SelectCameraTileView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SelectCameraTileView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SelectCameraTileView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSelectCameraTileViewOne",
@@ -277,6 +298,7 @@
         {
           "name": "tiles",
           "type": "List<CameraTile>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -285,6 +307,7 @@
         {
           "name": "onSelectTile",
           "type": "(Int) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -297,7 +320,7 @@
       "componentId": "Tiles/Template settings",
       "figmaLayerName": "Tiles/Template settings",
       "componentName": "PreviewTemplateTileSettingView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/TemplateTileSettingsView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/TemplateTileSettingsView.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewTemplateTileSettingView",
@@ -307,7 +330,7 @@
       "componentId": "Tiles/Refresh interval",
       "figmaLayerName": "Tiles/Refresh interval",
       "componentName": "PreviewRefreshIntervalPickerView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/RefreshIntervalPickerView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/RefreshIntervalPickerView.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewRefreshIntervalPickerView",
@@ -317,7 +340,7 @@
       "componentId": "Tiles/Camera settings",
       "figmaLayerName": "Tiles/Camera settings",
       "componentName": "SelectCameraTileView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SelectCameraTileView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SelectCameraTileView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSelectCameraTileViewOne",
@@ -329,6 +352,7 @@
         {
           "name": "tiles",
           "type": "List<CameraTile>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -337,6 +361,7 @@
         {
           "name": "onSelectTile",
           "type": "(Int) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -349,7 +374,7 @@
       "componentId": "Sensors/Manager",
       "figmaLayerName": "Sensors/Manager",
       "componentName": "SensorManagerUi",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SensorManagerUi.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SensorManagerUi.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSensorManagerUI",
@@ -361,6 +386,7 @@
         {
           "name": "allSensors",
           "type": "List<Sensor>?",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -369,6 +395,7 @@
         {
           "name": "allAvailSensors",
           "type": "List<BasicSensor>?",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -377,6 +404,7 @@
         {
           "name": "sensorManager",
           "type": "SensorManager",
+          "typeFqn": "io.homeassistant.companion.android.common.sensors.SensorManager",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -385,6 +413,7 @@
         {
           "name": "onSensorClicked",
           "type": "(String, Boolean) -> Unit",
+          "typeFqn": "kotlin.Function2",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -397,7 +426,7 @@
       "componentId": "Settings/Favorites",
       "figmaLayerName": "Settings/Favorites",
       "componentName": "SettingsView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SettingsView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/SettingsView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSettingsView",
@@ -409,6 +438,7 @@
         {
           "name": "loadingState",
           "type": "LoadingState",
+          "typeFqn": "io.homeassistant.companion.android.home.MainViewModel.LoadingState",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -417,6 +447,7 @@
         {
           "name": "favorites",
           "type": "List<String>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -425,6 +456,7 @@
         {
           "name": "onClickSetFavorites",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -433,6 +465,7 @@
         {
           "name": "onClearFavorites",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -441,6 +474,7 @@
         {
           "name": "onClickSetShortcuts",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -449,6 +483,7 @@
         {
           "name": "onClickSensors",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -457,6 +492,7 @@
         {
           "name": "onClickLogout",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -465,6 +501,7 @@
         {
           "name": "isHapticEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -473,6 +510,7 @@
         {
           "name": "isToastEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -481,6 +519,7 @@
         {
           "name": "isFavoritesOnly",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -489,6 +528,7 @@
         {
           "name": "isAssistantAppAllowed",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -497,6 +537,7 @@
         {
           "name": "areNotificationsAllowed",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -505,6 +546,7 @@
         {
           "name": "onHapticEnabled",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -513,6 +555,7 @@
         {
           "name": "onToastEnabled",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -521,6 +564,7 @@
         {
           "name": "setFavoritesOnly",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -529,6 +573,7 @@
         {
           "name": "onClickCameraTile",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -537,6 +582,7 @@
         {
           "name": "onClickTemplateTiles",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -545,6 +591,7 @@
         {
           "name": "onClickThermostatTiles",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -553,6 +600,7 @@
         {
           "name": "onAssistantAppAllowed",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -561,6 +609,7 @@
         {
           "name": "onClickNotifications",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -573,7 +622,7 @@
       "componentId": "Settings/Complication",
       "figmaLayerName": "Settings/Complication",
       "componentName": "MainConfigView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMainConfigView",
@@ -585,6 +634,7 @@
         {
           "name": "entity",
           "type": "SimplifiedEntity?",
+          "typeFqn": "io.homeassistant.companion.android.data.SimplifiedEntity",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -593,6 +643,7 @@
         {
           "name": "showTitle",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -601,6 +652,7 @@
         {
           "name": "showUnit",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -609,6 +661,7 @@
         {
           "name": "loadingState",
           "type": "LoadingState",
+          "typeFqn": "io.homeassistant.companion.android.complications.ComplicationConfigViewModel.LoadingState",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -617,6 +670,7 @@
         {
           "name": "onChooseEntityClicked",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -625,6 +679,7 @@
         {
           "name": "onShowTitleClicked",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -633,6 +688,7 @@
         {
           "name": "onShowUnitClicked",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -641,6 +697,7 @@
         {
           "name": "onAcceptClicked",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -653,7 +710,7 @@
       "componentId": "Onboarding/Install phone app",
       "figmaLayerName": "Onboarding/Install phone app",
       "componentName": "PhoneInstallView",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/onboarding/phoneinstall/PhoneInstallView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/onboarding/phoneinstall/PhoneInstallView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PhoneInstallViewPreview",
@@ -665,6 +722,7 @@
         {
           "name": "onInstall",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -673,6 +731,7 @@
         {
           "name": "onRefresh",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -681,6 +740,7 @@
         {
           "name": "onAdvanced",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -693,7 +753,7 @@
       "componentId": "Conversation/Speech bubbles",
       "figmaLayerName": "Conversation/Speech bubbles",
       "componentName": "PreviewSpeechBubble",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/conversation/views/ConversationView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/conversation/views/ConversationView.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewSpeechBubble",
@@ -703,7 +763,7 @@
       "componentId": "Entities/Rows",
       "figmaLayerName": "Entities/Rows",
       "componentName": "EntityUi",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/EntityUi.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/EntityUi.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewEntityUI",
@@ -715,6 +775,7 @@
         {
           "name": "entity",
           "type": "EntityDisplay",
+          "typeFqn": "io.homeassistant.companion.android.common.data.integration.display.EntityDisplay",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -723,6 +784,7 @@
         {
           "name": "onEntityClicked",
           "type": "(String, String) -> Unit",
+          "typeFqn": "kotlin.Function2",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -731,6 +793,7 @@
         {
           "name": "isHapticEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -739,6 +802,7 @@
         {
           "name": "isToastEnabled",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -747,6 +811,7 @@
         {
           "name": "onEntityLongPressed",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -759,7 +824,7 @@
       "componentId": "Sensors/Rows",
       "figmaLayerName": "Sensors/Rows",
       "componentName": "ThemeLazyColumn",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/views/ThemeLazyColumn.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/views/ThemeLazyColumn.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "PreviewSensorUI",
@@ -771,6 +836,7 @@
         {
           "name": "state",
           "type": "ScalingLazyListState",
+          "typeFqn": "androidx.wear.compose.foundation.lazy.ScalingLazyListState",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -779,6 +845,7 @@
         {
           "name": "content",
           "type": "ScalingLazyListScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -791,7 +858,7 @@
       "componentId": "Components/List header",
       "figmaLayerName": "Components/List header",
       "componentName": "ListHeader",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/views/ListHeader.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/views/ListHeader.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewListHeader",
@@ -803,6 +870,7 @@
         {
           "name": "id",
           "type": "Int",
+          "typeFqn": "kotlin.Int",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -811,6 +879,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -823,7 +892,7 @@
       "componentId": "Components/Time text",
       "figmaLayerName": "Components/Time text",
       "componentName": "PreviewTimeText",
-      "source": "https://github.com/home-assistant/android/blob/26b01119af1d30c20d5bff773ec61b1b59774ee4/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/TimeText.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/wear/src/main/kotlin/io/homeassistant/companion/android/home/views/TimeText.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewTimeText",
