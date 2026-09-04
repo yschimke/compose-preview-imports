@@ -7,7 +7,7 @@
     "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
     "module": ":common"
   },
-  "generatedAt": "2026-09-03T09:57:44.353Z",
+  "generatedAt": "2026-09-04T09:44:16.967Z",
   "mappings": [
     {
       "componentId": "station-view",
@@ -25,6 +25,7 @@
         {
           "name": "station",
           "type": "Station",
+          "typeFqn": "dev.johnoreilly.common.remote.Station",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -129,6 +130,7 @@
         {
           "name": "name",
           "type": "String",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -137,6 +139,7 @@
         {
           "name": "color",
           "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -145,6 +148,7 @@
         {
           "name": "onColor",
           "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
