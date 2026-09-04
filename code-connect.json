@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe",
+    "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
     "module": ":app"
   },
-  "generatedAt": "2026-09-03T09:42:21.406Z",
+  "generatedAt": "2026-09-04T09:28:57.293Z",
   "mappings": [
     {
       "componentId": "Settings/Wear companion",
       "figmaLayerName": "Settings/Wear companion",
       "componentName": "SettingWearLandingView",
-      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSettingWearLandingView",
@@ -25,6 +25,7 @@
         {
           "name": "deviceName",
           "type": "String",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -33,6 +34,7 @@
         {
           "name": "hasData",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -41,6 +43,7 @@
         {
           "name": "isAuthed",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -49,6 +52,7 @@
         {
           "name": "navigateFavorites",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -57,6 +61,7 @@
         {
           "name": "navigateTemplateTile",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -65,6 +70,7 @@
         {
           "name": "loginWearOs",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -73,6 +79,7 @@
         {
           "name": "onBackClicked",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -81,6 +88,7 @@
         {
           "name": "events",
           "type": "Flow<String>",
+          "typeFqn": "kotlinx.coroutines.flow.Flow",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -89,6 +97,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -101,7 +110,7 @@
       "componentId": "Onboarding/Matter commissioning",
       "figmaLayerName": "Onboarding/Matter commissioning",
       "componentName": "MatterCommissioningScreen",
-      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMatterCommissioningScreen",
@@ -113,6 +122,7 @@
         {
           "name": "step",
           "type": "CommissioningFlowStep",
+          "typeFqn": "io.homeassistant.companion.android.matter.MatterCommissioningViewModel.CommissioningFlowStep",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -121,6 +131,7 @@
         {
           "name": "deviceName",
           "type": "String?",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -129,6 +140,7 @@
         {
           "name": "serverChooserItems",
           "type": "List<ServerChooserItem>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -137,6 +149,7 @@
         {
           "name": "onSelectServer",
           "type": "(Int) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -145,6 +158,7 @@
         {
           "name": "onConfirmCommissioning",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -153,6 +167,7 @@
         {
           "name": "onClose",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -161,6 +176,7 @@
         {
           "name": "onContinue",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -169,6 +185,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -181,7 +198,7 @@
       "componentId": "Settings/Wi-Fi SSIDs",
       "figmaLayerName": "Settings/Wi-Fi SSIDs",
       "componentName": "SsidView",
-      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "PreviewSsidViewItems",
@@ -193,6 +210,7 @@
         {
           "name": "wifiSsids",
           "type": "List<String>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -201,6 +219,7 @@
         {
           "name": "canReadWifi",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -209,6 +228,7 @@
         {
           "name": "ethernet",
           "type": "Boolean?",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -217,6 +237,7 @@
         {
           "name": "vpn",
           "type": "Boolean?",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -225,6 +246,7 @@
         {
           "name": "prioritizeInternal",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -233,6 +255,7 @@
         {
           "name": "usingWifi",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -241,6 +264,7 @@
         {
           "name": "activeSsid",
           "type": "String?",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -249,6 +273,7 @@
         {
           "name": "activeBssid",
           "type": "String?",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -257,6 +282,7 @@
         {
           "name": "onAddWifiSsid",
           "type": "(String) -> Boolean",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -265,6 +291,7 @@
         {
           "name": "onRemoveWifiSsid",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -273,6 +300,7 @@
         {
           "name": "onRequestPermission",
           "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -281,6 +309,7 @@
         {
           "name": "onSetEthernet",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -289,6 +318,7 @@
         {
           "name": "onSetVpn",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -297,6 +327,7 @@
         {
           "name": "onSetPrioritize",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -305,6 +336,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -317,7 +349,7 @@
       "componentId": "Settings/External URL",
       "figmaLayerName": "Settings/External URL",
       "componentName": "ExternalUrlView",
-      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "PreviewExternalUrlViewCloudOn",
@@ -329,6 +361,7 @@
         {
           "name": "canUseCloud",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -337,6 +370,7 @@
         {
           "name": "useCloud",
           "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -345,6 +379,7 @@
         {
           "name": "externalUrl",
           "type": "String?",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -353,6 +388,7 @@
         {
           "name": "onUseCloudToggle",
           "type": "(Boolean) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -361,6 +397,7 @@
         {
           "name": "onExternalUrlSaved",
           "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -369,6 +406,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -381,7 +419,7 @@
       "componentId": "Settings/Notification detail",
       "figmaLayerName": "Settings/Notification detail",
       "componentName": "LoadNotification",
-      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "PreviewNotificationDetails",
@@ -393,6 +431,7 @@
         {
           "name": "notification",
           "type": "NotificationItem",
+          "typeFqn": "io.homeassistant.companion.android.database.notification.NotificationItem",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -401,6 +440,7 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -413,7 +453,7 @@
       "componentId": "Components/Icon dialog",
       "figmaLayerName": "Components/Icon dialog",
       "componentName": "IconDialogPreview",
-      "source": "https://github.com/home-assistant/android/blob/6dedfdcc4abba4e2935bcb0a9535bcf00d6badbe/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
+      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "IconDialogPreview",
