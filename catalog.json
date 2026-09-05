@@ -3108,10 +3108,10 @@
           "bounds": {
             "x": 42,
             "y": 104,
-            "width": 241,
+            "width": 222,
             "height": 37
           },
-          "label": "Sep 4, 10:22 AM",
+          "label": "Sep 5, 9:59 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3134,10 +3134,10 @@
           "bounds": {
             "x": 147,
             "y": 287,
-            "width": 241,
+            "width": 222,
             "height": 37
           },
-          "label": "Sep 4, 10:22 AM",
+          "label": "Sep 5, 9:59 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3160,10 +3160,10 @@
           "bounds": {
             "x": 147,
             "y": 470,
-            "width": 241,
+            "width": 222,
             "height": 37
           },
-          "label": "Sep 4, 10:22 AM",
+          "label": "Sep 5, 9:59 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -6166,41 +6166,13 @@
       "sourceFunction": "CalendarHeatMapPreview",
       "parameters": [
         {
-          "name": "start",
-          "type": "LocalDate"
+          "name": "themeType",
+          "type": "ThemeType"
         },
         {
-          "name": "end",
-          "type": "LocalDate"
-        },
-        {
-          "name": "heatLevels",
-          "type": "Map<LocalDate, HeatLevel>"
-        },
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "cellSize",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "cellSpacing",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "scrollState",
-          "type": "ScrollState",
-          "hasDefault": true
-        },
-        {
-          "name": "locale",
-          "type": "Locale",
-          "hasDefault": true
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
         }
       ]
     },
@@ -6368,8 +6340,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 1.71.0",
-  "generatedAt": "2026-09-04T10:23:53.671Z",
+  "renderer": "compose-preview 1.79.0",
+  "generatedAt": "2026-09-05T10:00:59.669Z",
   "display": {
     "surface": "light",
     "hero": "Buttons/Row button"
@@ -6388,7 +6360,7 @@
   ],
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "05e81598a6d5298a564db63fe7a25362cacc2c74",
+    "ref": "78bdce4c29620e0c6ebe797236787ce7acaea9cf",
     "module": ":modules:services:compose"
   }
 }
