@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "bitwarden/android",
-    "ref": "7d1fdd88613801f4906935db54876f7c127ef506",
+    "ref": "b99ad92c8b65236b32ad2374ba5ee98451e039a2",
     "module": ":ui"
   },
-  "generatedAt": "2026-09-04T09:01:47.678Z",
+  "generatedAt": "2026-09-05T08:31:04.532Z",
   "mappings": [
     {
       "componentId": "filled-button",
       "figmaLayerName": "filled-button",
       "componentName": "BitwardenFilledButton",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledButton.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenFilledButton_preview",
@@ -29,7 +29,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -38,7 +40,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "colors",
@@ -47,7 +51,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "cardStyle",
@@ -56,7 +62,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "cardInsets",
@@ -65,7 +73,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-button__ideal__default.svg"
@@ -74,7 +84,7 @@
       "componentId": "outlined-button",
       "figmaLayerName": "outlined-button",
       "componentName": "BitwardenOutlinedButton",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenOutlinedButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenOutlinedButton.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenOutlinedButton_preview",
@@ -90,7 +100,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -99,7 +111,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "colors",
@@ -108,7 +122,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "cardStyle",
@@ -117,7 +133,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "cardInsets",
@@ -126,7 +144,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-button__ideal__default.svg"
@@ -135,7 +155,7 @@
       "componentId": "filled-error-button",
       "figmaLayerName": "filled-error-button",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BitwardenErrorButton_preview",
@@ -151,7 +171,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-error-button__ideal__default.svg"
@@ -160,7 +182,7 @@
       "componentId": "outlined-error-button",
       "figmaLayerName": "outlined-error-button",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BBitwardenOutlinedErrorButton_preview",
@@ -176,7 +198,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-error-button__ideal__default.svg"
@@ -185,7 +209,7 @@
       "componentId": "text-selection-button",
       "figmaLayerName": "text-selection-button",
       "componentName": "BitwardenTextSelectionButton_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTextSelectionButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTextSelectionButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTextSelectionButton_preview",
@@ -195,7 +219,7 @@
       "componentId": "icon-button-filled",
       "figmaLayerName": "icon-button-filled",
       "componentName": "BitwardenFilledIconButton_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledIconButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledIconButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenFilledIconButton_preview",
@@ -205,7 +229,7 @@
       "componentId": "icon-button-tonal",
       "figmaLayerName": "icon-button-tonal",
       "componentName": "BitwardenTonalIconButton_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTonalIconButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTonalIconButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTonalIconButton_preview",
@@ -215,7 +239,7 @@
       "componentId": "icon-button-standard",
       "figmaLayerName": "icon-button-standard",
       "componentName": "BitwardenStandardIconButton_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenStandardIconButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenStandardIconButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenStandardIconButton_preview",
@@ -225,7 +249,7 @@
       "componentId": "text-field",
       "figmaLayerName": "text-field",
       "componentName": "BitwardenTextField_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenTextField.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenTextField.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTextField_preview",
@@ -235,7 +259,7 @@
       "componentId": "password-field",
       "figmaLayerName": "password-field",
       "componentName": "BitwardenPasswordField_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenPasswordField.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenPasswordField.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenPasswordField_preview",
@@ -245,7 +269,7 @@
       "componentId": "hidden-password-field",
       "figmaLayerName": "hidden-password-field",
       "componentName": "BitwardenHiddenPasswordField_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenHiddenPasswordField.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenHiddenPasswordField.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenHiddenPasswordField_preview",
@@ -255,7 +279,7 @@
       "componentId": "multi-select-button",
       "figmaLayerName": "multi-select-button",
       "componentName": "BitwardenMultiSelectButton_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenMultiSelectButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenMultiSelectButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenMultiSelectButton_preview",
@@ -265,7 +289,7 @@
       "componentId": "date-picker-button",
       "figmaLayerName": "date-picker-button",
       "componentName": "BitwardenDatePickerButton_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenDatePickerButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenDatePickerButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenDatePickerButton_preview",
@@ -275,7 +299,7 @@
       "componentId": "slider",
       "figmaLayerName": "slider",
       "componentName": "BitwardenSlider_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/slider/BitwardenSlider.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/slider/BitwardenSlider.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenSlider_preview",
@@ -285,7 +309,7 @@
       "componentId": "switch",
       "figmaLayerName": "switch",
       "componentName": "BitwardenSwitch_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/toggle/BitwardenSwitch.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/toggle/BitwardenSwitch.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenSwitch_preview",
@@ -295,7 +319,7 @@
       "componentId": "action-card",
       "figmaLayerName": "action-card",
       "componentName": "BitwardenActionCard_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenActionCard_preview",
@@ -305,7 +329,7 @@
       "componentId": "action-card-subtitle",
       "figmaLayerName": "action-card-subtitle",
       "componentName": "BitwardenActionCardWithSubtitle_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenActionCardWithSubtitle_preview",
@@ -315,7 +339,7 @@
       "componentId": "action-card-subtitle-no-dismiss",
       "figmaLayerName": "action-card-subtitle-no-dismiss",
       "componentName": "BitwardenActionCardWithSubtitleNoDismiss_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenActionCardWithSubtitleNoDismiss_preview",
@@ -325,7 +349,7 @@
       "componentId": "action-card-leading",
       "figmaLayerName": "action-card-leading",
       "componentName": "BitwardenActionCardWithLeadingContent_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenActionCardWithLeadingContent_preview",
@@ -335,7 +359,7 @@
       "componentId": "action-card-small",
       "figmaLayerName": "action-card-small",
       "componentName": "ActionCardSmall_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "ActionCardSmall_preview",
@@ -345,7 +369,7 @@
       "componentId": "action-card-small-trailing",
       "figmaLayerName": "action-card-small-trailing",
       "componentName": "ActionCardSmallWithTrailingIcon_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "ActionCardSmallWithTrailingIcon_preview",
@@ -355,7 +379,7 @@
       "componentId": "info-callout",
       "figmaLayerName": "info-callout",
       "componentName": "BitwardenInfoCalloutCard",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenInfoCalloutCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenInfoCalloutCard.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenInfoCallout_preview",
@@ -371,7 +395,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -380,7 +406,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "startIcon",
@@ -389,7 +417,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/info-callout__ideal__default.svg"
@@ -398,7 +428,7 @@
       "componentId": "content-block",
       "figmaLayerName": "content-block",
       "componentName": "BitwardenContentBlock_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenContentBlock.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenContentBlock.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenContentBlock_preview",
@@ -408,7 +438,7 @@
       "componentId": "empty-content",
       "figmaLayerName": "empty-content",
       "componentName": "BitwardenScaffold",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/scaffold/BitwardenScaffold.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/scaffold/BitwardenScaffold.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenEmptyContent_preview",
@@ -424,7 +454,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "topBar",
@@ -433,7 +465,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "utilityBar",
@@ -442,7 +476,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "overlay",
@@ -451,7 +487,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "snackbarHost",
@@ -460,7 +498,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "floatingActionButton",
@@ -469,7 +509,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "floatingActionButtonPosition",
@@ -478,7 +520,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "navigationData",
@@ -487,7 +531,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "pullToRefreshState",
@@ -496,7 +542,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "containerColor",
@@ -505,7 +553,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "contentColor",
@@ -514,7 +564,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "contentWindowInsets",
@@ -523,7 +575,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "content",
@@ -532,7 +586,9 @@
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/empty-content__ideal__default.svg"
@@ -541,7 +597,7 @@
       "componentId": "loading-content",
       "figmaLayerName": "loading-content",
       "componentName": "BitwardenScaffold",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/scaffold/BitwardenScaffold.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/scaffold/BitwardenScaffold.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenLoadingContent_preview",
@@ -557,7 +613,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "topBar",
@@ -566,7 +624,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "utilityBar",
@@ -575,7 +635,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "overlay",
@@ -584,7 +646,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "snackbarHost",
@@ -593,7 +657,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "floatingActionButton",
@@ -602,7 +668,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "floatingActionButtonPosition",
@@ -611,7 +679,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "navigationData",
@@ -620,7 +690,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "pullToRefreshState",
@@ -629,7 +701,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "containerColor",
@@ -638,7 +712,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "contentColor",
@@ -647,7 +723,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "contentWindowInsets",
@@ -656,7 +734,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "content",
@@ -665,7 +745,9 @@
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/loading-content.svg"
@@ -674,7 +756,7 @@
       "componentId": "text-row-tooltip",
       "figmaLayerName": "text-row-tooltip",
       "componentName": "BitwardenTextRow",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTextRowWithTooltipAndContent_Preview",
@@ -690,7 +772,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClick",
@@ -699,7 +783,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "cardStyle",
@@ -708,7 +794,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -717,7 +805,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "description",
@@ -726,7 +816,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "textTestTag",
@@ -735,7 +827,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isEnabled",
@@ -744,7 +838,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "clickable",
@@ -753,7 +849,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isExternalLink",
@@ -762,7 +860,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "withDivider",
@@ -771,7 +871,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "helpData",
@@ -780,7 +882,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "content",
@@ -789,7 +893,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-tooltip__ideal__default.svg"
@@ -798,7 +904,7 @@
       "componentId": "text-row-disabled",
       "figmaLayerName": "text-row-disabled",
       "componentName": "BitwardenTextRow",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTextRowWithDividerDisabled_Preview",
@@ -814,7 +920,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClick",
@@ -823,7 +931,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "cardStyle",
@@ -832,7 +942,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -841,7 +953,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "description",
@@ -850,7 +964,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "textTestTag",
@@ -859,7 +975,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isEnabled",
@@ -868,7 +986,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "clickable",
@@ -877,7 +997,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isExternalLink",
@@ -886,7 +1008,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "withDivider",
@@ -895,7 +1019,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "helpData",
@@ -904,7 +1030,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "content",
@@ -913,7 +1041,9 @@
           "hasDefault": true,
           "composableSlot": true,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-disabled__ideal__default.svg"
@@ -922,7 +1052,7 @@
       "componentId": "push-row",
       "figmaLayerName": "push-row",
       "componentName": "BitwardenPushRow_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenPushRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenPushRow.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenPushRow_preview",
@@ -932,7 +1062,7 @@
       "componentId": "external-link-row",
       "figmaLayerName": "external-link-row",
       "componentName": "BitwardenExternalLinkRow_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenExternalLinkRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenExternalLinkRow.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenExternalLinkRow_preview",
@@ -942,7 +1072,7 @@
       "componentId": "row-of-icon-buttons",
       "figmaLayerName": "row-of-icon-buttons",
       "componentName": "BitwardenRowOfIconButtons_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenRowOfActions.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenRowOfActions.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenRowOfIconButtons_preview",
@@ -952,7 +1082,7 @@
       "componentId": "list-header",
       "figmaLayerName": "list-header",
       "componentName": "BitwardenListHeaderText_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/header/BitwardenListHeaderText.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/header/BitwardenListHeaderText.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenListHeaderText_preview",
@@ -962,7 +1092,7 @@
       "componentId": "top-app-bar",
       "figmaLayerName": "top-app-bar",
       "componentName": "BitwardenTopAppBar_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTopAppBar_preview",
@@ -972,7 +1102,7 @@
       "componentId": "top-app-bar-overflow",
       "figmaLayerName": "top-app-bar-overflow",
       "componentName": "BitwardenTopAppBarOverflow_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTopAppBarOverflow_preview",
@@ -982,7 +1112,7 @@
       "componentId": "top-app-bar-overflow-cutoff",
       "figmaLayerName": "top-app-bar-overflow-cutoff",
       "componentName": "BitwardenTopAppBarOverflowCutoff_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTopAppBarOverflowCutoff_preview",
@@ -992,7 +1122,7 @@
       "componentId": "medium-top-app-bar",
       "figmaLayerName": "medium-top-app-bar",
       "componentName": "BitwardenMediumTopAppBar_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenMediumTopAppBar.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenMediumTopAppBar.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenMediumTopAppBar_preview",
@@ -1002,7 +1132,7 @@
       "componentId": "search-action",
       "figmaLayerName": "search-action",
       "componentName": "BitwardenSearchActionItem",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenSearchActionItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenSearchActionItem.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenSearchActionItem_preview",
@@ -1018,7 +1148,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isDisplayed",
@@ -1027,7 +1159,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClick",
@@ -1036,7 +1170,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/search-action__ideal__default.svg"
@@ -1045,7 +1181,7 @@
       "componentId": "overflow-action",
       "figmaLayerName": "overflow-action",
       "componentName": "BitwardenOverflowActionItem_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenOverflowActionItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenOverflowActionItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenOverflowActionItem_preview",
@@ -1055,7 +1191,7 @@
       "componentId": "account-action-item",
       "figmaLayerName": "account-action-item",
       "componentName": "BitwardenAccountActionItem_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountActionItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountActionItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenAccountActionItem_preview",
@@ -1065,7 +1201,7 @@
       "componentId": "account-switcher",
       "figmaLayerName": "account-switcher",
       "componentName": "BitwardenAccountSwitcher",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountSwitcher.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountSwitcher.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenAccountSwitcher_preview",
@@ -1081,7 +1217,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "accountSummaries",
@@ -1090,7 +1228,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSwitchAccountClick",
@@ -1099,7 +1239,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onLockAccountClick",
@@ -1108,7 +1250,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onLogoutAccountClick",
@@ -1117,7 +1261,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onAddAccountClick",
@@ -1126,7 +1272,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onDismissRequest",
@@ -1135,7 +1283,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "topAppBarScrollBehavior",
@@ -1144,7 +1294,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -1153,7 +1305,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "windowInsets",
@@ -1162,7 +1316,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isAddAccountAvailable",
@@ -1171,7 +1327,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/account-switcher.svg"
@@ -1180,7 +1338,7 @@
       "componentId": "placeholder-account-light",
       "figmaLayerName": "placeholder-account-light",
       "componentName": "BitwardenPlaceholderAccountActionItem_preview_light",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenPlaceholderAccountActionItem_preview_light",
@@ -1190,7 +1348,7 @@
       "componentId": "placeholder-account-dark",
       "figmaLayerName": "placeholder-account-dark",
       "componentName": "BitwardenPlaceholderAccountActionItem_preview_dark",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenPlaceholderAccountActionItem_preview_dark",
@@ -1200,7 +1358,7 @@
       "componentId": "loading-dialog",
       "figmaLayerName": "loading-dialog",
       "componentName": "BitwardenLoadingDialog_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenLoadingDialog.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenLoadingDialog.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenLoadingDialog_preview",
@@ -1210,7 +1368,7 @@
       "componentId": "date-picker-dialog",
       "figmaLayerName": "date-picker-dialog",
       "componentName": "BitwardenDatePickerDialog_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenDatePickerDialog.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenDatePickerDialog.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenDatePickerDialog_preview",
@@ -1220,7 +1378,7 @@
       "componentId": "snackbar",
       "figmaLayerName": "snackbar",
       "componentName": "BitwardenCustomSnackbar_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/snackbar/BitwardenSnackbar.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/snackbar/BitwardenSnackbar.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenCustomSnackbar_preview",
@@ -1230,7 +1388,7 @@
       "componentId": "status-badge",
       "figmaLayerName": "status-badge",
       "componentName": "BitwardenStatusBadge_Preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenStatusBadge_Preview",
@@ -1240,7 +1398,7 @@
       "componentId": "status-badge-dark",
       "figmaLayerName": "status-badge-dark",
       "componentName": "BitwardenStatusBadge_PreviewDark",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenStatusBadge_PreviewDark",
@@ -1250,7 +1408,7 @@
       "componentId": "notification-badge",
       "figmaLayerName": "notification-badge",
       "componentName": "NotificationBadge",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/NotificationBadge.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/NotificationBadge.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "NotificationBadge_preview",
@@ -1266,7 +1424,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -1275,7 +1435,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isVisible",
@@ -1284,7 +1446,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "backgroundColor",
@@ -1293,7 +1457,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "contentColor",
@@ -1302,7 +1468,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/notification-badge__ideal__default.svg"
@@ -1311,7 +1479,7 @@
       "componentId": "coach-mark",
       "figmaLayerName": "coach-mark",
       "componentName": "BitwardenCoachMarkContainer_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/components/coachmark/CoachMarkContainer.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/coachmark/CoachMarkContainer.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenCoachMarkContainer_preview",
@@ -1321,7 +1489,7 @@
       "componentId": "typography",
       "figmaLayerName": "typography",
       "componentName": "BitwardenTypography_preview",
-      "source": "https://github.com/bitwarden/android/blob/7d1fdd88613801f4906935db54876f7c127ef506/ui/src/main/kotlin/com/bitwarden/ui/platform/theme/type/Typography.kt",
+      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/theme/type/Typography.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "BitwardenTypography_preview",
