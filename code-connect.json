@@ -7,7 +7,7 @@
     "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
     "module": ":wear"
   },
-  "generatedAt": "2026-09-04T09:22:27.367Z",
+  "generatedAt": "2026-09-05T08:51:53.704Z",
   "mappings": [
     {
       "componentId": "Home/Landing",
@@ -29,7 +29,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "showTitle",
@@ -38,7 +40,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "showUnit",
@@ -47,7 +51,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "loadingState",
@@ -56,7 +62,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onChooseEntityClicked",
@@ -65,7 +73,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onShowTitleClicked",
@@ -74,7 +84,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onShowUnitClicked",
@@ -83,7 +95,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onAcceptClicked",
@@ -92,7 +106,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/home-landing.svg"
@@ -117,7 +133,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "entityListsOrder",
@@ -126,7 +144,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "entityListFilter",
@@ -135,7 +155,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onEntityClicked",
@@ -144,7 +166,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onEntityLongClicked",
@@ -153,7 +177,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isHapticEnabled",
@@ -162,7 +188,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isToastEnabled",
@@ -171,7 +199,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/home-entity-list.svg"
@@ -216,7 +246,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSelectShortcutsTile",
@@ -225,7 +257,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isShowShortcutTextEnabled",
@@ -234,7 +268,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onShowShortcutTextEnabled",
@@ -243,7 +279,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/tiles-shortcut-selection.svg"
@@ -268,7 +306,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onShortcutEntitySelectionChange",
@@ -277,7 +317,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/tiles-shortcut-order.svg"
@@ -302,7 +344,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSelectTile",
@@ -311,7 +355,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-camera-selection__ideal__default__largeround.svg"
@@ -356,7 +402,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSelectTile",
@@ -365,7 +413,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-camera-settings__ideal__default__largeround.svg"
@@ -390,7 +440,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "allAvailSensors",
@@ -399,7 +451,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "sensorManager",
@@ -408,7 +462,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSensorClicked",
@@ -417,7 +473,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/sensors-manager.svg"
@@ -442,7 +500,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "favorites",
@@ -451,7 +511,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickSetFavorites",
@@ -460,7 +522,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClearFavorites",
@@ -469,7 +533,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickSetShortcuts",
@@ -478,7 +544,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickSensors",
@@ -487,7 +555,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickLogout",
@@ -496,7 +566,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isHapticEnabled",
@@ -505,7 +577,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isToastEnabled",
@@ -514,7 +588,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isFavoritesOnly",
@@ -523,7 +599,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isAssistantAppAllowed",
@@ -532,7 +610,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "areNotificationsAllowed",
@@ -541,7 +621,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onHapticEnabled",
@@ -550,7 +632,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onToastEnabled",
@@ -559,7 +643,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "setFavoritesOnly",
@@ -568,7 +654,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickCameraTile",
@@ -577,7 +665,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickTemplateTiles",
@@ -586,7 +676,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickThermostatTiles",
@@ -595,7 +687,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onAssistantAppAllowed",
@@ -604,7 +698,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClickNotifications",
@@ -613,7 +709,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/settings-favorites.svg"
@@ -638,7 +736,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "showTitle",
@@ -647,7 +747,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "showUnit",
@@ -656,7 +758,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "loadingState",
@@ -665,7 +769,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onChooseEntityClicked",
@@ -674,7 +780,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onShowTitleClicked",
@@ -683,7 +791,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onShowUnitClicked",
@@ -692,7 +802,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onAcceptClicked",
@@ -701,7 +813,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/settings-complication.svg"
@@ -726,7 +840,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onRefresh",
@@ -735,7 +851,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onAdvanced",
@@ -744,7 +862,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/onboarding-install-phone-app.svg"
@@ -779,7 +899,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onEntityClicked",
@@ -788,7 +910,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isHapticEnabled",
@@ -797,7 +921,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isToastEnabled",
@@ -806,7 +932,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onEntityLongPressed",
@@ -815,7 +943,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/entities-rows.svg"
@@ -840,7 +970,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "content",
@@ -849,7 +981,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/sensors-rows.svg"
@@ -874,7 +1008,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -883,7 +1019,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/components-list-header__ideal__default.svg"
