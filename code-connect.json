@@ -7,7 +7,7 @@
     "ref": "bce23e5de2f56b0e34752f89c564beff26dad98b",
     "module": ":shared"
   },
-  "generatedAt": "2026-09-04T10:05:28.387Z",
+  "generatedAt": "2026-09-05T09:13:46.049Z",
   "mappings": [
     {
       "componentId": "home",
@@ -199,7 +199,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "goBack",
@@ -208,7 +210,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -217,7 +221,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/settings-data.svg"

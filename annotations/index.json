@@ -7686,6 +7686,20 @@
       {
         "kind": "layout",
         "bounds": {
+          "x": 934,
+          "y": 931,
+          "width": 32,
+          "height": 32
+        },
+        "label": "r 2dp",
+        "detail": {
+          "cornerRadius": "2",
+          "unit": "dp"
+        }
+      },
+      {
+        "kind": "layout",
+        "bounds": {
           "x": 709,
           "y": 1005,
           "width": 32,
