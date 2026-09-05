@@ -7,7 +7,7 @@
     "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
     "module": ":app"
   },
-  "generatedAt": "2026-09-04T11:06:56.028Z",
+  "generatedAt": "2026-09-05T09:05:56.524Z",
   "mappings": [
     {
       "componentId": "Settings/Wear companion",
@@ -29,7 +29,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "hasData",
@@ -38,7 +40,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isAuthed",
@@ -47,7 +51,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "navigateFavorites",
@@ -56,7 +62,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "navigateTemplateTile",
@@ -65,7 +73,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "loginWearOs",
@@ -74,7 +84,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onBackClicked",
@@ -83,7 +95,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "events",
@@ -92,7 +106,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -101,7 +117,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/settings-wear-companion.svg"
@@ -126,7 +144,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "deviceName",
@@ -135,7 +155,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "serverChooserItems",
@@ -144,7 +166,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSelectServer",
@@ -153,7 +177,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onConfirmCommissioning",
@@ -162,7 +188,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClose",
@@ -171,7 +199,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onContinue",
@@ -180,7 +210,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -189,7 +221,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/onboarding-matter-commissioning__ideal__default.svg"
@@ -214,7 +248,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "canReadWifi",
@@ -223,7 +259,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "ethernet",
@@ -232,7 +270,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "vpn",
@@ -241,7 +281,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "prioritizeInternal",
@@ -250,7 +292,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "usingWifi",
@@ -259,7 +303,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "activeSsid",
@@ -268,7 +314,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "activeBssid",
@@ -277,7 +325,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onAddWifiSsid",
@@ -286,7 +336,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onRemoveWifiSsid",
@@ -295,7 +347,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onRequestPermission",
@@ -304,7 +358,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSetEthernet",
@@ -313,7 +369,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSetVpn",
@@ -322,7 +380,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onSetPrioritize",
@@ -331,7 +391,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -340,7 +402,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/settings-wi-fi-ssids.svg"
@@ -365,7 +429,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "useCloud",
@@ -374,7 +440,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "externalUrl",
@@ -383,7 +451,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onUseCloudToggle",
@@ -392,7 +462,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onExternalUrlSaved",
@@ -401,7 +473,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -410,7 +484,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-external-url__ideal__default.svg"
@@ -435,7 +511,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -444,7 +522,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/settings-notification-detail.svg"
