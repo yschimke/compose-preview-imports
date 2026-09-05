@@ -15,6 +15,22 @@
   ],
   "revisions": [
     {
+      "commit": "ccb65c868acd080757a18c6ac55901b40c997123",
+      "previews": [
+        "color-scheme__ideal__default",
+        "country-list__ideal__default",
+        "country-view__ideal__default",
+        "network-list__ideal__default",
+        "network-view__ideal__default",
+        "station-list__ideal__default",
+        "station-view-empty__ideal__default",
+        "station-view-full__ideal__default",
+        "station-view-mixed__ideal__default",
+        "station-view__ideal__default",
+        "typography__ideal__default"
+      ]
+    },
+    {
       "commit": "5811f7567d368f370c7036c469318fea789d3521",
       "previews": [
         "color-scheme__ideal__default",
