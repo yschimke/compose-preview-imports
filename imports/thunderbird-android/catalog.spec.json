@@ -8,6 +8,46 @@
     "light",
     "dark"
   ],
+  "themes": [
+    {
+      "kind": "arguments",
+      "group": "Bolt",
+      "composable": "net.thunderbird.components.ui.bolt.theme.thunderbird.ThunderbirdBoltTheme",
+      "variants": [
+        {
+          "name": "Thunderbird light",
+          "args": {
+            "darkTheme": "false"
+          }
+        },
+        {
+          "name": "Thunderbird dark",
+          "args": {
+            "darkTheme": "true"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "arguments",
+      "group": "Bolt",
+      "composable": "net.thunderbird.components.ui.bolt.theme.k9mail.K9MailBoltTheme",
+      "variants": [
+        {
+          "name": "K-9 Mail light",
+          "args": {
+            "darkTheme": "false"
+          }
+        },
+        {
+          "name": "K-9 Mail dark",
+          "args": {
+            "darkTheme": "true"
+          }
+        }
+      ]
+    }
+  ],
   "breakpoints": [
     { "size": "smallPhone", "device": "spec:width=360dp,height=640dp,dpi=160", "widthDp": 360 },
     { "size": "phone", "device": "spec:width=411dp,height=891dp,dpi=420", "widthDp": 411 },

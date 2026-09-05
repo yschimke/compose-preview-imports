@@ -8,6 +8,90 @@
     "light",
     "dark"
   ],
+  "themes": [
+    {
+      "kind": "arguments",
+      "group": "Twine",
+      "composable": "dev.sasikanth.rss.reader.ui.AppTheme",
+      "imports": [
+        "androidx.compose.foundation.isSystemInDarkTheme",
+        "dev.sasikanth.rss.reader.core.model.local.ThemeVariant",
+        "dev.sasikanth.rss.reader.ui.getOverriddenColorScheme"
+      ],
+      "variants": [
+        {
+          "name": "Solarized",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Solarized.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Forest",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Forest.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Amber",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Amber.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Coral",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Coral.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Raspberry",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Raspberry.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Skyline",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Skyline.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Parchment",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Parchment.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Sepia",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Sepia.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Slate",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Slate.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        },
+        {
+          "name": "Lavender",
+          "args": {
+            "useDarkTheme": "isSystemInDarkTheme()",
+            "overriddenColorScheme": "ThemeVariant.Lavender.getOverriddenColorScheme(isSystemInDarkTheme())"
+          }
+        }
+      ]
+    }
+  ],
   "groups": [
     {
       "name": "Reading",
