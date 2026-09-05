@@ -25,6 +25,32 @@
   ],
   "revisions": [
     {
+      "commit": "d131122366e1a2616ab94f287f8bc9c96ef8903e",
+      "previews": [
+        "about__ideal__default",
+        "account-selection__ideal__default",
+        "add-feed__ideal__default",
+        "bazqux-login__ideal__default",
+        "bookmarks__ideal__default",
+        "discovery__ideal__default",
+        "freshrss-login__ideal__default",
+        "group__ideal__default",
+        "home__ideal__default",
+        "miniflux-login__ideal__default",
+        "navigation-drawer__ideal__default",
+        "onboarding__ideal__default",
+        "premium-paywall__ideal__default",
+        "reader-page__ideal__default",
+        "search__ideal__default",
+        "settings-app-info__ideal__default",
+        "settings-appearance__ideal__default",
+        "settings-behavior__ideal__default",
+        "settings-data__ideal__default",
+        "settings-services__ideal__default",
+        "settings__ideal__default"
+      ]
+    },
+    {
       "commit": "e1976d9e2d1d68f99fed670990d8584f9683344e",
       "previews": [
         "about__ideal__default",
