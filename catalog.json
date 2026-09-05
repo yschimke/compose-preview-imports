@@ -707,7 +707,7 @@
             "width": 293,
             "height": 32
           },
-          "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-1)",
+          "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20-rc-2)",
           "padding": {
             "start": 0,
             "top": 0,
@@ -919,11 +919,11 @@
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 1.71.0",
-  "generatedAt": "2026-09-04T10:16:57.573Z",
+  "renderer": "compose-preview 1.82.0",
+  "generatedAt": "2026-09-05T22:13:04.136Z",
   "display": {
     "surface": "dark",
-    "hero": "Screens/App entry"
+    "hero": "Screens/Playback effects"
   },
   "liveBundle": {
     "path": "bundle/",
@@ -939,7 +939,7 @@
   ],
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "05e81598a6d5298a564db63fe7a25362cacc2c74",
+    "ref": "78bdce4c29620e0c6ebe797236787ce7acaea9cf",
     "module": ":wear"
   }
 }

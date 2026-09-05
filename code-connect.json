@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "05e81598a6d5298a564db63fe7a25362cacc2c74",
+    "ref": "78bdce4c29620e0c6ebe797236787ce7acaea9cf",
     "module": ":wear"
   },
-  "generatedAt": "2026-09-04T10:17:00.974Z",
+  "generatedAt": "2026-09-05T22:13:07.238Z",
   "mappings": [
     {
       "componentId": "Screens/Settings",
       "figmaLayerName": "Screens/Settings",
       "componentName": "SettingsScreenPreview_unchecked",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "SettingsScreenPreview_unchecked",
@@ -23,7 +23,7 @@
       "componentId": "Screens/Playback effects",
       "figmaLayerName": "Screens/Playback effects",
       "componentName": "EffectsScreenDarkPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "EffectsScreenDarkPreview",
@@ -33,7 +33,7 @@
       "componentId": "Episodes/Episode chip",
       "figmaLayerName": "Episodes/Episode chip",
       "componentName": "Content",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "EpisodeChipPreview",
@@ -49,7 +49,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "queueState",
@@ -58,7 +60,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "useEpisodeArtwork",
@@ -67,7 +71,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "onClick",
@@ -76,7 +82,9 @@
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "modifier",
@@ -85,7 +93,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "useUpNextIcon",
@@ -94,7 +104,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "showImage",
@@ -103,7 +115,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/episodes-episode-chip.svg"
@@ -112,7 +126,7 @@
       "componentId": "Playback/Marquee media display",
       "figmaLayerName": "Playback/Marquee media display",
       "componentName": "MarqueeTextMediaDisplay",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "MarqueeTextMediaDisplayPreview",
@@ -128,7 +142,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "title",
@@ -137,7 +153,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "artist",
@@ -146,7 +164,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": true
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null
         },
         {
           "name": "isPlaybackError",
@@ -155,7 +175,9 @@
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null
         }
       ],
       "figmaSvg": "figma/playback-marquee-media-display.svg"
@@ -164,7 +186,7 @@
       "componentId": "Sign-in/Phone instructions",
       "figmaLayerName": "Sign-in/Phone instructions",
       "componentName": "LoginWithPhoneInstructionsPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "LoginWithPhoneInstructionsPreview",
@@ -174,7 +196,7 @@
       "componentId": "Chrome/Time text",
       "figmaLayerName": "Chrome/Time text",
       "componentName": "TimeTextWithConnectivityConnectedPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "TimeTextWithConnectivityConnectedPreview",
@@ -184,7 +206,7 @@
       "componentId": "States/Loading",
       "figmaLayerName": "States/Loading",
       "componentName": "LoadingScreenPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "LoadingScreenPreview",
@@ -194,7 +216,7 @@
       "componentId": "States/No content",
       "figmaLayerName": "States/No content",
       "componentName": "NoContentScreenPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "NoContentScreenPreview",
@@ -204,7 +226,7 @@
       "componentId": "States/Notification",
       "figmaLayerName": "States/Notification",
       "componentName": "NotificationScreenPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/05e81598a6d5298a564db63fe7a25362cacc2c74/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/78bdce4c29620e0c6ebe797236787ce7acaea9cf/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "NotificationScreenPreview",
