@@ -8,6 +8,9 @@
     "light",
     "dark"
   ],
+  "display": {
+    "hero": "station-list"
+  },
   "groups": [
     {
       "name": "Stations",

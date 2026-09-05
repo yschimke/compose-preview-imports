@@ -8,6 +8,9 @@
     "light",
     "dark"
   ],
+  "display": {
+    "hero": "profile-card-front"
+  },
   "groups": [
     {
       "name": "Controls",

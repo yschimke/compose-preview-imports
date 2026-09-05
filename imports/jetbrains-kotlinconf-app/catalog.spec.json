@@ -8,6 +8,9 @@
     "light",
     "dark"
   ],
+  "display": {
+    "hero": "talk-card-live"
+  },
   "groups": [
     {
       "name": "Buttons and actions",
