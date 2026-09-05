@@ -11,6 +11,25 @@
     "light",
     "dark"
   ],
+  "themes": [
+    {
+      "kind": "enum",
+      "group": "Pocket Casts",
+      "composable": "au.com.shiftyjelly.pocketcasts.compose.AppThemeWithBackground",
+      "enum": "au.com.shiftyjelly.pocketcasts.ui.theme.Theme.ThemeType",
+      "values": [
+        "LIGHT",
+        "DARK",
+        "EXTRA_DARK",
+        "CLASSIC_LIGHT",
+        "ELECTRIC",
+        "INDIGO",
+        "ROSE",
+        "LIGHT_CONTRAST",
+        "DARK_CONTRAST"
+      ]
+    }
+  ],
   "breakpoints": [
     {
       "size": "compact",
