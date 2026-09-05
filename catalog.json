@@ -3108,10 +3108,10 @@
           "bounds": {
             "x": 42,
             "y": 104,
-            "width": 222,
+            "width": 240,
             "height": 37
           },
-          "label": "Sep 5, 9:59 AM",
+          "label": "Sep 5, 10:16 PM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3134,10 +3134,10 @@
           "bounds": {
             "x": 147,
             "y": 287,
-            "width": 222,
+            "width": 240,
             "height": 37
           },
-          "label": "Sep 5, 9:59 AM",
+          "label": "Sep 5, 10:16 PM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3160,10 +3160,10 @@
           "bounds": {
             "x": 147,
             "y": 470,
-            "width": 222,
+            "width": 240,
             "height": 37
           },
-          "label": "Sep 5, 9:59 AM",
+          "label": "Sep 5, 10:16 PM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -6340,11 +6340,11 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 1.79.0",
-  "generatedAt": "2026-09-05T10:00:59.669Z",
+  "renderer": "compose-preview 1.82.0",
+  "generatedAt": "2026-09-05T22:17:29.612Z",
   "display": {
     "surface": "light",
-    "hero": "Buttons/Row button"
+    "hero": "Insights/Calendar heat map"
   },
   "liveBundle": {
     "path": "bundle/",
