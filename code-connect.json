@@ -7,7 +7,7 @@
     "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
     "module": ":common"
   },
-  "generatedAt": "2026-09-05T21:57:51.588Z",
+  "generatedAt": "2026-09-06T09:27:05.785Z",
   "mappings": [
     {
       "componentId": "station-view",
@@ -31,7 +31,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view__ideal__default.svg"
@@ -138,7 +140,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "color",
@@ -149,7 +153,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onColor",
@@ -160,7 +166,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/color-scheme__ideal__default.svg"
