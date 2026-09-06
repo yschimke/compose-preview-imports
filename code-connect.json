@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "a6d5be3ff8eecd6a3816a17a61f3f1d903253136",
+    "ref": "643a4cd14179b260da6c0320f15c0f2790132cca",
     "module": ":lib:ui:designsystem"
   },
-  "generatedAt": "2026-09-03T10:21:29.436Z",
+  "generatedAt": "2026-09-06T09:37:50.399Z",
   "mappings": [
     {
       "componentId": "primary-button",
       "figmaLayerName": "primary-button",
       "componentName": "PreviewPrimaryButtonEnabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewPrimaryButtonEnabled",
@@ -23,7 +23,7 @@
       "componentId": "primary-button-disabled",
       "figmaLayerName": "primary-button-disabled",
       "componentName": "PreviewPrimaryButtonDisabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewPrimaryButtonDisabled",
@@ -33,7 +33,7 @@
       "componentId": "variant-button",
       "figmaLayerName": "variant-button",
       "componentName": "PreviewVariantButtonEnabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewVariantButtonEnabled",
@@ -43,7 +43,7 @@
       "componentId": "variant-button-disabled",
       "figmaLayerName": "variant-button-disabled",
       "componentName": "PreviewVariantButtonDisabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewVariantButtonDisabled",
@@ -53,7 +53,7 @@
       "componentId": "negative-button",
       "figmaLayerName": "negative-button",
       "componentName": "PreviewNegativeButtonEnabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewNegativeButtonEnabled",
@@ -63,7 +63,7 @@
       "componentId": "negative-button-disabled",
       "figmaLayerName": "negative-button-disabled",
       "componentName": "PreviewNegativeButtonDisabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewNegativeButtonDisabled",
@@ -73,7 +73,7 @@
       "componentId": "text-button",
       "figmaLayerName": "text-button",
       "componentName": "PreviewTextButtonEnabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewTextButtonEnabled",
@@ -83,7 +83,7 @@
       "componentId": "text-button-disabled",
       "figmaLayerName": "text-button-disabled",
       "componentName": "PreviewTextButtonDisabled",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewTextButtonDisabled",
@@ -93,7 +93,7 @@
       "componentId": "checkbox",
       "figmaLayerName": "checkbox",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewCheckbox",
@@ -105,42 +105,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/checkbox__ideal__default.svg"
@@ -149,7 +174,7 @@
       "componentId": "switch",
       "figmaLayerName": "switch",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMullvadSwitch",
@@ -161,42 +186,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/switch__ideal__default.svg"
@@ -205,7 +255,7 @@
       "componentId": "filter-chip-enabled",
       "figmaLayerName": "filter-chip-enabled",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewEnabledMullvadFilterChip",
@@ -217,42 +267,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-enabled__ideal__default.svg"
@@ -261,7 +336,7 @@
       "componentId": "filter-chip-disabled",
       "figmaLayerName": "filter-chip-disabled",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewDisabledMullvadFilterChip",
@@ -273,42 +348,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-disabled__ideal__default.svg"
@@ -317,7 +417,7 @@
       "componentId": "filter-chip-inactive",
       "figmaLayerName": "filter-chip-inactive",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewInactiveMullvadFilterChip",
@@ -329,42 +429,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-inactive__ideal__default.svg"
@@ -373,7 +498,7 @@
       "componentId": "feature-chip",
       "figmaLayerName": "feature-chip",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMullvadFeatureChip",
@@ -385,42 +510,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/feature-chip__ideal__default.svg"
@@ -429,7 +579,7 @@
       "componentId": "list-item-leading",
       "figmaLayerName": "list-item-leading",
       "componentName": "PreviewLeadingListItem",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewLeadingListItem",
@@ -439,7 +589,7 @@
       "componentId": "list-item-leading-content",
       "figmaLayerName": "list-item-leading-content",
       "componentName": "PreviewLeadingContentListItem",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewLeadingContentListItem",
@@ -449,7 +599,7 @@
       "componentId": "list-item-trailing",
       "figmaLayerName": "list-item-trailing",
       "componentName": "PreviewTrailingListItem",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewTrailingListItem",
@@ -459,7 +609,7 @@
       "componentId": "list-item-hierarchy",
       "figmaLayerName": "list-item-hierarchy",
       "componentName": "PreviewHierarchyListItem",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewHierarchyListItem",
@@ -469,7 +619,7 @@
       "componentId": "list-item-positions",
       "figmaLayerName": "list-item-positions",
       "componentName": "PreviewListItemPositions",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
       "previewName": "PreviewListItemPositions",
@@ -479,7 +629,7 @@
       "componentId": "list-header",
       "figmaLayerName": "list-header",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewListHeader",
@@ -491,42 +641,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-header__ideal__default.svg"
@@ -535,7 +710,7 @@
       "componentId": "progress-indicator",
       "figmaLayerName": "progress-indicator",
       "componentName": "PreviewColumn",
-      "source": "https://github.com/mullvad/mullvadvpn-app/blob/a6d5be3ff8eecd6a3816a17a61f3f1d903253136/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+      "source": "https://github.com/mullvad/mullvadvpn-app/blob/643a4cd14179b260da6c0320f15c0f2790132cca/lib/ui/designsystem/src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMullvadProgressIndicator",
@@ -547,42 +722,67 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "spacing",
           "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "verticalAlignment",
           "type": "Vertical",
+          "typeFqn": "androidx.compose.ui.Alignment.Vertical",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "horizontalAlignment",
           "type": "Horizontal",
+          "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "content",
           "type": "ColumnScope.() -> Unit",
+          "typeFqn": "kotlin.Function1",
           "hasDefault": false,
           "composableSlot": true,
           "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "figma/progress-indicator.svg"

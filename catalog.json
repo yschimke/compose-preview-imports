@@ -661,7 +661,7 @@
           "variant": "ideal",
           "path": "images/filter-chip-enabled/ideal__default.png",
           "state": "default",
-          "width": 418,
+          "width": 366,
           "height": 210,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-enabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
@@ -679,14 +679,14 @@
             "bounds": {
               "x": 42,
               "y": 63,
-              "width": 334,
+              "width": 282,
               "height": 84
             }
           },
           "bounds": {
             "x": 42,
             "y": 63,
-            "width": 334,
+            "width": 282,
             "height": 84
           }
         }
@@ -696,7 +696,7 @@
           "bounds": {
             "x": 42,
             "y": 63,
-            "width": 334,
+            "width": 282,
             "height": 84
           },
           "role": "Checkbox",
@@ -831,7 +831,7 @@
           "variant": "ideal",
           "path": "images/filter-chip-inactive/ideal__default.png",
           "state": "default",
-          "width": 418,
+          "width": 366,
           "height": 210,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-inactive__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
@@ -849,14 +849,14 @@
             "bounds": {
               "x": 42,
               "y": 63,
-              "width": 334,
+              "width": 282,
               "height": 84
             }
           },
           "bounds": {
             "x": 42,
             "y": 63,
-            "width": 334,
+            "width": 282,
             "height": 84
           }
         }
@@ -866,7 +866,7 @@
           "bounds": {
             "x": 42,
             "y": 63,
-            "width": 334,
+            "width": 282,
             "height": 84
           },
           "role": "Checkbox",
@@ -1752,8 +1752,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 1.70.0",
-  "generatedAt": "2026-09-03T10:21:28.895Z",
+  "renderer": "compose-preview 1.84.0",
+  "generatedAt": "2026-09-06T09:37:49.450Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -1768,7 +1768,7 @@
   ],
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "a6d5be3ff8eecd6a3816a17a61f3f1d903253136",
+    "ref": "643a4cd14179b260da6c0320f15c0f2790132cca",
     "module": ":lib:ui:designsystem"
   }
 }
