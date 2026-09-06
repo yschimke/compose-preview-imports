@@ -7,7 +7,7 @@
     "ref": "78bdce4c29620e0c6ebe797236787ce7acaea9cf",
     "module": ":wear"
   },
-  "generatedAt": "2026-09-05T22:13:07.238Z",
+  "generatedAt": "2026-09-06T09:51:00.446Z",
   "mappings": [
     {
       "componentId": "Screens/Settings",
@@ -51,7 +51,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "queueState",
@@ -62,7 +64,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "useEpisodeArtwork",
@@ -73,7 +77,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onClick",
@@ -84,7 +90,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "modifier",
@@ -95,7 +103,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "useUpNextIcon",
@@ -106,7 +116,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "showImage",
@@ -117,7 +129,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "figma/episodes-episode-chip.svg"
@@ -144,7 +158,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "title",
@@ -155,7 +171,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "artist",
@@ -166,7 +184,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "isPlaybackError",
@@ -177,7 +197,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "figma/playback-marquee-media-display.svg"
