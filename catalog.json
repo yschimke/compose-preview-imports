@@ -774,7 +774,18 @@
       "sourceModule": ":wear",
       "bodyLine": 66,
       "sourceDirectory": "wear",
-      "sourceFunction": "TimeTextWithConnectivityConnectedPreview"
+      "sourceFunction": "TimeTextWithConnectivityConnectedPreview",
+      "parameters": [
+        {
+          "name": "isConnected",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "States/Loading",
@@ -807,7 +818,14 @@
       "sourceModule": ":wear",
       "bodyLine": 28,
       "sourceDirectory": "wear",
-      "sourceFunction": "LoadingScreenPreview"
+      "sourceFunction": "LoadingScreenPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "States/No content",
@@ -856,7 +874,22 @@
       "sourceModule": ":wear",
       "bodyLine": 35,
       "sourceDirectory": "wear",
-      "sourceFunction": "NoContentScreenPreview"
+      "sourceFunction": "NoContentScreenPreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "Int"
+        },
+        {
+          "name": "message",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "States/Notification",
@@ -913,14 +946,31 @@
       "sourceModule": ":wear",
       "bodyLine": 63,
       "sourceDirectory": "wear",
-      "sourceFunction": "NotificationScreenPreview"
+      "sourceFunction": "NotificationScreenPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     }
   ],
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:50:57.134Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T10:35:27.992Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/Playback effects"
@@ -937,9 +987,10 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "78bdce4c29620e0c6ebe797236787ce7acaea9cf",
+    "ref": "712a4a01408d5434789e2652c1e58571dfb66802",
     "module": ":wear"
   }
 }

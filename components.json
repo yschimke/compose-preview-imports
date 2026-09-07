@@ -1,0 +1,1441 @@
+{
+    "schemaVersion": 2,
+    "module": "wear",
+    "variant": "debug",
+    "components": [
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.MainActivityKt.WearApp",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.MainActivityKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.WearApp",
+                "name": "WearApp",
+                "origin": "PROJECT",
+                "jvmName": "WearApp",
+                "descriptor": "(Lau/com/shiftyjelly/pocketcasts/models/type/SignInState;ZLau/com/shiftyjelly/pocketcasts/wear/ui/authentication/WatchSyncState;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/MainActivity.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "signInState",
+                    "type": "SignInState",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.models.type.SignInState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "showLoggingInScreen",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "syncState",
+                    "type": "WatchSyncState",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.wear.ui.authentication.WatchSyncState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isConnected",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onShowLoginScreen",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onRetrySync",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onSyncScreenVisible",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "signOut",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.MainActivityKt.DefaultPreview_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "not public or internal, so a generated file cannot call it",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": false,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.LoggingInScreenKt.LoggingInScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.LoggingInScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.LoggingInScreen",
+                "name": "LoggingInScreen",
+                "origin": "PROJECT",
+                "jvmName": "LoggingInScreen",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;ZLau/com/shiftyjelly/pocketcasts/wear/ui/LoggingInScreenViewModel;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/LoggingInScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "avatarUrl",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "name",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "withMinimumDelay",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "viewModel",
+                    "type": "LoggingInScreenViewModel",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.wear.ui.LoggingInScreenViewModel",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClose",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.LoggingInScreenKt.LoggingInScreenPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "LoggingInScreen(onClose = {})",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.LoggingInScreen"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.WatchListScreenKt.WatchListScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.WatchListScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.WatchListScreen",
+                "name": "WatchListScreen",
+                "origin": "PROJECT",
+                "jvmName": "WatchListScreen",
+                "descriptor": "(Lcom/google/android/horologist/compose/layout/ScalingLazyColumnState;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lau/com/shiftyjelly/pocketcasts/wear/ui/WatchListScreenViewModel;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/WatchListScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "columnState",
+                    "type": "ScalingLazyColumnState",
+                    "typeFqn": "com.google.android.horologist.compose.layout.ScalingLazyColumnState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "navigateToRoute",
+                    "type": "(String) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "toNowPlaying",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "viewModel",
+                    "type": "WatchListScreenViewModel",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.wear.ui.WatchListScreenViewModel",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.WatchListScreenKt.WatchListPreview_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `columnState: ScalingLazyColumnState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeChipKt.Content",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeChipKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.Content",
+                "name": "Content",
+                "origin": "PROJECT",
+                "jvmName": "Content",
+                "descriptor": "(Lau/com/shiftyjelly/pocketcasts/models/entity/BaseEpisode;Lau/com/shiftyjelly/pocketcasts/repositories/playback/UpNextQueue$State;ZLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "episode",
+                    "type": "BaseEpisode",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.models.entity.BaseEpisode",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "queueState",
+                    "type": "State",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.repositories.playback.UpNextQueue.State",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "useEpisodeArtwork",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "useUpNextIcon",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "showImage",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeChipKt.EpisodeChipPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "not public or internal, so a generated file cannot call it",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": false,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeListScreenKt.EpisodeListScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeListScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeListScreen",
+                "name": "EpisodeListScreen",
+                "origin": "PROJECT",
+                "jvmName": "EpisodeListScreen",
+                "descriptor": "(Lcom/google/android/horologist/compose/layout/ScalingLazyColumnState;Lau/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeListUiState;IZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeListScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "columnState",
+                    "type": "ScalingLazyColumnState",
+                    "typeFqn": "com.google.android.horologist.compose.layout.ScalingLazyColumnState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "uiState",
+                    "type": "EpisodeListUiState",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeListUiState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "title",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "useEpisodeArtwork",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onItemClick",
+                    "type": "(PodcastEpisode) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.EpisodeListScreenKt.EpisodeListScreenPreview_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `columnState: ScalingLazyColumnState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt.ErrorScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreen",
+                "name": "ErrorScreen",
+                "origin": "PROJECT",
+                "jvmName": "ErrorScreen",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "icon",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "icon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreenKt.NotificationScreenPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ErrorScreen(text = \"\")",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.ErrorScreen"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt.LoadingScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreen",
+                "name": "LoadingScreen",
+                "origin": "PROJECT",
+                "jvmName": "LoadingScreen",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreenKt.LoadingScreenPreview_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "LoadingScreen()",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.LoadingScreen"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplayKt.MarqueeTextMediaDisplay",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplayKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplay",
+                "name": "MarqueeTextMediaDisplay",
+                "origin": "PROJECT",
+                "jvmName": "MarqueeTextMediaDisplay",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Ljava/lang/String;Ljava/lang/String;ZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "title",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "artist",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isPlaybackError",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplayKt.MarqueeTextMediaDisplayPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "MarqueeTextMediaDisplay()",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.MarqueeTextMediaDisplay"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt.NoContentScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreen",
+                "name": "NoContentScreen",
+                "origin": "PROJECT",
+                "jvmName": "NoContentScreen",
+                "descriptor": "(IILandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "title",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "message",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreenKt.NoContentScreenPreview_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "NoContentScreen(title = 0, message = 0)",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.NoContentScreen"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreenKt.NotificationScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreen",
+                "name": "NotificationScreen",
+                "origin": "PROJECT",
+                "jvmName": "NotificationScreen-Mswn-_c",
+                "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lkotlin/time/Duration;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NotificationScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClose",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "closeAfterDuration",
+                    "type": "Duration?",
+                    "typeFqn": "kotlin.time.Duration",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "icon",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "icon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreenKt.NotificationScreenPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "NotificationScreen(text = \"\", onClose = {})",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.NotificationScreen"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreenKt.ObtainConfirmationScreen",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreenKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreen",
+                "name": "ObtainConfirmationScreen",
+                "origin": "PROJECT",
+                "jvmName": "ObtainConfirmationScreen",
+                "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ObtainConfirmationScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onConfirm",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onCancel",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreenKt.Preview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ObtainConfirmationScreen(text = \"\", onConfirm = {}, onCancel = {})",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.ObtainConfirmationScreen"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivity",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivity",
+                "name": "TimeTextWithConnectivity",
+                "origin": "PROJECT",
+                "jvmName": "TimeTextWithConnectivity",
+                "descriptor": "(ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "isConnected",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityConnectedPreview_wearos_small_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivityKt.TimeTextWithConnectivityDisconnectedPreview_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "TimeTextWithConnectivity(isConnected = false)",
+                "imports": [
+                    "au.com.shiftyjelly.pocketcasts.wear.ui.component.TimeTextWithConnectivity"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt.DownloadButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButton",
+                "name": "DownloadButton",
+                "origin": "PROJECT",
+                "jvmName": "DownloadButton-euL9pac",
+                "descriptor": "(JLkotlin/jvm/functions/Function0;Lau/com/shiftyjelly/pocketcasts/podcasts/view/episode/DownloadButtonState;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/DownloadButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "tint",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "downloadButtonState",
+                    "type": "DownloadButtonState",
+                    "typeFqn": "au.com.shiftyjelly.pocketcasts.podcasts.view.episode.DownloadButtonState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.DownloadButtonKt.DownloadingPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `tint: Color`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButtonKt.PlayButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButtonKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButton",
+                "name": "PlayButton",
+                "origin": "PROJECT",
+                "jvmName": "PlayButton-sW7UJKQ",
+                "descriptor": "(ZJLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/PlayButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "isPlaying",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "backgroundColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.PlayButtonKt.Preview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `backgroundColor: Color`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButtonKt.QueueButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButtonKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButton",
+                "name": "QueueButton",
+                "origin": "PROJECT",
+                "jvmName": "QueueButton-sW7UJKQ",
+                "descriptor": "(ZJLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/episode/QueueButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "inUpNext",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "tint",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.wear.ui.episode.QueueButtonKt.Preview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `tint: Color`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        }
+    ]
+}
