@@ -331,7 +331,17 @@
       "sourceModule": ":wear",
       "bodyLine": 53,
       "sourceDirectory": "wear",
-      "sourceFunction": "PreviewSensorsView"
+      "sourceFunction": "PreviewSensorsView",
+      "parameters": [
+        {
+          "name": "allManagers",
+          "type": "List<SensorManager>"
+        },
+        {
+          "name": "onClickSensorManager",
+          "type": "(SensorManager) -> Unit"
+        }
+      ]
     },
     {
       "componentId": "Entities/Detail panel",
@@ -605,7 +615,37 @@
       "sourceModule": ":wear",
       "bodyLine": 379,
       "sourceDirectory": "wear",
-      "sourceFunction": "PreviewDetailsPaneViewEntityLightOn"
+      "sourceFunction": "PreviewDetailsPaneViewEntityLightOn",
+      "parameters": [
+        {
+          "name": "entity",
+          "type": "EntityDisplay"
+        },
+        {
+          "name": "onEntityToggled",
+          "type": "(String, String) -> Unit"
+        },
+        {
+          "name": "onFanSpeedChanged",
+          "type": "(Float) -> Unit"
+        },
+        {
+          "name": "onBrightnessChanged",
+          "type": "(Float) -> Unit"
+        },
+        {
+          "name": "onColorTempChanged",
+          "type": "(Float, Boolean) -> Unit"
+        },
+        {
+          "name": "isToastEnabled",
+          "type": "Boolean"
+        },
+        {
+          "name": "isHapticEnabled",
+          "type": "Boolean"
+        }
+      ]
     },
     {
       "componentId": "Tiles/Shortcut selection",
@@ -1112,7 +1152,21 @@
       "sourceModule": ":wear",
       "bodyLine": 66,
       "sourceDirectory": "wear",
-      "sourceFunction": "PreviewTemplateTileSettingView"
+      "sourceFunction": "PreviewTemplateTileSettingView",
+      "parameters": [
+        {
+          "name": "templateContent",
+          "type": "String"
+        },
+        {
+          "name": "refreshInterval",
+          "type": "Int"
+        },
+        {
+          "name": "onClickRefreshInterval",
+          "type": "() -> Unit"
+        }
+      ]
     },
     {
       "componentId": "Tiles/Refresh interval",
@@ -1211,7 +1265,17 @@
       "sourceModule": ":wear",
       "bodyLine": 107,
       "sourceDirectory": "wear",
-      "sourceFunction": "PreviewRefreshIntervalPickerView"
+      "sourceFunction": "PreviewRefreshIntervalPickerView",
+      "parameters": [
+        {
+          "name": "currentInterval",
+          "type": "Int"
+        },
+        {
+          "name": "onSelectInterval",
+          "type": "(Int) -> Unit"
+        }
+      ]
     },
     {
       "componentId": "Tiles/Camera settings",
@@ -2092,7 +2156,17 @@
       "sourceModule": ":wear",
       "bodyLine": 302,
       "sourceDirectory": "wear",
-      "sourceFunction": "PreviewSpeechBubble"
+      "sourceFunction": "PreviewSpeechBubble",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "isResponse",
+          "type": "Boolean"
+        }
+      ]
     },
     {
       "componentId": "Entities/Rows",
@@ -2500,14 +2574,20 @@
       "sourceModule": ":wear",
       "bodyLine": 22,
       "sourceDirectory": "wear",
-      "sourceFunction": "PreviewTimeText"
+      "sourceFunction": "PreviewTimeText",
+      "parameters": [
+        {
+          "name": "scalingLazyListState",
+          "type": "ScalingLazyListState"
+        }
+      ]
     }
   ],
   "library": [
     "Wear Compose Material + Home Assistant surfaces"
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:10:02.258Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T09:57:25.866Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Entity list"
@@ -2524,9 +2604,10 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
+    "ref": "71bb6c8e0a169a27c18d8a9c1700f2c8b0b4cbfe",
     "module": ":wear"
   }
 }

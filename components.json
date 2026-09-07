@@ -1,0 +1,2016 @@
+{
+    "schemaVersion": 2,
+    "module": "wear",
+    "variant": "debug",
+    "components": [
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.complications.views.ComplicationConfigMainViewKt.MainConfigView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.complications.views.ComplicationConfigMainViewKt",
+                "callable": "io.homeassistant.companion.android.complications.views.MainConfigView",
+                "name": "MainConfigView",
+                "origin": "PROJECT",
+                "jvmName": "MainConfigView",
+                "descriptor": "(Lio/homeassistant/companion/android/data/SimplifiedEntity;ZZLio/homeassistant/companion/android/complications/ComplicationConfigViewModel$LoadingState;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entity",
+                    "type": "SimplifiedEntity?",
+                    "typeFqn": "io.homeassistant.companion.android.data.SimplifiedEntity",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "showTitle",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "showUnit",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "loadingState",
+                    "type": "LoadingState",
+                    "typeFqn": "io.homeassistant.companion.android.complications.ComplicationConfigViewModel.LoadingState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onChooseEntityClicked",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onShowTitleClicked",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onShowUnitClicked",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onAcceptClicked",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.complications.views.ComplicationConfigMainViewKt.PreviewMainConfigView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `loadingState: LoadingState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.conversation.views.ConversationViewKt.SpeechBubble",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.conversation.views.ConversationViewKt",
+                "callable": "io.homeassistant.companion.android.conversation.views.SpeechBubble",
+                "name": "SpeechBubble",
+                "origin": "PROJECT",
+                "jvmName": "SpeechBubble",
+                "descriptor": "(Ljava/lang/String;ZLandroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/conversation/views/ConversationView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isResponse",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.conversation.views.ConversationViewKt.PreviewSpeechBubble_wearos_small_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "SpeechBubble(text = \"\", isResponse = false)",
+                "imports": [
+                    "io.homeassistant.companion.android.conversation.views.SpeechBubble"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.DetailsPanelViewKt.DetailsPanelView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.DetailsPanelView",
+                "name": "DetailsPanelView",
+                "origin": "PROJECT",
+                "jvmName": "DetailsPanelView",
+                "descriptor": "(Lio/homeassistant/companion/android/common/data/integration/display/EntityDisplay;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;ZZLandroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/DetailsPanelView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entity",
+                    "type": "EntityDisplay",
+                    "typeFqn": "io.homeassistant.companion.android.common.data.integration.display.EntityDisplay",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onEntityToggled",
+                    "type": "(String, String) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onFanSpeedChanged",
+                    "type": "(Float) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onBrightnessChanged",
+                    "type": "(Float) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onColorTempChanged",
+                    "type": "(Float, Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "isToastEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isHapticEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt.PreviewDetailsPaneViewEntityFanOn_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt.PreviewDetailsPaneViewEntityLightOff_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt.PreviewDetailsPaneViewEntityLightOn_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `entity: EntityDisplay`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.EntityListViewKt.EntityViewList",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.EntityListViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.EntityViewList",
+                "name": "EntityViewList",
+                "origin": "PROJECT",
+                "jvmName": "EntityViewList",
+                "descriptor": "(Ljava/util/Map;Ljava/util/List;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function1;ZZLandroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/EntityListView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entityLists",
+                    "type": "Map<String, List<EntityDisplay>>",
+                    "typeFqn": "kotlin.collections.Map",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "entityListsOrder",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "entityListFilter",
+                    "type": "(EntityDisplay) -> Boolean",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Boolean"
+                },
+                {
+                    "name": "onEntityClicked",
+                    "type": "(String, String) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onEntityLongClicked",
+                    "type": "(String) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "isHapticEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isToastEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.EntityListViewPreviewsTest.PreviewEntityListView_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.EntityListViewKt.PreviewEntityListEmpty_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.EntityListViewKt.PreviewEntityListScenes_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.EntityListViewKt.PreviewEntityListView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `entityLists: Map<String, List<EntityDisplay>>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.EntityUiKt.EntityUi",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.EntityUiKt",
+                "callable": "io.homeassistant.companion.android.home.views.EntityUi",
+                "name": "EntityUi",
+                "origin": "PROJECT",
+                "jvmName": "EntityUi",
+                "descriptor": "(Lio/homeassistant/companion/android/common/data/integration/display/EntityDisplay;Lkotlin/jvm/functions/Function2;ZZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/EntityUi.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entity",
+                    "type": "EntityDisplay",
+                    "typeFqn": "io.homeassistant.companion.android.common.data.integration.display.EntityDisplay",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onEntityClicked",
+                    "type": "(String, String) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "isHapticEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isToastEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onEntityLongPressed",
+                    "type": "(String) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.EntityUiKt.PreviewEntityUI_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `entity: EntityDisplay`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.RefreshIntervalPickerViewKt.RefreshIntervalPickerView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.RefreshIntervalPickerViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.RefreshIntervalPickerView",
+                "name": "RefreshIntervalPickerView",
+                "origin": "PROJECT",
+                "jvmName": "RefreshIntervalPickerView",
+                "descriptor": "(ILkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/RefreshIntervalPickerView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "currentInterval",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelectInterval",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.RefreshIntervalPickerViewKt.PreviewRefreshIntervalPickerView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "RefreshIntervalPickerView(currentInterval = 0, onSelectInterval = {})",
+                "imports": [
+                    "io.homeassistant.companion.android.home.views.RefreshIntervalPickerView"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SelectCameraTileViewKt.SelectCameraTileView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SelectCameraTileViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SelectCameraTileView",
+                "name": "SelectCameraTileView",
+                "origin": "PROJECT",
+                "jvmName": "SelectCameraTileView",
+                "descriptor": "(Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SelectCameraTileView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "tiles",
+                    "type": "List<CameraTile>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelectTile",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectCameraTileViewKt.PreviewSelectCameraTileViewEmpty_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectCameraTileViewKt.PreviewSelectCameraTileViewOne_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `tiles: List<CameraTile>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SelectShortcutsTileViewKt.SelectShortcutsTileView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SelectShortcutsTileViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SelectShortcutsTileView",
+                "name": "SelectShortcutsTileView",
+                "origin": "PROJECT",
+                "jvmName": "SelectShortcutsTileView",
+                "descriptor": "(Ljava/util/Map;Lkotlin/jvm/functions/Function1;ZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SelectShortcutsTileView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "shortcutTileEntitiesCountById",
+                    "type": "Map<Int?, Int>",
+                    "typeFqn": "kotlin.collections.Map",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelectShortcutsTile",
+                    "type": "(Int?) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "isShowShortcutTextEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onShowShortcutTextEnabled",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectShortcutsTileViewKt.PreviewSelectShortcutsTileEmptyView_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectShortcutsTileViewKt.PreviewSelectShortcutsTileView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `shortcutTileEntitiesCountById: Map<Int?, Int>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SelectTemplateTileViewKt.SelectTemplateTileView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SelectTemplateTileViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SelectTemplateTileView",
+                "name": "SelectTemplateTileView",
+                "origin": "PROJECT",
+                "jvmName": "SelectTemplateTileView",
+                "descriptor": "(Ljava/util/Map;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SelectTemplateTileView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "templateTiles",
+                    "type": "Map<Int, TemplateTileConfig>",
+                    "typeFqn": "kotlin.collections.Map",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelectTemplateTile",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectTemplateTileViewKt.PreviewSelectTemplateTileEmptyView_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectTemplateTileViewKt.PreviewSelectTemplateTileView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `templateTiles: Map<Int, TemplateTileConfig>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SelectThermostatTileViewKt.SelectThermostatTileView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SelectThermostatTileViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SelectThermostatTileView",
+                "name": "SelectThermostatTileView",
+                "origin": "PROJECT",
+                "jvmName": "SelectThermostatTileView",
+                "descriptor": "(Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SelectThermostatTileView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "tiles",
+                    "type": "List<ThermostatTile>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelectTile",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectThermostatTileViewKt.PreviewSelectThermostatTileViewEmpty_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SelectThermostatTileViewKt.PreviewSelectThermostatTileViewOne_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `tiles: List<ThermostatTile>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SensorManagerUiKt.SensorManagerUi",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SensorManagerUiKt",
+                "callable": "io.homeassistant.companion.android.home.views.SensorManagerUi",
+                "name": "SensorManagerUi",
+                "origin": "PROJECT",
+                "jvmName": "SensorManagerUi",
+                "descriptor": "(Ljava/util/List;Ljava/util/List;Lio/homeassistant/companion/android/common/sensors/SensorManager;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SensorManagerUi.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "allSensors",
+                    "type": "List<Sensor>?",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "allAvailSensors",
+                    "type": "List<BasicSensor>?",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "sensorManager",
+                    "type": "SensorManager",
+                    "typeFqn": "io.homeassistant.companion.android.common.sensors.SensorManager",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSensorClicked",
+                    "type": "(String, Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SensorManagerUiKt.PreviewSensorManagerUI_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `sensorManager: SensorManager`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SensorsViewKt.SensorsView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SensorsViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SensorsView",
+                "name": "SensorsView",
+                "origin": "PROJECT",
+                "jvmName": "SensorsView",
+                "descriptor": "(Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SensorsView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "allManagers",
+                    "type": "List<SensorManager>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClickSensorManager",
+                    "type": "(SensorManager) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SensorsViewKt.PreviewSensorsView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `allManagers: List<SensorManager>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SetShortcutsTileViewKt.SetShortcutsTileView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SetShortcutsTileViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SetShortcutsTileView",
+                "name": "SetShortcutsTileView",
+                "origin": "PROJECT",
+                "jvmName": "SetShortcutsTileView",
+                "descriptor": "(Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SetShortcutsTileView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "shortcutEntities",
+                    "type": "List<SimplifiedEntity>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onShortcutEntitySelectionChange",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SetShortcutsTileViewKt.PreviewSetTileShortcutsView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `shortcutEntities: List<SimplifiedEntity>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.SettingsViewKt.SettingsView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.SettingsViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.SettingsView",
+                "name": "SettingsView",
+                "origin": "PROJECT",
+                "jvmName": "SettingsView",
+                "descriptor": "(Lio/homeassistant/companion/android/home/MainViewModel$LoadingState;Ljava/util/List;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;ZZZZZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SettingsView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "loadingState",
+                    "type": "LoadingState",
+                    "typeFqn": "io.homeassistant.companion.android.home.MainViewModel.LoadingState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "favorites",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClickSetFavorites",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClearFavorites",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickSetShortcuts",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickSensors",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickLogout",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "isHapticEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isToastEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isFavoritesOnly",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isAssistantAppAllowed",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "areNotificationsAllowed",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onHapticEnabled",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onToastEnabled",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "setFavoritesOnly",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickCameraTile",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickTemplateTiles",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickThermostatTiles",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onAssistantAppAllowed",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClickNotifications",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SettingsViewKt.PreviewSettingsView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `loadingState: LoadingState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.TemplateTileSettingsViewKt.TemplateTileSettingsView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.TemplateTileSettingsViewKt",
+                "callable": "io.homeassistant.companion.android.home.views.TemplateTileSettingsView",
+                "name": "TemplateTileSettingsView",
+                "origin": "PROJECT",
+                "jvmName": "TemplateTileSettingsView",
+                "descriptor": "(Ljava/lang/String;ILkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/TemplateTileSettingsView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "templateContent",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "refreshInterval",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClickRefreshInterval",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.TemplateTileSettingsViewKt.PreviewTemplateTileSettingView_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "TemplateTileSettingsView(templateContent = \"\", refreshInterval = 0, onClickRefreshInterval = {})",
+                "imports": [
+                    "io.homeassistant.companion.android.home.views.TemplateTileSettingsView"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.home.views.TimeTextKt.TimeText",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.home.views.TimeTextKt",
+                "callable": "io.homeassistant.companion.android.home.views.TimeText",
+                "name": "TimeText",
+                "origin": "PROJECT",
+                "jvmName": "TimeText",
+                "descriptor": "(Landroidx/wear/compose/foundation/lazy/ScalingLazyListState;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/TimeText.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "scalingLazyListState",
+                    "type": "ScalingLazyListState",
+                    "typeFqn": "androidx.wear.compose.foundation.lazy.ScalingLazyListState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.TimeTextKt.PreviewTimeText_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `scalingLazyListState: ScalingLazyListState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.onboarding.phoneinstall.PhoneInstallViewKt.PhoneInstallView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.onboarding.phoneinstall.PhoneInstallViewKt",
+                "callable": "io.homeassistant.companion.android.onboarding.phoneinstall.PhoneInstallView",
+                "name": "PhoneInstallView",
+                "origin": "PROJECT",
+                "jvmName": "PhoneInstallView",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/onboarding/phoneinstall/PhoneInstallView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onInstall",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onRefresh",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onAdvanced",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.onboarding.phoneinstall.PhoneInstallViewKt.PhoneInstallViewPreview_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PhoneInstallView(onInstall = {}, onRefresh = {}, onAdvanced = {})",
+                "imports": [
+                    "io.homeassistant.companion.android.onboarding.phoneinstall.PhoneInstallView"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.views.ChooseEntityViewKt.ChooseEntityView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.views.ChooseEntityViewKt",
+                "callable": "io.homeassistant.companion.android.views.ChooseEntityView",
+                "name": "ChooseEntityView",
+                "origin": "PROJECT",
+                "jvmName": "ChooseEntityView",
+                "descriptor": "(Ljava/util/List;Ljava/util/Map;Ljava/util/List;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;ZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/views/ChooseEntityView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entitiesByDomainOrder",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "entitiesByDomain",
+                    "type": "Map<String, List<EntityDisplay>>",
+                    "typeFqn": "kotlin.collections.Map",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "favoriteEntityIds",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onNoneClicked",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onEntitySelected",
+                    "type": "(SimplifiedEntity) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "allowNone",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.views.ChooseEntityViewKt.ChooseEntityViewEmptyPreview_wearos_large_round",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.views.ChooseEntityViewKt.ChooseEntityViewWithDataPreview_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `entitiesByDomainOrder: List<String>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.views.ExpandableListHeaderKt.ExpandableListHeader",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.views.ExpandableListHeaderKt",
+                "callable": "io.homeassistant.companion.android.views.ExpandableListHeader",
+                "name": "ExpandableListHeader",
+                "origin": "PROJECT",
+                "jvmName": "ExpandableListHeader",
+                "descriptor": "(Ljava/lang/String;ZLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/views/ExpandableListHeader.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "string",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "expanded",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onExpandChanged",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.views.ExpandableListHeaderKt.PreviewExpandableListHeader",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ExpandableListHeader(string = \"\", expanded = false, onExpandChanged = {})",
+                "imports": [
+                    "io.homeassistant.companion.android.views.ExpandableListHeader"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.views.ListHeaderKt.ListHeader",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.views.ListHeaderKt",
+                "callable": "io.homeassistant.companion.android.views.ListHeader",
+                "name": "ListHeader",
+                "origin": "PROJECT",
+                "jvmName": "ListHeader",
+                "descriptor": "(ILandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/views/ListHeader.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "id",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.views.ListHeaderKt.PreviewListHeader",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ListHeader(id = 0)",
+                "imports": [
+                    "io.homeassistant.companion.android.views.ListHeader"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "wear/io.homeassistant.companion.android.views.ThemeLazyColumnKt.ThemeLazyColumn",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.views.ThemeLazyColumnKt",
+                "callable": "io.homeassistant.companion.android.views.ThemeLazyColumn",
+                "name": "ThemeLazyColumn",
+                "origin": "PROJECT",
+                "jvmName": "ThemeLazyColumn",
+                "descriptor": "(Landroidx/wear/compose/foundation/lazy/ScalingLazyListState;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/views/ThemeLazyColumn.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "state",
+                    "type": "ScalingLazyListState",
+                    "typeFqn": "androidx.wear.compose.foundation.lazy.ScalingLazyListState",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "ScalingLazyListScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": "androidx.wear.compose.foundation.lazy.ScalingLazyListScope",
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.home.views.SensorUiKt.PreviewSensorUI_wearos_large_round",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ThemeLazyColumn(content = {})",
+                "imports": [
+                    "io.homeassistant.companion.android.views.ThemeLazyColumn"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        }
+    ]
+}
