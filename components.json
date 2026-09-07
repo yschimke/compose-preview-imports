@@ -1,0 +1,1611 @@
+{
+    "schemaVersion": 2,
+    "module": "designsystem",
+    "variant": "debug",
+    "components": [
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.Checkbox",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.Checkbox",
+                "name": "Checkbox",
+                "origin": "PROJECT",
+                "jvmName": "Checkbox",
+                "descriptor": "(ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/CheckboxColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/Checkbox.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "checked",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onCheckedChange",
+                    "type": "((Boolean) -> Unit)?",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "CheckboxColors",
+                    "typeFqn": "androidx.compose.material3.CheckboxColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.PreviewCheckbox",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "Checkbox(checked = false, onCheckedChange = null)",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.Checkbox"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.MullvadFeatureChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadFeatureChip",
+                "name": "MullvadFeatureChip",
+                "origin": "PROJECT",
+                "jvmName": "MullvadFeatureChip-DZNDmhg",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/vector/ImageVector;Lkotlin/jvm/functions/Function0;JJJJLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/FeatureChip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "icon",
+                    "type": "ImageVector?",
+                    "typeFqn": "androidx.compose.ui.graphics.vector.ImageVector",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "containerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "borderColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "labelColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "iconColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "MullvadFeatureChip(text = \"\", onClick = {})",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadFeatureChip"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.ListHeader",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeader",
+                "name": "ListHeader",
+                "origin": "PROJECT",
+                "jvmName": "ListHeader",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListHeader.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ListHeader(text = \"\")",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeader"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.MullvadListItem",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadListItem",
+                "name": "MullvadListItem",
+                "origin": "PROJECT",
+                "jvmName": "MullvadListItem",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Lnet/mullvad/mullvadvpn/lib/ui/designsystem/Hierarchy;Lnet/mullvad/mullvadvpn/lib/ui/designsystem/Position;Lnet/mullvad/mullvadvpn/lib/ui/designsystem/ListItemColors;FZZLjava/lang/String;Lnet/mullvad/mullvadvpn/lib/ui/designsystem/ListItemClickArea;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;III)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/ListItem.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "hierarchy",
+                    "type": "Hierarchy",
+                    "typeFqn": "net.mullvad.mullvadvpn.lib.ui.designsystem.Hierarchy",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "position",
+                    "type": "Position",
+                    "typeFqn": "net.mullvad.mullvadvpn.lib.ui.designsystem.Position",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ListItemColors",
+                    "typeFqn": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "backgroundAlpha",
+                    "type": "Float",
+                    "typeFqn": "kotlin.Float",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isSelected",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "testTag",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "mainClickArea",
+                    "type": "ListItemClickArea",
+                    "typeFqn": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemClickArea",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onLongClick",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "leadingContent",
+                    "type": "(BoxScope.() -> Unit)?",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.BoxScope",
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "trailingContent",
+                    "type": "(BoxScope.() -> Unit)?",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.BoxScope",
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "content",
+                    "type": "BoxScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.BoxScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "leadingContent",
+                    "required": false,
+                    "receiverScope": "androidx.compose.foundation.layout.BoxScope"
+                },
+                {
+                    "name": "trailingContent",
+                    "required": false,
+                    "receiverScope": "androidx.compose.foundation.layout.BoxScope"
+                },
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.BoxScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_100_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_115_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_130_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_150_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_180_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_200_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_85_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_100_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_115_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_130_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_150_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_180_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_200_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_85_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_100_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_115_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_130_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_150_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_180_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_200_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_85_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_100_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_115_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_130_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_150_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_180_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_200_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_85_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_100_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_115_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_130_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_150_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_180_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_200_",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_85_",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "MullvadListItem(content = {})",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadListItem"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.NegativeButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.NegativeButton",
+                "name": "NegativeButton",
+                "origin": "PROJECT",
+                "jvmName": "NegativeButton",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/material3/ButtonColors;ZZLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ButtonColors",
+                    "typeFqn": "androidx.compose.material3.ButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isLoading",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonDisabled",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonEnabled",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "NegativeButton(onClick = {}, text = \"\")",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.NegativeButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PrimaryButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.PrimaryButton",
+                "name": "PrimaryButton",
+                "origin": "PROJECT",
+                "jvmName": "PrimaryButton",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/material3/ButtonColors;ZZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ButtonColors",
+                    "typeFqn": "androidx.compose.material3.ButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isLoading",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "leadingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "trailingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "leadingIcon",
+                    "required": false,
+                    "receiverScope": null
+                },
+                {
+                    "name": "trailingIcon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonDisabled",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonEnabled",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PrimaryButton(onClick = {}, text = \"\")",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.PrimaryButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PrimaryTextButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.PrimaryTextButton",
+                "name": "PrimaryTextButton",
+                "origin": "PROJECT",
+                "jvmName": "PrimaryTextButton",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/material3/ButtonColors;Landroidx/compose/ui/text/style/TextDecoration;ZZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ButtonColors",
+                    "typeFqn": "androidx.compose.material3.ButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "textDecoration",
+                    "type": "TextDecoration",
+                    "typeFqn": "androidx.compose.ui.text.style.TextDecoration",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isLoading",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "leadingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "trailingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "leadingIcon",
+                    "required": false,
+                    "receiverScope": null
+                },
+                {
+                    "name": "trailingIcon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PrimaryTextButton(onClick = {}, text = \"\")",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.PrimaryTextButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.VariantButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.VariantButton",
+                "name": "VariantButton",
+                "origin": "PROJECT",
+                "jvmName": "VariantButton-8r3B23s",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Ljava/lang/String;Landroidx/compose/ui/Modifier;JLandroidx/compose/material3/ButtonColors;ZZLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/MullvadButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "background",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ButtonColors",
+                    "typeFqn": "androidx.compose.material3.ButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isLoading",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "icon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "icon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonDisabled",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonEnabled",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "VariantButton(onClick = {}, text = \"\")",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.VariantButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.SwitchKt.MullvadSwitch",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.SwitchKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadSwitch",
+                "name": "MullvadSwitch",
+                "origin": "PROJECT",
+                "jvmName": "MullvadSwitch",
+                "descriptor": "(ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/SwitchColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/Switch.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "checked",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onCheckedChange",
+                    "type": "((Boolean) -> Unit)?",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "SwitchColors",
+                    "typeFqn": "androidx.compose.material3.SwitchColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.SwitchKt.PreviewMullvadSwitch",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "MullvadSwitch(checked = false, onCheckedChange = null)",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadSwitch"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.preview.PreviewColumnKt.PreviewColumn",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "net.mullvad.mullvadvpn.lib.ui.designsystem.preview.PreviewColumnKt",
+                "callable": "net.mullvad.mullvadvpn.lib.ui.designsystem.preview.PreviewColumn",
+                "name": "PreviewColumn",
+                "origin": "PROJECT",
+                "jvmName": "PreviewColumn-EUb7tLY",
+                "descriptor": "(Landroidx/compose/ui/Modifier;FLandroidx/compose/ui/Alignment$Vertical;Landroidx/compose/ui/Alignment$Horizontal;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/net/mullvad/mullvadvpn/lib/ui/designsystem/preview/PreviewColumn.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "spacing",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "verticalAlignment",
+                    "type": "Vertical",
+                    "typeFqn": "androidx.compose.ui.Alignment.Vertical",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "horizontalAlignment",
+                    "type": "Horizontal",
+                    "typeFqn": "androidx.compose.ui.Alignment.Horizontal",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "ColumnScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.ColumnScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
+                    "componentId": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PreviewColumn(content = {})",
+                "imports": [
+                    "net.mullvad.mullvadvpn.lib.ui.designsystem.preview.PreviewColumn"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        }
+    ]
+}

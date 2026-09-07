@@ -59,7 +59,49 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 64,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewPrimaryButtonEnabled"
+      "sourceFunction": "PreviewPrimaryButtonEnabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "primary-button-disabled",
@@ -117,7 +159,49 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 70,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewPrimaryButtonDisabled"
+      "sourceFunction": "PreviewPrimaryButtonDisabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "variant-button",
@@ -175,7 +259,48 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 52,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewVariantButtonEnabled"
+      "sourceFunction": "PreviewVariantButtonEnabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "background",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "variant-button-disabled",
@@ -233,7 +358,48 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 58,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewVariantButtonDisabled"
+      "sourceFunction": "PreviewVariantButtonDisabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "background",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "icon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "negative-button",
@@ -291,7 +457,43 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 40,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewNegativeButtonEnabled"
+      "sourceFunction": "PreviewNegativeButtonEnabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "negative-button-disabled",
@@ -349,7 +551,43 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 46,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewNegativeButtonDisabled"
+      "sourceFunction": "PreviewNegativeButtonDisabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "text-button",
@@ -407,7 +645,54 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 76,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewTextButtonEnabled"
+      "sourceFunction": "PreviewTextButtonEnabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "textDecoration",
+          "type": "TextDecoration",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "text-button-disabled",
@@ -465,7 +750,54 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 82,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewTextButtonDisabled"
+      "sourceFunction": "PreviewTextButtonDisabled",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ButtonColors",
+          "hasDefault": true
+        },
+        {
+          "name": "textDecoration",
+          "type": "TextDecoration",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingIcon",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "checkbox",
@@ -494,29 +826,32 @@
       "sourceFunction": "PreviewCheckbox",
       "parameters": [
         {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((Boolean) -> Unit)?"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "spacing",
-          "type": "Dp",
+          "name": "enabled",
+          "type": "Boolean",
           "hasDefault": true
         },
         {
-          "name": "verticalAlignment",
-          "type": "Vertical",
+          "name": "colors",
+          "type": "CheckboxColors",
           "hasDefault": true
         },
         {
-          "name": "horizontalAlignment",
-          "type": "Horizontal",
+          "name": "interactionSource",
+          "type": "MutableInteractionSource?",
           "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -628,28 +963,37 @@
       "sourceFunction": "PreviewMullvadSwitch",
       "parameters": [
         {
+          "name": "checked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((Boolean) -> Unit)?"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "spacing",
-          "type": "Dp",
+          "name": "enabled",
+          "type": "Boolean",
           "hasDefault": true
         },
         {
-          "name": "verticalAlignment",
-          "type": "Vertical",
+          "name": "colors",
+          "type": "SwitchColors",
           "hasDefault": true
         },
         {
-          "name": "horizontalAlignment",
-          "type": "Horizontal",
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
           "hasDefault": true
         },
         {
           "name": "content",
-          "type": "ColumnScope.() -> Unit",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
           "composableSlot": true
         }
       ]
@@ -1028,29 +1372,42 @@
       "sourceFunction": "PreviewMullvadFeatureChip",
       "parameters": [
         {
+          "name": "text",
+          "type": "String"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "spacing",
-          "type": "Dp",
+          "name": "icon",
+          "type": "ImageVector?",
           "hasDefault": true
         },
         {
-          "name": "verticalAlignment",
-          "type": "Vertical",
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
           "hasDefault": true
         },
         {
-          "name": "horizontalAlignment",
-          "type": "Horizontal",
+          "name": "borderColor",
+          "type": "Color",
           "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
+          "name": "labelColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconColor",
+          "type": "Color",
+          "hasDefault": true
         }
       ]
     },
@@ -1169,7 +1526,81 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 343,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewLeadingListItem"
+      "sourceFunction": "PreviewLeadingListItem",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "hierarchy",
+          "type": "Hierarchy",
+          "hasDefault": true
+        },
+        {
+          "name": "position",
+          "type": "Position",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ListItemColors",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundAlpha",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "testTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "mainClickArea",
+          "type": "ListItemClickArea",
+          "hasDefault": true
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "onLongClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "content",
+          "type": "BoxScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-item-leading-content",
@@ -1286,7 +1717,81 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 298,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewLeadingContentListItem"
+      "sourceFunction": "PreviewLeadingContentListItem",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "hierarchy",
+          "type": "Hierarchy",
+          "hasDefault": true
+        },
+        {
+          "name": "position",
+          "type": "Position",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ListItemColors",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundAlpha",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "testTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "mainClickArea",
+          "type": "ListItemClickArea",
+          "hasDefault": true
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "onLongClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "content",
+          "type": "BoxScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-item-trailing",
@@ -1388,7 +1893,81 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 378,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewTrailingListItem"
+      "sourceFunction": "PreviewTrailingListItem",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "hierarchy",
+          "type": "Hierarchy",
+          "hasDefault": true
+        },
+        {
+          "name": "position",
+          "type": "Position",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ListItemColors",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundAlpha",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "testTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "mainClickArea",
+          "type": "ListItemClickArea",
+          "hasDefault": true
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "onLongClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "content",
+          "type": "BoxScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-item-hierarchy",
@@ -1490,7 +2069,81 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 412,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewHierarchyListItem"
+      "sourceFunction": "PreviewHierarchyListItem",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "hierarchy",
+          "type": "Hierarchy",
+          "hasDefault": true
+        },
+        {
+          "name": "position",
+          "type": "Position",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ListItemColors",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundAlpha",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "testTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "mainClickArea",
+          "type": "ListItemClickArea",
+          "hasDefault": true
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "onLongClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "content",
+          "type": "BoxScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-item-positions",
@@ -1592,7 +2245,81 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 447,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewListItemPositions"
+      "sourceFunction": "PreviewListItemPositions",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "hierarchy",
+          "type": "Hierarchy",
+          "hasDefault": true
+        },
+        {
+          "name": "position",
+          "type": "Position",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "ListItemColors",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundAlpha",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isSelected",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "testTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "mainClickArea",
+          "type": "ListItemClickArea",
+          "hasDefault": true
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "onLongClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "trailingContent",
+          "type": "(BoxScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "content",
+          "type": "BoxScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-header",
@@ -1657,29 +2384,13 @@
       "sourceFunction": "PreviewListHeader",
       "parameters": [
         {
+          "name": "text",
+          "type": "String"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "spacing",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "verticalAlignment",
-          "type": "Vertical",
-          "hasDefault": true
-        },
-        {
-          "name": "horizontalAlignment",
-          "type": "Horizontal",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -1722,38 +2433,11 @@
       "sourceModule": ":lib:ui:designsystem",
       "bodyLine": 20,
       "sourceDirectory": "android/lib/ui/designsystem",
-      "sourceFunction": "PreviewMullvadProgressIndicator",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "spacing",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "verticalAlignment",
-          "type": "Vertical",
-          "hasDefault": true
-        },
-        {
-          "name": "horizontalAlignment",
-          "type": "Horizontal",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "PreviewMullvadProgressIndicator"
     }
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:37:49.450Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T10:25:36.630Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -1766,9 +2450,10 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "643a4cd14179b260da6c0320f15c0f2790132cca",
+    "ref": "2fbd205f3394e25d2c72712aba28cdfcea1abf94",
     "module": ":lib:ui:designsystem"
   }
 }
