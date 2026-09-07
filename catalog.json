@@ -842,8 +842,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:35:30.460Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T10:21:00.545Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -856,6 +856,7 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "joreilly/ClimateTraceKMP",
     "ref": "1960a7c0ac20cf8037dafa44eba7b98aabbd0a39",
