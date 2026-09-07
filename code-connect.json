@@ -7,7 +7,7 @@
     "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
     "module": ":common"
   },
-  "generatedAt": "2026-09-06T09:27:05.785Z",
+  "generatedAt": "2026-09-07T10:11:48.708Z",
   "mappings": [
     {
       "componentId": "station-view",
@@ -41,81 +41,298 @@
     {
       "componentId": "station-view-mixed",
       "figmaLayerName": "station-view-mixed",
-      "componentName": "StationViewMixedPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "StationView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "StationViewMixedPreview",
+      "codeSnippet": "StationView(\n    station = TODO(\"Station\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.stationlist.StationView"
+      ],
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station",
+          "typeFqn": "dev.johnoreilly.common.remote.Station",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-mixed__ideal__default.svg"
     },
     {
       "componentId": "station-view-full",
       "figmaLayerName": "station-view-full",
-      "componentName": "StationViewFullPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "StationView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "StationViewFullPreview",
+      "codeSnippet": "StationView(\n    station = TODO(\"Station\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.stationlist.StationView"
+      ],
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station",
+          "typeFqn": "dev.johnoreilly.common.remote.Station",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-full__ideal__default.svg"
     },
     {
       "componentId": "station-view-empty",
       "figmaLayerName": "station-view-empty",
-      "componentName": "StationViewEmptyPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "StationView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "StationViewEmptyPreview",
+      "codeSnippet": "StationView(\n    station = TODO(\"Station\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.stationlist.StationView"
+      ],
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station",
+          "typeFqn": "dev.johnoreilly.common.remote.Station",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-view-empty__ideal__default.svg"
     },
     {
       "componentId": "station-list",
       "figmaLayerName": "station-list",
-      "componentName": "StationListContentPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "StationListContent",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "StationListContentPreview",
+      "codeSnippet": "StationListContent(\n    stationList = TODO(\"List<Station>\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.stationlist.StationListContent"
+      ],
+      "parameters": [
+        {
+          "name": "stationList",
+          "type": "List<Station>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/station-list__ideal__default.svg"
     },
     {
       "componentId": "network-view",
       "figmaLayerName": "network-view",
-      "componentName": "NetworkViewPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "NetworkView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/networklist/NetworkListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "NetworkViewPreview",
+      "codeSnippet": "NetworkView(\n    network = TODO(\"Network\"),\n    networkSelected = TODO(\"(String) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.networklist.NetworkView"
+      ],
+      "parameters": [
+        {
+          "name": "network",
+          "type": "Network",
+          "typeFqn": "dev.johnoreilly.common.model.Network",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "networkSelected",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/network-view__ideal__default.svg"
     },
     {
       "componentId": "network-list",
       "figmaLayerName": "network-list",
-      "componentName": "NetworkListPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "NetworkList",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/networklist/NetworkListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "NetworkListPreview",
+      "codeSnippet": "NetworkList(\n    networkList = TODO(\"List<Network>\"),\n    onNetworkSelected = TODO(\"(String) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.networklist.NetworkList"
+      ],
+      "parameters": [
+        {
+          "name": "networkList",
+          "type": "List<Network>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onNetworkSelected",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-bikeshare/render/network-list__ideal__default.svg"
     },
     {
       "componentId": "country-view",
       "figmaLayerName": "country-view",
-      "componentName": "CountryViewPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "CountryView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/countrylist/CountryListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CountryViewPreview",
+      "codeSnippet": "CountryView(\n    country = TODO(\"Country\"),\n    countrySelected = TODO(\"(Country) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.countrylist.CountryView"
+      ],
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country",
+          "typeFqn": "dev.johnoreilly.common.viewmodel.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ],
       "figmaSvg": "figma/country-view.svg"
     },
     {
       "componentId": "country-list",
       "figmaLayerName": "country-list",
-      "componentName": "CountryViewListPreview",
-      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/ui/BikeSharePreviews.kt",
+      "componentName": "CountryView",
+      "source": "https://github.com/joreilly/BikeShare/blob/0e6d99bbe9736f42e8c231d53e210cf9cd881162/common/src/commonMain/kotlin/dev/johnoreilly/common/countrylist/CountryListUI.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CountryViewListPreview",
+      "codeSnippet": "CountryView(\n    country = TODO(\"Country\"),\n    countrySelected = TODO(\"(Country) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.common.countrylist.CountryView"
+      ],
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country",
+          "typeFqn": "dev.johnoreilly.common.viewmodel.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ],
       "figmaSvg": "figma/country-list.svg"
     },
     {

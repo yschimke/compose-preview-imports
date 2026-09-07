@@ -145,7 +145,13 @@
       "sourceModule": ":common",
       "bodyLine": 60,
       "sourceDirectory": "common",
-      "sourceFunction": "StationViewMixedPreview"
+      "sourceFunction": "StationViewMixedPreview",
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station"
+        }
+      ]
     },
     {
       "componentId": "station-view-full",
@@ -214,7 +220,13 @@
       "sourceModule": ":common",
       "bodyLine": 68,
       "sourceDirectory": "common",
-      "sourceFunction": "StationViewFullPreview"
+      "sourceFunction": "StationViewFullPreview",
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station"
+        }
+      ]
     },
     {
       "componentId": "station-view-empty",
@@ -283,7 +295,13 @@
       "sourceModule": ":common",
       "bodyLine": 77,
       "sourceDirectory": "common",
-      "sourceFunction": "StationViewEmptyPreview"
+      "sourceFunction": "StationViewEmptyPreview",
+      "parameters": [
+        {
+          "name": "station",
+          "type": "Station"
+        }
+      ]
     },
     {
       "componentId": "station-list",
@@ -436,7 +454,13 @@
       "sourceModule": ":common",
       "bodyLine": 88,
       "sourceDirectory": "common",
-      "sourceFunction": "StationListContentPreview"
+      "sourceFunction": "StationListContentPreview",
+      "parameters": [
+        {
+          "name": "stationList",
+          "type": "List<Station>"
+        }
+      ]
     },
     {
       "componentId": "network-view",
@@ -481,7 +505,17 @@
       "sourceModule": ":common",
       "bodyLine": 100,
       "sourceDirectory": "common",
-      "sourceFunction": "NetworkViewPreview"
+      "sourceFunction": "NetworkViewPreview",
+      "parameters": [
+        {
+          "name": "network",
+          "type": "Network"
+        },
+        {
+          "name": "networkSelected",
+          "type": "(String) -> Unit"
+        }
+      ]
     },
     {
       "componentId": "network-list",
@@ -562,7 +596,22 @@
       "sourceModule": ":common",
       "bodyLine": 108,
       "sourceDirectory": "common",
-      "sourceFunction": "NetworkListPreview"
+      "sourceFunction": "NetworkListPreview",
+      "parameters": [
+        {
+          "name": "networkList",
+          "type": "List<Network>"
+        },
+        {
+          "name": "onNetworkSelected",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "country-view",
@@ -612,7 +661,17 @@
       "sourceModule": ":common",
       "bodyLine": 124,
       "sourceDirectory": "common",
-      "sourceFunction": "CountryViewPreview"
+      "sourceFunction": "CountryViewPreview",
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country"
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit"
+        }
+      ]
     },
     {
       "componentId": "country-list",
@@ -710,7 +769,17 @@
       "sourceModule": ":common",
       "bodyLine": 132,
       "sourceDirectory": "common",
-      "sourceFunction": "CountryViewListPreview"
+      "sourceFunction": "CountryViewListPreview",
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country"
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit"
+        }
+      ]
     },
     {
       "componentId": "color-scheme",
@@ -972,8 +1041,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:27:05.332Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T10:11:48.208Z",
   "display": {
     "hero": "station-list"
   },
@@ -989,6 +1058,7 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "joreilly/BikeShare",
     "ref": "0e6d99bbe9736f42e8c231d53e210cf9cd881162",
