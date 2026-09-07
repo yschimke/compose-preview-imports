@@ -1713,19 +1713,21 @@
       "sourceFunction": "MainNavigationBarPreview",
       "parameters": [
         {
+          "name": "currentDestination",
+          "type": "MainNavDestination<T>?"
+        },
+        {
+          "name": "destinations",
+          "type": "List<MainNavDestination<T>>"
+        },
+        {
+          "name": "onSelect",
+          "type": "(MainNavDestination<T>) -> Unit"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -2294,24 +2296,7 @@
       "sourceModule": ":app:ui-components",
       "bodyLine": 164,
       "sourceDirectory": "app/ui-components",
-      "sourceFunction": "MainHeaderSchedulePreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "MainHeaderSchedulePreview"
     },
     {
       "componentId": "main-header-search",
@@ -2384,24 +2369,7 @@
       "sourceModule": ":app:ui-components",
       "bodyLine": 248,
       "sourceDirectory": "app/ui-components",
-      "sourceFunction": "MainHeaderSearchStatePreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "MainHeaderSearchStatePreview"
     },
     {
       "componentId": "main-header-speaker",
@@ -2476,24 +2444,7 @@
       "sourceModule": ":app:ui-components",
       "bodyLine": 217,
       "sourceDirectory": "app/ui-components",
-      "sourceFunction": "MainHeaderSpeakerPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "MainHeaderSpeakerPreview"
     },
     {
       "componentId": "large-main-header",
@@ -2697,19 +2648,19 @@
       "sourceFunction": "LargeMainHeaderPreview",
       "parameters": [
         {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "endContent",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -3750,19 +3701,13 @@
       "sourceFunction": "ParagraphTitlePreview",
       "parameters": [
         {
+          "name": "text",
+          "type": "String"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -3931,19 +3876,27 @@
       "sourceFunction": "PageMenuItemPreview",
       "parameters": [
         {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
+          "name": "drawableStart",
+          "type": "DrawableResource?",
           "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
+          "name": "drawableEnd",
+          "type": "DrawableResource",
+          "hasDefault": true
         }
       ]
     },
@@ -4442,19 +4395,36 @@
       "sourceFunction": "SpeakerCardPreview",
       "parameters": [
         {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "photoUrl",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
+          "name": "nameHighlights",
+          "type": "List<IntRange>",
           "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
+          "name": "titleHighlights",
+          "type": "List<IntRange>",
+          "hasDefault": true
         }
       ]
     },
@@ -4626,19 +4596,21 @@
       "sourceFunction": "PartnerCardPreview",
       "parameters": [
         {
+          "name": "name",
+          "type": "String"
+        },
+        {
+          "name": "logoUrl",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -4725,19 +4697,13 @@
       "sourceFunction": "ServiceEventPreview",
       "parameters": [
         {
+          "name": "event",
+          "type": "ServiceEventData"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -5058,14 +5024,9 @@
           "hasDefault": true
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
+          "name": "textStyle",
+          "type": "TextStyle",
           "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -5590,19 +5551,17 @@
       "sourceFunction": "FiltersPreview",
       "parameters": [
         {
+          "name": "tags",
+          "type": "List<FilterItem>"
+        },
+        {
+          "name": "toggleItem",
+          "type": "(FilterItem, Boolean) -> Unit"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -5986,19 +5945,25 @@
       "sourceFunction": "SwitcherPreview",
       "parameters": [
         {
+          "name": "items",
+          "type": "List<String>"
+        },
+        {
+          "name": "shortItems",
+          "type": "List<String>?"
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Int"
+        },
+        {
+          "name": "onSelect",
+          "type": "(Int) -> Unit"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -6601,19 +6566,21 @@
       "sourceFunction": "LargeSwitcherPreview",
       "parameters": [
         {
+          "name": "options",
+          "type": "List<LargeSwitcherOption>"
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Int"
+        },
+        {
+          "name": "onSelect",
+          "type": "(Int) -> Unit"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -6917,19 +6884,13 @@
       "sourceFunction": "MinorErrorPreview",
       "parameters": [
         {
+          "name": "message",
+          "type": "String"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -7246,19 +7207,13 @@
       "sourceFunction": "MajorErrorPreview",
       "parameters": [
         {
+          "name": "message",
+          "type": "String"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -7631,19 +7586,8 @@
       "sourceFunction": "TooltipPreview",
       "parameters": [
         {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
+          "name": "text",
+          "type": "String"
         }
       ]
     },
@@ -8271,19 +8215,22 @@
       "sourceFunction": "IconPreview",
       "parameters": [
         {
+          "name": "painter",
+          "type": "Painter"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
+          "name": "tint",
+          "type": "Color",
           "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -8421,19 +8368,17 @@
       "sourceFunction": "HorizontalDividerPreview",
       "parameters": [
         {
+          "name": "thickness",
+          "type": "Dp"
+        },
+        {
+          "name": "color",
+          "type": "Color"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -8496,19 +8441,17 @@
       "sourceFunction": "VerticalDividerPreview",
       "parameters": [
         {
+          "name": "thickness",
+          "type": "Dp"
+        },
+        {
+          "name": "color",
+          "type": "Color"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -9028,8 +8971,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:26:25.637Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T10:13:45.402Z",
   "display": {
     "hero": "talk-card-live"
   },
@@ -9045,6 +8988,7 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "JetBrains/kotlinconf-app",
     "ref": "7011707b0a2d6c7ceacc44e467ae21524c7db26e",

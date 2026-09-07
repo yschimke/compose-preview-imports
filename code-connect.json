@@ -7,7 +7,7 @@
     "ref": "7011707b0a2d6c7ceacc44e467ae21524c7db26e",
     "module": ":app:ui-components"
   },
-  "generatedAt": "2026-09-06T09:26:27.399Z",
+  "generatedAt": "2026-09-07T10:13:47.206Z",
   "mappings": [
     {
       "componentId": "button-primary",
@@ -15,7 +15,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ButtonPrimaryPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -70,7 +70,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ButtonSecondaryPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -180,7 +180,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ActionButtonPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -235,7 +235,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "IconButtonPreviewEnabled",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -290,7 +290,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "IconButtonPreviewDisabled",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -510,7 +510,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TopMenuButtonUnselectedPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -565,7 +565,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TopMenuButtonSelectedPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -620,7 +620,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TopMenuButtonLargeUnselectedPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -675,7 +675,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TopMenuButtonLargeSelectedPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -727,16 +727,55 @@
     {
       "componentId": "main-navigation-bar",
       "figmaLayerName": "main-navigation-bar",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MainNavigationBar",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainNavigationBar.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "MainNavigationBarPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "MainNavigationBar(\n    currentDestination = TODO(\"MainNavDestination<T>?\"),\n    destinations = TODO(\"List<MainNavDestination<T>>\"),\n    onSelect = TODO(\"(MainNavDestination<T>) -> Unit\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.MainNavigationBar"
       ],
       "parameters": [
+        {
+          "name": "currentDestination",
+          "type": "MainNavDestination<T>?",
+          "typeFqn": "org.jetbrains.kotlinconf.ui.components.MainNavDestination",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "destinations",
+          "type": "List<MainNavDestination<T>>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSelect",
+          "type": "(MainNavDestination<T>) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -749,32 +788,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-navigation-bar__ideal__default__light.svg"
@@ -840,7 +853,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "MainHeaderTitleOnlyPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -895,7 +908,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "MainHeaderBackPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -947,181 +960,72 @@
     {
       "componentId": "main-header-schedule",
       "figmaLayerName": "main-header-schedule",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MainHeaderSchedulePreview",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainHeader.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "preview-fallback",
       "previewName": "MainHeaderSchedulePreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
-      "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
-      ],
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
-        }
-      ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-schedule__ideal__default__light.svg"
     },
     {
       "componentId": "main-header-search",
       "figmaLayerName": "main-header-search",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MainHeaderSearchStatePreview",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainHeader.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "preview-fallback",
       "previewName": "MainHeaderSearchStatePreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
-      "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
-      ],
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
-        }
-      ],
       "figmaSvg": "figma/main-header-search.svg"
     },
     {
       "componentId": "main-header-speaker",
       "figmaLayerName": "main-header-speaker",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MainHeaderSpeakerPreview",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainHeader.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "preview-fallback",
       "previewName": "MainHeaderSpeakerPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
-      "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
-      ],
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
-        }
-      ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-speaker__ideal__default__light.svg"
     },
     {
       "componentId": "large-main-header",
       "figmaLayerName": "large-main-header",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "LargeMainHeader",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/LargeMainHeader.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "LargeMainHeaderPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "LargeMainHeader(\n    title = TODO(\"String\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.LargeMainHeader"
       ],
       "parameters": [
+        {
+          "name": "title",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "endContent",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": true,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -1134,32 +1038,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "figma/large-main-header.svg"
@@ -1170,7 +1048,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "PageTitleRegularPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1225,7 +1103,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "PageTitleLightningPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1280,7 +1158,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "PageTitleWithNotesPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1335,7 +1213,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "LargePageTitleWithPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1390,7 +1268,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SectionTitleTextPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1445,7 +1323,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SectionTitleTimePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1497,16 +1375,29 @@
     {
       "componentId": "paragraph-title",
       "figmaLayerName": "paragraph-title",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "ParagraphTitle",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ParagraphTitle.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "ParagraphTitlePreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "ParagraphTitle(\n    text = TODO(\"String\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.ParagraphTitle"
       ],
       "parameters": [
+        {
+          "name": "text",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -1519,32 +1410,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/paragraph-title__ideal__default__light.svg"
@@ -1607,16 +1472,42 @@
     {
       "componentId": "page-menu-item",
       "figmaLayerName": "page-menu-item",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "PageMenuItem",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/PageMenuItem.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "PageMenuItemPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "PageMenuItem(\n    label = TODO(\"String\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.PageMenuItem"
       ],
       "parameters": [
+        {
+          "name": "label",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -1631,9 +1522,22 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
+          "name": "drawableStart",
+          "type": "DrawableResource?",
+          "typeFqn": "org.jetbrains.compose.resources.DrawableResource",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "drawableEnd",
+          "type": "DrawableResource",
+          "typeFqn": "org.jetbrains.compose.resources.DrawableResource",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -1642,19 +1546,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/page-menu-item__ideal__default__light.svg"
@@ -1665,7 +1556,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TalkCardUpcomingPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1720,7 +1611,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TalkCardLivePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1772,16 +1663,68 @@
     {
       "componentId": "speaker-card",
       "figmaLayerName": "speaker-card",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "SpeakerCard",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/SpeakerCard.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "SpeakerCardPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "SpeakerCard(\n    name = TODO(\"String\"),\n    title = TODO(\"String\"),\n    photoUrl = TODO(\"String\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.SpeakerCard"
       ],
       "parameters": [
+        {
+          "name": "name",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "title",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "photoUrl",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "(() -> Unit)?",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -1796,9 +1739,9 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
+          "name": "nameHighlights",
+          "type": "List<IntRange>",
+          "typeFqn": "kotlin.collections.List",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -1809,17 +1752,17 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "name": "titleHighlights",
+          "type": "List<IntRange>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
           "noArgFactory": null,
           "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/speaker-card__ideal__default__light.svg"
@@ -1830,7 +1773,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SpeakerCardWithHighlightsPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -1882,16 +1825,55 @@
     {
       "componentId": "partner-card",
       "figmaLayerName": "partner-card",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "PartnerCard",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/PartnerCard.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "PartnerCardPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "PartnerCard(\n    name = TODO(\"String\"),\n    logoUrl = TODO(\"String\"),\n    onClick = TODO(\"() -> Unit\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.PartnerCard"
       ],
       "parameters": [
+        {
+          "name": "name",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "logoUrl",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -1904,32 +1886,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/partner-card__ideal__default__light.svg"
@@ -1937,16 +1893,29 @@
     {
       "componentId": "service-event",
       "figmaLayerName": "service-event",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "ServiceEvent",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ServiceEvents.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "ServiceEventPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "ServiceEvent(\n    event = TODO(\"ServiceEventData\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.ServiceEvent"
       ],
       "parameters": [
+        {
+          "name": "event",
+          "type": "ServiceEventData",
+          "typeFqn": "org.jetbrains.kotlinconf.ui.components.ServiceEventData",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -1959,32 +1928,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/service-event__ideal__default__light.svg"
@@ -1995,7 +1938,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ServiceEventBlockPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2050,7 +1993,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "PartyServiceEventLivePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2102,14 +2045,14 @@
     {
       "componentId": "now-label",
       "figmaLayerName": "now-label",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "NowLabel",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/NowLabel.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "NowLabelPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "NowLabel()",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.NowLabel"
       ],
       "parameters": [
         {
@@ -2126,9 +2069,9 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
+          "name": "textStyle",
+          "type": "TextStyle",
+          "typeFqn": "androidx.compose.ui.text.TextStyle",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -2137,19 +2080,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/now-label__ideal__default__light.svg"
@@ -2270,7 +2200,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SearchInputEmptyPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2325,7 +2255,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SearchInputWithTextPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2432,16 +2362,42 @@
     {
       "componentId": "filters",
       "figmaLayerName": "filters",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "Filters",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Filters.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "FiltersPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "Filters(\n    tags = TODO(\"List<FilterItem>\"),\n    toggleItem = TODO(\"(FilterItem, Boolean) -> Unit\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.Filters"
       ],
       "parameters": [
+        {
+          "name": "tags",
+          "type": "List<FilterItem>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "toggleItem",
+          "type": "(FilterItem, Boolean) -> Unit",
+          "typeFqn": "kotlin.Function2",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -2454,32 +2410,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/filters__ideal__default__light.svg"
@@ -2490,7 +2420,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "FilterTagUnselectedPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2545,7 +2475,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "FilterTagSelectedPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2597,16 +2527,68 @@
     {
       "componentId": "switcher",
       "figmaLayerName": "switcher",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "Switcher",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Switcher.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "SwitcherPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "Switcher(\n    items = TODO(\"List<String>\"),\n    shortItems = TODO(\"List<String>?\"),\n    selectedIndex = TODO(\"Int\"),\n    onSelect = TODO(\"(Int) -> Unit\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.Switcher"
       ],
       "parameters": [
+        {
+          "name": "items",
+          "type": "List<String>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "shortItems",
+          "type": "List<String>?",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSelect",
+          "type": "(Int) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -2619,32 +2601,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/switcher__ideal__default__light.svg"
@@ -2655,7 +2611,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SwitcherShortPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -2817,16 +2773,55 @@
     {
       "componentId": "large-switcher",
       "figmaLayerName": "large-switcher",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "LargeSwitcher",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/LargeSwitcher.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "LargeSwitcherPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "LargeSwitcher(\n    options = TODO(\"List<LargeSwitcherOption>\"),\n    selectedIndex = TODO(\"Int\"),\n    onSelect = TODO(\"(Int) -> Unit\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.LargeSwitcher"
       ],
       "parameters": [
+        {
+          "name": "options",
+          "type": "List<LargeSwitcherOption>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSelect",
+          "type": "(Int) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -2839,32 +2834,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/large-switcher__ideal__default__light__expanded.svg"
@@ -2982,16 +2951,29 @@
     {
       "componentId": "error-minor",
       "figmaLayerName": "error-minor",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MinorError",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ErrorLoading.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "MinorErrorPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "MinorError(\n    message = TODO(\"String\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.MinorError"
       ],
       "parameters": [
+        {
+          "name": "message",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -3004,32 +2986,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/error-minor__ideal__default__light.svg"
@@ -3040,7 +2996,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "NormalErrorIdlePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3095,7 +3051,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "NormalErrorInteractivePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3150,7 +3106,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "NormalErrorLoadingPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3202,16 +3158,29 @@
     {
       "componentId": "error-major",
       "figmaLayerName": "error-major",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MajorError",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ErrorLoading.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "MajorErrorPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "MajorError(\n    message = TODO(\"String\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.MajorError"
       ],
       "parameters": [
+        {
+          "name": "message",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -3224,32 +3193,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "figma/error-major.svg"
@@ -3260,7 +3203,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "LoadingEnabledPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3315,7 +3258,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "LoadingDisabledPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3422,54 +3365,28 @@
     {
       "componentId": "tooltip",
       "figmaLayerName": "tooltip",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "Tooltip",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Tooltip.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "TooltipPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "Tooltip(\n    text = TODO(\"String\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.Tooltip"
       ],
       "parameters": [
         {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
+          "name": "text",
+          "type": "String",
+          "typeFqn": "kotlin.String",
           "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+          "composableSlot": false,
+          "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
           "noArgFactory": null,
           "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/tooltip__ideal__default__light.svg"
@@ -3480,7 +3397,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SettingsItemSimplePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3535,7 +3452,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "SettingsItemWithNotePreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3590,7 +3507,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ToggleOnPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3645,7 +3562,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ToggleOffPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3752,16 +3669,42 @@
     {
       "componentId": "icon",
       "figmaLayerName": "icon",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "Icon",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Icon.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "IconPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "Icon(\n    painter = TODO(\"Painter\"),\n    contentDescription = TODO(\"String?\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.Icon"
       ],
       "parameters": [
+        {
+          "name": "painter",
+          "type": "Painter",
+          "typeFqn": "androidx.compose.ui.graphics.painter.Painter",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -3776,9 +3719,9 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
+          "name": "tint",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -3787,19 +3730,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/icon__ideal__default__light.svg"
@@ -3810,7 +3740,7 @@
       "componentName": "PreviewHelper",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "TintedIconPreview",
       "codeSnippet": "PreviewHelper(\n    content = { },\n)",
       "imports": [
@@ -3862,16 +3792,42 @@
     {
       "componentId": "divider-horizontal",
       "figmaLayerName": "divider-horizontal",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "HorizontalDivider",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Divider.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "HorizontalDividerPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "HorizontalDivider(\n    thickness = TODO(\"Dp\"),\n    color = TODO(\"Color\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.HorizontalDivider"
       ],
       "parameters": [
+        {
+          "name": "thickness",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -3884,32 +3840,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-horizontal__ideal__default__light.svg"
@@ -3917,16 +3847,42 @@
     {
       "componentId": "divider-vertical",
       "figmaLayerName": "divider-vertical",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "VerticalDivider",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/7011707b0a2d6c7ceacc44e467ae21524c7db26e/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Divider.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "VerticalDividerPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
+      "codeSnippet": "VerticalDivider(\n    thickness = TODO(\"Dp\"),\n    color = TODO(\"Color\"),\n)",
       "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+        "import org.jetbrains.kotlinconf.ui.components.VerticalDivider"
       ],
       "parameters": [
+        {
+          "name": "thickness",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
         {
           "name": "modifier",
           "type": "Modifier",
@@ -3939,32 +3895,6 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
       ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/divider-vertical__ideal__default__light.svg"

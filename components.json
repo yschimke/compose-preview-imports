@@ -1,0 +1,2026 @@
+{
+    "schemaVersion": 2,
+    "module": "ui-components",
+    "variant": "debug",
+    "components": [
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.DividerKt.HorizontalDivider",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.DividerKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.HorizontalDivider",
+                "name": "HorizontalDivider",
+                "origin": "PROJECT",
+                "jvmName": "HorizontalDivider-8s8adOk",
+                "descriptor": "(FJLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Divider.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "thickness",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.HorizontalDividerPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.HorizontalDividerPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `thickness: Dp`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.DividerKt.VerticalDivider",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.DividerKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.VerticalDivider",
+                "name": "VerticalDivider",
+                "origin": "PROJECT",
+                "jvmName": "VerticalDivider-8s8adOk",
+                "descriptor": "(FJLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Divider.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "thickness",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.VerticalDividerPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.VerticalDividerPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `thickness: Dp`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MajorError",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.MajorError",
+                "name": "MajorError",
+                "origin": "PROJECT",
+                "jvmName": "MajorError",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ErrorLoading.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MajorErrorPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MajorErrorPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "MajorError(message = \"\")",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.MajorError"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MinorError",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.MinorError",
+                "name": "MinorError",
+                "origin": "PROJECT",
+                "jvmName": "MinorError",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ErrorLoading.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "message",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MinorErrorPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MinorErrorPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "MinorError(message = \"\")",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.MinorError"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.FiltersKt.Filters",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.FiltersKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.Filters",
+                "name": "Filters",
+                "origin": "PROJECT",
+                "jvmName": "Filters",
+                "descriptor": "(Ljava/util/List;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Filters.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "tags",
+                    "type": "List<FilterItem>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "toggleItem",
+                    "type": "(FilterItem, Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersKt.FiltersPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersKt.FiltersPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `tags: List<FilterItem>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.IconKt.Icon",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.IconKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.Icon",
+                "name": "Icon",
+                "origin": "PROJECT",
+                "jvmName": "Icon-ww6aTOc",
+                "descriptor": "(Landroidx/compose/ui/graphics/painter/Painter;Ljava/lang/String;Landroidx/compose/ui/Modifier;JLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Icon.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "painter",
+                    "type": "Painter",
+                    "typeFqn": "androidx.compose.ui.graphics.painter.Painter",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentDescription",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "tint",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.IconPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.IconPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `painter: Painter`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.LargeMainHeaderKt.LargeMainHeader",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.LargeMainHeaderKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.LargeMainHeader",
+                "name": "LargeMainHeader",
+                "origin": "PROJECT",
+                "jvmName": "LargeMainHeader",
+                "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/LargeMainHeader.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "title",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "endContent",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [
+                {
+                    "name": "endContent",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeMainHeaderKt.LargeMainHeaderPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeMainHeaderKt.LargeMainHeaderPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "LargeMainHeader(title = \"\")",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.LargeMainHeader"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcher",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.LargeSwitcher",
+                "name": "LargeSwitcher",
+                "origin": "PROJECT",
+                "jvmName": "LargeSwitcher",
+                "descriptor": "(Ljava/util/List;ILkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/LargeSwitcher.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "options",
+                    "type": "List<LargeSwitcherOption>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "selectedIndex",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelect",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `options: List<LargeSwitcherOption>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.MainNavigationBarKt.MainNavigationBar",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.MainNavigationBarKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.MainNavigationBar",
+                "name": "MainNavigationBar",
+                "origin": "PROJECT",
+                "jvmName": "MainNavigationBar",
+                "descriptor": "(Lorg/jetbrains/kotlinconf/ui/components/MainNavDestination;Ljava/util/List;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainNavigationBar.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "currentDestination",
+                    "type": "MainNavDestination<T>?",
+                    "typeFqn": "org.jetbrains.kotlinconf.ui.components.MainNavDestination",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "destinations",
+                    "type": "List<MainNavDestination<T>>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelect",
+                    "type": "(MainNavDestination<T>) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationBarKt.MainNavigationBarPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationBarKt.MainNavigationBarPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "declares type parameters that a call omitting defaulted arguments cannot infer",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": true,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.NowLabelKt.NowLabel",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.NowLabelKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.NowLabel",
+                "name": "NowLabel",
+                "origin": "PROJECT",
+                "jvmName": "NowLabel",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/text/TextStyle;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/NowLabel.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "textStyle",
+                    "type": "TextStyle",
+                    "typeFqn": "androidx.compose.ui.text.TextStyle",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.NowLabelKt.NowLabelPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.NowLabelKt.NowLabelPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "NowLabel()",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.NowLabel"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.PageMenuItemKt.PageMenuItem",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.PageMenuItemKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.PageMenuItem",
+                "name": "PageMenuItem",
+                "origin": "PROJECT",
+                "jvmName": "PageMenuItem",
+                "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Lorg/jetbrains/compose/resources/DrawableResource;Lorg/jetbrains/compose/resources/DrawableResource;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/PageMenuItem.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "label",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "drawableStart",
+                    "type": "DrawableResource?",
+                    "typeFqn": "org.jetbrains.compose.resources.DrawableResource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "drawableEnd",
+                    "type": "DrawableResource",
+                    "typeFqn": "org.jetbrains.compose.resources.DrawableResource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageMenuItemKt.PageMenuItemPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageMenuItemKt.PageMenuItemPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PageMenuItem(label = \"\", onClick = {})",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.PageMenuItem"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.ParagraphTitleKt.ParagraphTitle",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.ParagraphTitleKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.ParagraphTitle",
+                "name": "ParagraphTitle",
+                "origin": "PROJECT",
+                "jvmName": "ParagraphTitle",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ParagraphTitle.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ParagraphTitleKt.ParagraphTitlePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ParagraphTitleKt.ParagraphTitlePreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ParagraphTitle(text = \"\")",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.ParagraphTitle"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.PartnerCardKt.PartnerCard",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.PartnerCardKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.PartnerCard",
+                "name": "PartnerCard",
+                "origin": "PROJECT",
+                "jvmName": "PartnerCard",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/PartnerCard.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "logoUrl",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PartnerCardKt.PartnerCardPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PartnerCardKt.PartnerCardPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PartnerCard(name = \"\", logoUrl = \"\", onClick = {})",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.PartnerCard"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEvent",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.ServiceEvent",
+                "name": "ServiceEvent",
+                "origin": "PROJECT",
+                "jvmName": "ServiceEvent",
+                "descriptor": "(Lorg/jetbrains/kotlinconf/ui/components/ServiceEventData;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/ServiceEvents.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "event",
+                    "type": "ServiceEventData",
+                    "typeFqn": "org.jetbrains.kotlinconf.ui.components.ServiceEventData",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `event: ServiceEventData`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCard",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.SpeakerCard",
+                "name": "SpeakerCard",
+                "origin": "PROJECT",
+                "jvmName": "SpeakerCard",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Ljava/util/List;Ljava/util/List;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/SpeakerCard.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "name",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "title",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "photoUrl",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "nameHighlights",
+                    "type": "List<IntRange>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "titleHighlights",
+                    "type": "List<IntRange>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "SpeakerCard(name = \"\", title = \"\", photoUrl = \"\")",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.SpeakerCard"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.SwitcherKt.Switcher",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.SwitcherKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.Switcher",
+                "name": "Switcher",
+                "origin": "PROJECT",
+                "jvmName": "Switcher",
+                "descriptor": "(Ljava/util/List;Ljava/util/List;ILkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Switcher.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "items",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shortItems",
+                    "type": "List<String>?",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "selectedIndex",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onSelect",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `items: List<String>`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.components.TooltipKt.Tooltip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.components.TooltipKt",
+                "callable": "org.jetbrains.kotlinconf.ui.components.Tooltip",
+                "name": "Tooltip",
+                "origin": "PROJECT",
+                "jvmName": "Tooltip",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/Tooltip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TooltipKt.TooltipPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TooltipKt.TooltipPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "Tooltip(text = \"\")",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.components.Tooltip"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui-components/org.jetbrains.kotlinconf.ui.theme.PreviewHelperKt.PreviewHelper",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "org.jetbrains.kotlinconf.ui.theme.PreviewHelperKt",
+                "callable": "org.jetbrains.kotlinconf.ui.theme.PreviewHelper",
+                "name": "PreviewHelper",
+                "origin": "PROJECT",
+                "jvmName": "PreviewHelper",
+                "descriptor": "(Landroidx/compose/ui/Modifier;ZLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "paddingEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "ColumnScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.ColumnScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ActionKt.ActionPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ActionKt.ActionPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonPrimaryPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonPrimaryPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonSecondaryPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonSecondaryPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagUnselectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.DayHeaderKt.DayHeaderPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.DayHeaderKt.DayHeaderPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingDisabledPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingDisabledPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingEnabledPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingEnabledPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorIdlePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorIdlePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorInteractivePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorInteractivePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorLoadingPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorLoadingPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FeedbackFormKt.FeedbackFormPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FeedbackFormKt.FeedbackFormPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagUnselectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.HeaderToggleButtonKt.HeaderToggleButtonPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.HeaderToggleButtonKt.HeaderToggleButtonPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.TintedIconPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.TintedIconPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeEmotionPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeEmotionPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeUnselectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallUnselectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSearchBarKt.LargeSearchBarPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSearchBarKt.LargeSearchBarPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemUnselectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderBackPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderBackPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderTitleOnlyPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderTitleOnlyPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationRailKt.MainNavigationRailPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationRailKt.MainNavigationRailPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.FloatingNowButtonPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.FloatingNowButtonPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.NowButtonPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.NowButtonPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewDisabled_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewDisabled_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewEnabled_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewEnabled_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayTextButtonKt.ActionButtonPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayTextButtonKt.ActionButtonPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.LargePageTitleWithPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.LargePageTitleWithPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleLightningPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleLightningPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleRegularPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleRegularPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleWithNotesPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleWithNotesPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationBaselinePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationBaselinePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputEmptyPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputEmptyPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputWithTextPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputWithTextPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTextPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTextPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTimePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTimePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.PartyServiceEventLivePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.PartyServiceEventLivePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventBlockPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventBlockPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemSimplePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemSimplePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemWithNotePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemWithNotePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardWithHighlightsPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardWithHighlightsPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemNormalPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemNormalPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherShortPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherShortPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardLivePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardLivePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardUpcomingPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardUpcomingPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TextKt.TextStylePreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TextKt.TextStylePreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOffPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOffPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOnPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOnPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeUnselectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonSelectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonSelectedPreview_Light",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonUnselectedPreview_Dark",
+                    "componentId": null
+                },
+                {
+                    "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonUnselectedPreview_Light",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "PreviewHelper(content = {})",
+                "imports": [
+                    "org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        }
+    ]
+}
