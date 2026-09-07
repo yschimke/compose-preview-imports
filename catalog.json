@@ -753,7 +753,71 @@
       "sourceModule": ":ui",
       "bodyLine": 210,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenTextSelectionButton_preview"
+      "sourceFunction": "BitwardenTextSelectionButton_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "selectedOption",
+          "type": "String?"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingText",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "insets",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "textFieldTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "semanticRole",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "actionsPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "icon-button-filled",
@@ -816,7 +880,31 @@
       "sourceModule": ":ui",
       "bodyLine": 50,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenFilledIconButton_preview"
+      "sourceFunction": "BitwardenFilledIconButton_preview",
+      "parameters": [
+        {
+          "name": "vectorIconRes",
+          "type": "Int"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "icon-button-tonal",
@@ -879,7 +967,31 @@
       "sourceModule": ":ui",
       "bodyLine": 50,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenTonalIconButton_preview"
+      "sourceFunction": "BitwardenTonalIconButton_preview",
+      "parameters": [
+        {
+          "name": "vectorIconRes",
+          "type": "Int"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "icon-button-standard",
@@ -942,7 +1054,41 @@
       "sourceModule": ":ui",
       "bodyLine": 98,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenStandardIconButton_preview"
+      "sourceFunction": "BitwardenStandardIconButton_preview",
+      "parameters": [
+        {
+          "name": "vectorIconRes",
+          "type": "Int"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "isExternalLink",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "text-field",
@@ -996,7 +1142,141 @@
       "sourceModule": ":ui",
       "bodyLine": 446,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenTextField_preview"
+      "sourceFunction": "BitwardenTextField_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String?"
+        },
+        {
+          "name": "value",
+          "type": "String"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "placeholder",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingIconData",
+          "type": "IconData?",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingText",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "singleLine",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "textStyle",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "textColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "shouldAddCustomLineBreaks",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "keyboardType",
+          "type": "KeyboardType",
+          "hasDefault": true
+        },
+        {
+          "name": "keyboardActions",
+          "type": "KeyboardActions",
+          "hasDefault": true
+        },
+        {
+          "name": "imeAction",
+          "type": "ImeAction",
+          "hasDefault": true
+        },
+        {
+          "name": "isError",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "autoFocus",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "visualTransformation",
+          "type": "VisualTransformation",
+          "hasDefault": true
+        },
+        {
+          "name": "textToolbarType",
+          "type": "TextToolbarType",
+          "hasDefault": true
+        },
+        {
+          "name": "autoCompleteOptions",
+          "type": "ImmutableList<String>",
+          "hasDefault": true
+        },
+        {
+          "name": "textFieldTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "actionsPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "actionsTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "(RowScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "password-field",
@@ -1207,7 +1487,96 @@
       "sourceModule": ":ui",
       "bodyLine": 499,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenPasswordField_preview"
+      "sourceFunction": "BitwardenPasswordField_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String?"
+        },
+        {
+          "name": "value",
+          "type": "String"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "singleLine",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingText",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "initialShowPassword",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "showPasswordTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "autoFocus",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "keyboardType",
+          "type": "KeyboardType",
+          "hasDefault": true
+        },
+        {
+          "name": "imeAction",
+          "type": "ImeAction",
+          "hasDefault": true
+        },
+        {
+          "name": "keyboardActions",
+          "type": "KeyboardActions",
+          "hasDefault": true
+        },
+        {
+          "name": "passwordFieldTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "actionsPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "(RowScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "hidden-password-field",
@@ -1247,7 +1616,31 @@
       "sourceModule": ":ui",
       "bodyLine": 59,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenHiddenPasswordField_preview"
+      "sourceFunction": "BitwardenHiddenPasswordField_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String?"
+        },
+        {
+          "name": "value",
+          "type": "String"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "passwordFieldTestTag",
+          "type": "String?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "multi-select-button",
@@ -1289,7 +1682,75 @@
       "sourceModule": ":ui",
       "bodyLine": 237,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenMultiSelectButton_preview"
+      "sourceFunction": "BitwardenMultiSelectButton_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "options",
+          "type": "ImmutableList<String>"
+        },
+        {
+          "name": "selectedOption",
+          "type": "String?"
+        },
+        {
+          "name": "onOptionSelected",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "dialogSubtitle",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingText",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "insets",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "textFieldTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "actionsPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "date-picker-button",
@@ -1385,7 +1846,76 @@
       "sourceModule": ":ui",
       "bodyLine": 123,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenDatePickerButton_preview"
+      "sourceFunction": "BitwardenDatePickerButton_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "currentDate",
+          "type": "LocalDate?"
+        },
+        {
+          "name": "onDateSelect",
+          "type": "(LocalDate?) -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingContent",
+          "type": "(ColumnScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "insets",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "textFieldTestTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "allowPastDates",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "allowFutureDates",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "allowToday",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "clock",
+          "type": "Clock",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "slider",
@@ -1448,7 +1978,40 @@
       "sourceModule": ":ui",
       "bodyLine": 156,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenSlider_preview"
+      "sourceFunction": "BitwardenSlider_preview",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "Int"
+        },
+        {
+          "name": "range",
+          "type": "ClosedRange<Int>"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(Int, Boolean) -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "sliderTag",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "valueTag",
+          "type": "String?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "switch",
@@ -1776,7 +2339,66 @@
       "sourceModule": ":ui",
       "bodyLine": 382,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenSwitch_preview"
+      "sourceFunction": "BitwardenSwitch_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "isChecked",
+          "type": "Boolean"
+        },
+        {
+          "name": "onCheckedChange",
+          "type": "((Boolean) -> Unit)?"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "subtext",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingText",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "helpData",
+          "type": "BitwardenHelpButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "readOnly",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "(RowScope.() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "action-card",
@@ -1898,7 +2520,44 @@
       "sourceModule": ":ui",
       "bodyLine": 191,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenActionCard_preview"
+      "sourceFunction": "BitwardenActionCard_preview",
+      "parameters": [
+        {
+          "name": "cardTitle",
+          "type": "String?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "actionButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "onDismissClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "cardSubtitle",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "action-card-subtitle",
@@ -2088,7 +2747,44 @@
       "sourceModule": ":ui",
       "bodyLine": 228,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenActionCardWithSubtitle_preview"
+      "sourceFunction": "BitwardenActionCardWithSubtitle_preview",
+      "parameters": [
+        {
+          "name": "cardTitle",
+          "type": "String?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "actionButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "onDismissClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "cardSubtitle",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "action-card-subtitle-no-dismiss",
@@ -2178,7 +2874,44 @@
       "sourceModule": ":ui",
       "bodyLine": 176,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenActionCardWithSubtitleNoDismiss_preview"
+      "sourceFunction": "BitwardenActionCardWithSubtitleNoDismiss_preview",
+      "parameters": [
+        {
+          "name": "cardTitle",
+          "type": "String?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "actionButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "onDismissClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "cardSubtitle",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "action-card-leading",
@@ -2330,7 +3063,44 @@
       "sourceModule": ":ui",
       "bodyLine": 207,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenActionCardWithLeadingContent_preview"
+      "sourceFunction": "BitwardenActionCardWithLeadingContent_preview",
+      "parameters": [
+        {
+          "name": "cardTitle",
+          "type": "String?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "actionButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "onDismissClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "cardSubtitle",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "secondaryButton",
+          "type": "BitwardenButtonData?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingContent",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "action-card-small",
@@ -2366,7 +3136,13 @@
       "sourceModule": ":ui",
       "bodyLine": 93,
       "sourceDirectory": "ui",
-      "sourceFunction": "ActionCardSmall_preview"
+      "sourceFunction": "ActionCardSmall_preview",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "action-card-small-trailing",
@@ -2402,7 +3178,13 @@
       "sourceModule": ":ui",
       "bodyLine": 106,
       "sourceDirectory": "ui",
-      "sourceFunction": "ActionCardSmallWithTrailingIcon_preview"
+      "sourceFunction": "ActionCardSmallWithTrailingIcon_preview",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "info-callout",
@@ -2486,7 +3268,43 @@
       "sourceModule": ":ui",
       "bodyLine": 119,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenContentBlock_preview"
+      "sourceFunction": "BitwardenContentBlock_preview",
+      "parameters": [
+        {
+          "name": "data",
+          "type": "ContentBlockData"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "headerTextStyle",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "subtitleTextStyle",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "subtitleColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "showDivider",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "empty-content",
@@ -2595,74 +3413,43 @@
       "sourceFunction": "BitwardenEmptyContent_preview",
       "parameters": [
         {
+          "name": "text",
+          "type": "String"
+        },
+        {
           "name": "modifier",
           "type": "Modifier",
           "hasDefault": true
         },
         {
-          "name": "topBar",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "utilityBar",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "overlay",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "snackbarHost",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "floatingActionButton",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "floatingActionButtonPosition",
-          "type": "FabPosition",
+          "name": "illustrationData",
+          "type": "IconData?",
           "hasDefault": true
         },
         {
-          "name": "navigationData",
-          "type": "ScaffoldNavigationData?",
+          "name": "labelTestTag",
+          "type": "String?",
           "hasDefault": true
         },
         {
-          "name": "pullToRefreshState",
-          "type": "BitwardenPullToRefreshState",
+          "name": "title",
+          "type": "String?",
           "hasDefault": true
         },
         {
-          "name": "containerColor",
-          "type": "Color",
+          "name": "titleTestTag",
+          "type": "String?",
           "hasDefault": true
         },
         {
-          "name": "contentColor",
-          "type": "Color",
+          "name": "primaryButton",
+          "type": "BitwardenButtonData?",
           "hasDefault": true
         },
         {
-          "name": "contentWindowInsets",
-          "type": "WindowInsets",
+          "name": "secondaryButton",
+          "type": "BitwardenButtonData?",
           "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -2710,69 +3497,9 @@
           "hasDefault": true
         },
         {
-          "name": "topBar",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "utilityBar",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "overlay",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "snackbarHost",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "floatingActionButton",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "floatingActionButtonPosition",
-          "type": "FabPosition",
+          "name": "text",
+          "type": "String?",
           "hasDefault": true
-        },
-        {
-          "name": "navigationData",
-          "type": "ScaffoldNavigationData?",
-          "hasDefault": true
-        },
-        {
-          "name": "pullToRefreshState",
-          "type": "BitwardenPullToRefreshState",
-          "hasDefault": true
-        },
-        {
-          "name": "containerColor",
-          "type": "Color",
-          "hasDefault": true
-        },
-        {
-          "name": "contentColor",
-          "type": "Color",
-          "hasDefault": true
-        },
-        {
-          "name": "contentWindowInsets",
-          "type": "WindowInsets",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
         }
       ]
     },
@@ -3109,7 +3836,41 @@
       "sourceModule": ":ui",
       "bodyLine": 129,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenPushRow_preview"
+      "sourceFunction": "BitwardenPushRow_preview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "description",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "leadingIcon",
+          "type": "IconData?",
+          "hasDefault": true
+        },
+        {
+          "name": "notificationCount",
+          "type": "Int",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "external-link-row",
@@ -3150,7 +3911,54 @@
       "sourceModule": ":ui",
       "bodyLine": 87,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenExternalLinkRow_preview"
+      "sourceFunction": "BitwardenExternalLinkRow_preview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "onConfirmClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "cardStyle",
+          "type": "CardStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "description",
+          "type": "AnnotatedString?",
+          "hasDefault": true
+        },
+        {
+          "name": "withDivider",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "dialogTitle",
+          "type": "String"
+        },
+        {
+          "name": "dialogMessage",
+          "type": "String"
+        },
+        {
+          "name": "dialogConfirmButtonText",
+          "type": "String",
+          "hasDefault": true
+        },
+        {
+          "name": "dialogDismissButtonText",
+          "type": "String",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "row-of-icon-buttons",
@@ -3179,7 +3987,19 @@
       "sourceModule": ":ui",
       "bodyLine": 40,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenRowOfIconButtons_preview"
+      "sourceFunction": "BitwardenRowOfIconButtons_preview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "list-header",
@@ -3208,7 +4028,23 @@
       "sourceModule": ":ui",
       "bodyLine": 36,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenListHeaderText_preview"
+      "sourceFunction": "BitwardenListHeaderText_preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "supportingLabel",
+          "type": "String?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "top-app-bar",
@@ -3282,7 +4118,47 @@
       "sourceModule": ":ui",
       "bodyLine": 284,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenTopAppBar_preview"
+      "sourceFunction": "BitwardenTopAppBar_preview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "scrollBehavior",
+          "type": "TopAppBarScrollBehavior"
+        },
+        {
+          "name": "navigationIcon",
+          "type": "NavigationIcon?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "dividerStyle",
+          "type": "TopAppBarDividerStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "minimumHeight",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "top-app-bar-overflow",
@@ -3356,7 +4232,13 @@
       "sourceModule": ":ui",
       "bodyLine": 304,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenTopAppBarOverflow_preview"
+      "sourceFunction": "BitwardenTopAppBarOverflow_preview",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "top-app-bar-overflow-cutoff",
@@ -3444,7 +4326,13 @@
       "sourceModule": ":ui",
       "bodyLine": 324,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenTopAppBarOverflowCutoff_preview"
+      "sourceFunction": "BitwardenTopAppBarOverflowCutoff_preview",
+      "parameters": [
+        {
+          "name": "id",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "medium-top-app-bar",
@@ -3518,7 +4406,43 @@
       "sourceModule": ":ui",
       "bodyLine": 108,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenMediumTopAppBar_preview"
+      "sourceFunction": "BitwardenMediumTopAppBar_preview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "scrollBehavior",
+          "type": "TopAppBarScrollBehavior"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "navigationIcon",
+          "type": "NavigationIcon?",
+          "hasDefault": true
+        },
+        {
+          "name": "dividerStyle",
+          "type": "TopAppBarDividerStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "search-action",
@@ -3661,7 +4585,38 @@
       "sourceModule": ":ui",
       "bodyLine": 140,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenOverflowActionItem_preview"
+      "sourceFunction": "BitwardenOverflowActionItem_preview",
+      "parameters": [
+        {
+          "name": "menuItemDataList",
+          "type": "ImmutableList<OverflowMenuItemData>"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isVisible",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "contentDescription",
+          "type": "String",
+          "hasDefault": true
+        },
+        {
+          "name": "vectorIconRes",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "testTag",
+          "type": "String?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "account-action-item",
@@ -3723,7 +4678,21 @@
       "sourceModule": ":ui",
       "bodyLine": 68,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenAccountActionItem_preview"
+      "sourceFunction": "BitwardenAccountActionItem_preview",
+      "parameters": [
+        {
+          "name": "initials",
+          "type": "String"
+        },
+        {
+          "name": "color",
+          "type": "Color"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        }
+      ]
     },
     {
       "componentId": "account-switcher",
@@ -3906,7 +4875,13 @@
       "sourceModule": ":ui",
       "bodyLine": 48,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenPlaceholderAccountActionItem_preview_light"
+      "sourceFunction": "BitwardenPlaceholderAccountActionItem_preview_light",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        }
+      ]
     },
     {
       "componentId": "placeholder-account-dark",
@@ -3966,7 +4941,13 @@
       "sourceModule": ":ui",
       "bodyLine": 58,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenPlaceholderAccountActionItem_preview_dark"
+      "sourceFunction": "BitwardenPlaceholderAccountActionItem_preview_dark",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        }
+      ]
     },
     {
       "componentId": "loading-dialog",
@@ -3991,7 +4972,13 @@
       "sourceModule": ":ui",
       "bodyLine": 62,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenLoadingDialog_preview"
+      "sourceFunction": "BitwardenLoadingDialog_preview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        }
+      ]
     },
     {
       "componentId": "date-picker-dialog",
@@ -5242,7 +6229,41 @@
       "sourceModule": ":ui",
       "bodyLine": 191,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenDatePickerDialog_preview"
+      "sourceFunction": "BitwardenDatePickerDialog_preview",
+      "parameters": [
+        {
+          "name": "initialDate",
+          "type": "LocalDate?"
+        },
+        {
+          "name": "onDateSelect",
+          "type": "(LocalDate?) -> Unit"
+        },
+        {
+          "name": "onDismissRequest",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "allowPastDates",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "allowFutureDates",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "allowToday",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "clock",
+          "type": "Clock",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "snackbar",
@@ -5442,7 +6463,22 @@
       "sourceModule": ":ui",
       "bodyLine": 58,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenStatusBadge_Preview"
+      "sourceFunction": "BitwardenStatusBadge_Preview",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "colors",
+          "type": "StatusBadgeVariantColors"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "status-badge-dark",
@@ -5541,7 +6577,22 @@
       "sourceModule": ":ui",
       "bodyLine": 80,
       "sourceDirectory": "ui",
-      "sourceFunction": "BitwardenStatusBadge_PreviewDark"
+      "sourceFunction": "BitwardenStatusBadge_PreviewDark",
+      "parameters": [
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "colors",
+          "type": "StatusBadgeVariantColors"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "notification-badge",
@@ -5867,8 +6918,8 @@
       "sourceFunction": "BitwardenTypography_preview"
     }
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T08:49:35.377Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T09:36:28.402Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -5881,6 +6932,7 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "bitwarden/android",
     "ref": "b99ad92c8b65236b32ad2374ba5ee98451e039a2",
