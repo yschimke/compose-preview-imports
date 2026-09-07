@@ -1,0 +1,4102 @@
+{
+    "schemaVersion": 2,
+    "module": "ui",
+    "variant": "debug",
+    "components": [
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.AboutWallDoodleInkPaletteKt.aboutWallDoodleInkPalette",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.AboutWallDoodleInkPaletteKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.aboutWallDoodleInkPalette",
+                "name": "aboutWallDoodleInkPalette",
+                "origin": "PROJECT",
+                "jvmName": "aboutWallDoodleInkPalette",
+                "descriptor": "(Landroidx/compose/runtime/Composer;I)Lio/github/droidkaigi/confsched/core/ui/DoodleInkPalette;",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/AboutWallDoodleInkPalette.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasViewMagnifiedPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasViewMagnifiedPreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRowBandSelectedPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRowBandSelectedPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "aboutWallDoodleInkPalette()",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.aboutWallDoodleInkPalette"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.CollapsingHeaderLayoutKt.CollapsingHeaderLayout",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.CollapsingHeaderLayoutKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.CollapsingHeaderLayout",
+                "name": "CollapsingHeaderLayout",
+                "origin": "PROJECT",
+                "jvmName": "CollapsingHeaderLayout",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/ui/CollapsingHeaderState;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/CollapsingHeaderLayout.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "state",
+                    "type": "CollapsingHeaderState",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.CollapsingHeaderState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "headerContent",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "(PaddingValues) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "headerContent",
+                    "required": true,
+                    "receiverScope": null
+                },
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.CollapsingHeaderLayoutKt.CollapsingHeaderLayoutPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `state: CollapsingHeaderState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasView",
+                "name": "DoodleCanvasView",
+                "origin": "PROJECT",
+                "jvmName": "DoodleCanvasView-4oEYXrE",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Doodle;JFLio/github/droidkaigi/confsched/core/ui/DoodleOrigin;Lio/github/droidkaigi/confsched/core/ui/DoodleInkPalette;Lio/github/droidkaigi/confsched/core/model/DoodlePenSize;Lio/github/droidkaigi/confsched/core/model/DoodleInk;ZLkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lio/github/droidkaigi/confsched/core/ui/DoodleCanvasTransform;Lkotlin/jvm/functions/Function4;Lkotlin/jvm/functions/Function4;Landroidx/compose/runtime/Composer;III)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleCanvasView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "doodle",
+                    "type": "Doodle",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Doodle",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "referenceSize",
+                    "type": "DpSize",
+                    "typeFqn": "androidx.compose.ui.unit.DpSize",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "maxScale",
+                    "type": "Float",
+                    "typeFqn": "kotlin.Float",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "origin",
+                    "type": "DoodleOrigin",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleOrigin",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "palette",
+                    "type": "DoodleInkPalette",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleInkPalette",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "penSize",
+                    "type": "DoodlePenSize",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.DoodlePenSize",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "selectedInk",
+                    "type": "DoodleInk",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.DoodleInk",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "outlined",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onStrokeAdd",
+                    "type": "(DoodleStroke) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onGestureActiveChange",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "transform",
+                    "type": "DoodleCanvasTransform",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasTransform",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "background",
+                    "type": "BoxScope.(Float) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.BoxScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "overlay",
+                    "type": "BoxScope.(Float) -> Unit",
+                    "typeFqn": "kotlin.Function2",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.BoxScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "background",
+                    "required": false,
+                    "receiverScope": "androidx.compose.foundation.layout.BoxScope"
+                },
+                {
+                    "name": "overlay",
+                    "required": false,
+                    "receiverScope": "androidx.compose.foundation.layout.BoxScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasViewPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleCanvasViewKt.DoodleCanvasViewPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `doodle: Doodle`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButton",
+                "name": "DoodleFlipButton",
+                "origin": "PROJECT",
+                "jvmName": "DoodleFlipButton",
+                "descriptor": "(ZLkotlin/jvm/functions/Function0;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleFlipButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "isShowingBack",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButtonPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButtonPreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButtonShowingBackPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleFlipButtonKt.DoodleFlipButtonShowingBackPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "DoodleFlipButton(isShowingBack = false, onClick = {}, enabled = false)",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.DoodleFlipButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRow",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleInkRow",
+                "name": "DoodleInkRow",
+                "origin": "PROJECT",
+                "jvmName": "DoodleInkRow",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/DoodleInk;Lio/github/droidkaigi/confsched/core/ui/DoodleInkPalette;Lio/github/droidkaigi/confsched/core/ui/DoodleInkRowSurface;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleInkRow.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "selectedInk",
+                    "type": "DoodleInk",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.DoodleInk",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "palette",
+                    "type": "DoodleInkPalette",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleInkPalette",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "surface",
+                    "type": "DoodleInkRowSurface",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowSurface",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onInkClick",
+                    "type": "(DoodleInk) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRowPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleInkRowKt.DoodleInkRowPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `selectedInk: DoodleInk`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleLayerViewKt.DoodleLayerView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleLayerViewKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleLayerView",
+                "name": "DoodleLayerView",
+                "origin": "PROJECT",
+                "jvmName": "DoodleLayerView",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Doodle;Lio/github/droidkaigi/confsched/core/ui/DoodleInkPalette;Lio/github/droidkaigi/confsched/core/ui/DoodleOrigin;FLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleLayerView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "doodle",
+                    "type": "Doodle",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Doodle",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "palette",
+                    "type": "DoodleInkPalette",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleInkPalette",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "origin",
+                    "type": "DoodleOrigin",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.DoodleOrigin",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "scale",
+                    "type": "Float",
+                    "typeFqn": "kotlin.Float",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleLayerViewKt.DoodleLayerViewPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `doodle: Doodle`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineToggle",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggle",
+                "name": "DoodleOutlineToggle",
+                "origin": "PROJECT",
+                "jvmName": "DoodleOutlineToggle",
+                "descriptor": "(ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleOutlineToggle.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "outlined",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onOutlinedChange",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineToggleOffPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineToggleOffPreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineTogglePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggleKt.DoodleOutlineTogglePreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "DoodleOutlineToggle(outlined = false, onOutlinedChange = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.DoodleOutlineToggle"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRow",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRow",
+                "name": "DoodlePenSizeRow",
+                "origin": "PROJECT",
+                "jvmName": "DoodlePenSizeRow",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/DoodlePenSize;Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodlePenSizeRow.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "selectedPenSize",
+                    "type": "DoodlePenSize",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.DoodlePenSize",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onPenSizeClick",
+                    "type": "(DoodlePenSize) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRowPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRowPreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRowThickSelectedPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodlePenSizeRowKt.DoodlePenSizeRowThickSelectedPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `selectedPenSize: DoodlePenSize`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRow",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRow",
+                "name": "DoodleStrokeControlsRow",
+                "origin": "PROJECT",
+                "jvmName": "DoodleStrokeControlsRow",
+                "descriptor": "(ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleStrokeControlsRow.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "canEdit",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onUndoClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onClearClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRowIdlePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRowIdlePreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRowPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRowKt.DoodleStrokeControlsRowPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "DoodleStrokeControlsRow(canEdit = false, onUndoClick = {}, onClearClick = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.DoodleStrokeControlsRow"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsView",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsView",
+                "name": "DoodleZoomControlsView",
+                "origin": "PROJECT",
+                "jvmName": "DoodleZoomControlsView",
+                "descriptor": "(FLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/DoodleZoomControlsView.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "zoom",
+                    "type": "Float",
+                    "typeFqn": "kotlin.Float",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onZoomInClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onZoomOutClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onResetClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsViewActualSizePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsViewActualSizePreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsViewPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsViewKt.DoodleZoomControlsViewPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "DoodleZoomControlsView(zoom = 0f, onZoomInClick = {}, onZoomOutClick = {}, onResetClick = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.DoodleZoomControlsView"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallback",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.ErrorFallback",
+                "name": "ErrorFallback",
+                "origin": "PROJECT",
+                "jvmName": "ErrorFallback",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Lio/github/droidkaigi/confsched/core/ui/ErrorScene;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ErrorFallback.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "reset",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "scene",
+                    "type": "ErrorScene",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.ErrorScene",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackBackstagePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackBackstagePreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackRainPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackRainPreview_ja",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackUnpluggedCablePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ErrorFallbackKt.ErrorFallbackUnpluggedCablePreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `scene: ErrorScene`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.FilledMascotImageKt.FilledMascotImage",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.FilledMascotImageKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.FilledMascotImage",
+                "name": "FilledMascotImage",
+                "origin": "PROJECT",
+                "jvmName": "FilledMascotImage-hU4bJlM",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Mascot;FJJLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/FilledMascotImage.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "mascot",
+                    "type": "Mascot",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Mascot",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "height",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "bodyColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "lineColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.FilledMascotImageKt.FilledMascotImagePreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `mascot: Mascot`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiButtonKt.KaigiButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiButtonKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiButton",
+                "name": "KaigiButton",
+                "origin": "PROJECT",
+                "jvmName": "KaigiButton-nBX6wN0",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;ILandroidx/compose/ui/Modifier;ZJJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "containerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "RowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.RowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiButtonKt.KaigiButtonPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiButton(onClick = {}, seed = 0, content = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiChipKt.KaigiChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiChipKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiChip",
+                "name": "KaigiChip",
+                "origin": "PROJECT",
+                "jvmName": "KaigiChip-DTcfvLk",
+                "descriptor": "(IJJLandroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiChip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "containerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "RowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.RowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiChipKt.KaigiChipPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `containerColor: Color`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiFilterChipKt.KaigiFilterChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiFilterChipKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiFilterChip",
+                "name": "KaigiFilterChip",
+                "origin": "PROJECT",
+                "jvmName": "KaigiFilterChip-HMwEIiY",
+                "descriptor": "(ZLkotlin/jvm/functions/Function0;Ljava/lang/String;ILandroidx/compose/ui/Modifier;JJJJILkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;III)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiFilterChip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "selected",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "label",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "selectedContainerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "selectedContentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "borderColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "role",
+                    "type": "Role",
+                    "typeFqn": "androidx.compose.ui.semantics.Role",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "trailingIcon",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "trailingIcon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiFilterChipKt.KaigiFilterChipPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiFilterChip(selected = false, onClick = {}, label = \"\", seed = 0)",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiFilterChip"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiIconButtonKt.KaigiIconButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiIconButtonKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiIconButton",
+                "name": "KaigiIconButton",
+                "origin": "PROJECT",
+                "jvmName": "KaigiIconButton-XBZIF-8",
+                "descriptor": "(ILkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZFJJLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiIconButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "size",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "containerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiIconButtonKt.KaigiIconButtonPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiIconButton(seed = 0, onClick = {}, content = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiIconButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt.KaigiNavigationBar",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBar",
+                "name": "KaigiNavigationBar",
+                "origin": "PROJECT",
+                "jvmName": "KaigiNavigationBar",
+                "descriptor": "(ILandroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "outlineSeed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "KaigiNavigationBarScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt.KaigiNavigationBarPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiNavigationBar(outlineSeed = 0, content = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBar"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt.KaigiNavigationRail",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationRail",
+                "name": "KaigiNavigationRail",
+                "origin": "PROJECT",
+                "jvmName": "KaigiNavigationRail",
+                "descriptor": "(ILandroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "outlineSeed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "KaigiNavigationRailScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationRailScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationRailScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiNavigationBarKt.KaigiNavigationRailPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiNavigationRail(outlineSeed = 0, content = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiNavigationRail"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSingleChoiceSegmentedButtonRow",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRow",
+                "name": "KaigiSingleChoiceSegmentedButtonRow",
+                "origin": "PROJECT",
+                "jvmName": "KaigiSingleChoiceSegmentedButtonRow-_UE9MAk",
+                "descriptor": "(ILandroidx/compose/ui/Modifier;FJLkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "outlineSeed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "width",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "borderColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSegmentedButtonFirstSelectedPreview",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSegmentedButtonSecondSelectedPreview",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButtonKt.KaigiSegmentedButtonThreeSegmentsPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiSingleChoiceSegmentedButtonRow(outlineSeed = 0, content = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRow"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiTextFieldKt.KaigiTextField",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiTextFieldKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiTextField",
+                "name": "KaigiTextField",
+                "origin": "PROJECT",
+                "jvmName": "KaigiTextField",
+                "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function1;ILandroidx/compose/foundation/text/KeyboardOptions;Landroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTextField.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "value",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onValueChange",
+                    "type": "(String) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "keyboardOptions",
+                    "type": "KeyboardOptions",
+                    "typeFqn": "androidx.compose.foundation.text.KeyboardOptions",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isError",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTextFieldKt.KaigiTextFieldPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `keyboardOptions: KeyboardOptions`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiLargeTopAppBar",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiLargeTopAppBar",
+                "name": "KaigiLargeTopAppBar",
+                "origin": "PROJECT",
+                "jvmName": "KaigiLargeTopAppBar-X-z6DiA",
+                "descriptor": "(Ljava/lang/String;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;JJLandroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/material3/TopAppBarScrollBehavior;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "title",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onBackClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "containerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "windowInsets",
+                    "type": "WindowInsets",
+                    "typeFqn": "androidx.compose.foundation.layout.WindowInsets",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "scrollBehavior",
+                    "type": "TopAppBarScrollBehavior?",
+                    "typeFqn": "androidx.compose.material3.TopAppBarScrollBehavior",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "actions",
+                    "type": "RowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "actions",
+                    "required": false,
+                    "receiverScope": "androidx.compose.foundation.layout.RowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiLargeTopAppBarPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiLargeTopAppBarPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiLargeTopAppBar(title = \"\", onBackClick = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiLargeTopAppBar"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiTopAppBar",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBar",
+                "name": "KaigiTopAppBar",
+                "origin": "PROJECT",
+                "jvmName": "KaigiTopAppBar-X-z6DiA",
+                "descriptor": "(Ljava/lang/String;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;JJLandroidx/compose/foundation/layout/WindowInsets;Landroidx/compose/material3/TopAppBarScrollBehavior;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "title",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "navigationIcon",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "containerColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "windowInsets",
+                    "type": "WindowInsets",
+                    "typeFqn": "androidx.compose.foundation.layout.WindowInsets",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "scrollBehavior",
+                    "type": "TopAppBarScrollBehavior?",
+                    "typeFqn": "androidx.compose.material3.TopAppBarScrollBehavior",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "actions",
+                    "type": "RowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "navigationIcon",
+                    "required": false,
+                    "receiverScope": null
+                },
+                {
+                    "name": "actions",
+                    "required": false,
+                    "receiverScope": "androidx.compose.foundation.layout.RowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBarKt.KaigiTopAppBarPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "KaigiTopAppBar(title = \"\")",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.KaigiTopAppBar"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.LanguageChipKt.LanguageChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.LanguageChipKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.LanguageChip",
+                "name": "LanguageChip",
+                "origin": "PROJECT",
+                "jvmName": "LanguageChip",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Language;ILandroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanguageChip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "language",
+                    "type": "Language",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Language",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanguageChipKt.LanguageChipPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `language: Language`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.LanguageToggleButtonKt.LanguageToggleButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.LanguageToggleButtonKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.LanguageToggleButton",
+                "name": "LanguageToggleButton",
+                "origin": "PROJECT",
+                "jvmName": "LanguageToggleButton",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/DisplayLanguage;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanguageToggleButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "language",
+                    "type": "DisplayLanguage",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.DisplayLanguage",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanguageToggleButtonKt.LanguageToggleButtonPreview",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanguageToggleButtonKt.LanguageToggleButtonPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanguageToggleButtonKt.LanguageToggleButtonPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `language: DisplayLanguage`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.LanternKt.Lantern",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.LanternKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.Lantern",
+                "name": "Lantern",
+                "origin": "PROJECT",
+                "jvmName": "Lantern",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/ui/LanternStyle;Landroidx/compose/ui/Modifier;FLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Lantern.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "style",
+                    "type": "LanternStyle",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.LanternStyle",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "litProgress",
+                    "type": "Float",
+                    "typeFqn": "kotlin.Float",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanternKt.LanternPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `style: LanternStyle`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.LanternLoadingFallbackKt.LanternLoadingFallback",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.LanternLoadingFallbackKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.LanternLoadingFallback",
+                "name": "LanternLoadingFallback",
+                "origin": "PROJECT",
+                "jvmName": "LanternLoadingFallback",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/LanternLoadingFallback.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanternLoadingFallbackKt.LanternLoadingFallbackPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.LanternLoadingFallbackKt.LanternLoadingFallbackPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "LanternLoadingFallback()",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.LanternLoadingFallback"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButtonKt.ListDetailSceneAwareBackButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButtonKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButton",
+                "name": "ListDetailSceneAwareBackButton",
+                "origin": "PROJECT",
+                "jvmName": "ListDetailSceneAwareBackButton",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/ListDetailSceneAwareBackButton.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButtonKt.ListDetailSceneAwareBackButtonPreview",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButtonKt.ListDetailSceneAwareBackButtonPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButtonKt.ListDetailSceneAwareBackButtonPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "ListDetailSceneAwareBackButton(onClick = {})",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.ListDetailSceneAwareBackButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.RoomChipKt.RoomChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.RoomChipKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.RoomChip",
+                "name": "RoomChip",
+                "origin": "PROJECT",
+                "jvmName": "RoomChip",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Room;ILandroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/RoomChip.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "room",
+                    "type": "Room",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Room",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.RoomChipKt.RoomChipPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.RoomChipKt.RoomChipPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `room: Room`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.SketchCardKt.SketchCard",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.SketchCardKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.SketchCard",
+                "name": "SketchCard",
+                "origin": "PROJECT",
+                "jvmName": "SketchCard-t6yy7ic",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Lio/github/droidkaigi/confsched/core/ui/SketchRoundRectShape;JJLkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/SketchCard.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shape",
+                    "type": "SketchRoundRectShape",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.SketchRoundRectShape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "borderColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.SketchCardKt.SketchCardPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "SketchCard()",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.SketchCard"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.SketchMarkedTextKt.SketchMarkedText",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.SketchMarkedTextKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.SketchMarkedText",
+                "name": "SketchMarkedText",
+                "origin": "PROJECT",
+                "jvmName": "SketchMarkedText-BKc5_nY",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;ILandroidx/compose/ui/Modifier;Landroidx/compose/ui/text/TextStyle;JJJLandroidx/compose/ui/text/style/TextDecoration;IILandroidx/compose/runtime/Composer;III)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/SketchMarkedText.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "mark",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "style",
+                    "type": "TextStyle",
+                    "typeFqn": "androidx.compose.ui.text.TextStyle",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "markColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "markTextColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "textDecoration",
+                    "type": "TextDecoration?",
+                    "typeFqn": "androidx.compose.ui.text.style.TextDecoration",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "maxLines",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "overflow",
+                    "type": "TextOverflow",
+                    "typeFqn": "androidx.compose.ui.text.style.TextOverflow",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.SketchMarkedTextKt.SketchMarkedTextPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "SketchMarkedText(text = \"\", mark = \"\", seed = 0)",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.SketchMarkedText"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.TimetableDayHeaderKt.TimetableDayHeader",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.TimetableDayHeaderKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.TimetableDayHeader",
+                "name": "TimetableDayHeader",
+                "origin": "PROJECT",
+                "jvmName": "TimetableDayHeader",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/DroidKaigi2026Day;Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableDayHeader.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "day",
+                    "type": "DroidKaigi2026Day",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.DroidKaigi2026Day",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableDayHeaderKt.TimetableDayHeaderPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableDayHeaderKt.TimetableDayHeaderPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `day: DroidKaigi2026Day`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.TimetableLiveBadgeKt.TimetableLiveBadge",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.TimetableLiveBadgeKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.TimetableLiveBadge",
+                "name": "TimetableLiveBadge",
+                "origin": "PROJECT",
+                "jvmName": "TimetableLiveBadge",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableLiveBadge.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableLiveBadgeKt.TimetableLiveBadgePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableLiveBadgeKt.TimetableLiveBadgePreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": "TimetableLiveBadge()",
+                "imports": [
+                    "io.github.droidkaigi.confsched.core.ui.TimetableLiveBadge"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.TimetableTimeRangeKt.TimetableTimeRange",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.TimetableTimeRangeKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.TimetableTimeRange",
+                "name": "TimetableTimeRange",
+                "origin": "PROJECT",
+                "jvmName": "TimetableTimeRange",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lio/github/droidkaigi/confsched/core/ui/TimetableLineState;ILandroidx/compose/ui/Modifier;ZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/TimetableTimeRange.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "startsAt",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "endsAt",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "timeRangeState",
+                    "type": "TimetableLineState",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.ui.TimetableLineState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "seed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "liveBadgeEnabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableTimeRangeKt.TimetableTimeRangePreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.TimetableTimeRangeKt.TimetableTimeRangePreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `timeRangeState: TimetableLineState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.profilecard.MascotIconKt.MascotIcon",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.profilecard.MascotIconKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.profilecard.MascotIcon",
+                "name": "MascotIcon",
+                "origin": "PROJECT",
+                "jvmName": "MascotIcon-FNF3uiM",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Mascot;Landroidx/compose/ui/Modifier;JLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/MascotIcon.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "mascot",
+                    "type": "Mascot",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Mascot",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.MascotIconKt.MascotIconPreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `mascot: Mascot`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardBackKt.ProfileCardBack",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardBackKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardBack",
+                "name": "ProfileCardBack",
+                "origin": "PROJECT",
+                "jvmName": "ProfileCardBack",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lio/github/droidkaigi/confsched/core/model/Mascot;Lio/github/droidkaigi/confsched/core/model/Sketchiness;Lio/github/droidkaigi/confsched/core/model/PaperGrain;Lio/github/droidkaigi/confsched/core/model/Doodle;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardBack.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "nickName",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "link",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "mascot",
+                    "type": "Mascot",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Mascot",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "sketchiness",
+                    "type": "Sketchiness",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Sketchiness",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "paperGrain",
+                    "type": "PaperGrain",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.PaperGrain",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "doodle",
+                    "type": "Doodle",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Doodle",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "taped",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardBackKt.ProfileCardBackPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardBackKt.ProfileCardBackPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `mascot: Mascot`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFaceKt.ProfileCardFace",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFaceKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFace",
+                "name": "ProfileCardFace",
+                "origin": "PROJECT",
+                "jvmName": "ProfileCardFace",
+                "descriptor": "(Lio/github/droidkaigi/confsched/core/model/Sketchiness;Lio/github/droidkaigi/confsched/core/model/PaperGrain;IZZZLandroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFace.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "sketchiness",
+                    "type": "Sketchiness",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Sketchiness",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "paperGrain",
+                    "type": "PaperGrain",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.PaperGrain",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "outlineSeed",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "topStartTape",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "bottomEndTape",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "mirrored",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "BoxScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.BoxScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.BoxScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFaceKt.ProfileCardFacePreview",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `sketchiness: Sketchiness`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "ui/io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFrontKt.ProfileCardFront",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFrontKt",
+                "callable": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFront",
+                "name": "ProfileCardFront",
+                "origin": "PROJECT",
+                "jvmName": "ProfileCardFront",
+                "descriptor": "(Ljava/lang/String;Ljava/lang/String;Lio/github/droidkaigi/confsched/core/model/Mascot;Lio/github/droidkaigi/confsched/core/model/Sketchiness;Lio/github/droidkaigi/confsched/core/model/PaperGrain;Lio/github/droidkaigi/confsched/core/model/AvatarImage;Lio/github/droidkaigi/confsched/core/model/Doodle;ZLandroidx/compose/ui/Modifier;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFront.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "nickName",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "occupation",
+                    "type": "String",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "mascot",
+                    "type": "Mascot",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Mascot",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "sketchiness",
+                    "type": "Sketchiness",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Sketchiness",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "paperGrain",
+                    "type": "PaperGrain",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.PaperGrain",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "avatarImage",
+                    "type": "AvatarImage?",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.AvatarImage",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "doodle",
+                    "type": "Doodle",
+                    "typeFqn": "io.github.droidkaigi.confsched.core.model.Doodle",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "taped",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFrontKt.ProfileCardFrontPreview_en",
+                    "componentId": null
+                },
+                {
+                    "previewId": "io.github.droidkaigi.confsched.core.ui.profilecard.ProfileCardFrontKt.ProfileCardFrontPreview_ja",
+                    "componentId": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `mascot: Mascot`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        }
+    ]
+}

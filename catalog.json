@@ -151,7 +151,42 @@
       "sourceModule": ":core:ui",
       "bodyLine": 202,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiButtonPreview"
+      "sourceFunction": "KaigiButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "RowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "kaigi-icon-button",
@@ -254,7 +289,47 @@
       "sourceModule": ":core:ui",
       "bodyLine": 98,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiIconButtonPreview"
+      "sourceFunction": "KaigiIconButtonPreview",
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "size",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "kaigi-text-field",
@@ -337,7 +412,35 @@
       "sourceModule": ":core:ui",
       "bodyLine": 98,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiTextFieldPreview"
+      "sourceFunction": "KaigiTextFieldPreview",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "String"
+        },
+        {
+          "name": "onValueChange",
+          "type": "(String) -> Unit"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "keyboardOptions",
+          "type": "KeyboardOptions"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isError",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "kaigi-chip",
@@ -408,7 +511,31 @@
       "sourceModule": ":core:ui",
       "bodyLine": 87,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiChipPreview"
+      "sourceFunction": "KaigiChipPreview",
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "containerColor",
+          "type": "Color"
+        },
+        {
+          "name": "contentColor",
+          "type": "Color"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "RowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "kaigi-filter-chip",
@@ -449,7 +576,61 @@
       "sourceModule": ":core:ui",
       "bodyLine": 140,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiFilterChipPreview"
+      "sourceFunction": "KaigiFilterChipPreview",
+      "parameters": [
+        {
+          "name": "selected",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "label",
+          "type": "String"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "selectedContainerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "selectedContentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "role",
+          "type": "Role",
+          "hasDefault": true
+        },
+        {
+          "name": "trailingIcon",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "language-chip",
@@ -490,7 +671,17 @@
       "sourceModule": ":core:ui",
       "bodyLine": 27,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "LanguageChipPreview"
+      "sourceFunction": "LanguageChipPreview",
+      "parameters": [
+        {
+          "name": "language",
+          "type": "Language"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "language-toggle",
@@ -591,7 +782,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 66,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "LanguageToggleButtonPreview"
+      "sourceFunction": "LanguageToggleButtonPreview",
+      "parameters": [
+        {
+          "name": "language",
+          "type": "DisplayLanguage"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "room-chip",
@@ -677,7 +883,17 @@
       "sourceModule": ":core:ui",
       "bodyLine": 88,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "RoomChipPreview"
+      "sourceFunction": "RoomChipPreview",
+      "parameters": [
+        {
+          "name": "room",
+          "type": "Room"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "segmented-first",
@@ -717,7 +933,33 @@
       "sourceModule": ":core:ui",
       "bodyLine": 205,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiSegmentedButtonFirstSelectedPreview"
+      "sourceFunction": "KaigiSegmentedButtonFirstSelectedPreview",
+      "parameters": [
+        {
+          "name": "outlineSeed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "segmented-second",
@@ -757,7 +999,33 @@
       "sourceModule": ":core:ui",
       "bodyLine": 228,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiSegmentedButtonSecondSelectedPreview"
+      "sourceFunction": "KaigiSegmentedButtonSecondSelectedPreview",
+      "parameters": [
+        {
+          "name": "outlineSeed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "segmented-three",
@@ -797,7 +1065,33 @@
       "sourceModule": ":core:ui",
       "bodyLine": 251,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiSegmentedButtonThreeSegmentsPreview"
+      "sourceFunction": "KaigiSegmentedButtonThreeSegmentsPreview",
+      "parameters": [
+        {
+          "name": "outlineSeed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "back-button",
@@ -855,7 +1149,18 @@
       "sourceModule": ":core:ui",
       "bodyLine": 49,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ListDetailSceneAwareBackButtonPreview"
+      "sourceFunction": "ListDetailSceneAwareBackButtonPreview",
+      "parameters": [
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "navigation-bar",
@@ -957,7 +1262,23 @@
       "sourceModule": ":core:ui",
       "bodyLine": 386,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiNavigationBarPreview"
+      "sourceFunction": "KaigiNavigationBarPreview",
+      "parameters": [
+        {
+          "name": "outlineSeed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "KaigiNavigationBarScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "navigation-rail",
@@ -1059,7 +1380,23 @@
       "sourceModule": ":core:ui",
       "bodyLine": 408,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiNavigationRailPreview"
+      "sourceFunction": "KaigiNavigationRailPreview",
+      "parameters": [
+        {
+          "name": "outlineSeed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "KaigiNavigationRailScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "top-app-bar",
@@ -1140,7 +1477,50 @@
       "sourceModule": ":core:ui",
       "bodyLine": 209,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiTopAppBarPreview"
+      "sourceFunction": "KaigiTopAppBarPreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "navigationIcon",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "scrollBehavior",
+          "type": "TopAppBarScrollBehavior?",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "large-top-app-bar",
@@ -1256,7 +1636,48 @@
       "sourceModule": ":core:ui",
       "bodyLine": 226,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiLargeTopAppBarPreview"
+      "sourceFunction": "KaigiLargeTopAppBarPreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "onBackClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "containerColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "scrollBehavior",
+          "type": "TopAppBarScrollBehavior?",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "collapsing-header",
@@ -1283,7 +1704,28 @@
       "sourceModule": ":core:ui",
       "bodyLine": 136,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "CollapsingHeaderLayoutPreview"
+      "sourceFunction": "CollapsingHeaderLayoutPreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "CollapsingHeaderState"
+        },
+        {
+          "name": "headerContent",
+          "type": "() -> Unit",
+          "composableSlot": true
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "(PaddingValues) -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "timetable-item-card",
@@ -1573,7 +2015,18 @@
       "sourceModule": ":core:ui",
       "bodyLine": 51,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "TimetableDayHeaderPreview"
+      "sourceFunction": "TimetableDayHeaderPreview",
+      "parameters": [
+        {
+          "name": "day",
+          "type": "DroidKaigi2026Day"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "timetable-time-range",
@@ -1624,7 +2077,35 @@
       "sourceModule": ":core:ui",
       "bodyLine": 106,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "TimetableTimeRangePreview"
+      "sourceFunction": "TimetableTimeRangePreview",
+      "parameters": [
+        {
+          "name": "startsAt",
+          "type": "String"
+        },
+        {
+          "name": "endsAt",
+          "type": "String"
+        },
+        {
+          "name": "timeRangeState",
+          "type": "TimetableLineState"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "liveBadgeEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "timetable-live-badge",
@@ -1675,7 +2156,14 @@
       "sourceModule": ":core:ui",
       "bodyLine": 129,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "TimetableLiveBadgePreview"
+      "sourceFunction": "TimetableLiveBadgePreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "profile-card-front",
@@ -1700,7 +2188,46 @@
       "sourceModule": ":core:ui",
       "bodyLine": 411,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ProfileCardFrontPreview"
+      "sourceFunction": "ProfileCardFrontPreview",
+      "parameters": [
+        {
+          "name": "nickName",
+          "type": "String"
+        },
+        {
+          "name": "occupation",
+          "type": "String"
+        },
+        {
+          "name": "mascot",
+          "type": "Mascot"
+        },
+        {
+          "name": "sketchiness",
+          "type": "Sketchiness"
+        },
+        {
+          "name": "paperGrain",
+          "type": "PaperGrain"
+        },
+        {
+          "name": "avatarImage",
+          "type": "AvatarImage?"
+        },
+        {
+          "name": "doodle",
+          "type": "Doodle"
+        },
+        {
+          "name": "taped",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "profile-card-back",
@@ -1755,7 +2282,42 @@
       "sourceModule": ":core:ui",
       "bodyLine": 425,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ProfileCardBackPreview"
+      "sourceFunction": "ProfileCardBackPreview",
+      "parameters": [
+        {
+          "name": "nickName",
+          "type": "String"
+        },
+        {
+          "name": "link",
+          "type": "String"
+        },
+        {
+          "name": "mascot",
+          "type": "Mascot"
+        },
+        {
+          "name": "sketchiness",
+          "type": "Sketchiness"
+        },
+        {
+          "name": "paperGrain",
+          "type": "PaperGrain"
+        },
+        {
+          "name": "doodle",
+          "type": "Doodle"
+        },
+        {
+          "name": "taped",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "profile-card-face",
@@ -1780,7 +2342,43 @@
       "sourceModule": ":core:ui",
       "bodyLine": 381,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ProfileCardFacePreview"
+      "sourceFunction": "ProfileCardFacePreview",
+      "parameters": [
+        {
+          "name": "sketchiness",
+          "type": "Sketchiness"
+        },
+        {
+          "name": "paperGrain",
+          "type": "PaperGrain"
+        },
+        {
+          "name": "outlineSeed",
+          "type": "Int"
+        },
+        {
+          "name": "topStartTape",
+          "type": "Boolean"
+        },
+        {
+          "name": "bottomEndTape",
+          "type": "Boolean"
+        },
+        {
+          "name": "mirrored",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "BoxScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "mascot-icon",
@@ -1891,7 +2489,23 @@
       "sourceModule": ":core:ui",
       "bodyLine": 60,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "MascotIconPreview"
+      "sourceFunction": "MascotIconPreview",
+      "parameters": [
+        {
+          "name": "mascot",
+          "type": "Mascot"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "filled-mascot-image",
@@ -1917,7 +2531,30 @@
       "sourceModule": ":core:ui",
       "bodyLine": 93,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "FilledMascotImagePreview"
+      "sourceFunction": "FilledMascotImagePreview",
+      "parameters": [
+        {
+          "name": "mascot",
+          "type": "Mascot"
+        },
+        {
+          "name": "height",
+          "type": "Dp"
+        },
+        {
+          "name": "bodyColor",
+          "type": "Color"
+        },
+        {
+          "name": "lineColor",
+          "type": "Color"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "kaigi-avatar",
@@ -2141,7 +2778,35 @@
       "sourceModule": ":core:ui",
       "bodyLine": 48,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "SketchCardPreview"
+      "sourceFunction": "SketchCardPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "shape",
+          "type": "SketchRoundRectShape",
+          "hasDefault": true
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "sketch-shape",
@@ -2262,7 +2927,61 @@
       "sourceModule": ":core:ui",
       "bodyLine": 392,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "SketchMarkedTextPreview"
+      "sourceFunction": "SketchMarkedTextPreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "mark",
+          "type": "String"
+        },
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "markColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "markTextColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "textDecoration",
+          "type": "TextDecoration?",
+          "hasDefault": true
+        },
+        {
+          "name": "maxLines",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "overflow",
+          "type": "TextOverflow",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "sketch-resize",
@@ -2630,7 +3349,23 @@
       "sourceModule": ":core:ui",
       "bodyLine": 286,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "LanternPreview"
+      "sourceFunction": "LanternPreview",
+      "parameters": [
+        {
+          "name": "style",
+          "type": "LanternStyle"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "litProgress",
+          "type": "Float",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-canvas",
@@ -2716,7 +3451,71 @@
       "sourceModule": ":core:ui",
       "bodyLine": 301,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleCanvasViewPreview"
+      "sourceFunction": "DoodleCanvasViewPreview",
+      "parameters": [
+        {
+          "name": "doodle",
+          "type": "Doodle"
+        },
+        {
+          "name": "referenceSize",
+          "type": "DpSize"
+        },
+        {
+          "name": "maxScale",
+          "type": "Float"
+        },
+        {
+          "name": "origin",
+          "type": "DoodleOrigin"
+        },
+        {
+          "name": "palette",
+          "type": "DoodleInkPalette"
+        },
+        {
+          "name": "penSize",
+          "type": "DoodlePenSize"
+        },
+        {
+          "name": "selectedInk",
+          "type": "DoodleInk"
+        },
+        {
+          "name": "outlined",
+          "type": "Boolean"
+        },
+        {
+          "name": "onStrokeAdd",
+          "type": "(DoodleStroke) -> Unit"
+        },
+        {
+          "name": "onGestureActiveChange",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "transform",
+          "type": "DoodleCanvasTransform",
+          "hasDefault": true
+        },
+        {
+          "name": "background",
+          "type": "BoxScope.(Float) -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        },
+        {
+          "name": "overlay",
+          "type": "BoxScope.(Float) -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "doodle-canvas-magnified",
@@ -2828,7 +3627,30 @@
       "sourceModule": ":core:ui",
       "bodyLine": 107,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleLayerViewPreview"
+      "sourceFunction": "DoodleLayerViewPreview",
+      "parameters": [
+        {
+          "name": "doodle",
+          "type": "Doodle"
+        },
+        {
+          "name": "palette",
+          "type": "DoodleInkPalette"
+        },
+        {
+          "name": "origin",
+          "type": "DoodleOrigin"
+        },
+        {
+          "name": "scale",
+          "type": "Float"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-ink-row",
@@ -2853,7 +3675,30 @@
       "sourceModule": ":core:ui",
       "bodyLine": 150,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleInkRowPreview"
+      "sourceFunction": "DoodleInkRowPreview",
+      "parameters": [
+        {
+          "name": "selectedInk",
+          "type": "DoodleInk"
+        },
+        {
+          "name": "palette",
+          "type": "DoodleInkPalette"
+        },
+        {
+          "name": "surface",
+          "type": "DoodleInkRowSurface"
+        },
+        {
+          "name": "onInkClick",
+          "type": "(DoodleInk) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-ink-row-selected",
@@ -2903,7 +3748,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 63,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodlePenSizeRowPreview"
+      "sourceFunction": "DoodlePenSizeRowPreview",
+      "parameters": [
+        {
+          "name": "selectedPenSize",
+          "type": "DoodlePenSize"
+        },
+        {
+          "name": "onPenSizeClick",
+          "type": "(DoodlePenSize) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-pen-size-thick",
@@ -2928,7 +3788,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 73,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodlePenSizeRowThickSelectedPreview"
+      "sourceFunction": "DoodlePenSizeRowThickSelectedPreview",
+      "parameters": [
+        {
+          "name": "selectedPenSize",
+          "type": "DoodlePenSize"
+        },
+        {
+          "name": "onPenSizeClick",
+          "type": "(DoodlePenSize) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-stroke-controls",
@@ -3027,7 +3902,26 @@
       "sourceModule": ":core:ui",
       "bodyLine": 61,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleStrokeControlsRowPreview"
+      "sourceFunction": "DoodleStrokeControlsRowPreview",
+      "parameters": [
+        {
+          "name": "canEdit",
+          "type": "Boolean"
+        },
+        {
+          "name": "onUndoClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onClearClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-stroke-controls-idle",
@@ -3126,7 +4020,26 @@
       "sourceModule": ":core:ui",
       "bodyLine": 76,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleStrokeControlsRowIdlePreview"
+      "sourceFunction": "DoodleStrokeControlsRowIdlePreview",
+      "parameters": [
+        {
+          "name": "canEdit",
+          "type": "Boolean"
+        },
+        {
+          "name": "onUndoClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onClearClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-outline-toggle",
@@ -3189,7 +4102,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 41,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleOutlineTogglePreview"
+      "sourceFunction": "DoodleOutlineTogglePreview",
+      "parameters": [
+        {
+          "name": "outlined",
+          "type": "Boolean"
+        },
+        {
+          "name": "onOutlinedChange",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-outline-toggle-off",
@@ -3252,7 +4180,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 57,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleOutlineToggleOffPreview"
+      "sourceFunction": "DoodleOutlineToggleOffPreview",
+      "parameters": [
+        {
+          "name": "outlined",
+          "type": "Boolean"
+        },
+        {
+          "name": "onOutlinedChange",
+          "type": "(Boolean) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-flip-button",
@@ -3299,7 +4242,26 @@
       "sourceModule": ":core:ui",
       "bodyLine": 52,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleFlipButtonPreview"
+      "sourceFunction": "DoodleFlipButtonPreview",
+      "parameters": [
+        {
+          "name": "isShowingBack",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-flip-button-back",
@@ -3346,7 +4308,26 @@
       "sourceModule": ":core:ui",
       "bodyLine": 62,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleFlipButtonShowingBackPreview"
+      "sourceFunction": "DoodleFlipButtonShowingBackPreview",
+      "parameters": [
+        {
+          "name": "isShowingBack",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-zoom-controls",
@@ -3448,7 +4429,30 @@
       "sourceModule": ":core:ui",
       "bodyLine": 77,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleZoomControlsViewPreview"
+      "sourceFunction": "DoodleZoomControlsViewPreview",
+      "parameters": [
+        {
+          "name": "zoom",
+          "type": "Float"
+        },
+        {
+          "name": "onZoomInClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onZoomOutClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onResetClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "doodle-zoom-actual-size",
@@ -3550,7 +4554,30 @@
       "sourceModule": ":core:ui",
       "bodyLine": 98,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "DoodleZoomControlsViewActualSizePreview"
+      "sourceFunction": "DoodleZoomControlsViewActualSizePreview",
+      "parameters": [
+        {
+          "name": "zoom",
+          "type": "Float"
+        },
+        {
+          "name": "onZoomInClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onZoomOutClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onResetClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "error-fallback-rain",
@@ -3628,7 +4655,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 142,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ErrorFallbackRainPreview"
+      "sourceFunction": "ErrorFallbackRainPreview",
+      "parameters": [
+        {
+          "name": "reset",
+          "type": "(() -> Unit)?"
+        },
+        {
+          "name": "scene",
+          "type": "ErrorScene"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "error-fallback-cable",
@@ -3706,7 +4748,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 129,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ErrorFallbackUnpluggedCablePreview"
+      "sourceFunction": "ErrorFallbackUnpluggedCablePreview",
+      "parameters": [
+        {
+          "name": "reset",
+          "type": "(() -> Unit)?"
+        },
+        {
+          "name": "scene",
+          "type": "ErrorScene"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "error-fallback-backstage",
@@ -3784,7 +4841,22 @@
       "sourceModule": ":core:ui",
       "bodyLine": 155,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "ErrorFallbackBackstagePreview"
+      "sourceFunction": "ErrorFallbackBackstagePreview",
+      "parameters": [
+        {
+          "name": "reset",
+          "type": "(() -> Unit)?"
+        },
+        {
+          "name": "scene",
+          "type": "ErrorScene"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "lantern-loading",
@@ -3809,11 +4881,18 @@
       "sourceModule": ":core:ui",
       "bodyLine": 132,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "LanternLoadingFallbackPreview"
+      "sourceFunction": "LanternLoadingFallbackPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     }
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T08:51:28.470Z",
+  "renderer": "compose-preview 2.1.1",
+  "generatedAt": "2026-09-07T09:38:47.548Z",
   "display": {
     "hero": "profile-card-front"
   },
@@ -3829,9 +4908,10 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "DroidKaigi/conference-app-2026",
-    "ref": "a1f71794e78c3c25e386ef48cbcabd336a0fb4d7",
+    "ref": "300a81bc575598c37b06814ed9e81099c162b9e5",
     "module": ":core:ui"
   }
 }
