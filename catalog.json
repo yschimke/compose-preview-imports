@@ -696,7 +696,36 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 34,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "CircleButtonPreview"
+      "sourceFunction": "CircleButtonPreview",
+      "parameters": [
+        {
+          "name": "size",
+          "type": "Dp"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "RowScope.() -> Unit",
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Buttons/Circle icon button",
@@ -1026,13 +1055,26 @@
       "sourceFunction": "TimePlayButtonPreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "timeSecs",
+          "type": "Int"
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
+          "name": "contentDescriptionId",
+          "type": "Int"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "TimePlayButtonColors",
+          "hasDefault": true
         }
       ]
     },
@@ -1360,13 +1402,58 @@
       "sourceFunction": "SearchBarPreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "state",
+          "type": "TextFieldState"
         },
         {
-          "name": "content",
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "placeholder",
+          "type": "String",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "SearchBarStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "TextFieldColors",
+          "hasDefault": true
+        },
+        {
+          "name": "lineLimits",
+          "type": "TextFieldLineLimits",
+          "hasDefault": true
+        },
+        {
+          "name": "keyboardOptions",
+          "type": "KeyboardOptions",
+          "hasDefault": true
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "onClickClear",
           "type": "() -> Unit",
-          "composableSlot": true
+          "hasDefault": true
+        },
+        {
+          "name": "onSearch",
+          "type": "() -> Unit",
+          "hasDefault": true
         }
       ]
     },
@@ -1553,13 +1640,42 @@
       "sourceFunction": "SegmentedTabBarPreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "items",
+          "type": "List<String>"
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
+          "name": "onSelectItem",
+          "type": "(Int) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "selectedIndex",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "colors",
+          "type": "SegmentedTabBarColors",
+          "hasDefault": true
+        },
+        {
+          "name": "cornerRadius",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "border",
+          "type": "BorderStroke",
+          "hasDefault": true
+        },
+        {
+          "name": "textStyle",
+          "type": "TextStyle",
+          "hasDefault": true
         }
       ]
     },
@@ -2156,7 +2272,22 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 70,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "ColorPickerDarkPreview"
+      "sourceFunction": "ColorPickerDarkPreview",
+      "parameters": [
+        {
+          "name": "selectedId",
+          "type": "Int"
+        },
+        {
+          "name": "onClick",
+          "type": "(Int) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Content/Text styles",
@@ -2485,7 +2616,98 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 180,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "AutoResizePreview"
+      "sourceFunction": "AutoResizePreview",
+      "parameters": [
+        {
+          "name": "text",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "acceptableError",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "maxFontSize",
+          "type": "TextUnit",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "fontStyle",
+          "type": "FontStyle?",
+          "hasDefault": true
+        },
+        {
+          "name": "fontWeight",
+          "type": "FontWeight?",
+          "hasDefault": true
+        },
+        {
+          "name": "fontFamily",
+          "type": "FontFamily?",
+          "hasDefault": true
+        },
+        {
+          "name": "letterSpacing",
+          "type": "TextUnit",
+          "hasDefault": true
+        },
+        {
+          "name": "textDecoration",
+          "type": "TextDecoration?",
+          "hasDefault": true
+        },
+        {
+          "name": "textAlign",
+          "type": "TextAlign",
+          "hasDefault": true
+        },
+        {
+          "name": "contentAlignment",
+          "type": "Alignment?",
+          "hasDefault": true
+        },
+        {
+          "name": "lineHeight",
+          "type": "TextUnit",
+          "hasDefault": true
+        },
+        {
+          "name": "maxLines",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "onTextLayout",
+          "type": "(TextLayoutResult) -> Unit",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "TextStyle",
+          "hasDefault": true
+        },
+        {
+          "name": "heightFactor",
+          "type": "Float?",
+          "hasDefault": true
+        },
+        {
+          "name": "isFocusable",
+          "type": "Boolean",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Content/Podcast selected text",
@@ -2563,7 +2785,23 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 37,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "PodcastSelectedTextEnglishPreview"
+      "sourceFunction": "PodcastSelectedTextEnglishPreview",
+      "parameters": [
+        {
+          "name": "count",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Content/Playlist artwork",
@@ -2898,13 +3136,33 @@
       "sourceFunction": "ListPodcastSubscribeRowPreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "uuid",
+          "type": "String"
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "author",
+          "type": "String"
+        },
+        {
+          "name": "subscribed",
+          "type": "Boolean"
+        },
+        {
+          "name": "onRowClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onSubscribeClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
         }
       ]
     },
@@ -2997,7 +3255,38 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 105,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "PodcastSelectListPreview"
+      "sourceFunction": "PodcastSelectListPreview",
+      "parameters": [
+        {
+          "name": "podcasts",
+          "type": "List<Podcast>"
+        },
+        {
+          "name": "selectedPodcasts",
+          "type": "Set<Podcast>"
+        },
+        {
+          "name": "onSelectPodcast",
+          "type": "(Podcast) -> Unit"
+        },
+        {
+          "name": "onDeselectPodcast",
+          "type": "(Podcast) -> Unit"
+        },
+        {
+          "name": "onSelectAll",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onSelectNone",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Content/Bookmark row",
@@ -3108,10 +3397,10 @@
           "bounds": {
             "x": 42,
             "y": 104,
-            "width": 222,
+            "width": 241,
             "height": 37
           },
-          "label": "Sep 6, 9:58 AM",
+          "label": "Sep 8, 10:11 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3134,10 +3423,10 @@
           "bounds": {
             "x": 147,
             "y": 287,
-            "width": 222,
+            "width": 241,
             "height": 37
           },
-          "label": "Sep 6, 9:58 AM",
+          "label": "Sep 8, 10:11 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3160,10 +3449,10 @@
           "bounds": {
             "x": 147,
             "y": 470,
-            "width": 222,
+            "width": 241,
             "height": 37
           },
-          "label": "Sep 6, 9:58 AM",
+          "label": "Sep 8, 10:11 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3316,7 +3605,63 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 154,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "BannerPreview"
+      "sourceFunction": "BannerPreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "description",
+          "type": "String"
+        },
+        {
+          "name": "actionLabel",
+          "type": "String"
+        },
+        {
+          "name": "icon",
+          "type": "Painter"
+        },
+        {
+          "name": "onActionClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onDismiss",
+          "type": "(() -> Unit)?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "titleColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "descriptionColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "actionLabelColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconTint",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Feedback/No content banner",
@@ -3620,7 +3965,30 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 375,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "SimpleDialogPreview"
+      "sourceFunction": "SimpleDialogPreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String"
+        },
+        {
+          "name": "body",
+          "type": "String"
+        },
+        {
+          "name": "buttonProperties",
+          "type": "List<DialogButtonProperties>"
+        },
+        {
+          "name": "onDismissRequest",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "properties",
+          "type": "DialogProperties",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Feedback/Tooltip",
@@ -3744,13 +4112,14 @@
       "sourceFunction": "SparkleImagePreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
+          "name": "gradientColors",
+          "type": "Pair<Color, Color>",
+          "hasDefault": true
         }
       ]
     },
@@ -3863,7 +4232,70 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 207,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "ThemedTopAppBarPreview"
+      "sourceFunction": "ThemedTopAppBarPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "title",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "navigationButton",
+          "type": "NavigationButton?",
+          "hasDefault": true
+        },
+        {
+          "name": "onNavigationClick",
+          "type": "(() -> Unit)?",
+          "hasDefault": true
+        },
+        {
+          "name": "style",
+          "type": "Style",
+          "hasDefault": true
+        },
+        {
+          "name": "iconColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "textColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "backgroundColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "bottomShadow",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "titleOverflow",
+          "type": "TextOverflow",
+          "hasDefault": true
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "hasDefault": true
+        },
+        {
+          "name": "actions",
+          "type": "RowScope.(Color) -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Chrome/Bottom sheet app bar",
@@ -4091,7 +4523,22 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 189,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "BottomSheetContentPreview"
+      "sourceFunction": "BottomSheetContentPreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "BottomSheetContentState"
+        },
+        {
+          "name": "onDismiss",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Chrome/Pager dot indicator",
@@ -4566,12 +5013,70 @@
       "sourceFunction": "MenuActionRearrangePreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "chooseCount",
+          "type": "Int"
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
+          "name": "otherActionsTitle",
+          "type": "String"
+        },
+        {
+          "name": "menuActions",
+          "type": "List<MenuAction>"
+        },
+        {
+          "name": "onChangeOrder",
+          "type": "(List<MenuAction>) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "actionsTitle",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "enabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "contentPadding",
+          "type": "PaddingValues",
+          "hasDefault": true
+        },
+        {
+          "name": "hoverColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "textColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "titleTextColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "iconColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "onMoveAction",
+          "type": "(Int, Int, MenuAction) -> Unit",
+          "hasDefault": true
+        },
+        {
+          "name": "header",
+          "type": "(() -> Unit)?",
+          "hasDefault": true,
           "composableSlot": true
         }
       ]
@@ -4857,7 +5362,40 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 330,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "SettingSectionPreview"
+      "sourceFunction": "SettingSectionPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "heading",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "subHeading",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "indent",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "showDivider",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": true,
+          "composableSlot": true
+        }
+      ]
     },
     {
       "componentId": "Settings/Setting info row",
@@ -4887,13 +5425,18 @@
       "sourceFunction": "SettingInfoRowPreview",
       "parameters": [
         {
-          "name": "themeType",
-          "type": "ThemeType"
+          "name": "text",
+          "type": "String"
         },
         {
-          "name": "content",
-          "type": "() -> Unit",
-          "composableSlot": true
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "indent",
+          "type": "Boolean",
+          "hasDefault": true
         }
       ]
     },
@@ -4966,7 +5509,37 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 254,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "UserAvatarThemePreview"
+      "sourceFunction": "UserAvatarThemePreview",
+      "parameters": [
+        {
+          "name": "imageUrl",
+          "type": "String?"
+        },
+        {
+          "name": "subscriptionTier",
+          "type": "SubscriptionTier?"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "borderCompletion",
+          "type": "Float",
+          "hasDefault": true
+        },
+        {
+          "name": "showBadge",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "config",
+          "type": "UserAvatarConfig",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Identity/Subscription badge",
@@ -5159,7 +5732,14 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 33,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "HorizontalLogoDarkPreview"
+      "sourceFunction": "HorizontalLogoDarkPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Identity/Vertical logo",
@@ -5218,7 +5798,14 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 35,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "VerticalLogoDarkPreview"
+      "sourceFunction": "VerticalLogoDarkPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Identity/Pocket Casts pill",
@@ -5951,7 +6538,22 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 104,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "AdReportReasonsColumnPreview"
+      "sourceFunction": "AdReportReasonsColumnPreview",
+      "parameters": [
+        {
+          "name": "colors",
+          "type": "ReportSheet"
+        },
+        {
+          "name": "onReportAd",
+          "type": "(AdReportReason) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Ads/Ad report content",
@@ -6079,7 +6681,26 @@
       "sourceModule": ":modules:services:compose",
       "bodyLine": 73,
       "sourceDirectory": "modules/services/compose",
-      "sourceFunction": "AdReportContentPreview"
+      "sourceFunction": "AdReportContentPreview",
+      "parameters": [
+        {
+          "name": "colors",
+          "type": "ReportSheet"
+        },
+        {
+          "name": "onClickRemoveAds",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "onReportAd",
+          "type": "(AdReportReason) -> Unit"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "Insights/Calendar heat map",
@@ -6340,8 +6961,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 1.84.0",
-  "generatedAt": "2026-09-06T09:59:22.213Z",
+  "renderer": "compose-preview 2.3.0",
+  "generatedAt": "2026-09-08T10:12:41.672Z",
   "display": {
     "surface": "light",
     "hero": "Insights/Calendar heat map"
@@ -6358,9 +6979,10 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "78bdce4c29620e0c6ebe797236787ce7acaea9cf",
+    "ref": "ae015b9ab9ad0050186c7bffe425c8c143d6b58e",
     "module": ":modules:services:compose"
   }
 }
