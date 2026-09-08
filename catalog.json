@@ -8971,8 +8971,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 2.1.1",
-  "generatedAt": "2026-09-07T10:13:45.402Z",
+  "renderer": "compose-preview 2.3.0",
+  "generatedAt": "2026-09-08T09:39:55.756Z",
   "display": {
     "hero": "talk-card-live"
   },
@@ -8991,7 +8991,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "JetBrains/kotlinconf-app",
-    "ref": "7011707b0a2d6c7ceacc44e467ae21524c7db26e",
+    "ref": "fec39d446cbdaa9693ee0c7f0af3fda120224d38",
     "module": ":app:ui-components"
   }
 }
