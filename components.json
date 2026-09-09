@@ -127,7 +127,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.complications.views.ComplicationConfigMainViewKt.PreviewMainConfigView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -142,6 +143,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -191,7 +193,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.conversation.views.ConversationViewKt.PreviewSpeechBubble_wearos_small_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -208,6 +211,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -322,15 +326,18 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt.PreviewDetailsPaneViewEntityFanOn_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt.PreviewDetailsPaneViewEntityLightOff_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.DetailsPanelViewKt.PreviewDetailsPaneViewEntityLightOn_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -345,6 +352,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -459,19 +467,23 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.EntityListViewPreviewsTest.PreviewEntityListView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.EntityListViewKt.PreviewEntityListEmpty_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.EntityListViewKt.PreviewEntityListScenes_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.EntityListViewKt.PreviewEntityListView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -486,6 +498,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -574,7 +587,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.EntityUiKt.PreviewEntityUI_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -589,6 +603,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -638,7 +653,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.RefreshIntervalPickerViewKt.PreviewRefreshIntervalPickerView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -655,6 +671,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -704,11 +721,13 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectCameraTileViewKt.PreviewSelectCameraTileViewEmpty_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectCameraTileViewKt.PreviewSelectCameraTileViewOne_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -723,6 +742,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -798,11 +818,13 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectShortcutsTileViewKt.PreviewSelectShortcutsTileEmptyView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectShortcutsTileViewKt.PreviewSelectShortcutsTileView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -817,6 +839,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -866,11 +889,13 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectTemplateTileViewKt.PreviewSelectTemplateTileEmptyView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectTemplateTileViewKt.PreviewSelectTemplateTileView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -885,6 +910,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -934,11 +960,13 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectThermostatTileViewKt.PreviewSelectThermostatTileViewEmpty_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SelectThermostatTileViewKt.PreviewSelectThermostatTileViewOne_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -953,6 +981,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1028,7 +1057,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SensorManagerUiKt.PreviewSensorManagerUI_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1043,6 +1073,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1092,7 +1123,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SensorsViewKt.PreviewSensorsView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1107,6 +1139,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1156,7 +1189,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SetShortcutsTileViewKt.PreviewSetTileShortcutsView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1171,6 +1205,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1454,7 +1489,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SettingsViewKt.PreviewSettingsView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1469,6 +1505,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1531,7 +1568,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.TemplateTileSettingsViewKt.PreviewTemplateTileSettingView_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1548,6 +1586,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1584,7 +1623,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.TimeTextKt.PreviewTimeText_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1599,6 +1639,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1661,7 +1702,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.onboarding.phoneinstall.PhoneInstallViewKt.PhoneInstallViewPreview_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1678,6 +1720,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1779,11 +1822,13 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.views.ChooseEntityViewKt.ChooseEntityViewEmptyPreview_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.views.ChooseEntityViewKt.ChooseEntityViewWithDataPreview_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1798,6 +1843,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1860,7 +1906,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.views.ExpandableListHeaderKt.PreviewExpandableListHeader",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1877,6 +1924,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1926,7 +1974,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.views.ListHeaderKt.PreviewListHeader",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1943,6 +1992,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1992,7 +2042,8 @@
             "bindings": [
                 {
                     "previewId": "io.homeassistant.companion.android.home.views.SensorUiKt.PreviewSensorUI_wearos_large_round",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2009,8 +2060,10 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         }
-    ]
+    ],
+    "builderOrphans": []
 }
