@@ -133,47 +133,58 @@
             "bindings": [
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CO2TrendSparklinePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.ColorSchemeDarkPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.ColorSchemeLightPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowSelectedPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowUnrankedPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.EmptyStatePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.EmptyStateWithMessagePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.KeyFiguresRowPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.KeyFiguresRowRisingPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.TypographySpecimenPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -190,8 +201,10 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         }
-    ]
+    ],
+    "builderOrphans": []
 }
