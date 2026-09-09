@@ -3400,7 +3400,7 @@
             "width": 241,
             "height": 37
           },
-          "label": "Sep 8, 10:11 AM",
+          "label": "Sep 9, 10:16 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3426,7 +3426,7 @@
             "width": 241,
             "height": 37
           },
-          "label": "Sep 8, 10:11 AM",
+          "label": "Sep 9, 10:16 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3452,7 +3452,7 @@
             "width": 241,
             "height": 37
           },
-          "label": "Sep 8, 10:11 AM",
+          "label": "Sep 9, 10:16 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -6961,8 +6961,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 2.3.0",
-  "generatedAt": "2026-09-08T10:12:41.672Z",
+  "renderer": "compose-preview 2.4.1",
+  "generatedAt": "2026-09-09T10:18:13.267Z",
   "display": {
     "surface": "light",
     "hero": "Insights/Calendar heat map"
@@ -6982,7 +6982,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "ae015b9ab9ad0050186c7bffe425c8c143d6b58e",
+    "ref": "7abb921dbe591d1677f76771857f110ad8828d55",
     "module": ":modules:services:compose"
   }
 }

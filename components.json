@@ -55,275 +55,343 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.BottomSheetAppBarKt.BottomSheetAppBarBackPreview_Back",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.BottomSheetAppBarKt.BottomSheetAppBarDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.BottomSheetAppBarKt.BottomSheetAppBarLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bookmark.BookmarkRowKt.BookmarkRowNormalPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bookmark.HeaderRowKt.HeaderRowPlayerPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CloseButtonKt.CloseButtonDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CloseButtonKt.CloseButtonLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonDisabledPreview_Disabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonNoPaddingPreview_No_padding",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowButtonKt.RowButtonTextIconPreview_Text_icon",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowCloseButtonKt.RowCloseButtonDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowCloseButtonKt.RowCloseButtonLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonDisabledPreview_Disabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonNoPaddingPreview_No_padding",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowLoadingButtonKt.RowLoadingButtonTextIconPreview_Text_icon",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButtonKt.RowOutlinedButtonDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButtonKt.RowOutlinedButtonLeadingIconPreview_Leading_icon",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowOutlinedButtonKt.RowOutlinedButtonLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowTextButtonKt.RowTextButtonDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.RowTextButtonKt.RowTextButtonLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.EmailAndPasswordFieldsKt.UserPasswordFieldsDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.EmailAndPasswordFieldsKt.UserPasswordFieldsLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.GradientIconKt.GradientIconDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.GradientIconKt.GradientIconLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.GradientIconKt.GradientIconWithBrushPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerWithoutPrimaryButtonPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerWithoutSecondaryButtonPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerWithoutSubtitlePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SelectedOptionColumnKt.SelectOptionColumnPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SelectedOptionColumnKt.SelectOptionColumnWithoutTitlePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowCheckboxPreview_Checkbox",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowIconGradientPreview_Icon__Gradient_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowIconMaterialPreview_Icon__Material_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowIconProjectPreview_Icon__Project_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingRowSwitchPreview_Switch",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingSectionDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingSectionLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TextStylesKt.TextStylesDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TextStylesKt.TextStylesLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TooltipKt.TooltipThemePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.TooltipKt.TooltipTipPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.folder.FolderImageKt.FolderImageDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.folder.FolderImageKt.FolderImageLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredDarkDarkThemePreview_ColoredDark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredDarkLightThemePreview_ColoredDark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredDarkThemePreview_Colored",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredLightThemePreview_Colored",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredDarkDarkThemePreview_ColoredDark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredDarkLightThemePreview_Colored",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredDarkThemePreview_Colored",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredLightThemePreview_Colored",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.loading.LoadingViewKt.BookmarkRowDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.loading.LoadingViewKt.BookmarkRowLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.podcast.PodcastSubscribeImageKt.PodcastSelectImagePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreviewFont150Percent_fs1.5",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreviewFont200Percent_fs2.0",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.stats.CalendarHeatMapKt.CalendarHeatMapPreviewLocale",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.summary.SummaryPaywallKt.SummaryPaywallFreeTrialPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.text.HtmlTextKt.HtmlTextDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.text.HtmlTextKt.HtmlTextLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -338,6 +406,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -360,27 +429,33 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerFontSizePreview_fs2.0",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerPodcastPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdBannerKt.AdBannerThemePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdDecisionsColumnKt.AdDecisionsColumnPodcastPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdDecisionsColumnKt.AdDecisionsColumnThemePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdReportReasonsColumnKt.AdReportReasonsColumnPodcastPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -397,6 +472,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -472,7 +548,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdReportContentKt.AdReportContentPreview_width_800px_height_1600px_dpi_320",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -487,6 +564,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -549,7 +627,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.ad.AdReportReasonsColumnKt.AdReportReasonsColumnPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -564,6 +643,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -749,7 +829,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bars.ThemedTopAppBarKt.ThemedTopAppBarPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -766,6 +847,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -828,7 +910,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.bottomsheet.BottomSheetContentKt.BottomSheetContentPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -843,6 +926,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -879,11 +963,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.ButtonTabsKt.ButtonTabsDarkPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.ButtonTabsKt.ButtonTabsLightPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -898,6 +984,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1005,7 +1092,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.CircleButtonKt.CircleButtonPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1020,6 +1108,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1134,7 +1223,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.GradientRowButtonKt.GradientRowButtonPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1149,6 +1239,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1237,7 +1328,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.buttons.TimePlayButtonKt.TimePlayButtonPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1254,6 +1346,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1381,7 +1474,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.AnimatedPlayPauseButtonKt.AnimatedPlayButtonPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1398,6 +1492,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1655,7 +1750,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.AutoResizeTextKt.AutoResizePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1672,6 +1768,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1851,11 +1948,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.BannerKt.BannerPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.BannerKt.BannerPreviewWithoutDismiss",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1870,6 +1969,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1984,7 +2084,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.FormFieldDialogPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1999,6 +2100,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2048,7 +2150,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.ProgressDialogPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2065,6 +2168,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2153,7 +2257,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.RadioDialogPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2168,6 +2273,7 @@
             "hasTypeParameters": true,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2256,7 +2362,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.DialogKt.SimpleDialogPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2271,6 +2378,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2307,15 +2415,18 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextKt.ExpandedTextPreviewEmptySpace",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextKt.ExpandedTextPreviewRegular",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.ExpandableTextKt.ExpandedTextPreviewShort",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2330,6 +2441,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2392,11 +2504,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.FolderColorPickerKt.ColorPickerDarkPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.FolderColorPickerKt.ColorPickerLightPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2413,6 +2527,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2533,7 +2648,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NumberStepperKt.NumberStepperPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2550,6 +2666,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2638,7 +2755,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PagerDotIndicatorKt.PagerDotIndicatorPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2653,6 +2771,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2754,7 +2873,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PagerProgressingIndicatorKt.PagerProgressingIndicatorPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2769,6 +2889,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2857,15 +2978,18 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PlaylistArtworkKt.PlaylistArtworkNoEpisodePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PlaylistArtworkKt.PlaylistArtworkQuadEpisodePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PlaylistArtworkKt.PlaylistArtworkSingleEpisodePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2880,6 +3004,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2916,7 +3041,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PocketCastsPillKt.PocketCastsLogoPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2933,6 +3059,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -2982,7 +3109,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PocketCastsPillKt.PocketCastsPillPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2999,6 +3127,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3061,11 +3190,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PodcastSelectedTextKt.PodcastSelectedTextEnglishPreview_PodcastSelectText_in_English",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.PodcastSelectedTextKt.PodcastSelectedTextFrenchPreview_PodcastSelectText_in_French",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3082,6 +3213,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3248,7 +3380,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SearchBarKt.SearchBarPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3263,6 +3396,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3390,7 +3524,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SegmentedTabBarKt.SegmentedTabBarPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3405,6 +3540,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3467,7 +3603,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingInfoRowPreview_Info",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3484,6 +3621,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3591,7 +3729,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SettingsKt.SettingSectionPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3608,6 +3747,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3657,7 +3797,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.SparkleImageKt.SparkleImagePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3674,6 +3815,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3775,15 +3917,18 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.UserAvatarKt.UserAvatarCompletionPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.UserAvatarKt.UserAvatarThemePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.UserAvatarKt.UserAvatarTierPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3800,6 +3945,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3888,7 +4034,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.folder.FolderImageSmallKt.FolderImageSmallPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3903,6 +4050,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -3939,19 +4087,23 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeBigPreview_Big",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeCustomPreview_Custom",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeMediumPreview_Medium",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.CountBadgeKt.CountBadgeSmallPreview_Small",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -3966,6 +4118,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4002,11 +4155,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.HorizontalLogoKt.HorizontalLogoDarkPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.HorizontalLogoKt.VerticalLogoLightPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4023,6 +4178,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4176,7 +4332,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusWithGradientBackgroundPreview_ColoredWithBlackForegroundAndGradientBackground",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4191,6 +4348,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4292,27 +4450,33 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronBlackPreview_Black",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredWhiteForegroundPreview_ColoredWithWhiteForeground",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePatronColoredWithBlackForegroundPreview_ColoredWithBlackForeground",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusBlackPreview_Black",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredWhiteForegroundPreview_ColoredWithWhiteForeground",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.SubscriptionBadgeKt.SubscriptionBadgePlusColoredWithBlackForegroundPreview_ColoredWithBlackForeground",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4327,6 +4491,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4363,11 +4528,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoKt.VerticalLogoDarkPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoKt.VerticalLogoLightPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4384,6 +4551,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4420,11 +4588,13 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoPlusKt.VerticalLogoPlusDarkPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.images.VerticalLogoPlusKt.VerticalLogoPlusLightPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4441,6 +4611,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4555,7 +4726,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.podcast.ListPodcastSubscribeRowKt.ListPodcastSubscribeRowPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4572,6 +4744,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4686,7 +4859,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.podcast.PodcastSelectGridKt.PodcastSelectListPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4701,6 +4875,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -4789,7 +4964,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.podcast.PodcastSelectImageKt.ColorPickerLightPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -4804,6 +4980,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -5015,7 +5192,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.rearrange.MenuActionRearrangeKt.MenuActionRearrangePreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -5030,6 +5208,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -5131,7 +5310,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.summary.SummaryContentKt.SummaryContentPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -5148,6 +5328,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -5249,7 +5430,8 @@
             "bindings": [
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.summary.SummaryPaywallKt.SummaryPaywallPreview",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -5266,8 +5448,10 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         }
-    ]
+    ],
+    "builderOrphans": []
 }
