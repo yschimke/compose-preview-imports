@@ -101,7 +101,8 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.PreviewCheckbox",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -118,6 +119,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -245,7 +247,8 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -262,6 +265,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -311,7 +315,8 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -328,6 +333,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -549,163 +555,203 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_100_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_115_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_130_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_150_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_180_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_200_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_85_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_100_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_115_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_130_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_150_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_180_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_200_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_85_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_100_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_115_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_130_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_150_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_180_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_200_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_85_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_100_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_115_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_130_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_150_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_180_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_200_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_85_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_100_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_115_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_130_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_150_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_180_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_200_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_85_",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -722,6 +768,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -842,11 +889,13 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonDisabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonEnabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -863,6 +912,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1001,11 +1051,13 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonDisabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonEnabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1022,6 +1074,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1173,11 +1226,13 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1194,6 +1249,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1327,11 +1383,13 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonDisabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonEnabled",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1348,6 +1406,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1468,7 +1527,8 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.SwitchKt.PreviewMullvadSwitch",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1485,6 +1545,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1579,15 +1640,18 @@
             "bindings": [
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1604,8 +1668,10 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         }
-    ]
+    ],
+    "builderOrphans": []
 }
