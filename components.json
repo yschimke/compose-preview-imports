@@ -62,11 +62,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.HorizontalDividerPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.HorizontalDividerPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -81,6 +83,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -143,11 +146,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.VerticalDividerPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.DividerKt.VerticalDividerPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -162,6 +167,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -211,11 +217,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MajorErrorPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MajorErrorPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -232,6 +240,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -281,11 +290,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MinorErrorPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.MinorErrorPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -302,6 +313,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -364,11 +376,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersKt.FiltersPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersKt.FiltersPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -383,6 +397,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -458,11 +473,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.IconPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.IconPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -477,6 +494,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -545,11 +563,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeMainHeaderKt.LargeMainHeaderPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeMainHeaderKt.LargeMainHeaderPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -566,6 +586,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -641,11 +662,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -660,6 +683,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -735,11 +759,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationBarKt.MainNavigationBarPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationBarKt.MainNavigationBarPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -754,6 +780,7 @@
             "hasTypeParameters": true,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -803,11 +830,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.NowLabelKt.NowLabelPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.NowLabelKt.NowLabelPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -824,6 +853,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -912,11 +942,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageMenuItemKt.PageMenuItemPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageMenuItemKt.PageMenuItemPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -933,6 +965,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -982,11 +1015,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ParagraphTitleKt.ParagraphTitlePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ParagraphTitleKt.ParagraphTitlePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1003,6 +1038,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1078,11 +1114,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PartnerCardKt.PartnerCardPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PartnerCardKt.PartnerCardPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1099,6 +1137,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1148,11 +1187,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1167,6 +1208,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1281,11 +1323,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1302,6 +1346,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1390,11 +1435,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1409,6 +1456,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1445,11 +1493,13 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TooltipKt.TooltipPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TooltipKt.TooltipPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -1466,6 +1516,7 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         },
@@ -1534,475 +1585,593 @@
             "bindings": [
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ActionKt.ActionPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ActionKt.ActionPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonPrimaryPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonPrimaryPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonSecondaryPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ButtonKt.ButtonSecondaryPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.CardTagKt.CardTagUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.DayHeaderKt.DayHeaderPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.DayHeaderKt.DayHeaderPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingDisabledPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingDisabledPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingEnabledPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.LoadingEnabledPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorIdlePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorIdlePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorInteractivePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorInteractivePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorLoadingPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ErrorLoadingKt.NormalErrorLoadingPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FeedbackFormKt.FeedbackFormPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FeedbackFormKt.FeedbackFormPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.FiltersTagKt.FilterTagUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.HeaderToggleButtonKt.HeaderToggleButtonPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.HeaderToggleButtonKt.HeaderToggleButtonPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.TintedIconPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.IconKt.TintedIconPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeEmotionPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeEmotionPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconLargeUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.KodeeKt.KodeeIconSmallUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSearchBarKt.LargeSearchBarPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSearchBarKt.LargeSearchBarPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.LargeSwitcherKt.LargeSwitcherItemUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderBackPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderBackPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderTitleOnlyPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainHeaderKt.MainHeaderTitleOnlyPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationRailKt.MainNavigationRailPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.MainNavigationRailKt.MainNavigationRailPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.FloatingNowButtonPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.FloatingNowButtonPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.NowButtonPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.NowButtonKt.NowButtonPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewDisabled_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewDisabled_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewEnabled_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayIconButtonKt.IconButtonPreviewEnabled_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayTextButtonKt.ActionButtonPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.OverlayTextButtonKt.ActionButtonPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.LargePageTitleWithPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.LargePageTitleWithPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleLightningPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleLightningPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleRegularPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleRegularPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleWithNotesPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PageTitleKt.PageTitleWithNotesPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationBaselinePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationBaselinePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.PartyAnimationKt.PartyAnimationPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputEmptyPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputEmptyPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputWithTextPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SearchInputKt.SearchInputWithTextPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTextPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTextPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTimePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SectionTitleKt.SectionTitleTimePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.PartyServiceEventLivePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.PartyServiceEventLivePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventBlockPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ServiceEventsKt.ServiceEventBlockPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemSimplePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemSimplePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemWithNotePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SettingsItemKt.SettingsItemWithNotePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardWithHighlightsPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SpeakerCardKt.SpeakerCardWithHighlightsPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemNormalPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemNormalPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherItemSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherShortPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.SwitcherKt.SwitcherShortPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardLivePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardLivePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardUpcomingPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TalkCardKt.TalkCardUpcomingPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TextKt.TextStylePreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TextKt.TextStylePreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOffPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOffPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOnPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.ToggleKt.ToggleOnPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonLargeUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonSelectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonSelectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonUnselectedPreview_Dark",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 },
                 {
                     "previewId": "org.jetbrains.kotlinconf.ui.components.TopMenuButtonKt.TopMenuButtonUnselectedPreview_Light",
-                    "componentId": null
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2019,8 +2188,10 @@
             "hasTypeParameters": false,
             "hasContextReceivers": false,
             "overloadsCollided": false,
+            "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
         }
-    ]
+    ],
+    "builderOrphans": []
 }
