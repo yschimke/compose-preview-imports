@@ -14,7 +14,9 @@
         <g id="Row">
           <g clip-path="url(#clip-0)">
             <g id="ImageKt">
-              <image href="home-entity-list.figma-raster/200.png" x="44" y="203" width="48" height="48"/>
+              <g transform="translate(44 203) scale(2 2)">
+                <path d="M17 3 H7 A 2 2 0 0 0 5 5 V21 L12 18 L19 21 V5 C 19 3.89 18.1 3 17 3 Z" fill="#F6EDFF"/>
+              </g>
             </g>
             <g id="Spacer">
             </g>
@@ -24,12 +26,12 @@
             <g id="Spacer">
             </g>
             <g id="Spacer">
-              <image href="home-entity-list.figma-raster/207.png" x="362" y="203" width="48" height="48"/>
+              <image href="home-entity-list.figma-raster/615.png" x="362" y="203" width="48" height="48"/>
             </g>
           </g>
         </g>
         <g id="Row">
-          <image href="home-entity-list.figma-raster/210.png" x="16" y="287" width="422" height="104"/>
+          <image href="home-entity-list.figma-raster/618.png" x="16" y="287" width="422" height="104"/>
         </g>
         <g id="Spacer">
         </g>

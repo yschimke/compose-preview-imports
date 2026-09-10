@@ -153,7 +153,7 @@
       "wireframe": "wireframes/home-landing.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 176,
+      "bodyLine": 178,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewMainConfigView",
       "parameters": [
@@ -224,7 +224,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/home-entity-list__ideal__scenes__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -360,7 +361,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/entities-detail-panel__ideal__default__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -376,7 +378,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/entities-detail-panel__ideal__off__largeround.svg"
         },
         {
           "variant": "ideal",
@@ -392,7 +395,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/entities-detail-panel__ideal__fan-on__largeround.svg"
         }
       ],
       "greenlines": [
@@ -613,7 +617,7 @@
       "wireframe": "wireframes/entities-detail-panel.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/DetailsPanelView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 379,
+      "bodyLine": 393,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewDetailsPaneViewEntityLightOn",
       "parameters": [
@@ -831,7 +835,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-shortcut-order__ideal__default__largeround.svg"
         }
       ],
       "greenlines": [
@@ -930,7 +935,7 @@
       "wireframe": "wireframes/tiles-shortcut-order.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SetShortcutsTileView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 96,
+      "bodyLine": 98,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewSetTileShortcutsView",
       "parameters": [
@@ -1073,7 +1078,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-template-settings__ideal__default__largeround.svg"
         }
       ],
       "greenlines": [
@@ -1150,7 +1156,7 @@
       "wireframe": "wireframes/tiles-template-settings.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/TemplateTileSettingsView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 66,
+      "bodyLine": 69,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewTemplateTileSettingView",
       "parameters": [
@@ -1263,7 +1269,7 @@
       "wireframe": "wireframes/tiles-refresh-interval.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/RefreshIntervalPickerView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 107,
+      "bodyLine": 109,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewRefreshIntervalPickerView",
       "parameters": [
@@ -1641,7 +1647,7 @@
       "wireframe": "wireframes/settings-favorites.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/SettingsView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 277,
+      "bodyLine": 289,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewSettingsView",
       "parameters": [
@@ -1877,7 +1883,7 @@
       "wireframe": "wireframes/settings-complication.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/complications/views/ComplicationConfigMainView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 176,
+      "bodyLine": 178,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewMainConfigView",
       "parameters": [
@@ -2154,7 +2160,7 @@
       "wireframe": "wireframes/conversation-speech-bubbles.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/conversation/views/ConversationView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 302,
+      "bodyLine": 305,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewSpeechBubble",
       "parameters": [
@@ -2304,7 +2310,7 @@
       "wireframe": "wireframes/entities-rows.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/EntityUi.kt",
       "sourceModule": ":wear",
-      "bodyLine": 131,
+      "bodyLine": 134,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewEntityUI",
       "parameters": [
@@ -2502,7 +2508,8 @@
           "height": 96,
           "livePreview": "https://preview.coo.ee/home-assistant-wear/p/components-list-header__ideal__expandable",
           "previewId": "io.homeassistant.companion.android.views.ExpandableListHeaderKt.PreviewExpandableListHeader",
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/components-list-header__ideal__expandable.svg"
         }
       ],
       "greenlines": [],
@@ -2586,8 +2593,8 @@
   "library": [
     "Wear Compose Material + Home Assistant surfaces"
   ],
-  "renderer": "compose-preview 2.4.1",
-  "generatedAt": "2026-09-09T09:27:29.701Z",
+  "renderer": "compose-preview 2.6.0",
+  "generatedAt": "2026-09-10T09:26:16.695Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Entity list"
@@ -2607,7 +2614,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "f3ba24fc1874a2a2e088fb66f8225ccaafcd2b8c",
+    "ref": "270e31a17a09dcda97d2e91512a2b426c5167a13",
     "module": ":wear"
   }
 }

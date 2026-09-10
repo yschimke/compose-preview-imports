@@ -13,9 +13,11 @@
             <text x="227" y="133.76" font-size="32" font-family="Roboto Flex" font-weight="550" letter-spacing="0.8" text-anchor="middle" fill="#A6EEFF">Favorites</text>
           </g>
           <g id="Row">
-              <rect x="16" y="175" width="422" height="104" rx="52" ry="52" fill="#272430"/>
+            <rect x="16" y="175" width="422" height="104" rx="52" ry="52" fill="#272430"/>
             <g id="ImageKt">
-              <image href="ideal__default__largeround.figma-raster/652.png" x="44" y="203" width="48" height="48"/>
+              <g transform="translate(44 203) scale(2 2)">
+                <path d="M12 17.27 L18.18 21 L16.54 13.97 L22 9.24 L14.81 8.62 L12 2 L9.19 8.62 L2 9.24 L7.45 13.97 L5.82 21 L12 17.27 Z" fill="#F6EDFF"/>
+              </g>
             </g>
             <g id="Spacer">
             </g>
@@ -24,9 +26,11 @@
             </g>
           </g>
           <g id="Row">
-              <rect x="16" y="287" width="422" height="104" rx="52" ry="52" fill="#272430"/>
+            <rect x="16" y="287" width="422" height="104" rx="52" ry="52" fill="#272430"/>
             <g id="ImageKt">
-              <image href="ideal__default__largeround.figma-raster/661.png" x="44" y="315" width="48" height="48"/>
+              <g transform="translate(44 315) scale(2 2)">
+                <path d="M19 4 H15.5 L14.5 3 H9.5 L8.5 4 H5 V6 H19 M6 19 A 2 2 0 0 0 8 21 H16 A 2 2 0 0 0 18 19 V7 H6 V19 Z" fill="#F6EDFF"/>
+              </g>
             </g>
             <g id="Spacer">
             </g>
@@ -36,7 +40,7 @@
           </g>
           <g id="Box">
             <g id="Row">
-              <image href="ideal__default__largeround.figma-raster/668.png" x="62" y="399" width="330" height="81"/>
+              <image href="ideal__default__largeround.figma-raster/270.png" x="62" y="399" width="330" height="81"/>
             </g>
           </g>
         </g>

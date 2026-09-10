@@ -13,9 +13,11 @@
             <text x="227" y="133.76" font-size="32" font-family="Roboto Flex" font-weight="550" letter-spacing="0.8" text-anchor="middle" fill="#FFFFFF">Entity state</text>
           </g>
           <g id="Row">
-              <rect x="16" y="175" width="422" height="104" rx="52" ry="52" fill="#272430"/>
+            <rect x="16" y="175" width="422" height="104" rx="52" ry="52" fill="#272430"/>
             <g id="ImageKt">
-              <image href="settings-complication.figma-raster/19.png" x="44" y="203" width="48" height="48"/>
+              <g transform="translate(44 203) scale(2 2)">
+                <path d="M17 19 H7 V5 H17 M17 1 H7 C 5.89 1 5 1.89 5 3 V21 A 2 2 0 0 0 7 23 H17 A 2 2 0 0 0 19 21 V3 C 19 1.89 18.1 1 17 1 Z" fill="#F6EDFF"/>
+              </g>
             </g>
             <g id="Spacer">
             </g>
@@ -31,11 +33,11 @@
             </g>
           </g>
           <g id="Row">
-            <image href="settings-complication.figma-raster/29.png" x="16" y="287" width="422" height="104"/>
+            <image href="settings-complication.figma-raster/360.png" x="16" y="287" width="422" height="104"/>
           </g>
           <g id="Box">
             <g id="Row">
-              <image href="settings-complication.figma-raster/38.png" x="62" y="399" width="330" height="81"/>
+              <image href="settings-complication.figma-raster/369.png" x="62" y="399" width="330" height="81"/>
             </g>
           </g>
         </g>
