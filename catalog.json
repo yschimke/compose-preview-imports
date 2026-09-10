@@ -2150,24 +2150,7 @@
       "sourceModule": ":app:ui-components",
       "bodyLine": 268,
       "sourceDirectory": "app/ui-components",
-      "sourceFunction": "MainHeaderBackPreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "MainHeaderBackPreview"
     },
     {
       "componentId": "main-header-schedule",
@@ -2645,24 +2628,7 @@
       "sourceModule": ":app:ui-components",
       "bodyLine": 49,
       "sourceDirectory": "app/ui-components",
-      "sourceFunction": "LargeMainHeaderPreview",
-      "parameters": [
-        {
-          "name": "title",
-          "type": "String"
-        },
-        {
-          "name": "endContent",
-          "type": "() -> Unit",
-          "hasDefault": true,
-          "composableSlot": true
-        },
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        }
-      ]
+      "sourceFunction": "LargeMainHeaderPreview"
     },
     {
       "componentId": "page-title",
@@ -4298,24 +4264,7 @@
       "sourceModule": ":app:ui-components",
       "bodyLine": 408,
       "sourceDirectory": "app/ui-components",
-      "sourceFunction": "TalkCardLivePreview",
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "hasDefault": true
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "hasDefault": true
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "composableSlot": true
-        }
-      ]
+      "sourceFunction": "TalkCardLivePreview"
     },
     {
       "componentId": "speaker-card",
@@ -8971,8 +8920,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 2.4.1",
-  "generatedAt": "2026-09-09T09:45:42.774Z",
+  "renderer": "compose-preview 2.6.0",
+  "generatedAt": "2026-09-10T09:42:00.441Z",
   "display": {
     "hero": "talk-card-live"
   },

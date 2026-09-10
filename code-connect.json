@@ -7,7 +7,7 @@
     "ref": "fec39d446cbdaa9693ee0c7f0af3fda120224d38",
     "module": ":app:ui-components"
   },
-  "generatedAt": "2026-09-09T09:45:44.648Z",
+  "generatedAt": "2026-09-10T09:42:02.330Z",
   "mappings": [
     {
       "componentId": "button-primary",
@@ -905,56 +905,11 @@
     {
       "componentId": "main-header-back",
       "figmaLayerName": "main-header-back",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/fec39d446cbdaa9693ee0c7f0af3fda120224d38/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "MainHeaderBackPreview",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/fec39d446cbdaa9693ee0c7f0af3fda120224d38/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/MainHeader.kt",
       "label": "Compose",
-      "confidence": "LOW",
+      "confidence": "preview-fallback",
       "previewName": "MainHeaderBackPreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
-      "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
-      ],
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
-        }
-      ],
       "figmaSvg": "https://preview.coo.ee/jetbrains-kotlinconf-app/render/main-header-back__ideal__default__light.svg"
     },
     {
@@ -990,56 +945,11 @@
     {
       "componentId": "large-main-header",
       "figmaLayerName": "large-main-header",
-      "componentName": "LargeMainHeader",
+      "componentName": "LargeMainHeaderPreview",
       "source": "https://github.com/JetBrains/kotlinconf-app/blob/fec39d446cbdaa9693ee0c7f0af3fda120224d38/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/LargeMainHeader.kt",
       "label": "Compose",
-      "confidence": "MEDIUM",
+      "confidence": "preview-fallback",
       "previewName": "LargeMainHeaderPreview",
-      "codeSnippet": "LargeMainHeader(\n    title = TODO(\"String\"),\n)",
-      "imports": [
-        "import org.jetbrains.kotlinconf.ui.components.LargeMainHeader"
-      ],
-      "parameters": [
-        {
-          "name": "title",
-          "type": "String",
-          "typeFqn": "kotlin.String",
-          "hasDefault": false,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "endContent",
-          "type": "() -> Unit",
-          "typeFqn": "kotlin.Function0",
-          "hasDefault": true,
-          "composableSlot": true,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
-        },
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        }
-      ],
       "figmaSvg": "figma/large-main-header.svg"
     },
     {
@@ -1608,56 +1518,11 @@
     {
       "componentId": "talk-card-live",
       "figmaLayerName": "talk-card-live",
-      "componentName": "PreviewHelper",
-      "source": "https://github.com/JetBrains/kotlinconf-app/blob/fec39d446cbdaa9693ee0c7f0af3fda120224d38/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/theme/PreviewHelper.kt",
+      "componentName": "TalkCardLivePreview",
+      "source": "https://github.com/JetBrains/kotlinconf-app/blob/fec39d446cbdaa9693ee0c7f0af3fda120224d38/app/ui-components/src/commonMain/kotlin/org/jetbrains/kotlinconf/ui/components/TalkCard.kt",
       "label": "Compose",
-      "confidence": "LOW",
+      "confidence": "preview-fallback",
       "previewName": "TalkCardLivePreview",
-      "codeSnippet": "PreviewHelper(\n    content = { },\n)",
-      "imports": [
-        "import org.jetbrains.kotlinconf.ui.theme.PreviewHelper"
-      ],
-      "parameters": [
-        {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "paddingEnabled",
-          "type": "Boolean",
-          "typeFqn": "kotlin.Boolean",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "content",
-          "type": "ColumnScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
-        }
-      ],
       "figmaSvg": "figma/talk-card-live.svg"
     },
     {
