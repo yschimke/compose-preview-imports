@@ -4,6 +4,2640 @@
     "variant": "debug",
     "components": [
         {
+            "canonicalId": "designsystem/androidx.compose.material3.ButtonKt.Button",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.ButtonKt",
+                "callable": "androidx.compose.material3.Button",
+                "name": "Button",
+                "origin": "LIBRARY",
+                "jvmName": "Button",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/ui/graphics/Shape;Landroidx/compose/material3/ButtonColors;Landroidx/compose/material3/ButtonElevation;Landroidx/compose/foundation/BorderStroke;Landroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shape",
+                    "type": "Shape",
+                    "typeFqn": "androidx.compose.ui.graphics.Shape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ButtonColors",
+                    "typeFqn": "androidx.compose.material3.ButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "elevation",
+                    "type": "ButtonElevation?",
+                    "typeFqn": "androidx.compose.material3.ButtonElevation",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "border",
+                    "type": "BorderStroke?",
+                    "typeFqn": "androidx.compose.foundation.BorderStroke",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentPadding",
+                    "type": "PaddingValues",
+                    "typeFqn": "androidx.compose.foundation.layout.PaddingValues",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "RowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.RowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "Button(onClick = {}, content = {})",
+                "imports": [
+                    "androidx.compose.material3.Button"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.ButtonKt.TextButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.ButtonKt",
+                "callable": "androidx.compose.material3.TextButton",
+                "name": "TextButton",
+                "origin": "LIBRARY",
+                "jvmName": "TextButton",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/ui/graphics/Shape;Landroidx/compose/material3/ButtonColors;Landroidx/compose/material3/ButtonElevation;Landroidx/compose/foundation/BorderStroke;Landroidx/compose/foundation/layout/PaddingValues;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shape",
+                    "type": "Shape",
+                    "typeFqn": "androidx.compose.ui.graphics.Shape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "ButtonColors",
+                    "typeFqn": "androidx.compose.material3.ButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "elevation",
+                    "type": "ButtonElevation?",
+                    "typeFqn": "androidx.compose.material3.ButtonElevation",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "border",
+                    "type": "BorderStroke?",
+                    "typeFqn": "androidx.compose.foundation.BorderStroke",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentPadding",
+                    "type": "PaddingValues",
+                    "typeFqn": "androidx.compose.foundation.layout.PaddingValues",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "RowScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.RowScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "TextButton(onClick = {}, content = {})",
+                "imports": [
+                    "androidx.compose.material3.TextButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.CheckboxKt.Checkbox",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.CheckboxKt",
+                "callable": "androidx.compose.material3.Checkbox",
+                "name": "Checkbox",
+                "origin": "LIBRARY",
+                "jvmName": "Checkbox",
+                "descriptor": "(ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/CheckboxColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "checked",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onCheckedChange",
+                    "type": "((Boolean) -> Unit)?",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "CheckboxColors",
+                    "typeFqn": "androidx.compose.material3.CheckboxColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.PreviewCheckbox",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "Checkbox(checked = false, onCheckedChange = null)",
+                "imports": [
+                    "androidx.compose.material3.Checkbox"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.ChipKt.FilterChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.ChipKt",
+                "callable": "androidx.compose.material3.FilterChip",
+                "name": "FilterChip",
+                "origin": "LIBRARY",
+                "jvmName": "FilterChip",
+                "descriptor": "(ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/material3/SelectableChipColors;Landroidx/compose/material3/SelectableChipElevation;Landroidx/compose/foundation/BorderStroke;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/Composer;III)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "selected",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "label",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "leadingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "trailingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "shape",
+                    "type": "Shape",
+                    "typeFqn": "androidx.compose.ui.graphics.Shape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "SelectableChipColors",
+                    "typeFqn": "androidx.compose.material3.SelectableChipColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "elevation",
+                    "type": "SelectableChipElevation?",
+                    "typeFqn": "androidx.compose.material3.SelectableChipElevation",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "border",
+                    "type": "BorderStroke?",
+                    "typeFqn": "androidx.compose.foundation.BorderStroke",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [
+                {
+                    "name": "label",
+                    "required": true,
+                    "receiverScope": null
+                },
+                {
+                    "name": "leadingIcon",
+                    "required": false,
+                    "receiverScope": null
+                },
+                {
+                    "name": "trailingIcon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "FilterChip(selected = false, onClick = {}, label = {})",
+                "imports": [
+                    "androidx.compose.material3.FilterChip"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.ChipKt.InputChip",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.ChipKt",
+                "callable": "androidx.compose.material3.InputChip",
+                "name": "InputChip",
+                "origin": "LIBRARY",
+                "jvmName": "InputChip",
+                "descriptor": "(ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;ZLkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/material3/SelectableChipColors;Landroidx/compose/material3/SelectableChipElevation;Landroidx/compose/foundation/BorderStroke;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/Composer;III)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "selected",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "label",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "leadingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "avatar",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "trailingIcon",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "shape",
+                    "type": "Shape",
+                    "typeFqn": "androidx.compose.ui.graphics.Shape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "SelectableChipColors",
+                    "typeFqn": "androidx.compose.material3.SelectableChipColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "elevation",
+                    "type": "SelectableChipElevation?",
+                    "typeFqn": "androidx.compose.material3.SelectableChipElevation",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "border",
+                    "type": "BorderStroke?",
+                    "typeFqn": "androidx.compose.foundation.BorderStroke",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [
+                {
+                    "name": "label",
+                    "required": true,
+                    "receiverScope": null
+                },
+                {
+                    "name": "leadingIcon",
+                    "required": false,
+                    "receiverScope": null
+                },
+                {
+                    "name": "avatar",
+                    "required": false,
+                    "receiverScope": null
+                },
+                {
+                    "name": "trailingIcon",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "InputChip(selected = false, onClick = {}, label = {})",
+                "imports": [
+                    "androidx.compose.material3.InputChip"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.DividerKt.HorizontalDivider",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.DividerKt",
+                "callable": "androidx.compose.material3.HorizontalDivider",
+                "name": "HorizontalDivider",
+                "origin": "LIBRARY",
+                "jvmName": "HorizontalDivider-9IZ8Weo",
+                "descriptor": "(Landroidx/compose/ui/Modifier;FJLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "thickness",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "HorizontalDivider()",
+                "imports": [
+                    "androidx.compose.material3.HorizontalDivider"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.IconButtonKt.IconButton",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.IconButtonKt",
+                "callable": "androidx.compose.material3.IconButton",
+                "name": "IconButton",
+                "origin": "LIBRARY",
+                "jvmName": "IconButton",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;ZLandroidx/compose/material3/IconButtonColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "onClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "IconButtonColors",
+                    "typeFqn": "androidx.compose.material3.IconButtonColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "IconButton(onClick = {}, content = {})",
+                "imports": [
+                    "androidx.compose.material3.IconButton"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.IconKt.Icon",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.IconKt",
+                "callable": "androidx.compose.material3.Icon",
+                "name": "Icon",
+                "origin": "LIBRARY",
+                "jvmName": "Icon-ww6aTOc",
+                "descriptor": "(Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/String;Landroidx/compose/ui/Modifier;JLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "imageVector",
+                    "type": "ImageVector",
+                    "typeFqn": "androidx.compose.ui.graphics.vector.ImageVector",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentDescription",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "tint",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_85_",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `imageVector: ImageVector`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.ProgressIndicatorKt.CircularProgressIndicator",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.ProgressIndicatorKt",
+                "callable": "androidx.compose.material3.CircularProgressIndicator",
+                "name": "CircularProgressIndicator",
+                "origin": "LIBRARY",
+                "jvmName": "CircularProgressIndicator-4lLiAd8",
+                "descriptor": "(Landroidx/compose/ui/Modifier;JFJIFLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "strokeWidth",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "trackColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "strokeCap",
+                    "type": "StrokeCap",
+                    "typeFqn": "androidx.compose.ui.graphics.StrokeCap",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "gapSize",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CircularProgressIndicatorKt.PreviewMullvadProgressIndicator",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "CircularProgressIndicator()",
+                "imports": [
+                    "androidx.compose.material3.CircularProgressIndicator"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.SurfaceKt.Surface",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.SurfaceKt",
+                "callable": "androidx.compose.material3.Surface",
+                "name": "Surface",
+                "origin": "LIBRARY",
+                "jvmName": "Surface-T9BRK9s",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Shape;JJFFLandroidx/compose/foundation/BorderStroke;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shape",
+                    "type": "Shape",
+                    "typeFqn": "androidx.compose.ui.graphics.Shape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "tonalElevation",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shadowElevation",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "border",
+                    "type": "BorderStroke?",
+                    "typeFqn": "androidx.compose.foundation.BorderStroke",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_85_",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "Surface(content = {})",
+                "imports": [
+                    "androidx.compose.material3.Surface"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.SwitchKt.Switch",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.SwitchKt",
+                "callable": "androidx.compose.material3.Switch",
+                "name": "Switch",
+                "origin": "LIBRARY",
+                "jvmName": "Switch",
+                "descriptor": "(ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;ZLandroidx/compose/material3/SwitchColors;Landroidx/compose/foundation/interaction/MutableInteractionSource;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "checked",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onCheckedChange",
+                    "type": "((Boolean) -> Unit)?",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "thumbContent",
+                    "type": "(() -> Unit)?",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": true,
+                    "composableSlot": true,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "enabled",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "SwitchColors",
+                    "typeFqn": "androidx.compose.material3.SwitchColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "interactionSource",
+                    "type": "MutableInteractionSource?",
+                    "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [
+                {
+                    "name": "thumbContent",
+                    "required": false,
+                    "receiverScope": null
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.SwitchKt.PreviewMullvadSwitch",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "Switch(checked = false, onCheckedChange = null)",
+                "imports": [
+                    "androidx.compose.material3.Switch"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "designsystem/androidx.compose.material3.TextKt.Text",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.TextKt",
+                "callable": "androidx.compose.material3.Text",
+                "name": "Text",
+                "origin": "LIBRARY",
+                "jvmName": null,
+                "descriptor": null,
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "text",
+                    "type": "AnnotatedString",
+                    "typeFqn": "androidx.compose.ui.text.AnnotatedString",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "autoSize",
+                    "type": "TextAutoSize?",
+                    "typeFqn": "androidx.compose.foundation.text.TextAutoSize",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "fontSize",
+                    "type": "TextUnit",
+                    "typeFqn": "androidx.compose.ui.unit.TextUnit",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "fontStyle",
+                    "type": "FontStyle?",
+                    "typeFqn": "androidx.compose.ui.text.font.FontStyle",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "fontWeight",
+                    "type": "FontWeight?",
+                    "typeFqn": "androidx.compose.ui.text.font.FontWeight",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "fontFamily",
+                    "type": "FontFamily?",
+                    "typeFqn": "androidx.compose.ui.text.font.FontFamily",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "letterSpacing",
+                    "type": "TextUnit",
+                    "typeFqn": "androidx.compose.ui.unit.TextUnit",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "textDecoration",
+                    "type": "TextDecoration?",
+                    "typeFqn": "androidx.compose.ui.text.style.TextDecoration",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "textAlign",
+                    "type": "TextAlign?",
+                    "typeFqn": "androidx.compose.ui.text.style.TextAlign",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "lineHeight",
+                    "type": "TextUnit",
+                    "typeFqn": "androidx.compose.ui.unit.TextUnit",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "overflow",
+                    "type": "TextOverflow",
+                    "typeFqn": "androidx.compose.ui.text.style.TextOverflow",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "softWrap",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "maxLines",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "minLines",
+                    "type": "Int",
+                    "typeFqn": "kotlin.Int",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "inlineContent",
+                    "type": "Map<String, InlineTextContent>",
+                    "typeFqn": "kotlin.collections.Map",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onTextLayout",
+                    "type": "(TextLayoutResult) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "style",
+                    "type": "TextStyle",
+                    "typeFqn": "androidx.compose.ui.text.TextStyle",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListHeaderKt.PreviewListHeader",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_100_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_115_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_130_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_150_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_180_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_200_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem_85_",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonDisabled",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonEnabled",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "overloads collided under this canonical id, so no single call site identifies one",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": true,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
             "canonicalId": "designsystem/net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.Checkbox",
             "componentIds": [],
             "symbol": {
