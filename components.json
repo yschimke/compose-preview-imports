@@ -4,6 +4,417 @@
     "variant": "debug",
     "components": [
         {
+            "canonicalId": "common/androidx.compose.material3.CardKt.Card",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.CardKt",
+                "callable": "androidx.compose.material3.Card",
+                "name": "Card",
+                "origin": "LIBRARY",
+                "jvmName": "Card",
+                "descriptor": "(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/Shape;Landroidx/compose/material3/CardColors;Landroidx/compose/material3/CardElevation;Landroidx/compose/foundation/BorderStroke;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shape",
+                    "type": "Shape",
+                    "typeFqn": "androidx.compose.ui.graphics.Shape",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "colors",
+                    "type": "CardColors",
+                    "typeFqn": "androidx.compose.material3.CardColors",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "elevation",
+                    "type": "CardElevation",
+                    "typeFqn": "androidx.compose.material3.CardElevation",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "border",
+                    "type": "BorderStroke?",
+                    "typeFqn": "androidx.compose.foundation.BorderStroke",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "content",
+                    "type": "ColumnScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": true,
+                    "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [
+                {
+                    "name": "content",
+                    "required": true,
+                    "receiverScope": "androidx.compose.foundation.layout.ColumnScope"
+                }
+            ],
+            "bindings": [
+                {
+                    "previewId": "dev.johnoreilly.common.stationlist.StationListUIKt.StationViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.CountryViewListPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.CountryViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.NetworkViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewEmptyPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewFullPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewMixedPreview",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "Card(content = {})",
+                "imports": [
+                    "androidx.compose.material3.Card"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "common/androidx.compose.material3.IconKt.Icon",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.IconKt",
+                "callable": "androidx.compose.material3.Icon",
+                "name": "Icon",
+                "origin": "LIBRARY",
+                "jvmName": "Icon-ww6aTOc",
+                "descriptor": "(Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/String;Landroidx/compose/ui/Modifier;JLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "imageVector",
+                    "type": "ImageVector",
+                    "typeFqn": "androidx.compose.ui.graphics.vector.ImageVector",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentDescription",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "tint",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "dev.johnoreilly.common.stationlist.StationListUIKt.StationViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewEmptyPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewFullPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewMixedPreview",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `imageVector: ImageVector`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "common/androidx.compose.material3.ProgressIndicatorKt.LinearProgressIndicator",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.ProgressIndicatorKt",
+                "callable": "androidx.compose.material3.LinearProgressIndicator",
+                "name": "LinearProgressIndicator",
+                "origin": "LIBRARY",
+                "jvmName": "LinearProgressIndicator-GJbTh5U",
+                "descriptor": "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;JJIFLkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "progress",
+                    "type": "() -> Float",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Float"
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "color",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "trackColor",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "strokeCap",
+                    "type": "StrokeCap",
+                    "typeFqn": "androidx.compose.ui.graphics.StrokeCap",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "gapSize",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "drawStopIndicator",
+                    "type": "DrawScope.() -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": "androidx.compose.ui.graphics.drawscope.DrawScope",
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "dev.johnoreilly.common.stationlist.StationListUIKt.StationViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewEmptyPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewFullPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewMixedPreview",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": "LinearProgressIndicator(progress = { 0f })",
+                "imports": [
+                    "androidx.compose.material3.LinearProgressIndicator"
+                ],
+                "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
             "canonicalId": "common/androidx.compose.material3.SurfaceKt.Surface",
             "componentIds": [],
             "symbol": {
@@ -453,7 +864,47 @@
             "slots": [],
             "bindings": [
                 {
+                    "previewId": "dev.johnoreilly.common.stationlist.StationListUIKt.StationViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
                     "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.ColorSchemeSpecimenPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.CountryViewListPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.CountryViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.NetworkViewPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewEmptyPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewFullPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.StationViewMixedPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.common.ui.BikeSharePreviewsKt.TypographySpecimenPreview",
                     "componentId": null,
                     "group": null
                 }
