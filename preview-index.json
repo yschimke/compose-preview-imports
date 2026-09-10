@@ -19,6 +19,26 @@
   ],
   "revisions": [
     {
+      "commit": "9b59918837bb1108990865d3b662b664810c904d",
+      "previews": [
+        "chrome-time-text__ideal__default__compact",
+        "chrome-time-text__ideal__disconnected__compact",
+        "episodes-episode-chip__ideal__default",
+        "playback-marquee-media-display__ideal__default",
+        "screens-playback-effects__ideal__default__compact",
+        "screens-settings__ideal__checked__compact",
+        "screens-settings__ideal__default__compact",
+        "sign-in-phone-instructions__ideal__default",
+        "sign-in-phone-instructions__ideal__login-failed",
+        "sign-in-phone-instructions__ideal__no-connection",
+        "sign-in-phone-instructions__ideal__success",
+        "sign-in-phone-instructions__ideal__syncing",
+        "states-loading__ideal__default__compact",
+        "states-no-content__ideal__default__compact",
+        "states-notification__ideal__default"
+      ]
+    },
+    {
       "commit": "0c347bd513192bd9c1d8e44ad3a75b4da04bf29b",
       "previews": [
         "chrome-time-text__ideal__default__compact",
