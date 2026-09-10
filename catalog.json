@@ -73,7 +73,26 @@
       "sourceModule": ":composeApp",
       "bodyLine": 48,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "CountryRowPreview"
+      "sourceFunction": "CountryRowPreview",
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country"
+        },
+        {
+          "name": "selectedCountry",
+          "type": "Country?"
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit"
+        },
+        {
+          "name": "rankings",
+          "type": "Map<String, Int>",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "country-row-selected",
@@ -122,7 +141,26 @@
       "sourceModule": ":composeApp",
       "bodyLine": 71,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "CountryRowSelectedPreview"
+      "sourceFunction": "CountryRowSelectedPreview",
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country"
+        },
+        {
+          "name": "selectedCountry",
+          "type": "Country?"
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit"
+        },
+        {
+          "name": "rankings",
+          "type": "Map<String, Int>",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "country-row-unranked",
@@ -171,7 +209,26 @@
       "sourceModule": ":composeApp",
       "bodyLine": 86,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "CountryRowUnrankedPreview"
+      "sourceFunction": "CountryRowUnrankedPreview",
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country"
+        },
+        {
+          "name": "selectedCountry",
+          "type": "Country?"
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit"
+        },
+        {
+          "name": "rankings",
+          "type": "Map<String, Int>",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "key-figures-row",
@@ -234,7 +291,33 @@
       "sourceModule": ":composeApp",
       "bodyLine": 124,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "KeyFiguresRowPreview"
+      "sourceFunction": "KeyFiguresRowPreview",
+      "parameters": [
+        {
+          "name": "co2Value",
+          "type": "String"
+        },
+        {
+          "name": "co2PercentChange",
+          "type": "Double"
+        },
+        {
+          "name": "rank",
+          "type": "Int"
+        },
+        {
+          "name": "share",
+          "type": "String"
+        },
+        {
+          "name": "perCapita",
+          "type": "String"
+        },
+        {
+          "name": "perCapitaRank",
+          "type": "Int?"
+        }
+      ]
     },
     {
       "componentId": "key-figures-row-rising",
@@ -297,7 +380,33 @@
       "sourceModule": ":composeApp",
       "bodyLine": 141,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "KeyFiguresRowRisingPreview"
+      "sourceFunction": "KeyFiguresRowRisingPreview",
+      "parameters": [
+        {
+          "name": "co2Value",
+          "type": "String"
+        },
+        {
+          "name": "co2PercentChange",
+          "type": "Double"
+        },
+        {
+          "name": "rank",
+          "type": "Int"
+        },
+        {
+          "name": "share",
+          "type": "String"
+        },
+        {
+          "name": "perCapita",
+          "type": "String"
+        },
+        {
+          "name": "perCapitaRank",
+          "type": "Int?"
+        }
+      ]
     },
     {
       "componentId": "co2-trend-sparkline",
@@ -323,7 +432,27 @@
       "sourceModule": ":composeApp",
       "bodyLine": 159,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "CO2TrendSparklinePreview"
+      "sourceFunction": "CO2TrendSparklinePreview",
+      "parameters": [
+        {
+          "name": "yearlyEmissions",
+          "type": "Map<String, Double>"
+        },
+        {
+          "name": "selectedYear",
+          "type": "String"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "onYearSelected",
+          "type": "(String) -> Unit",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "empty-state",
@@ -349,7 +478,19 @@
       "sourceModule": ":composeApp",
       "bodyLine": 101,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "EmptyStatePreview"
+      "sourceFunction": "EmptyStatePreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "message",
+          "type": "String?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "empty-state-message",
@@ -375,7 +516,19 @@
       "sourceModule": ":composeApp",
       "bodyLine": 111,
       "sourceDirectory": "composeApp",
-      "sourceFunction": "EmptyStateWithMessagePreview"
+      "sourceFunction": "EmptyStateWithMessagePreview",
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String?",
+          "hasDefault": true
+        },
+        {
+          "name": "message",
+          "type": "String?",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "color-scheme",
@@ -842,8 +995,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 2.4.1",
-  "generatedAt": "2026-09-09T09:52:08.375Z",
+  "renderer": "compose-preview 2.6.0",
+  "generatedAt": "2026-09-10T09:49:57.352Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"

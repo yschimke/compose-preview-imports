@@ -7,86 +7,550 @@
     "ref": "1960a7c0ac20cf8037dafa44eba7b98aabbd0a39",
     "module": ":composeApp"
   },
-  "generatedAt": "2026-09-09T09:52:08.882Z",
+  "generatedAt": "2026-09-10T09:49:57.857Z",
   "mappings": [
     {
       "componentId": "country-row",
       "figmaLayerName": "country-row",
-      "componentName": "CountryRowPreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "CountryRow",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTraceScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CountryRowPreview",
+      "codeSnippet": "CountryRow(\n    country = TODO(\"Country\"),\n    selectedCountry = TODO(\"Country?\"),\n    countrySelected = TODO(\"(Country) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.CountryRow"
+      ],
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country",
+          "typeFqn": "dev.johnoreilly.climatetrace.remote.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedCountry",
+          "type": "Country?",
+          "typeFqn": "dev.johnoreilly.climatetrace.remote.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "rankings",
+          "type": "Map<String, Int>",
+          "typeFqn": "kotlin.collections.Map",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "figma/country-row.svg"
     },
     {
       "componentId": "country-row-selected",
       "figmaLayerName": "country-row-selected",
-      "componentName": "CountryRowSelectedPreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "CountryRow",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTraceScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CountryRowSelectedPreview",
+      "codeSnippet": "CountryRow(\n    country = TODO(\"Country\"),\n    selectedCountry = TODO(\"Country?\"),\n    countrySelected = TODO(\"(Country) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.CountryRow"
+      ],
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country",
+          "typeFqn": "dev.johnoreilly.climatetrace.remote.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedCountry",
+          "type": "Country?",
+          "typeFqn": "dev.johnoreilly.climatetrace.remote.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "rankings",
+          "type": "Map<String, Int>",
+          "typeFqn": "kotlin.collections.Map",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "figma/country-row-selected.svg"
     },
     {
       "componentId": "country-row-unranked",
       "figmaLayerName": "country-row-unranked",
-      "componentName": "CountryRowUnrankedPreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "CountryRow",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTraceScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CountryRowUnrankedPreview",
+      "codeSnippet": "CountryRow(\n    country = TODO(\"Country\"),\n    selectedCountry = TODO(\"Country?\"),\n    countrySelected = TODO(\"(Country) -> Unit\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.CountryRow"
+      ],
+      "parameters": [
+        {
+          "name": "country",
+          "type": "Country",
+          "typeFqn": "dev.johnoreilly.climatetrace.remote.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedCountry",
+          "type": "Country?",
+          "typeFqn": "dev.johnoreilly.climatetrace.remote.Country",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "countrySelected",
+          "type": "(Country) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "rankings",
+          "type": "Map<String, Int>",
+          "typeFqn": "kotlin.collections.Map",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "figma/country-row-unranked.svg"
     },
     {
       "componentId": "key-figures-row",
       "figmaLayerName": "key-figures-row",
-      "componentName": "KeyFiguresRowPreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "KeyFiguresRow",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/CountryInfoDetailedView.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "KeyFiguresRowPreview",
+      "codeSnippet": "KeyFiguresRow(\n    co2Value = TODO(\"String\"),\n    co2PercentChange = TODO(\"Double\"),\n    rank = TODO(\"Int\"),\n    share = TODO(\"String\"),\n    perCapita = TODO(\"String\"),\n    perCapitaRank = TODO(\"Int?\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.KeyFiguresRow"
+      ],
+      "parameters": [
+        {
+          "name": "co2Value",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "co2PercentChange",
+          "type": "Double",
+          "typeFqn": "kotlin.Double",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "rank",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "share",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "perCapita",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "perCapitaRank",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/key-figures-row__ideal__default.svg"
     },
     {
       "componentId": "key-figures-row-rising",
       "figmaLayerName": "key-figures-row-rising",
-      "componentName": "KeyFiguresRowRisingPreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "KeyFiguresRow",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/CountryInfoDetailedView.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "KeyFiguresRowRisingPreview",
+      "codeSnippet": "KeyFiguresRow(\n    co2Value = TODO(\"String\"),\n    co2PercentChange = TODO(\"Double\"),\n    rank = TODO(\"Int\"),\n    share = TODO(\"String\"),\n    perCapita = TODO(\"String\"),\n    perCapitaRank = TODO(\"Int?\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.KeyFiguresRow"
+      ],
+      "parameters": [
+        {
+          "name": "co2Value",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "co2PercentChange",
+          "type": "Double",
+          "typeFqn": "kotlin.Double",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "rank",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "share",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "perCapita",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "perCapitaRank",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/key-figures-row-rising__ideal__default.svg"
     },
     {
       "componentId": "co2-trend-sparkline",
       "figmaLayerName": "co2-trend-sparkline",
-      "componentName": "CO2TrendSparklinePreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "CO2TrendSparkline",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/CountryInfoDetailedView.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "CO2TrendSparklinePreview",
+      "codeSnippet": "CO2TrendSparkline(\n    yearlyEmissions = TODO(\"Map<String, Double>\"),\n    selectedYear = TODO(\"String\"),\n)",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.CO2TrendSparkline"
+      ],
+      "parameters": [
+        {
+          "name": "yearlyEmissions",
+          "type": "Map<String, Double>",
+          "typeFqn": "kotlin.collections.Map",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "selectedYear",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onYearSelected",
+          "type": "(String) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/co2-trend-sparkline__ideal__default.svg"
     },
     {
       "componentId": "empty-state",
       "figmaLayerName": "empty-state",
-      "componentName": "EmptyStatePreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "EmptyState",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTraceScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "EmptyStatePreview",
+      "codeSnippet": "EmptyState()",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.EmptyState"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "message",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/empty-state__ideal__default.svg"
     },
     {
       "componentId": "empty-state-message",
       "figmaLayerName": "empty-state-message",
-      "componentName": "EmptyStateWithMessagePreview",
-      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTracePreviews.kt",
+      "componentName": "EmptyState",
+      "source": "https://github.com/joreilly/ClimateTraceKMP/blob/1960a7c0ac20cf8037dafa44eba7b98aabbd0a39/composeApp/src/commonMain/kotlin/dev/johnoreilly/climatetrace/ui/ClimateTraceScreen.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "EmptyStateWithMessagePreview",
+      "codeSnippet": "EmptyState()",
+      "imports": [
+        "import dev.johnoreilly.climatetrace.ui.EmptyState"
+      ],
+      "parameters": [
+        {
+          "name": "title",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "message",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "https://preview.coo.ee/joreilly-climatetracekmp/render/empty-state-message__ideal__default.svg"
     },
     {
