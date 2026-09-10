@@ -936,8 +936,21 @@
       "sourceFunction": "KaigiSegmentedButtonFirstSelectedPreview",
       "parameters": [
         {
-          "name": "outlineSeed",
-          "type": "Int"
+          "name": "selected",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "dividerSeed",
+          "type": "Int?"
+        },
+        {
+          "name": "leadingDividerSeed",
+          "type": "Int?",
+          "hasDefault": true
         },
         {
           "name": "modifier",
@@ -945,18 +958,23 @@
           "hasDefault": true
         },
         {
-          "name": "width",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "borderColor",
+          "name": "selectedContainerColor",
           "type": "Color",
           "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+          "name": "selectedContentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "label",
+          "type": "() -> Unit",
           "composableSlot": true
         }
       ]
@@ -1002,8 +1020,21 @@
       "sourceFunction": "KaigiSegmentedButtonSecondSelectedPreview",
       "parameters": [
         {
-          "name": "outlineSeed",
-          "type": "Int"
+          "name": "selected",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "dividerSeed",
+          "type": "Int?"
+        },
+        {
+          "name": "leadingDividerSeed",
+          "type": "Int?",
+          "hasDefault": true
         },
         {
           "name": "modifier",
@@ -1011,18 +1042,23 @@
           "hasDefault": true
         },
         {
-          "name": "width",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "borderColor",
+          "name": "selectedContainerColor",
           "type": "Color",
           "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+          "name": "selectedContentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "label",
+          "type": "() -> Unit",
           "composableSlot": true
         }
       ]
@@ -1068,8 +1104,21 @@
       "sourceFunction": "KaigiSegmentedButtonThreeSegmentsPreview",
       "parameters": [
         {
-          "name": "outlineSeed",
-          "type": "Int"
+          "name": "selected",
+          "type": "Boolean"
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit"
+        },
+        {
+          "name": "dividerSeed",
+          "type": "Int?"
+        },
+        {
+          "name": "leadingDividerSeed",
+          "type": "Int?",
+          "hasDefault": true
         },
         {
           "name": "modifier",
@@ -1077,18 +1126,23 @@
           "hasDefault": true
         },
         {
-          "name": "width",
-          "type": "Dp",
-          "hasDefault": true
-        },
-        {
-          "name": "borderColor",
+          "name": "selectedContainerColor",
           "type": "Color",
           "hasDefault": true
         },
         {
-          "name": "content",
-          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
+          "name": "selectedContentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "label",
+          "type": "() -> Unit",
           "composableSlot": true
         }
       ]
@@ -2723,7 +2777,31 @@
       "sourceModule": ":core:ui",
       "bodyLine": 226,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "KaigiAvatarPreview"
+      "sourceFunction": "KaigiAvatarPreview",
+      "parameters": [
+        {
+          "name": "imageUrl",
+          "type": "String"
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?"
+        },
+        {
+          "name": "size",
+          "type": "Dp"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "sketch-card",
@@ -2846,7 +2924,13 @@
       "sourceModule": ":core:ui",
       "bodyLine": 824,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "SketchShapePreview"
+      "sourceFunction": "SketchShapePreview",
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "Int"
+        }
+      ]
     },
     {
       "componentId": "sketch-segmented",
@@ -3164,7 +3248,48 @@
       "sourceModule": ":core:ui",
       "bodyLine": 586,
       "sourceDirectory": "core/ui",
-      "sourceFunction": "SketchHorizontalDividerPreview"
+      "sourceFunction": "SketchHorizontalDividerPreview",
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "Int"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "hasDefault": true
+        },
+        {
+          "name": "thickness",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "roughness",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "tremor",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "sweepWavelength",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "tremorWavelength",
+          "type": "Dp",
+          "hasDefault": true
+        }
+      ]
     },
     {
       "componentId": "sketch-divider-taste",
@@ -4891,8 +5016,8 @@
       ]
     }
   ],
-  "renderer": "compose-preview 2.4.1",
-  "generatedAt": "2026-09-09T09:09:06.312Z",
+  "renderer": "compose-preview 2.6.0",
+  "generatedAt": "2026-09-10T09:08:40.351Z",
   "display": {
     "hero": "profile-card-front"
   },

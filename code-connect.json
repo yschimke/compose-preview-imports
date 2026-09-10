@@ -7,7 +7,7 @@
     "ref": "300a81bc575598c37b06814ed9e81099c162b9e5",
     "module": ":core:ui"
   },
-  "generatedAt": "2026-09-09T09:09:07.401Z",
+  "generatedAt": "2026-09-10T09:08:41.928Z",
   "mappings": [
     {
       "componentId": "kaigi-button",
@@ -336,7 +336,7 @@
       "componentName": "KaigiChip",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiChip.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiChipPreview",
       "codeSnippet": "KaigiChip(\n    seed = TODO(\"Int\"),\n    containerColor = TODO(\"Color\"),\n    contentColor = TODO(\"Color\"),\n    content = { },\n)",
       "imports": [
@@ -712,24 +712,63 @@
     {
       "componentId": "segmented-first",
       "figmaLayerName": "segmented-first",
-      "componentName": "KaigiSingleChoiceSegmentedButtonRow",
+      "componentName": "KaigiSegmentedButton",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiSegmentedButtonFirstSelectedPreview",
-      "codeSnippet": "KaigiSingleChoiceSegmentedButtonRow(\n    outlineSeed = TODO(\"Int\"),\n    content = { },\n)",
+      "codeSnippet": "KaigiSegmentedButton(\n    selected = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n    dividerSeed = TODO(\"Int?\"),\n    label = { },\n)",
       "imports": [
-        "import io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRow"
+        "import io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButton"
       ],
       "parameters": [
         {
-          "name": "outlineSeed",
-          "type": "Int",
-          "typeFqn": "kotlin.Int",
+          "name": "selected",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
           "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "dividerSeed",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "leadingDividerSeed",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
           "noArgConstructible": false,
           "noArgFactory": null,
           "scopeDslReceiver": null,
@@ -749,20 +788,7 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "width",
-          "type": "Dp",
-          "typeFqn": "androidx.compose.ui.unit.Dp",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "borderColor",
+          "name": "selectedContainerColor",
           "type": "Color",
           "typeFqn": "androidx.compose.ui.graphics.Color",
           "hasDefault": true,
@@ -775,12 +801,38 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "content",
-          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
+          "name": "selectedContentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "label",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": true,
-          "composableSlotReceiver": "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRowScope",
+          "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
           "noArgFactory": null,
@@ -793,24 +845,63 @@
     {
       "componentId": "segmented-second",
       "figmaLayerName": "segmented-second",
-      "componentName": "KaigiSingleChoiceSegmentedButtonRow",
+      "componentName": "KaigiSegmentedButton",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiSegmentedButtonSecondSelectedPreview",
-      "codeSnippet": "KaigiSingleChoiceSegmentedButtonRow(\n    outlineSeed = TODO(\"Int\"),\n    content = { },\n)",
+      "codeSnippet": "KaigiSegmentedButton(\n    selected = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n    dividerSeed = TODO(\"Int?\"),\n    label = { },\n)",
       "imports": [
-        "import io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRow"
+        "import io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButton"
       ],
       "parameters": [
         {
-          "name": "outlineSeed",
-          "type": "Int",
-          "typeFqn": "kotlin.Int",
+          "name": "selected",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
           "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "dividerSeed",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "leadingDividerSeed",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
           "noArgConstructible": false,
           "noArgFactory": null,
           "scopeDslReceiver": null,
@@ -830,20 +921,7 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "width",
-          "type": "Dp",
-          "typeFqn": "androidx.compose.ui.unit.Dp",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "borderColor",
+          "name": "selectedContainerColor",
           "type": "Color",
           "typeFqn": "androidx.compose.ui.graphics.Color",
           "hasDefault": true,
@@ -856,12 +934,38 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "content",
-          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
+          "name": "selectedContentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "label",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": true,
-          "composableSlotReceiver": "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRowScope",
+          "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
           "noArgFactory": null,
@@ -874,24 +978,63 @@
     {
       "componentId": "segmented-three",
       "figmaLayerName": "segmented-three",
-      "componentName": "KaigiSingleChoiceSegmentedButtonRow",
+      "componentName": "KaigiSegmentedButton",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiSegmentedButton.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiSegmentedButtonThreeSegmentsPreview",
-      "codeSnippet": "KaigiSingleChoiceSegmentedButtonRow(\n    outlineSeed = TODO(\"Int\"),\n    content = { },\n)",
+      "codeSnippet": "KaigiSegmentedButton(\n    selected = TODO(\"Boolean\"),\n    onClick = TODO(\"() -> Unit\"),\n    dividerSeed = TODO(\"Int?\"),\n    label = { },\n)",
       "imports": [
-        "import io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRow"
+        "import io.github.droidkaigi.confsched.core.ui.KaigiSegmentedButton"
       ],
       "parameters": [
         {
-          "name": "outlineSeed",
-          "type": "Int",
-          "typeFqn": "kotlin.Int",
+          "name": "selected",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
           "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
           "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "dividerSeed",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "leadingDividerSeed",
+          "type": "Int?",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
           "noArgConstructible": false,
           "noArgFactory": null,
           "scopeDslReceiver": null,
@@ -911,20 +1054,7 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "width",
-          "type": "Dp",
-          "typeFqn": "androidx.compose.ui.unit.Dp",
-          "hasDefault": true,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "borderColor",
+          "name": "selectedContainerColor",
           "type": "Color",
           "typeFqn": "androidx.compose.ui.graphics.Color",
           "hasDefault": true,
@@ -937,12 +1067,38 @@
           "lambdaReturnTypeFqn": null
         },
         {
-          "name": "content",
-          "type": "KaigiSingleChoiceSegmentedButtonRowScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
+          "name": "selectedContentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "label",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
           "hasDefault": false,
           "composableSlot": true,
-          "composableSlotReceiver": "io.github.droidkaigi.confsched.core.ui.KaigiSingleChoiceSegmentedButtonRowScope",
+          "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
           "noArgFactory": null,
@@ -1000,7 +1156,7 @@
       "componentName": "KaigiNavigationBar",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiNavigationBarPreview",
       "codeSnippet": "KaigiNavigationBar(\n    outlineSeed = TODO(\"Int\"),\n    content = { },\n)",
       "imports": [
@@ -1055,7 +1211,7 @@
       "componentName": "KaigiNavigationRail",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiNavigationBar.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiNavigationRailPreview",
       "codeSnippet": "KaigiNavigationRail(\n    outlineSeed = TODO(\"Int\"),\n    content = { },\n)",
       "imports": [
@@ -1110,7 +1266,7 @@
       "componentName": "KaigiTopAppBar",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiTopAppBar.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "KaigiTopAppBarPreview",
       "codeSnippet": "KaigiTopAppBar(\n    title = TODO(\"String\"),\n)",
       "imports": [
@@ -1846,7 +2002,7 @@
       "componentName": "ProfileCardFace",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/profilecard/ProfileCardFace.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "ProfileCardFacePreview",
       "codeSnippet": "ProfileCardFace(\n    sketchiness = TODO(\"Sketchiness\"),\n    paperGrain = TODO(\"PaperGrain\"),\n    outlineSeed = TODO(\"Int\"),\n    topStartTape = TODO(\"Boolean\"),\n    bottomEndTape = TODO(\"Boolean\"),\n    mirrored = TODO(\"Boolean\"),\n    content = { },\n)",
       "imports": [
@@ -2099,11 +2255,82 @@
     {
       "componentId": "kaigi-avatar",
       "figmaLayerName": "kaigi-avatar",
-      "componentName": "KaigiAvatarPreview",
+      "componentName": "KaigiAvatar",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/KaigiAvatar.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "LOW",
       "previewName": "KaigiAvatarPreview",
+      "codeSnippet": "KaigiAvatar(\n    imageUrl = TODO(\"String\"),\n    contentDescription = TODO(\"String?\"),\n    size = TODO(\"Dp\"),\n)",
+      "imports": [
+        "import io.github.droidkaigi.confsched.core.ui.KaigiAvatar"
+      ],
+      "parameters": [
+        {
+          "name": "imageUrl",
+          "type": "String",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "contentDescription",
+          "type": "String?",
+          "typeFqn": "kotlin.String",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "size",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "borderColor",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "figma/kaigi-avatar.svg"
     },
     {
@@ -2190,11 +2417,30 @@
     {
       "componentId": "sketch-shape",
       "figmaLayerName": "sketch-shape",
-      "componentName": "SketchShapePreview",
+      "componentName": "combineSketchSeed",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SketchShapePreview",
+      "codeSnippet": "combineSketchSeed(\n    seed = TODO(\"Int\"),\n)",
+      "imports": [
+        "import io.github.droidkaigi.confsched.core.ui.combineSketchSeed"
+      ],
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "figma/sketch-shape.svg"
     },
     {
@@ -2399,11 +2645,121 @@
     {
       "componentId": "sketch-divider",
       "figmaLayerName": "sketch-divider",
-      "componentName": "SketchHorizontalDividerPreview",
+      "componentName": "SketchHorizontalDivider",
       "source": "https://github.com/DroidKaigi/conference-app-2026/blob/300a81bc575598c37b06814ed9e81099c162b9e5/core/ui/src/commonMain/kotlin/io/github/droidkaigi/confsched/core/ui/Sketch.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "SketchHorizontalDividerPreview",
+      "codeSnippet": "SketchHorizontalDivider(\n    seed = TODO(\"Int\"),\n)",
+      "imports": [
+        "import io.github.droidkaigi.confsched.core.ui.SketchHorizontalDivider"
+      ],
+      "parameters": [
+        {
+          "name": "seed",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "color",
+          "type": "Color",
+          "typeFqn": "androidx.compose.ui.graphics.Color",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "thickness",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "roughness",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "tremor",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "sweepWavelength",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "tremorWavelength",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
       "figmaSvg": "figma/sketch-divider.svg"
     },
     {
