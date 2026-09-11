@@ -1269,7 +1269,7 @@
       "wireframe": "wireframes/tiles-refresh-interval.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/home/views/RefreshIntervalPickerView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 109,
+      "bodyLine": 108,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewRefreshIntervalPickerView",
       "parameters": [
@@ -2160,7 +2160,7 @@
       "wireframe": "wireframes/conversation-speech-bubbles.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/conversation/views/ConversationView.kt",
       "sourceModule": ":wear",
-      "bodyLine": 305,
+      "bodyLine": 304,
       "sourceDirectory": "wear",
       "sourceFunction": "PreviewSpeechBubble",
       "parameters": [
@@ -2593,8 +2593,8 @@
   "library": [
     "Wear Compose Material + Home Assistant surfaces"
   ],
-  "renderer": "compose-preview 2.6.0",
-  "generatedAt": "2026-09-10T09:26:16.695Z",
+  "renderer": "compose-preview 2.8.1",
+  "generatedAt": "2026-09-11T09:24:34.465Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Entity list"
@@ -2614,7 +2614,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "270e31a17a09dcda97d2e91512a2b426c5167a13",
+    "ref": "1ed9a61ec18ea61682b9d1319b386b5284bca2e2",
     "module": ":wear"
   }
 }
