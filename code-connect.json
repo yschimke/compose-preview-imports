@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
+    "ref": "3e132fab4d5d79de23222b158f9512f696eaf20d",
     "module": ":app"
   },
-  "generatedAt": "2026-09-05T09:05:56.524Z",
+  "generatedAt": "2026-09-12T09:16:29.074Z",
   "mappings": [
     {
       "componentId": "Settings/Wear companion",
       "figmaLayerName": "Settings/Wear companion",
       "componentName": "SettingWearLandingView",
-      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
+      "source": "https://github.com/home-assistant/android/blob/3e132fab4d5d79de23222b158f9512f696eaf20d/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSettingWearLandingView",
@@ -31,7 +31,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "hasData",
@@ -42,7 +44,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "isAuthed",
@@ -53,7 +57,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "navigateFavorites",
@@ -64,7 +70,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "navigateTemplateTile",
@@ -75,7 +83,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "loginWearOs",
@@ -86,7 +96,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onBackClicked",
@@ -97,7 +109,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "events",
@@ -108,7 +122,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "modifier",
@@ -119,16 +135,18 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
-      "figmaSvg": "figma/settings-wear-companion.svg"
+      "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-wear-companion__ideal__default.svg"
     },
     {
       "componentId": "Onboarding/Matter commissioning",
       "figmaLayerName": "Onboarding/Matter commissioning",
       "componentName": "MatterCommissioningScreen",
-      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
+      "source": "https://github.com/home-assistant/android/blob/3e132fab4d5d79de23222b158f9512f696eaf20d/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMatterCommissioningScreen",
@@ -146,7 +164,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "deviceName",
@@ -157,7 +177,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "serverChooserItems",
@@ -168,7 +190,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onSelectServer",
@@ -179,7 +203,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onConfirmCommissioning",
@@ -190,7 +216,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onClose",
@@ -201,7 +229,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onContinue",
@@ -212,7 +242,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "modifier",
@@ -223,7 +255,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/onboarding-matter-commissioning__ideal__default.svg"
@@ -232,9 +266,9 @@
       "componentId": "Settings/Wi-Fi SSIDs",
       "figmaLayerName": "Settings/Wi-Fi SSIDs",
       "componentName": "SsidView",
-      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
+      "source": "https://github.com/home-assistant/android/blob/3e132fab4d5d79de23222b158f9512f696eaf20d/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
       "label": "Compose",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "previewName": "PreviewSsidViewItems",
       "codeSnippet": "SsidView(\n    wifiSsids = TODO(\"List<String>\"),\n    canReadWifi = TODO(\"Boolean\"),\n    ethernet = TODO(\"Boolean?\"),\n    vpn = TODO(\"Boolean?\"),\n    prioritizeInternal = TODO(\"Boolean\"),\n    usingWifi = TODO(\"Boolean\"),\n    activeSsid = TODO(\"String?\"),\n    activeBssid = TODO(\"String?\"),\n    onAddWifiSsid = TODO(\"(String) -> Boolean\"),\n    onRemoveWifiSsid = TODO(\"(String) -> Unit\"),\n    onRequestPermission = TODO(\"() -> Unit\"),\n    onSetEthernet = TODO(\"(Boolean) -> Unit\"),\n    onSetVpn = TODO(\"(Boolean) -> Unit\"),\n    onSetPrioritize = TODO(\"(Boolean) -> Unit\"),\n)",
       "imports": [
@@ -250,7 +284,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "canReadWifi",
@@ -261,7 +297,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "ethernet",
@@ -272,7 +310,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "vpn",
@@ -283,7 +323,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "prioritizeInternal",
@@ -294,7 +336,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "usingWifi",
@@ -305,7 +349,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "activeSsid",
@@ -316,7 +362,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "activeBssid",
@@ -327,7 +375,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onAddWifiSsid",
@@ -338,7 +388,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Boolean"
         },
         {
           "name": "onRemoveWifiSsid",
@@ -349,7 +401,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onRequestPermission",
@@ -360,7 +414,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onSetEthernet",
@@ -371,7 +427,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onSetVpn",
@@ -382,7 +440,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onSetPrioritize",
@@ -393,7 +453,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "modifier",
@@ -404,7 +466,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "figma/settings-wi-fi-ssids.svg"
@@ -413,9 +477,9 @@
       "componentId": "Settings/External URL",
       "figmaLayerName": "Settings/External URL",
       "componentName": "ExternalUrlView",
-      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
+      "source": "https://github.com/home-assistant/android/blob/3e132fab4d5d79de23222b158f9512f696eaf20d/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
       "label": "Compose",
-      "confidence": "MEDIUM",
+      "confidence": "HIGH",
       "previewName": "PreviewExternalUrlViewCloudOn",
       "codeSnippet": "ExternalUrlView(\n    canUseCloud = TODO(\"Boolean\"),\n    useCloud = TODO(\"Boolean\"),\n    externalUrl = TODO(\"String?\"),\n    onUseCloudToggle = TODO(\"(Boolean) -> Unit\"),\n    onExternalUrlSaved = TODO(\"(String) -> Unit\"),\n)",
       "imports": [
@@ -431,7 +495,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "useCloud",
@@ -442,7 +508,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "externalUrl",
@@ -453,7 +521,9 @@
           "composableSlotReceiver": null,
           "nullable": true,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "onUseCloudToggle",
@@ -464,7 +534,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "onExternalUrlSaved",
@@ -475,7 +547,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
         },
         {
           "name": "modifier",
@@ -486,7 +560,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-external-url__ideal__default.svg"
@@ -495,7 +571,7 @@
       "componentId": "Settings/Notification detail",
       "figmaLayerName": "Settings/Notification detail",
       "componentName": "LoadNotification",
-      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
+      "source": "https://github.com/home-assistant/android/blob/3e132fab4d5d79de23222b158f9512f696eaf20d/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "PreviewNotificationDetails",
@@ -513,7 +589,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         },
         {
           "name": "modifier",
@@ -524,7 +602,9 @@
           "composableSlotReceiver": null,
           "nullable": false,
           "noArgConstructible": false,
-          "noArgFactory": null
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
         }
       ],
       "figmaSvg": "figma/settings-notification-detail.svg"
@@ -532,11 +612,56 @@
     {
       "componentId": "Components/Icon dialog",
       "figmaLayerName": "Components/Icon dialog",
-      "componentName": "IconDialogPreview",
-      "source": "https://github.com/home-assistant/android/blob/d3af0e4c91484b69f8a175c86d1514ea2ae2c907/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
+      "componentName": "IconDialogContent",
+      "source": "https://github.com/home-assistant/android/blob/3e132fab4d5d79de23222b158f9512f696eaf20d/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "MEDIUM",
       "previewName": "IconDialogPreview",
+      "codeSnippet": "IconDialogContent(\n    onSelect = TODO(\"(MdiIcon) -> Unit\"),\n)",
+      "imports": [
+        "import io.homeassistant.companion.android.util.icondialog.IconDialogContent"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "iconFilter",
+          "type": "IconFilter",
+          "typeFqn": "io.homeassistant.companion.android.util.icondialog.IconFilter",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onSelect",
+          "type": "(MdiIcon) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ],
       "figmaSvg": "figma/components-icon-dialog.svg"
     }
   ]

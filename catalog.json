@@ -14,7 +14,8 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-wear-companion__ideal__default",
           "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearLandingViewKt.PreviewSettingWearLandingView",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-wear-companion__ideal__default.svg"
         }
       ],
       "greenlines": [
@@ -95,7 +96,7 @@
       "wireframe": "wireframes/settings-wear-companion.svg",
       "sourceFile": "src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
       "sourceModule": ":app",
-      "bodyLine": 130,
+      "bodyLine": 132,
       "sourceDirectory": "app",
       "sourceFunction": "PreviewSettingWearLandingView",
       "parameters": [
@@ -603,7 +604,7 @@
       "wireframe": "wireframes/settings-wi-fi-ssids.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
       "sourceModule": ":app",
-      "bodyLine": 422,
+      "bodyLine": 424,
       "sourceDirectory": "app",
       "sourceFunction": "PreviewSsidViewItems",
       "parameters": [
@@ -971,7 +972,8 @@
           "height": 1313,
           "livePreview": "https://preview.coo.ee/home-assistant-android/p/components-icon-dialog__ideal__results",
           "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogGridKt.IconDialogGridPreview",
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/components-icon-dialog__ideal__results.svg"
         }
       ],
       "greenlines": [
@@ -2593,16 +2595,32 @@
       "wireframe": "wireframes/components-icon-dialog.svg",
       "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
       "sourceModule": ":app",
-      "bodyLine": 60,
+      "bodyLine": 58,
       "sourceDirectory": "app",
-      "sourceFunction": "IconDialogPreview"
+      "sourceFunction": "IconDialogPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "iconFilter",
+          "type": "IconFilter",
+          "hasDefault": true
+        },
+        {
+          "name": "onSelect",
+          "type": "(MdiIcon) -> Unit"
+        }
+      ]
     }
   ],
   "library": [
     "Jetpack Compose Material + Home Assistant theme"
   ],
-  "renderer": "compose-preview 1.77.0",
-  "generatedAt": "2026-09-05T09:05:51.883Z",
+  "renderer": "compose-preview 2.11.0",
+  "generatedAt": "2026-09-12T09:16:24.093Z",
   "display": {
     "surface": "light",
     "hero": "Settings/Wear companion"
@@ -2619,9 +2637,10 @@
       "previewIdPrefix": ""
     }
   ],
+  "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "d3af0e4c91484b69f8a175c86d1514ea2ae2c907",
+    "ref": "3e132fab4d5d79de23222b158f9512f696eaf20d",
     "module": ":app"
   }
 }
