@@ -688,9 +688,9 @@
         {
           "bounds": {
             "x": 24,
-            "y": 242,
-            "width": 405,
-            "height": 123
+            "y": 218,
+            "width": 406,
+            "height": 124
           },
           "label": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
           "padding": {
@@ -702,10 +702,10 @@
         },
         {
           "bounds": {
-            "x": 80,
-            "y": 422,
-            "width": 293,
-            "height": 32
+            "x": 74,
+            "y": 398,
+            "width": 305,
+            "height": 56
           },
           "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.20)",
           "padding": {
@@ -969,8 +969,8 @@
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 2.8.1",
-  "generatedAt": "2026-09-11T10:01:27.027Z",
+  "renderer": "compose-preview 2.11.0",
+  "generatedAt": "2026-09-12T09:40:54.322Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/Playback effects"
@@ -990,7 +990,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "85d41ba93a8ac353fe8a790239ce88067a412ce1",
+    "ref": "7fb2d5139e57ec3a35fca9711dd874a22aa66137",
     "module": ":wear"
   }
 }
