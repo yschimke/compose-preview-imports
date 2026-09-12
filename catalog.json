@@ -1050,7 +1050,7 @@
       "wireframe": "wireframes/buttons-time-play-button.svg",
       "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/TimePlayButton.kt",
       "sourceModule": ":modules:services:compose",
-      "bodyLine": 89,
+      "bodyLine": 100,
       "sourceDirectory": "modules/services/compose",
       "sourceFunction": "TimePlayButtonPreview",
       "parameters": [
@@ -1069,6 +1069,11 @@
         {
           "name": "modifier",
           "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "isLoading",
+          "type": "Boolean",
           "hasDefault": true
         },
         {
@@ -3400,7 +3405,7 @@
             "width": 241,
             "height": 37
           },
-          "label": "Sep 9, 10:16 AM",
+          "label": "Sep 12, 9:48 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3426,7 +3431,7 @@
             "width": 241,
             "height": 37
           },
-          "label": "Sep 9, 10:16 AM",
+          "label": "Sep 12, 9:48 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3452,7 +3457,7 @@
             "width": 241,
             "height": 37
           },
-          "label": "Sep 9, 10:16 AM",
+          "label": "Sep 12, 9:48 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -6961,8 +6966,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 2.4.1",
-  "generatedAt": "2026-09-09T10:18:13.267Z",
+  "renderer": "compose-preview 2.11.0",
+  "generatedAt": "2026-09-12T09:49:54.547Z",
   "display": {
     "surface": "light",
     "hero": "Insights/Calendar heat map"
@@ -6982,7 +6987,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "7abb921dbe591d1677f76771857f110ad8828d55",
+    "ref": "7fb2d5139e57ec3a35fca9711dd874a22aa66137",
     "module": ":modules:services:compose"
   }
 }
