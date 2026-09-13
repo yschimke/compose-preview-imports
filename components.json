@@ -95,6 +95,108 @@
             "androidxOptIns": []
         },
         {
+            "canonicalId": "composeApp/androidx.compose.material3.IconKt.Icon",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "androidx.compose.material3.IconKt",
+                "callable": "androidx.compose.material3.Icon",
+                "name": "Icon",
+                "origin": "LIBRARY",
+                "jvmName": "Icon-ww6aTOc",
+                "descriptor": "(Landroidx/compose/ui/graphics/vector/ImageVector;Ljava/lang/String;Landroidx/compose/ui/Modifier;JLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": null,
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "imageVector",
+                    "type": "ImageVector",
+                    "typeFqn": "androidx.compose.ui.graphics.vector.ImageVector",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "contentDescription",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "tint",
+                    "type": "Color",
+                    "typeFqn": "androidx.compose.ui.graphics.Color",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowSelectedPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "dev.johnoreilly.climatetrace.ui.ClimateTracePreviewsKt.CountryRowUnrankedPreview",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `imageVector: ImageVector`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
             "canonicalId": "composeApp/androidx.compose.material3.SurfaceKt.Surface",
             "componentIds": [],
             "symbol": {
