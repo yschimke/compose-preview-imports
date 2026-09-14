@@ -46,7 +46,7 @@ customising the live render are two ends of one workflow.
 | Library | `Compose Material 2 + Pocket Casts theme roles` |
 | Renderer | compose-preview 2.13.1 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-09-13 |
+| Generated | 2026-09-14 |
 
 ## Components by group
 
