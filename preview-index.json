@@ -15,6 +15,22 @@
   ],
   "revisions": [
     {
+      "commit": "1c929f1147343db4c23daf16b624b53f406c48ae",
+      "previews": [
+        "components-icon-dialog__ideal__default",
+        "components-icon-dialog__ideal__results",
+        "components-icon-dialog__ideal__search",
+        "onboarding-matter-commissioning__ideal__default",
+        "settings-external-url__ideal__cloud-off",
+        "settings-external-url__ideal__cloud-unavailable",
+        "settings-external-url__ideal__default",
+        "settings-notification-detail__ideal__default",
+        "settings-wear-companion__ideal__default",
+        "settings-wi-fi-ssids__ideal__default",
+        "settings-wi-fi-ssids__ideal__empty"
+      ]
+    },
+    {
       "commit": "79ae7df69993445fdcb59c2445631ae43b2b1fcc",
       "previews": [
         "components-icon-dialog__ideal__default",
