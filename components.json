@@ -21752,6 +21752,289 @@
             "androidxOptIns": []
         },
         {
+            "canonicalId": "app/io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetKt.PreviewSheet",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetKt",
+                "callable": "io.homeassistant.companion.android.settings.sensor.views.PreviewSheet",
+                "name": "PreviewSheet",
+                "origin": "PROJECT",
+                "jvmName": "PreviewSheet",
+                "descriptor": "(Ljava/util/List;Ljava/util/List;ZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/settings/sensor/views/SensorDetailSettingSheet.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entries",
+                    "type": "List<SettingEntry>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "entriesSelected",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isLoading",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetKt.SensorDetailSettingsSheetLoadingPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetKt.SensorDetailSettingsSheetNoResultPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetKt.SensorDetailSettingsSheetPreview",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "not public or internal, so a generated file cannot call it",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": false,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "app/io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.PreviewSheet",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest",
+                "callable": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.PreviewSheet",
+                "name": "PreviewSheet",
+                "origin": "PROJECT",
+                "jvmName": "PreviewSheet",
+                "descriptor": "(Ljava/util/List;Ljava/util/List;ZLandroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/screenshotTest/kotlin/io/homeassistant/companion/android/settings/sensor/views/SensorDetailSettingSheetScreenshotTest.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "entries",
+                    "type": "List<SettingEntry>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "entriesSelected",
+                    "type": "List<String>",
+                    "typeFqn": "kotlin.collections.List",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "isLoading",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_loading_state_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_loading_state_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_loading_state_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_loading_state_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_loading_state_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_loading_state_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_with_search_field_and_entries_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_with_search_field_and_entries_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_with_search_field_and_entries_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_with_search_field_and_entries_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_with_search_field_and_entries_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_with_search_field_and_entries_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_entries_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_entries_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_entries_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_entries_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_entries_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_entries_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_search_field_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_search_field_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_search_field_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_search_field_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_search_field_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.settings.sensor.views.SensorDetailSettingSheetScreenshotTest.SensorDetailSettingSheet_without_search_field_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "not public or internal, so a generated file cannot call it",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": false,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
             "canonicalId": "app/io.homeassistant.companion.android.settings.server.ServerChooserKt.ServerChooser",
             "componentIds": [],
             "symbol": {
