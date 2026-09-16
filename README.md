@@ -44,9 +44,9 @@ customising the live render are two ends of one workflow.
 | Editable design vectors (figma-svg) | **21** |
 | Components with a11y greenlines | **13** |
 | Library | — |
-| Renderer | compose-preview 2.15.0 |
+| Renderer | compose-preview 2.16.0 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-09-15 |
+| Generated | 2026-09-16 |
 
 ## Components by group
 
