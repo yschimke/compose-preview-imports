@@ -969,8 +969,8 @@
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 2.15.0",
-  "generatedAt": "2026-09-15T10:31:40.875Z",
+  "renderer": "compose-preview 2.16.0",
+  "generatedAt": "2026-09-16T10:21:28.635Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/Playback effects"
@@ -990,7 +990,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "f5f6fff8de0f900fcb4a73f840f247ce9b3a090b",
+    "ref": "0bc7254bedacecc5d089008f9dbf50700d75c482",
     "module": ":wear"
   }
 }
