@@ -19,6 +19,26 @@
   ],
   "revisions": [
     {
+      "commit": "8b5f53c8d9e2711a6d2378c8d3b97e851642752a",
+      "previews": [
+        "chrome-time-text__ideal__default__compact",
+        "chrome-time-text__ideal__disconnected__compact",
+        "episodes-episode-chip__ideal__default",
+        "playback-marquee-media-display__ideal__default",
+        "screens-playback-effects__ideal__default__compact",
+        "screens-settings__ideal__checked__compact",
+        "screens-settings__ideal__default__compact",
+        "sign-in-phone-instructions__ideal__default",
+        "sign-in-phone-instructions__ideal__login-failed",
+        "sign-in-phone-instructions__ideal__no-connection",
+        "sign-in-phone-instructions__ideal__success",
+        "sign-in-phone-instructions__ideal__syncing",
+        "states-loading__ideal__default__compact",
+        "states-no-content__ideal__default__compact",
+        "states-notification__ideal__default"
+      ]
+    },
+    {
       "commit": "bf325f7cf76f3e4ad2949fa8df5fc23e1ff9d2a9",
       "previews": [
         "chrome-time-text__ideal__default__compact",
@@ -200,26 +220,6 @@
     },
     {
       "commit": "be1f9240289115d11db528d2147a8b78ea67e06d",
-      "previews": [
-        "chrome-time-text__ideal__default__compact",
-        "chrome-time-text__ideal__disconnected__compact",
-        "episodes-episode-chip__ideal__default",
-        "playback-marquee-media-display__ideal__default",
-        "screens-playback-effects__ideal__default__compact",
-        "screens-settings__ideal__checked__compact",
-        "screens-settings__ideal__default__compact",
-        "sign-in-phone-instructions__ideal__default",
-        "sign-in-phone-instructions__ideal__login-failed",
-        "sign-in-phone-instructions__ideal__no-connection",
-        "sign-in-phone-instructions__ideal__success",
-        "sign-in-phone-instructions__ideal__syncing",
-        "states-loading__ideal__default__compact",
-        "states-no-content__ideal__default__compact",
-        "states-notification__ideal__default"
-      ]
-    },
-    {
-      "commit": "ab1d141fd3872f8c4c65308f4cb2231320b4a22d",
       "previews": [
         "chrome-time-text__ideal__default__compact",
         "chrome-time-text__ideal__disconnected__compact",
