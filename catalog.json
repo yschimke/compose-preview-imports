@@ -2436,8 +2436,8 @@
       "sourceFunction": "PreviewMullvadProgressIndicator"
     }
   ],
-  "renderer": "compose-preview 2.16.0",
-  "generatedAt": "2026-09-16T10:14:18.224Z",
+  "renderer": "compose-preview 2.18.1",
+  "generatedAt": "2026-09-17T10:26:12.383Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -2453,7 +2453,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "3ed0aaacf1bdc0377827a9b4601adfce829507a0",
+    "ref": "9b55fc929cf23e8f89dc358ff0f7d8748f0665e2",
     "module": ":lib:ui:designsystem"
   }
 }
