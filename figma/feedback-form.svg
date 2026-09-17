@@ -7,16 +7,16 @@
         <g id="Box">
             <rect x="21" y="21" width="1008" height="347" fill="#19191C" fill-opacity="0.05"/>
           <g id="CoreTextFieldKt">
-            <image href="feedback-form.figma-raster/241.png" x="63" y="63" width="316" height="49"/>
+            <image href="feedback-form.figma-raster/257.png" x="63" y="63" width="316" height="49"/>
           </g>
           <g id="Empty">
-            <text x="63" y="108.99" font-size="42" font-family="jetbrains_sans_regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" fill="#19191C" fill-opacity="0.3">Type something</text>
+            <text x="63" y="108.99" font-size="42" font-family="jetbrains_sans_regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" style="font-variation-settings:&apos;ital&apos; 0.0,&apos;wght&apos; 400.0" fill="#19191C" fill-opacity="0.3">Type something</text>
           </g>
         </g>
         <g id="Row">
           <g id="Row">
             <g id="Empty">
-              <text x="63" y="452.99" font-size="42" font-family="jetbrains_sans_semibold.ttf:FontWeight(weight=600):Normal:SettingFloat(ital,0.0),SettingInt(wght,600, sans-serif" font-weight="600" fill="#19191C">Skip comment</text>
+              <text x="63" y="452.99" font-size="42" font-family="jetbrains_sans_semibold.ttf:FontWeight(weight=600):Normal:SettingFloat(ital,0.0),SettingInt(wght,600, sans-serif" font-weight="600" style="font-variation-settings:&apos;ital&apos; 0.0,&apos;wght&apos; 600.0" fill="#19191C">Skip comment</text>
             </g>
             <g id="BoxKt">
               <g transform="translate(370 400) scale(2.62 2.62)">
@@ -28,7 +28,7 @@
           </g>
           <g id="Row">
             <g id="Empty">
-              <text x="801" y="452.99" font-size="42" font-family="jetbrains_sans_semibold.ttf:FontWeight(weight=600):Normal:SettingFloat(ital,0.0),SettingInt(wght,600, sans-serif" font-weight="600" fill="#19191C" fill-opacity="0.4">Send</text>
+              <text x="801" y="452.99" font-size="42" font-family="jetbrains_sans_semibold.ttf:FontWeight(weight=600):Normal:SettingFloat(ital,0.0),SettingInt(wght,600, sans-serif" font-weight="600" style="font-variation-settings:&apos;ital&apos; 0.0,&apos;wght&apos; 600.0" fill="#19191C" fill-opacity="0.4">Send</text>
             </g>
             <g id="BoxKt">
               <g transform="translate(924 400) scale(2.62 2.62)">
@@ -40,16 +40,16 @@
         <g id="Row">
           <g id="Row">
             <g id="AnimatedContent">
-              <image href="feedback-form.figma-raster/254.png" x="63" y="497" width="685" height="186"/>
+              <image href="feedback-form.figma-raster/270.png" x="63" y="497" width="685" height="186"/>
               <g id="Empty">
-                <text font-size="34.13" font-family="jetbrains_sans_regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" fill="#19191C"><tspan x="95" y="549" textLength="517" lengthAdjust="spacing">Sorry you didn’t like this session.</tspan><tspan x="95" y="601" textLength="474" lengthAdjust="spacing">Please help us improve with a</tspan><tspan x="95" y="654" textLength="616" lengthAdjust="spacing">constructive and respectful comment.</tspan></text>
+                <text font-size="34.13" font-family="jetbrains_sans_regular.ttf:FontWeight(weight=400):Normal:SettingFloat(ital,0.0),SettingInt(wght,400, sans-serif" style="font-variation-settings:&apos;ital&apos; 0.0,&apos;wght&apos; 400.0" fill="#19191C"><tspan x="95" y="549" textLength="517" lengthAdjust="spacing">Sorry you didn’t like this session.</tspan><tspan x="95" y="601" textLength="474" lengthAdjust="spacing">Please help us improve with a</tspan><tspan x="95" y="654" textLength="616" lengthAdjust="spacing">constructive and respectful comment.</tspan></text>
               </g>
             </g>
             <g id="Spacer">
             </g>
           </g>
           <g id="ImageKt">
-            <image href="feedback-form.figma-raster/260.png" x="798" y="495" width="189" height="189"/>
+            <image href="feedback-form.figma-raster/276.png" x="798" y="495" width="189" height="189"/>
           </g>
         </g>
       </g>
