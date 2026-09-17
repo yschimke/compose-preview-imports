@@ -44,9 +44,9 @@ customising the live render are two ends of one workflow.
 | Editable design vectors (figma-svg) | **6** |
 | Components with a11y greenlines | **4** |
 | Library | `Jetpack Compose Material + Home Assistant theme` |
-| Renderer | compose-preview 2.16.0 |
+| Renderer | compose-preview 2.18.1 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-09-16 |
+| Generated | 2026-09-17 |
 
 ## Components by group
 
