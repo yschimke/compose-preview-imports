@@ -2709,6 +2709,11 @@
                     "group": null
                 },
                 {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NetworkImageKt.NetworkImagePreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NoContentBannerKt.UpNextNoContentBannerPreview",
                     "componentId": null,
                     "group": null
@@ -6360,6 +6365,98 @@
                     "au.com.shiftyjelly.pocketcasts.compose.components.FolderColorPicker"
                 ],
                 "refusedReason": null,
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "compose/au.com.shiftyjelly.pocketcasts.compose.components.NetworkImageKt.NetworkImage",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "au.com.shiftyjelly.pocketcasts.compose.components.NetworkImageKt",
+                "callable": "au.com.shiftyjelly.pocketcasts.compose.components.NetworkImage",
+                "name": "NetworkImage",
+                "origin": "PROJECT",
+                "jvmName": "NetworkImage-DzVHIIc",
+                "descriptor": "(Ljava/lang/String;FLandroidx/compose/ui/Modifier;Landroidx/compose/ui/graphics/shadow/Shadow;Landroidx/compose/runtime/Composer;II)V",
+                "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NetworkImage.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "imageUrl",
+                    "type": "String?",
+                    "typeFqn": "kotlin.String",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "imageRequestSize",
+                    "type": "Dp",
+                    "typeFqn": "androidx.compose.ui.unit.Dp",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "modifier",
+                    "type": "Modifier",
+                    "typeFqn": "androidx.compose.ui.Modifier",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "shadow",
+                    "type": "Shadow?",
+                    "typeFqn": "androidx.compose.ui.graphics.shadow.Shadow",
+                    "hasDefault": true,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": true,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.compose.components.NetworkImageKt.NetworkImagePreview",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `imageRequestSize: Dp`",
                 "requiredOptIns": [],
                 "androidxOptIns": []
             },
