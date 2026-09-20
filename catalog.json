@@ -18,7 +18,8 @@
           "previewParams": {
             "uiMode": 6
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-settings__ideal__default__compact.svg"
         },
         {
           "variant": "ideal",
@@ -32,7 +33,8 @@
           "previewParams": {
             "uiMode": 6
           },
-          "density": 2.625
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-settings__ideal__checked__compact.svg"
         }
       ],
       "greenlines": [],
@@ -127,7 +129,8 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2
+          "density": 2,
+          "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-playback-effects__ideal__default__compact.svg"
         }
       ],
       "greenlines": [
@@ -688,9 +691,9 @@
         {
           "bounds": {
             "x": 24,
-            "y": 218,
-            "width": 406,
-            "height": 124
+            "y": 242,
+            "width": 405,
+            "height": 123
           },
           "label": "2. The next time you open Pocket Casts on your watch and have a network connection, you will be logged in.",
           "padding": {
@@ -702,10 +705,10 @@
         },
         {
           "bounds": {
-            "x": 74,
-            "y": 398,
-            "width": 305,
-            "height": 56
+            "x": 80,
+            "y": 422,
+            "width": 293,
+            "height": 32
           },
           "label": "If you are having trouble, make sure your phone is running the same version of Pocket Casts as your watch (8.21-rc-6)",
           "padding": {
@@ -969,8 +972,8 @@
   "library": [
     "Wear Compose Material"
   ],
-  "renderer": "compose-preview 2.18.1",
-  "generatedAt": "2026-09-19T09:52:57.960Z",
+  "renderer": "compose-preview 2.19.0",
+  "generatedAt": "2026-09-20T10:20:54.555Z",
   "display": {
     "surface": "dark",
     "hero": "Screens/Playback effects"
@@ -990,7 +993,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "3fe6d722ff2e99d1c86c42ef47bf2642c19c49ae",
+    "ref": "7b2f46c5672b2e7657419c2425e157f466318bf5",
     "module": ":wear"
   }
 }
