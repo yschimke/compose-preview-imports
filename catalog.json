@@ -1041,8 +1041,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 2.18.1",
-  "generatedAt": "2026-09-19T09:32:15.325Z",
+  "renderer": "compose-preview 2.19.0",
+  "generatedAt": "2026-09-20T10:01:13.262Z",
   "display": {
     "hero": "station-list"
   },
@@ -1061,7 +1061,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "joreilly/BikeShare",
-    "ref": "f6ba775ed0a0f518150619e610c2548c0e047f63",
+    "ref": "e7c9b9aa53cf83810fdecbdde89e7beb18e8074f",
     "module": ":common"
   }
 }
