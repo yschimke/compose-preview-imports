@@ -995,8 +995,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 2.18.1",
-  "generatedAt": "2026-09-19T09:39:30.565Z",
+  "renderer": "compose-preview 2.19.0",
+  "generatedAt": "2026-09-20T10:07:52.070Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -1012,7 +1012,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "joreilly/ClimateTraceKMP",
-    "ref": "9cc5be13aa620b9aa7544176fb24bda69e7b55a0",
+    "ref": "fca136a4b9ec7675f5ad6e9eb018bc0fb814a626",
     "module": ":composeApp"
   }
 }
