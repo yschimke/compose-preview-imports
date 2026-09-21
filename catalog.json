@@ -68,7 +68,7 @@
       "wireframe": "wireframes/station-view.svg",
       "sourceFile": "src/commonMain/kotlin/dev/johnoreilly/common/stationlist/StationListUI.kt",
       "sourceModule": ":common",
-      "bodyLine": 112,
+      "bodyLine": 133,
       "sourceDirectory": "common",
       "sourceFunction": "StationViewPreview",
       "parameters": [
@@ -1041,8 +1041,8 @@
       "sourceFunction": "TypographySpecimenPreview"
     }
   ],
-  "renderer": "compose-preview 2.19.0",
-  "generatedAt": "2026-09-20T10:01:13.262Z",
+  "renderer": "compose-preview 2.21.1",
+  "generatedAt": "2026-09-21T10:42:58.399Z",
   "display": {
     "hero": "station-list"
   },
@@ -1061,7 +1061,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "joreilly/BikeShare",
-    "ref": "e7c9b9aa53cf83810fdecbdde89e7beb18e8074f",
+    "ref": "4f7c977e7f1aaeef7bc7d282ba66d5142a59570d",
     "module": ":common"
   }
 }
