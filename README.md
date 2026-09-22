@@ -46,7 +46,7 @@ customising the live render are two ends of one workflow.
 | Library | — |
 | Renderer | compose-preview 2.21.1 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-09-21 |
+| Generated | 2026-09-22 |
 
 ## Components by group
 
