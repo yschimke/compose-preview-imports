@@ -2620,7 +2620,7 @@
     "Jetpack Compose Material + Home Assistant theme"
   ],
   "renderer": "compose-preview 2.21.1",
-  "generatedAt": "2026-09-21T10:36:43.701Z",
+  "generatedAt": "2026-09-22T09:58:18.018Z",
   "display": {
     "surface": "light",
     "hero": "Settings/Wear companion"
@@ -2640,7 +2640,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "1b6748d3b5082f55cc3305a5941268611dfbca2d",
+    "ref": "d120c7dcd0683e163a2379883ba9299af071e1cb",
     "module": ":app"
   }
 }
