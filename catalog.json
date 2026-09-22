@@ -2594,7 +2594,7 @@
     "Wear Compose Material + Home Assistant surfaces"
   ],
   "renderer": "compose-preview 2.21.1",
-  "generatedAt": "2026-09-21T10:26:24.448Z",
+  "generatedAt": "2026-09-22T09:45:52.159Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Entity list"
@@ -2614,7 +2614,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "1b6748d3b5082f55cc3305a5941268611dfbca2d",
+    "ref": "d120c7dcd0683e163a2379883ba9299af071e1cb",
     "module": ":wear"
   }
 }
