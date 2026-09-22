@@ -2437,7 +2437,7 @@
     }
   ],
   "renderer": "compose-preview 2.21.1",
-  "generatedAt": "2026-09-21T10:56:09.031Z",
+  "generatedAt": "2026-09-22T10:17:47.767Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -2453,7 +2453,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "c71c9d8dccdfa24b6ac6d22ae14e9c18c18bc8a6",
+    "ref": "fae8ac947957e70836dd4cce0ade205e4332fcd7",
     "module": ":lib:ui:designsystem"
   }
 }
