@@ -3336,6 +3336,26 @@
         {
           "kind": "a11y",
           "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 3,
+              "width": 1050,
+              "height": 180
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 3,
+            "width": 1050,
+            "height": 180
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
           "message": "button \"Play at bookmark position 00:10\"",
           "detail": {
             "role": "button",
@@ -3357,6 +3377,26 @@
         {
           "kind": "a11y",
           "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 186,
+              "width": 1050,
+              "height": 180
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 186,
+            "width": 1050,
+            "height": 180
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
           "message": "button \"Play at bookmark position 00:10\"",
           "detail": {
             "role": "button",
@@ -3373,6 +3413,26 @@
             "y": 227,
             "width": 243,
             "height": 98
+          }
+        },
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 0,
+              "y": 369,
+              "width": 1050,
+              "height": 180
+            }
+          },
+          "bounds": {
+            "x": 0,
+            "y": 369,
+            "width": 1050,
+            "height": 180
           }
         },
         {
@@ -3405,7 +3465,7 @@
             "width": 259,
             "height": 37
           },
-          "label": "Sep 22, 10:31 AM",
+          "label": "Sep 25, 10:46 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3431,7 +3491,7 @@
             "width": 259,
             "height": 37
           },
-          "label": "Sep 22, 10:31 AM",
+          "label": "Sep 25, 10:46 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3457,7 +3517,7 @@
             "width": 259,
             "height": 37
           },
-          "label": "Sep 22, 10:31 AM",
+          "label": "Sep 25, 10:46 AM",
           "padding": {
             "start": 0,
             "top": 4,
@@ -3483,7 +3543,7 @@
       "wireframe": "wireframes/content-bookmark-row.svg",
       "sourceFile": "src/main/java/au/com/shiftyjelly/pocketcasts/compose/bookmark/BookmarkRow.kt",
       "sourceModule": ":modules:services:compose",
-      "bodyLine": 218,
+      "bodyLine": 247,
       "sourceDirectory": "modules/services/compose",
       "sourceFunction": "BookmarkRowNormalPreview",
       "parameters": [
@@ -6966,8 +7026,8 @@
   "library": [
     "Compose Material 2 + Pocket Casts theme roles"
   ],
-  "renderer": "compose-preview 2.21.1",
-  "generatedAt": "2026-09-22T10:32:26.202Z",
+  "renderer": "compose-preview 2.25.0",
+  "generatedAt": "2026-09-25T10:48:12.882Z",
   "display": {
     "surface": "light",
     "hero": "Insights/Calendar heat map"
@@ -6987,7 +7047,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "257bdd9e00543e1ad2e67d92a1822c49e760bb12",
+    "ref": "27a932650be1b9c3b6f26bc947f4ae75fc638f07",
     "module": ":modules:services:compose"
   }
 }

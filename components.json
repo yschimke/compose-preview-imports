@@ -1827,6 +1827,11 @@
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.summary.SummaryPaywallKt.SummaryPaywallPreview",
                     "componentId": null,
                     "group": null
+                },
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.compose.swipe.SwipeRowKt.SwipeRowPreview",
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -2939,6 +2944,11 @@
                     "group": null
                 },
                 {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.compose.swipe.SwipeRowKt.SwipeRowPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.text.HtmlTextKt.HtmlTextDarkPreview_Dark",
                     "componentId": null,
                     "group": null
@@ -3821,6 +3831,11 @@
                 },
                 {
                     "previewId": "au.com.shiftyjelly.pocketcasts.compose.summary.SummaryPaywallKt.SummaryPaywallPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "au.com.shiftyjelly.pocketcasts.compose.swipe.SwipeRowKt.SwipeRowPreview",
                     "componentId": null,
                     "group": null
                 }
