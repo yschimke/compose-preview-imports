@@ -224,8 +224,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/home-entity-list__ideal__scenes__largeround.svg"
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -241,8 +240,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/home-entity-list__ideal__empty__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -303,8 +301,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/home-sensors__ideal__default__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -361,8 +358,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/entities-detail-panel__ideal__default__largeround.svg"
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -378,8 +374,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/entities-detail-panel__ideal__off__largeround.svg"
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -395,8 +390,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/entities-detail-panel__ideal__fan-on__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [
@@ -835,8 +829,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-shortcut-order__ideal__default__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [
@@ -966,8 +959,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-camera-selection__ideal__default__largeround.svg"
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -983,8 +975,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-camera-selection__ideal__empty__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [
@@ -1078,8 +1069,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-template-settings__ideal__default__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [
@@ -1300,8 +1290,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-camera-settings__ideal__default__largeround.svg"
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -1317,8 +1306,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/tiles-camera-settings__ideal__empty__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [
@@ -2087,8 +2075,7 @@
             "widthDp": 192,
             "heightDp": 192
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/conversation-speech-bubbles__ideal__default__smallround.svg"
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -2497,8 +2484,7 @@
           "height": 96,
           "livePreview": "https://preview.coo.ee/home-assistant-wear/p/components-list-header__ideal__default",
           "previewId": "io.homeassistant.companion.android.views.ListHeaderKt.PreviewListHeader",
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/components-list-header__ideal__default.svg"
+          "density": 2
         },
         {
           "variant": "ideal",
@@ -2508,8 +2494,7 @@
           "height": 96,
           "livePreview": "https://preview.coo.ee/home-assistant-wear/p/components-list-header__ideal__expandable",
           "previewId": "io.homeassistant.companion.android.views.ExpandableListHeaderKt.PreviewExpandableListHeader",
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/components-list-header__ideal__expandable.svg"
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -2567,8 +2552,7 @@
             "widthDp": 227,
             "heightDp": 227
           },
-          "density": 2,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-wear/render/components-time-text__ideal__default__largeround.svg"
+          "density": 2
         }
       ],
       "greenlines": [],
@@ -2593,8 +2577,8 @@
   "library": [
     "Wear Compose Material + Home Assistant surfaces"
   ],
-  "renderer": "compose-preview 2.28.0",
-  "generatedAt": "2026-09-27T10:19:33.392Z",
+  "renderer": "compose-preview 2.30.0",
+  "generatedAt": "2026-10-01T11:20:02.214Z",
   "display": {
     "surface": "dark",
     "hero": "Home/Entity list"
@@ -2614,7 +2598,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "d120c7dcd0683e163a2379883ba9299af071e1cb",
+    "ref": "1de03b345b71bb8fd585b379b99226bd9a07247d",
     "module": ":wear"
   }
 }

@@ -41,12 +41,12 @@ customising the live render are two ends of one workflow.
 | Components | **19** |
 | Rendered images (PNG) | **27** |
 | Editable wireframes (SVG) | **19** |
-| Editable design vectors (figma-svg) | **19** |
+| Editable design vectors (figma-svg) | **0** |
 | Components with a11y greenlines | **14** |
 | Library | `Wear Compose Material + Home Assistant surfaces` |
-| Renderer | compose-preview 2.28.0 |
+| Renderer | compose-preview 2.30.0 |
 | Schema | `design-parity-catalog/v1` |
-| Generated | 2026-09-27 |
+| Generated | 2026-10-01 |
 
 ## Components by group
 
