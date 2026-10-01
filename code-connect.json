@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "f56e0bfb0a0e6eb308b6cab95fa55994a8354031",
+    "ref": "865115e79fbd51207b58fae804f03e854faf99ef",
     "module": ":modules:services:compose"
   },
-  "generatedAt": "2026-09-27T11:09:25.775Z",
+  "generatedAt": "2026-10-01T12:09:48.924Z",
   "mappings": [
     {
       "componentId": "Buttons/Row button",
       "figmaLayerName": "Buttons/Row button",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "RowButtonLightPreview",
@@ -48,14 +48,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-button__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Row outlined button",
       "figmaLayerName": "Buttons/Row outlined button",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "RowOutlinedButtonLightPreview",
@@ -90,14 +89,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-outlined-button__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Row text button",
       "figmaLayerName": "Buttons/Row text button",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "RowTextButtonLightPreview",
@@ -132,14 +130,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-text-button__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Row loading button",
       "figmaLayerName": "Buttons/Row loading button",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "RowLoadingButtonLightPreview",
@@ -174,14 +171,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-loading-button__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Gradient row button",
       "figmaLayerName": "Buttons/Gradient row button",
       "componentName": "GradientRowButton",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/GradientRowButton.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/GradientRowButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "GradientRowButtonPreview",
@@ -281,14 +277,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-gradient-row-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Buttons/Row close button",
       "figmaLayerName": "Buttons/Row close button",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "RowCloseButtonLightPreview",
@@ -323,14 +318,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-row-close-button__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Circle button",
       "figmaLayerName": "Buttons/Circle button",
       "componentName": "CircleButton",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleButton.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "CircleButtonPreview",
@@ -417,24 +411,22 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Buttons/Circle icon button",
       "figmaLayerName": "Buttons/Circle icon button",
       "componentName": "CircleIconButtonLightPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleIconButton.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/CircleIconButton.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "CircleIconButtonLightPreview",
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-circle-icon-button__ideal__default__light.svg"
+      "previewName": "CircleIconButtonLightPreview"
     },
     {
       "componentId": "Buttons/Close button",
       "figmaLayerName": "Buttons/Close button",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "CloseButtonLightPreview",
@@ -469,14 +461,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-close-button__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Button tabs",
       "figmaLayerName": "Buttons/Button tabs",
       "componentName": "ButtonTabsPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ButtonTabs.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/ButtonTabs.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "ButtonTabsLightPreview",
@@ -498,14 +489,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-button-tabs__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Buttons/Time play button",
       "figmaLayerName": "Buttons/Time play button",
       "componentName": "TimePlayButton",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/TimePlayButton.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/buttons/TimePlayButton.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "TimePlayButtonPreview",
@@ -592,24 +582,22 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/buttons-time-play-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Inputs/Form field",
       "figmaLayerName": "Inputs/Form field",
       "componentName": "FormFieldLightPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FormField.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FormField.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "FormFieldLightPreview",
-      "figmaSvg": "figma/inputs-form-field.svg"
+      "previewName": "FormFieldLightPreview"
     },
     {
       "componentId": "Inputs/Email and password fields",
       "figmaLayerName": "Inputs/Email and password fields",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "UserPasswordFieldsLightPreview",
@@ -644,14 +632,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/inputs-email-and-password-fields.svg"
+      ]
     },
     {
       "componentId": "Inputs/Search bar",
       "figmaLayerName": "Inputs/Search bar",
       "componentName": "SearchBar",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SearchBar.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SearchBar.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "SearchBarPreview",
@@ -803,14 +790,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/inputs-search-bar.svg"
+      ]
     },
     {
       "componentId": "Inputs/Number stepper",
       "figmaLayerName": "Inputs/Number stepper",
       "componentName": "NumberStepper",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NumberStepper.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/NumberStepper.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "NumberStepperPreview",
@@ -910,14 +896,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-number-stepper__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Inputs/Segmented tab bar",
       "figmaLayerName": "Inputs/Segmented tab bar",
       "componentName": "SegmentedTabBar",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SegmentedTabBar.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SegmentedTabBar.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "SegmentedTabBarPreview",
@@ -1030,14 +1015,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-segmented-tab-bar__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Inputs/Selected option column",
       "figmaLayerName": "Inputs/Selected option column",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "SelectOptionColumnPreview",
@@ -1072,14 +1056,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-selected-option-column__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Inputs/Folder colour picker",
       "figmaLayerName": "Inputs/Folder colour picker",
       "componentName": "FolderColorPicker",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FolderColorPicker.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/FolderColorPicker.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "ColorPickerDarkPreview",
@@ -1127,14 +1110,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/inputs-folder-colour-picker__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Content/Text styles",
       "figmaLayerName": "Content/Text styles",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "TextStylesLightPreview",
@@ -1169,14 +1151,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-text-styles__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Content/Expandable text",
       "figmaLayerName": "Content/Expandable text",
       "componentName": "ExpandableTextPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExpandableText.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/ExpandableText.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "ExpandedTextPreviewRegular",
@@ -1198,14 +1179,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-expandable-text__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Content/Auto-resize text",
       "figmaLayerName": "Content/Auto-resize text",
       "componentName": "AutoResizeText",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AutoResizeText.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AutoResizeText.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "AutoResizePreview",
@@ -1448,14 +1428,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-auto-resize-text__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Content/Podcast selected text",
       "figmaLayerName": "Content/Podcast selected text",
       "componentName": "PodcastSelectedText",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PodcastSelectedText.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PodcastSelectedText.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PodcastSelectedTextEnglishPreview",
@@ -1503,14 +1482,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-podcast-selected-text__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Content/Playlist artwork",
       "figmaLayerName": "Content/Playlist artwork",
       "componentName": "PlaylistArtwork",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PlaylistArtwork.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PlaylistArtwork.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PlaylistArtworkSingleEpisodePreview",
@@ -1584,14 +1562,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/content-playlist-artwork.svg"
+      ]
     },
     {
       "componentId": "Content/Folder image",
       "figmaLayerName": "Content/Folder image",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "FolderImageLightPreview",
@@ -1626,14 +1603,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/content-folder-image.svg"
+      ]
     },
     {
       "componentId": "Content/Podcast subscribe row",
       "figmaLayerName": "Content/Podcast subscribe row",
       "componentName": "ListPodcastSubscribeRow",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/ListPodcastSubscribeRow.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/ListPodcastSubscribeRow.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "ListPodcastSubscribeRowPreview",
@@ -1733,14 +1709,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/content-podcast-subscribe-row.svg"
+      ]
     },
     {
       "componentId": "Content/Podcast select list",
       "figmaLayerName": "Content/Podcast select list",
       "componentName": "PodcastSelectGrid",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/PodcastSelectGrid.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/podcast/PodcastSelectGrid.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PodcastSelectListPreview",
@@ -1840,14 +1815,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/content-podcast-select-list.svg"
+      ]
     },
     {
       "componentId": "Content/Bookmark row",
       "figmaLayerName": "Content/Bookmark row",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BookmarkRowNormalPreview",
@@ -1882,14 +1856,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/content-bookmark-row__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Feedback/Banner",
       "figmaLayerName": "Feedback/Banner",
       "componentName": "Banner",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Banner.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Banner.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BannerPreview",
@@ -2054,14 +2027,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-banner__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Feedback/No content banner",
       "figmaLayerName": "Feedback/No content banner",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "UpNextNoContentBannerPreview",
@@ -2096,14 +2068,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-no-content-banner__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Feedback/Dialog",
       "figmaLayerName": "Feedback/Dialog",
       "componentName": "SimpleDialog",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Dialog.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Dialog.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "SimpleDialogPreview",
@@ -2177,14 +2148,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-dialog__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Feedback/Tooltip",
       "figmaLayerName": "Feedback/Tooltip",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "TooltipThemePreview",
@@ -2219,14 +2189,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/feedback-tooltip__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Feedback/Sparkle image",
       "figmaLayerName": "Feedback/Sparkle image",
       "componentName": "SparkleImage",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SparkleImage.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/SparkleImage.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "SparkleImagePreview",
@@ -2261,14 +2230,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/feedback-sparkle-image.svg"
+      ]
     },
     {
       "componentId": "Chrome/Top app bar",
       "figmaLayerName": "Chrome/Top app bar",
       "componentName": "ThemedTopAppBar",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/ThemedTopAppBar.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/bars/ThemedTopAppBar.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "ThemedTopAppBarPreview",
@@ -2433,14 +2401,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-top-app-bar__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Chrome/Bottom sheet app bar",
       "figmaLayerName": "Chrome/Bottom sheet app bar",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BottomSheetAppBarLightPreview",
@@ -2475,14 +2442,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-app-bar__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Chrome/Bottom sheet content",
       "figmaLayerName": "Chrome/Bottom sheet content",
       "componentName": "BottomSheetContent",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/bottomsheet/BottomSheetContent.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/bottomsheet/BottomSheetContent.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BottomSheetContentPreview",
@@ -2530,14 +2496,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-bottom-sheet-content__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Chrome/Pager dot indicator",
       "figmaLayerName": "Chrome/Pager dot indicator",
       "componentName": "PagerDotIndicator",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PagerDotIndicator.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PagerDotIndicator.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PagerDotIndicatorPreview",
@@ -2611,24 +2576,22 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-pager-dot-indicator__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Chrome/Divider",
       "figmaLayerName": "Chrome/Divider",
       "componentName": "HorizontalDividerLightPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/HorizontalDivider.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/HorizontalDivider.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "HorizontalDividerLightPreview",
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/chrome-divider__ideal__default.svg"
+      "previewName": "HorizontalDividerLightPreview"
     },
     {
       "componentId": "Chrome/Rearrangeable menu action",
       "figmaLayerName": "Chrome/Rearrangeable menu action",
       "componentName": "MenuActionRearrange",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/rearrange/MenuActionRearrange.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/rearrange/MenuActionRearrange.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "MenuActionRearrangePreview",
@@ -2819,14 +2782,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/chrome-rearrangeable-menu-action.svg"
+      ]
     },
     {
       "componentId": "Settings/Setting row",
       "figmaLayerName": "Settings/Setting row",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "SettingRowLightPreview",
@@ -2861,14 +2823,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-row__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "Settings/Setting section",
       "figmaLayerName": "Settings/Setting section",
       "componentName": "SettingSection",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "SettingSectionPreview",
@@ -2955,14 +2916,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/settings-setting-section.svg"
+      ]
     },
     {
       "componentId": "Settings/Setting info row",
       "figmaLayerName": "Settings/Setting info row",
       "componentName": "SettingInfoRow",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/Settings.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "SettingInfoRowPreview",
@@ -3010,14 +2970,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/settings-setting-info-row__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Identity/User avatar",
       "figmaLayerName": "Identity/User avatar",
       "componentName": "UserAvatar",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/UserAvatar.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/UserAvatar.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "UserAvatarThemePreview",
@@ -3104,14 +3063,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/identity-user-avatar.svg"
+      ]
     },
     {
       "componentId": "Identity/Subscription badge",
       "figmaLayerName": "Identity/Subscription badge",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "SubscriptionBadgePlusColoredLightThemePreview",
@@ -3146,14 +3104,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/identity-subscription-badge.svg"
+      ]
     },
     {
       "componentId": "Identity/Pocket Casts logo",
       "figmaLayerName": "Identity/Pocket Casts logo",
       "componentName": "PocketCastsLogo",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PocketCastsLogoPreview",
@@ -3175,14 +3132,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/identity-pocket-casts-logo.svg"
+      ]
     },
     {
       "componentId": "Identity/Horizontal logo",
       "figmaLayerName": "Identity/Horizontal logo",
       "componentName": "HorizontalLogo",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/HorizontalLogo.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/HorizontalLogo.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "HorizontalLogoDarkPreview",
@@ -3204,14 +3160,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/identity-horizontal-logo__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Identity/Vertical logo",
       "figmaLayerName": "Identity/Vertical logo",
       "componentName": "VerticalLogo",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/VerticalLogo.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/VerticalLogo.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "VerticalLogoDarkPreview",
@@ -3233,14 +3188,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/identity-vertical-logo__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Identity/Pocket Casts pill",
       "figmaLayerName": "Identity/Pocket Casts pill",
       "componentName": "PocketCastsPill",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/PocketCastsPill.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PocketCastsPillPreview",
@@ -3275,14 +3229,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/identity-pocket-casts-pill.svg"
+      ]
     },
     {
       "componentId": "Identity/Count badge",
       "figmaLayerName": "Identity/Count badge",
       "componentName": "CountBadgePreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/CountBadge.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/images/CountBadge.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "CountBadgeMediumPreview",
@@ -3304,14 +3257,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/identity-count-badge.svg"
+      ]
     },
     {
       "componentId": "Identity/Gradient icon",
       "figmaLayerName": "Identity/Gradient icon",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "GradientIconLightPreview",
@@ -3346,42 +3298,39 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/identity-gradient-icon.svg"
+      ]
     },
     {
       "componentId": "Ads/Ad banner",
       "figmaLayerName": "Ads/Ad banner",
       "componentName": "rememberAdColors",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdColors.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdColors.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "AdBannerThemePreview",
       "codeSnippet": "rememberAdColors()",
       "imports": [
         "import au.com.shiftyjelly.pocketcasts.compose.ad.rememberAdColors"
-      ],
-      "figmaSvg": "figma/ads-ad-banner.svg"
+      ]
     },
     {
       "componentId": "Ads/Ad decisions column",
       "figmaLayerName": "Ads/Ad decisions column",
       "componentName": "rememberAdColors",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdColors.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdColors.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "AdDecisionsColumnThemePreview",
       "codeSnippet": "rememberAdColors()",
       "imports": [
         "import au.com.shiftyjelly.pocketcasts.compose.ad.rememberAdColors"
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-decisions-column__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Ads/Ad report reasons",
       "figmaLayerName": "Ads/Ad report reasons",
       "componentName": "AdReportReasonsColumn",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportReasonsColumn.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportReasonsColumn.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "AdReportReasonsColumnPreview",
@@ -3429,14 +3378,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-reasons__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Ads/Ad report content",
       "figmaLayerName": "Ads/Ad report content",
       "componentName": "AdReportContent",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportContent.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/ad/AdReportContent.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "AdReportContentPreview",
@@ -3497,14 +3445,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/ads-ad-report-content__ideal__default__compact.svg"
+      ]
     },
     {
       "componentId": "Insights/Calendar heat map",
       "figmaLayerName": "Insights/Calendar heat map",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "CalendarHeatMapPreview",
@@ -3539,14 +3486,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-calendar-heat-map__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Insights/Player header row",
       "figmaLayerName": "Insights/Player header row",
       "componentName": "AppThemeWithBackground",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/Theme.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "HeaderRowPlayerPreview",
@@ -3581,14 +3527,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts/render/insights-player-header-row__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Motion/Animated play button",
       "figmaLayerName": "Motion/Animated play button",
       "componentName": "AnimatedPlayPauseButton",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AnimatedPlayPauseButton.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/modules/services/compose/src/main/java/au/com/shiftyjelly/pocketcasts/compose/components/AnimatedPlayPauseButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "AnimatedPlayButtonPreview",
@@ -3701,8 +3646,7 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/motion-animated-play-button.svg"
+      ]
     }
   ]
 }
