@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "bitwarden/android",
-    "ref": "b99ad92c8b65236b32ad2374ba5ee98451e039a2",
+    "ref": "1a0c3cb93f254083bdc05fdba55ced60620af6ae",
     "module": ":ui"
   },
-  "generatedAt": "2026-09-07T09:36:29.668Z",
+  "generatedAt": "2026-10-01T11:05:44.246Z",
   "mappings": [
     {
       "componentId": "filled-button",
       "figmaLayerName": "filled-button",
       "componentName": "BitwardenFilledButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledButton.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenFilledButton_preview",
@@ -87,14 +87,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "outlined-button",
       "figmaLayerName": "outlined-button",
       "componentName": "BitwardenOutlinedButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenOutlinedButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenOutlinedButton.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenOutlinedButton_preview",
@@ -168,14 +167,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "filled-error-button",
       "figmaLayerName": "filled-error-button",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BitwardenErrorButton_preview",
@@ -197,14 +195,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/filled-error-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "outlined-error-button",
       "figmaLayerName": "outlined-error-button",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BBitwardenOutlinedErrorButton_preview",
@@ -226,14 +223,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/outlined-error-button__ideal__default.svg"
+      ]
     },
     {
       "componentId": "text-selection-button",
       "figmaLayerName": "text-selection-button",
       "componentName": "BitwardenTextSelectionButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTextSelectionButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTextSelectionButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTextSelectionButton_preview",
@@ -411,14 +407,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/text-selection-button.svg"
+      ]
     },
     {
       "componentId": "icon-button-filled",
       "figmaLayerName": "icon-button-filled",
       "componentName": "BitwardenFilledIconButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledIconButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenFilledIconButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenFilledIconButton_preview",
@@ -492,14 +487,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/icon-button-filled__ideal__default.svg"
+      ]
     },
     {
       "componentId": "icon-button-tonal",
       "figmaLayerName": "icon-button-tonal",
       "componentName": "BitwardenTonalIconButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTonalIconButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenTonalIconButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTonalIconButton_preview",
@@ -573,14 +567,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/icon-button-tonal__ideal__default.svg"
+      ]
     },
     {
       "componentId": "icon-button-standard",
       "figmaLayerName": "icon-button-standard",
       "componentName": "BitwardenStandardIconButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenStandardIconButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/button/BitwardenStandardIconButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenStandardIconButton_preview",
@@ -680,14 +673,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/icon-button-standard__ideal__default.svg"
+      ]
     },
     {
       "componentId": "text-field",
       "figmaLayerName": "text-field",
       "componentName": "BitwardenTextField",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenTextField.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenTextField.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTextField_preview",
@@ -752,6 +744,19 @@
           "name": "modifier",
           "type": "Modifier",
           "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -1047,14 +1052,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/text-field.svg"
+      ]
     },
     {
       "componentId": "password-field",
       "figmaLayerName": "password-field",
       "componentName": "BitwardenPasswordField",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenPasswordField.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenPasswordField.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenPasswordField_preview",
@@ -1119,6 +1123,19 @@
           "name": "modifier",
           "type": "Modifier",
           "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "interactionSource",
+          "type": "MutableInteractionSource",
+          "typeFqn": "androidx.compose.foundation.interaction.MutableInteractionSource",
           "hasDefault": true,
           "composableSlot": false,
           "composableSlotReceiver": null,
@@ -1297,14 +1314,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/password-field.svg"
+      ]
     },
     {
       "componentId": "hidden-password-field",
       "figmaLayerName": "hidden-password-field",
       "componentName": "BitwardenHiddenPasswordField",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenHiddenPasswordField.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/field/BitwardenHiddenPasswordField.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenHiddenPasswordField_preview",
@@ -1378,14 +1394,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/hidden-password-field.svg"
+      ]
     },
     {
       "componentId": "multi-select-button",
       "figmaLayerName": "multi-select-button",
       "componentName": "BitwardenMultiSelectButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenMultiSelectButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenMultiSelectButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenMultiSelectButton_preview",
@@ -1576,14 +1591,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/multi-select-button.svg"
+      ]
     },
     {
       "componentId": "date-picker-button",
       "figmaLayerName": "date-picker-button",
       "componentName": "BitwardenDatePickerButton",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenDatePickerButton.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dropdown/BitwardenDatePickerButton.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenDatePickerButton_preview",
@@ -1774,14 +1788,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/date-picker-button.svg"
+      ]
     },
     {
       "componentId": "slider",
       "figmaLayerName": "slider",
       "componentName": "BitwardenSlider",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/slider/BitwardenSlider.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/slider/BitwardenSlider.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenSlider_preview",
@@ -1881,16 +1894,15 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/slider.svg"
+      ]
     },
     {
       "componentId": "switch",
       "figmaLayerName": "switch",
       "componentName": "BitwardenSwitch",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/toggle/BitwardenSwitch.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/toggle/BitwardenSwitch.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "BitwardenSwitch_preview",
       "codeSnippet": "BitwardenSwitch(\n    label = TODO(\"String\"),\n    isChecked = TODO(\"Boolean\"),\n    onCheckedChange = TODO(\"((Boolean) -> Unit)?\"),\n    cardStyle = TODO(\"CardStyle?\"),\n)",
       "imports": [
@@ -2053,14 +2065,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/switch__ideal__default.svg"
+      ]
     },
     {
       "componentId": "action-card",
       "figmaLayerName": "action-card",
       "componentName": "BitwardenActionCard",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenActionCard_preview",
@@ -2160,16 +2171,15 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card__ideal__default.svg"
+      ]
     },
     {
       "componentId": "action-card-subtitle",
       "figmaLayerName": "action-card-subtitle",
       "componentName": "BitwardenActionCard",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "BitwardenActionCardWithSubtitle_preview",
       "codeSnippet": "BitwardenActionCard(\n    cardTitle = TODO(\"String?\"),\n)",
       "imports": [
@@ -2267,14 +2277,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-subtitle__ideal__default.svg"
+      ]
     },
     {
       "componentId": "action-card-subtitle-no-dismiss",
       "figmaLayerName": "action-card-subtitle-no-dismiss",
       "componentName": "BitwardenActionCard",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenActionCardWithSubtitleNoDismiss_preview",
@@ -2374,16 +2383,15 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-subtitle-no-dismiss__ideal__default.svg"
+      ]
     },
     {
       "componentId": "action-card-leading",
       "figmaLayerName": "action-card-leading",
       "componentName": "BitwardenActionCard",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCard.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "BitwardenActionCardWithLeadingContent_preview",
       "codeSnippet": "BitwardenActionCard(\n    cardTitle = TODO(\"String?\"),\n)",
       "imports": [
@@ -2481,14 +2489,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-leading__ideal__default.svg"
+      ]
     },
     {
       "componentId": "action-card-small",
       "figmaLayerName": "action-card-small",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "ActionCardSmall_preview",
@@ -2510,43 +2517,22 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-small__ideal__default.svg"
+      ]
     },
     {
       "componentId": "action-card-small-trailing",
       "figmaLayerName": "action-card-small-trailing",
-      "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "componentName": "ActionCardSmallWithTrailingIcon_preview",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenActionCardSmall.kt",
       "label": "Compose",
-      "confidence": "LOW",
-      "previewName": "ActionCardSmallWithTrailingIcon_preview",
-      "codeSnippet": "rememberVectorPainter(\n    id = TODO(\"Int\"),\n)",
-      "imports": [
-        "import com.bitwarden.ui.platform.components.util.rememberVectorPainter"
-      ],
-      "parameters": [
-        {
-          "name": "id",
-          "type": "Int",
-          "typeFqn": "kotlin.Int",
-          "hasDefault": false,
-          "composableSlot": false,
-          "composableSlotReceiver": null,
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": null
-        }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/action-card-small-trailing__ideal__default.svg"
+      "confidence": "preview-fallback",
+      "previewName": "ActionCardSmallWithTrailingIcon_preview"
     },
     {
       "componentId": "info-callout",
       "figmaLayerName": "info-callout",
       "componentName": "BitwardenInfoCalloutCard",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenInfoCalloutCard.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/card/BitwardenInfoCalloutCard.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenInfoCallout_preview",
@@ -2594,14 +2580,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/info-callout__ideal__default.svg"
+      ]
     },
     {
       "componentId": "content-block",
       "figmaLayerName": "content-block",
       "componentName": "BitwardenContentBlock",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenContentBlock.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenContentBlock.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenContentBlock_preview",
@@ -2701,14 +2686,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/content-block__ideal__default.svg"
+      ]
     },
     {
       "componentId": "empty-content",
       "figmaLayerName": "empty-content",
       "componentName": "BitwardenEmptyContent",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenEmptyContent.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenEmptyContent.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BitwardenEmptyContent_preview",
@@ -2821,14 +2805,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/empty-content__ideal__default.svg"
+      ]
     },
     {
       "componentId": "loading-content",
       "figmaLayerName": "loading-content",
       "componentName": "BitwardenLoadingContent",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenLoadingContent.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/content/BitwardenLoadingContent.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BitwardenLoadingContent_preview",
@@ -2863,14 +2846,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/loading-content.svg"
+      ]
     },
     {
       "componentId": "text-row-tooltip",
       "figmaLayerName": "text-row-tooltip",
       "componentName": "BitwardenTextRow",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTextRowWithTooltipAndContent_Preview",
@@ -3035,14 +3017,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-tooltip__ideal__default.svg"
+      ]
     },
     {
       "componentId": "text-row-disabled",
       "figmaLayerName": "text-row-disabled",
       "componentName": "BitwardenTextRow",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenTextRow.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenTextRowWithDividerDisabled_Preview",
@@ -3207,14 +3188,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/text-row-disabled__ideal__default.svg"
+      ]
     },
     {
       "componentId": "push-row",
       "figmaLayerName": "push-row",
       "componentName": "BitwardenPushRow",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenPushRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenPushRow.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenPushRow_preview",
@@ -3314,14 +3294,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/push-row__ideal__default.svg"
+      ]
     },
     {
       "componentId": "external-link-row",
       "figmaLayerName": "external-link-row",
       "componentName": "BitwardenExternalLinkRow",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenExternalLinkRow.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenExternalLinkRow.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenExternalLinkRow_preview",
@@ -3460,27 +3439,26 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/external-link-row__ideal__default.svg"
+      ]
     },
     {
       "componentId": "row-of-icon-buttons",
       "figmaLayerName": "row-of-icon-buttons",
-      "componentName": "BitwardenRowOfActions",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/row/BitwardenRowOfActions.kt",
+      "componentName": "rememberVectorPainter",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "LOW",
       "previewName": "BitwardenRowOfIconButtons_preview",
-      "codeSnippet": "BitwardenRowOfActions(\n    actions = { },\n)",
+      "codeSnippet": "rememberVectorPainter(\n    id = TODO(\"Int\"),\n)",
       "imports": [
-        "import com.bitwarden.ui.platform.components.row.BitwardenRowOfActions"
+        "import com.bitwarden.ui.platform.components.util.rememberVectorPainter"
       ],
       "parameters": [
         {
-          "name": "modifier",
-          "type": "Modifier",
-          "typeFqn": "androidx.compose.ui.Modifier",
-          "hasDefault": true,
+          "name": "id",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": false,
           "composableSlot": false,
           "composableSlotReceiver": null,
           "nullable": false,
@@ -3488,28 +3466,14 @@
           "noArgFactory": null,
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
-        },
-        {
-          "name": "actions",
-          "type": "RowScope.() -> Unit",
-          "typeFqn": "kotlin.Function1",
-          "hasDefault": false,
-          "composableSlot": true,
-          "composableSlotReceiver": "androidx.compose.foundation.layout.RowScope",
-          "nullable": false,
-          "noArgConstructible": false,
-          "noArgFactory": null,
-          "scopeDslReceiver": null,
-          "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/row-of-icon-buttons__ideal__default.svg"
+      ]
     },
     {
       "componentId": "list-header",
       "figmaLayerName": "list-header",
       "componentName": "BitwardenListHeaderText",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/header/BitwardenListHeaderText.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/header/BitwardenListHeaderText.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenListHeaderText_preview",
@@ -3557,14 +3521,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/list-header__ideal__default.svg"
+      ]
     },
     {
       "componentId": "top-app-bar",
       "figmaLayerName": "top-app-bar",
       "componentName": "BitwardenTopAppBar",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenTopAppBar.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenTopAppBar_preview",
@@ -3677,14 +3640,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/top-app-bar.svg"
+      ]
     },
     {
       "componentId": "top-app-bar-overflow",
       "figmaLayerName": "top-app-bar-overflow",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BitwardenTopAppBarOverflow_preview",
@@ -3706,14 +3668,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/top-app-bar-overflow.svg"
+      ]
     },
     {
       "componentId": "top-app-bar-overflow-cutoff",
       "figmaLayerName": "top-app-bar-overflow-cutoff",
       "componentName": "rememberVectorPainter",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/util/RememberVectorPainter.kt",
       "label": "Compose",
       "confidence": "LOW",
       "previewName": "BitwardenTopAppBarOverflowCutoff_preview",
@@ -3735,16 +3696,15 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/top-app-bar-overflow-cutoff.svg"
+      ]
     },
     {
       "componentId": "medium-top-app-bar",
       "figmaLayerName": "medium-top-app-bar",
       "componentName": "BitwardenMediumTopAppBar",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenMediumTopAppBar.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/BitwardenMediumTopAppBar.kt",
       "label": "Compose",
-      "confidence": "HIGH",
+      "confidence": "MEDIUM",
       "previewName": "BitwardenMediumTopAppBar_preview",
       "codeSnippet": "BitwardenMediumTopAppBar(\n    title = TODO(\"String\"),\n    scrollBehavior = TODO(\"TopAppBarScrollBehavior\"),\n)",
       "imports": [
@@ -3842,14 +3802,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/medium-top-app-bar.svg"
+      ]
     },
     {
       "componentId": "search-action",
       "figmaLayerName": "search-action",
       "componentName": "BitwardenSearchActionItem",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenSearchActionItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenSearchActionItem.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenSearchActionItem_preview",
@@ -3897,14 +3856,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/search-action__ideal__default.svg"
+      ]
     },
     {
       "componentId": "overflow-action",
       "figmaLayerName": "overflow-action",
       "componentName": "BitwardenOverflowActionItem",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenOverflowActionItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/appbar/action/BitwardenOverflowActionItem.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenOverflowActionItem_preview",
@@ -3991,14 +3949,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/overflow-action__ideal__default.svg"
+      ]
     },
     {
       "componentId": "account-action-item",
       "figmaLayerName": "account-action-item",
       "componentName": "BitwardenAccountActionItem",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountActionItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountActionItem.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenAccountActionItem_preview",
@@ -4046,14 +4003,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/account-action-item__ideal__default.svg"
+      ]
     },
     {
       "componentId": "account-switcher",
       "figmaLayerName": "account-switcher",
       "componentName": "BitwardenAccountSwitcher",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountSwitcher.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenAccountSwitcher.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenAccountSwitcher_preview",
@@ -4205,14 +4161,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/account-switcher.svg"
+      ]
     },
     {
       "componentId": "placeholder-account-light",
       "figmaLayerName": "placeholder-account-light",
       "componentName": "BitwardenPlaceholderAccountActionItem",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenPlaceholderAccountActionItem_preview_light",
@@ -4234,14 +4189,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/placeholder-account-light__ideal__default__light.svg"
+      ]
     },
     {
       "componentId": "placeholder-account-dark",
       "figmaLayerName": "placeholder-account-dark",
       "componentName": "BitwardenPlaceholderAccountActionItem",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/account/BitwardenPlaceholderAccountItem.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenPlaceholderAccountActionItem_preview_dark",
@@ -4263,14 +4217,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/placeholder-account-dark__ideal__default__dark.svg"
+      ]
     },
     {
       "componentId": "loading-dialog",
       "figmaLayerName": "loading-dialog",
       "componentName": "BitwardenLoadingDialog",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenLoadingDialog.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenLoadingDialog.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenLoadingDialog_preview",
@@ -4292,14 +4245,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/loading-dialog.svg"
+      ]
     },
     {
       "componentId": "date-picker-dialog",
       "figmaLayerName": "date-picker-dialog",
       "componentName": "BitwardenDatePickerDialog",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenDatePickerDialog.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/dialog/BitwardenDatePickerDialog.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "BitwardenDatePickerDialog_preview",
@@ -4399,24 +4351,93 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/date-picker-dialog__ideal__default.svg"
+      ]
     },
     {
       "componentId": "snackbar",
       "figmaLayerName": "snackbar",
-      "componentName": "BitwardenCustomSnackbar_preview",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/snackbar/BitwardenSnackbar.kt",
+      "componentName": "BitwardenSnackbar",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/snackbar/BitwardenSnackbar.kt",
       "label": "Compose",
-      "confidence": "preview-fallback",
+      "confidence": "HIGH",
       "previewName": "BitwardenCustomSnackbar_preview",
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/snackbar__ideal__default.svg"
+      "codeSnippet": "BitwardenSnackbar(\n    bitwardenSnackbarData = TODO(\"BitwardenSnackbarData\"),\n)",
+      "imports": [
+        "import com.bitwarden.ui.platform.components.snackbar.BitwardenSnackbar"
+      ],
+      "parameters": [
+        {
+          "name": "bitwardenSnackbarData",
+          "type": "BitwardenSnackbarData",
+          "typeFqn": "com.bitwarden.ui.platform.components.snackbar.model.BitwardenSnackbarData",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "windowInsets",
+          "type": "WindowInsets",
+          "typeFqn": "androidx.compose.foundation.layout.WindowInsets",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onDismiss",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onActionClick",
+          "type": "() -> Unit",
+          "typeFqn": "kotlin.Function0",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ]
     },
     {
       "componentId": "status-badge",
       "figmaLayerName": "status-badge",
       "componentName": "BitwardenStatusBadge",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenStatusBadge_Preview",
@@ -4464,14 +4485,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/status-badge__ideal__default.svg"
+      ]
     },
     {
       "componentId": "status-badge-dark",
       "figmaLayerName": "status-badge-dark",
       "componentName": "BitwardenStatusBadge",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/BitwardenStatusBadge.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "BitwardenStatusBadge_PreviewDark",
@@ -4519,14 +4539,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/status-badge-dark__ideal__default.svg"
+      ]
     },
     {
       "componentId": "notification-badge",
       "figmaLayerName": "notification-badge",
       "componentName": "NotificationBadge",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/NotificationBadge.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/badge/NotificationBadge.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "NotificationBadge_preview",
@@ -4600,28 +4619,25 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/notification-badge__ideal__default.svg"
+      ]
     },
     {
       "componentId": "coach-mark",
       "figmaLayerName": "coach-mark",
       "componentName": "BitwardenCoachMarkContainer_preview",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/components/coachmark/CoachMarkContainer.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/components/coachmark/CoachMarkContainer.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "BitwardenCoachMarkContainer_preview",
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/coach-mark__ideal__default.svg"
+      "previewName": "BitwardenCoachMarkContainer_preview"
     },
     {
       "componentId": "typography",
       "figmaLayerName": "typography",
       "componentName": "BitwardenTypography_preview",
-      "source": "https://github.com/bitwarden/android/blob/b99ad92c8b65236b32ad2374ba5ee98451e039a2/ui/src/main/kotlin/com/bitwarden/ui/platform/theme/type/Typography.kt",
+      "source": "https://github.com/bitwarden/android/blob/1a0c3cb93f254083bdc05fdba55ced60620af6ae/ui/src/main/kotlin/com/bitwarden/ui/platform/theme/type/Typography.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "BitwardenTypography_preview",
-      "figmaSvg": "https://preview.coo.ee/bitwarden-android/render/typography__ideal__default.svg"
+      "previewName": "BitwardenTypography_preview"
     }
   ]
 }
