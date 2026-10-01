@@ -4,36 +4,34 @@
   "label": "Compose",
   "source": {
     "repo": "Automattic/pocket-casts-android",
-    "ref": "f56e0bfb0a0e6eb308b6cab95fa55994a8354031",
+    "ref": "865115e79fbd51207b58fae804f03e854faf99ef",
     "module": ":wear"
   },
-  "generatedAt": "2026-09-27T10:59:58.773Z",
+  "generatedAt": "2026-10-01T11:59:25.931Z",
   "mappings": [
     {
       "componentId": "Screens/Settings",
       "figmaLayerName": "Screens/Settings",
       "componentName": "SettingsScreenPreview_unchecked",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/settings/SettingsScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "SettingsScreenPreview_unchecked",
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-settings__ideal__default__compact.svg"
+      "previewName": "SettingsScreenPreview_unchecked"
     },
     {
       "componentId": "Screens/Playback effects",
       "figmaLayerName": "Screens/Playback effects",
       "componentName": "EffectsScreenDarkPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/player/EffectsScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "EffectsScreenDarkPreview",
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/screens-playback-effects__ideal__default__compact.svg"
+      "previewName": "EffectsScreenDarkPreview"
     },
     {
       "componentId": "Episodes/Episode chip",
       "figmaLayerName": "Episodes/Episode chip",
       "componentName": "Content",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/EpisodeChip.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "EpisodeChipPreview",
@@ -133,14 +131,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/episodes-episode-chip.svg"
+      ]
     },
     {
       "componentId": "Playback/Marquee media display",
       "figmaLayerName": "Playback/Marquee media display",
       "componentName": "MarqueeTextMediaDisplay",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/MarqueeTextMediaDisplay.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "MarqueeTextMediaDisplayPreview",
@@ -201,24 +198,22 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/playback-marquee-media-display.svg"
+      ]
     },
     {
       "componentId": "Sign-in/Phone instructions",
       "figmaLayerName": "Sign-in/Phone instructions",
       "componentName": "LoginWithPhoneInstructionsPreview",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/authentication/LoginWithPhoneScreen.kt",
       "label": "Compose",
       "confidence": "preview-fallback",
-      "previewName": "LoginWithPhoneInstructionsPreview",
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/sign-in-phone-instructions__ideal__default.svg"
+      "previewName": "LoginWithPhoneInstructionsPreview"
     },
     {
       "componentId": "Chrome/Time text",
       "figmaLayerName": "Chrome/Time text",
       "componentName": "TimeTextWithConnectivity",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/TimeTextWithConnectivity.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "TimeTextWithConnectivityConnectedPreview",
@@ -253,14 +248,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/chrome-time-text__ideal__default__compact.svg"
+      ]
     },
     {
       "componentId": "States/Loading",
       "figmaLayerName": "States/Loading",
       "componentName": "LoadingScreen",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/LoadingScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "LoadingScreenPreview",
@@ -282,14 +276,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-loading__ideal__default__compact.svg"
+      ]
     },
     {
       "componentId": "States/No content",
       "figmaLayerName": "States/No content",
       "componentName": "NoContentScreen",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/NoContentScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "NoContentScreenPreview",
@@ -337,14 +330,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-no-content__ideal__default__compact.svg"
+      ]
     },
     {
       "componentId": "States/Notification",
       "figmaLayerName": "States/Notification",
       "componentName": "ErrorScreen",
-      "source": "https://github.com/Automattic/pocket-casts-android/blob/f56e0bfb0a0e6eb308b6cab95fa55994a8354031/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
+      "source": "https://github.com/Automattic/pocket-casts-android/blob/865115e79fbd51207b58fae804f03e854faf99ef/wear/src/main/kotlin/au/com/shiftyjelly/pocketcasts/wear/ui/component/ErrorScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "NotificationScreenPreview",
@@ -392,8 +384,7 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/pocketcasts-wear/render/states-notification__ideal__default.svg"
+      ]
     }
   ]
 }
