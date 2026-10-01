@@ -14,8 +14,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/primary-button__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonEnabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/primary-button__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -114,8 +113,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/primary-button-disabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewPrimaryButtonDisabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/primary-button-disabled__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -214,8 +212,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/variant-button__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonEnabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/variant-button__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -313,8 +310,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/variant-button-disabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewVariantButtonDisabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/variant-button-disabled__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -412,8 +408,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/negative-button__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonEnabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/negative-button__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -506,8 +501,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/negative-button-disabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewNegativeButtonDisabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/negative-button-disabled__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -600,8 +594,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/text-button__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonEnabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/text-button__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -705,8 +698,7 @@
           "height": 126,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/text-button-disabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.MullvadButtonKt.PreviewTextButtonDisabled",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/text-button-disabled__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -810,8 +802,7 @@
           "height": 462,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/checkbox__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.CheckboxKt.PreviewCheckbox",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/checkbox__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -870,8 +861,7 @@
             "showBackground": true,
             "backgroundColor": 4279840325
           },
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/switch__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [],
@@ -1009,8 +999,7 @@
           "height": 210,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-enabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewEnabledMullvadFilterChip",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-enabled__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1094,8 +1083,7 @@
           "height": 210,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-disabled__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewDisabledMullvadFilterChip",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-disabled__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1179,8 +1167,7 @@
           "height": 210,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/filter-chip-inactive__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FilterChipKt.PreviewInactiveMullvadFilterChip",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/filter-chip-inactive__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1264,8 +1251,7 @@
           "height": 546,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/feature-chip__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.FeatureChipKt.PreviewMullvadFeatureChip",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/feature-chip__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -1422,8 +1408,7 @@
           "height": 147,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingListItem",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-leading__ideal__default.svg"
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1613,8 +1598,7 @@
           "height": 147,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-leading-content__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewLeadingContentListItem",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-leading-content__ideal__default.svg"
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1804,8 +1788,7 @@
           "height": 147,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-trailing__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewTrailingListItem",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-trailing__ideal__default.svg"
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -1980,8 +1963,7 @@
           "height": 147,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-hierarchy__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewHierarchyListItem",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-hierarchy__ideal__default.svg"
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2156,8 +2138,7 @@
           "height": 147,
           "livePreview": "https://preview.coo.ee/mullvad-mullvadvpn-app/p/list-item-positions__ideal__default",
           "previewId": "net.mullvad.mullvadvpn.lib.ui.designsystem.ListItemKt.PreviewListItemPositions",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-item-positions__ideal__default.svg"
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -2336,8 +2317,7 @@
             "showBackground": true,
             "backgroundColor": 4279840325
           },
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/mullvad-mullvadvpn-app/render/list-header__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2436,8 +2416,8 @@
       "sourceFunction": "PreviewMullvadProgressIndicator"
     }
   ],
-  "renderer": "compose-preview 2.28.0",
-  "generatedAt": "2026-09-27T10:53:38.214Z",
+  "renderer": "compose-preview 2.30.0",
+  "generatedAt": "2026-10-01T11:55:05.430Z",
   "liveBundle": {
     "path": "bundle/",
     "file": "bundle.png"
@@ -2453,7 +2433,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "mullvad/mullvadvpn-app",
-    "ref": "41f159c8c9f8eb889aa9c33c33790f7643e4f52a",
+    "ref": "716f34f4fdd0859c2d460423f7f892a86acee02c",
     "module": ":lib:ui:designsystem"
   }
 }
