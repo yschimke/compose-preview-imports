@@ -14,8 +14,7 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-wear-companion__ideal__default",
           "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearLandingViewKt.PreviewSettingWearLandingView",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-wear-companion__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -150,8 +149,7 @@
           "height": 2100,
           "livePreview": "https://preview.coo.ee/home-assistant-android/p/onboarding-matter-commissioning__ideal__default",
           "previewId": "io.homeassistant.companion.android.matter.MatterCommissioningScreenKt.PreviewMatterCommissioningScreen",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/onboarding-matter-commissioning__ideal__default.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -682,8 +680,7 @@
           "height": 294,
           "livePreview": "https://preview.coo.ee/home-assistant-android/p/settings-external-url__ideal__default",
           "previewId": "io.homeassistant.companion.android.settings.url.views.ExternalUrlViewKt.PreviewExternalUrlViewCloudOn",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-external-url__ideal__default.svg"
+          "density": 2.625
         },
         {
           "variant": "ideal",
@@ -972,8 +969,7 @@
           "height": 1313,
           "livePreview": "https://preview.coo.ee/home-assistant-android/p/components-icon-dialog__ideal__results",
           "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogGridKt.IconDialogGridPreview",
-          "density": 2.625,
-          "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/components-icon-dialog__ideal__results.svg"
+          "density": 2.625
         }
       ],
       "greenlines": [
@@ -2619,8 +2615,8 @@
   "library": [
     "Jetpack Compose Material + Home Assistant theme"
   ],
-  "renderer": "compose-preview 2.28.0",
-  "generatedAt": "2026-09-27T10:37:13.267Z",
+  "renderer": "compose-preview 2.30.0",
+  "generatedAt": "2026-10-01T11:36:50.120Z",
   "display": {
     "surface": "light",
     "hero": "Settings/Wear companion"
@@ -2640,7 +2636,7 @@
   "componentsFile": "components.json",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "d120c7dcd0683e163a2379883ba9299af071e1cb",
+    "ref": "1de03b345b71bb8fd585b379b99226bd9a07247d",
     "module": ":app"
   }
 }

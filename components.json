@@ -268,11 +268,6 @@
                     "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearTemplateTileKt.PreviewSettingsWearTemplateTile",
                     "componentId": null,
                     "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
                 }
             ],
             "code": {
@@ -301,8 +296,8 @@
                 "callable": "androidx.compose.material.TopAppBar",
                 "name": "TopAppBar",
                 "origin": "LIBRARY",
-                "jvmName": null,
-                "descriptor": null,
+                "jvmName": "TopAppBar-xWeB9-s",
+                "descriptor": "(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Lkotlin/jvm/functions/Function3;JJFLandroidx/compose/runtime/Composer;II)V",
                 "sourceFile": null,
                 "docs": "unavailable",
                 "receiver": null
@@ -320,19 +315,6 @@
                     "noArgFactory": null,
                     "scopeDslReceiver": null,
                     "lambdaReturnTypeFqn": "kotlin.Unit"
-                },
-                {
-                    "name": "windowInsets",
-                    "type": "WindowInsets",
-                    "typeFqn": "androidx.compose.foundation.layout.WindowInsets",
-                    "hasDefault": false,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
                 },
                 {
                     "name": "modifier",
@@ -490,17 +472,14 @@
                     "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearTemplateTileListKt.PreviewSettingsWearTemplateTileListEmpty",
                     "componentId": null,
                     "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
                 }
             ],
             "code": {
-                "call": null,
-                "imports": [],
-                "refusedReason": "overloads collided under this canonical id, so no single call site identifies one",
+                "call": "TopAppBar(title = {})",
+                "imports": [
+                    "androidx.compose.material.TopAppBar"
+                ],
+                "refusedReason": null,
                 "requiredOptIns": [],
                 "androidxOptIns": []
             },
@@ -508,7 +487,7 @@
             "callableFromAnotherFile": true,
             "hasTypeParameters": false,
             "hasContextReceivers": false,
-            "overloadsCollided": true,
+            "overloadsCollided": false,
             "builder": null,
             "requiredOptIns": [],
             "androidxOptIns": []
@@ -724,11 +703,6 @@
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearOnboardingViewPreviewsTest.Onboarding_view_no_devices_found",
-                    "componentId": null,
-                    "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
                     "componentId": null,
                     "group": null
                 }
@@ -1418,289 +1392,6 @@
             "overloadsCollided": false,
             "builder": null,
             "requiredOptIns": [],
-            "androidxOptIns": []
-        },
-        {
-            "canonicalId": "app/androidx.compose.material.ExposedDropdownMenuBoxScope.ExposedDropdownMenu",
-            "componentIds": [],
-            "symbol": {
-                "jvmOwner": "androidx.compose.material.ExposedDropdownMenuBoxScope",
-                "callable": "androidx.compose.material.ExposedDropdownMenuBoxScope.ExposedDropdownMenu",
-                "name": "ExposedDropdownMenu",
-                "origin": "LIBRARY",
-                "jvmName": "ExposedDropdownMenu",
-                "descriptor": "(ZLkotlin/jvm/functions/Function0;Landroidx/compose/ui/Modifier;Landroidx/compose/foundation/ScrollState;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
-                "sourceFile": null,
-                "docs": "unavailable",
-                "receiver": null
-            },
-            "parameters": [
-                {
-                    "name": "expanded",
-                    "type": "Boolean",
-                    "typeFqn": "kotlin.Boolean",
-                    "hasDefault": false,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
-                },
-                {
-                    "name": "onDismissRequest",
-                    "type": "() -> Unit",
-                    "typeFqn": "kotlin.Function0",
-                    "hasDefault": false,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": "kotlin.Unit"
-                },
-                {
-                    "name": "modifier",
-                    "type": "Modifier",
-                    "typeFqn": "androidx.compose.ui.Modifier",
-                    "hasDefault": true,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
-                },
-                {
-                    "name": "scrollState",
-                    "type": "ScrollState",
-                    "typeFqn": "androidx.compose.foundation.ScrollState",
-                    "hasDefault": true,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
-                },
-                {
-                    "name": "content",
-                    "type": "ColumnScope.() -> Unit",
-                    "typeFqn": "kotlin.Function1",
-                    "hasDefault": false,
-                    "composableSlot": true,
-                    "composableSlotReceiver": "androidx.compose.foundation.layout.ColumnScope",
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": "kotlin.Unit"
-                }
-            ],
-            "slots": [
-                {
-                    "name": "content",
-                    "required": true,
-                    "receiverScope": "androidx.compose.foundation.layout.ColumnScope"
-                }
-            ],
-            "bindings": [
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
-                }
-            ],
-            "code": {
-                "call": null,
-                "imports": [],
-                "refusedReason": "a member of androidx.compose.material.ExposedDropdownMenuBoxScope, so a call site needs an instance of it",
-                "requiredOptIns": [],
-                "androidxOptIns": []
-            },
-            "signatureKnown": true,
-            "callableFromAnotherFile": true,
-            "hasTypeParameters": false,
-            "hasContextReceivers": false,
-            "overloadsCollided": false,
-            "builder": null,
-            "requiredOptIns": [],
-            "androidxOptIns": []
-        },
-        {
-            "canonicalId": "app/androidx.compose.material.ExposedDropdownMenuDefaults.TrailingIcon",
-            "componentIds": [],
-            "symbol": {
-                "jvmOwner": "androidx.compose.material.ExposedDropdownMenuDefaults",
-                "callable": "androidx.compose.material.ExposedDropdownMenuDefaults.TrailingIcon",
-                "name": "TrailingIcon",
-                "origin": "LIBRARY",
-                "jvmName": "TrailingIcon",
-                "descriptor": "(ZLkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;II)V",
-                "sourceFile": null,
-                "docs": "unavailable",
-                "receiver": null
-            },
-            "parameters": [
-                {
-                    "name": "expanded",
-                    "type": "Boolean",
-                    "typeFqn": "kotlin.Boolean",
-                    "hasDefault": false,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
-                },
-                {
-                    "name": "onIconClick",
-                    "type": "() -> Unit",
-                    "typeFqn": "kotlin.Function0",
-                    "hasDefault": true,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": "kotlin.Unit"
-                }
-            ],
-            "slots": [],
-            "bindings": [
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
-                }
-            ],
-            "code": {
-                "call": null,
-                "imports": [],
-                "refusedReason": "a member of androidx.compose.material.ExposedDropdownMenuDefaults, so a call site needs an instance of it",
-                "requiredOptIns": [],
-                "androidxOptIns": []
-            },
-            "signatureKnown": true,
-            "callableFromAnotherFile": true,
-            "hasTypeParameters": false,
-            "hasContextReceivers": false,
-            "overloadsCollided": false,
-            "builder": null,
-            "requiredOptIns": [
-                "androidx.compose.material.ExperimentalMaterialApi"
-            ],
-            "androidxOptIns": []
-        },
-        {
-            "canonicalId": "app/androidx.compose.material.ExposedDropdownMenu_androidKt.ExposedDropdownMenuBox",
-            "componentIds": [],
-            "symbol": {
-                "jvmOwner": "androidx.compose.material.ExposedDropdownMenu_androidKt",
-                "callable": "androidx.compose.material.ExposedDropdownMenuBox",
-                "name": "ExposedDropdownMenuBox",
-                "origin": "LIBRARY",
-                "jvmName": "ExposedDropdownMenuBox",
-                "descriptor": "(ZLkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function3;Landroidx/compose/runtime/Composer;II)V",
-                "sourceFile": null,
-                "docs": "unavailable",
-                "receiver": null
-            },
-            "parameters": [
-                {
-                    "name": "expanded",
-                    "type": "Boolean",
-                    "typeFqn": "kotlin.Boolean",
-                    "hasDefault": false,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
-                },
-                {
-                    "name": "onExpandedChange",
-                    "type": "(Boolean) -> Unit",
-                    "typeFqn": "kotlin.Function1",
-                    "hasDefault": false,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": "kotlin.Unit"
-                },
-                {
-                    "name": "modifier",
-                    "type": "Modifier",
-                    "typeFqn": "androidx.compose.ui.Modifier",
-                    "hasDefault": true,
-                    "composableSlot": false,
-                    "composableSlotReceiver": null,
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": null
-                },
-                {
-                    "name": "content",
-                    "type": "ExposedDropdownMenuBoxScope.() -> Unit",
-                    "typeFqn": "kotlin.Function1",
-                    "hasDefault": false,
-                    "composableSlot": true,
-                    "composableSlotReceiver": "androidx.compose.material.ExposedDropdownMenuBoxScope",
-                    "nullable": false,
-                    "noArgConstructible": false,
-                    "noArgFactory": null,
-                    "scopeDslReceiver": null,
-                    "lambdaReturnTypeFqn": "kotlin.Unit"
-                }
-            ],
-            "slots": [
-                {
-                    "name": "content",
-                    "required": true,
-                    "receiverScope": "androidx.compose.material.ExposedDropdownMenuBoxScope"
-                }
-            ],
-            "bindings": [
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
-                }
-            ],
-            "code": {
-                "call": "ExposedDropdownMenuBox(expanded = false, onExpandedChange = {}, content = {})",
-                "imports": [
-                    "androidx.compose.material.ExposedDropdownMenuBox"
-                ],
-                "refusedReason": null,
-                "requiredOptIns": [
-                    "androidx.compose.material.ExperimentalMaterialApi"
-                ],
-                "androidxOptIns": []
-            },
-            "signatureKnown": true,
-            "callableFromAnotherFile": true,
-            "hasTypeParameters": false,
-            "hasContextReceivers": false,
-            "overloadsCollided": false,
-            "builder": null,
-            "requiredOptIns": [
-                "androidx.compose.material.ExperimentalMaterialApi"
-            ],
             "androidxOptIns": []
         },
         {
@@ -2692,11 +2383,6 @@
                     "previewId": "io.homeassistant.companion.android.settings.wear.views.SettingsWearTemplateTileListKt.PreviewSettingsWearTemplateTileListEmpty",
                     "componentId": null,
                     "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
                 }
             ],
             "code": {
@@ -3089,11 +2775,6 @@
                     "previewId": "io.homeassistant.companion.android.settings.url.views.ExternalUrlViewKt.PreviewExternalUrlViewCloudOn",
                     "componentId": null,
                     "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
-                    "componentId": null,
-                    "group": null
                 }
             ],
             "code": {
@@ -3447,11 +3128,6 @@
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogSearchKt.IconDialogSearchPreview",
-                    "componentId": null,
-                    "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
                     "componentId": null,
                     "group": null
                 }
@@ -3971,11 +3647,6 @@
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.util.icondialog.IconDialogSearchKt.IconDialogSearchPreview",
-                    "componentId": null,
-                    "group": null
-                },
-                {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
                     "componentId": null,
                     "group": null
                 }
@@ -7336,7 +7007,67 @@
                     "group": null
                 },
                 {
-                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureActivityKt.TodoWidgetConfigureViewPreview",
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt.TodoWidgetConfigureContentPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet_landscape",
                     "componentId": null,
                     "group": null
                 }
@@ -9954,6 +9685,71 @@
                     "previewId": "io.homeassistant.companion.android.widgets.template.TemplateWidgetConfigureScreenshotTest.TemplateWidgetConfigureContent_template_error_tablet_landscape",
                     "componentId": null,
                     "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt.TodoWidgetConfigureContentPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
                 }
             ],
             "code": {
@@ -10464,6 +10260,71 @@
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.widgets.template.TemplateWidgetConfigureScreenshotTest.TemplateWidgetConfigureContent_template_error_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt.TodoWidgetConfigureContentPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet_landscape",
                     "componentId": null,
                     "group": null
                 }
@@ -13956,6 +13817,71 @@
                 },
                 {
                     "previewId": "io.homeassistant.companion.android.widgets.template.TemplateWidgetConfigureScreenshotTest.TemplateWidgetConfigureContent_template_error_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt.TodoWidgetConfigureContentPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet_landscape",
                     "componentId": null,
                     "group": null
                 }
@@ -24775,6 +24701,236 @@
                 "call": null,
                 "imports": [],
                 "refusedReason": "no placeholder can be written for required parameter `state: TemplateWidgetConfigureState`",
+                "requiredOptIns": [],
+                "androidxOptIns": []
+            },
+            "signatureKnown": true,
+            "callableFromAnotherFile": true,
+            "hasTypeParameters": false,
+            "hasContextReceivers": false,
+            "overloadsCollided": false,
+            "builder": null,
+            "requiredOptIns": [],
+            "androidxOptIns": []
+        },
+        {
+            "canonicalId": "app/io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt.TodoWidgetConfigureContent",
+            "componentIds": [],
+            "symbol": {
+                "jvmOwner": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt",
+                "callable": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureContent",
+                "name": "TodoWidgetConfigureContent",
+                "origin": "PROJECT",
+                "jvmName": "TodoWidgetConfigureContent",
+                "descriptor": "(Lio/homeassistant/companion/android/widgets/todo/TodoWidgetConfigureState;Landroidx/compose/material3/SnackbarHostState;ZLkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function0;Landroidx/compose/runtime/Composer;I)V",
+                "sourceFile": "src/main/kotlin/io/homeassistant/companion/android/widgets/todo/TodoWidgetConfigureScreen.kt",
+                "docs": "unavailable",
+                "receiver": null
+            },
+            "parameters": [
+                {
+                    "name": "state",
+                    "type": "TodoWidgetConfigureState",
+                    "typeFqn": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "snackbarHostState",
+                    "type": "SnackbarHostState",
+                    "typeFqn": "androidx.compose.material3.SnackbarHostState",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "canNavigateBack",
+                    "type": "Boolean",
+                    "typeFqn": "kotlin.Boolean",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": null
+                },
+                {
+                    "name": "onNavigate",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onServerSelected",
+                    "type": "(Int) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onEntitySelected",
+                    "type": "(String?) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onShowCompletedChanged",
+                    "type": "(Boolean) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onBackgroundTypeSelected",
+                    "type": "(WidgetBackgroundType) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onTextColorSelected",
+                    "type": "(String) -> Unit",
+                    "typeFqn": "kotlin.Function1",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                },
+                {
+                    "name": "onActionClick",
+                    "type": "() -> Unit",
+                    "typeFqn": "kotlin.Function0",
+                    "hasDefault": false,
+                    "composableSlot": false,
+                    "composableSlotReceiver": null,
+                    "nullable": false,
+                    "noArgConstructible": false,
+                    "noArgFactory": null,
+                    "scopeDslReceiver": null,
+                    "lambdaReturnTypeFqn": "kotlin.Unit"
+                }
+            ],
+            "slots": [],
+            "bindings": [
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenKt.TodoWidgetConfigureContentPreview",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_no_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_foldable",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_phone_landscape",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_small_phone",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet",
+                    "componentId": null,
+                    "group": null
+                },
+                {
+                    "previewId": "io.homeassistant.companion.android.widgets.todo.TodoWidgetConfigureScreenshotTest.TodoWidgetConfigureContent_selected_list_tablet_landscape",
+                    "componentId": null,
+                    "group": null
+                }
+            ],
+            "code": {
+                "call": null,
+                "imports": [],
+                "refusedReason": "no placeholder can be written for required parameter `state: TodoWidgetConfigureState`",
                 "requiredOptIns": [],
                 "androidxOptIns": []
             },

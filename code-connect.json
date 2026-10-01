@@ -4,16 +4,16 @@
   "label": "Compose",
   "source": {
     "repo": "home-assistant/android",
-    "ref": "d120c7dcd0683e163a2379883ba9299af071e1cb",
+    "ref": "1de03b345b71bb8fd585b379b99226bd9a07247d",
     "module": ":app"
   },
-  "generatedAt": "2026-09-27T10:37:19.430Z",
+  "generatedAt": "2026-10-01T11:36:54.847Z",
   "mappings": [
     {
       "componentId": "Settings/Wear companion",
       "figmaLayerName": "Settings/Wear companion",
       "componentName": "SettingWearLandingView",
-      "source": "https://github.com/home-assistant/android/blob/d120c7dcd0683e163a2379883ba9299af071e1cb/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
+      "source": "https://github.com/home-assistant/android/blob/1de03b345b71bb8fd585b379b99226bd9a07247d/app/src/full/kotlin/io/homeassistant/companion/android/settings/wear/views/SettingsWearLandingView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSettingWearLandingView",
@@ -139,14 +139,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-wear-companion__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Onboarding/Matter commissioning",
       "figmaLayerName": "Onboarding/Matter commissioning",
       "componentName": "MatterCommissioningScreen",
-      "source": "https://github.com/home-assistant/android/blob/d120c7dcd0683e163a2379883ba9299af071e1cb/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
+      "source": "https://github.com/home-assistant/android/blob/1de03b345b71bb8fd585b379b99226bd9a07247d/app/src/full/kotlin/io/homeassistant/companion/android/matter/MatterCommissioningScreen.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewMatterCommissioningScreen",
@@ -259,14 +258,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/onboarding-matter-commissioning__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Settings/Wi-Fi SSIDs",
       "figmaLayerName": "Settings/Wi-Fi SSIDs",
       "componentName": "SsidView",
-      "source": "https://github.com/home-assistant/android/blob/d120c7dcd0683e163a2379883ba9299af071e1cb/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
+      "source": "https://github.com/home-assistant/android/blob/1de03b345b71bb8fd585b379b99226bd9a07247d/app/src/main/kotlin/io/homeassistant/companion/android/settings/ssid/views/SsidView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewSsidViewItems",
@@ -470,14 +468,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/settings-wi-fi-ssids.svg"
+      ]
     },
     {
       "componentId": "Settings/External URL",
       "figmaLayerName": "Settings/External URL",
       "componentName": "ExternalUrlView",
-      "source": "https://github.com/home-assistant/android/blob/d120c7dcd0683e163a2379883ba9299af071e1cb/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
+      "source": "https://github.com/home-assistant/android/blob/1de03b345b71bb8fd585b379b99226bd9a07247d/app/src/main/kotlin/io/homeassistant/companion/android/settings/url/views/ExternalUrlView.kt",
       "label": "Compose",
       "confidence": "HIGH",
       "previewName": "PreviewExternalUrlViewCloudOn",
@@ -564,14 +561,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "https://preview.coo.ee/home-assistant-android/render/settings-external-url__ideal__default.svg"
+      ]
     },
     {
       "componentId": "Settings/Notification detail",
       "figmaLayerName": "Settings/Notification detail",
       "componentName": "LoadNotification",
-      "source": "https://github.com/home-assistant/android/blob/d120c7dcd0683e163a2379883ba9299af071e1cb/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
+      "source": "https://github.com/home-assistant/android/blob/1de03b345b71bb8fd585b379b99226bd9a07247d/app/src/main/kotlin/io/homeassistant/companion/android/settings/notification/views/NotificationDetailView.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "PreviewNotificationDetails",
@@ -606,14 +602,13 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": null
         }
-      ],
-      "figmaSvg": "figma/settings-notification-detail.svg"
+      ]
     },
     {
       "componentId": "Components/Icon dialog",
       "figmaLayerName": "Components/Icon dialog",
       "componentName": "IconDialogContent",
-      "source": "https://github.com/home-assistant/android/blob/d120c7dcd0683e163a2379883ba9299af071e1cb/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
+      "source": "https://github.com/home-assistant/android/blob/1de03b345b71bb8fd585b379b99226bd9a07247d/app/src/main/kotlin/io/homeassistant/companion/android/util/icondialog/IconDialog.kt",
       "label": "Compose",
       "confidence": "MEDIUM",
       "previewName": "IconDialogPreview",
@@ -661,8 +656,7 @@
           "scopeDslReceiver": null,
           "lambdaReturnTypeFqn": "kotlin.Unit"
         }
-      ],
-      "figmaSvg": "figma/components-icon-dialog.svg"
+      ]
     }
   ]
 }
