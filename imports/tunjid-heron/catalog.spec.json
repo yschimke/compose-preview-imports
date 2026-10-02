@@ -1,0 +1,200 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. No `module`: the import renders every previewable module, one feature screen per module.",
+  "system": "tunjid-heron",
+  "title": "Heron",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "display": {
+    "hero": "home"
+  },
+  "groups": [
+    {
+      "name": "Timelines",
+      "components": [
+        {
+          "componentId": "home",
+          "preview": "HomePreview",
+          "caption": "The home route with the pinned Following timeline in its tabbed scaffold — the screen the app opens on."
+        },
+        {
+          "componentId": "feed",
+          "preview": "FeedPreview",
+          "caption": "A custom feed opened as its own route, from its initial empty state."
+        },
+        {
+          "componentId": "list",
+          "preview": "ListPreview",
+          "caption": "A list's timeline route, from its initial empty state."
+        },
+        {
+          "componentId": "posts",
+          "preview": "PostsPreview",
+          "caption": "The saved-posts route, from its initial empty state."
+        },
+        {
+          "componentId": "post-detail",
+          "preview": "PostDetailPreview",
+          "caption": "A post opened as its own route."
+        },
+        {
+          "componentId": "quote-thread",
+          "preview": "QuoteThreadPreview",
+          "caption": "The route listing the posts that quote a given post."
+        },
+        {
+          "componentId": "gallery",
+          "preview": "GalleryPreview",
+          "caption": "The full-screen media gallery a post's images open into."
+        }
+      ]
+    },
+    {
+      "name": "People",
+      "components": [
+        {
+          "componentId": "profile",
+          "preview": "ProfilePreview",
+          "caption": "A profile route."
+        },
+        {
+          "componentId": "edit-profile",
+          "preview": "EditProfilePreview",
+          "caption": "Editing a profile."
+        },
+        {
+          "componentId": "profiles",
+          "preview": "ProfilesPreview",
+          "caption": "A followers list — the route used for any list of accounts."
+        },
+        {
+          "componentId": "search",
+          "preview": "SearchPreview",
+          "caption": "The search route, from its initial empty state."
+        }
+      ]
+    },
+    {
+      "name": "Writing and messages",
+      "components": [
+        {
+          "componentId": "compose",
+          "preview": "ComposePreview",
+          "caption": "The post composer, from its initial empty state."
+        },
+        {
+          "componentId": "messages",
+          "preview": "MessagesPreview",
+          "caption": "The direct-message inbox route, from its initial empty state."
+        },
+        {
+          "componentId": "message-list",
+          "preview": "MessageListMinHeightPreview",
+          "caption": "The inbox rows on their own at 360dp and 480dp, with the rows free to grow so the summary line is not clipped."
+        },
+        {
+          "componentId": "conversation",
+          "preview": "ConversationRoutePreview",
+          "caption": "A direct-message conversation route."
+        },
+        {
+          "componentId": "conversation-font-scale",
+          "preview": "ConversationPreview",
+          "caption": "A direct-message conversation at 1.5x and 2x font scale."
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "components": [
+        {
+          "componentId": "notifications",
+          "preview": "NotificationsPreview",
+          "caption": "The notifications route, from its initial empty state."
+        },
+        {
+          "componentId": "notification-settings",
+          "preview": "NotificationSettingsPreview",
+          "caption": "Notification preferences, from their initial state."
+        }
+      ]
+    },
+    {
+      "name": "On-device inference",
+      "components": [
+        {
+          "componentId": "inference",
+          "preview": "InferencePreview",
+          "caption": "The on-device model list, with one model downloading, one missing and one available."
+        },
+        {
+          "componentId": "model-card-memory-warning",
+          "preview": "ModelCardMemoryWarningPreview",
+          "caption": "A model card warning that the model may need more memory than the device has."
+        },
+        {
+          "componentId": "inference-sheet",
+          "preview": "InferenceSheetPreview",
+          "caption": "The translation inference sheet, with no model installed yet."
+        }
+      ]
+    },
+    {
+      "name": "Account and settings",
+      "components": [
+        {
+          "componentId": "splash",
+          "preview": "SplashPreview",
+          "caption": "The splash route."
+        },
+        {
+          "componentId": "sign-in",
+          "preview": "SignInPreview",
+          "caption": "The sign-in route, from its initial state."
+        },
+        {
+          "componentId": "settings",
+          "preview": "SettingsPreview",
+          "caption": "The settings route, from its initial state."
+        },
+        {
+          "componentId": "moderation",
+          "preview": "ModerationPreview",
+          "caption": "Moderation preferences, from their initial state."
+        },
+        {
+          "componentId": "atmosphere-app",
+          "preview": "AtmosphereAppPreview",
+          "caption": "The route for an AT Protocol app attached to a profile, before the app and profile have loaded."
+        },
+        {
+          "componentId": "tasks",
+          "preview": "TasksPreview",
+          "caption": "The background-tasks route, with no tasks."
+        }
+      ]
+    },
+    {
+      "name": "Components",
+      "components": [
+        {
+          "componentId": "morphing-loader",
+          "preview": "MorphingLoaderPreview",
+          "caption": "Heron's loading indicator: each loader curve across five energies, from still to busy."
+        },
+        {
+          "componentId": "morphing-loader-hidden-trace",
+          "preview": "MorphingLoaderHiddenTracePreview",
+          "caption": "The loader's \"firefly\" mode — the trace hidden, only the comet showing."
+        },
+        {
+          "componentId": "halo",
+          "preview": "HaloPreview",
+          "caption": "The halo modifier, one highlighted card per halo mode."
+        }
+      ]
+    }
+  ]
+}
