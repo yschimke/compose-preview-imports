@@ -1,11 +1,21 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. No `module`: the import renders every previewable module, one feature screen per module.",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. No `module`: the import renders every previewable module, one feature screen per module. `breakpoints` names the two widths upstream's MessageListPreviews multipreview renders at (360 dp and 480 dp): without them both classify as the generic `compact`, and message-list and the uncatalogued MessageListFixedHeightPreview fail the join with \"produce duplicate output axes\" (first import-on-merge run, 37057683838).",
   "system": "tunjid-heron",
   "title": "Heron",
   "modes": [
     "light",
     "dark"
+  ],
+  "breakpoints": [
+    {
+      "size": "compact",
+      "widthDp": 360
+    },
+    {
+      "size": "medium",
+      "widthDp": 480
+    }
   ],
   "display": {
     "hero": "home"
