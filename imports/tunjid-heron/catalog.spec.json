@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. No `module`: the import renders every previewable module, one feature screen per module. `breakpoints` names the two widths upstream's MessageListPreviews multipreview renders at (360 dp and 480 dp): without them both classify as the generic `compact`, and message-list and the uncatalogued MessageListFixedHeightPreview fail the join with \"produce duplicate output axes\" (first import-on-merge run, 37057683838).",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. No `module`: the import renders every previewable module, one feature screen per module. `breakpoints` names the three widths upstream's MessageListPreviews multipreview renders at (320, 360 and 480 dp): without them all three classify as the generic `compact`, and message-list and the uncatalogued MessageListFixedHeightPreview fail the join with \"produce duplicate output axes\" (import-on-merge run 37057683838; run 37071141095 still collided because the 320 dp arm was left undeclared).",
   "system": "tunjid-heron",
   "title": "Heron",
   "modes": [
@@ -8,6 +8,10 @@
     "dark"
   ],
   "breakpoints": [
+    {
+      "size": "narrow",
+      "widthDp": 320
+    },
     {
       "size": "compact",
       "widthDp": 360
@@ -102,7 +106,7 @@
         {
           "componentId": "message-list",
           "preview": "MessageListMinHeightPreview",
-          "caption": "The inbox rows on their own at 360dp and 480dp, with the rows free to grow so the summary line is not clipped."
+          "caption": "The inbox rows on their own at 320dp, 360dp and 480dp, with the rows free to grow so the summary line is not clipped."
         },
         {
           "componentId": "conversation",
