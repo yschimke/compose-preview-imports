@@ -75,6 +75,11 @@
       "importedFrom": "thunderbird/thunderbird-android",
       "listed": true,
       "system": "thunderbird-android"
+    },
+    {
+      "importedFrom": "tunjid/heron",
+      "listed": true,
+      "system": "tunjid-heron"
     }
   ],
   "groups": []
