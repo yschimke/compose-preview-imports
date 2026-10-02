@@ -1,0 +1,1933 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "tunjid-heron",
+  "title": "Heron",
+  "components": [
+    {
+      "componentId": "home",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/home/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/home__ideal__default",
+          "previewId": "module_3a666561747572653a686f6d65__module_666561747572653a686f6d65__com.tunjid.heron.home.HomePreviewKt.HomePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/home__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "The home route with the pinned Following timeline in its tabbed scaffold — the screen the app opens on.",
+      "wireframe": "wireframes/home.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/home/HomePreview.kt",
+      "sourceModule": ":feature:home",
+      "bodyLine": 34,
+      "sourceDirectory": "feature/home",
+      "sourceFunction": "HomePreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "feed",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feed/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/feed__ideal__default",
+          "previewId": "module_3a666561747572653a66656564__module_666561747572653a66656564__com.tunjid.heron.feed.FeedPreviewKt.FeedPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/feed__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "A custom feed opened as its own route, from its initial empty state.",
+      "wireframe": "wireframes/feed.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/feed/FeedPreview.kt",
+      "sourceModule": ":feature:feed",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/feed",
+      "sourceFunction": "FeedPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "list",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/list/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/list__ideal__default",
+          "previewId": "module_3a666561747572653a6c697374__module_666561747572653a6c697374__com.tunjid.heron.list.ListPreviewKt.ListPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/list__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "A list's timeline route, from its initial empty state.",
+      "wireframe": "wireframes/list.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/list/ListPreview.kt",
+      "sourceModule": ":feature:list",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/list",
+      "sourceFunction": "ListPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "posts",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/posts/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/posts__ideal__default",
+          "previewId": "module_3a666561747572653a706f737473__module_666561747572653a706f737473__com.tunjid.heron.posts.PostsPreviewKt.PostsPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/posts__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "The saved-posts route, from its initial empty state.",
+      "wireframe": "wireframes/posts.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/posts/PostsPreview.kt",
+      "sourceModule": ":feature:posts",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/posts",
+      "sourceFunction": "PostsPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "post-detail",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/post-detail/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/post-detail__ideal__default",
+          "previewId": "module_3a666561747572653a706f73742d64657461696c__module_666561747572653a706f73742d64657461696c__com.tunjid.heron.postdetail.PostDetailPreviewKt.PostDetailPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/post-detail__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "A post opened as its own route.",
+      "wireframe": "wireframes/post-detail.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/postdetail/PostDetailPreview.kt",
+      "sourceModule": ":feature:post-detail",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/post-detail",
+      "sourceFunction": "PostDetailPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "quote-thread",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/quote-thread/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/quote-thread__ideal__default",
+          "previewId": "module_3a666561747572653a71756f74652d746872656164__module_666561747572653a71756f74652d746872656164__com.tunjid.heron.quotethread.QuoteThreadPreviewKt.QuoteThreadPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/quote-thread__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "The route listing the posts that quote a given post.",
+      "wireframe": "wireframes/quote-thread.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/quotethread/QuoteThreadPreview.kt",
+      "sourceModule": ":feature:quote-thread",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/quote-thread",
+      "sourceFunction": "QuoteThreadPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "gallery",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/gallery/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/gallery__ideal__default",
+          "previewId": "module_3a666561747572653a67616c6c657279__module_666561747572653a67616c6c657279__com.tunjid.heron.gallery.GalleryPreviewKt.GalleryPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/gallery__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Timelines",
+      "caption": "The full-screen media gallery a post's images open into.",
+      "wireframe": "wireframes/gallery.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/gallery/GalleryPreview.kt",
+      "sourceModule": ":feature:gallery",
+      "bodyLine": 31,
+      "sourceDirectory": "feature/gallery",
+      "sourceFunction": "GalleryPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "profile",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/profile/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/profile__ideal__default",
+          "previewId": "module_3a666561747572653a70726f66696c65__module_666561747572653a70726f66696c65__com.tunjid.heron.profile.ProfilePreviewKt.ProfilePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/profile__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "People",
+      "caption": "A profile route.",
+      "wireframe": "wireframes/profile.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/profile/ProfilePreview.kt",
+      "sourceModule": ":feature:profile",
+      "bodyLine": 36,
+      "sourceDirectory": "feature/profile",
+      "sourceFunction": "ProfilePreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "edit-profile",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/edit-profile/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/edit-profile__ideal__default",
+          "previewId": "module_3a666561747572653a656469742d70726f66696c65__module_666561747572653a656469742d70726f66696c65__com.tunjid.heron.editprofile.EditProfilePreviewKt.EditProfilePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/edit-profile__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "People",
+      "caption": "Editing a profile.",
+      "wireframe": "wireframes/edit-profile.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/editprofile/EditProfilePreview.kt",
+      "sourceModule": ":feature:edit-profile",
+      "bodyLine": 33,
+      "sourceDirectory": "feature/edit-profile",
+      "sourceFunction": "EditProfilePreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "profiles",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/profiles/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/profiles__ideal__default",
+          "previewId": "module_3a666561747572653a70726f66696c6573__module_666561747572653a70726f66696c6573__com.tunjid.heron.profiles.ProfilesPreviewKt.ProfilesPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/profiles__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "People",
+      "caption": "A followers list — the route used for any list of accounts.",
+      "wireframe": "wireframes/profiles.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/profiles/ProfilesPreview.kt",
+      "sourceModule": ":feature:profiles",
+      "bodyLine": 35,
+      "sourceDirectory": "feature/profiles",
+      "sourceFunction": "ProfilesPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "search",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/search/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/search__ideal__default",
+          "previewId": "module_3a666561747572653a736561726368__module_666561747572653a736561726368__com.tunjid.heron.search.SearchPreviewKt.SearchPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/search__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "People",
+      "caption": "The search route, from its initial empty state.",
+      "wireframe": "wireframes/search.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/search/SearchPreview.kt",
+      "sourceModule": ":feature:search",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/search",
+      "sourceFunction": "SearchPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "compose",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/compose/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/compose__ideal__default",
+          "previewId": "module_3a666561747572653a636f6d706f7365__module_666561747572653a636f6d706f7365__com.tunjid.heron.compose.ComposePreviewKt.ComposePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/compose__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Writing and messages",
+      "caption": "The post composer, from its initial empty state.",
+      "wireframe": "wireframes/compose.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/compose/ComposePreview.kt",
+      "sourceModule": ":feature:compose",
+      "bodyLine": 34,
+      "sourceDirectory": "feature/compose",
+      "sourceFunction": "ComposePreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "messages",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/messages/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/messages__ideal__default",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesPreviewKt.MessagesPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/messages__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Writing and messages",
+      "caption": "The direct-message inbox route, from its initial empty state.",
+      "wireframe": "wireframes/messages.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/messages/MessagesPreview.kt",
+      "sourceModule": ":feature:messages",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/messages",
+      "sourceFunction": "MessagesPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "message-list",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/message-list/ideal__default__narrow.png",
+          "state": "default",
+          "width": 840,
+          "height": 752,
+          "size": "narrow",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/message-list__ideal__default__narrow",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesScreenPreviewKt.MessageListMinHeightPreview_Compact_width_320dp",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/message-list__ideal__default__narrow.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/message-list/ideal__default__medium.png",
+          "state": "default",
+          "width": 1260,
+          "height": 722,
+          "size": "medium",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/message-list__ideal__default__medium",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesScreenPreviewKt.MessageListMinHeightPreview_Expanded_width_480dp",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/message-list__ideal__default__medium.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/message-list/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 752,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/message-list__ideal__default__compact",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesScreenPreviewKt.MessageListMinHeightPreview_Phone_width_360dp",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/message-list__ideal__default__compact.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 840,
+            "height": 194
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "gap": 8,
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 66,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 279,
+            "width": 840,
+            "height": 194
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "gap": 8,
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 313,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 526,
+            "width": 840,
+            "height": 194
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "gap": 8,
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 560,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "group": "Writing and messages",
+      "caption": "The inbox rows on their own at 320dp, 360dp and 480dp, with the rows free to grow so the summary line is not clipped.",
+      "wireframe": "wireframes/message-list.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/messages/MessagesScreenPreview.kt",
+      "sourceModule": ":feature:messages",
+      "bodyLine": 122,
+      "sourceDirectory": "feature/messages",
+      "sourceFunction": "MessageListMinHeightPreview",
+      "parameters": [
+        {
+          "name": "rowHeight",
+          "type": "Dp?"
+        }
+      ]
+    },
+    {
+      "componentId": "conversation",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/conversation/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/conversation__ideal__default",
+          "previewId": "module_3a666561747572653a636f6e766572736174696f6e__module_666561747572653a636f6e766572736174696f6e__com.tunjid.heron.conversation.ConversationRoutePreviewKt.ConversationRoutePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/conversation__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Writing and messages",
+      "caption": "A direct-message conversation route.",
+      "wireframe": "wireframes/conversation.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/conversation/ConversationRoutePreview.kt",
+      "sourceModule": ":feature:conversation",
+      "bodyLine": 35,
+      "sourceDirectory": "feature/conversation",
+      "sourceFunction": "ConversationRoutePreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "conversation-font-scale",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/conversation-font-scale/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 916,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/conversation-font-scale__ideal__default__compact",
+          "previewId": "module_3a666561747572653a636f6e766572736174696f6e__module_666561747572653a636f6e766572736174696f6e__com.tunjid.heron.conversation.ConversationScreenPreviewKt.ConversationPreview_Direct_messages_-_font_1.0x",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/conversation-font-scale__ideal__default__compact.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/conversation-font-scale/ideal__default__compact__fontscale-1.5.png",
+          "state": "default",
+          "width": 945,
+          "height": 1477,
+          "size": "compact",
+          "props": {
+            "fontScale": "1.5"
+          },
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/conversation-font-scale__ideal__default__compact__fontscale-1.5"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/conversation-font-scale/ideal__default__compact__fontscale-2.0.png",
+          "state": "default",
+          "width": 945,
+          "height": 2100,
+          "size": "compact",
+          "props": {
+            "fontScale": "2.0"
+          },
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/conversation-font-scale__ideal__default__compact__fontscale-2.0"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 109,
+            "width": 756,
+            "height": 168
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 189,
+            "y": 130,
+            "width": 672,
+            "height": 126
+          },
+          "label": "Hey! Are we still on for the design review later today?",
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 840,
+            "y": 330,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 166,
+            "y": 397,
+            "width": 632,
+            "height": 105
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 208,
+            "y": 418,
+            "width": 548,
+            "height": 63
+          },
+          "label": "Yes — 3pm works for me",
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          }
+        },
+        {
+          "bounds": {
+            "x": 704,
+            "y": 486,
+            "width": 41,
+            "height": 63
+          },
+          "padding": {
+            "start": 4,
+            "top": 2,
+            "end": 4,
+            "bottom": 2
+          },
+          "gap": 4,
+          "cornerRadius": 16
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 628,
+            "width": 63,
+            "height": 63
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 147,
+            "y": 695,
+            "width": 756,
+            "height": 168
+          },
+          "cornerRadius": 4
+        },
+        {
+          "bounds": {
+            "x": 189,
+            "y": 716,
+            "width": 672,
+            "height": 126
+          },
+          "label": "Perfect, I'll share the Figma link in a moment",
+          "padding": {
+            "start": 16,
+            "top": 8,
+            "end": 16,
+            "bottom": 8
+          }
+        }
+      ],
+      "group": "Writing and messages",
+      "caption": "A direct-message conversation at 1.5x and 2x font scale.",
+      "wireframe": "wireframes/conversation-font-scale.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/conversation/ConversationScreenPreview.kt",
+      "sourceModule": ":feature:conversation",
+      "bodyLine": 91,
+      "sourceDirectory": "feature/conversation",
+      "sourceFunction": "ConversationPreview"
+    },
+    {
+      "componentId": "notifications",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/notifications/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/notifications__ideal__default",
+          "previewId": "module_3a666561747572653a6e6f74696669636174696f6e73__module_666561747572653a6e6f74696669636174696f6e73__com.tunjid.heron.notifications.NotificationsPreviewKt.NotificationsPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/notifications__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Notifications",
+      "caption": "The notifications route, from its initial empty state.",
+      "wireframe": "wireframes/notifications.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/notifications/NotificationsPreview.kt",
+      "sourceModule": ":feature:notifications",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/notifications",
+      "sourceFunction": "NotificationsPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "notification-settings",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/notification-settings/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/notification-settings__ideal__default",
+          "previewId": "module_3a666561747572653a6e6f74696669636174696f6e2d73657474696e6773__module_666561747572653a6e6f74696669636174696f6e2d73657474696e6773__com.tunjid.heron.notificationsettings.NotificationSettingsPreviewKt.NotificationSettingsPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/notification-settings__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Notifications",
+      "caption": "Notification preferences, from their initial state.",
+      "wireframe": "wireframes/notification-settings.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/notificationsettings/NotificationSettingsPreview.kt",
+      "sourceModule": ":feature:notification-settings",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/notification-settings",
+      "sourceFunction": "NotificationSettingsPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "inference",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inference/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/inference__ideal__default",
+          "previewId": "module_3a666561747572653a696e666572656e6365__module_666561747572653a696e666572656e6365__com.tunjid.heron.inference.InferencePreviewKt.InferencePreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/inference__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "On-device inference",
+      "caption": "The on-device model list, with one model downloading, one missing and one available.",
+      "wireframe": "wireframes/inference.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/inference/InferencePreview.kt",
+      "sourceModule": ":feature:inference",
+      "bodyLine": 42,
+      "sourceDirectory": "feature/inference",
+      "sourceFunction": "InferencePreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "model-card-memory-warning",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/model-card-memory-warning/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 601,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/model-card-memory-warning__ideal__default",
+          "previewId": "module_3a666561747572653a696e666572656e6365__module_666561747572653a696e666572656e6365__com.tunjid.heron.inference.InferencePreviewKt.ModelCardMemoryWarningPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/model-card-memory-warning__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 851,
+              "y": 286,
+              "width": 105,
+              "height": 105
+            }
+          },
+          "bounds": {
+            "x": 851,
+            "y": 286,
+            "width": 105,
+            "height": 105
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 42,
+            "y": 42,
+            "width": 966,
+            "height": 517
+          },
+          "padding": {
+            "start": 16,
+            "top": 16,
+            "end": 16,
+            "bottom": 16
+          },
+          "cornerRadius": 12
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 179,
+            "width": 237,
+            "height": 64
+          },
+          "cornerRadius": 12.19
+        },
+        {
+          "bounds": {
+            "x": 116,
+            "y": 190,
+            "width": 173,
+            "height": 42
+          },
+          "label": "Translation",
+          "padding": {
+            "start": 12,
+            "top": 4,
+            "end": 12,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 342,
+            "y": 179,
+            "width": 209,
+            "height": 64
+          },
+          "cornerRadius": 12.19
+        },
+        {
+          "bounds": {
+            "x": 374,
+            "y": 190,
+            "width": 145,
+            "height": 42
+          },
+          "label": "Summary",
+          "padding": {
+            "start": 12,
+            "top": 4,
+            "end": 12,
+            "bottom": 4
+          }
+        },
+        {
+          "bounds": {
+            "x": 84,
+            "y": 301,
+            "width": 218,
+            "height": 74
+          },
+          "cornerRadius": 14.1
+        },
+        {
+          "bounds": {
+            "x": 323,
+            "y": 301,
+            "width": 289,
+            "height": 74
+          },
+          "cornerRadius": 14.1
+        },
+        {
+          "bounds": {
+            "x": 851,
+            "y": 286,
+            "width": 105,
+            "height": 105
+          },
+          "role": "Button",
+          "cornerRadius": 20
+        }
+      ],
+      "group": "On-device inference",
+      "caption": "A model card warning that the model may need more memory than the device has.",
+      "wireframe": "wireframes/model-card-memory-warning.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/inference/InferencePreview.kt",
+      "sourceModule": ":feature:inference",
+      "bodyLine": 94,
+      "sourceDirectory": "feature/inference",
+      "sourceFunction": "ModelCardMemoryWarningPreview",
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        },
+        {
+          "name": "engineState",
+          "type": "EngineState?"
+        },
+        {
+          "name": "item",
+          "type": "ModelItem"
+        },
+        {
+          "name": "downloadEnabled",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "onLoad",
+          "type": "(LoadedModel) -> Unit"
+        },
+        {
+          "name": "onDownload",
+          "type": "(External) -> Unit"
+        },
+        {
+          "name": "onCancel",
+          "type": "(External) -> Unit"
+        },
+        {
+          "name": "onDelete",
+          "type": "(External) -> Unit"
+        }
+      ]
+    },
+    {
+      "componentId": "inference-sheet",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inference-sheet/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/inference-sheet__ideal__default",
+          "previewId": "module_3a75693a736865657473__module_75693a736865657473__com.tunjid.heron.sheets.inference.InferenceSheetPreviewKt.InferenceSheetPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/inference-sheet__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 431,
+            "y": 528,
+            "width": 189,
+            "height": 189
+          },
+          "cornerRadius": 36
+        }
+      ],
+      "group": "On-device inference",
+      "caption": "The translation inference sheet, with no model installed yet.",
+      "wireframe": "wireframes/inference-sheet.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/sheets/inference/InferenceSheetPreview.kt",
+      "sourceModule": ":ui:sheets",
+      "bodyLine": 13,
+      "sourceDirectory": "ui/sheets",
+      "sourceFunction": "InferenceSheetPreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "InferenceSheetState"
+        }
+      ]
+    },
+    {
+      "componentId": "splash",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/splash/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/splash__ideal__default",
+          "previewId": "module_3a666561747572653a73706c617368__module_666561747572653a73706c617368__com.tunjid.heron.splash.SplashPreviewKt.SplashPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/splash__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Account and settings",
+      "caption": "The splash route.",
+      "wireframe": "wireframes/splash.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/splash/SplashPreview.kt",
+      "sourceModule": ":feature:splash",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/splash",
+      "sourceFunction": "SplashPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "sign-in",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/sign-in/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/sign-in__ideal__default",
+          "previewId": "module_3a666561747572653a61757468__module_666561747572653a61757468__com.tunjid.heron.signin.SignInPreviewKt.SignInPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/sign-in__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Account and settings",
+      "caption": "The sign-in route, from its initial state.",
+      "wireframe": "wireframes/sign-in.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/signin/SignInPreview.kt",
+      "sourceModule": ":feature:auth",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/auth",
+      "sourceFunction": "SignInPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "settings",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/settings/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/settings__ideal__default",
+          "previewId": "module_3a666561747572653a73657474696e6773__module_666561747572653a73657474696e6773__com.tunjid.heron.settings.SettingsPreviewKt.SettingsPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/settings__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Account and settings",
+      "caption": "The settings route, from its initial state.",
+      "wireframe": "wireframes/settings.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/settings/SettingsPreview.kt",
+      "sourceModule": ":feature:settings",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/settings",
+      "sourceFunction": "SettingsPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "moderation",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/moderation/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/moderation__ideal__default",
+          "previewId": "module_3a666561747572653a6d6f6465726174696f6e__module_666561747572653a6d6f6465726174696f6e__com.tunjid.heron.moderation.ModerationPreviewKt.ModerationPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/moderation__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Account and settings",
+      "caption": "Moderation preferences, from their initial state.",
+      "wireframe": "wireframes/moderation.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/moderation/ModerationPreview.kt",
+      "sourceModule": ":feature:moderation",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/moderation",
+      "sourceFunction": "ModerationPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "atmosphere-app",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/atmosphere-app/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/atmosphere-app__ideal__default",
+          "previewId": "module_3a666561747572653a61746d6f737068657265617070__module_666561747572653a61746d6f737068657265617070__com.tunjid.heron.atmosphereapp.AtmosphereAppPreviewKt.AtmosphereAppPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/atmosphere-app__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Account and settings",
+      "caption": "The route for an AT Protocol app attached to a profile, before the app and profile have loaded.",
+      "wireframe": "wireframes/atmosphere-app.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/atmosphereapp/AtmosphereAppPreview.kt",
+      "sourceModule": ":feature:atmosphereapp",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/atmosphereapp",
+      "sourceFunction": "AtmosphereAppPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "tasks",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/tasks/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/tasks__ideal__default",
+          "previewId": "module_3a666561747572653a7461736b73__module_666561747572653a7461736b73__com.tunjid.heron.tasks.TasksPreviewKt.TasksPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/tasks__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Account and settings",
+      "caption": "The background-tasks route, with no tasks.",
+      "wireframe": "wireframes/tasks.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/tasks/TasksPreview.kt",
+      "sourceModule": ":feature:tasks",
+      "bodyLine": 30,
+      "sourceDirectory": "feature/tasks",
+      "sourceFunction": "TasksPreview",
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route"
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState"
+        }
+      ]
+    },
+    {
+      "componentId": "morphing-loader",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/morphing-loader/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 831,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/morphing-loader__ideal__default",
+          "previewId": "module_3a75693a636f7265__module_75693a636f7265__com.tunjid.heron.ui.MorphingLoaderPreviewKt.MorphingLoaderPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Components",
+      "caption": "Heron's loading indicator: each loader curve across five energies, from still to busy.",
+      "wireframe": "wireframes/morphing-loader.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/ui/MorphingLoaderPreview.kt",
+      "sourceModule": ":ui:core",
+      "bodyLine": 40,
+      "sourceDirectory": "ui/core",
+      "sourceFunction": "MorphingLoaderPreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "MorphingLoaderState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "morphing-loader-hidden-trace",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/morphing-loader-hidden-trace/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 315,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/morphing-loader-hidden-trace__ideal__default",
+          "previewId": "module_3a75693a636f7265__module_75693a636f7265__com.tunjid.heron.ui.MorphingLoaderPreviewKt.MorphingLoaderHiddenTracePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "group": "Components",
+      "caption": "The loader's \"firefly\" mode — the trace hidden, only the comet showing.",
+      "wireframe": "wireframes/morphing-loader-hidden-trace.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/ui/MorphingLoaderPreview.kt",
+      "sourceModule": ":ui:core",
+      "bodyLine": 90,
+      "sourceDirectory": "ui/core",
+      "sourceFunction": "MorphingLoaderHiddenTracePreview",
+      "parameters": [
+        {
+          "name": "state",
+          "type": "MorphingLoaderState"
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "halo",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/halo/ideal__default.png",
+          "state": "default",
+          "width": 735,
+          "height": 714,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/halo__ideal__default",
+          "previewId": "module_3a75693a636f7265__module_75693a636f7265__com.tunjid.heron.ui.modifiers.HaloPreviewKt.HaloPreview",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/halo__ideal__default.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 105,
+            "y": 105,
+            "width": 525,
+            "height": 189
+          },
+          "cornerRadius": 20
+        },
+        {
+          "bounds": {
+            "x": 105,
+            "y": 420,
+            "width": 525,
+            "height": 189
+          },
+          "cornerRadius": 20
+        }
+      ],
+      "group": "Components",
+      "caption": "The halo modifier, one highlighted card per halo mode.",
+      "wireframe": "wireframes/halo.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/ui/modifiers/HaloPreview.kt",
+      "sourceModule": ":ui:core",
+      "bodyLine": 45,
+      "sourceDirectory": "ui/core",
+      "sourceFunction": "HaloPreview",
+      "parameters": [
+        {
+          "name": "shape",
+          "type": "Shape"
+        },
+        {
+          "name": "colors",
+          "type": "List<Color>",
+          "hasDefault": true
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "hasDefault": true
+        },
+        {
+          "name": "mode",
+          "type": "HaloMode",
+          "hasDefault": true
+        },
+        {
+          "name": "repeatable",
+          "type": "Boolean",
+          "hasDefault": true
+        },
+        {
+          "name": "passes",
+          "type": "Int",
+          "hasDefault": true
+        },
+        {
+          "name": "durationMillis",
+          "type": "Int",
+          "hasDefault": true
+        }
+      ]
+    },
+    {
+      "componentId": "androidApp/AppAndroidPreview",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/androidapp-appandroidpreview/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/androidapp-appandroidpreview__ideal__default",
+          "previewId": "com.tunjid.heron.MainActivityKt.AppAndroidPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 395,
+              "y": 16,
+              "width": 260,
+              "height": 95
+            }
+          },
+          "bounds": {
+            "x": 395,
+            "y": 16,
+            "width": 260,
+            "height": 95
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 395,
+            "y": 16,
+            "width": 260,
+            "height": 95
+          },
+          "role": "Button",
+          "cornerRadius": 4
+        }
+      ],
+      "section": ":androidApp",
+      "group": "Previews",
+      "wireframe": "wireframes/androidapp-appandroidpreview.svg",
+      "sourceFile": "src/main/kotlin/com/tunjid/heron/MainActivity.kt",
+      "sourceModule": ":androidApp",
+      "bodyLine": 150,
+      "sourceDirectory": "apps/androidApp",
+      "sourceFunction": "AppAndroidPreview"
+    },
+    {
+      "componentId": "composeApp/App",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/composeapp-app/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 126,
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/composeapp-app__ideal__default",
+          "previewId": "module_3a636f6d706f7365417070__module_636f6d706f7365417070__com.tunjid.heron.AppKt.App",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/composeapp-app__ideal__default.svg"
+        }
+      ],
+      "greenlines": [
+        {
+          "kind": "a11y",
+          "severity": "info",
+          "message": "button",
+          "detail": {
+            "role": "button",
+            "bounds": {
+              "x": 382,
+              "y": 16,
+              "width": 286,
+              "height": 95
+            }
+          },
+          "bounds": {
+            "x": 382,
+            "y": 16,
+            "width": 286,
+            "height": 95
+          }
+        }
+      ],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 382,
+            "y": 16,
+            "width": 286,
+            "height": 95
+          },
+          "role": "Button",
+          "cornerRadius": 4
+        }
+      ],
+      "section": ":composeApp",
+      "group": "Previews",
+      "wireframe": "wireframes/composeapp-app.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/App.kt",
+      "sourceModule": ":composeApp",
+      "bodyLine": 40,
+      "sourceDirectory": "apps/composeApp",
+      "sourceFunction": "App"
+    },
+    {
+      "componentId": "feature/messages/MessageListFixedHeightPreview",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/feature-messages-messagelistfixedheightpreview/ideal__default__narrow.png",
+          "state": "default",
+          "width": 840,
+          "height": 707,
+          "size": "narrow",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/feature-messages-messagelistfixedheightpreview__ideal__default__narrow",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesScreenPreviewKt.MessageListFixedHeightPreview_Compact_width_320dp",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/feature-messages-messagelistfixedheightpreview__ideal__default__narrow.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feature-messages-messagelistfixedheightpreview/ideal__default__medium.png",
+          "state": "default",
+          "width": 1260,
+          "height": 707,
+          "size": "medium",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/feature-messages-messagelistfixedheightpreview__ideal__default__medium",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesScreenPreviewKt.MessageListFixedHeightPreview_Expanded_width_480dp",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/feature-messages-messagelistfixedheightpreview__ideal__default__medium.svg"
+        },
+        {
+          "variant": "ideal",
+          "path": "images/feature-messages-messagelistfixedheightpreview/ideal__default__compact.png",
+          "state": "default",
+          "width": 945,
+          "height": 707,
+          "size": "compact",
+          "livePreview": "https://preview.coo.ee/tunjid-heron/p/feature-messages-messagelistfixedheightpreview__ideal__default__compact",
+          "previewId": "module_3a666561747572653a6d65737361676573__module_666561747572653a6d65737361676573__com.tunjid.heron.messages.MessagesScreenPreviewKt.MessageListFixedHeightPreview_Phone_width_360dp",
+          "density": 2.625,
+          "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/feature-messages-messagelistfixedheightpreview__ideal__default__compact.svg"
+        }
+      ],
+      "greenlines": [],
+      "redlines": [
+        {
+          "bounds": {
+            "x": 0,
+            "y": 32,
+            "width": 840,
+            "height": 179
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "gap": 8,
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 59,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 264,
+            "width": 840,
+            "height": 179
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "gap": 8,
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 291,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 24
+        },
+        {
+          "bounds": {
+            "x": 0,
+            "y": 496,
+            "width": 840,
+            "height": 179
+          },
+          "padding": {
+            "start": 8,
+            "top": 0,
+            "end": 8,
+            "bottom": 0
+          },
+          "gap": 8,
+          "cornerRadius": 8
+        },
+        {
+          "bounds": {
+            "x": 42,
+            "y": 523,
+            "width": 126,
+            "height": 126
+          },
+          "cornerRadius": 24
+        }
+      ],
+      "section": ":feature:messages",
+      "group": "Previews",
+      "caption": "Compact width 320dp",
+      "wireframe": "wireframes/feature-messages-messagelistfixedheightpreview.svg",
+      "sourceFile": "src/commonMain/kotlin/com/tunjid/heron/messages/MessagesScreenPreview.kt",
+      "sourceModule": ":feature:messages",
+      "bodyLine": 115,
+      "sourceDirectory": "feature/messages",
+      "sourceFunction": "MessageListFixedHeightPreview",
+      "parameters": [
+        {
+          "name": "rowHeight",
+          "type": "Dp?"
+        }
+      ]
+    }
+  ],
+  "renderer": "compose-preview 2.32.1",
+  "generatedAt": "2026-10-02T23:48:52.542Z",
+  "display": {
+    "hero": "home"
+  },
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":androidApp",
+      "previewIdPrefix": ""
+    },
+    {
+      "path": "bundle/modules/module_3a636f6d706f7365417070/",
+      "file": "module_636f6d706f7365417070.png",
+      "module": ":composeApp",
+      "previewIdPrefix": "module_3a636f6d706f7365417070__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a61746d6f737068657265617070/",
+      "file": "module_666561747572653a61746d6f737068657265617070.png",
+      "module": ":feature:atmosphereapp",
+      "previewIdPrefix": "module_3a666561747572653a61746d6f737068657265617070__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a61757468/",
+      "file": "module_666561747572653a61757468.png",
+      "module": ":feature:auth",
+      "previewIdPrefix": "module_3a666561747572653a61757468__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a636f6d706f7365/",
+      "file": "module_666561747572653a636f6d706f7365.png",
+      "module": ":feature:compose",
+      "previewIdPrefix": "module_3a666561747572653a636f6d706f7365__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a636f6e766572736174696f6e/",
+      "file": "module_666561747572653a636f6e766572736174696f6e.png",
+      "module": ":feature:conversation",
+      "previewIdPrefix": "module_3a666561747572653a636f6e766572736174696f6e__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a656469742d70726f66696c65/",
+      "file": "module_666561747572653a656469742d70726f66696c65.png",
+      "module": ":feature:edit-profile",
+      "previewIdPrefix": "module_3a666561747572653a656469742d70726f66696c65__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a66656564/",
+      "file": "module_666561747572653a66656564.png",
+      "module": ":feature:feed",
+      "previewIdPrefix": "module_3a666561747572653a66656564__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a67616c6c657279/",
+      "file": "module_666561747572653a67616c6c657279.png",
+      "module": ":feature:gallery",
+      "previewIdPrefix": "module_3a666561747572653a67616c6c657279__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a686f6d65/",
+      "file": "module_666561747572653a686f6d65.png",
+      "module": ":feature:home",
+      "previewIdPrefix": "module_3a666561747572653a686f6d65__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a696e666572656e6365/",
+      "file": "module_666561747572653a696e666572656e6365.png",
+      "module": ":feature:inference",
+      "previewIdPrefix": "module_3a666561747572653a696e666572656e6365__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a6c697374/",
+      "file": "module_666561747572653a6c697374.png",
+      "module": ":feature:list",
+      "previewIdPrefix": "module_3a666561747572653a6c697374__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a6d65737361676573/",
+      "file": "module_666561747572653a6d65737361676573.png",
+      "module": ":feature:messages",
+      "previewIdPrefix": "module_3a666561747572653a6d65737361676573__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a6d6f6465726174696f6e/",
+      "file": "module_666561747572653a6d6f6465726174696f6e.png",
+      "module": ":feature:moderation",
+      "previewIdPrefix": "module_3a666561747572653a6d6f6465726174696f6e__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a6e6f74696669636174696f6e2d73657474696e6773/",
+      "file": "module_666561747572653a6e6f74696669636174696f6e2d73657474696e6773.png",
+      "module": ":feature:notification-settings",
+      "previewIdPrefix": "module_3a666561747572653a6e6f74696669636174696f6e2d73657474696e6773__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a6e6f74696669636174696f6e73/",
+      "file": "module_666561747572653a6e6f74696669636174696f6e73.png",
+      "module": ":feature:notifications",
+      "previewIdPrefix": "module_3a666561747572653a6e6f74696669636174696f6e73__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a706f73742d64657461696c/",
+      "file": "module_666561747572653a706f73742d64657461696c.png",
+      "module": ":feature:post-detail",
+      "previewIdPrefix": "module_3a666561747572653a706f73742d64657461696c__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a706f737473/",
+      "file": "module_666561747572653a706f737473.png",
+      "module": ":feature:posts",
+      "previewIdPrefix": "module_3a666561747572653a706f737473__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a70726f66696c65/",
+      "file": "module_666561747572653a70726f66696c65.png",
+      "module": ":feature:profile",
+      "previewIdPrefix": "module_3a666561747572653a70726f66696c65__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a70726f66696c6573/",
+      "file": "module_666561747572653a70726f66696c6573.png",
+      "module": ":feature:profiles",
+      "previewIdPrefix": "module_3a666561747572653a70726f66696c6573__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a71756f74652d746872656164/",
+      "file": "module_666561747572653a71756f74652d746872656164.png",
+      "module": ":feature:quote-thread",
+      "previewIdPrefix": "module_3a666561747572653a71756f74652d746872656164__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a736561726368/",
+      "file": "module_666561747572653a736561726368.png",
+      "module": ":feature:search",
+      "previewIdPrefix": "module_3a666561747572653a736561726368__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a73657474696e6773/",
+      "file": "module_666561747572653a73657474696e6773.png",
+      "module": ":feature:settings",
+      "previewIdPrefix": "module_3a666561747572653a73657474696e6773__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a73706c617368/",
+      "file": "module_666561747572653a73706c617368.png",
+      "module": ":feature:splash",
+      "previewIdPrefix": "module_3a666561747572653a73706c617368__"
+    },
+    {
+      "path": "bundle/modules/module_3a666561747572653a7461736b73/",
+      "file": "module_666561747572653a7461736b73.png",
+      "module": ":feature:tasks",
+      "previewIdPrefix": "module_3a666561747572653a7461736b73__"
+    },
+    {
+      "path": "bundle/modules/module_3a75693a636f7265/",
+      "file": "module_75693a636f7265.png",
+      "module": ":ui:core",
+      "previewIdPrefix": "module_3a75693a636f7265__"
+    },
+    {
+      "path": "bundle/modules/module_3a75693a736865657473/",
+      "file": "module_75693a736865657473.png",
+      "module": ":ui:sheets",
+      "previewIdPrefix": "module_3a75693a736865657473__"
+    }
+  ],
+  "componentsFile": "components.json",
+  "source": {
+    "repo": "tunjid/heron",
+    "ref": "4437eefcf9ccb4462a31ef9995561678a17bf321",
+    "module": ""
+  }
+}

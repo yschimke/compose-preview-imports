@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 752" width="840" height="752" role="img" aria-label="message-list layout wireframe">
+  <title>message-list — layout wireframe (slots + tokens)</title>
+  <rect width="840" height="752" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="840" height="752" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="840" height="752" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="840" height="752" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="0" y="32" width="840" height="688" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,32 H798 A21,21 0 0 1 819,53 V205 A21,21 0 0 1 798,226 H42 A21,21 0 0 1 21,205 V53 A21,21 0 0 1 42,32 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="44" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad ·  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="66" width="168" height="126" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M105,66 H105 A63,63 0 0 1 168,129 V129 A63,63 0 0 1 105,192 H105 A63,63 0 0 1 42,129 V129 A63,63 0 0 1 105,66 Z" fill="#E8DEF8" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="78" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFE8DEF8</text>
+  </g>
+  <g>
+    <rect x="210" y="32" width="609" height="194" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="210" y="32" width="417" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="210" y="100" width="609" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,279 H798 A21,21 0 0 1 819,300 V452 A21,21 0 0 1 798,473 H42 A21,21 0 0 1 21,452 V300 A21,21 0 0 1 42,279 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="291" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad ·  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="313" width="168" height="126" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M105,313 H105 A63,63 0 0 1 168,376 V376 A63,63 0 0 1 105,439 H105 A63,63 0 0 1 42,376 V376 A63,63 0 0 1 105,313 Z" fill="#E8DEF8" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="325" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFE8DEF8</text>
+  </g>
+  <g>
+    <rect x="210" y="279" width="609" height="194" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="210" y="279" width="371" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="210" y="347" width="609" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M42,526 H798 A21,21 0 0 1 819,547 V699 A21,21 0 0 1 798,720 H42 A21,21 0 0 1 21,699 V547 A21,21 0 0 1 42,526 Z" fill="none" fill-opacity="0" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="24" y="538" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">pad ·  gap 8.0dp</text>
+  </g>
+  <g>
+    <rect x="21" y="560" width="168" height="126" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M105,560 H105 A63,63 0 0 1 168,623 V623 A63,63 0 0 1 105,686 H105 A63,63 0 0 1 42,623 V623 A63,63 0 0 1 105,560 Z" fill="#E8DEF8" fill-opacity="1" stroke="#4F8A4A" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="45" y="572" font-family="system-ui, sans-serif" font-size="9" fill="#4F8A4A">#FFE8DEF8</text>
+  </g>
+  <g>
+    <rect x="210" y="526" width="609" height="194" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="210" y="526" width="244" height="63" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="210" y="594" width="609" height="126" fill="none" fill-opacity="0" stroke="#4F8A4A" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>

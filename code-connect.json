@@ -1,0 +1,1409 @@
+{
+  "system": "tunjid-heron",
+  "title": "Heron",
+  "label": "Compose",
+  "source": {
+    "repo": "tunjid/heron",
+    "ref": "4437eefcf9ccb4462a31ef9995561678a17bf321"
+  },
+  "generatedAt": "2026-10-02T23:48:57.135Z",
+  "mappings": [
+    {
+      "componentId": "home",
+      "figmaLayerName": "home",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/home/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "HomePreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.home.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/home__ideal__default.svg"
+    },
+    {
+      "componentId": "feed",
+      "figmaLayerName": "feed",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/feed/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "FeedPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.feed.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/feed__ideal__default.svg"
+    },
+    {
+      "componentId": "list",
+      "figmaLayerName": "list",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/list/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ListPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.list.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/list__ideal__default.svg"
+    },
+    {
+      "componentId": "posts",
+      "figmaLayerName": "posts",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/posts/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PostsPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.posts.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/posts__ideal__default.svg"
+    },
+    {
+      "componentId": "post-detail",
+      "figmaLayerName": "post-detail",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/postdetail/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "PostDetailPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.postdetail.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/post-detail__ideal__default.svg"
+    },
+    {
+      "componentId": "quote-thread",
+      "figmaLayerName": "quote-thread",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/quotethread/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "QuoteThreadPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.quotethread.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/quote-thread__ideal__default.svg"
+    },
+    {
+      "componentId": "gallery",
+      "figmaLayerName": "gallery",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/gallery/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "GalleryPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.gallery.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/gallery__ideal__default.svg"
+    },
+    {
+      "componentId": "profile",
+      "figmaLayerName": "profile",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/profile/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ProfilePreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.profile.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/profile__ideal__default.svg"
+    },
+    {
+      "componentId": "edit-profile",
+      "figmaLayerName": "edit-profile",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/editprofile/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "EditProfilePreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.editprofile.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/edit-profile__ideal__default.svg"
+    },
+    {
+      "componentId": "profiles",
+      "figmaLayerName": "profiles",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/profiles/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ProfilesPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.profiles.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/profiles__ideal__default.svg"
+    },
+    {
+      "componentId": "search",
+      "figmaLayerName": "search",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/search/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SearchPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.search.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/search__ideal__default.svg"
+    },
+    {
+      "componentId": "compose",
+      "figmaLayerName": "compose",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/compose/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ComposePreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.compose.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/compose__ideal__default.svg"
+    },
+    {
+      "componentId": "messages",
+      "figmaLayerName": "messages",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/messages/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MessagesPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.messages.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/messages__ideal__default.svg"
+    },
+    {
+      "componentId": "message-list",
+      "figmaLayerName": "message-list",
+      "componentName": "PreviewMessageList",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/messages/MessagesScreenPreview.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MessageListMinHeightPreview",
+      "codeSnippet": "PreviewMessageList(\n    rowHeight = TODO(\"Dp?\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.messages.PreviewMessageList"
+      ],
+      "parameters": [
+        {
+          "name": "rowHeight",
+          "type": "Dp?",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/message-list__ideal__default__narrow.svg"
+    },
+    {
+      "componentId": "conversation",
+      "figmaLayerName": "conversation",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/conversation/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ConversationRoutePreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.conversation.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/conversation__ideal__default.svg"
+    },
+    {
+      "componentId": "conversation-font-scale",
+      "figmaLayerName": "conversation-font-scale",
+      "componentName": "PreviewConversation",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/conversation/ConversationScreenPreview.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ConversationPreview",
+      "codeSnippet": "PreviewConversation()",
+      "imports": [
+        "import com.tunjid.heron.conversation.PreviewConversation"
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/conversation-font-scale__ideal__default__compact.svg"
+    },
+    {
+      "componentId": "notifications",
+      "figmaLayerName": "notifications",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/notifications/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "NotificationsPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.notifications.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/notifications__ideal__default.svg"
+    },
+    {
+      "componentId": "notification-settings",
+      "figmaLayerName": "notification-settings",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/notificationsettings/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "NotificationSettingsPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.notificationsettings.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/notification-settings__ideal__default.svg"
+    },
+    {
+      "componentId": "inference",
+      "figmaLayerName": "inference",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/inference/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "InferencePreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.inference.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/inference__ideal__default.svg"
+    },
+    {
+      "componentId": "model-card-memory-warning",
+      "figmaLayerName": "model-card-memory-warning",
+      "componentName": "ModelCard",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/inference/ui/ModelCard.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ModelCardMemoryWarningPreview",
+      "codeSnippet": "ModelCard(\n    engineState = TODO(\"EngineState?\"),\n    item = TODO(\"ModelItem\"),\n    onLoad = TODO(\"(LoadedModel) -> Unit\"),\n    onDownload = TODO(\"(External) -> Unit\"),\n    onCancel = TODO(\"(External) -> Unit\"),\n    onDelete = TODO(\"(External) -> Unit\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.inference.ui.ModelCard"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "engineState",
+          "type": "EngineState?",
+          "typeFqn": "com.tunjid.heron.data.ml.engine.EngineState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "item",
+          "type": "ModelItem",
+          "typeFqn": "com.tunjid.heron.inference.ModelItem",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "downloadEnabled",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "onLoad",
+          "type": "(LoadedModel) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onDownload",
+          "type": "(External) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onCancel",
+          "type": "(External) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        },
+        {
+          "name": "onDelete",
+          "type": "(External) -> Unit",
+          "typeFqn": "kotlin.Function1",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": "kotlin.Unit"
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/model-card-memory-warning__ideal__default.svg"
+    },
+    {
+      "componentId": "inference-sheet",
+      "figmaLayerName": "inference-sheet",
+      "componentName": "InferenceBottomSheet",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/sheets/inference/InferenceSheetState.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "InferenceSheetPreview",
+      "codeSnippet": "InferenceBottomSheet(\n    state = TODO(\"InferenceSheetState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.sheets.inference.InferenceBottomSheet"
+      ],
+      "parameters": [
+        {
+          "name": "state",
+          "type": "InferenceSheetState",
+          "typeFqn": "com.tunjid.heron.sheets.inference.InferenceSheetState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/inference-sheet__ideal__default.svg"
+    },
+    {
+      "componentId": "splash",
+      "figmaLayerName": "splash",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/splash/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SplashPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.splash.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/splash__ideal__default.svg"
+    },
+    {
+      "componentId": "sign-in",
+      "figmaLayerName": "sign-in",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/signin/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SignInPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.signin.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/sign-in__ideal__default.svg"
+    },
+    {
+      "componentId": "settings",
+      "figmaLayerName": "settings",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/settings/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "SettingsPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.settings.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/settings__ideal__default.svg"
+    },
+    {
+      "componentId": "moderation",
+      "figmaLayerName": "moderation",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/moderation/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ModerationPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.moderation.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/moderation__ideal__default.svg"
+    },
+    {
+      "componentId": "atmosphere-app",
+      "figmaLayerName": "atmosphere-app",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/atmosphereapp/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "AtmosphereAppPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.atmosphereapp.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/atmosphere-app__ideal__default.svg"
+    },
+    {
+      "componentId": "tasks",
+      "figmaLayerName": "tasks",
+      "componentName": "Route",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/tasks/di/Bindings.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "TasksPreview",
+      "codeSnippet": "Route(\n    route = TODO(\"Route\"),\n    paneScaffoldState = TODO(\"PaneScaffoldState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.tasks.di.Route"
+      ],
+      "parameters": [
+        {
+          "name": "route",
+          "type": "Route",
+          "typeFqn": "com.tunjid.treenav.strings.Route",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "paneScaffoldState",
+          "type": "PaneScaffoldState",
+          "typeFqn": "com.tunjid.heron.ui.scaffold.scaffold.PaneScaffoldState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/tasks__ideal__default.svg"
+    },
+    {
+      "componentId": "morphing-loader",
+      "figmaLayerName": "morphing-loader",
+      "componentName": "MorphingLoader",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/ui/MorphingLoader.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MorphingLoaderPreview",
+      "codeSnippet": "MorphingLoader(\n    state = TODO(\"MorphingLoaderState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.ui.MorphingLoader"
+      ],
+      "parameters": [
+        {
+          "name": "state",
+          "type": "MorphingLoaderState",
+          "typeFqn": "com.tunjid.heron.ui.MorphingLoaderState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "figma/morphing-loader.svg"
+    },
+    {
+      "componentId": "morphing-loader-hidden-trace",
+      "figmaLayerName": "morphing-loader-hidden-trace",
+      "componentName": "MorphingLoader",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/ui/MorphingLoader.kt",
+      "label": "Compose",
+      "confidence": "MEDIUM",
+      "previewName": "MorphingLoaderHiddenTracePreview",
+      "codeSnippet": "MorphingLoader(\n    state = TODO(\"MorphingLoaderState\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.ui.MorphingLoader"
+      ],
+      "parameters": [
+        {
+          "name": "state",
+          "type": "MorphingLoaderState",
+          "typeFqn": "com.tunjid.heron.ui.MorphingLoaderState",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "typeFqn": "androidx.compose.ui.Modifier",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "figma/morphing-loader-hidden-trace.svg"
+    },
+    {
+      "componentId": "halo",
+      "figmaLayerName": "halo",
+      "componentName": "rememberHaloState",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/ui/modifiers/Halo.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "HaloPreview",
+      "codeSnippet": "rememberHaloState(\n    shape = TODO(\"Shape\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.ui.modifiers.rememberHaloState"
+      ],
+      "parameters": [
+        {
+          "name": "shape",
+          "type": "Shape",
+          "typeFqn": "androidx.compose.ui.graphics.Shape",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "colors",
+          "type": "List<Color>",
+          "typeFqn": "kotlin.collections.List",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "width",
+          "type": "Dp",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "mode",
+          "type": "HaloMode",
+          "typeFqn": "com.tunjid.heron.ui.modifiers.HaloMode",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "repeatable",
+          "type": "Boolean",
+          "typeFqn": "kotlin.Boolean",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "passes",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        },
+        {
+          "name": "durationMillis",
+          "type": "Int",
+          "typeFqn": "kotlin.Int",
+          "hasDefault": true,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": false,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/halo__ideal__default.svg"
+    },
+    {
+      "componentId": "androidApp/AppAndroidPreview",
+      "figmaLayerName": "androidApp/AppAndroidPreview",
+      "componentName": "AppAndroidPreview",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/main/kotlin/com/tunjid/heron/MainActivity.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "AppAndroidPreview"
+    },
+    {
+      "componentId": "composeApp/App",
+      "figmaLayerName": "composeApp/App",
+      "componentName": "App",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/App.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "App",
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/composeapp-app__ideal__default.svg"
+    },
+    {
+      "componentId": "feature/messages/MessageListFixedHeightPreview",
+      "figmaLayerName": "feature/messages/MessageListFixedHeightPreview",
+      "componentName": "PreviewMessageList",
+      "source": "https://github.com/tunjid/heron/blob/4437eefcf9ccb4462a31ef9995561678a17bf321/src/commonMain/kotlin/com/tunjid/heron/messages/MessagesScreenPreview.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "MessageListFixedHeightPreview",
+      "codeSnippet": "PreviewMessageList(\n    rowHeight = TODO(\"Dp?\"),\n)",
+      "imports": [
+        "import com.tunjid.heron.messages.PreviewMessageList"
+      ],
+      "parameters": [
+        {
+          "name": "rowHeight",
+          "type": "Dp?",
+          "typeFqn": "androidx.compose.ui.unit.Dp",
+          "hasDefault": false,
+          "composableSlot": false,
+          "composableSlotReceiver": null,
+          "nullable": true,
+          "noArgConstructible": false,
+          "noArgFactory": null,
+          "scopeDslReceiver": null,
+          "lambdaReturnTypeFqn": null
+        }
+      ],
+      "figmaSvg": "https://preview.coo.ee/tunjid-heron/render/feature-messages-messagelistfixedheightpreview__ideal__default__narrow.svg"
+    }
+  ]
+}

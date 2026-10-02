@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 735 714" width="735" height="714" role="img" aria-label="halo layout wireframe">
+  <title>halo — layout wireframe (slots + tokens)</title>
+  <rect width="735" height="714" fill="#ffffff"/>
+  <g>
+    <rect x="0" y="0" width="735" height="714" fill="none" fill-opacity="0" stroke="#5B6470" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="735" height="714" fill="none" fill-opacity="0" stroke="#2E7D6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <rect x="0" y="0" width="735" height="714" fill="#FEF7FF" fill-opacity="1" stroke="#8E6BA8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="3" y="12" font-family="system-ui, sans-serif" font-size="9" fill="#8E6BA8">#FFFEF7FF</text>
+  </g>
+  <g>
+    <rect x="105" y="105" width="525" height="504" fill="none" fill-opacity="0" stroke="#B0813B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M157.5,105 H577.5 A52.5,52.5 0 0 1 630,157.5 V241.5 A52.5,52.5 0 0 1 577.5,294 H157.5 A52.5,52.5 0 0 1 105,241.5 V157.5 A52.5,52.5 0 0 1 157.5,105 Z" fill="#E7E0EC" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="108" y="117" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFE7E0EC</text>
+  </g>
+  <g>
+    <rect x="295" y="168" width="145" height="63" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+  <g>
+    <path d="M157.5,420 H577.5 A52.5,52.5 0 0 1 630,472.5 V556.5 A52.5,52.5 0 0 1 577.5,609 H157.5 A52.5,52.5 0 0 1 105,556.5 V472.5 A52.5,52.5 0 0 1 157.5,420 Z" fill="#E7E0EC" fill-opacity="1" stroke="#3B72A8" stroke-width="1.5" stroke-opacity="1"/>
+    <text x="108" y="432" font-family="system-ui, sans-serif" font-size="9" fill="#3B72A8">#FFE7E0EC</text>
+  </g>
+  <g>
+    <rect x="214" y="483" width="308" height="63" fill="none" fill-opacity="0" stroke="#A85B6B" stroke-width="1" stroke-opacity="0.5"/>
+  </g>
+</svg>
