@@ -15,6 +15,22 @@
   ],
   "revisions": [
     {
+      "commit": "14e384fef4b55863253509da7e88e6e489196a5a",
+      "previews": [
+        "co2-trend-sparkline__ideal__default",
+        "color-scheme-dark__ideal__default",
+        "color-scheme__ideal__default",
+        "country-row-selected__ideal__default",
+        "country-row-unranked__ideal__default",
+        "country-row__ideal__default",
+        "empty-state-message__ideal__default",
+        "empty-state__ideal__default",
+        "key-figures-row-rising__ideal__default",
+        "key-figures-row__ideal__default",
+        "typography__ideal__default"
+      ]
+    },
+    {
       "commit": "673bbf7068fc1c742e1d73d7909ae9badeb240fd",
       "previews": [
         "co2-trend-sparkline__ideal__default",
@@ -160,22 +176,6 @@
     },
     {
       "commit": "8e65c60ac30d0cb2f0c86a287f98191c5fc09be6",
-      "previews": [
-        "co2-trend-sparkline__ideal__default",
-        "color-scheme-dark__ideal__default",
-        "color-scheme__ideal__default",
-        "country-row-selected__ideal__default",
-        "country-row-unranked__ideal__default",
-        "country-row__ideal__default",
-        "empty-state-message__ideal__default",
-        "empty-state__ideal__default",
-        "key-figures-row-rising__ideal__default",
-        "key-figures-row__ideal__default",
-        "typography__ideal__default"
-      ]
-    },
-    {
-      "commit": "d5ea145866f3e6e546feb53d688720db7b37b56a",
       "previews": [
         "co2-trend-sparkline__ideal__default",
         "color-scheme-dark__ideal__default",
