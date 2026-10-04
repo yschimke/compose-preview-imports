@@ -52,7 +52,7 @@ on:
   workflow_dispatch:
     inputs:
       slug:
-        description: 'Import slug to build (the name after import/ on its branch).'
+        description: 'Import slug to build (the directory name under imports/).'
         required: true
         type: string
       publish:
@@ -60,11 +60,6 @@ on:
         required: false
         type: boolean
         default: true
-      allow-config-drift:
-        description: 'Build from import/<slug> even when its imports/<slug>/ disagrees with main. For trying a config out on the branch before proposing it; the default refuses, because a stale branch is what silently renders the previous config for half an hour.'
-        required: false
-        type: boolean
-        default: false
   workflow_call:
     inputs:
       slug:
@@ -74,10 +69,6 @@ on:
         required: false
         type: boolean
         default: true
-      allow-config-drift:
-        required: false
-        type: boolean
-        default: false
     secrets:
       # Write access to the output repository, for the `publish` job only. Passed explicitly by each
       # caller rather than with `secrets: inherit`, so a called run sees this secret and nothing else.
@@ -98,85 +89,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Bring import/<slug> up to `main` before anything reads it.
-  #
-  # `main` is where an import's configuration is AUTHORED — a pull request adds or edits
-  # `imports/<slug>/`, and a ruleset means that is the only way it can change. The import branch is
-  # a carrier of that configuration, nothing more, and until this job existed nothing advanced it:
-  # merging a fix and dispatching the import ran the PREVIOUS config, silently, with a green config
-  # job and a full-length render that failed on exactly what the merge had fixed. Two ~30-minute
-  # runs were lost that way before it was noticed, because everything about the run looks normal.
-  #
-  # It also repairs the branch when it is simply gone. `delete_branch_on_merge` treats
-  # `import/<slug>` like an ordinary topic branch and deletes it whenever a pull request merges from
-  # one, after which the next dispatch dies at checkout. See AGENTS.md: an import's changes are
-  # raised from an `agent/…` branch precisely so that never happens — this is the backstop for when
-  # it does anyway, and it turns a manual `git push origin origin/main:refs/heads/import/<slug>`
-  # into something nobody has to remember.
-  #
-  # This job runs NO third-party code: it touches only this repository's own refs, and the imported
-  # project has not been checked out anywhere yet. That is what makes `contents: write` here
-  # consistent with the boundary described above rather than a hole in it.
-  sync:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - name: Check out main
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: main
-          # Enough history to answer "is the import branch an ancestor of main?" without fetching
-          # the whole repository. A shallow checkout would make every merge-base query fail open.
-          fetch-depth: 0
-          persist-credentials: false
-
-      - name: Fast-forward import/${{ inputs.slug }} to main
-        env:
-          GH_TOKEN: ${{ github.token }}
-          SLUG: ${{ inputs.slug }}
-        run: |
-          set -euo pipefail
-          branch="import/${SLUG}"
-          main_sha=$(git rev-parse HEAD)
-          # The credential is put on the command line's URL rather than persisted into the checkout,
-          # so nothing later in this job — or in a job that reuses the workspace — inherits a
-          # writable remote it did not ask for.
-          origin="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-
-          if git fetch --no-tags "$origin" "+refs/heads/${branch}:refs/remotes/sync/${branch}" 2>/dev/null; then
-            branch_sha=$(git rev-parse "refs/remotes/sync/${branch}")
-            if [ "$branch_sha" = "$main_sha" ]; then
-              echo "::notice::${branch} already at main (${main_sha})"
-              exit 0
-            fi
-            # Only a fast-forward. A branch carrying commits that are NOT on main is someone trying
-            # a configuration out on it, and discarding that silently would be a worse bug than the
-            # one this job fixes — the config job's drift check reports it as an error instead, with
-            # the two things its author can do about it.
-            if ! git merge-base --is-ancestor "$branch_sha" "$main_sha"; then
-              echo "::warning::${branch} (${branch_sha}) is not an ancestor of main (${main_sha});" \
-                "leaving it alone. The config job will refuse to build from it unless" \
-                "allow-config-drift is set."
-              exit 0
-            fi
-          else
-            echo "::warning::${branch} does not exist — recreating it from main." \
-              "It was most likely auto-deleted by delete_branch_on_merge; see AGENTS.md for why an" \
-              "import's changes are raised from an agent/... branch rather than from this one."
-          fi
-
-          git push "$origin" "${main_sha}:refs/heads/${branch}"
-          echo "::notice::${branch} -> ${main_sha}"
-
-  # Read the import's description off its own branch. Split out so the build job's inputs are
+  # Read the import's description from imports/<slug>/. Split out so the build job's inputs are
   # ordinary strings a human can read in the run log, rather than a JSON blob parsed mid-build.
   config:
-    needs: sync
     runs-on: ubuntu-latest
     permissions:
       contents: read
     outputs:
+      sha: ${{ steps.read.outputs.sha }}
       upstream: ${{ steps.read.outputs.upstream }}
       ref: ${{ steps.read.outputs.ref }}
       modules: ${{ steps.read.outputs.modules }}
@@ -191,61 +111,28 @@ jobs:
       renderRuntimeProjects: ${{ steps.read.outputs.renderRuntimeProjects }}
       gradleProperties: ${{ steps.read.outputs.gradleProperties }}
     steps:
-      - name: Check out the import branch
+      # The configuration is read from the commit this run was started on — `main` for the
+      # on-merge build and the nightly refresh, or whatever branch a manual dispatch names — and the
+      # build below renders that SAME commit, by SHA. One revision for both, so there is nothing to
+      # keep in step and nothing to drift.
+      #
+      # This replaced a per-import `import/<slug>` carrier branch that the config used to be read
+      # from. It was meant to equal `main`, and needed a job to fast-forward it there (and recreate
+      # it whenever `delete_branch_on_merge` ate it) plus a check that refused to build while it
+      # still disagreed — both because a stale branch rendered the previous configuration silently,
+      # for half an hour. Reading the commit directly removes the branch that failure needed.
+      - name: Check out the configuration
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: import/${{ inputs.slug }}
           persist-credentials: false
 
-      # The backstop to the `sync` job above, and worth having even though that job exists: the
-      # failure this guards is expensive precisely because it is SILENT. A stale import branch
-      # produces a green config job and then a full-length render against the previous
-      # configuration, failing on the very thing the merge was supposed to fix, with nothing on the
-      # run page to say so. Half an hour, twice, before anyone worked out why.
-      #
-      # `sync` cannot have left the branch behind main, so reaching here means it has commits of its
-      # own — someone trying a configuration out on the branch. That is a legitimate thing to do and
-      # an illegitimate thing to do by accident, so it is refused by default and allowed by saying
-      # so: `allow-config-drift`. Both `imports/<slug>/` files are compared, because the spec is
-      # read from this branch too and goes as stale as import.json does.
-      - name: Refuse a config that disagrees with main
+      - name: Say when this run will not publish
+        if: ${{ inputs.publish && github.ref != 'refs/heads/main' }}
         env:
-          GH_TOKEN: ${{ github.token }}
-          SLUG: ${{ inputs.slug }}
-          ALLOW_DRIFT: ${{ inputs.allow-config-drift }}
+          REF: ${{ github.ref_name }}
         run: |
-          set -euo pipefail
-          # The checkout above persists no credential, so name one here rather than relying on
-          # `origin` being fetchable unauthenticated — this must not start passing or failing on
-          # whether the repository happens to be public.
-          git fetch --no-tags --depth=1 \
-            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" main
-          if git diff --quiet FETCH_HEAD HEAD -- "imports/${SLUG}/"; then
-            echo "::notice::imports/${SLUG}/ matches main"
-            exit 0
-          fi
-
-          {
-            echo "### import/${SLUG} disagrees with main"
-            echo
-            echo '```'
-            git --no-pager diff --stat FETCH_HEAD HEAD -- "imports/${SLUG}/"
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
-
-          if [ "$ALLOW_DRIFT" = "true" ]; then
-            echo "::warning::imports/${SLUG}/ on import/${SLUG} differs from main;" \
-              "building it anyway because allow-config-drift is set."
-            git --no-pager diff FETCH_HEAD HEAD -- "imports/${SLUG}/"
-            exit 0
-          fi
-
-          git --no-pager diff FETCH_HEAD HEAD -- "imports/${SLUG}/"
-          echo "::error::imports/${SLUG}/ on import/${SLUG} differs from main, so this run would" \
-            "render a configuration nobody merged. Either open a pull request against main with" \
-            "these changes (the sync job then advances the branch on merge), or dispatch this" \
-            "workflow with allow-config-drift to build the branch as it stands."
-          exit 1
+          echo "::notice::building ${REF}, not main — the render runs, but publish is skipped so an" \
+            "unmerged configuration never replaces the delivery branch a box is serving."
 
       - name: Read import.json
         id: read
@@ -254,7 +141,7 @@ jobs:
         run: |
           set -euo pipefail
           config="imports/${SLUG}/import.json"
-          test -f "$config" || { echo "::error::import/${SLUG} has no ${config}"; exit 1; }
+          test -f "$config" || { echo "::error::${GITHUB_REF_NAME} has no ${config}"; exit 1; }
 
           slug=$(jq -r '.slug' "$config")
           upstream=$(jq -r '.upstream' "$config")
@@ -519,11 +406,11 @@ jobs:
             exit 1
           }
 
-          # The slug names the delivery branch and the route the server serves this at, so a branch
-          # whose import.json disagrees with its own name would publish to somewhere nobody is
+          # The slug names the delivery branch and the route the server serves this at, so an
+          # import.json disagreeing with its own directory would publish to somewhere nobody is
           # looking. Caught here rather than three jobs later.
           [ "$slug" = "$SLUG" ] || {
-            echo "::error::${config} says slug=${slug} but the branch is import/${SLUG}"
+            echo "::error::${config} says slug=${slug} but its directory is imports/${SLUG}"
             exit 1
           }
           # `upstream` reaches a checkout and `ref` reaches a git command line. Both are reviewed in
@@ -535,6 +422,7 @@ jobs:
             echo "::error::ref '${ref}' is not a usable git ref"; exit 1; }
 
           {
+            echo "sha=$(git rev-parse HEAD)"
             echo "upstream=${upstream}"
             echo "ref=${ref}"
             echo "modules=${modules}"
@@ -563,10 +451,11 @@ jobs:
       # design-artifacts/<slug> (and any reference/parity branch) anonymously — it is public — and
       # never receive a write credential; the push is the `publish` job's, below.
       artifact-repository: yschimke/compose-preview-imports-out
-      # The spec describing an imported project lives in THIS repository, on the import's branch —
-      # it is our description of their code, and it is not their business to carry it.
+      # The spec describing an imported project lives in THIS repository — it is our description of
+      # their code, and it is not their business to carry it — read at the exact commit the config
+      # job read import.json from.
       spec: imports/${{ inputs.slug }}/catalog.spec.json
-      ref: import/${{ inputs.slug }}
+      ref: ${{ needs.config.outputs.sha }}
       upstream-repository: ${{ needs.config.outputs.upstream }}
       upstream-ref: ${{ needs.config.outputs.ref }}
       # An upstream whose Gradle build is not at its repository root says so, and the render happens
@@ -647,7 +536,10 @@ jobs:
 
   publish:
     needs: [config, build]
-    if: ${{ inputs.publish }}
+    # Only a build of `main` publishes. A dispatch from another branch is how a configuration is
+    # tried out before its pull request merges, and it must not replace the delivery branch a box is
+    # serving with a configuration nobody has merged.
+    if: ${{ inputs.publish && github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     # Nothing in this repository is written: the push goes to the output repository with
     # ARTIFACTS_TOKEN, which is scoped to that repository alone.

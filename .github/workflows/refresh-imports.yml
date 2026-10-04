@@ -3,11 +3,9 @@ name: Refresh all imports
 # Rebuilds every registered import on a schedule, so a catalog here follows the project it was
 # imported from instead of freezing at the commit it was first built from.
 #
-# The registry is the imports/ directory on `main`, and the per-import config that a build reads
-# lives on `import/<slug>` branches. That
-# split is not cosmetic: a `schedule` trigger only ever fires for a workflow on the DEFAULT branch
-# and checks that branch out, so a sweep driven from the import branches themselves would never run.
-# `main` holds the list; each dispatched run checks out its own import branch for the detail.
+# The registry is the imports/ directory on `main`, and each import's configuration lives beside it
+# in imports/<slug>/. A `schedule` trigger only fires for a workflow on the default branch and runs
+# on that branch's head, so every refresh builds exactly what `main` says.
 
 on:
   schedule:

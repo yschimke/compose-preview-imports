@@ -80,9 +80,8 @@ lint() {
     fi
     slug=$(jq -r '.slug // ""' "$file")
     upstream=$(jq -r '.upstream // ""' "$file")
-    # The slug names the delivery branch and the route the server serves this at, and the import
-    # branch is import/<slug>: a description disagreeing with its own directory would publish to
-    # somewhere nobody is looking. `import.yml` catches it too, three jobs into a build; this catches
+    # The slug names the delivery branch and the route the server serves this at: a description
+    # disagreeing with its own directory would publish to somewhere nobody is looking. `import.yml` catches it too, three jobs into a build; this catches
     # it in the pull request that is the review.
     [ "$slug" = "$dir" ] || { echo "::error file=$file::slug '$slug' does not match directory '$dir'" >&2; status=1; }
     echo "$upstream" | grep -Eq '^[A-Za-z0-9._-]+/[A-Za-z0-9._-]+$' \
