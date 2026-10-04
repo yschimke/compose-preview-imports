@@ -1113,11 +1113,6 @@
           "caption": "Red indicator atom. RedIndicatorAtom.kt"
         },
         {
-          "componentId": "room-preview-alias-atom",
-          "preview": "RoomPreviewAliasAtomPreview",
-          "caption": "Room preview alias atom. RoomPreviewAliasAtom.kt"
-        },
-        {
           "componentId": "rounded-icon-atom",
           "preview": "RoundedIconAtomPreview",
           "caption": "Rounded icon atom. RoundedIconAtom.kt"
