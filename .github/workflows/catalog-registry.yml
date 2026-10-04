@@ -68,7 +68,7 @@ jobs:
         run: ./scripts/sync-catalog-registry.sh --lint
 
       - name: The registry document generates
-        run: ./scripts/sync-catalog-registry.sh --print | jq -e '.catalogs | length > 0' >/dev/null
+        run: ./scripts/sync-catalog-registry.sh --print | jq -e '(.catalogs | type) == "array" and (.groups | type) == "array"' >/dev/null
 
   sync:
     if: ${{ github.event_name != 'pull_request' }}
