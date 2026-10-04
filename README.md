@@ -58,12 +58,9 @@ which repository, which ref and which modules are about to be built before any o
    and nothing else. Open it against `main`: the pull request is the review, and its diff says
    exactly which third-party code this repository is about to start building.
 
-   **Never raise the pull request from `import/<slug>` itself.** This repository has
-   `delete_branch_on_merge` on, and GitHub cannot tell a long-lived config carrier from an ordinary
-   topic branch: merging a pull request whose head is `import/<slug>` deletes it, and the next
-   dispatch of that import used to die at checkout until someone recreated it by hand. `import.yml`'s
-   `sync` job now recreates it from `main` instead, so the mistake self-heals — but the branch is
-   still not a place to open a pull request from.
+   To see it render before it merges, run **Import a project** from the Actions tab on your branch,
+   with the slug. A run on any branch but `main` builds and stops there: only `main` publishes, so an
+   unmerged configuration never replaces a catalog a box is serving.
 
    Nothing shared is edited on the way in, which is deliberate. The registry used to be a
    hand-kept array that every import appended to, so the first of several open imports to merge left
@@ -71,7 +68,7 @@ which repository, which ref and which modules are about to be built before any o
    `imports/` directory itself.
 
    Merging is what adds `imports/<slug>/` to `main`, which is the registry the scheduled refresh
-   walks, and the `sync` job then advances `import/<slug>` to match.
+   walks.
 
 3. **When it lands, it builds.** Merging pushes `imports/<slug>/…` to `main`, and
    [`import-on-merge.yml`](.github/workflows/import-on-merge.yml) runs every import that push
@@ -134,12 +131,15 @@ box, exactly like any other.
 
 ## What an import looks like
 
-`imports/<slug>/import.json`. It is **authored on `main`** — through an ordinary pull request from an
-`agent/…` branch — and *carried* on `import/<slug>`, which `import.yml`'s `config` job reads. Those
-two are kept identical by that workflow's `sync` job, which fast-forwards the branch to `main` before
-anything reads it; the `config` job then refuses to build a branch that still disagrees, rather than
-spending half an hour rendering a configuration nobody merged. Dispatch with **allow-config-drift**
-to try a configuration out on the branch as it stands.
+`imports/<slug>/import.json`, **authored on `main`** through an ordinary pull request from an
+`agent/…` branch. `import.yml`'s `config` job reads it from the commit the run started on, and the
+build renders that same commit by SHA, so the configuration and the spec beside it can never come
+from two different revisions.
+
+Each import used to be *carried* on an `import/<slug>` branch that the build read instead, kept
+equal to `main` by a job of its own. A stale one rendered the previous configuration for half an
+hour without a word, which took a fast-forward job, a drift check and a recreate-on-delete path to
+contain; reading `main` directly made all three unnecessary, and the branches are gone.
 
 ```json
 {
@@ -154,7 +154,7 @@ to try a configuration out on the branch as it stands.
 
 | Field | Meaning |
 | --- | --- |
-| `slug` | The catalog id, the delivery branch suffix (`design-artifacts/<slug>`) and the route the server serves it at. Must match the branch name after `import/`. |
+| `slug` | The catalog id, the delivery branch suffix (`design-artifacts/<slug>`) and the route the server serves it at. Must match its directory name, `imports/<slug>/`. |
 | `upstream` | The `owner/repo` being imported. Never modified by anything here. |
 | `ref` | Branch or tag of the upstream project to build. Pinning a tag makes an import reproducible; `main` follows the project. |
 | `modules` | Gradle paths to render, from the scan. Empty means every module the plugin applies to. |

@@ -8,22 +8,15 @@ execution boundary before changing a workflow.
 
 - Git history attributes work only to the human committer. Never add an AI `Co-authored-by:` trailer
   or use an agent identity as author/committer. Scrub PR titles and bodies too.
-- Branch names use `agent/...` for work on this repository itself. `import/<slug>` is reserved for
-  imports. Machine-written output never lands here: the `design-artifacts/<slug>` delivery branches
+- Branch names use `agent/...` for work on this repository itself. Machine-written output never lands here: the `design-artifacts/<slug>` delivery branches
   and the catalog registry document live in
   [`yschimke/compose-preview-imports-out`](https://github.com/yschimke/compose-preview-imports-out),
   written with the `ARTIFACTS_TOKEN` secret by jobs that run no third-party code.
-- **Never open a pull request whose head is `import/<slug>`** — not even the one that adds the
-  import. `delete_branch_on_merge` is on and GitHub cannot tell a long-lived config carrier from an
-  ordinary topic branch, so merging such a pull request deletes the branch and the next dispatch of
-  that import dies at checkout. Raise every change to `imports/<slug>/` from an `agent/...` branch
-  against `main`; `import.yml`'s `sync` job advances `import/<slug>` to `main` on the way in, and
-  recreates it when it has been deleted anyway.
-- **`import/<slug>` is a carrier, `main` is the source.** `import.yml`'s `config` job reads
-  `imports/<slug>/` from the branch and refuses to build when it disagrees with `main`, because a
-  stale branch renders the previous configuration for half an hour with a green config job and
-  nothing on the run page to say so. Dispatch with `allow-config-drift` to build the branch as it
-  stands.
+- **`main` is the configuration.** `import.yml` reads `imports/<slug>/` from the commit it runs on
+  and renders that same commit by SHA. There are no per-import branches: raise every change to
+  `imports/<slug>/` from an `agent/...` branch against `main`. To try a configuration before it
+  merges, dispatch **Import a project** on that branch — it builds, but only a run on `main`
+  publishes.
 - Commit subjects and PR titles use Conventional Commits.
 - The registry document a preview server reads, `.compose-preview/catalogs.json`, is generated from
   the `imports/` directory and lives on the output repository's `main`. Never hand-edit it:
