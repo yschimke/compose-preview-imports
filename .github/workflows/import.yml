@@ -1,6 +1,7 @@
 name: Import a project
 
-# Builds ONE imported project and publishes it to design-artifacts/<slug>.
+# Builds ONE imported project and publishes it to design-artifacts/<slug> of the OUTPUT repository,
+# yschimke/compose-preview-imports-out. This repository holds sources and workflows only.
 #
 # The security shape is the point of this file, so it is stated here rather than left to be
 # inferred from the job graph:
@@ -27,20 +28,25 @@ name: Import a project
 #              This job runs nothing itself — it is a `uses:` shim — so the ceiling it declares is
 #              never a process the imported build is inside of.
 #
-#   publish  — downloads that artifact and force-pushes it to design-artifacts/<slug>.
-#              `permissions: contents: write`, and it runs NO third-party code.
+#   publish  — downloads that artifact and pushes it to design-artifacts/<slug> in
+#              yschimke/compose-preview-imports-out, with the ARTIFACTS_TOKEN secret. It runs NO
+#              third-party code, and it is the only job that ever sees that secret.
 #
-# Splitting them is what makes the WRITE token safe. GITHUB_TOKEN is already minted per-run and
-# scoped to THIS repository — it cannot touch another repo, and it expires when the job ends — but a
-# token scoped to this repo is still a token an untrusted build could use to push a branch here.
-# Keeping the two in separate jobs means the credential and the foreign code are never in the same
-# process, so the blast radius of a malicious import is "the run produces a bad artifact", which the
-# publish job's own inputs bound, rather than "the run writes to this repository".
+# Splitting them is what makes the WRITE credential safe. Keeping the credential and the foreign code
+# in separate jobs means they are never in the same process, so the blast radius of a malicious
+# import is "the run produces a bad artifact", which the publish job's own inputs bound, rather than
+# "the run writes to a repository".
 #
-# No personal access token is involved anywhere. A PRIVATE upstream would need one — a fine-grained
-# PAT with Contents: Read on the named repositories only, passed to the upstream checkout step's
-# `token:` input and nowhere else — but every import here is public, so the checkout needs no
-# credential.
+# ARTIFACTS_TOKEN is a fine-grained PAT with Contents: Read and write on
+# yschimke/compose-preview-imports-out ONLY — the same secret name, and the same split, the
+# first-party catalogs use for their own `-out` repositories. GITHUB_TOKEN cannot do this job: GitHub
+# scopes it to the repository the workflow runs in. Moving the delivery branches out also narrows
+# what the write credential reaches: it can no longer touch this repository's `main`, its workflows or
+# its import branches at all.
+#
+# A PRIVATE upstream would need a second credential — a fine-grained PAT with Contents: Read on the
+# named repositories only, passed to the upstream checkout step's `token:` input and nowhere else —
+# but every import here is public, so the checkout needs none.
 
 on:
   workflow_dispatch:
@@ -50,7 +56,7 @@ on:
         required: true
         type: string
       publish:
-        description: 'Force-push the result to design-artifacts/<slug>. Off = build only, for trying an import out.'
+        description: 'Push the result to design-artifacts/<slug> in compose-preview-imports-out. Off = build only, for trying an import out.'
         required: false
         type: boolean
         default: true
@@ -72,9 +78,18 @@ on:
         required: false
         type: boolean
         default: false
+    secrets:
+      # Write access to the output repository, for the `publish` job only. Passed explicitly by each
+      # caller rather than with `secrets: inherit`, so a called run sees this secret and nothing else.
+      ARTIFACTS_TOKEN:
+        required: false
 
 # Default to nothing. Each job opts into exactly what it needs, below.
 permissions: {}
+
+env:
+  # Where the delivery branches live. Not this repository: see the header.
+  ARTIFACT_REPOSITORY: yschimke/compose-preview-imports-out
 
 concurrency:
   # One run per import. A refresh sweep and a manual re-run of the same project queue rather than
@@ -544,6 +559,10 @@ jobs:
     uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
     with:
       system: ${{ inputs.slug }}
+      # Generated branches live in the output repository. The render jobs READ its earlier
+      # design-artifacts/<slug> (and any reference/parity branch) anonymously — it is public — and
+      # never receive a write credential; the push is the `publish` job's, below.
+      artifact-repository: yschimke/compose-preview-imports-out
       # The spec describing an imported project lives in THIS repository, on the import's branch —
       # it is our description of their code, and it is not their business to carry it.
       spec: imports/${{ inputs.slug }}/catalog.spec.json
@@ -630,9 +649,10 @@ jobs:
     needs: [config, build]
     if: ${{ inputs.publish }}
     runs-on: ubuntu-latest
+    # Nothing in this repository is written: the push goes to the output repository with
+    # ARTIFACTS_TOKEN, which is scoped to that repository alone.
     permissions:
-      # The only write in the whole workflow, in the only job that runs no third-party code.
-      contents: write
+      contents: read
     steps:
       # This repository is deliberately NOT checked out. Nothing in this job reads it — the content
       # to publish arrives as an artifact and the helper comes from compose-ai-tools — and a
@@ -653,27 +673,35 @@ jobs:
           name: ${{ inputs.slug }}-catalog-out
           path: out
 
-      - name: Force-push to design-artifacts/${{ inputs.slug }}
+      - name: Push to design-artifacts/${{ inputs.slug }} in ${{ env.ARTIFACT_REPOSITORY }}
         env:
-          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_TOKEN: ${{ secrets.ARTIFACTS_TOKEN }}
           SLUG: ${{ inputs.slug }}
           UPSTREAM: ${{ needs.config.outputs.upstream }}
           UPSTREAM_REF: ${{ needs.config.outputs.ref }}
         run: |
           set -euo pipefail
           test -d out || { echo "::error::no out/ to publish"; exit 1; }
+          # No fallback to GITHUB_TOKEN: it cannot write to another repository, and a fallback that
+          # pushed here instead would quietly recreate design-artifacts/* in the source repository,
+          # where no server reads them any more.
+          [ -n "$ARTIFACT_TOKEN" ] || {
+            echo "::error::ARTIFACTS_TOKEN is not set. It must be a fine-grained PAT with Contents:" \
+              "Read and write on ${ARTIFACT_REPOSITORY}, stored as a repository secret here."
+            exit 1
+          }
 
           # The helper runs `git init`, `git remote add origin` and `git add -A` in the CURRENT
-          # directory, so the directory it starts in is exactly what gets force-pushed. It must be
-          # the rendered catalog and nothing else — run from the workspace root it would stage the
-          # whole checkout instead. compose-ai-tools' own publish step cds the same way.
+          # directory, so the directory it starts in is exactly what gets pushed. It must be the
+          # rendered catalog and nothing else — run from the workspace root it would stage the whole
+          # checkout instead. compose-ai-tools' own publish step cds the same way.
           cd "$GITHUB_WORKSPACE/out"
 
           # The same helper, and the same delivery-branch contract, the first-party catalogs use —
           # so an imported catalog is an ordinary one to every reader downstream.
           TARGET_BRANCH="design-artifacts/${SLUG}" \
-          REPO="$GITHUB_REPOSITORY" \
-          GITHUB_TOKEN_INLINE="$GH_TOKEN" \
+          REPO="$ARTIFACT_REPOSITORY" \
+          GITHUB_TOKEN_INLINE="$ARTIFACT_TOKEN" \
           MSG="chore(import): rebuild ${SLUG} from ${UPSTREAM}@${UPSTREAM_REF} ($(date -u +%F))" \
           SKIP_IF_UNCHANGED=1 \
           REVISION_PREVIEW_INDEX=1 \
@@ -693,6 +721,6 @@ jobs:
             echo "### Imported \`${UPSTREAM}\`"
             echo
             echo "- built from \`${UPSTREAM}@${UPSTREAM_REF}\`"
-            echo "- published to \`design-artifacts/${SLUG}\`"
+            echo "- published to \`design-artifacts/${SLUG}\` in [${ARTIFACT_REPOSITORY}](https://github.com/${ARTIFACT_REPOSITORY}/tree/design-artifacts/${SLUG})"
             echo "- served at https://preview.coo.ee/${SLUG}/ once the box refreshes"
           } >> "$GITHUB_STEP_SUMMARY"

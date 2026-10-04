@@ -69,3 +69,5 @@ jobs:
     with:
       slug: ${{ matrix.slug }}
       publish: true
+    secrets:
+      ARTIFACTS_TOKEN: ${{ secrets.ARTIFACTS_TOKEN }}
