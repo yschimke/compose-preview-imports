@@ -7,11 +7,17 @@ plugin.
 
 Nothing here is a fork. An *import* is a small description of somebody else's repository, held on a
 branch of this one; a GitHub Actions runner checks that project out, injects the Compose Preview
-plugin at build time, renders its previews, and force-pushes the result to a `design-artifacts/<slug>`
-branch **of this repository**. A preview server that nominates this repository as a *catalog
-registry* then serves that branch exactly as it serves a catalog a project published for itself —
-with no second, manual step against the box, which is what makes merging the import's pull request
-the whole import.
+plugin at build time, renders its previews, and pushes the result to a `design-artifacts/<slug>`
+branch of the output repository,
+[`yschimke/compose-preview-imports-out`](https://github.com/yschimke/compose-preview-imports-out). A
+preview server that nominates that repository as a *catalog registry* then serves the branch exactly
+as it serves a catalog a project published for itself — with no second, manual step against the
+box, which is what makes merging the import's pull request the whole import.
+
+This repository holds the sources — the import descriptions, the workflows, these docs. Everything
+the workflows generate goes to the output repository, the same split the first-party catalogs use
+for their own `-out` repositories: build output accrues history quickly, and keeping it out of here
+keeps this repository small to clone and its branch list readable.
 
 ## Why the builds happen here and not on the preview box
 
@@ -69,15 +75,15 @@ which repository, which ref and which modules are about to be built before any o
 
 3. **When it lands, it builds.** Merging pushes `imports/<slug>/…` to `main`, and
    [`import-on-merge.yml`](.github/workflows/import-on-merge.yml) runs every import that push
-   touched, publishing `design-artifacts/<slug>`. Re-run one any time from the Actions tab —
+   touched, publishing `design-artifacts/<slug>` to the output repository. Re-run one any time from
+   the Actions tab —
    **Import a project** → *Run workflow* → the slug — and every registered import is refreshed
    nightly by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml).
 
 4. **And it is served.** Nothing else to do: the merge also has
-   [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) regenerate
-   [`.compose-preview/catalogs.json`](.compose-preview/catalogs.json) (below) on `main`, which is the
-   document preview.coo.ee re-reads on its catalog-refresh cadence. The catalog appears there once
-   its first build finishes.
+   [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) regenerate the registry document
+   (below) and push it to the output repository's `main`, which is the document preview.coo.ee
+   re-reads on its catalog-refresh cadence. The catalog appears there once its first build finishes.
 
 ## How the catalogs reach the preview server
 
@@ -87,43 +93,44 @@ and reachable while `preview.coo.ee/joreilly-peopleinspace/` served a permanent 
 had told the server it existed. For a repository whose entire model is "the pull request is the
 import", that is the one gap that makes the model untrue.
 
-[`.compose-preview/catalogs.json`](.compose-preview/catalogs.json) closes it. A preview server
-started with
+The registry document closes it: `.compose-preview/catalogs.json` on the output repository's
+`main` ([here](https://github.com/yschimke/compose-preview-imports-out/blob/main/.compose-preview/catalogs.json)).
+A preview server started with
 
 ```
---catalog-registry yschimke/compose-preview-imports
+--catalog-registry yschimke/compose-preview-imports-out
 ```
 
-fetches that file from this repository's default branch and serves every catalog it lists, from this
-repository's own `design-artifacts/<slug>` branches. It re-reads it on the same cadence it polls
-those branches, so a merged import is picked up without a restart, and an import whose directory is
-removed is retired.
+fetches that file from the output repository's default branch and serves every catalog it lists,
+from that repository's own `design-artifacts/<slug>` branches. It re-reads it on the same cadence it
+polls those branches, so a merged import is picked up without a restart, and an import whose
+directory is removed is retired. The document and the branches have to live in the same repository:
+a server serves a registry's entries only from the registry's own branches.
 
 The file is **generated** from the `imports/` directory by
 [`scripts/sync-catalog-registry.sh`](scripts/sync-catalog-registry.sh), and it is regenerated **after
 a merge to `main`** by [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) rather than in
-the import's own pull request. `main` carries a ruleset — changes must arrive through a pull request —
-so that job opens one (`chore/catalog-registry`, force-pushed, so a run of merges updates a single
-pull request rather than a queue of them) and asks for auto-merge. **An import is not served until
-that pull request lands**, which is the one manual step left when a repository requires review. That is what keeps concurrent imports from colliding: each one adds its own
-`imports/<slug>/` and touches nothing shared, and the one shared, generated file is written once, by
-the job that watches `main`. On a pull request that same workflow only lints the import descriptions
-— that each `slug` matches its directory, and that each `upstream` is an owner/repo.
+the import's own pull request. That is what keeps concurrent imports from colliding: each one adds
+its own `imports/<slug>/` and touches nothing shared, and the one shared, generated file is written
+once, by the job that watches `main`. The output repository carries no ruleset — it holds nothing
+but machine-written output — so that job pushes the document directly, and an import is served as
+soon as its first build lands. On a pull request the same workflow only lints the import
+descriptions — that each `slug` matches its directory, and that each `upstream` is an owner/repo.
 
-`imports/<slug>/import.json` is what a reviewer reads; `.compose-preview/catalogs.json` is the shape
-a preview server already understands (it is the server's own `catalogs.json` document), so nothing
-between here and the box has to translate. It is committed rather than derived at read time because
-the server fetches one raw URL and nothing else.
+`imports/<slug>/import.json` is what a reviewer reads; the registry document is the shape a preview
+server already understands (it is the server's own `catalogs.json` document), so nothing between
+here and the box has to translate. It is committed rather than derived at read time because the
+server fetches one raw URL and nothing else.
 
 The job that writes it runs no third-party code — `jq` over files already merged here — so the
 boundary [`docs/SECURITY.md`](docs/SECURITY.md) draws is unchanged: nothing an imported project
-controls ever executes in a job holding a writable token.
+controls ever executes in a job holding a writable credential.
 
-Nominating a registry does not hand this repository the box. An entry here may only be served from
-this repository's own branches, its front-page grouping is claimed against the groups declared in
-this same file, and the operator's own configuration wins any collision. A catalog served this way
-still badges `unverified` until this repository's producer key is trusted on the box, exactly like
-any other.
+Nominating a registry does not hand the output repository the box. An entry there may only be
+served from that repository's own branches, its front-page grouping is claimed against the groups
+declared in the same document, and the operator's own configuration wins any collision. A catalog
+served this way still badges `unverified` until the output repository's branches are trusted on the
+box, exactly like any other.
 
 ## What an import looks like
 
@@ -372,8 +379,8 @@ Importing a project is not an endorsement of it.
 Two things this section used to claim are no longer true, and saying so plainly matters more than
 the sentence they replaced.
 
-**An imported catalog is no longer inherently `unverified`.** preview.coo.ee branch-trusts this
-repository's `design-artifacts/*`, so its imports badge as verified there. That trust is in the
+**An imported catalog is no longer inherently `unverified`.** preview.coo.ee branch-trusts the
+output repository's `design-artifacts/*`, so its imports badge as verified there. That trust is in the
 import review — a pull request naming the upstream repository, ref and modules — and in the pipeline
 that renders it, not in the upstream projects themselves. Another box grants or withholds it
 independently.
@@ -381,8 +388,8 @@ independently.
 **The delivery branch now carries more than pictures.** Since `publish-live-bundle`, it carries the
 executable render bundle — the imported module's compiled classes — so a serve box can re-render the
 previews live rather than replaying snapshots. On a box running `--allow-render-trusted` that also
-branch-trusts this repository, that bundle is eligible for server-side execution. Two consequences
-worth stating rather than discovering: a box's trust in this repository is now trust in the code it
+branch-trusts the output repository, that bundle is eligible for server-side execution. Two consequences
+worth stating rather than discovering: a box's trust in the output repository is now trust in the code it
 renders, and publishing compiled output of someone else's project is closer to redistribution than
 publishing screenshots of it was. Every import here is a permissively licensed public project and
 every catalog links back to the project it came from, but that is a licence question each new import

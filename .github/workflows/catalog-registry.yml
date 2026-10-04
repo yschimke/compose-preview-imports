@@ -1,46 +1,45 @@
 name: Catalog registry
 
-# `.compose-preview/catalogs.json` is what a preview server fetches when it nominates this repository
-# with `--catalog-registry`. It is DERIVED from the `imports/` directory, and the two jobs here are
-# split so that deriving it never lands in a pull request:
+# The catalog registry document — `.compose-preview/catalogs.json` — is what a preview server fetches
+# when it nominates `yschimke/compose-preview-imports-out` with `--catalog-registry`. It lives on that
+# OUTPUT repository's `main`, beside the `design-artifacts/<slug>` branches it names, because a
+# server serves a registry's entries only from the registry's own branches. It is DERIVED from this
+# repository's `imports/` directory, and the two jobs here are split so that deriving it never lands
+# in a pull request:
 #
-#   lint (pull requests) — checks the import descriptions themselves. It deliberately does NOT check
-#     that the generated document agrees: an import's pull request adds imports/<slug>/import.json
-#     and nothing else, so on that branch the document is expected to be one entry behind.
+#   lint (pull requests) — checks the import descriptions themselves. An import's pull request adds
+#     imports/<slug>/import.json and catalog.spec.json and nothing else.
 #
-#   sync (push to main)  — regenerates the document and, when it changed, opens a pull request
-#     carrying it. This is why an import's pull request touches only its own files: the shared,
-#     generated one is written here, after the merge, instead of by every open pull request racing to
-#     append the same line.
+#   sync (push to main)  — regenerates the document and, when it changed, pushes it to the output
+#     repository's `main`. This is why an import's pull request touches only its own files: the
+#     shared, generated one is written here, after the merge, instead of by every open pull request
+#     racing to append the same line.
 #
-#     It opens a pull request rather than pushing, because `main` carries a ruleset — "Changes must be
-#     made through a pull request" — and a job that pushes directly is simply rejected:
-#
-#       ! [remote rejected] HEAD -> main (push declined due to repository rule violations)
-#
-#     which is exactly what happened to the first three imports that merged with this workflow in
-#     place: their builds ran, and the catalogs they published were not listed for the server. So the
-#     regeneration goes through the same gate as everything else. The branch is fixed and force-pushed,
-#     so several merges in a row update ONE pull request rather than opening a queue of them, and
-#     auto-merge is requested so it lands without needing a human when the repository allows it.
+#     It used to be committed to THIS repository, which meant a pull request per regeneration
+#     (`main` here carries a ruleset — changes must arrive through a pull request) and an import that
+#     was not served until that second pull request landed. The output repository holds nothing but
+#     machine-written output, so the job pushes to it directly: merging the import's pull request is
+#     the whole import again.
 #
 # The job that writes runs no third-party code — it runs `jq` over files already merged into this
 # repository — so the boundary docs/SECURITY.md draws is unaffected: nothing an imported project
-# controls executes in a job holding a writable token.
+# controls executes in a job holding a writable credential. ARTIFACTS_TOKEN is the same secret
+# import.yml's publish job uses, scoped to the output repository alone.
 
 on:
   pull_request:
     paths:
       - 'imports/**'
-      - '.compose-preview/catalogs.json'
       - 'scripts/sync-catalog-registry.sh'
       - '.github/workflows/catalog-registry.yml'
   push:
     branches: [main]
     paths:
       - 'imports/**'
-      - '.compose-preview/catalogs.json'
       - 'scripts/sync-catalog-registry.sh'
+      - '.github/workflows/catalog-registry.yml'
+  # Re-derive by hand — after rotating ARTIFACTS_TOKEN, say, or if a sync run failed.
+  workflow_dispatch:
 
 permissions: {}
 
@@ -49,6 +48,10 @@ concurrency:
   # regenerated document.
   group: catalog-registry
   cancel-in-progress: false
+
+env:
+  ARTIFACT_REPOSITORY: yschimke/compose-preview-imports-out
+  DOCUMENT: .compose-preview/catalogs.json
 
 jobs:
   lint:
@@ -64,54 +67,62 @@ jobs:
       - name: The import descriptions are well-formed
         run: ./scripts/sync-catalog-registry.sh --lint
 
+      - name: The registry document generates
+        run: ./scripts/sync-catalog-registry.sh --print | jq -e '.catalogs | length > 0' >/dev/null
+
   sync:
-    if: ${{ github.event_name == 'push' }}
+    if: ${{ github.event_name != 'pull_request' }}
     runs-on: ubuntu-latest
+    # Nothing in this repository is written; the push goes to the output repository.
     permissions:
-      # The only writes here, in a job that runs no third-party code.
-      contents: write
-      pull-requests: write
+      contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: main
+          persist-credentials: false
+
+      - name: Check out the output repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ env.ARTIFACT_REPOSITORY }}
+          ref: main
+          path: out
+          persist-credentials: false
 
       - name: Regenerate the published registry document
         id: sync
         run: |
           set -euo pipefail
-          ./scripts/sync-catalog-registry.sh
-          if git diff --quiet -- .compose-preview/catalogs.json; then
-            echo "::notice::.compose-preview/catalogs.json already agrees with the imports/ directory"
+          ./scripts/sync-catalog-registry.sh "out/${DOCUMENT}"
+          if git -C out diff --quiet -- "${DOCUMENT}" \
+            && [ -z "$(git -C out status --porcelain -- "${DOCUMENT}")" ]; then
+            echo "::notice::${ARTIFACT_REPOSITORY}:${DOCUMENT} already agrees with the imports/ directory"
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Open a pull request carrying it
+      - name: Push it to ${{ env.ARTIFACT_REPOSITORY }}
         if: ${{ steps.sync.outputs.changed == 'true' }}
         env:
-          GH_TOKEN: ${{ github.token }}
+          ARTIFACT_TOKEN: ${{ secrets.ARTIFACTS_TOKEN }}
         run: |
           set -euo pipefail
-          branch=chore/catalog-registry
+          [ -n "$ARTIFACT_TOKEN" ] || {
+            echo "::error::ARTIFACTS_TOKEN is not set. It must be a fine-grained PAT with Contents:" \
+              "Read and write on ${ARTIFACT_REPOSITORY}, stored as a repository secret here."
+            exit 1
+          }
+          cd out
           git config user.name "compose-preview-imports"
           git config user.email "noreply@schimke.ee"
-          git checkout -B "$branch"
-          git add .compose-preview/catalogs.json
-          git commit -m "chore: regenerate the catalog registry document"
-          # One branch, force-pushed: several imports merging in a row update the SAME pull request
-          # instead of opening a queue of them. Nothing else ever writes here, and the branch carries
-          # one generated file, so there is no history worth preserving on it.
-          git push --force origin "HEAD:refs/heads/$branch"
-
-          # Reuse the open pull request when there is one; the force-push above already updated it.
-          if [ -z "$(gh pr list --head "$branch" --state open --json number --jq '.[].number')" ]; then
-            gh pr create --base main --head "$branch" \
-              --title "chore: regenerate the catalog registry document" \
-              --body "Generated from the \`imports/\` directory by \`scripts/sync-catalog-registry.sh\`, which ran on main after $GITHUB_SHA. This is the document a preview server fetches, so an import is not served until this lands."
-          fi
-          # Land it without a human where the repository allows that; a ruleset requiring review just
-          # leaves the pull request open, which is visible rather than silent.
-          gh pr merge --auto --squash "$branch" || \
-            echo "::notice::auto-merge unavailable — the registry pull request needs merging by hand"
+          git add -- "${DOCUMENT}"
+          git commit -m "chore: regenerate the catalog registry document" \
+            -m "Generated from the imports/ directory of ${GITHUB_REPOSITORY}@${GITHUB_SHA} by scripts/sync-catalog-registry.sh."
+          # The credential goes on this one command line rather than into the checkout, so nothing
+          # else in the job inherits a writable remote. A plain push, not a force: a concurrent edit
+          # to the output repository's `main` fails this run visibly instead of being overwritten,
+          # and the concurrency group above already serialises this workflow against itself.
+          git push "https://x-access-token:${ARTIFACT_TOKEN}@github.com/${ARTIFACT_REPOSITORY}.git" HEAD:refs/heads/main
+          echo "::notice::pushed ${DOCUMENT} to ${ARTIFACT_REPOSITORY}"
