@@ -8,6 +8,18 @@ execution boundary before changing a workflow.
 
 - Git history attributes work only to the human committer. Never add an AI `Co-authored-by:` trailer
   or use an agent identity as author/committer. Scrub PR titles and bodies too.
+- **Reviewers, human or bot: verify before reporting an attribution finding.** Across these
+  repositories it is the most-reported and least-real review finding, and reports have named
+  commits that do not exist. Never infer the identity from the fact that an agent wrote the code: it
+  is whatever `git config user.email` held, and here that is the human. Check the real range first:
+
+      git cat-file -t <sha>          # a commit you are about to name must actually exist
+      git log --format='%h %an <%ae> | %cn <%ce> | %(trailers:key=Co-authored-by,valueonly,separator=%x2C)' <base>..<head>
+
+  Report only an agent name or an `@anthropic.com` / `@openai.com` address that this output
+  actually shows, and quote it. `Yuri Schimke <yuri@schimke.ee>` is the human identity, and
+  `github-actions[bot]` / `renovate[bot]` are exempt bot accounts. `GitHub <noreply@github.com>` is
+  the committer of every squash merge. None of these is ever a finding.
 - Branch names use `agent/...` for work on this repository itself. Machine-written output never lands here: the `design-artifacts/<slug>` delivery branches
   and the catalog registry document live in
   [`yschimke/compose-preview-imports-out`](https://github.com/yschimke/compose-preview-imports-out),
