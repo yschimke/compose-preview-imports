@@ -8,6 +8,22 @@ execution boundary before changing a workflow.
 
 - Git history attributes work only to the human committer. Never add an AI `Co-authored-by:` trailer
   or use an agent identity as author/committer. Scrub PR titles and bodies too.
+- **Human reviewers: verify before reporting an attribution finding.** Automated reviewers do
+  not report attribution at all; see [Review guidelines](#review-guidelines). Across these
+  repositories it is the most-reported and least-real review finding, and reports have named
+  commits that do not exist. Never infer the identity from the fact that an agent wrote the code: it
+  is whatever `git config user.email` held, and here that is the human. Check the real range first:
+
+      git cat-file -t <sha>          # a commit you are about to name must actually exist
+      git log --format='%h %an <%ae> | %cn <%ce> | %(trailers:key=Co-authored-by,valueonly,separator=%x2C)' <base>..<head>
+
+  `<head>` must be the pull request's head commit as GitHub reports it. A commit you made in your
+  own checkout, for example by reapplying the PR's diff, carries your identity, not the author's;
+  that is how every false report so far arose. Report only an agent name or an
+  `@anthropic.com` / `@openai.com` address that this output shows for the PR's own commits, and
+  quote it. `Yuri Schimke <yuri@schimke.ee>` is the human identity, and
+  `github-actions[bot]` / `renovate[bot]` are exempt bot accounts. `GitHub <noreply@github.com>` is
+  the committer of every squash merge. None of these is ever a finding.
 - Branch names use `agent/...` for work on this repository itself. Machine-written output never lands here: the `design-artifacts/<slug>` delivery branches
   and the catalog registry document live in
   [`yschimke/compose-preview-imports-out`](https://github.com/yschimke/compose-preview-imports-out),
@@ -25,6 +41,15 @@ execution boundary before changing a workflow.
   ruleset rejects it. An import's pull request adds `imports/<slug>/import.json` and
   `imports/<slug>/catalog.spec.json`, and nothing else. `scripts/sync-catalog-registry.sh --lint` is
   what CI runs on the pull request.
+
+## Review guidelines
+
+- **Do not report commit author, committer or `Co-authored-by:` findings.** Your review sandbox
+  applies the pull request as a new commit under your own identity (`Codex <codex@openai.com>`),
+  so any identity you read from a local `git log` is yours, not the author's. Every such finding
+  on these repositories has named a commit that exists only in the sandbox. Attribution is a
+  human and CI concern; leave it out of reviews entirely. This overrides the human reviewer
+  guidance on attribution elsewhere in this file.
 
 ## The rule that is the point of this repository
 
