@@ -8,7 +8,8 @@ execution boundary before changing a workflow.
 
 - Git history attributes work only to the human committer. Never add an AI `Co-authored-by:` trailer
   or use an agent identity as author/committer. Scrub PR titles and bodies too.
-- **Reviewers, human or bot: verify before reporting an attribution finding.** Across these
+- **Human reviewers: verify before reporting an attribution finding.** Automated reviewers do
+  not report attribution at all; see [Review guidelines](#review-guidelines). Across these
   repositories it is the most-reported and least-real review finding, and reports have named
   commits that do not exist. Never infer the identity from the fact that an agent wrote the code: it
   is whatever `git config user.email` held, and here that is the human. Check the real range first:
@@ -47,7 +48,8 @@ execution boundary before changing a workflow.
   applies the pull request as a new commit under your own identity (`Codex <codex@openai.com>`),
   so any identity you read from a local `git log` is yours, not the author's. Every such finding
   on these repositories has named a commit that exists only in the sandbox. Attribution is a
-  human and CI concern; leave it out of reviews entirely.
+  human and CI concern; leave it out of reviews entirely. This overrides the human reviewer
+  guidance on attribution elsewhere in this file.
 
 ## The rule that is the point of this repository
 
