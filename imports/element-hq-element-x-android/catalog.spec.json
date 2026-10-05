@@ -708,11 +708,6 @@
           "caption": "List dialog — content. ListDialog.kt"
         },
         {
-          "componentId": "list-dialog",
-          "preview": "ListDialogPreview",
-          "caption": "List dialog. ListDialog.kt"
-        },
-        {
           "componentId": "multiple-selection-dialog-content",
           "preview": "MultipleSelectionDialogContentPreview",
           "caption": "Multiple selection dialog — content. MultipleSelectionDialog.kt"
@@ -746,16 +741,6 @@
           "componentId": "single-selection-dialog",
           "preview": "SingleSelectionDialogPreview",
           "caption": "Single selection dialog. SingleSelectionDialog.kt"
-        },
-        {
-          "componentId": "text-field-dialog",
-          "preview": "TextFieldDialogPreview",
-          "caption": "Text field dialog. TextFieldDialog.kt"
-        },
-        {
-          "componentId": "text-field-dialog-with-error",
-          "preview": "TextFieldDialogWithErrorPreview",
-          "caption": "Text field dialog — with error. TextFieldDialog.kt"
         }
       ]
     },
