@@ -36,10 +36,12 @@ code executes at that moment, and the design assumes it is hostile:
   Review is the vouching step.
 
 Keeping the write credentials and the foreign code in **different jobs** is the part that matters.
-One credential in these workflows can write anywhere, and the imported build never holds it:
-`ARTIFACTS_TOKEN`, a fine-grained PAT scoped to the output repository alone, in the two jobs that
-write there — `import.yml`'s `publish` and `catalog-registry.yml`'s `sync`. Neither runs imported
-code. No job here writes to this repository at all.
+Import publication uses `ARTIFACTS_TOKEN`, a fine-grained PAT scoped to the output repository
+alone, in the two jobs that write there; the imported build never holds it — `import.yml`'s `publish` and `catalog-registry.yml`'s `sync`. Neither runs imported
+code. Import jobs do not write to this repository. The separate `release-please.yml` workflow uses
+`GITHUB_TOKEN` (or an optional `RELEASE_PLEASE_TOKEN`) to update a release PR and create a tag
+and release. It executes no imported code and never receives `ARTIFACTS_TOKEN`. Its validation
+job has read-only contents access and only inspects this repository's configuration.
 
 The output repository is a boundary of its own. Before it existed the delivery branches were pushed
 here with `GITHUB_TOKEN`, so the publish credential was one that could also have pushed to this
@@ -67,7 +69,8 @@ These are not enforceable from a workflow file, so they belong in the repository
   permissions*. Every job here that needs more asks for it explicitly, so the default should be the
   floor.
 - **Settings → Actions → General**: leave *Allow GitHub Actions to create and approve pull requests*
-  **off**. Nothing here needs it.
+  **on** so release-please can open release PRs. The workflow does not approve or merge them;
+  imported-build jobs retain their existing permissions.
 - **Branch protection on `main`**: require a pull request. The registry is the review surface; an
   import that can be added without review is an import nobody read.
 - Delivery branches (`design-artifacts/**`, in the output repository) are machine-written and

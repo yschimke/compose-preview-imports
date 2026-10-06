@@ -397,3 +397,21 @@ should be read against, not a settled one.
 
 If you maintain a project imported here and would rather it were not, open an issue and it will be
 removed.
+
+## Releases
+
+Release Please proposes a changelog and version bump from Conventional Commits on `main`.
+Merging its release PR creates a `vX.Y.Z` tag and GitHub release of this configuration repository.
+The initial baseline is `0.0.0`; subsequent releases use minor version bumps. `version.txt` and
+`.release-please-manifest.json` move together. Release PRs are reviewed and merged by a human.
+
+These releases identify the import configuration and pipeline sources. They do not version,
+build, or republish imported projects or change the output repository's delivery branches.
+`release-checks.yml` validates release metadata and import descriptions without executing
+third-party code. It runs on ordinary PRs and is explicitly dispatched for release PRs created
+by `GITHUB_TOKEN`. A manual dispatch of `release-please.yml` on `main` retries release automation.
+
+Enable **Allow GitHub Actions to create and approve pull requests** while retaining read-only
+default workflow permissions. An optional repository-scoped `RELEASE_PLEASE_TOKEN` supports
+release creation when workflow-file changes require permissions unavailable to `GITHUB_TOKEN`.
+No publishing credential is added to imported builds; see [the execution boundary](docs/SECURITY.md).
