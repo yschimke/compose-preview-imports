@@ -65,10 +65,19 @@ jobs:
             changed=$(git ls-files 'imports/**' || true)
           fi
 
-          # imports/<slug>/anything -> <slug>
+          # imports/<slug>/anything -> <slug>, keeping only imports this commit still has. A removed
+          # directory is a retirement, not a build: `catalog-registry.yml` drops it from the
+          # registry, and `import.yml` would fail on the `import.json` the removal took away.
           slugs=$(printf '%s\n' "$changed" \
             | sed -n 's;^imports/\([^/]\+\)/.*;\1;p' \
             | sort -u \
+            | while read -r slug; do
+                if [ -f "imports/${slug}/import.json" ]; then
+                  printf '%s\n' "$slug"
+                else
+                  echo "::notice::${slug} was removed; retiring it, not importing it" >&2
+                fi
+              done \
             | jq -R . | jq -sc .)
 
           if [ "$slugs" = "[]" ] || [ -z "$slugs" ]; then
