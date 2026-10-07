@@ -8,6 +8,12 @@
     "light",
     "dark"
   ],
+  "completeness": {
+    "$comment": "AsyncActionViewPreview renders AsyncActionView once per AsyncAction state: Uninitialized and Success draw nothing, and Confirming, Loading and Failure each open a ConfirmationDialog, ProgressDialog, ErrorDialog or RetryDialog, which Compose places in a dialog window of its own. The preview's root therefore captures no semantics tree in any state, which the publish gate reported as 'no semantics for: async-action-view' and refused the whole catalog over. The pixels are kept; only the semantics check is waived for this one entry. The other dialog previews (ListDialog, TextFieldDialog) are excluded for a different reason, a render timeout, in import.json.",
+    "exemptSemantics": [
+      "async-action-view"
+    ]
+  },
   "groups": [
     {
       "name": "Compound components",
