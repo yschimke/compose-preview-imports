@@ -1,0 +1,16 @@
+{
+  "slug": "element-hq-element-x-android",
+  "upstream": "element-hq/element-x-android",
+  "ref": "develop",
+  "modules": [
+    ":libraries:designsystem"
+  ],
+  "renderer": "android",
+  "previewAnnotations": "PreviewsDayNight",
+  "notes": "Element X is the Matrix messenger on Google Play (io.element.android.x, 500k+ installs), designed against Element's Compound design system by an in-house design team. It has the largest preview corpus of anything surveyed: 494 preview-bearing files, of which 116 are in :libraries:designsystem alone \u2014 the buttons, dialogs, list items and avatars, each one screenshot-tested, which is what makes them self-contained enough to render outside the app. Ordinary Android Compose in src/main/kotlin, so the Robolectric lane. ref is develop, which is this project's default branch. previewAnnotations names PreviewsDayNight, the day/night multipreview the module's own previews carry: it is declared in this same module so the source pre-flight would probably see it, but naming it costs nothing and the failure it prevents ('matches no @Preview function in the scanned module') is opaque. Licence: AGPL-3.0 \u2014 see the note on the pull request. The missing androidx.lifecycle.runtime.R$id is a preview-plugin classpath bug: AGP generates it in build/intermediates/compile_and_runtime_r_class_jar/debugUnitTest/processDebugUnitTestResources/R.jar and puts that jar on testDebugUnitTest.classpath. Element X eagerly configures every Test task, so the preview task is configured before AGP registers testDebugUnitTest and misses its generated files. The plugin fix wires AGP classpath extras after project evaluation and preserves raw file dependencies during module-artifact subtraction. The earlier poolingcontainer failure (compose-ai-tools#5026) was masked by a fallback R class; android.nonTransitiveRClass=false did not fix the underlying omission and is not needed. Requires the plugin release carrying the late AGP classpath wiring fix. With the classpath fixed, 315 of 321 previews render (367 PNGs including parameter rows). The remaining six day/night variants are ListDialogPreview, TextFieldDialogPreview and TextFieldDialogWithErrorPreview; all time out with AppNotIdleException after 60 seconds in the BasicAlertDialog/LazyColumn path. ListDialogPreview_Day reproduces the same timeout when rendered alone, ruling out dependence on earlier previews. excludePreviewIds names only those three functions, and their inventory entries are removed; ListDialogContentPreview and other dialogs remain. Every other failure remains fatal. Plugin prerequisite: compose-ai-tools#5703. The complete selected render with these exclusions passes: 315 previews, 367 PNGs, zero error sidecars.",
+  "excludePreviewIds": [
+    "*.ListDialogKt.ListDialogPreview_*",
+    "*.TextFieldDialogKt.TextFieldDialogPreview_*",
+    "*.TextFieldDialogKt.TextFieldDialogWithErrorPreview_*"
+  ]
+}
