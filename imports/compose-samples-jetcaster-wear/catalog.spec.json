@@ -29,8 +29,7 @@
   },
   "groupOrder": [
     "Browse",
-    "Playback",
-    "Components"
+    "Playback"
   ],
   "groups": [
     {
@@ -98,22 +97,6 @@
               "state": "empty"
             }
           ]
-        }
-      ]
-    },
-    {
-      "name": "Components",
-      "section": "Components",
-      "components": [
-        {
-          "componentId": "Podcast/Content",
-          "preview": "PodcastContentPreview",
-          "caption": "A podcast content block inside the app scaffold."
-        },
-        {
-          "componentId": "Player/Controls",
-          "preview": "MediaContentPreview",
-          "caption": "Media content and transport inside the app scaffold."
         }
       ]
     }

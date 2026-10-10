@@ -22,7 +22,7 @@
   ],
   "display": {
     "surface": "light",
-    "hero": "Screens/Feed"
+    "hero": "Screens/App shell"
   },
   "groupOrder": [
     "Screens",
@@ -43,11 +43,6 @@
           "caption": "The whole app at its start destination: feed, bottom navigation and shared-element scaffolding."
         },
         {
-          "componentId": "Screens/Feed",
-          "preview": "HomePreview",
-          "caption": "The home feed — destination bar, filters and the snack collections; upstream previews it light, dark and at 2x font."
-        },
-        {
           "componentId": "Screens/Search",
           "preview": "SearchResultPreview",
           "caption": "Search results for a query.",
@@ -58,11 +53,6 @@
               "state": "suggestions"
             }
           ]
-        },
-        {
-          "componentId": "Screens/Cart",
-          "preview": "CartPreview",
-          "caption": "The cart — order lines, summary and checkout bar."
         },
         {
           "componentId": "Screens/Profile",
