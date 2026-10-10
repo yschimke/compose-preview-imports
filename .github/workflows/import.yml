@@ -110,6 +110,7 @@ jobs:
       renderTimeout: ${{ steps.read.outputs.renderTimeout }}
       renderRuntimeProjects: ${{ steps.read.outputs.renderRuntimeProjects }}
       gradleProperties: ${{ steps.read.outputs.gradleProperties }}
+      patches: ${{ steps.read.outputs.patches }}
     steps:
       # The configuration is read from the commit this run was started on — `main` for the
       # on-merge build and the nightly refresh, or whatever branch a manual dispatch names — and the
@@ -421,6 +422,15 @@ jobs:
           echo "$ref" | grep -Eq '^[A-Za-z0-9._/-]+$' || {
             echo "::error::ref '${ref}' is not a usable git ref"; exit 1; }
 
+          # imports/<slug>/patches/*.patch, applied to the upstream checkout before it renders: the
+          # refactor an upstream has not taken yet, such as a screen that only renders inside its
+          # Activity. Found by convention rather than declared, so there is nothing to keep in step;
+          # each patch is meant to be upstreamed and then deleted (see the README).
+          patches=""
+          if compgen -G "imports/${SLUG}/patches/*.patch" >/dev/null; then
+            patches="imports/${SLUG}/patches"
+          fi
+
           {
             echo "sha=$(git rev-parse HEAD)"
             echo "upstream=${upstream}"
@@ -436,6 +446,7 @@ jobs:
             echo "renderTimeout=${render_timeout}"
             echo "renderRuntimeProjects=${render_runtime_projects}"
             echo "gradleProperties=${gradle_properties}"
+            echo "patches=${patches}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -503,6 +514,7 @@ jobs:
       # Gradle properties this import's render needs — see the config job. Applied to the
       # throwaway checkout only, and before the properties the pipeline owns itself.
       gradle-properties: ${{ needs.config.outputs.gradleProperties }}
+      upstream-patches: ${{ needs.config.outputs.patches }}
       # Carry the EXECUTABLE render bundle onto the delivery branch, not just baked PNGs, so a
       # serve box that bakes the matching daemon re-renders these previews live — device, theme and
       # knob controls work instead of replaying a snapshot.

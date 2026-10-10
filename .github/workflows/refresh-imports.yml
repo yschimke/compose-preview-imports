@@ -9,8 +9,10 @@ name: Refresh all imports
 
 on:
   schedule:
-    # 04:20 UTC daily — off the hour, so this doesn't pile onto the top-of-hour runner contention.
-    - cron: '20 4 * * *'
+    # Wednesdays 02:00 UTC — weekly, at a quiet time. Each refresh renders the upstream's latest
+    # commit with the latest compose-ai-tools (the reusable workflow is called at @main), so a
+    # week is fresh enough and spares the runners a daily rebuild of every import.
+    - cron: '0 2 * * 3'
   workflow_dispatch:
 
 permissions: {}
