@@ -9,10 +9,12 @@ name: Refresh all imports
 
 on:
   schedule:
-    # Wednesdays 02:00 UTC — weekly, at a quiet time. Each refresh renders the upstream's latest
-    # commit with the latest compose-ai-tools (the reusable workflow is called at @main), so a
-    # week is fresh enough and spares the runners a daily rebuild of every import.
-    - cron: '0 2 * * 3'
+    # Wednesdays 02:20 UTC — weekly, at a quiet time, and off the top of the hour, where GitHub
+    # delays and can drop scheduled runs: dropping a weekly one leaves every import a week staler.
+    # Each refresh renders the upstream's latest commit with the latest compose-ai-tools (the
+    # reusable workflow is called at @main), so a week is fresh enough and spares the runners a
+    # daily rebuild of every import.
+    - cron: '20 2 * * 3'
   workflow_dispatch:
 
 permissions: {}

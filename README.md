@@ -54,8 +54,9 @@ which repository, which ref and which modules are about to be built before any o
    be injected into it. That is what you write the import down from.
 
 2. **Open the import as a pull request, from an `agent/<something>` branch.** Add
-   `imports/<slug>/import.json` (below) and `imports/<slug>/catalog.spec.json` — its own two files
-   and nothing else. Open it against `main`: the pull request is the review, and its diff says
+   `imports/<slug>/import.json` (below) and `imports/<slug>/catalog.spec.json` — its own two files,
+   plus `imports/<slug>/patches/*.patch` if it carries an upstream refactor (see **Patches**), and
+   nothing else. Open it against `main`: the pull request is the review, and its diff says
    exactly which third-party code this repository is about to start building.
 
    To see it render before it merges, run **Import a project** from the Actions tab on your branch,
@@ -75,7 +76,7 @@ which repository, which ref and which modules are about to be built before any o
    touched, publishing `design-artifacts/<slug>` to the output repository. Re-run one any time from
    the Actions tab —
    **Import a project** → *Run workflow* → the slug — and every registered import is refreshed
-   weekly (Wednesdays 02:00 UTC) by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml),
+   weekly (Wednesdays 02:20 UTC) by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml),
    against the upstream's latest commit and the latest compose-ai-tools.
 
 4. **And it is served.** Nothing else to do: the merge also has

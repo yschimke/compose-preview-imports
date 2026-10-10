@@ -8,7 +8,8 @@ name: Catalog registry
 # in a pull request:
 #
 #   lint (pull requests) — checks the import descriptions themselves. An import's pull request adds
-#     imports/<slug>/import.json and catalog.spec.json and nothing else.
+#     imports/<slug>/import.json and catalog.spec.json (plus patches/*.patch, when the import carries
+#     an upstream refactor) and nothing else.
 #
 #   sync (push to main)  — regenerates the document and, when it changed, pushes it to the output
 #     repository's `main`. This is why an import's pull request touches only its own files: the
