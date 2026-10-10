@@ -39,7 +39,8 @@ execution boundary before changing a workflow.
   `catalog-registry.yml` regenerates and pushes it after a merge here, which is what stops concurrent
   imports colliding on one shared file. Nothing may push to this repository's `main` directly — a
   ruleset rejects it. An import's pull request adds `imports/<slug>/import.json` and
-  `imports/<slug>/catalog.spec.json`, and nothing else. `scripts/sync-catalog-registry.sh --lint` is
+  `imports/<slug>/catalog.spec.json`, plus `imports/<slug>/patches/*.patch` when the import carries
+  an upstream refactor (README → Patches), and nothing else. `scripts/sync-catalog-registry.sh --lint` is
   what CI runs on the pull request.
 
 ## Review guidelines

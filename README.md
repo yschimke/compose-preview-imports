@@ -54,8 +54,9 @@ which repository, which ref and which modules are about to be built before any o
    be injected into it. That is what you write the import down from.
 
 2. **Open the import as a pull request, from an `agent/<something>` branch.** Add
-   `imports/<slug>/import.json` (below) and `imports/<slug>/catalog.spec.json` — its own two files
-   and nothing else. Open it against `main`: the pull request is the review, and its diff says
+   `imports/<slug>/import.json` (below) and `imports/<slug>/catalog.spec.json` — its own two files,
+   plus `imports/<slug>/patches/*.patch` if it carries an upstream refactor (see **Patches**), and
+   nothing else. Open it against `main`: the pull request is the review, and its diff says
    exactly which third-party code this repository is about to start building.
 
    To see it render before it merges, run **Import a project** from the Actions tab on your branch,
@@ -75,7 +76,8 @@ which repository, which ref and which modules are about to be built before any o
    touched, publishing `design-artifacts/<slug>` to the output repository. Re-run one any time from
    the Actions tab —
    **Import a project** → *Run workflow* → the slug — and every registered import is refreshed
-   nightly by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml).
+   weekly (Wednesdays 02:20 UTC) by [`refresh-imports.yml`](.github/workflows/refresh-imports.yml),
+   against the upstream's latest commit and the latest compose-ai-tools.
 
 4. **And it is served.** Nothing else to do: the merge also has
    [`catalog-registry.yml`](.github/workflows/catalog-registry.yml) regenerate the registry document
@@ -211,7 +213,7 @@ only way to name such a preview. Only a newline is refused now, because that is 
 
 Named ids rather than the pipeline's `allow-incomplete`, and the distinction is the point. Allowing
 incomplete renders would also swallow the *next* breakage — an upstream refactor that quietly stops
-rendering half the catalog — and the nightly refresh would go on publishing a thinner catalog with
+rendering half the catalog — and the weekly refresh would go on publishing a thinner catalog with
 nothing to show for it. Listing the ids keeps every other render failure fatal, and the list is
 reviewable: the pull request says exactly what this import gives up. Say why in `notes`. The patterns
 are appended to the exclusions the pipeline always applies, so naming one here does not re-enable the
@@ -368,9 +370,25 @@ Beside it, `imports/<slug>/catalog.spec.json` is the catalog's cover sheet — `
 `module`, `modes`. It carries no per-component inventory: that comes from the previews themselves,
 and an imported project has none to declare.
 
-The upstream project is **never** asked to change. The preview plugin is injected at build time via
+The upstream project is never *required* to change (a patch, below, can carry a change it has not taken). The preview plugin is injected at build time via
 the CLI's init script, which applies it to any module that already applies an Android or Compose
 Multiplatform plugin.
+
+### Patches
+
+A screen that only renders inside its Activity — it needs the app's `@HiltAndroidApp` Application,
+or a callback its caller installs — is lost to an import twice over: activity captures are excluded
+(above), and its content has no `@Preview` of its own. The fix belongs upstream: move the content into
+an ordinary composable that takes its state as parameters, and give that a `@Preview`.
+
+Until the upstream takes that change, an import can carry it: put `*.patch` files in
+`imports/<slug>/patches/`. The build `git apply`s them to the upstream checkout, in file-name order,
+before anything renders (the `upstream-patches` input of compose-ai-tools' reusable workflow). There
+is no fuzz: a patch that stops applying fails the build by name, which is how a patch the upstream
+has absorbed gets noticed and deleted.
+
+A patch is a step toward an upstream pull request, not a fork. Each one is tracked by an issue here
+until it is either merged upstream and deleted, or declined and justified in `notes`.
 
 ## What this repository does not claim
 
