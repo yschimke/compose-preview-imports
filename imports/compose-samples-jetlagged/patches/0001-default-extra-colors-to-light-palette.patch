@@ -1,0 +1,13 @@
+diff --git a/JetLagged/app/src/main/java/com/example/jetlagged/ui/theme/Theme.kt b/JetLagged/app/src/main/java/com/example/jetlagged/ui/theme/Theme.kt
+index 4d6f0b3..a3aed27 100644
+--- a/JetLagged/app/src/main/java/com/example/jetlagged/ui/theme/Theme.kt
++++ b/JetLagged/app/src/main/java/com/example/jetlagged/ui/theme/Theme.kt
+@@ -60,7 +60,7 @@ data class JetLaggedExtraColors(
+     val sleepDeep: Color = Color.Unspecified,
+ )
+ val LocalExtraColors = staticCompositionLocalOf {
+-    JetLaggedExtraColors()
++    LightExtraColors
+ }
+ private val LightExtraColors = JetLaggedExtraColors(
+     header = Yellow,

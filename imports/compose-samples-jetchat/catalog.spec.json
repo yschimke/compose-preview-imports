@@ -43,8 +43,7 @@
     "Profile",
     "Conversation components",
     "Profile components",
-    "Chrome",
-    "Widget"
+    "Chrome"
   ],
   "groups": [
     {
@@ -175,22 +174,6 @@
           "componentId": "Chrome/Channel bar",
           "preview": "ChannelBarPrev",
           "caption": "The channel name bar."
-        }
-      ]
-    },
-    {
-      "name": "Widget",
-      "section": "Components",
-      "components": [
-        {
-          "componentId": "Widget/Messages",
-          "preview": "WidgetPreview",
-          "caption": "The Glance home-screen widget listing recent messages."
-        },
-        {
-          "componentId": "Widget/Message item",
-          "preview": "MessageItemPreview",
-          "caption": "One widget row: author over message text."
         }
       ]
     }
