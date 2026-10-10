@@ -1,0 +1,195 @@
+diff --git a/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt b/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt
+index 7cfcded..31fadcd 100644
+--- a/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt
++++ b/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/home/Home.kt
+@@ -109,6 +109,7 @@ import com.example.jetcaster.ui.podcast.PodcastDetailsScreen
+ import com.example.jetcaster.ui.podcast.PodcastDetailsViewModel
+ import com.example.jetcaster.ui.theme.JetcasterTheme
+ import com.example.jetcaster.ui.tooling.DevicePreviews
++import com.example.jetcaster.ui.tooling.SharedElementPreviewScope
+ import com.example.jetcaster.util.ToggleFollowPodcastIconButton
+ import com.example.jetcaster.util.fullWidthItem
+ import com.example.jetcaster.util.isCompact
+@@ -754,25 +755,27 @@ private fun HomeAppBarPreview() {
+ @Composable
+ private fun PreviewHome() {
+     JetcasterTheme {
+-        HomeScreen(
+-            isHomeAppBarExpanded = true,
+-            isLoading = true,
+-            featuredPodcasts = PreviewPodcasts.toImmutableList(),
+-            homeCategories = HomeCategory.entries,
+-            selectedHomeCategory = HomeCategory.Discover,
+-            filterableCategoriesModel = FilterableCategoriesModel(
+-                categories = PreviewCategories,
+-                selectedCategory = PreviewCategories.firstOrNull(),
+-            ),
+-            podcastCategoryFilterResult = PodcastCategoryFilterResult(
+-                topPodcasts = PreviewPodcasts,
+-                episodes = PreviewPodcastEpisodes,
+-            ),
+-            library = LibraryInfo(),
+-            onHomeAction = {},
+-            navigateToPodcastDetails = {},
+-            navigateToPlayer = {},
+-        )
++        SharedElementPreviewScope {
++            HomeScreen(
++                isHomeAppBarExpanded = true,
++                isLoading = true,
++                featuredPodcasts = PreviewPodcasts.toImmutableList(),
++                homeCategories = HomeCategory.entries,
++                selectedHomeCategory = HomeCategory.Discover,
++                filterableCategoriesModel = FilterableCategoriesModel(
++                    categories = PreviewCategories,
++                    selectedCategory = PreviewCategories.firstOrNull(),
++                ),
++                podcastCategoryFilterResult = PodcastCategoryFilterResult(
++                    topPodcasts = PreviewPodcasts,
++                    episodes = PreviewPodcastEpisodes,
++                ),
++                library = LibraryInfo(),
++                onHomeAction = {},
++                navigateToPodcastDetails = {},
++                navigateToPlayer = {},
++            )
++        }
+     }
+ }
+ 
+diff --git a/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt b/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt
+index de8c8b4..fa4bdfb 100644
+--- a/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt
++++ b/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/player/PlayerScreen.kt
+@@ -98,6 +98,7 @@ import com.example.jetcaster.ui.LocalAnimatedVisibilityScope
+ import com.example.jetcaster.ui.LocalSharedTransitionScope
+ import com.example.jetcaster.ui.theme.JetcasterTheme
+ import com.example.jetcaster.ui.tooling.DevicePreviews
++import com.example.jetcaster.ui.tooling.SharedElementPreviewScope
+ import com.example.jetcaster.util.isBookPosture
+ import com.example.jetcaster.util.isSeparatingPosture
+ import com.example.jetcaster.util.isTableTopPosture
+@@ -908,39 +909,41 @@ fun PlayerButtonsPreview() {
+ @Composable
+ fun PlayerScreenPreview() {
+     JetcasterTheme {
+-        BoxWithConstraints {
+-            PlayerScreen(
+-                PlayerUiState(
+-                    episodePlayerState = EpisodePlayerState(
+-                        currentEpisode = PlayerEpisode(
+-                            title = "Title",
+-                            duration = Duration.ofHours(2),
+-                            podcastName = "Podcast",
+-                        ),
+-                        isPlaying = false,
+-                        queue = listOf(
+-                            PlayerEpisode(),
+-                            PlayerEpisode(),
+-                            PlayerEpisode(),
++        SharedElementPreviewScope {
++            BoxWithConstraints {
++                PlayerScreen(
++                    PlayerUiState(
++                        episodePlayerState = EpisodePlayerState(
++                            currentEpisode = PlayerEpisode(
++                                title = "Title",
++                                duration = Duration.ofHours(2),
++                                podcastName = "Podcast",
++                            ),
++                            isPlaying = false,
++                            queue = listOf(
++                                PlayerEpisode(),
++                                PlayerEpisode(),
++                                PlayerEpisode(),
++                            ),
+                         ),
+                     ),
+-                ),
+-                displayFeatures = emptyList(),
+-                windowSizeClass = WindowSizeClass.BREAKPOINTS_V1.computeWindowSizeClass(maxWidth.value, maxHeight.value),
+-                onBackPress = { },
+-                onAddToQueue = {},
+-                onStop = {},
+-                playerControlActions = PlayerControlActions(
+-                    onPlayPress = {},
+-                    onPausePress = {},
+-                    onAdvanceBy = {},
+-                    onRewindBy = {},
+-                    onSeekingStarted = {},
+-                    onSeekingFinished = {},
+-                    onNext = {},
+-                    onPrevious = {},
+-                ),
+-            )
++                    displayFeatures = emptyList(),
++                    windowSizeClass = WindowSizeClass.BREAKPOINTS_V1.computeWindowSizeClass(maxWidth.value, maxHeight.value),
++                    onBackPress = { },
++                    onAddToQueue = {},
++                    onStop = {},
++                    playerControlActions = PlayerControlActions(
++                        onPlayPress = {},
++                        onPausePress = {},
++                        onAdvanceBy = {},
++                        onRewindBy = {},
++                        onSeekingStarted = {},
++                        onSeekingFinished = {},
++                        onNext = {},
++                        onPrevious = {},
++                    ),
++                )
++            }
+         }
+     }
+ }
+diff --git a/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/tooling/SharedElementPreviewScope.kt b/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/tooling/SharedElementPreviewScope.kt
+new file mode 100644
+index 0000000..e22a721
+--- /dev/null
++++ b/Jetcaster/mobile/src/main/java/com/example/jetcaster/ui/tooling/SharedElementPreviewScope.kt
+@@ -0,0 +1,45 @@
++/*
++ * Copyright 2026 The Android Open Source Project
++ *
++ * Licensed under the Apache License, Version 2.0 (the "License");
++ * you may not use this file except in compliance with the License.
++ * You may obtain a copy of the License at
++ *
++ *     https://www.apache.org/licenses/LICENSE-2.0
++ *
++ * Unless required by applicable law or agreed to in writing, software
++ * distributed under the License is distributed on an "AS IS" BASIS,
++ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++ * See the License for the specific language governing permissions and
++ * limitations under the License.
++ */
++
++@file:OptIn(ExperimentalSharedTransitionApi::class)
++
++package com.example.jetcaster.ui.tooling
++
++import androidx.compose.animation.AnimatedVisibility
++import androidx.compose.animation.ExperimentalSharedTransitionApi
++import androidx.compose.animation.SharedTransitionLayout
++import androidx.compose.runtime.Composable
++import androidx.compose.runtime.CompositionLocalProvider
++import com.example.jetcaster.ui.LocalAnimatedVisibilityScope
++import com.example.jetcaster.ui.LocalSharedTransitionScope
++
++/**
++ * Installs the shared-element scopes JetcasterApp's NavHost normally provides, so a screen that
++ * reads [LocalSharedTransitionScope] / [LocalAnimatedVisibilityScope] can be previewed on its own.
++ */
++@Composable
++fun SharedElementPreviewScope(content: @Composable () -> Unit) {
++    SharedTransitionLayout {
++        AnimatedVisibility(visible = true) {
++            CompositionLocalProvider(
++                LocalSharedTransitionScope provides this@SharedTransitionLayout,
++                LocalAnimatedVisibilityScope provides this,
++            ) {
++                content()
++            }
++        }
++    }
++}
