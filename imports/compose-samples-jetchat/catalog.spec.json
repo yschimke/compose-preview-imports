@@ -1,0 +1,181 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-jetchat",
+  "title": "Jetchat",
+  "library": [
+    "androidx.compose.material3:material3"
+  ],
+  "module": "app",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "arguments",
+      "group": "Jetchat",
+      "composable": "com.example.compose.jetchat.theme.JetchatTheme",
+      "variants": [
+        {
+          "name": "Jetchat light",
+          "args": {
+            "isDarkTheme": "false",
+            "isDynamicColor": "false"
+          }
+        },
+        {
+          "name": "Jetchat dark",
+          "args": {
+            "isDarkTheme": "true",
+            "isDynamicColor": "false"
+          }
+        }
+      ]
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Conversation/Screen"
+  },
+  "groupOrder": [
+    "Conversation",
+    "Profile",
+    "Conversation components",
+    "Profile components",
+    "Chrome"
+  ],
+  "groups": [
+    {
+      "name": "Conversation",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Conversation/Screen",
+          "preview": "ConversationPreview",
+          "caption": "The conversation screen — channel bar, message list and composer together."
+        }
+      ]
+    },
+    {
+      "name": "Profile",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Profile/Screen",
+          "preview": "ProfilePreview340",
+          "caption": "Your own profile at 340dp, the narrowest supported width.",
+          "variants": [
+            {
+              "preview": "ProfilePreview340MeDark",
+              "caption": "The same, dark.",
+              "state": "me 340 dark"
+            },
+            {
+              "preview": "ProfilePreview480Me",
+              "caption": "Your own profile at 480dp.",
+              "state": "me 480"
+            },
+            {
+              "preview": "ProfilePreview480MeDark",
+              "caption": "The same, dark.",
+              "state": "me 480 dark"
+            },
+            {
+              "preview": "ProfilePreview480Other",
+              "caption": "Another user's profile at 480dp.",
+              "state": "other 480"
+            },
+            {
+              "preview": "ProfilePreview480OtherDark",
+              "caption": "The same, dark.",
+              "state": "other 480 dark"
+            },
+            {
+              "preview": "ConvPreviewPortraitMeDefault",
+              "caption": "Profile content in a 360x480 portrait window.",
+              "state": "me portrait"
+            },
+            {
+              "preview": "ConvPreviewLandscapeMeDefault",
+              "caption": "And in a 640x360 landscape window.",
+              "state": "me landscape"
+            },
+            {
+              "preview": "ConvPreviewPortraitOtherDefault",
+              "caption": "Another user's profile, 360x480.",
+              "state": "other portrait"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Conversation components",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Conversation/Day header",
+          "preview": "DayHeaderPrev",
+          "caption": "Date separator between message groups."
+        },
+        {
+          "componentId": "Conversation/Jump to bottom",
+          "preview": "JumpToBottomPreview",
+          "caption": "The jump-to-bottom affordance shown when scrolled away from the newest message."
+        },
+        {
+          "componentId": "Conversation/Input",
+          "preview": "UserInputPreview",
+          "caption": "The message composer with its selector row."
+        }
+      ]
+    },
+    {
+      "name": "Profile components",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Profile/FAB",
+          "preview": "ProfileFabPreview",
+          "caption": "The profile's floating action button."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/App bar",
+          "preview": "JetchatAppBarPreview",
+          "caption": "The Jetchat app bar.",
+          "variants": [
+            {
+              "preview": "JetchatAppBarPreviewDark",
+              "caption": "Dark.",
+              "state": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Drawer",
+          "preview": "DrawerPreview",
+          "caption": "The navigation drawer listing chats and direct messages.",
+          "variants": [
+            {
+              "preview": "DrawerPreviewDark",
+              "caption": "Dark.",
+              "state": "dark"
+            }
+          ]
+        },
+        {
+          "componentId": "Chrome/Channel bar",
+          "preview": "ChannelBarPrev",
+          "caption": "The channel name bar."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "compose-samples-reply",
+  "upstream": "android/compose-samples",
+  "ref": "main",
+  "modules": [
+    ":app"
+  ],
+  "renderer": "android",
+  "workingDirectory": "Reply",
+  "notes": "Reply, the Material 3 adaptive email sample. :app declares 6 @Preview functions — the app shell at five window sizes and the coming-soon state — all catalogued. The theme is ContrastAwareReplyTheme with its default static (non-dynamic) scheme. Built from UNMODIFIED upstream android/compose-samples (main), replacing the catalog preview.coo.ee served from the yschimke/compose-samples fork: that fork's `previews` branch carried roughly ten thousand lines of catalog-only preview sources that no longer apply to upstream, and none of them is carried over — this import renders upstream's own @Preview functions only, and every spec entry names one. The Theme control comes from the sample's own theme composable via `themes` in the spec, replacing the fork's re-themed Material 3 tab. Each sample is its own Gradle build in a subdirectory of the repository, hence workingDirectory. Licence: Apache-2.0."
+}

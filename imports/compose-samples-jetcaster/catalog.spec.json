@@ -1,0 +1,153 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-jetcaster",
+  "title": "Jetcaster",
+  "library": [
+    "androidx.compose.material3:material3 (expressive)",
+    "androidx.compose.material3.adaptive:adaptive"
+  ],
+  "module": "mobile",
+  "modes": [
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "functions",
+      "group": "Jetcaster",
+      "composables": [
+        {
+          "composable": "com.example.jetcaster.ui.theme.JetcasterTheme",
+          "name": "Jetcaster"
+        }
+      ]
+    }
+  ],
+  "breakpoints": [
+    {
+      "size": "smallPhone",
+      "device": "id:pixel_4a",
+      "widthDp": 393
+    },
+    {
+      "size": "phone",
+      "device": "spec:width=411dp,height=891dp",
+      "widthDp": 411
+    },
+    {
+      "size": "landscape",
+      "device": "spec:width=640dp,height=360dp,dpi=480",
+      "widthDp": 640
+    },
+    {
+      "size": "foldable",
+      "device": "spec:width=673dp,height=841dp",
+      "widthDp": 673
+    },
+    {
+      "size": "tablet",
+      "device": "spec:width=1280dp,height=800dp,dpi=240",
+      "widthDp": 1280
+    }
+  ],
+  "display": {
+    "surface": "dark",
+    "hero": "Home/Screen"
+  },
+  "groupOrder": [
+    "Screens",
+    "Discover",
+    "Episodes",
+    "Player",
+    "Chrome"
+  ],
+  "groups": [
+    {
+      "name": "Screens",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Home/Screen",
+          "preview": "PreviewHome",
+          "caption": "Home on the Discover tab, through upstream's @DevicePreviews: small phone, phone, landscape, foldable and tablet."
+        },
+        {
+          "componentId": "PodcastDetails/Screen",
+          "preview": "PodcastDetailsScreenPreview",
+          "caption": "Podcast details across the same five devices."
+        },
+        {
+          "componentId": "Player/Screen",
+          "preview": "PlayerScreenPreview",
+          "caption": "The now-playing screen across the same five devices — the adaptive layout is the point."
+        }
+      ]
+    },
+    {
+      "name": "Discover",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Podcast/Card",
+          "preview": "PreviewPodcastCard",
+          "caption": "A followed-podcast carousel item."
+        },
+        {
+          "componentId": "PodcastDetails/Header",
+          "preview": "PodcastDetailsHeaderItemPreview",
+          "caption": "The podcast details header: artwork, title and the follow affordance."
+        }
+      ]
+    },
+    {
+      "name": "Episodes",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Episode/List item",
+          "preview": "EpisodeListItemPreview",
+          "caption": "The shared episode row, light and dark mode.",
+          "variants": [
+            {
+              "preview": "PreviewEpisodeListItem",
+              "caption": "The episode row as the category list draws it.",
+              "state": "category"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Player",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Player/Transport",
+          "preview": "PlayerButtonsPreview",
+          "caption": "Transport controls."
+        },
+        {
+          "componentId": "Player/App bar",
+          "preview": "TopAppBarPreview",
+          "caption": "The player's top app bar."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Home app bar",
+          "preview": "HomeAppBarPreview",
+          "caption": "The home app bar with its search field."
+        },
+        {
+          "componentId": "Chrome/Home error",
+          "preview": "HomeScreenErrorPreview",
+          "caption": "Home's error state with its retry action."
+        }
+      ]
+    }
+  ]
+}

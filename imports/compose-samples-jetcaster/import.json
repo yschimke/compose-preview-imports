@@ -1,0 +1,11 @@
+{
+  "slug": "compose-samples-jetcaster",
+  "upstream": "android/compose-samples",
+  "ref": "main",
+  "modules": [
+    ":mobile"
+  ],
+  "renderer": "android",
+  "workingDirectory": "Jetcaster",
+  "notes": "Jetcaster's phone/tablet client, the Material 3 Expressive adaptive podcast sample. :mobile declares 11 @Preview functions, all catalogued; DevicePreviews is declared in the same module. JetcasterTheme is dark-only (no light scheme), so the spec declares a single theme. The Wear client is the sibling import compose-samples-jetcaster-wear. Carries one patch, patches/0001-preview-home-and-player-inside-a-shared-element-scope.patch: HomeScreen's episode list and PlayerScreen's regular layout read LocalSharedTransitionScope / LocalAnimatedVisibilityScope and throw IllegalStateException (No SharedElementScope found) when they are null, and only JetcasterApp's SharedTransitionLayout + NavHost install them, so upstream's own PreviewHome (all five devices) and PlayerScreenPreview (every device but tablet) fail standalone, in Android Studio as well — 9 of 25 renders, including the catalog's hero. The patch adds a preview-only SharedElementPreviewScope helper (SharedTransitionLayout + AnimatedVisibility(true) providing both locals, the same shape Jetsnack's FilterScreenPreview uses) and wraps those two previews in it; no production code changes. It is the change to offer upstream. No preview is excluded. Built from UNMODIFIED upstream android/compose-samples (main), replacing the catalog preview.coo.ee served from the yschimke/compose-samples fork: that fork's `previews` branch carried roughly ten thousand lines of catalog-only preview sources that no longer apply to upstream, and none of them is carried over — this import renders upstream's own @Preview functions only, and every spec entry names one. The Theme control comes from the sample's own theme composable via `themes` in the spec, replacing the fork's re-themed Material 3 tab. Each sample is its own Gradle build in a subdirectory of the repository, hence workingDirectory. Licence: Apache-2.0."
+}

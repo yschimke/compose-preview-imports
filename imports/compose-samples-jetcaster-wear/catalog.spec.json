@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-jetcaster-wear",
+  "title": "Jetcaster for Wear OS",
+  "library": [
+    "androidx.wear.compose:compose-material3",
+    "androidx.wear.compose:compose-foundation"
+  ],
+  "module": "wear",
+  "modes": [
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "wrapper",
+      "wear": true,
+      "group": "Jetcaster",
+      "name": "Jetcaster",
+      "wrapper": "WearAppTheme { content() }",
+      "imports": [
+        "com.example.jetcaster.theme.WearAppTheme"
+      ]
+    }
+  ],
+  "display": {
+    "surface": "dark",
+    "hero": "Episode/Latest"
+  },
+  "groupOrder": [
+    "Browse",
+    "Playback"
+  ],
+  "groups": [
+    {
+      "name": "Browse",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Episode/Latest",
+          "preview": "LatestEpisodeScreenLoadedPreview",
+          "caption": "The latest-episodes screen — the primary Wear launch surface."
+        },
+        {
+          "componentId": "Library/Screen",
+          "preview": "LibraryScreenPreview",
+          "caption": "The library entry point."
+        },
+        {
+          "componentId": "Podcast/Screen",
+          "preview": "PodcastScreenLoadedPreview",
+          "caption": "The podcast browse list on a round face.",
+          "variants": [
+            {
+              "preview": "PodcastScreenEmptyPreview",
+              "caption": "With no podcasts.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Podcast/Details",
+          "preview": "PodcastDetailsScreenLoadedPreview",
+          "caption": "Podcast details on Wear."
+        }
+      ]
+    },
+    {
+      "name": "Playback",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Episode/Screen",
+          "preview": "EpisodeScreenLoadedPreview",
+          "caption": "Episode detail with its playback actions, loaded.",
+          "variants": [
+            {
+              "preview": "EpisodeScreenLoadingPreview",
+              "caption": "Loading.",
+              "state": "loading"
+            },
+            {
+              "preview": "EpisodeScreenEmptyPreview",
+              "caption": "Empty.",
+              "state": "empty"
+            }
+          ]
+        },
+        {
+          "componentId": "Queue/Screen",
+          "preview": "QueueScreenLoadedPreview",
+          "caption": "The playback queue, populated.",
+          "variants": [
+            {
+              "preview": "QueueScreenEmptyPreview",
+              "caption": "Empty.",
+              "state": "empty"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

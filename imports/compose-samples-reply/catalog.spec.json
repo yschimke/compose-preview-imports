@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-reply",
+  "title": "Reply",
+  "library": [
+    "androidx.compose.material3:material3",
+    "androidx.compose.material3.adaptive:adaptive"
+  ],
+  "module": "app",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "modes",
+      "group": "Reply",
+      "composable": "com.example.reply.ui.theme.ContrastAwareReplyTheme",
+      "parameter": "darkTheme"
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Adaptive/Phone"
+  },
+  "groupOrder": [
+    "Adaptive postures",
+    "States"
+  ],
+  "groups": [
+    {
+      "name": "Adaptive postures",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Adaptive/Phone",
+          "preview": "ReplyAppPreview",
+          "caption": "Compact width — a single pane with the bottom navigation bar.",
+          "variants": [
+            {
+              "preview": "ReplyAppPreviewTabletPortrait",
+              "caption": "500x700 — the navigation rail appears.",
+              "state": "tablet portrait"
+            },
+            {
+              "preview": "ReplyAppPreviewTablet",
+              "caption": "700x500 landscape.",
+              "state": "tablet"
+            },
+            {
+              "preview": "ReplyAppPreviewDesktopPortrait",
+              "caption": "600x1100.",
+              "state": "desktop portrait"
+            },
+            {
+              "preview": "ReplyAppPreviewDesktop",
+              "caption": "1100x600 — list and detail side by side under a permanent drawer.",
+              "state": "desktop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "States",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "States/Coming soon",
+          "preview": "ComingSoonPreview",
+          "caption": "The placeholder shown for destinations the sample does not implement."
+        }
+      ]
+    }
+  ]
+}
