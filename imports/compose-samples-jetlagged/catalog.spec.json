@@ -42,27 +42,15 @@
   ],
   "display": {
     "surface": "light",
-    "hero": "Home/Sleep dashboard"
+    "hero": "Cards/Heart rate"
   },
   "groupOrder": [
-    "Home",
     "Charts",
     "Cards",
     "Chrome",
     "Motion"
   ],
   "groups": [
-    {
-      "name": "Home",
-      "section": "Screens",
-      "components": [
-        {
-          "componentId": "Home/Sleep dashboard",
-          "preview": "JetLaggedScreen",
-          "caption": "The whole sleep dashboard, through upstream's @MultiDevicePreview: phone, tablet, foldable and Pixel 2, plus small and large font."
-        }
-      ]
-    },
     {
       "name": "Charts",
       "section": "Components",
