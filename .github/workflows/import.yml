@@ -559,6 +559,15 @@ jobs:
           path: compose-ai-tools
           persist-credentials: false
 
+      # The export driver the push helper runs for REVISION_PREVIEW_INDEX=1
+      # (`revision-preview-index.mjs`). compose-ai-tools no longer carries a copy of it, so the helper
+      # refuses to publish without DRIVER_DIR; the installer `npm ci`s it from the lock in the
+      # checkout above and exports DRIVER_DIR. Same step as compose-ai-tools' own publish job.
+      - name: Fetch the export driver (@design-parity/export-driver)
+        run: |
+          set -euo pipefail
+          compose-ai-tools/.github/scripts/install-export-driver.sh "$RUNNER_TEMP/export-driver" >/dev/null
+
       - name: Download the rendered catalog
         uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
         with:
