@@ -1,0 +1,209 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-jetnews",
+  "title": "JetNews",
+  "library": [
+    "androidx.compose.material3:material3"
+  ],
+  "module": "app",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "modes",
+      "group": "JetNews",
+      "composable": "com.example.jetnews.ui.theme.JetnewsTheme",
+      "parameter": "darkTheme"
+    }
+  ],
+  "breakpoints": [
+    {
+      "size": "phone",
+      "device": "spec:width=360dp,height=640dp,dpi=480",
+      "widthDp": 360
+    },
+    {
+      "size": "foldable",
+      "device": "spec:width=673dp,height=841dp,dpi=480",
+      "widthDp": 673
+    },
+    {
+      "size": "tablet",
+      "device": "spec:width=1280dp,height=800dp,dpi=480",
+      "widthDp": 1280
+    },
+    {
+      "size": "nexus7",
+      "device": "id:Nexus 7 2013",
+      "widthDp": 600
+    },
+    {
+      "size": "pixelC",
+      "device": "id:pixel_c",
+      "widthDp": 1280
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Screens/Home feed"
+  },
+  "groupOrder": [
+    "Screens",
+    "Navigation",
+    "Post cards",
+    "Interests"
+  ],
+  "groups": [
+    {
+      "name": "Screens",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Screens/Home feed",
+          "preview": "PreviewHomeListDrawerScreen",
+          "caption": "The home feed in the compact posture, navigation behind a modal drawer; upstream previews it light, dark and at 1.5x font.",
+          "variants": [
+            {
+              "preview": "PreviewHomeListNavRailScreen",
+              "caption": "The same feed on a Nexus 7 2013, where the navigation rail replaces the drawer.",
+              "state": "nav rail"
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Article",
+          "preview": "PreviewPostDrawer",
+          "caption": "The article screen, compact posture, light, dark and at 1.5x font.",
+          "variants": [
+            {
+              "preview": "PreviewPostNavRail",
+              "caption": "The article on a Pixel C, beside the navigation rail.",
+              "state": "nav rail"
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Interests",
+          "preview": "PreviewInterestsScreenDrawer",
+          "caption": "The interests screen with its Topics / People / Publications tabs, compact posture.",
+          "variants": [
+            {
+              "preview": "PreviewInterestsScreenNavRail",
+              "caption": "On a Pixel C, the expanded layout with the navigation rail.",
+              "state": "nav rail"
+            }
+          ]
+        },
+        {
+          "componentId": "Reader/Article body",
+          "preview": "PreviewPost",
+          "caption": "Long-form article body: the Material 3 type scale, inline markup, images and code blocks."
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Navigation/Drawer",
+          "preview": "PreviewAppDrawer",
+          "caption": "Modal navigation drawer contents, Home selected — the compact-width navigation surface."
+        },
+        {
+          "componentId": "Navigation/Rail",
+          "preview": "PreviewAppNavRail",
+          "caption": "Navigation rail — the same destinations at expanded width."
+        }
+      ]
+    },
+    {
+      "name": "Post cards",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "PostCard/Top",
+          "preview": "PostCardTopPreview",
+          "caption": "The featured post card at the top of the feed.",
+          "variants": [
+            {
+              "preview": "PostCardTopPreviews",
+              "caption": "Upstream's @CompletePreviews fan-out: dark theme, small and large font, and phone / foldable / tablet sizes.",
+              "state": "complete"
+            }
+          ]
+        },
+        {
+          "componentId": "PostCard/Simple",
+          "preview": "SimplePostPreview",
+          "caption": "The standard feed row, light and dark."
+        },
+        {
+          "componentId": "PostCard/History",
+          "preview": "HistoryPostPreview",
+          "caption": "Reading-history row with its overflow affordance."
+        },
+        {
+          "componentId": "PostCard/Popular",
+          "preview": "PreviewPostCardPopular",
+          "caption": "The popular-post card from the horizontal carousel, light and dark.",
+          "variants": [
+            {
+              "preview": "PreviewPostCardPopularLongText",
+              "caption": "With long text, showing how the card truncates.",
+              "state": "long text"
+            }
+          ]
+        },
+        {
+          "componentId": "Bookmark/Button",
+          "preview": "BookmarkButtonPreview",
+          "caption": "The bookmark toggle, unset.",
+          "variants": [
+            {
+              "preview": "BookmarkButtonBookmarkedPreview",
+              "caption": "And set.",
+              "state": "bookmarked"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interests",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Interests/Topics tab",
+          "preview": "PreviewTopicsTab",
+          "caption": "Topics tab content, light and dark."
+        },
+        {
+          "componentId": "Interests/People tab",
+          "preview": "PreviewPeopleTab",
+          "caption": "People tab content, light and dark."
+        },
+        {
+          "componentId": "Interests/Publications tab",
+          "preview": "PreviewPublicationsTab",
+          "caption": "Publications tab content, light and dark."
+        },
+        {
+          "componentId": "Interests/Select topic",
+          "preview": "SelectTopicButtonPreviewOff",
+          "caption": "The topic subscribe toggle, off.",
+          "variants": [
+            {
+              "preview": "SelectTopicButtonPreviewOn",
+              "caption": "And on.",
+              "state": "on"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

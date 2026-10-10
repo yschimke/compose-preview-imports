@@ -1,0 +1,131 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-jetlagged",
+  "title": "JetLagged",
+  "library": [
+    "custom Canvas drawing + custom layouts"
+  ],
+  "module": "app",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "modes",
+      "group": "JetLagged",
+      "composable": "com.example.jetlagged.ui.theme.JetLaggedTheme",
+      "parameter": "isDarkTheme"
+    }
+  ],
+  "breakpoints": [
+    {
+      "size": "phone",
+      "widthDp": 411
+    },
+    {
+      "size": "pixel2",
+      "device": "id:pixel_2",
+      "widthDp": 411
+    },
+    {
+      "size": "foldable",
+      "device": "spec:width=673dp,height=841dp",
+      "widthDp": 673
+    },
+    {
+      "size": "tablet",
+      "device": "spec:width=1280dp,height=800dp,dpi=240",
+      "widthDp": 1280
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Home/Sleep dashboard"
+  },
+  "groupOrder": [
+    "Home",
+    "Charts",
+    "Cards",
+    "Chrome",
+    "Motion"
+  ],
+  "groups": [
+    {
+      "name": "Home",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Home/Sleep dashboard",
+          "preview": "JetLaggedScreen",
+          "caption": "The whole sleep dashboard, through upstream's @MultiDevicePreview: phone, tablet, foldable and Pixel 2, plus small and large font."
+        }
+      ]
+    },
+    {
+      "name": "Charts",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Charts/Sleep bar",
+          "preview": "SleepBarPreview",
+          "caption": "The sleep bar — a bespoke Canvas chart with per-stage gradients."
+        },
+        {
+          "componentId": "Charts/Detail legend",
+          "preview": "DetailLegend",
+          "caption": "The legend mapping each sleep stage to its colour."
+        }
+      ]
+    },
+    {
+      "name": "Cards",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Cards/Time in bed",
+          "preview": "AverageTimeInBedCard",
+          "caption": "Average time in bed, at default width and at 500dp."
+        },
+        {
+          "componentId": "Cards/Time asleep",
+          "preview": "AverageTimeAsleepCard",
+          "caption": "Average time asleep, at default width and at 500dp."
+        },
+        {
+          "componentId": "Cards/Wellness",
+          "preview": "WellnessCard",
+          "caption": "The wellness summary card."
+        },
+        {
+          "componentId": "Cards/Heart rate",
+          "preview": "HeartRateCard",
+          "caption": "The heart-rate card with its smoothed trace."
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Header",
+          "preview": "JetLaggedHeader",
+          "caption": "Screen header — menu button and title over the moving-stripes background."
+        }
+      ]
+    },
+    {
+      "name": "Motion",
+      "section": "Animations",
+      "components": [
+        {
+          "componentId": "Motion/Fading circle",
+          "preview": "FadingCirclePreview",
+          "caption": "The fading-circle background animation, captured as a still frame."
+        }
+      ]
+    }
+  ]
+}

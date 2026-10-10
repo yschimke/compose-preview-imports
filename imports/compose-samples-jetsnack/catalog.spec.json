@@ -1,0 +1,196 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an IMPORTED project, plus the inventory it cannot supply for itself. A first-party catalog declares its components with @CatalogComponent / @CatalogVariant beside the @Preview functions and omits `groups` entirely; a project imported without its maintainers' involvement has no such annotations, so the inventory is written down HERE. That is the one thing an import costs, and it is the honest place for it: this is our description of somebody else's code, and it stays in our repository. Imported from UNMODIFIED upstream android/compose-samples. This replaces the catalog preview.coo.ee served from the yschimke/compose-samples fork, whose `previews` branch carried catalog-only preview sources that no longer apply to upstream; none of them is carried over, so every entry here names one of upstream's own @Preview functions, and the Theme control comes from the sample's own theme composable (`themes`) rather than a re-themed Material 3 tab.",
+  "system": "compose-samples-jetsnack",
+  "title": "Jetsnack",
+  "library": [
+    "custom design system (JetsnackTheme)",
+    "androidx.glance:glance-appwidget"
+  ],
+  "module": "app",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "themes": [
+    {
+      "kind": "modes",
+      "group": "Jetsnack",
+      "composable": "com.example.jetsnack.ui.theme.JetsnackTheme",
+      "parameter": "darkTheme"
+    }
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Screens/Feed"
+  },
+  "groupOrder": [
+    "Screens",
+    "Foundations",
+    "Catalog",
+    "Cart",
+    "Chrome",
+    "Widget"
+  ],
+  "groups": [
+    {
+      "name": "Screens",
+      "section": "Screens",
+      "components": [
+        {
+          "componentId": "Screens/App shell",
+          "preview": "JetsnackApp",
+          "caption": "The whole app at its start destination: feed, bottom navigation and shared-element scaffolding."
+        },
+        {
+          "componentId": "Screens/Feed",
+          "preview": "HomePreview",
+          "caption": "The home feed — destination bar, filters and the snack collections; upstream previews it light, dark and at 2x font."
+        },
+        {
+          "componentId": "Screens/Search",
+          "preview": "SearchResultPreview",
+          "caption": "Search results for a query.",
+          "variants": [
+            {
+              "preview": "PreviewSuggestions",
+              "caption": "The suggestion list shown before a query is entered.",
+              "state": "suggestions"
+            }
+          ]
+        },
+        {
+          "componentId": "Screens/Cart",
+          "preview": "CartPreview",
+          "caption": "The cart — order lines, summary and checkout bar."
+        },
+        {
+          "componentId": "Screens/Profile",
+          "preview": "ProfilePreview",
+          "caption": "The profile destination."
+        },
+        {
+          "componentId": "Screens/Snack detail",
+          "preview": "SnackDetailPreview",
+          "caption": "Product detail — the collapsing-header screen that anchors the shared-element transition."
+        },
+        {
+          "componentId": "Screens/Filter",
+          "preview": "FilterScreenPreview",
+          "caption": "The filter sheet — sort, price, category and lifestyle sections."
+        }
+      ]
+    },
+    {
+      "name": "Foundations",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Foundations/Button",
+          "preview": "ButtonPreview",
+          "caption": "JetsnackButton — the gradient-filled primary action.",
+          "variants": [
+            {
+              "preview": "RectangleButtonPreview",
+              "caption": "The rectangular-shape variant.",
+              "state": "rectangle"
+            }
+          ]
+        },
+        {
+          "componentId": "Foundations/Card",
+          "preview": "CardPreview",
+          "caption": "JetsnackCard — the surface product tiles are built on."
+        },
+        {
+          "componentId": "Foundations/Divider",
+          "preview": "DividerPreview",
+          "caption": "The system divider."
+        },
+        {
+          "componentId": "Foundations/Icon button",
+          "preview": "GradientTintedIconButtonPreview",
+          "caption": "The gradient-tinted icon button."
+        }
+      ]
+    },
+    {
+      "name": "Catalog",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Snack/Card",
+          "preview": "SnackCardPreview",
+          "caption": "The product card as it appears in highlighted collections."
+        },
+        {
+          "componentId": "Catalog/Filter",
+          "preview": "FilterEnabledPreview",
+          "caption": "A filter chip, enabled.",
+          "variants": [
+            {
+              "preview": "FilterDisabledPreview",
+              "caption": "And disabled.",
+              "state": "disabled"
+            }
+          ]
+        },
+        {
+          "componentId": "Search/Category",
+          "preview": "SearchCategoryPreview",
+          "caption": "A search category tile."
+        },
+        {
+          "componentId": "Search/Bar",
+          "preview": "SearchBarPreview",
+          "caption": "The search entry field."
+        }
+      ]
+    },
+    {
+      "name": "Cart",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Cart/Quantity",
+          "preview": "QuantitySelectorPreview",
+          "caption": "The quantity stepper.",
+          "variants": [
+            {
+              "preview": "QuantitySelectorPreviewRtl",
+              "caption": "Right-to-left.",
+              "state": "rtl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Chrome",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Chrome/Bottom nav",
+          "preview": "JetsnackBottomNavPreview",
+          "caption": "The custom animated bottom navigation bar."
+        },
+        {
+          "componentId": "Chrome/Destination bar",
+          "preview": "PreviewDestinationBar",
+          "caption": "The delivery destination bar pinned above the feed."
+        }
+      ]
+    },
+    {
+      "name": "Widget",
+      "section": "Components",
+      "components": [
+        {
+          "componentId": "Widget/Image text list",
+          "preview": "ImageTextListLayoutPreview",
+          "caption": "The Glance home-screen widget, across upstream's small / medium / large widget size previews."
+        }
+      ]
+    }
+  ]
+}
