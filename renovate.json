@@ -3,4 +3,5 @@
   "extends": [
     "local>yschimke/renovate-config"
   ]
-}
+,
+  "platformAutomerge": false}
