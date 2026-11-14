@@ -1,0 +1,11 @@
+{
+  "slug": "wear-os-samples-wfp-default",
+  "upstream": "android/wear-os-samples",
+  "ref": "main",
+  "modules": [
+    ":samples:defaultwf"
+  ],
+  "renderer": "android",
+  "workingDirectory": "WatchFacePush",
+  "notes": "Default WFF watch face from Google's WatchFacePush sample in android/wear-os-samples. WatchFacePush is a multi-module Gradle build; :samples:defaultwf is its codeless default watch-face APK module carrying res/raw/watchface.xml. Licence: Apache-2.0."
+}

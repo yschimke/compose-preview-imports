@@ -1,0 +1,11 @@
+{
+  "slug": "wear-os-samples-wff-flavors",
+  "upstream": "android/wear-os-samples",
+  "ref": "main",
+  "modules": [
+    ":watchface"
+  ],
+  "renderer": "android",
+  "workingDirectory": "WatchFaceFormat/Flavors",
+  "notes": "Google's official Watch Face Format Flavors sample in android/wear-os-samples. WatchFaceFormat/Flavors is a standalone Gradle build whose codeless :watchface module declares res/raw/watchface.xml with three preset <Flavor> configurations, four user configurations, and four complication slots. Licence: Apache-2.0."
+}

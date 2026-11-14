@@ -1,0 +1,11 @@
+{
+  "slug": "wear-os-samples-wff-simple-analog",
+  "upstream": "android/wear-os-samples",
+  "ref": "main",
+  "modules": [
+    ":watchface"
+  ],
+  "renderer": "android",
+  "workingDirectory": "WatchFaceFormat/SimpleAnalog",
+  "notes": "Google's official Watch Face Format SimpleAnalog sample in android/wear-os-samples. WatchFaceFormat/SimpleAnalog is a standalone Gradle build whose codeless :watchface module declares res/raw/watchface.xml with analog hands and one user configuration. Licence: Apache-2.0."
+}
