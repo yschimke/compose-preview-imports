@@ -1,0 +1,11 @@
+{
+  "slug": "wear-os-samples-wfp-river",
+  "upstream": "android/wear-os-samples",
+  "ref": "main",
+  "modules": [
+    ":samples:river"
+  ],
+  "renderer": "android",
+  "workingDirectory": "WatchFacePush",
+  "notes": "River WFF watch face from Google's WatchFacePush sample in android/wear-os-samples. WatchFacePush is a multi-module Gradle build; :samples:river is a codeless watch-face module carrying res/raw/watchface.xml. Licence: Apache-2.0."
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Cover sheet for an imported Declarative Watch Face Format (<WatchFace>) sample from unmodified upstream android/wear-os-samples. The codeless watch-face module declares res/raw/watchface.xml, which compose-preview discovers as preview `watchface` and renders through the DWF RemoteCompose lane with structured complication and user-configuration metadata in previews/<id>.watchface.json.",
+  "system": "wear-os-samples-wfp-default",
+  "title": "Wear OS Watch Face Push: Default",
+  "module": "samples:defaultwf",
+  "modes": [
+    "dark"
+  ],
+  "display": {
+    "surface": "dark",
+    "hero": "WatchFace/Default"
+  },
+  "completeness": {
+    "$comment": "Declarative Watch Face Format XML resources render through the DWF RemoteCompose lane and have no Compose UI semantics tree; their structured inspection surface is previews/<id>.watchface.json.",
+    "exemptSemantics": [
+      "WatchFace/Default"
+    ]
+  },
+  "groups": [
+    {
+      "name": "Watch Face",
+      "section": "Watch Faces",
+      "components": [
+        {
+          "componentId": "WatchFace/Default",
+          "preview": "watchface",
+          "sourceFile": "src/main/res/raw/watchface.xml",
+          "caption": "Default Watch Face Push sample watch face bundled with the WatchFacePush reference app."
+        }
+      ]
+    }
+  ]
+}
