@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Cover sheet for an imported Declarative Watch Face Format (<WatchFace>) sample from unmodified upstream android/wear-os-samples. The codeless watch-face module declares res/raw/watchface.xml, which compose-preview discovers as preview `watchface` and renders through the DWF RemoteCompose lane with structured complication and user-configuration metadata in previews/<id>.watchface.json.",
+  "$comment": "Cover sheet for an imported Declarative Watch Face Format (<WatchFace>) sample from unmodified upstream android/wear-os-samples. The codeless watch-face module declares res/raw/watchface.xml, which compose-preview discovers as preview `watchface` and renders through the DWF RemoteCompose lane with semantics and structured complication/configuration metadata in previews/<id>.watchface.json.",
   "system": "wear-os-samples-wff-photos-multi",
   "title": "Wear OS Watch Face: Photos (Multi)",
   "module": "watchface",
@@ -10,12 +10,6 @@
   "display": {
     "surface": "dark",
     "hero": "WatchFace/Default"
-  },
-  "completeness": {
-    "$comment": "Declarative Watch Face Format XML resources render through the DWF RemoteCompose lane and have no Compose UI semantics tree; their structured inspection surface is previews/<id>.watchface.json.",
-    "exemptSemantics": [
-      "WatchFace/Default"
-    ]
   },
   "groups": [
     {
