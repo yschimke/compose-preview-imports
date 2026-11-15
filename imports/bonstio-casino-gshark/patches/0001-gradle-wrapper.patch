@@ -200,3 +200,10 @@ index 0000000..4f906e0
 +eval set -- $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "\"-Dorg.gradle.appname=$APP_BASE_NAME\"" -classpath "\"$CLASSPATH\"" org.gradle.wrapper.GradleWrapperMain "$APP_ARGS"
 +
 +exec "$JAVACMD" "$@"
+diff --git a/gradle.properties b/gradle.properties
+new file mode 100644
+index 0000000..5bac8ac
+--- /dev/null
++++ b/gradle.properties
+@@ -0,0 +1 @@
++android.useAndroidX=true
