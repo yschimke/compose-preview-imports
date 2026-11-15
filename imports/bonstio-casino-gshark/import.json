@@ -1,0 +1,10 @@
+{
+  "slug": "bonstio-casino-gshark",
+  "upstream": "bonstio/casino-gshark",
+  "ref": "main",
+  "modules": [
+    ":app"
+  ],
+  "renderer": "android",
+  "notes": "Casino G-Shark 200M — rugged Casio G-SQUAD GBD-200 inspired Wear OS Watch Face Format (WFF v2) watch face with two XML variants (res/raw/watchface_pixel.xml and res/raw/watchface.xml), six customizable complication slots, and 16 user configurations. Upstream omits gradlew and gradle/wrapper/gradle-wrapper.properties; patches/0001-gradle-wrapper.patch adds them pinned to Gradle 8.9 (matching AGP 8.5.2) so Gradle Tooling API discovery and bundle packing can target the build."
+}
