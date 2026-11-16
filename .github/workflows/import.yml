@@ -556,6 +556,7 @@ jobs:
       # Default false: most imports hydrate the module bundle without per-preview split carriage.
       # Watch-face imports set splitPerPreview: true so dwf-apk can download per-preview bundles.
       split-per-preview: ${{ needs.config.outputs.splitPerPreview == 'true' }}
+      split-mode: ${{ needs.config.outputs.splitPerPreview == 'true' && 'full-shared-classpath' || 'auto' }}
       publish: false
       upload-out: true
 
