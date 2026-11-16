@@ -111,6 +111,7 @@ jobs:
       renderRuntimeProjects: ${{ steps.read.outputs.renderRuntimeProjects }}
       gradleProperties: ${{ steps.read.outputs.gradleProperties }}
       patches: ${{ steps.read.outputs.patches }}
+      splitPerPreview: ${{ steps.read.outputs.splitPerPreview }}
     steps:
       # The configuration is read from the commit this run was started on — `main` for the
       # on-merge build and the nightly refresh, or whatever branch a manual dispatch names — and the
@@ -431,6 +432,15 @@ jobs:
             patches="imports/${SLUG}/patches"
           fi
 
+          split_per_preview=$(jq -r '.splitPerPreview // false' "$config")
+          case "$split_per_preview" in
+            true|false) ;;
+            *)
+              echo "::error::splitPerPreview '${split_per_preview}' must be a boolean"
+              exit 1
+              ;;
+          esac
+
           {
             echo "sha=$(git rev-parse HEAD)"
             echo "upstream=${upstream}"
@@ -447,6 +457,7 @@ jobs:
             echo "renderRuntimeProjects=${render_runtime_projects}"
             echo "gradleProperties=${gradle_properties}"
             echo "patches=${patches}"
+            echo "splitPerPreview=${split_per_preview}"
           } >> "$GITHUB_OUTPUT"
 
   # Calls the pipeline that builds the imported project. See the header: this declares the ceiling
@@ -542,7 +553,9 @@ jobs:
       # a project we do not control, would pay every night. The module bundle above is what a
       # trusted serve host hydrates, so the live re-render lane survives without it, and `split-mode`
       # is dropped with the split since that is the only thing it modifies.
-      split-per-preview: false
+      # Default false: most imports hydrate the module bundle without per-preview split carriage.
+      # Watch-face imports set splitPerPreview: true so dwf-apk can download per-preview bundles.
+      split-per-preview: ${{ needs.config.outputs.splitPerPreview == 'true' }}
       publish: false
       upload-out: true
 
