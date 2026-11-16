@@ -3,5 +3,6 @@
   "upstream": "android/wear-os-samples",
   "ref": "main",
   "renderer": "android",
+  "splitPerPreview": true,
   "notes": "Consolidated Declarative Watch Face Format (<WatchFace>) samples from android/wear-os-samples: all seven WatchFaceFormat samples (Complications, Flavors, PhotosMask, PhotosMulti, SimpleAnalog, SimpleDigital, Weather) and all three WatchFacePush samples (defaultwf, firefly, river). Upstream structures these as eight separate standalone Gradle builds without a root settings.gradle.kts; patches/0001-root-build.patch adds a root Gradle build including the ten codeless watch-face modules and renames each res/raw/watchface.xml stem to a unique name (wff_*, wfp_*) so multi-module discovery and catalog spec pre-flight resolve all ten watch faces cleanly in one catalog. Licence: Apache-2.0."
 }
