@@ -93,9 +93,15 @@ lint() {
   return "$status"
 }
 
+# Where every import is rebuilt: this repository's `import.yml`, dispatched with the slug. The
+# server links it as the catalog page's "regenerate" (`regenerateUrl`); without it, it falls back
+# to the DELIVERY repository's `design-artifacts.yml`, and the output repository has no workflows.
+REGENERATE_URL="https://github.com/yschimke/compose-preview-imports/actions/workflows/import.yml"
+
 generate() {
   import_files \
-    | xargs -r jq -c '{ system: .slug, listed: true, importedFrom: .upstream }' \
+    | xargs -r jq -c --arg regen "$REGENERATE_URL" \
+      '{ system: .slug, listed: true, importedFrom: .upstream, regenerateUrl: $regen }' \
     | jq -S -s '
         {
           "$comment": (
