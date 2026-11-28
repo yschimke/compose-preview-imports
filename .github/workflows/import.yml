@@ -466,7 +466,7 @@ jobs:
     needs: config
     permissions:
       contents: write
-    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@ae16a7189ebc69718e945340467d0d6879d16cfa # main
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@8ab731cadc7288d7055a1585b6ea1bc22c38c304 # main
     with:
       system: ${{ inputs.slug }}
       # Generated branches live in the output repository. The render jobs READ its earlier
